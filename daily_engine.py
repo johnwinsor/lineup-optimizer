@@ -1,0 +1,223 @@
+import pandas as pd
+from gameday_harvester import GameDayHarvester
+from enricher import OttoneuEnricher
+from datetime import datetime
+from park_factors import get_park_multiplier
+from weather_harvester import WeatherHarvester
+import os
+import json
+import re
+
+class DailyEngine:
+    def __init__(self, league_id=1077, team_id=7582):
+        self.enricher = OttoneuEnricher(league_id, team_id)
+        self.harvester = GameDayHarvester()
+        self.weather = WeatherHarvester()
+
+    def _get_recency_weight(self, target_date: str):
+        """
+        Calculates the weight for current season data based on the date.
+        """
+        dt = datetime.strptime(target_date, "%Y-%m-%d")
+        month = dt.month
+        if month <= 4: return 0.0
+        if month == 5: return 0.3
+        if month == 6: return 0.6
+        return 1.0
+
+    def get_free_agent_projections(self, target_date: str):
+        """
+        Loads the free_agents.json and calculates daily projections for them.
+        """
+        if not os.path.exists('free_agents.json'):
+            return pd.DataFrame()
+            
+        with open('free_agents.json', 'r') as f:
+            data = json.load(f).get('data', [])
+        
+        df = pd.DataFrame(data)
+        if df.empty: return pd.DataFrame()
+        
+        # Map fields to match Ottoneu Roster format
+        df['Name'] = df['Name'].apply(lambda x: re.search(r'>(.*?)</a>', x).group(1) if '>' in str(x) else x)
+        df['Team'] = df['Team'].apply(lambda x: re.search(r'>(.*?)</a>', x).group(1) if '>' in str(x) else x)
+        df['POS'] = df['position']
+        
+        # Calculate Base Efficiency Score (Algorithm V2)
+        df['Score'] = (
+            (df['R'].astype(float) + df['HR'].astype(float) + df['RBI'].astype(float) + df['SB'].astype(float)) / 
+            df['PA'].astype(float).replace(0, 1) * 100
+        ) + (df['AVG'].astype(float) * 100)
+        
+        return self._process_daily_multipliers(df, target_date)
+
+    def get_daily_projections(self, target_date: str):
+        # 1. Base Roster and Season-long Projections
+        hitters = self.enricher.enrich_roster()
+        hitters = hitters.dropna(subset=['Score'])
+        
+        # 2. Map multipliers using the shared logic
+        return self._process_daily_multipliers(hitters, target_date)
+
+    def _process_daily_multipliers(self, hitters, target_date):
+        matchups = self.harvester.get_daily_matchups(target_date)
+        is_today = target_date == datetime.now().strftime("%Y-%m-%d")
+        weather_report = self.weather.get_weather_report() if is_today else {}
+        
+        dt = datetime.strptime(target_date, "%Y-%m-%d")
+        year = dt.year
+        weight_current = self._get_recency_weight(target_date) if year == 2026 else 0.0
+        
+        daily_scores = []
+        is_starting = []
+        breakdowns = []
+        opponents = []
+        warnings = []
+        
+        for _, row in hitters.iterrows():
+            player_name = row['Name']
+            # Try to get ID from row first (scout data has it)
+            mlb_id = row.get('xMLBAMID') 
+            if pd.isna(mlb_id) or not mlb_id:
+                mlb_id = self.harvester.get_mlb_id(player_name, target_year=year)
+            
+            daily_score = 0.0
+            starting = False
+            breakdown = []
+            opponent = "N/A"
+            warning = ""
+            
+            if mlb_id and mlb_id in matchups:
+                matchup = matchups[mlb_id]
+                if matchup['is_starting']:
+                    starting = True
+                    base_score = row['Score']
+                    multiplier = 1.0
+                    
+                    if weight_current > 0:
+                        breakdown.append(f"Recency: {int(weight_current*100)}%")
+                    
+                    # 1. Venue
+                    venue = matchup.get('venue_name', '')
+                    park_multiplier = get_park_multiplier(venue)
+                    if park_multiplier != 1.0:
+                        multiplier *= park_multiplier
+                        diff = int((park_multiplier - 1.0) * 100)
+                        if diff != 0:
+                            breakdown.append(f"Park: {diff:+}%")
+                    
+                    # 2. Opposing Pitcher
+                    sp_id = matchup.get('opposing_sp_id')
+                    if sp_id:
+                        sp_data = self.harvester.get_pitcher_data(sp_id, year=year, weight_current=weight_current)
+                        opponent = f"{matchup.get('opposing_sp_name')} ({sp_data['hand']}, {sp_data.get('xera', sp_data['era']):.2f})"
+                        
+                        pitcher_skill = sp_data.get('xera', sp_data.get('era', 4.0))
+                        era_factor = 1.0 + ((pitcher_skill - 4.0) / 4.0)
+                        era_factor = max(0.7, min(1.3, era_factor))
+                        multiplier *= era_factor
+                        
+                        diff = int((era_factor - 1.0) * 100)
+                        if diff != 0:
+                            breakdown.append(f"SP Skill: {diff:+}%")
+                        
+                        # Platoon
+                        batter_hand_data = self.harvester.get_batter_data(mlb_id)
+                        b_hand = batter_hand_data['hand']
+                        p_hand = sp_data['hand']
+                        
+                        if b_hand == 'S':
+                            multiplier *= 1.05
+                            breakdown.append("Switch: +5%")
+                        elif b_hand != p_hand:
+                            multiplier *= 1.10
+                            breakdown.append("Platoon: +10%")
+                        else:
+                            if b_hand == 'L':
+                                multiplier *= 0.85
+                                breakdown.append("Platoon (L/L): -15%")
+                            else:
+                                multiplier *= 0.95
+                                breakdown.append("Platoon (R/R): -5%")
+
+                        # 3. BvP
+                        bvp = self.harvester.get_bvp_data(mlb_id, sp_id)
+                        if bvp and bvp['pa'] >= 5:
+                            ops = bvp['ops']
+                            if ops > 1.000:
+                                multiplier *= 1.15
+                                breakdown.append(f"BvP Elite ({bvp['pa']} PA): +15%")
+                            elif ops > 0.850:
+                                multiplier *= 1.05
+                                breakdown.append(f"BvP Good ({bvp['pa']} PA): +5%")
+                            elif ops < 0.500:
+                                multiplier *= 0.85
+                                breakdown.append(f"BvP Poor ({bvp['pa']} PA): -15%")
+                            elif ops < 0.650:
+                                multiplier *= 0.95
+                                breakdown.append(f"BvP Weak ({bvp['pa']} PA): -5%")
+
+                    # 4. Batter StatCast (Blended)
+                    sc_hitter = self.harvester.get_hitter_statcast_data(mlb_id, weight_current=weight_current)
+                    is_superstar = False
+                    if sc_hitter is not None:
+                        xwoba = float(sc_hitter.get('xwOBA', 0))
+                        if xwoba > 0.400:
+                            is_superstar = True 
+                            multiplier *= 1.10
+                            breakdown.append("xwOBA Elite: +10%")
+                        elif xwoba > 0.370:
+                            multiplier *= 1.05
+                            breakdown.append("xwOBA Good: +5%")
+                        
+                        barrel_pct = float(sc_hitter.get('Barrel%', 0))
+                        if barrel_pct > 15.0:
+                            multiplier *= 1.05
+                            breakdown.append("Barrel: +5%")
+
+                    daily_score = base_score * multiplier
+                    if is_superstar:
+                        daily_score = max(daily_score, base_score * 0.85)
+
+                    # 5. Weather
+                    home_abb = matchup.get('home_team_abb')
+                    if home_abb in weather_report:
+                        w = weather_report[home_abb]
+                        if not w['is_dome']:
+                            if w['wind_dir'] == "Out" and w['wind_speed'] >= 10:
+                                boost = 1.05 if w['wind_speed'] < 20 else 1.10
+                                multiplier *= boost
+                                breakdown.append(f"Wind Out: +{int((boost-1)*100)}%")
+                            elif w['wind_dir'] == "In" and w['wind_speed'] >= 10:
+                                penalty = 0.95 if w['wind_speed'] < 20 else 0.90
+                                multiplier *= penalty
+                                breakdown.append(f"Wind In: -{int((1-penalty)*100)}%")
+                            
+                            if w['rain_risk'] >= 60:
+                                warning = f"🚨 HIGH RAIN RISK ({w['rain_risk']}%)"
+                            elif w['rain_risk'] >= 30:
+                                warning = f"⚠️ Rain Risk ({w['rain_risk']}%)"
+
+                    daily_score = base_score * multiplier
+
+            daily_scores.append(daily_score)
+            is_starting.append(starting)
+            breakdowns.append(", ".join(breakdown) if breakdown else "Base")
+            opponents.append(opponent)
+            warnings.append(warning)
+            
+        hitters['DailyScore'] = daily_scores
+        hitters['IsStarting'] = is_starting
+        hitters['Breakdown'] = breakdowns
+        hitters['Opponent'] = opponents
+        hitters['Warning'] = warnings
+        
+        return hitters[hitters['DailyScore'] > 0].copy()
+
+if __name__ == "__main__":
+    engine = DailyEngine()
+    test_date = "2024-06-15"
+    print(f"Running Daily Engine for {test_date}...")
+    projections = engine.get_daily_projections(test_date)
+    print(f"Found {len(projections)} starters for Zebras today.")
+    print(projections[['Name', 'POS', 'DailyScore', 'Opponent']].sort_values(by='DailyScore', ascending=False).head(10))
