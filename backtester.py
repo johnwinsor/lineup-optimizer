@@ -48,12 +48,18 @@ class Backtester:
                 
                 ev = ev_stats.get(mlb_id, {'avg_ev': 0, 'max_ev': 0})
                 
+                order = matchup.get('batting_order', '-')
+                clean_order = order[0] if order and order != '-' and len(order) >= 1 else '-'
+
                 started_data.append({
                     'Slot': row['Slot'],
                     'Player': player_name,
+                    'Status': matchup.get('game_status', 'Unknown'),
+                    'Order': clean_order,
                     'Opponent': f"{matchup.get('opposing_sp_name')} ({sp_data['hand']}, {sp_data.get('xera', sp_data['era']):.2f})",
-                    'Proj': f"{row['Score']:.2f}",
-                    'Actual': f"{p_stats['H']}/{p_stats['AB']}, {p_stats['HR']} HR, {p_stats['SB']} SB",
+                    'Proj': float(row['Score']),
+                    'Actual': f"{p_stats['H']}/{p_stats['AB']}, {p_stats['R']} R, {p_stats['HR']} HR, {p_stats['RBI']} RBI, {p_stats['SB']} SB",
+                    'stats': p_stats,
                     'SO': f"{p_stats['SO']}",
                     'SB/CS': f"{p_stats['SB']}/{p_stats['CS']}",
                     'EV (Avg/Max)': f"{ev['avg_ev']:.1f}/{ev['max_ev']:.1f}",
@@ -88,10 +94,14 @@ class Backtester:
             # Determine Why they Sat
             proj_score = 0.0
             min_floor = self.optimizer.min_score
+            order = "-"
             if not mlb_id or mlb_id not in matchups:
                 note = "Team Off-day or No Game Scheduled."
             else:
                 matchup = matchups[mlb_id]
+                o_str = matchup.get('batting_order', '-')
+                order = o_str[0] if o_str and o_str != '-' and len(o_str) >= 1 else '-'
+
                 if not matchup['is_starting']:
                     note = "Not in MLB Starting Lineup (Benched/IL/Rest)."
                 else:
@@ -107,8 +117,11 @@ class Backtester:
             sat_data.append({
                 'Player': name,
                 'POS': row['POS'],
-                'Proj': f"{proj_score:.2f}",
-                'Actual': f"{p_stats['H']}/{p_stats['AB']}, {p_stats['HR']} HR, {p_stats['SB']} SB",
+                'Status': matchup.get('game_status', '-') if mlb_id and mlb_id in matchups else "-",
+                'Order': order,
+                'Proj': float(proj_score),
+                'Actual': f"{p_stats['H']}/{p_stats['AB']}, {p_stats['R']} R, {p_stats['HR']} HR, {p_stats['RBI']} RBI, {p_stats['SB']} SB",
+                'stats': p_stats,
                 'SO': f"{p_stats['SO']}",
                 'SB/CS': f"{p_stats['SB']}/{p_stats['CS']}",
                 'EV (Avg/Max)': f"{ev['avg_ev']:.1f}/{ev['max_ev']:.1f}",
@@ -126,7 +139,7 @@ class Backtester:
         print("\n=== LINEUP STARTED ===")
         df_started = pd.DataFrame(started_data)
         if not df_started.empty:
-            print(tabulate(df_started[['Slot', 'Player', 'Opponent', 'Proj', 'Actual', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Breakdown']], 
+            print(tabulate(df_started[['Slot', 'Player', 'Order', 'Opponent', 'Proj', 'Actual', 'Status', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Breakdown']], 
                            headers='keys', tablefmt='grid', showindex=False))
         else:
             print("No players started.")
@@ -134,7 +147,7 @@ class Backtester:
         print("\n=== PLAYERS SAT ===")
         df_sat = pd.DataFrame(sat_data)
         if not df_sat.empty:
-            print(tabulate(df_sat[['Player', 'POS', 'Proj', 'Actual', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Note']], 
+            print(tabulate(df_sat[['Player', 'POS', 'Order', 'Proj', 'Actual', 'Status', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Note']], 
                            headers='keys', tablefmt='grid', showindex=False))
 
         # Totals
@@ -149,42 +162,48 @@ class Backtester:
         # Post-Game Narrative
         print("\n=== POST-GAME ANALYSIS NARRATIVE ===")
         
-        # 1. Prediction Win
-        # Find player with best HR + SB production in started lineup
         lineup_df = pd.DataFrame(started_data)
-        lineup_df['Prod'] = lineup_df['Actual'].apply(lambda x: sum([int(s.split()[0]) for s in x.split(',') if 'HR' in s or 'SB' in s]))
-        lineup_df['H'] = lineup_df['Actual'].apply(lambda x: int(x.split('/')[0]))
-        
-        narrative = ""
         if not lineup_df.empty:
-            best_prod = lineup_df.sort_values(by=['Prod', 'H'], ascending=False).iloc[0]
-            if best_prod['Prod'] > 0 or best_prod['H'] > 0:
-                narrative += f"The Prediction Win: **{best_prod['Player']}** lived up to his {best_prod['Proj']} projection, providing {best_prod['Actual']} against {best_prod['Opponent']}."
+            # Score each player based on 5x5 contributions
+            # HR counts double in this weighting as it provides R and RBI usually
+            lineup_df['TotalProd'] = lineup_df['stats'].apply(lambda s: s['R'] + s['HR']*2 + s['RBI'] + s['SB'] + (1 if s['H'] > 0 else 0))
+            
+            # 1. Prediction Win
+            best_prod = lineup_df.sort_values(by=['TotalProd', 'Proj'], ascending=False).iloc[0]
+            if best_prod['TotalProd'] > 0:
+                print(f"The Prediction Win: **{best_prod['Player']}** lived up to his {best_prod['Proj']:.2f} projection, providing {best_prod['Actual']} against {best_prod['Opponent']}.")
             
             # 2. The Flop
-            worst_prod = lineup_df.sort_values(by=['Proj'], ascending=False)
-            flop = worst_prod[worst_prod['Actual'].str.startswith('0/')].iloc[0] if not worst_prod[worst_prod['Actual'].str.startswith('0/')].empty else None
+            potential_flops = lineup_df.sort_values(by=['Proj'], ascending=False)
+            flop = None
+            for _, p in potential_flops.iterrows():
+                # Only call it a flop if they had < 1 total 5x5 contribution and hitless
+                if p['TotalProd'] == 0 and p['stats']['H'] == 0:
+                    flop = p
+                    break
+            
             if flop is not None:
-                narrative += f"\n\nThe Flop: Despite a strong {flop['Proj']} projection, **{flop['Player']}** struggled today, going {flop['Actual'].split(',')[0]}."
+                print(f"\nThe Flop: Despite a strong {flop['Proj']:.2f} projection, **{flop['Player']}** struggled to find the box score today, going {flop['Actual'].split(',')[0]}.")
+            else:
+                print("\nEfficiency Note: No high-projection starters completely vanished today; the lineup provided consistent floor value.")
 
         # 3. Bench Hero
         sat_df = pd.DataFrame(sat_data)
-        sat_df['H'] = sat_df['Actual'].apply(lambda x: int(x.split('/')[0]) if '/' in x else 0)
-        sat_df['HR'] = sat_df['Actual'].apply(lambda x: 1 if '1 HR' in x else (2 if '2 HR' in x else 0))
-        
-        bench_hero = sat_df.sort_values(by=['HR', 'H'], ascending=False).iloc[0] if not sat_df.empty else None
-        if bench_hero is not None and (bench_hero['H'] > 0 or bench_hero['HR'] > 0):
-            narrative += f"\n\nThe Bench Hero: We left **{bench_hero['Player']}** on the bench ({bench_hero['Actual']}), which hurt. Note: {bench_hero['Note']}"
-        else:
-            narrative += "\n\nEfficiency Note: The bench remained quiet today, confirming our start/sit decisions were sound."
-
-        print(narrative if narrative else "No significant statistical anomalies detected for this date.")
+        if not sat_df.empty:
+            sat_df['TotalProd'] = sat_df['stats'].apply(lambda s: s['R'] + s['HR']*2 + s['RBI'] + s['SB'] + (1 if s['H'] > 0 else 0))
+            bench_hero = sat_df.sort_values(by=['TotalProd', 'Proj'], ascending=False).iloc[0]
+            
+            if bench_hero['TotalProd'] > 1: # Only report if they actually did something significant
+                print(f"\nThe Bench Hero: We left **{bench_hero['Player']}** on the bench ({bench_hero['Actual']}), which hurt. Note: {bench_hero['Note']}")
+            else:
+                print("\nOpportunity Cost: The bench remained quiet today, confirming our start/sit decisions were sound.")
 
 if __name__ == "__main__":
     import argparse
 
+    today = datetime.now().strftime("%Y-%m-%d")
     parser = argparse.ArgumentParser(description="Backtest the Ottoneu Lineup Optimizer for a specific date.")
-    parser.add_argument("date", nargs="?", default="2024-06-15", help="The date to backtest in YYYY-MM-DD format (default: 2024-06-15)")
+    parser.add_argument("date", nargs="?", default=today, help=f"The date to backtest in YYYY-MM-DD format (default: {today})")
     
     args = parser.parse_args()
     

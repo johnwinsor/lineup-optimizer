@@ -157,7 +157,26 @@ class DailyEngine:
                                 multiplier *= 0.95
                                 breakdown.append(f"BvP Weak ({bvp['pa']} PA): -5%")
 
-                    # 4. Batter StatCast (Blended)
+                    # 4. Batting Order Context (New Volume/Opportunity Factor)
+                    order_str = matchup.get('batting_order', '-')
+                    if order_str and order_str != '-' and len(order_str) >= 1:
+                        order_val = int(order_str[0])
+                        order_multiplier = 1.0
+                        if order_val == 1: order_multiplier = 1.15
+                        elif order_val == 2: order_multiplier = 1.12
+                        elif order_val == 3 or order_val == 4: order_multiplier = 1.10
+                        elif order_val == 5: order_multiplier = 1.05
+                        elif order_val == 6: order_multiplier = 1.00
+                        elif order_val == 7: order_multiplier = 0.95
+                        elif order_val == 8: order_multiplier = 0.90
+                        elif order_val == 9: order_multiplier = 0.85
+                        
+                        multiplier *= order_multiplier
+                        diff = int((order_multiplier - 1.0) * 100)
+                        if diff != 0:
+                            breakdown.append(f"Order #{order_val}: {diff:+}%")
+
+                    # 5. Batter StatCast (Blended)
                     sc_hitter = self.harvester.get_hitter_statcast_data(mlb_id, weight_current=weight_current)
                     is_superstar = False
                     if sc_hitter is not None:

@@ -74,6 +74,36 @@ The system moves beyond season averages to target high-upside daily matchups:
 - **StatCast Peripherals**: Real-time boosts for elite **xwOBA** and **Barrel%** trends.
 - **Recency Bias**: Time-weighted stabilization logic that progressively shifts focus from prior-season baselines to current-season performance.
 
+## 📈 The Zebras Efficiency Score (Proj)
+
+The core metric used by the optimizer is the **Zebras Efficiency Score** (labeled as **"Proj"** in tables). This value represents the **projected 5x5 production value per 100 Plate Appearances**. 
+
+In an Ottoneu 162-game cap environment, this score tells us: *"How much total Roto value will this player generate for every trip to the plate today?"*
+
+### 1. The Baseline Formula
+The foundation of the score uses season-long Steamer projections:
+> **Baseline Score** = `[(R + HR + RBI + SB) / PA * 100] + [AVG * 100]`
+
+### 2. The Daily Multipliers
+The **Daily Engine** then applies dynamic multipliers to the baseline based on the day's specific context:
+- **Order Factor (New!):** Rewards high-volume slots (**+15% for Leadoff**) and penalizes the bottom of the order (**-15% for 9th**).
+- **Park Factor:** 0.90x to 1.20x (e.g., Coors Field vs. Petco Park).
+- **Pitcher Skill:** 0.70x to 1.30x (Based on the opposing SP's xERA/SIERA).
+- **Platoon Advantage:** +10% for opposite hand, -15% for L/L matchups.
+- **BvP (Batter vs. Pitcher):** +15% for "Elite" history, -15% for "Poor."
+- **StatCast Boosts:** +10% for elite **xwOBA (> .400)** and **+5% for Barrel% (> 15.0%)**.
+- **Superstar Shield:** Elite hitters (xwOBA > .400) have a **protected floor of 85% of their baseline score**, preventing them from being benched due to extreme matchups.
+- **Weather:** +5-10% for wind blowing out, warnings for rain.
+
+### 3. Understanding the Tiers
+| Score Range | Tier | Rationale |
+| :--- | :--- | :--- |
+| **90.0+** | **Elite / Superstar** | A top-tier hitter facing a weak pitcher in a hitter's park. |
+| **60.0 - 85.0** | **Strong Play** | An everyday starter with a clear advantage (Platoon or high Order). |
+| **45.0 - 55.0** | **Average / Baseline** | League-average performance; a safe starting option. |
+| **40.0** | **Zebras Floor** | **Hard Cutoff**. Below this, we bench the player to save game caps. |
+| **< 35.0** | **Avoid** | Significant disadvantage (e.g., backup player batting 9th against an ace). |
+
 ## 🛠 Project Structure
 
 - `main.py`: Entry point for today's optimization.

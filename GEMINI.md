@@ -35,9 +35,12 @@ The final `ProjScore` for a player on a given day is:
 | **BvP Elite** | Career OPS > 1.000 vs SP (min 5 PA) | **+15%** |
 | **BvP Good** | Career OPS > .850 vs SP (min 5 PA) | **+5%** |
 | **BvP Poor** | Career OPS < .500 vs SP (min 5 PA) | **-15%** |
-| **xwOBA Elite** | Season xwOBA > .420 | **+10%** |
-| **xwOBA Good** | Season xwOBA > .380 | **+5%** |
+| **xwOBA Elite** | Season xwOBA > .400 | **+10%** |
+| **xwOBA Good** | Season xwOBA > .370 | **+5%** |
 | **Barrel%** | Season Barrel% > 15% | **+5%** |
+
+### Superstar Shield:
+Elite players (xwOBA > .400) are protected from aggressive matchup-based penalties. Their `DailyScore` is prevented from dropping below **85% of their baseline score**, regardless of the opposing pitcher or park factor.
 
 ### 3. Recency Bias & Stabilization
 The algorithm automatically transitions from prior-season baselines to current-season performance as sample sizes stabilize:

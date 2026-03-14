@@ -49,6 +49,8 @@ class GameDayHarvester:
         for game in games:
             game_id = game['game_id']
             venue = game.get('venue_name', 'Unknown')
+            status = game.get('status', 'Unknown') # e.g. "Final", "Live", "Preview"
+            
             try:
                 box = statsapi.boxscore_data(game_id)
             except Exception:
@@ -74,7 +76,8 @@ class GameDayHarvester:
                             'opposing_sp_id': home_sp['personId'] if home_sp else None,
                             'venue_name': venue,
                             'home_team_abb': home_abb,
-                            'is_home': False
+                            'is_home': False,
+                            'game_status': status
                         }
                         
             if box.get('homeBatters'):
@@ -87,7 +90,8 @@ class GameDayHarvester:
                             'opposing_sp_id': away_sp['personId'] if away_sp else None,
                             'venue_name': venue,
                             'home_team_abb': home_abb,
-                            'is_home': True
+                            'is_home': True,
+                            'game_status': status
                         }
                         
         return matchups
