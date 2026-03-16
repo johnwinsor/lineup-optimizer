@@ -1,11 +1,11 @@
 import pandas as pd
 from optimizer import OttoneuOptimizer
 from datetime import datetime
-from tabulate import tabulate
 import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
+from display_utils import print_header, display_dataframe, print_narrative, print_section, print_info
 
 # Load environment variables from .env file
 load_dotenv()
@@ -43,12 +43,11 @@ Keep the tone professional, analytical, and focused on maximizing 5x5 Roto effic
         return f"⚠️ Failed to generate AI narrative: {e}"
 
 def main():
-    print("Zurich Zebras (Ottoneu Team 7582) Lineup Optimizer")
-    print("==================================================")
-    
     today = datetime.now().strftime("%Y-%m-%d")
     year = datetime.now().year
     optimizer = OttoneuOptimizer()
+    
+    print_header("Zurich Zebras (Ottoneu Team 7582) Lineup Optimizer", today)
     
     # 1. Gather Data for both tables
     print("Analyzing Roster and Matchups...")
@@ -72,15 +71,13 @@ def main():
         lineup['Order'] = order_list
 
         # === TABLE 1: RECOMMENDED LINEUP ===
-        print(f"\n=== RECOMMENDED DAILY LINEUP ({today}) ===")
         cols = ['Slot', 'Player', 'Order', 'Opponent', 'Score', 'Breakdown', 'Warning']
         cols = [c for c in cols if c in lineup.columns]
-        print(tabulate(lineup[cols], headers='keys', tablefmt='grid', showindex=False, floatfmt=".2f"))
+        display_dataframe(lineup, title="RECOMMENDED DAILY LINEUP", columns=cols)
         
         print(f"\nProjected Daily Efficiency Score: {lineup['Score'].sum():.2f}")
         
         # === TABLE 2: PLAYERS SAT ===
-        print("\n=== PLAYERS SAT ===")
         started_names = set(lineup['Player'].tolist())
         sat_data = []
         harvester = optimizer.daily_engine.harvester
@@ -124,17 +121,14 @@ def main():
 
         df_sat = pd.DataFrame(sat_data)
         if not df_sat.empty:
-            print(tabulate(df_sat[['Player', 'POS', 'Order', 'Proj', 'Note']], 
-                           headers=['Player', 'POS', 'Order', 'Proj', 'Note'], 
-                           tablefmt='grid', showindex=False, floatfmt=".2f"))
+            display_dataframe(df_sat, title="PLAYERS SAT", columns=['Player', 'POS', 'Order', 'Proj', 'Note'])
 
         # Narrative Generation
-        print("\n=== ZEBRAS ANALYST NARRATIVE ===")
         ai_narrative = generate_ai_narrative(lineup, today)
-        print(ai_narrative)
+        print_narrative(ai_narrative)
         
-        print("\nAlgorithm: Maximize projected 5x5 efficiency (Counting Stats/PA + AVG) subject to positional caps.")
-        print("Factors: xERA Difficulty, Platoon Splits, Elite BvP, StatCast Peripherals, Weather.")
+        print_info("\n[dim]Algorithm: Maximize projected 5x5 efficiency subject to positional caps.[/dim]")
+        print_info("[dim]Factors: xERA Difficulty, Platoon Splits, Elite BvP, StatCast Peripherals, Weather.[/dim]")
     else:
         print(f"\nNo valid starters found for {today}. This may be an off-day or lineups are not yet posted.")
 
