@@ -2,8 +2,8 @@ import random
 from datetime import datetime, timedelta
 from backtester import Backtester
 import pandas as pd
-from tabulate import tabulate
 import sys
+from display_utils import print_header, display_dataframe, print_section
 
 class BatchBacktester:
     def __init__(self):
@@ -22,6 +22,7 @@ class BatchBacktester:
         dates = self.get_random_dates(count)
         results = []
         
+        print_header("Zebras Batch Backtester", "2025 Simulation")
         print(f"🚀 Starting Batch Backtest of {count} random dates from 2025...")
         
         for i, date in enumerate(dates):
@@ -69,25 +70,20 @@ class BatchBacktester:
             except Exception:
                 continue
 
-        print("\n\n=== BATCH BACKTEST SUMMARY (2025) ===")
+        print("\n")
         df = pd.DataFrame(results)
         
-        summary = {
-            'Metric': ['Runs', 'Home Runs', 'RBIs', 'Stolen Bases', 'Batting Avg'],
-            'Started Total': [df['S_R'].sum(), df['S_HR'].sum(), df['S_RBI'].sum(), df['S_SB'].sum(), df['S_AVG'].mean()],
-            'Benched Total': [df['B_R'].sum(), df['B_HR'].sum(), df['B_RBI'].sum(), df['B_SB'].sum(), df['B_AVG'].mean()],
-            'Success Rate': [
-                f"{(df['S_R'].sum() / (df['S_R'].sum() + df['B_R'].sum()) * 100):.1f}%",
-                f"{(df['S_HR'].sum() / (df['S_HR'].sum() + df['B_HR'].sum()) * 100):.1f}%",
-                f"{(df['S_RBI'].sum() / (df['S_RBI'].sum() + df['B_RBI'].sum()) * 100):.1f}%",
-                f"{(df['S_SB'].sum() / (df['S_SB'].sum() + df['B_SB'].sum()) * 100):.1f}%",
-                "N/A"
-            ]
-        }
+        summary_data = [
+            {'Metric': 'Runs', 'Started': df['S_R'].sum(), 'Benched': df['B_R'].sum(), 'Success Rate': f"{(df['S_R'].sum() / (df['S_R'].sum() + df['B_R'].sum()) * 100):.1f}%"},
+            {'Metric': 'Home Runs', 'Started': df['S_HR'].sum(), 'Benched': df['B_HR'].sum(), 'Success Rate': f"{(df['S_HR'].sum() / (df['S_HR'].sum() + df['B_HR'].sum()) * 100):.1f}%"},
+            {'Metric': 'RBIs', 'Started': df['S_RBI'].sum(), 'Benched': df['B_RBI'].sum(), 'Success Rate': f"{(df['S_RBI'].sum() / (df['S_RBI'].sum() + df['B_RBI'].sum()) * 100):.1f}%"},
+            {'Metric': 'Stolen Bases', 'Started': df['S_SB'].sum(), 'Benched': df['B_SB'].sum(), 'Success Rate': f"{(df['S_SB'].sum() / (df['S_SB'].sum() + df['B_SB'].sum()) * 100):.1f}%"},
+            {'Metric': 'Batting Avg', 'Started': f"{df['S_AVG'].mean():.3f}", 'Benched': f"{df['B_AVG'].mean():.3f}", 'Success Rate': 'N/A'}
+        ]
         
-        print(tabulate(summary, headers='keys', tablefmt='grid'))
-        print(f"\nAverage Slots Filled: {df['Slots_Filled'].mean():.1f} / 13")
-        print(f"Total Games Analyzed: {len(df)}")
+        display_dataframe(pd.DataFrame(summary_data), title="BATCH BACKTEST SUMMARY (2025)")
+        print(f"\n[bold white]Average Slots Filled:[/bold white] [bold cyan]{df['Slots_Filled'].mean():.1f} / 13[/bold cyan]")
+        print(f"[bold white]Total Games Analyzed:[/bold white] [bold cyan]{len(df)}[/bold cyan]")
 
 if __name__ == "__main__":
     random.seed(42) # For reproducibility

@@ -1,10 +1,11 @@
 import json
 import pandas as pd
+import os
+import re
+from datetime import datetime
 from statcast_harvester import StatCastHarvester
 from daily_engine import DailyEngine
-from tabulate import tabulate
-from datetime import datetime
-import re
+from display_utils import print_header, display_dataframe, print_section
 
 class ZebrasScout:
     def __init__(self):
@@ -17,8 +18,10 @@ class ZebrasScout:
         return match.group(1) if match else html_name
 
     def find_best_free_agents(self, top_n=20, min_pa=50):
+        print_header("Zebras Free Agent Scout", f"Min PA: {min_pa}")
+        
         if not os.path.exists('free_agents.json'):
-            print("Error: free_agents.json not found. Run scout_harvester.py first.")
+            print("[red]Error: free_agents.json not found. Run scout_harvester.py first.[/red]")
             return
             
         with open('free_agents.json', 'r') as f:
@@ -69,19 +72,18 @@ class ZebrasScout:
             
             final_scores.append(row['BaseScore'] * multiplier)
             
-        df['ZebrasScore'] = final_scores
+        df['Score'] = final_scores
+        df['Player'] = df['CleanName']
+        df['POS'] = df['position']
         
         # 4. Filter and Rank
         # Sort by efficiency
-        top_fa = df.sort_values(by='ZebrasScore', ascending=False).head(top_n)
+        top_fa = df.sort_values(by='Score', ascending=False).head(top_n)
         
-        print(f"\n=== TOP {top_n} FREE AGENT HITTERS (League 1077) ===")
-        print(tabulate(top_fa[['CleanName', 'position', 'PA', 'ZebrasScore']], 
-                       headers=['Player', 'POS', 'PA', 'Efficiency'], 
-                       tablefmt='grid', showindex=False, floatfmt=".2f"))
+        display_dataframe(top_fa, title=f"TOP {top_n} FREE AGENT HITTERS (League 1077)", 
+                          columns=['Player', 'POS', 'PA', 'Score'])
 
 if __name__ == "__main__":
-    import os
     import argparse
     
     parser = argparse.ArgumentParser(description="Scout the best available free agents in League 1077.")

@@ -1,8 +1,8 @@
 from optimizer import OttoneuOptimizer
 from gameday_harvester import GameDayHarvester
 import pandas as pd
-from tabulate import tabulate
 from datetime import datetime
+from display_utils import print_header, display_dataframe, print_narrative, print_totals
 
 class Backtester:
     def __init__(self, league_id=1077, team_id=7582):
@@ -10,13 +10,11 @@ class Backtester:
         self.harvester = self.optimizer.daily_engine.harvester
 
     def run_backtest(self, target_date: str):
-        print(f"--- Running Backtest for {target_date} ---")
+        print_header("Zurich Zebras Backtester", target_date)
         
         # 1. Get All Players and their Daily Status
         print("1. Analyzing Roster and Matchups...")
-        # Get all hitters with daily data
         all_hitters = self.optimizer.daily_engine.get_daily_projections(target_date)
-        # We also need the ones that were NOT starting to explain why they sat
         full_roster = self.optimizer.enricher.enrich_roster()
         matchups = self.harvester.get_daily_matchups(target_date)
         
@@ -95,6 +93,7 @@ class Backtester:
             proj_score = 0.0
             min_floor = self.optimizer.min_score
             order = "-"
+            matchup = {}
             if not mlb_id or mlb_id not in matchups:
                 note = "Team Off-day or No Game Scheduled."
             else:
@@ -136,31 +135,27 @@ class Backtester:
             total_sat_h += p_stats['H']
 
         # Print Tables
-        print("\n=== LINEUP STARTED ===")
         df_started = pd.DataFrame(started_data)
-        if not df_started.empty:
-            print(tabulate(df_started[['Slot', 'Player', 'Order', 'Opponent', 'Proj', 'Actual', 'Status', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Breakdown']], 
-                           headers='keys', tablefmt='grid', showindex=False))
-        else:
-            print("No players started.")
+        display_dataframe(df_started, title="LINEUP STARTED", 
+                          columns=['Slot', 'Player', 'Order', 'Opponent', 'Proj', 'Actual', 'Status', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Breakdown'])
 
-        print("\n=== PLAYERS SAT ===")
         df_sat = pd.DataFrame(sat_data)
-        if not df_sat.empty:
-            print(tabulate(df_sat[['Player', 'POS', 'Order', 'Proj', 'Actual', 'Status', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Note']], 
-                           headers='keys', tablefmt='grid', showindex=False))
+        display_dataframe(df_sat, title="PLAYERS SAT", 
+                          columns=['Player', 'POS', 'Order', 'Proj', 'Actual', 'Status', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Note'])
 
         # Totals
         avg = (total_h / total_ab) if total_ab > 0 else 0.0
-        print("\n--- Daily Lineup Total Production ---")
-        print(f"Runs: {total_r} | HR: {total_hr} | RBI: {total_rbi} | SB: {total_sb} | AVG: {avg:.3f} ({total_h}/{total_ab})")
+        print_totals("Daily Lineup Total Production", {
+            "Runs": total_r, "HR": total_hr, "RBI": total_rbi, "SB": total_sb, "AVG": f"{avg:.3f} ({total_h}/{total_ab})"
+        })
         
         sat_avg = (total_sat_h / total_sat_ab) if total_sat_ab > 0 else 0.0
-        print(f"\n--- Total Production from Benched Players (Opportunity Cost) ---")
-        print(f"Runs: {total_sat_r} | HR: {total_sat_hr} | RBI: {total_sat_rbi} | SB: {total_sat_sb} | AVG: {sat_avg:.3f} ({total_sat_h}/{total_sat_ab})")
+        print_totals("Total Production from Benched Players", {
+            "Runs": total_sat_r, "HR": total_sat_hr, "RBI": total_sat_rbi, "SB": total_sat_sb, "AVG": f"{sat_avg:.3f} ({total_sat_h}/{total_sat_ab})"
+        })
 
         # Post-Game Narrative
-        print("\n=== POST-GAME ANALYSIS NARRATIVE ===")
+        narrative_parts = []
         
         lineup_df = pd.DataFrame(started_data)
         if not lineup_df.empty:
@@ -171,7 +166,7 @@ class Backtester:
             # 1. Prediction Win
             best_prod = lineup_df.sort_values(by=['TotalProd', 'Proj'], ascending=False).iloc[0]
             if best_prod['TotalProd'] > 0:
-                print(f"The Prediction Win: **{best_prod['Player']}** lived up to his {best_prod['Proj']:.2f} projection, providing {best_prod['Actual']} against {best_prod['Opponent']}.")
+                narrative_parts.append(f"The Prediction Win: **{best_prod['Player']}** lived up to his {best_prod['Proj']:.2f} projection, providing {best_prod['Actual']} against {best_prod['Opponent']}.")
             
             # 2. The Flop
             potential_flops = lineup_df.sort_values(by=['Proj'], ascending=False)
@@ -183,9 +178,9 @@ class Backtester:
                     break
             
             if flop is not None:
-                print(f"\nThe Flop: Despite a strong {flop['Proj']:.2f} projection, **{flop['Player']}** struggled to find the box score today, going {flop['Actual'].split(',')[0]}.")
+                narrative_parts.append(f"The Flop: Despite a strong {flop['Proj']:.2f} projection, **{flop['Player']}** struggled to find the box score today, going {flop['Actual'].split(',')[0]}.")
             else:
-                print("\nEfficiency Note: No high-projection starters completely vanished today; the lineup provided consistent floor value.")
+                narrative_parts.append(f"Efficiency Note: No high-projection starters completely vanished today; the lineup provided consistent floor value.")
 
         # 3. Bench Hero
         sat_df = pd.DataFrame(sat_data)
@@ -194,9 +189,12 @@ class Backtester:
             bench_hero = sat_df.sort_values(by=['TotalProd', 'Proj'], ascending=False).iloc[0]
             
             if bench_hero['TotalProd'] > 1: # Only report if they actually did something significant
-                print(f"\nThe Bench Hero: We left **{bench_hero['Player']}** on the bench ({bench_hero['Actual']}), which hurt. Note: {bench_hero['Note']}")
+                narrative_parts.append(f"The Bench Hero: We left **{bench_hero['Player']}** on the bench ({bench_hero['Actual']}), which hurt. Note: {bench_hero['Note']}")
             else:
-                print("\nOpportunity Cost: The bench remained quiet today, confirming our start/sit decisions were sound.")
+                narrative_parts.append(f"Opportunity Cost: The bench remained quiet today, confirming our start/sit decisions were sound.")
+
+        if narrative_parts:
+            print_narrative("\n\n".join(narrative_parts))
 
 if __name__ == "__main__":
     import argparse
