@@ -8,12 +8,13 @@ class OttoneuEnricher:
         self.scraper = OttoneuScraper(league_id, team_id)
 
     def fetch_steamer_projections(self):
-        print("Fetching Steamer batting projections...")
-        url = "https://www.fangraphs.com/api/projections?stats=bat&type=steamer"
-        response = requests.get(url)
-        if response.status_code != 200:
-            raise Exception("Failed to fetch Steamer projections")
-        return pd.DataFrame(response.json())
+        print("Loading Steamer batting projections from local cache...")
+        try:
+            with open("steamer-hitters.json", "r") as f:
+                data = json.load(f)
+            return pd.DataFrame(data)
+        except FileNotFoundError:
+            raise Exception("Failed to load Steamer projections. Please run 'uv run python fetch_statcast.py' first.")
 
     def enrich_roster(self):
         hitters, pitchers = self.scraper.get_roster()

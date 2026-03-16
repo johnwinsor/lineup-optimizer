@@ -2,6 +2,45 @@ import pandas as pd
 from optimizer import OttoneuOptimizer
 from datetime import datetime
 from tabulate import tabulate
+import os
+from google import genai
+from google.genai import types
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+def generate_ai_narrative(lineup_df, date_str):
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        return "⚠️ GEMINI_API_KEY environment variable not set. Please set it to enable AI-generated narratives."
+    
+    try:
+        print("\nGenerating AI Narrative...")
+        client = genai.Client(api_key=api_key)
+        
+        # Convert lineup data to a readable format for the LLM
+        lineup_text = lineup_df[['Player', 'Opponent', 'Score', 'Breakdown', 'Warning']].to_string(index=False)
+        
+        prompt = f"""
+You are the lead fantasy baseball analyst for the Zurich Zebras (Ottoneu Team 7582).
+Today is {date_str}. Review the team's optimized starting lineup below.
+
+LINEUP DATA:
+{lineup_text}
+
+Write a concise, 2-paragraph pre-game narrative for the team. 
+- Paragraph 1: Highlight the top plays of the day (high scores, great matchups/platoon advantages).
+- Paragraph 2: Mention any borderline plays, weather warnings, or interesting 'Historical Edge' (BvP) matchups.
+Keep the tone professional, analytical, and focused on maximizing 5x5 Roto efficiency. Do not use filler introductions like 'Here is the narrative'.
+"""
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt,
+        )
+        return response.text
+    except Exception as e:
+        return f"⚠️ Failed to generate AI narrative: {e}"
 
 def main():
     print("Zurich Zebras (Ottoneu Team 7582) Lineup Optimizer")
@@ -91,26 +130,8 @@ def main():
 
         # Narrative Generation
         print("\n=== ZEBRAS ANALYST NARRATIVE ===")
-        top_player = lineup.sort_values(by='Score', ascending=False).iloc[0]
-        sp_target = lineup[lineup['Breakdown'].str.contains(r'SP Skill: \+', na=False)]
-        
-        narrative = f"Today's lineup is anchored by **{top_player['Player']}** facing {top_player['Opponent']}."
-        if "Platoon" in top_player['Breakdown']:
-            narrative += " He has a major platoon advantage that we expect him to exploit."
-            
-        if not sp_target.empty:
-            best_matchup = sp_target.sort_values(by='Score', ascending=False).iloc[0]
-            narrative += f"\n\nHigh-Upside Matchup: **{best_matchup['Player']}** is facing a particularly vulnerable arm today ({best_matchup['Opponent']}). This is a 'sure bet' for counting stat production."
-        
-        warnings = lineup[lineup['Warning'] != ""]
-        if not warnings.empty:
-            narrative += f"\n\nBorderline Plays: We are starting **{', '.join(warnings['Player'].tolist())}** despite weather concerns. Keep a close eye on the radar before lock; if the game is postponed, these are your first pivots."
-        
-        if "BvP" in str(lineup['Breakdown'].tolist()):
-            bvp_player = lineup[lineup['Breakdown'].str.contains('BvP', na=False)].iloc[0]
-            narrative += f"\n\nHistorical Edge: **{bvp_player['Player']}** has shown he sees {bvp_player['Opponent'].split('(')[0].strip()} extremely well in the past. We're leaning on that historical comfort today."
-
-        print(narrative)
+        ai_narrative = generate_ai_narrative(lineup, today)
+        print(ai_narrative)
         
         print("\nAlgorithm: Maximize projected 5x5 efficiency (Counting Stats/PA + AVG) subject to positional caps.")
         print("Factors: xERA Difficulty, Platoon Splits, Elite BvP, StatCast Peripherals, Weather.")

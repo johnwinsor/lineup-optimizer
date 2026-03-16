@@ -12,7 +12,8 @@ uv sync
 ```
 
 ### 2. Prepare Data
-Ensure you have the latest StatCast datasets for the current season.
+Ensure you have the latest StatCast datasets and Steamer projections cached locally.
+**Note:** You must run this script once a day before running the main optimizer or free agent tools, as they now rely on this cached data to run much faster! It will also output a summary of any significant shifts in player projections.
 ```bash
 uv run python fetch_statcast.py
 ```

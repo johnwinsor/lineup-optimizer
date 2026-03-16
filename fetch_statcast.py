@@ -26,11 +26,55 @@ def fetch_and_save(url, filename, description):
         data = json.loads(result.stdout)
         with open(filename, 'w') as f:
             json.dump(data, f)
-        print(f"Successfully saved {len(data.get('data', []))} records to {filename}")
+            
+        record_count = len(data) if isinstance(data, list) else len(data.get('data', []))
+        print(f"Successfully saved {record_count} records to {filename}")
         return data
     except Exception as e:
         print(f"Error fetching {filename}: {e}", file=sys.stderr)
         return None
+
+def compare_steamer_projections(old_data, new_data):
+    if not old_data or not new_data:
+        return
+        
+    old_list = old_data if isinstance(old_data, list) else old_data.get('data', [])
+    new_list = new_data if isinstance(new_data, list) else new_data.get('data', [])
+    
+    old_map = {str(p.get('playerid')): p for p in old_list if 'playerid' in p}
+    
+    print("\n--- Steamer Projections Changes Summary ---")
+    significant_changes = []
+    
+    for p in new_list:
+        pid = str(p.get('playerid'))
+        if pid not in old_map:
+            continue
+            
+        old_p = old_map[pid]
+        name = p.get('PlayerName', 'Unknown')
+        
+        # Check for significant changes
+        pa_diff = p.get('PA', 0) - old_p.get('PA', 0)
+        hr_diff = p.get('HR', 0) - old_p.get('HR', 0)
+        woba_diff = p.get('wOBA', 0) - old_p.get('wOBA', 0)
+        
+        if abs(pa_diff) > 15 or abs(hr_diff) >= 2 or abs(woba_diff) >= 0.010:
+            significant_changes.append(
+                f"{name}: PA {old_p.get('PA', 0):.0f}->{p.get('PA', 0):.0f} ({pa_diff:+.0f}), "
+                f"HR {old_p.get('HR', 0):.1f}->{p.get('HR', 0):.1f} ({hr_diff:+.1f}), "
+                f"wOBA {old_p.get('wOBA', 0):.3f}->{p.get('wOBA', 0):.3f} ({woba_diff:+.3f})"
+            )
+            
+    if significant_changes:
+        print(f"Found {len(significant_changes)} significant projection updates:")
+        for change in significant_changes[:20]: # show up to 20
+            print(f"  - {change}")
+        if len(significant_changes) > 20:
+            print(f"  ... and {len(significant_changes) - 20} more.")
+    else:
+        print("No significant changes in player projections today.")
+    print("-------------------------------------------\n")
 
 def main():
     # 1. Prior Year Data (Baseline)
@@ -40,6 +84,22 @@ def main():
     # 2. Current Year Data (Recency)
     fetch_and_save(get_url('bat', CURRENT_SEASON), f"statcast-hitters-{CURRENT_SEASON}.json", f"{CURRENT_SEASON} MLB Hitters")
     fetch_and_save(get_url('pit', CURRENT_SEASON), f"statcast-pitchers-{CURRENT_SEASON}.json", f"{CURRENT_SEASON} MLB Pitchers")
+
+    # 3. Steamer Projections
+    steamer_file = "steamer-hitters.json"
+    old_steamer_data = None
+    if os.path.exists(steamer_file):
+        try:
+            with open(steamer_file, 'r') as f:
+                old_steamer_data = json.load(f)
+        except Exception:
+            pass
+
+    steamer_url = "https://www.fangraphs.com/api/projections?stats=bat&type=steamer"
+    new_steamer_data = fetch_and_save(steamer_url, steamer_file, "Steamer Hitters Projections")
+
+    if old_steamer_data and new_steamer_data:
+        compare_steamer_projections(old_steamer_data, new_steamer_data)
 
 if __name__ == "__main__":
     main()

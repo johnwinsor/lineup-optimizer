@@ -94,6 +94,8 @@ class DailyEngine:
                     base_score = row['Score']
                     multiplier = 1.0
                     
+                    breakdown.append(f"Base: {base_score:.2f}")
+                    
                     if weight_current > 0:
                         breakdown.append(f"Recency: {int(weight_current*100)}%")
                     
