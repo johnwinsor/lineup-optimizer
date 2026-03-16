@@ -74,12 +74,19 @@ class DailyEngine:
         opponents = []
         warnings = []
         
+        teams_playing = matchups.get('_teams_playing', {})
+        
         for _, row in hitters.iterrows():
             player_name = row['Name']
-            # Try to get ID from row first (scout data has it)
+            team_abb = row.get('Team')
+            # 1. Use xMLBAMID if available from projections (MOST RELIABLE)
             mlb_id = row.get('xMLBAMID') 
+            
+            # 2. Fallback to name-based lookup if ID is missing (new players/scouted)
             if pd.isna(mlb_id) or not mlb_id:
                 mlb_id = self.harvester.get_mlb_id(player_name, target_year=year)
+            else:
+                mlb_id = int(mlb_id)
             
             daily_score = 0.0
             starting = False
@@ -87,12 +94,33 @@ class DailyEngine:
             opponent = "N/A"
             warning = ""
             
+            matchup = None
             if mlb_id and mlb_id in matchups:
                 matchup = matchups[mlb_id]
-                if matchup['is_starting']:
+            elif team_abb in teams_playing:
+                # Team is playing, but player not in boxscore yet (Lineup Pending)
+                team_data = teams_playing[team_abb]
+                if not team_data['has_lineup']:
+                    matchup = {
+                        'is_starting': True,
+                        'batting_order': '500', # Default to middle of order
+                        'is_pending': True,
+                        'opposing_sp_name': team_data['opposing_sp_name'],
+                        'opposing_sp_id': team_data['opposing_sp_id'],
+                        'venue_name': team_data['venue_name'],
+                        'home_team_abb': team_data['home_team_abb'],
+                        'is_home': team_data['is_home'],
+                        'game_status': team_data['game_status']
+                    }
+
+            if matchup:
+                if matchup.get('is_starting') or matchup.get('is_pending'):
                     starting = True
                     base_score = row['Score']
                     multiplier = 1.0
+                    
+                    if matchup.get('is_pending'):
+                        breakdown.append("Lineup Pending (Assumed #5)")
                     
                     breakdown.append(f"Base: {base_score:.2f}")
                     
@@ -159,7 +187,7 @@ class DailyEngine:
                                 multiplier *= 0.95
                                 breakdown.append(f"BvP Weak ({bvp['pa']} PA): -5%")
 
-                    # 4. Batting Order Context (New Volume/Opportunity Factor)
+                    # 4. Batting Order Context
                     order_str = matchup.get('batting_order', '-')
                     if order_str and order_str != '-' and len(order_str) >= 1:
                         order_val = int(order_str[0])

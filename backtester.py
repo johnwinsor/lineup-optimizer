@@ -31,12 +31,24 @@ class Backtester:
         # Build Started Table
         started_data = []
         total_r = total_hr = total_rbi = total_sb = total_h = total_ab = 0
+        teams_playing = matchups.get('_teams_playing', {})
         
         if lineup is not None and not lineup.empty:
             for _, row in lineup.iterrows():
                 player_name = row['Player']
                 mlb_id = self.harvester.get_mlb_id(player_name, target_year=year)
                 matchup = matchups.get(mlb_id, {})
+                
+                # Handle pending lineup case
+                is_pending = False
+                if not matchup and player_name in all_hitters['Name'].values:
+                    proj_row = all_hitters[all_hitters['Name'] == name if 'name' in locals() else all_hitters['Name'] == player_name]
+                    if not proj_row.empty and 'Lineup Pending' in proj_row['Breakdown'].values[0]:
+                        is_pending = True
+                        # Need to reconstruct basic matchup info from _teams_playing
+                        team_abb = full_roster[full_roster['Name'] == player_name]['Team'].values[0]
+                        matchup = teams_playing.get(team_abb, {})
+
                 sp_id = matchup.get('opposing_sp_id')
                 sp_data = self.harvester.get_pitcher_data(sp_id, year=year) if sp_id else {'hand': '?', 'era': 0, 'xera': 0}
                 
@@ -47,7 +59,7 @@ class Backtester:
                 ev = ev_stats.get(mlb_id, {'avg_ev': 0, 'max_ev': 0})
                 
                 order = matchup.get('batting_order', '-')
-                clean_order = order[0] if order and order != '-' and len(order) >= 1 else '-'
+                clean_order = 'TBA' if is_pending else (order[0] if order and order != '-' and len(order) >= 1 else '-')
 
                 started_data.append({
                     'Slot': row['Slot'],
@@ -82,6 +94,7 @@ class Backtester:
                 continue
                 
             mlb_id = self.harvester.get_mlb_id(name, target_year=year)
+            team_abb = row.get('Team')
             
             p_stats = {'R': 0, 'HR': 0, 'RBI': 0, 'SB': 0, 'AB': 0, 'H': 0, 'SO': 0, 'CS': 0}
             if mlb_id and mlb_id in actuals:
@@ -94,19 +107,27 @@ class Backtester:
             min_floor = self.optimizer.min_score
             order = "-"
             matchup = {}
-            if not mlb_id or mlb_id not in matchups:
+            if not mlb_id or (mlb_id not in matchups and team_abb not in teams_playing):
                 note = "Team Off-day or No Game Scheduled."
             else:
-                matchup = matchups[mlb_id]
+                matchup = matchups.get(mlb_id, {})
+                team_data = teams_playing.get(team_abb, {})
+                
                 o_str = matchup.get('batting_order', '-')
                 order = o_str[0] if o_str and o_str != '-' and len(o_str) >= 1 else '-'
 
-                if not matchup['is_starting']:
+                if not matchup and team_data and not team_data.get('has_lineup'):
+                    note = "Lineup Pending (Assumed Bench)."
+                    order = 'TBA'
+                    status = team_data.get('game_status', '-')
+                elif not matchup.get('is_starting', False):
                     note = "Not in MLB Starting Lineup (Benched/IL/Rest)."
+                    status = matchup.get('game_status', '-')
                 else:
                     # They were starting in MLB but not picked by our optimizer
                     proj_row = all_hitters[all_hitters['Name'] == name]
                     proj_score = proj_row['DailyScore'].values[0] if not proj_row.empty else 0
+                    status = matchup.get('game_status', '-')
                     
                     if proj_score < min_floor:
                         note = f"Benched - Below Zebras Floor ({min_floor})."
@@ -116,7 +137,7 @@ class Backtester:
             sat_data.append({
                 'Player': name,
                 'POS': row['POS'],
-                'Status': matchup.get('game_status', '-') if mlb_id and mlb_id in matchups else "-",
+                'Status': status if 'status' in locals() else "-",
                 'Order': order,
                 'Proj': float(proj_score),
                 'Actual': f"{p_stats['H']}/{p_stats['AB']}, {p_stats['R']} R, {p_stats['HR']} HR, {p_stats['RBI']} RBI, {p_stats['SB']} SB",

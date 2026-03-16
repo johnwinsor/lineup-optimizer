@@ -64,7 +64,16 @@ def main():
         for _, row in lineup.iterrows():
             name = row['Player']
             mlb_id = optimizer.daily_engine.harvester.get_mlb_id(name, target_year=year)
-            order = matchups.get(mlb_id, {}).get('batting_order', '-')
+            matchup = matchups.get(mlb_id, {})
+            
+            if not matchup and name in all_hitters['Name'].values:
+                # Check if they were a 'Pending' starter
+                proj_row = all_hitters[all_hitters['Name'] == name]
+                if not proj_row.empty and 'Lineup Pending' in proj_row['Breakdown'].values[0]:
+                    order_list.append('TBA')
+                    continue
+
+            order = matchup.get('batting_order', '-')
             # Convert '100' to '1', etc.
             clean_order = order[0] if order and order != '-' and len(order) >= 1 else '-'
             order_list.append(clean_order)
@@ -81,6 +90,7 @@ def main():
         started_names = set(lineup['Player'].tolist())
         sat_data = []
         harvester = optimizer.daily_engine.harvester
+        teams_playing = matchups.get('_teams_playing', {})
         
         for _, row in full_roster.iterrows():
             name = row['Name']
@@ -88,6 +98,7 @@ def main():
                 continue
                 
             mlb_id = harvester.get_mlb_id(name, target_year=year)
+            team_abb = row.get('Team')
             matchup = matchups.get(mlb_id, {})
             order = matchup.get('batting_order', '-')
             clean_order = order[0] if order and order != '-' and len(order) >= 1 else '-'
@@ -96,10 +107,15 @@ def main():
             proj_score = 0.0
             min_floor = optimizer.min_score
             
-            if not mlb_id or mlb_id not in matchups:
+            if not mlb_id or (mlb_id not in matchups and team_abb not in teams_playing):
                 note = "Team Off-day or No Game Scheduled."
             else:
-                if not matchup['is_starting']:
+                # Check if team is playing but lineup isn't out
+                team_data = teams_playing.get(team_abb, {})
+                if not matchup and team_data and not team_data.get('has_lineup'):
+                    note = "Lineup Pending (Assumed Bench)."
+                    clean_order = 'TBA'
+                elif not matchup.get('is_starting', False):
                     note = "Not in MLB Starting Lineup (Benched/IL/Rest)."
                 else:
                     # Starting in MLB but not picked by our optimizer

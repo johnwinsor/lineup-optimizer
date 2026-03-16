@@ -43,25 +43,29 @@ class OttoneuScraper:
                     player_link = col.find('a')
                     if player_link:
                         row_data['Name'] = player_link.text.strip()
-                        # Ottoneu player link is usually /playercard?player_id=XXXX
                         href = player_link.get('href', '')
+                        # Ottoneu player link is usually /playercard?player_id=XXXX or /XXXX/players/ID
                         if 'player_id=' in href:
                             row_data['OttoneuID'] = href.split('player_id=')[-1]
+                        elif '/players/' in href:
+                            row_data['OttoneuID'] = href.split('/')[-1]
                         
-                        # Sometimes there's a FanGraphs link icon
-                        fg_link = col.find('a', href=lambda h: h and 'fangraphs.com' in h)
-                        if fg_link:
-                            fg_href = fg_link.get('href', '')
-                            # FanGraphs link is usually //www.fangraphs.com/statss.aspx?playerid=XXXX or //www.fangraphs.com/players/name/XXXX/stats
-                            if 'playerid=' in fg_href:
-                                row_data['FGID'] = fg_href.split('playerid=')[-1].split('&')[0]
-                            elif '/players/' in fg_href:
-                                parts = fg_href.split('/')
-                                # Find the numeric part
-                                for part in parts:
-                                    if part.isdigit():
-                                        row_data['FGID'] = part
-                                        break
+                        # Look for FanGraphs ID in any link in the cell
+                        all_links = col.find_all('a')
+                        for link in all_links:
+                            l_href = link.get('href', '')
+                            if 'fangraphs.com' in l_href:
+                                if 'playerid=' in l_href:
+                                    row_data['FGID'] = l_href.split('playerid=')[-1].split('&')[0]
+                                elif '/players/' in l_href:
+                                    parts = l_href.split('/')
+                                    for part in parts:
+                                        if part.isdigit():
+                                            row_data['FGID'] = part
+                                            break
+                            # Some Ottoneu pages have a stats link that contains the FGID
+                            elif 'statss.aspx?playerid=' in l_href:
+                                row_data['FGID'] = l_href.split('playerid=')[-1].split('&')[0]
 
                         # Extract team from text (e.g. "Trea Turner PHI")
                         full_text = col.get_text(strip=True)
@@ -69,7 +73,15 @@ class OttoneuScraper:
                         # Team info might contain other icons/text, clean it up
                         # PHI SS -> PHI
                         if row_data['Team']:
-                            row_data['Team'] = row_data['Team'].split(' ')[0]
+                            # Handle cases like "STL OUT" or "DET DH"
+                            parts = row_data['Team'].split(' ')
+                            team_candidate = parts[0]
+                            # If it's something like "STLOUT", we need to be careful. 
+                            # Most MLB abbreviations are 2-3 characters.
+                            # Let's take the first 3 if it's not a known exception.
+                            if len(team_candidate) > 3:
+                                team_candidate = team_candidate[:3]
+                            row_data['Team'] = team_candidate
                     else:
                         row_data['Name'] = col.text.strip()
                         row_data['Team'] = ""

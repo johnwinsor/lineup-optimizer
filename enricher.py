@@ -2,6 +2,7 @@ import pandas as pd
 import json
 import requests
 from harvester import OttoneuScraper
+from crosswalks import normalize_name
 
 class OttoneuEnricher:
     def __init__(self, league_id=1077, team_id=7582):
@@ -20,29 +21,51 @@ class OttoneuEnricher:
         hitters, pitchers = self.scraper.get_roster()
         projections = self.fetch_steamer_projections()
         
-        # Match by name
-        # Note: Projections have 'PlayerName', Roster has 'Name'
-        enriched_hitters = pd.merge(
-            hitters, 
-            projections[['PlayerName', 'PA', 'R', 'HR', 'RBI', 'SB', 'AVG', 'playerid']], 
-            left_on='Name', 
-            right_on='PlayerName', 
-            how='left'
-        )
+        # Initialize result columns in hitters
+        for col in ['playerid', 'PA_y', 'R_y', 'HR_y', 'RBI_y', 'SB_y', 'AVG_y', 'xMLBAMID']:
+            hitters[col] = None
+
+        # Create normalization mapping for projections
+        projections['norm_name'] = projections['PlayerName'].apply(normalize_name)
         
-        # Calculate a simple efficiency score (sum of counting stats per PA)
-        # 5x5 categories: R, HR, RBI, SB, AVG
-        # We'll weight them equally for now, except AVG which is already a rate.
-        # Score = (R + HR + RBI + SB) / PA * 100  + AVG * 100
-        enriched_hitters['Score'] = (
-            (enriched_hitters['R_y'].astype(float) + 
-             enriched_hitters['HR_y'].astype(float) + 
-             enriched_hitters['RBI_y'].astype(float) + 
-             enriched_hitters['SB_y'].astype(float)) / 
-            enriched_hitters['PA_y'].astype(float) * 100
-        ) + (enriched_hitters['AVG_y'].astype(float) * 100)
+        # 1. Match Loop
+        for idx, row in hitters.iterrows():
+            name = row['Name']
+            fgid = str(row.get('FGID', ''))
+            norm = normalize_name(name)
+            
+            match = pd.DataFrame()
+            
+            # Try FGID match if available
+            if fgid and fgid != 'nan' and fgid != '':
+                match = projections[projections['playerid'].astype(str) == fgid]
+            
+            # Try Normalized Name match if no FGID match
+            if match.empty:
+                match = projections[projections['norm_name'] == norm]
+            
+            if not match.empty:
+                m = match.iloc[0]
+                hitters.at[idx, 'playerid'] = m['playerid']
+                hitters.at[idx, 'PA_y'] = m['PA']
+                hitters.at[idx, 'R_y'] = m['R']
+                hitters.at[idx, 'HR_y'] = m['HR']
+                hitters.at[idx, 'RBI_y'] = m['RBI']
+                hitters.at[idx, 'SB_y'] = m['SB']
+                hitters.at[idx, 'AVG_y'] = m['AVG']
+                hitters.at[idx, 'xMLBAMID'] = m['xMLBAMID']
+
+        # Calculate a simple efficiency score
+        # Note: We use .astype(float) and handle division by zero
+        hitters['Score'] = (
+            (hitters['R_y'].fillna(0).astype(float) + 
+             hitters['HR_y'].fillna(0).astype(float) + 
+             hitters['RBI_y'].fillna(0).astype(float) + 
+             hitters['SB_y'].fillna(0).astype(float)) / 
+            hitters['PA_y'].fillna(1).astype(float).replace(0, 1) * 100
+        ) + (hitters['AVG_y'].fillna(0).astype(float) * 100)
         
-        return enriched_hitters.sort_values(by='Score', ascending=False)
+        return hitters.sort_values(by='Score', ascending=False)
 
 if __name__ == "__main__":
     enricher = OttoneuEnricher()

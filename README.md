@@ -56,6 +56,42 @@ Analyze the actual historical performance of free agents for a specific date:
 uv run python fa_backtester.py 2025-07-04
 ```
 
+## 🌸 Spring Training Analyzer
+
+The Spring Training Analyzer is a specialized scouting tool designed for the early season. it bridges the gap between traditional box score stats (`wRC+`) and underlying StatCast metrics to find breakouts and hidden gems.
+
+### Basic Usage
+Refresh your local spring training data first, then run the analyzer:
+```bash
+# Refresh data from FanGraphs
+uv run python spring_harvester.py
+
+# Run top performer analysis (Min 15 PA)
+uv run python spring_analyzer.py --pa 15
+```
+
+### Advanced Modes
+
+#### 1. Top Performers (Default)
+Ranks players by `wRC+` and cross-references ownership in League 1077.
+```bash
+uv run python spring_analyzer.py --top 20 --days 7
+```
+
+#### 2. Under-the-Radar Scout (`--radar`)
+Uncovers "hidden gems" by filtering for players with poor surface results (wRC+ < 110) but elite StatCast peripherals. It identifies players meeting either of these triggers:
+- **High Impact**: Average Exit Velocity >= 90 MPH.
+- **Elite Discipline**: Whiff Rate <= 15%.
+```bash
+uv run python spring_analyzer.py --radar --days 10
+```
+
+### Key Metrics Tracked
+- **wRC+**: Overall offensive contribution relative to league average.
+- **EV Avg/Max**: Rolling average and peak exit velocity from the last X days of games.
+- **Whiff%**: Real-time swinging strike rate (Misses / Swings) crawled from MLB play-by-play data.
+- **Ownership**: Real-time status in League 1077 (**Zurich Zebras**, **FREE AGENT**, or **Other Team**).
+
 ### What happens in a Backtest?
 1. **Roster Scrape**: Identifies the Zurich Zebras 40-man roster.
 2. **Matchup Analysis**: Fetch confirmed MLB starting lineups and opposing pitchers for that date.
@@ -87,7 +123,8 @@ The foundation of the score uses season-long Steamer projections:
 
 ### 2. The Daily Multipliers
 The **Daily Engine** then applies dynamic multipliers to the baseline based on the day's specific context:
-- **Order Factor (New!):** Rewards high-volume slots (**+15% for Leadoff**) and penalizes the bottom of the order (**-15% for 9th**).
+- **Order Factor:** Rewards high-volume slots (**+15% for Leadoff**) and penalizes the bottom of the order (**-15% for 9th**).
+- **Lineup Pending (New!):** Optimistically projects starters for teams playing but with no posted lineup. Assumes a **#5 slot (1.05x)** to ensure core players are included in recommendations with a **"TBA"** order status.
 - **Park Factor:** 0.90x to 1.20x (e.g., Coors Field vs. Petco Park).
 - **Pitcher Skill:** 0.70x to 1.30x (Based on the opposing SP's xERA/SIERA).
 - **Platoon Advantage:** +10% for opposite hand, -15% for L/L matchups.
