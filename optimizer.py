@@ -12,7 +12,7 @@ class OttoneuOptimizer:
         # Players who should never be benched if they are starting in MLB
         self.do_not_sit = [
             "Trea Turner", "Yordan Alvarez", "Kyle Schwarber", 
-            "Christian Yelich", "Junior Caminero"
+            "Christian Yelich", "Junior Caminero", "Kazuma Okamoto"
         ]
 
     def optimize_lineup(self, target_date=None):

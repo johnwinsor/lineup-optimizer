@@ -37,9 +37,7 @@ class PlayerCrosswalk:
         'Michael Chavis': 'Mike Chavis',
         'Kike Hernandez': 'Enrique Hernandez',
         'Ha-Seong Kim': 'Ha-seong Kim',
-        'Jung Hoo Lee': 'Jung-hoo Lee',
-        'Hyeseong Kim': 'Hye-seong Kim',
-        'Yordan Alvarez': 'Yordan \u00c1lvarez'
+        'Jung Hoo Lee': 'Jung-hoo Lee'
     }
 
     @classmethod

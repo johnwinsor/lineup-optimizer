@@ -42,7 +42,7 @@ class Backtester:
                 # Handle pending lineup case
                 is_pending = False
                 if not matchup and player_name in all_hitters['Name'].values:
-                    proj_row = all_hitters[all_hitters['Name'] == name if 'name' in locals() else all_hitters['Name'] == player_name]
+                    proj_row = all_hitters[all_hitters['Name'] == player_name]
                     if not proj_row.empty and 'Lineup Pending' in proj_row['Breakdown'].values[0]:
                         is_pending = True
                         # Need to reconstruct basic matchup info from _teams_playing

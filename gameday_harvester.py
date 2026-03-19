@@ -205,6 +205,7 @@ class GameDayHarvester:
             sc_stats = self.statcast.get_blended_pitcher_stats(person_id, weight_current=weight_current)
             if sc_stats is not None:
                 data['xera'] = float(sc_stats.get('xERA', sc_stats.get('SIERA', sc_stats.get('kwERA', 4.0))))
+                data['SIERA'] = float(sc_stats.get('SIERA', data['xera']))
                 data['era'] = float(sc_stats.get('ERA', 4.0))
             else:
                 # Fallback to statsapi Season Stats

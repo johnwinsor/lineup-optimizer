@@ -104,7 +104,10 @@ def main():
             clean_order = order[0] if order and order != '-' and len(order) >= 1 else '-'
             
             # Determine Why they Sat (Logic mirrored from backtester.py)
-            proj_score = 0.0
+            proj_row = all_hitters[all_hitters['Name'] == name]
+            proj_score = proj_row['DailyScore'].values[0] if not proj_row.empty else 0.0
+            breakdown = proj_row['Breakdown'].values[0] if not proj_row.empty else "-"
+            opponent = proj_row['Opponent'].values[0] if not proj_row.empty else "-"
             min_floor = optimizer.min_score
             
             if not mlb_id or (mlb_id not in matchups and team_abb not in teams_playing):
@@ -119,9 +122,6 @@ def main():
                     note = "Not in MLB Starting Lineup (Benched/IL/Rest)."
                 else:
                     # Starting in MLB but not picked by our optimizer
-                    proj_row = all_hitters[all_hitters['Name'] == name]
-                    proj_score = proj_row['DailyScore'].values[0] if not proj_row.empty else 0
-                    
                     if proj_score < min_floor:
                         note = f"Benched - Below Zebras Floor ({min_floor})."
                     else:
@@ -131,20 +131,22 @@ def main():
                 'Player': name,
                 'POS': row['POS'],
                 'Order': clean_order,
+                'Opponent': opponent,
                 'Proj': proj_score,
+                'Breakdown': breakdown,
                 'Note': note
             })
 
         df_sat = pd.DataFrame(sat_data)
         if not df_sat.empty:
-            display_dataframe(df_sat, title="PLAYERS SAT", columns=['Player', 'POS', 'Order', 'Proj', 'Note'])
+            display_dataframe(df_sat, title="PLAYERS SAT", columns=['Player', 'POS', 'Order', 'Opponent', 'Proj', 'Breakdown', 'Note'])
 
         # Narrative Generation
         ai_narrative = generate_ai_narrative(lineup, today)
         print_narrative(ai_narrative)
         
         print_info("\n[dim]Algorithm: Maximize projected 5x5 efficiency subject to positional caps.[/dim]")
-        print_info("[dim]Factors: xERA Difficulty, Platoon Splits, Elite BvP, StatCast Peripherals, Weather.[/dim]")
+        print_info("[dim]Factors: SIERA Difficulty, Platoon Splits, Elite BvP, StatCast Peripherals, Weather.[/dim]")
     else:
         print(f"\nNo valid starters found for {today}. This may be an off-day or lineups are not yet posted.")
 

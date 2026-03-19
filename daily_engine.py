@@ -140,9 +140,10 @@ class DailyEngine:
                     sp_id = matchup.get('opposing_sp_id')
                     if sp_id:
                         sp_data = self.harvester.get_pitcher_data(sp_id, year=year, weight_current=weight_current)
-                        opponent = f"{matchup.get('opposing_sp_name')} ({sp_data['hand']}, {sp_data.get('xera', sp_data['era']):.2f})"
+                        opponent = f"{matchup.get('opposing_sp_name')} ({sp_data['hand']}, {sp_data.get('SIERA', sp_data.get('xera', sp_data['era'])):.2f})"
                         
-                        pitcher_skill = sp_data.get('xera', sp_data.get('era', 4.0))
+                        # Use SIERA as the primary skill metric if available, then xERA, then ERA
+                        pitcher_skill = sp_data.get('SIERA', sp_data.get('xera', sp_data.get('era', 4.0)))
                         era_factor = 1.0 + ((pitcher_skill - 4.0) / 4.0)
                         era_factor = max(0.7, min(1.3, era_factor))
                         multiplier *= era_factor
