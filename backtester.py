@@ -5,12 +5,13 @@ from datetime import datetime
 from display_utils import print_header, display_dataframe, print_narrative, print_totals
 
 class Backtester:
-    def __init__(self, league_id=1077, team_id=7582):
-        self.optimizer = OttoneuOptimizer(league_id, team_id)
+    def __init__(self, league_id=1077, team_id=7582, projection_system="steamer"):
+        self.optimizer = OttoneuOptimizer(league_id, team_id, projection_system=projection_system)
         self.harvester = self.optimizer.daily_engine.harvester
+        self.projection_system = projection_system
 
     def run_backtest(self, target_date: str):
-        print_header("Zurich Zebras Backtester", target_date)
+        print_header(f"Zurich Zebras Backtester [{self.projection_system.upper()}]", target_date)
         
         # 1. Get All Players and their Daily Status
         print("1. Analyzing Roster and Matchups...")
@@ -223,6 +224,7 @@ if __name__ == "__main__":
     today = datetime.now().strftime("%Y-%m-%d")
     parser = argparse.ArgumentParser(description="Backtest the Ottoneu Lineup Optimizer for a specific date.")
     parser.add_argument("date", nargs="?", default=today, help=f"The date to backtest in YYYY-MM-DD format (default: {today})")
+    parser.add_argument("--projection", type=str, default="steamer", help="Projection system (steamer, atc, thebat)")
     
     args = parser.parse_args()
     
@@ -233,5 +235,5 @@ if __name__ == "__main__":
         print(f"Error: Invalid date format '{args.date}'. Please use YYYY-MM-DD.")
         exit(1)
 
-    backtester = Backtester()
+    backtester = Backtester(projection_system=args.projection)
     backtester.run_backtest(args.date)

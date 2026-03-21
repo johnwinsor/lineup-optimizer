@@ -1,25 +1,33 @@
 import pandas as pd
 import json
 import requests
+import os
 from harvester import OttoneuScraper
 from crosswalks import normalize_name
 
 class OttoneuEnricher:
-    def __init__(self, league_id=1077, team_id=7582):
+    def __init__(self, league_id=1077, team_id=7582, projection_system="steamer"):
         self.scraper = OttoneuScraper(league_id, team_id)
+        self.projection_system = projection_system.lower()
 
-    def fetch_steamer_projections(self):
-        print("Loading Steamer batting projections from local cache...")
+    def fetch_projections(self):
+        print(f"Loading {self.projection_system.upper()} batting projections from local cache...")
+        filename = f"projections-{self.projection_system}.json"
+        
+        # Backward compatibility for old filename
+        if not os.path.exists(filename) and self.projection_system == "steamer":
+            filename = "steamer-hitters.json"
+
         try:
-            with open("steamer-hitters.json", "r") as f:
+            with open(filename, "r") as f:
                 data = json.load(f)
             return pd.DataFrame(data)
         except FileNotFoundError:
-            raise Exception("Failed to load Steamer projections. Please run 'uv run python fetch_statcast.py' first.")
+            raise Exception(f"Failed to load {self.projection_system.upper()} projections. Please run 'uv run python fetch_statcast.py' first.")
 
     def enrich_roster(self):
         hitters, pitchers = self.scraper.get_roster()
-        projections = self.fetch_steamer_projections()
+        projections = self.fetch_projections()
         
         # Initialize result columns in hitters
         for col in ['playerid', 'PA_y', 'R_y', 'HR_y', 'RBI_y', 'SB_y', 'AVG_y', 'xMLBAMID']:

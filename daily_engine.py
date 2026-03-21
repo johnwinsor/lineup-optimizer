@@ -9,8 +9,8 @@ import json
 import re
 
 class DailyEngine:
-    def __init__(self, league_id=1077, team_id=7582):
-        self.enricher = OttoneuEnricher(league_id, team_id)
+    def __init__(self, league_id=1077, team_id=7582, projection_system="steamer"):
+        self.enricher = OttoneuEnricher(league_id, team_id, projection_system=projection_system)
         self.harvester = GameDayHarvester()
         self.weather = WeatherHarvester()
 

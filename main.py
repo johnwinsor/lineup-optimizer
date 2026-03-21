@@ -42,12 +42,18 @@ Keep the tone professional, analytical, and focused on maximizing 5x5 Roto effic
     except Exception as e:
         return f"⚠️ Failed to generate AI narrative: {e}"
 
+import argparse
+
 def main():
+    parser = argparse.ArgumentParser(description="Zurich Zebras Lineup Optimizer")
+    parser.add_argument("--projection", type=str, default="steamer", help="Projection system (steamer, atc, thebat)")
+    args = parser.parse_args()
+
     today = datetime.now().strftime("%Y-%m-%d")
     year = datetime.now().year
-    optimizer = OttoneuOptimizer()
+    optimizer = OttoneuOptimizer(projection_system=args.projection)
     
-    print_header("Zurich Zebras (Ottoneu Team 7582) Lineup Optimizer", today)
+    print_header(f"Zurich Zebras (Ottoneu Team 7582) Lineup Optimizer [{args.projection.upper()}]", today)
     
     # 1. Gather Data for both tables
     print("Analyzing Roster and Matchups...")

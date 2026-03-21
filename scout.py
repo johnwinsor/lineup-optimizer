@@ -8,17 +8,13 @@ from daily_engine import DailyEngine
 from display_utils import print_header, display_dataframe, print_section
 
 class ZebrasScout:
-    def __init__(self):
+    def __init__(self, projection_system="steamer"):
         self.statcast = StatCastHarvester()
-        self.engine = DailyEngine() # To leverage the logic for projections
-        
-    def _clean_name(self, html_name):
-        # Extract "Carlos Santana" from "<a href="...">Carlos Santana</a>"
-        match = re.search(r'>(.*?)</a>', html_name)
-        return match.group(1) if match else html_name
+        self.engine = DailyEngine(projection_system=projection_system) # To leverage the logic for projections
+        self.projection_system = projection_system
 
     def find_best_free_agents(self, top_n=20, min_pa=50):
-        print_header("Zebras Free Agent Scout", f"Min PA: {min_pa}")
+        print_header(f"Zebras Free Agent Scout [{self.projection_system.upper()}]", f"Min PA: {min_pa}")
         
         if not os.path.exists('free_agents.json'):
             print("[red]Error: free_agents.json not found. Run scout_harvester.py first.[/red]")
@@ -89,8 +85,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scout the best available free agents in League 1077.")
     parser.add_argument("--pa", type=int, default=50, help="Minimum Plate Appearances (default: 50)")
     parser.add_argument("--top", type=int, default=20, help="Number of players to show (default: 20)")
+    parser.add_argument("--projection", type=str, default="steamer", help="Projection system (steamer, atc, thebat)")
     
     args = parser.parse_args()
     
-    scout = ZebrasScout()
+    scout = ZebrasScout(projection_system=args.projection)
     scout.find_best_free_agents(top_n=args.top, min_pa=args.pa)

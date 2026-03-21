@@ -6,8 +6,9 @@ import sys
 from display_utils import print_header, display_dataframe, print_section
 
 class BatchBacktester:
-    def __init__(self):
-        self.backtester = Backtester()
+    def __init__(self, projection_system="steamer"):
+        self.backtester = Backtester(projection_system=projection_system)
+        self.projection_system = projection_system
 
     def get_random_dates(self, count=50):
         # 2025 Regular Season: March 27 to Sept 28
@@ -22,7 +23,7 @@ class BatchBacktester:
         dates = self.get_random_dates(count)
         results = []
         
-        print_header("Zebras Batch Backtester", "2025 Simulation")
+        print_header(f"Zebras Batch Backtester [{self.projection_system.upper()}]", "2025 Simulation")
         print(f"🚀 Starting Batch Backtest of {count} random dates from 2025...")
         
         for i, date in enumerate(dates):
@@ -86,6 +87,13 @@ class BatchBacktester:
         print(f"[bold white]Total Games Analyzed:[/bold white] [bold cyan]{len(df)}[/bold cyan]")
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Batch backtest the Ottoneu Lineup Optimizer.")
+    parser.add_argument("--count", type=int, default=50, help="Number of random dates to test (default: 50)")
+    parser.add_argument("--projection", type=str, default="steamer", help="Projection system (steamer, atc, thebat)")
+    
+    args = parser.parse_args()
+    
     random.seed(42) # For reproducibility
-    batch = BatchBacktester()
-    batch.run_batch(50)
+    batch = BatchBacktester(projection_system=args.projection)
+    batch.run_batch(args.count)

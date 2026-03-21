@@ -85,21 +85,28 @@ def main():
     fetch_and_save(get_url('bat', CURRENT_SEASON), f"statcast-hitters-{CURRENT_SEASON}.json", f"{CURRENT_SEASON} MLB Hitters")
     fetch_and_save(get_url('pit', CURRENT_SEASON), f"statcast-pitchers-{CURRENT_SEASON}.json", f"{CURRENT_SEASON} MLB Pitchers")
 
-    # 3. Steamer Projections
-    steamer_file = "steamer-hitters.json"
-    old_steamer_data = None
-    if os.path.exists(steamer_file):
-        try:
-            with open(steamer_file, 'r') as f:
-                old_steamer_data = json.load(f)
-        except Exception:
-            pass
+    # 3. Projections
+    for system in ["steamer", "atc"]:
+        proj_file = f"projections-{system}.json"
+        old_proj_data = None
+        if os.path.exists(proj_file):
+            try:
+                with open(proj_file, 'r') as f:
+                    old_proj_data = json.load(f)
+            except Exception:
+                pass
 
-    steamer_url = "https://www.fangraphs.com/api/projections?stats=bat&type=steamer"
-    new_steamer_data = fetch_and_save(steamer_url, steamer_file, "Steamer Hitters Projections")
+        proj_url = f"https://www.fangraphs.com/api/projections?stats=bat&type={system}"
+        new_proj_data = fetch_and_save(proj_url, proj_file, f"{system.upper()} Hitters Projections")
 
-    if old_steamer_data and new_steamer_data:
-        compare_steamer_projections(old_steamer_data, new_steamer_data)
+        if old_proj_data and new_proj_data:
+            print(f"\n--- {system.upper()} Changes ---")
+            compare_steamer_projections(old_proj_data, new_proj_data)
+        
+        # Backward compatibility for the original steamer-hitters.json
+        if system == "steamer":
+            import shutil
+            shutil.copy2(proj_file, "steamer-hitters.json")
 
 if __name__ == "__main__":
     main()

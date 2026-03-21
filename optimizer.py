@@ -5,9 +5,9 @@ from enricher import OttoneuEnricher
 from daily_engine import DailyEngine
 
 class OttoneuOptimizer:
-    def __init__(self, league_id=1077, team_id=7582, min_score=40.0):
-        self.enricher = OttoneuEnricher(league_id, team_id)
-        self.daily_engine = DailyEngine(league_id, team_id)
+    def __init__(self, league_id=1077, team_id=7582, min_score=40.0, projection_system="steamer"):
+        self.enricher = OttoneuEnricher(league_id, team_id, projection_system=projection_system)
+        self.daily_engine = DailyEngine(league_id, team_id, projection_system=projection_system)
         self.min_score = min_score
         # Players who should never be benched if they are starting in MLB
         self.do_not_sit = [
