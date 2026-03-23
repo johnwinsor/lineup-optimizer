@@ -67,9 +67,9 @@ class Backtester:
                     'Player': player_name,
                     'Status': matchup.get('game_status', 'Unknown'),
                     'Order': clean_order,
-                    'Opponent': f"{matchup.get('opposing_sp_name')} ({sp_data['hand']}, {sp_data.get('xera', sp_data['era']):.2f})",
+                    'Opponent': f"{matchup.get('opposing_sp_name')} ({sp_data['hand']} {sp_data.get('xera', sp_data['era']):.1f})",
                     'Proj': float(row['Score']),
-                    'Actual': f"{p_stats['H']}/{p_stats['AB']}, {p_stats['R']} R, {p_stats['HR']} HR, {p_stats['RBI']} RBI, {p_stats['SB']} SB",
+                    'Actual': f"{p_stats['H']}/{p_stats['AB']} {p_stats['R']}R {p_stats['HR']}HR {p_stats['RBI']}RBI {p_stats['SB']}SB",
                     'stats': p_stats,
                     'SO': f"{p_stats['SO']}",
                     'SB/CS': f"{p_stats['SB']}/{p_stats['CS']}",
@@ -141,7 +141,7 @@ class Backtester:
                 'Status': status if 'status' in locals() else "-",
                 'Order': order,
                 'Proj': float(proj_score),
-                'Actual': f"{p_stats['H']}/{p_stats['AB']}, {p_stats['R']} R, {p_stats['HR']} HR, {p_stats['RBI']} RBI, {p_stats['SB']} SB",
+                'Actual': f"{p_stats['H']}/{p_stats['AB']} {p_stats['R']}R {p_stats['HR']}HR {p_stats['RBI']}RBI {p_stats['SB']}SB",
                 'stats': p_stats,
                 'SO': f"{p_stats['SO']}",
                 'SB/CS': f"{p_stats['SB']}/{p_stats['CS']}",
@@ -188,7 +188,8 @@ class Backtester:
             # 1. Prediction Win
             best_prod = lineup_df.sort_values(by=['TotalProd', 'Proj'], ascending=False).iloc[0]
             if best_prod['TotalProd'] > 0:
-                narrative_parts.append(f"The Prediction Win: **{best_prod['Player']}** lived up to his {best_prod['Proj']:.2f} projection, providing {best_prod['Actual']} against {best_prod['Opponent']}.")
+                actual_str = best_prod['Actual']
+                narrative_parts.append(f"The Prediction Win: **{best_prod['Player']}** lived up to his {best_prod['Proj']:.2f} projection, providing {actual_str} against {best_prod['Opponent']}.")
             
             # 2. The Flop
             potential_flops = lineup_df.sort_values(by=['Proj'], ascending=False)
@@ -200,7 +201,8 @@ class Backtester:
                     break
             
             if flop is not None:
-                narrative_parts.append(f"The Flop: Despite a strong {flop['Proj']:.2f} projection, **{flop['Player']}** struggled to find the box score today, going {flop['Actual'].split(',')[0]}.")
+                actual_short = flop['Actual'].split(' ')[0] # just the H/AB
+                narrative_parts.append(f"The Flop: Despite a strong {flop['Proj']:.2f} projection, **{flop['Player']}** struggled to find the box score today, going {actual_short} against {flop['Opponent']}.")
             else:
                 narrative_parts.append(f"Efficiency Note: No high-projection starters completely vanished today; the lineup provided consistent floor value.")
 

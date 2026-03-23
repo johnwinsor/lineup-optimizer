@@ -1,6 +1,6 @@
 from rich.console import Console
 from rich.table import Table
-from rich.box import ROUNDED, HEAVY
+from rich.box import ROUNDED, HEAVY, SIMPLE_HEAD
 from rich.panel import Panel
 from rich.text import Text
 import pandas as pd
@@ -18,7 +18,7 @@ def print_header(title: str, subtitle: str = ""):
         text,
         box=ROUNDED,
         border_style="bright_blue",
-        padding=(1, 2)
+        padding=(0, 1)
     )
     console.print(panel)
 
@@ -34,10 +34,11 @@ def display_dataframe(df: pd.DataFrame, title: str = None, columns: list = None,
 
     table = Table(
         title=title,
-        box=ROUNDED,
+        box=SIMPLE_HEAD,
         header_style=header_style,
-        expand=True,  # This helps with responsive layout
-        show_lines=True
+        expand=False,  # Don't force full width
+        show_lines=False,
+        padding=(0, 1)
     )
 
     display_cols = columns if columns else df.columns.tolist()
@@ -45,17 +46,21 @@ def display_dataframe(df: pd.DataFrame, title: str = None, columns: list = None,
     # Configure columns
     for col in display_cols:
         if col in ["Breakdown", "Note"]:
-            # Allow long text columns to wrap and take more space
-            table.add_column(col, ratio=3, overflow="fold")
+            # Reduce ratio for long text columns
+            table.add_column(col, ratio=1, overflow="fold")
         elif col in ["Player", "Name"]:
             # Ensure names don't wrap and stay readable
             table.add_column(col, style="bold green", no_wrap=True)
         elif col in ["Proj", "Actual", "Score"]:
-            table.add_column(col, justify="right", style="bright_white")
+            table.add_column(col, justify="right", style="bright_white", no_wrap=True)
         elif col == "Status":
-            table.add_column(col, justify="center")
+            table.add_column(col, justify="center", no_wrap=True)
+        elif col == "EV (Avg/Max)":
+            table.add_column("EV", justify="center", no_wrap=True)
+        elif col == "SB/CS":
+            table.add_column("SB/C", justify="center", no_wrap=True)
         else:
-            table.add_column(col)
+            table.add_column(col, no_wrap=True)
 
     # Add rows
     for _, row in df.iterrows():

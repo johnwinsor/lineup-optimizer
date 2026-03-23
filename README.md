@@ -40,6 +40,28 @@ Run 50 random simulations across the 2025 season to see the aggregate success ra
 uv run python batch_backtester.py
 ```
 
+## 🚀 Projection System Selection
+
+The optimizer supports multiple projection baselines. You can toggle between them using the `--projection` flag:
+
+- **Steamer (`--projection steamer`)**: The default system. Aggressive on breakout candidates.
+- **ATC (`--projection atc`)**: Ariel Theoretical Composite. A weighted average of multiple systems. Highly recommended for "Efficiency Maximization" as it reduces outlier variance.
+
+#### Usage Examples:
+- **Run Optimizer with ATC**: `uv run python main.py --projection atc`
+- **Backtest with ATC**: `uv run python backtester.py --projection atc`
+- **Batch Test with ATC**: `uv run python batch_backtester.py --projection atc`
+- **Scout Free Agents**: `uv run python scout.py --projection atc`
+
+## 📊 Compact Terminal Display
+
+The Zurich Zebras optimizer is designed for mobile and laptop developers. To prevent table overlap on smaller screens, we use a compact display strategy:
+
+- **Non-Expanding Tables**: Tables in `display_utils.py` do not force full-terminal width.
+- **Shorthand Stats**: The backtester uses compact 5x5 notation: `H/AB R R HR HR RBI I SB S`.
+- **Simplified Box Lines**: We use `SIMPLE_HEAD` borders to maximize content area.
+- **Shortened Opponent Data**: Pitcher skill (xERA/SIERA) is rounded to 1 decimal place.
+
 ### Find Free Agent Upgrades
 Scout the most efficient available hitters in your league (League 1077):
 ```bash
