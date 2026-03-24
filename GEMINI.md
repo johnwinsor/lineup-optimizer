@@ -6,7 +6,9 @@ The optimizer is a multi-stage pipeline designed for **Daily 5x5 Roto Efficiency
 - **Harvester (`harvester.py`)**: Scrapes the official Ottoneu team page to get the live 40-man roster, team affiliations, and positional eligibility.
 - **Enricher (`enricher.py`)**: Fetches season-long Steamer projections and calculates a baseline "Efficiency Score" (Counting Stats per PA + AVG).
 - **StatCast Harvester (`statcast_harvester.py`)**: Downloads and parses full MLB datasets for advanced metrics (xwOBA, Barrel%, xERA, SIERA).
-- **Spring Harvester (`spring_harvester.py`)**: Fetches live 2026 Spring Training hitter stats from FanGraphs for early-season scouting.
+- **Spring Harvester (`spring_harvester.py`)**: Fetches live 2026 Spring Training hitter and pitcher stats from FanGraphs for early-season scouting.
+- **Spring Hitter Scout (`scout_spring_fa.py`)**: Analyzes free agent hitters surging in spring training compared to their ATC baseline.
+- **Spring Pitcher Scout (`scout_spring_pitchers.py`)**: Identifies free agent pitchers with elite spring metrics (K-BB%, SwStr%) relative to projections.
 - **Park Factor Engine (`park_factors.py`)**: Provides a numerical lookup for all 30 MLB stadiums based on Statcast run-scoring environments.
 - **Weather Harvester (`weather_harvester.py`)**: Scrapes real-time weather, wind, and rain risk from Rotowire.
 - **GameDay Harvester (`gameday_harvester.py`)**: Interfaces with MLB Stats API to fetch real-time starting lineups, batting orders, opposing SP data, and historical BvP stats. Now includes **Pending Lineup Detection** to identify teams playing before official cards are posted.
@@ -14,7 +16,7 @@ The optimizer is a multi-stage pipeline designed for **Daily 5x5 Roto Efficiency
 - **Optimizer (`optimizer.py`)**: A Linear Programming model (SciPy) that solves for the 13 most productive positional slots.
 - **Backtester (`backtester.py`)**: A "Live Dashboard" tool to verify the algorithm against any date (defaults to Today). Now includes real-time game status (e.g., "Warmup", "Pre-Game", "Live"), full 5x5 actual stats, and support for pending lineups.
 - **Batch Backtester (`batch_backtester.py`)**: Runs randomized simulations across the season to generate aggregate success rate reports.
-- **Free Agent Scout (`scout.py`)**: Analyzes all available free agent hitters in League 1077 and ranks them by their Zebras Efficiency Score.
+- **Free Agent Scout (`scout.py`)**: Analyzes all available free agent hitters in League 1077 and ranks them by their Zebras Efficiency Score. Fixed bug in name cleaning logic.
 
 ## 2. The "Zebras Algorithm" (Projection Logic)
 The final `ProjScore` for a player on a given day is: 
@@ -67,8 +69,10 @@ The algorithm transitions from prior-season (2025) to current-season (2026) perf
 - **Run Historical Backtest**: `uv run python backtester.py YYYY-MM-DD`
 - **Find Free Agent Upgrades**: `uv run python scout.py --pa 50`
 - **Harvest Spring Stats**: `uv run python spring_harvester.py`
+- **Scout Spring Hitters**: `uv run python scout_spring_fa.py --pa 15`
+- **Scout Spring Pitchers**: `uv run python scout_spring_pitchers.py --ip 5`
 - **Analyze Spring Performances**: `uv run python spring_analyzer.py --pa 15`
-- **Refresh StatCast Data**: `uv run python fetch_statcast.py`
+- **Refresh All Data**: `uv run python fetch_statcast.py`
 
 ## 6. Implementation Notes & Disambiguation
 - **Efficiency Focus**: The core goal is to maximize stats *per slot*, adhering to the Ottoneu 162-game season cap.

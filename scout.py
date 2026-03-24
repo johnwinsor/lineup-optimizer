@@ -13,6 +13,12 @@ class ZebrasScout:
         self.engine = DailyEngine(projection_system=projection_system) # To leverage the logic for projections
         self.projection_system = projection_system
 
+    def _clean_name(self, html_name):
+        if not html_name: return ""
+        # Extract "Carlos Santana" from "<a href="...">Carlos Santana</a>"
+        match = re.search(r'>(.*?)</a>', html_name)
+        return match.group(1) if match else html_name
+
     def find_best_free_agents(self, top_n=20, min_pa=50):
         print_header(f"Zebras Free Agent Scout [{self.projection_system.upper()}]", f"Min PA: {min_pa}")
         

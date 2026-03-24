@@ -36,7 +36,7 @@ class OttoneuScraper:
             if not cols:
                 continue
             
-            row_data = {}
+            row_data = {'FGID': None, 'OttoneuID': None}
             for i, col in enumerate(cols):
                 header = headers[i]
                 if header == 'Player':
