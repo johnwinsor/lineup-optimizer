@@ -67,22 +67,38 @@ class OttoneuScraper:
                             elif 'statss.aspx?playerid=' in l_href:
                                 row_data['FGID'] = l_href.split('playerid=')[-1].split('&')[0]
 
-                        # Extract team from text (e.g. "Trea Turner PHI")
+                        # Extract team and injury status from text (e.g. "Trea Turner PHI")
                         full_text = col.get_text(strip=True)
-                        row_data['Injured'] = 'IL' in full_text
                         
-                        team_text = full_text.replace(row_data['Name'], "").strip()
-                        # Team info might contain other icons/text, clean it up
-                        if team_text:
-                            # Handle cases like "STL60IL" -> "STL"
-                            team_text = team_text.replace('60IL', '').replace('15IL', '').replace('10IL', '').replace('7IL', '').replace('IL', '')
-                            # Handle cases like "STL60" or other weird variations
-                            parts = team_text.split(' ')
-                            team_candidate = parts[0]
-                            if len(team_candidate) > 3:
-                                # Look for common 3-letter team abbs at start
-                                team_candidate = team_candidate[:3]
-                            row_data['Team'] = team_candidate
+                        # Fix: Improve injury detection by counting "IL" and specifically handling "MIL"
+                        il_count = full_text.count('IL')
+                        if "MIL" in full_text:
+                            row_data['Injured'] = il_count > 1
+                        else:
+                            row_data['Injured'] = il_count > 0
+                        
+                        # Robust team extraction
+                        teams = ['ARI', 'ATL', 'BAL', 'BOS', 'CHC', 'CHW', 'CIN', 'CLE', 'COL', 'DET', 
+                                 'HOU', 'KCR', 'LAA', 'LAD', 'MIA', 'MIL', 'MIN', 'NYM', 'NYY', 'OAK', 
+                                 'PHI', 'PIT', 'SDP', 'SEA', 'SFG', 'STL', 'TBR', 'TEX', 'TOR', 'WSH']
+                        
+                        team_candidate = ""
+                        # Try to find a known team in the text
+                        for t in teams:
+                            if t in full_text:
+                                team_candidate = t
+                                break
+                        
+                        if not team_candidate:
+                            # Fallback to old logic if no known team found
+                            team_text = full_text.replace(row_data['Name'], "").strip()
+                            if team_text:
+                                # Clean up common markers
+                                for tag in ['60IL', '15IL', '10IL', '7IL', 'IL']:
+                                    team_text = team_text.replace(tag, '')
+                                team_candidate = team_text[:3] if len(team_text) >= 3 else team_text
+                        
+                        row_data['Team'] = team_candidate
                     else:
                         row_data['Name'] = col.text.strip()
                         row_data['Team'] = ""
@@ -102,6 +118,6 @@ if __name__ == "__main__":
     scraper = OttoneuScraper()
     hitters, pitchers = scraper.get_roster()
     print("Hitters Columns:", hitters.columns.tolist())
-    print(hitters[['Name', 'Team', 'FGID', 'OttoneuID']].head())
+    print(hitters[['Name', 'Team', 'Injured', 'FGID', 'OttoneuID']].head())
     print("\nPitchers Columns:", pitchers.columns.tolist())
-    print(pitchers[['Name', 'Team', 'FGID', 'OttoneuID']].head())
+    print(pitchers[['Name', 'Team', 'Injured', 'FGID', 'OttoneuID']].head())
