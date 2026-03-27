@@ -72,6 +72,7 @@ class DailyEngine:
         is_starting = []
         breakdowns = []
         opponents = []
+        sp_xeras = []
         warnings = []
         
         teams_playing = matchups.get('_teams_playing', {})
@@ -92,8 +93,19 @@ class DailyEngine:
             starting = False
             breakdown = []
             opponent = "N/A"
+            sp_xera = "-"
             warning = ""
             
+            # Check for Injury status from Ottoneu
+            if row.get('Injured') == True:
+                daily_scores.append(0.0)
+                is_starting.append(False)
+                breakdowns.append("IL (Injured)")
+                opponents.append("N/A")
+                sp_xeras.append("-")
+                warnings.append("🚨 INJURED (IL)")
+                continue
+
             matchup = None
             if mlb_id and mlb_id in matchups:
                 matchup = matchups[mlb_id]
@@ -140,10 +152,12 @@ class DailyEngine:
                     sp_id = matchup.get('opposing_sp_id')
                     if sp_id:
                         sp_data = self.harvester.get_pitcher_data(sp_id, year=year, weight_current=weight_current)
-                        opponent = f"{matchup.get('opposing_sp_name')} ({sp_data['hand']} {sp_data.get('SIERA', sp_data.get('xera', sp_data['era'])):.1f})"
                         
                         # Use SIERA as the primary skill metric if available, then xERA, then ERA
                         pitcher_skill = sp_data.get('SIERA', sp_data.get('xera', sp_data.get('era', 4.0)))
+                        sp_xera = f"{pitcher_skill:.2f}"
+                        opponent = f"{matchup.get('opposing_sp_name')} ({sp_data['hand']})"
+                        
                         era_factor = 1.0 + ((pitcher_skill - 4.0) / 4.0)
                         era_factor = max(0.7, min(1.3, era_factor))
                         multiplier *= era_factor
@@ -254,12 +268,14 @@ class DailyEngine:
             is_starting.append(starting)
             breakdowns.append(", ".join(breakdown) if breakdown else "Base")
             opponents.append(opponent)
+            sp_xeras.append(sp_xera)
             warnings.append(warning)
             
         hitters['DailyScore'] = daily_scores
         hitters['IsStarting'] = is_starting
         hitters['Breakdown'] = breakdowns
         hitters['Opponent'] = opponents
+        hitters['SP_xERA'] = sp_xeras
         hitters['Warning'] = warnings
         
         return hitters[hitters['DailyScore'] > 0].copy()

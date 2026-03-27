@@ -47,22 +47,33 @@ import argparse
 def main():
     parser = argparse.ArgumentParser(description="Zurich Zebras Lineup Optimizer")
     parser.add_argument("--projection", type=str, default="steamer", help="Projection system (steamer, atc, thebat)")
+    parser.add_argument("--date", type=str, help="Target date (YYYY-MM-DD). Defaults to today.")
     args = parser.parse_args()
 
-    today = datetime.now().strftime("%Y-%m-%d")
-    year = datetime.now().year
+    # Determine target date and year
+    if args.date:
+        target_date = args.date
+        try:
+            year = int(target_date.split("-")[0])
+        except (ValueError, IndexError):
+            print(f"Error: Invalid date format '{target_date}'. Use YYYY-MM-DD.")
+            return
+    else:
+        target_date = datetime.now().strftime("%Y-%m-%d")
+        year = datetime.now().year
+
     optimizer = OttoneuOptimizer(projection_system=args.projection)
     
-    print_header(f"Zurich Zebras (Ottoneu Team 7582) Lineup Optimizer [{args.projection.upper()}]", today)
+    print_header(f"Zurich Zebras (Ottoneu Team 7582) Lineup Optimizer [{args.projection.upper()}]", target_date)
     
     # 1. Gather Data for both tables
     print("Analyzing Roster and Matchups...")
-    all_hitters = optimizer.daily_engine.get_daily_projections(today)
+    all_hitters = optimizer.daily_engine.get_daily_projections(target_date)
     full_roster = optimizer.enricher.enrich_roster()
-    matchups = optimizer.daily_engine.harvester.get_daily_matchups(today)
+    matchups = optimizer.daily_engine.harvester.get_daily_matchups(target_date)
     
     # 2. Run Daily Optimization
-    lineup = optimizer.optimize_lineup(target_date=today)
+    lineup = optimizer.optimize_lineup(target_date=target_date)
     
     if lineup is not None and not lineup.empty:
         # Add Order column to lineup
@@ -86,7 +97,7 @@ def main():
         lineup['Order'] = order_list
 
         # === TABLE 1: RECOMMENDED LINEUP ===
-        cols = ['Slot', 'Player', 'Order', 'Opponent', 'Score', 'Breakdown', 'Warning']
+        cols = ['Slot', 'Player', 'Order', 'Opponent', 'SP_xERA', 'Score', 'Breakdown', 'Warning']
         cols = [c for c in cols if c in lineup.columns]
         display_dataframe(lineup, title="RECOMMENDED DAILY LINEUP", columns=cols)
         
@@ -114,9 +125,14 @@ def main():
             proj_score = proj_row['DailyScore'].values[0] if not proj_row.empty else 0.0
             breakdown = proj_row['Breakdown'].values[0] if not proj_row.empty else "-"
             opponent = proj_row['Opponent'].values[0] if not proj_row.empty else "-"
+            sp_xera = proj_row['SP_xERA'].values[0] if not proj_row.empty else "-"
+            warning = proj_row['Warning'].values[0] if not proj_row.empty else ""
             min_floor = optimizer.min_score
             
-            if not mlb_id or (mlb_id not in matchups and team_abb not in teams_playing):
+            if row.get('Injured') == True:
+                note = "Injured (IL) - Not available."
+                clean_order = "-"
+            elif not mlb_id or (mlb_id not in matchups and team_abb not in teams_playing):
                 note = "Team Off-day or No Game Scheduled."
             else:
                 # Check if team is playing but lineup isn't out
@@ -138,6 +154,7 @@ def main():
                 'POS': row['POS'],
                 'Order': clean_order,
                 'Opponent': opponent,
+                'SP_xERA': sp_xera,
                 'Proj': proj_score,
                 'Breakdown': breakdown,
                 'Note': note
@@ -145,16 +162,16 @@ def main():
 
         df_sat = pd.DataFrame(sat_data)
         if not df_sat.empty:
-            display_dataframe(df_sat, title="PLAYERS SAT", columns=['Player', 'POS', 'Order', 'Opponent', 'Proj', 'Breakdown', 'Note'])
+            display_dataframe(df_sat, title="PLAYERS SAT", columns=['Player', 'POS', 'Order', 'Opponent', 'SP_xERA', 'Proj', 'Breakdown', 'Note'])
 
         # Narrative Generation
-        ai_narrative = generate_ai_narrative(lineup, today)
+        ai_narrative = generate_ai_narrative(lineup, target_date)
         print_narrative(ai_narrative)
         
         print_info("\n[dim]Algorithm: Maximize projected 5x5 efficiency subject to positional caps.[/dim]")
         print_info("[dim]Factors: SIERA Difficulty, Platoon Splits, Elite BvP, StatCast Peripherals, Weather.[/dim]")
     else:
-        print(f"\nNo valid starters found for {today}. This may be an off-day or lineups are not yet posted.")
+        print(f"\nNo valid starters found for {target_date}. This may be an off-day or lineups are not yet posted.")
 
 if __name__ == "__main__":
     main()

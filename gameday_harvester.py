@@ -10,7 +10,24 @@ class GameDayHarvester:
     def __init__(self):
         # Cache for player IDs to avoid repeated lookups
         self.player_id_cache = {}
+        # Cache for team abbreviations
+        self.team_abb_cache = {}
         self.statcast = StatCastHarvester()
+
+    def get_team_abb(self, team_id):
+        if team_id in self.team_abb_cache:
+            return self.team_abb_cache[team_id]
+        
+        try:
+            team = statsapi.get('team', {'teamId': team_id})
+            if team and 'teams' in team:
+                abb = team['teams'][0].get('abbreviation')
+                ott_abb = TeamCrosswalk.to_ottoneu(abb)
+                self.team_abb_cache[team_id] = ott_abb
+                return ott_abb
+        except Exception:
+            pass
+        return None
 
     def get_mlb_id(self, player_name, target_year=2025):
         cache_key = f"{player_name}_{target_year}"
@@ -54,28 +71,39 @@ class GameDayHarvester:
             venue = game.get('venue_name', 'Unknown')
             status = game.get('status', 'Unknown')
             
-            try:
-                box = statsapi.boxscore_data(game_id)
-            except Exception:
-                continue
-            
-            away_abb = box.get('teamInfo', {}).get('away', {}).get('abbreviation')
-            home_abb = box.get('teamInfo', {}).get('home', {}).get('abbreviation')
-            
-            # Map abbreviations to Ottoneu format for consistent lookup
-            away_abb = TeamCrosswalk.to_ottoneu(away_abb)
-            home_abb = TeamCrosswalk.to_ottoneu(home_abb)
+            # Resolve team abbreviations from schedule IDs (more reliable for future games)
+            away_abb = self.get_team_abb(game.get('away_id'))
+            home_abb = self.get_team_abb(game.get('home_id'))
             
             away_sp = None
             home_sp = None
-            for p in box.get('awayPitchers', []):
-                if p.get('personId') and p.get('name') != 'Pitchers':
-                    away_sp = p
-                    break
-            for p in box.get('homePitchers', []):
-                if p.get('personId') and p.get('name') != 'Pitchers':
-                    home_sp = p
-                    break
+            
+            try:
+                # Try to get detailed boxscore (best for confirmed lineups)
+                box = statsapi.boxscore_data(game_id)
+                if box:
+                    for p in box.get('awayPitchers', []):
+                        if p.get('personId') and p.get('name') != 'Pitchers':
+                            away_sp = {'name': p['name'], 'personId': p['personId']}
+                            break
+                    for p in box.get('homePitchers', []):
+                        if p.get('personId') and p.get('name') != 'Pitchers':
+                            home_sp = {'name': p['name'], 'personId': p['personId']}
+                            break
+            except Exception:
+                box = None
+
+            # Fallback for pitchers if boxscore is empty (crucial for future games)
+            if not away_sp or not home_sp:
+                try:
+                    game_data = statsapi.get('game', {'gamePk': game_id}).get('gameData', {})
+                    probables = game_data.get('probablePitchers', {})
+                    if not away_sp and probables.get('away'):
+                        away_sp = {'name': probables['away']['fullName'], 'personId': probables['away']['id']}
+                    if not home_sp and probables.get('home'):
+                        home_sp = {'name': probables['home']['fullName'], 'personId': probables['home']['id']}
+                except Exception:
+                    pass
 
             # Initial team entry
             if away_abb:
@@ -99,37 +127,39 @@ class GameDayHarvester:
                     'game_status': status
                 }
             
-            if box.get('awayBatters'):
-                for batter in box['awayBatters']:
-                    if isinstance(batter, dict) and 'personId' in batter:
-                        is_start = batter.get('battingOrder', '0').endswith('00') and len(batter.get('battingOrder', '0')) == 3
-                        if is_start: matchups['_teams_playing'][away_abb]['has_lineup'] = True
-                        matchups[batter['personId']] = {
-                            'is_starting': is_start,
-                            'batting_order': batter.get('battingOrder'),
-                            'opposing_sp_name': home_sp['name'] if home_sp else None,
-                            'opposing_sp_id': home_sp['personId'] if home_sp else None,
-                            'venue_name': venue,
-                            'home_team_abb': home_abb,
-                            'is_home': False,
-                            'game_status': status
-                        }
-                        
-            if box.get('homeBatters'):
-                for batter in box['homeBatters']:
-                    if isinstance(batter, dict) and 'personId' in batter:
-                        is_start = batter.get('battingOrder', '0').endswith('00') and len(batter.get('battingOrder', '0')) == 3
-                        if is_start: matchups['_teams_playing'][home_abb]['has_lineup'] = True
-                        matchups[batter['personId']] = {
-                            'is_starting': is_start,
-                            'batting_order': batter.get('battingOrder'),
-                            'opposing_sp_name': away_sp['name'] if away_sp else None,
-                            'opposing_sp_id': away_sp['personId'] if away_sp else None,
-                            'venue_name': venue,
-                            'home_team_abb': home_abb,
-                            'is_home': True,
-                            'game_status': status
-                        }
+            # Process batters if boxscore is available
+            if box:
+                if box.get('awayBatters'):
+                    for batter in box['awayBatters']:
+                        if isinstance(batter, dict) and 'personId' in batter:
+                            is_start = batter.get('battingOrder', '0').endswith('00') and len(batter.get('battingOrder', '0')) == 3
+                            if is_start: matchups['_teams_playing'][away_abb]['has_lineup'] = True
+                            matchups[batter['personId']] = {
+                                'is_starting': is_start,
+                                'batting_order': batter.get('battingOrder'),
+                                'opposing_sp_name': home_sp['name'] if home_sp else None,
+                                'opposing_sp_id': home_sp['personId'] if home_sp else None,
+                                'venue_name': venue,
+                                'home_team_abb': home_abb,
+                                'is_home': False,
+                                'game_status': status
+                            }
+                            
+                if box.get('homeBatters'):
+                    for batter in box['homeBatters']:
+                        if isinstance(batter, dict) and 'personId' in batter:
+                            is_start = batter.get('battingOrder', '0').endswith('00') and len(batter.get('battingOrder', '0')) == 3
+                            if is_start: matchups['_teams_playing'][home_abb]['has_lineup'] = True
+                            matchups[batter['personId']] = {
+                                'is_starting': is_start,
+                                'batting_order': batter.get('battingOrder'),
+                                'opposing_sp_name': away_sp['name'] if away_sp else None,
+                                'opposing_sp_id': away_sp['personId'] if away_sp else None,
+                                'venue_name': venue,
+                                'home_team_abb': home_abb,
+                                'is_home': True,
+                                'game_status': status
+                            }
                         
         return matchups
 

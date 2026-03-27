@@ -69,17 +69,18 @@ class OttoneuScraper:
 
                         # Extract team from text (e.g. "Trea Turner PHI")
                         full_text = col.get_text(strip=True)
-                        row_data['Team'] = full_text.replace(row_data['Name'], "").strip()
+                        row_data['Injured'] = 'IL' in full_text
+                        
+                        team_text = full_text.replace(row_data['Name'], "").strip()
                         # Team info might contain other icons/text, clean it up
-                        # PHI SS -> PHI
-                        if row_data['Team']:
-                            # Handle cases like "STL OUT" or "DET DH"
-                            parts = row_data['Team'].split(' ')
+                        if team_text:
+                            # Handle cases like "STL60IL" -> "STL"
+                            team_text = team_text.replace('60IL', '').replace('15IL', '').replace('10IL', '').replace('7IL', '').replace('IL', '')
+                            # Handle cases like "STL60" or other weird variations
+                            parts = team_text.split(' ')
                             team_candidate = parts[0]
-                            # If it's something like "STLOUT", we need to be careful. 
-                            # Most MLB abbreviations are 2-3 characters.
-                            # Let's take the first 3 if it's not a known exception.
                             if len(team_candidate) > 3:
+                                # Look for common 3-letter team abbs at start
                                 team_candidate = team_candidate[:3]
                             row_data['Team'] = team_candidate
                     else:
