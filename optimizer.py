@@ -19,6 +19,8 @@ class OttoneuOptimizer:
         if target_date:
             print(f"Optimizing for specific date: {target_date}")
             hitters = self.daily_engine.get_daily_projections(target_date)
+            # Filter for active players only
+            hitters = hitters[hitters['DailyScore'] > 0].copy()
             score_col = 'DailyScore'
             current_min = self.min_score
         else:

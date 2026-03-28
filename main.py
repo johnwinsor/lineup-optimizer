@@ -132,6 +132,9 @@ def main():
             if row.get('Injured') == True:
                 note = "Injured (IL) - Not available."
                 clean_order = "-"
+            elif warning == "🚨 MINORS":
+                note = "In the Minors (Not on Active Roster)."
+                clean_order = "-"
             elif not mlb_id or (mlb_id not in matchups and team_abb not in teams_playing):
                 note = "Team Off-day or No Game Scheduled."
             else:

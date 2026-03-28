@@ -36,8 +36,14 @@ class StatCastHarvester:
         if prior is None and current is None:
             return None
         
-        if prior is None: return current
-        if current is None or weight_current == 0: return prior
+        # If we have no prior data and weight is 0, we shouldn't use small-sample current data
+        if prior is None:
+            if weight_current == 0:
+                return None
+            return current
+            
+        if current is None or weight_current == 0: 
+            return prior
         
         # Blend specific metrics
         weight_prior = 1.0 - weight_current
@@ -59,9 +65,14 @@ class StatCastHarvester:
         
         if prior is None and current is None:
             return None
+            
+        if prior is None:
+            if weight_current == 0:
+                return None
+            return current
         
-        if prior is None: return current
-        if current is None or weight_current == 0: return prior
+        if current is None or weight_current == 0: 
+            return prior
         
         weight_prior = 1.0 - weight_current
         blended = prior.copy()

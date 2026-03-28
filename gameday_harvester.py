@@ -4,6 +4,7 @@ import pandas as pd
 from datetime import datetime
 import requests
 from statcast_harvester import StatCastHarvester
+from defense_harvester import DefenseHarvester
 from crosswalks import TeamCrosswalk, PlayerCrosswalk
 
 class GameDayHarvester:
@@ -12,7 +13,10 @@ class GameDayHarvester:
         self.player_id_cache = {}
         # Cache for team abbreviations
         self.team_abb_cache = {}
+        # Cache for active rosters: { team_id: set(mlb_ids) }
+        self.active_rosters = {}
         self.statcast = StatCastHarvester()
+        self.defense = DefenseHarvester()
 
     def get_team_abb(self, team_id):
         if team_id in self.team_abb_cache:
@@ -68,15 +72,28 @@ class GameDayHarvester:
         
         for game in games:
             game_id = game['game_id']
+            away_id = game.get('away_id')
+            home_id = game.get('home_id')
             venue = game.get('venue_name', 'Unknown')
             status = game.get('status', 'Unknown')
             
+            # Cache active rosters for these teams
+            for t_id in [away_id, home_id]:
+                if t_id and t_id not in self.active_rosters:
+                    try:
+                        roster = statsapi.get('team_roster', {'teamId': t_id, 'rosterType': 'active'})
+                        self.active_rosters[t_id] = {p['person']['id'] for p in roster.get('roster', [])}
+                    except Exception:
+                        self.active_rosters[t_id] = set()
+
             # Resolve team abbreviations from schedule IDs (more reliable for future games)
-            away_abb = self.get_team_abb(game.get('away_id'))
-            home_abb = self.get_team_abb(game.get('home_id'))
+            away_abb = self.get_team_abb(away_id)
+            home_abb = self.get_team_abb(home_id)
             
             away_sp = None
             home_sp = None
+            away_c = None
+            home_c = None
             
             try:
                 # Try to get detailed boxscore (best for confirmed lineups)
@@ -89,6 +106,15 @@ class GameDayHarvester:
                     for p in box.get('homePitchers', []):
                         if p.get('personId') and p.get('name') != 'Pitchers':
                             home_sp = {'name': p['name'], 'personId': p['personId']}
+                            break
+                    # Find Catchers
+                    for b in box.get('awayBatters', []):
+                        if b.get('position') == 'C':
+                            away_c = {'name': b['name'], 'personId': b['personId']}
+                            break
+                    for b in box.get('homeBatters', []):
+                        if b.get('position') == 'C':
+                            home_c = {'name': b['name'], 'personId': b['personId']}
                             break
             except Exception:
                 box = None
@@ -105,26 +131,40 @@ class GameDayHarvester:
                 except Exception:
                     pass
 
+            # Fallback for catchers (crucial for Lineup Pending scenarios)
+            if not away_c:
+                c_id = self.defense.get_primary_catcher(game.get('away_id'))
+                if c_id:
+                    away_c = {'personId': c_id}
+            if not home_c:
+                c_id = self.defense.get_primary_catcher(game.get('home_id'))
+                if c_id:
+                    home_c = {'personId': c_id}
+
             # Initial team entry
             if away_abb:
                 matchups['_teams_playing'][away_abb] = {
                     'has_lineup': False,
                     'opposing_sp_name': home_sp['name'] if home_sp else None,
                     'opposing_sp_id': home_sp['personId'] if home_sp else None,
+                    'opposing_c_id': home_c['personId'] if home_c else None,
                     'venue_name': venue,
                     'home_team_abb': home_abb,
                     'is_home': False,
-                    'game_status': status
+                    'game_status': status,
+                    'active_roster': self.active_rosters.get(away_id, set())
                 }
             if home_abb:
                 matchups['_teams_playing'][home_abb] = {
                     'has_lineup': False,
                     'opposing_sp_name': away_sp['name'] if away_sp else None,
                     'opposing_sp_id': away_sp['personId'] if away_sp else None,
+                    'opposing_c_id': away_c['personId'] if away_c else None,
                     'venue_name': venue,
                     'home_team_abb': home_abb,
                     'is_home': True,
-                    'game_status': status
+                    'game_status': status,
+                    'active_roster': self.active_rosters.get(home_id, set())
                 }
             
             # Process batters if boxscore is available
@@ -139,6 +179,7 @@ class GameDayHarvester:
                                 'batting_order': batter.get('battingOrder'),
                                 'opposing_sp_name': home_sp['name'] if home_sp else None,
                                 'opposing_sp_id': home_sp['personId'] if home_sp else None,
+                                'opposing_c_id': home_c['personId'] if home_c else None,
                                 'venue_name': venue,
                                 'home_team_abb': home_abb,
                                 'is_home': False,
@@ -155,6 +196,7 @@ class GameDayHarvester:
                                 'batting_order': batter.get('battingOrder'),
                                 'opposing_sp_name': away_sp['name'] if away_sp else None,
                                 'opposing_sp_id': away_sp['personId'] if away_sp else None,
+                                'opposing_c_id': away_c['personId'] if away_c else None,
                                 'venue_name': venue,
                                 'home_team_abb': home_abb,
                                 'is_home': True,

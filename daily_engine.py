@@ -1,6 +1,7 @@
 import pandas as pd
 from gameday_harvester import GameDayHarvester
 from enricher import OttoneuEnricher
+from defense_harvester import DefenseHarvester
 from datetime import datetime
 from park_factors import get_park_multiplier
 from weather_harvester import WeatherHarvester
@@ -13,6 +14,7 @@ class DailyEngine:
         self.enricher = OttoneuEnricher(league_id, team_id, projection_system=projection_system)
         self.harvester = GameDayHarvester()
         self.weather = WeatherHarvester()
+        self.defense = DefenseHarvester()
 
     def _get_recency_weight(self, target_date: str):
         """
@@ -106,6 +108,21 @@ class DailyEngine:
                 warnings.append("🚨 INJURED (IL)")
                 continue
 
+            # Check for Active Roster status (Minors check)
+            if team_abb in teams_playing:
+                team_data = teams_playing[team_abb]
+                active_roster = team_data.get('active_roster', set())
+                # If they have an MLB ID, check if they are in the active roster
+                # We skip this if they are already confirmed in the boxscore (mlb_id in matchups)
+                if mlb_id and mlb_id not in matchups and mlb_id not in active_roster:
+                    daily_scores.append(0.0)
+                    is_starting.append(False)
+                    breakdowns.append("In Minors (Not on Active Roster)")
+                    opponents.append("N/A")
+                    sp_xeras.append("-")
+                    warnings.append("🚨 MINORS")
+                    continue
+
             matchup = None
             if mlb_id and mlb_id in matchups:
                 matchup = matchups[mlb_id]
@@ -119,6 +136,7 @@ class DailyEngine:
                         'is_pending': True,
                         'opposing_sp_name': team_data['opposing_sp_name'],
                         'opposing_sp_id': team_data['opposing_sp_id'],
+                        'opposing_c_id': team_data.get('opposing_c_id'),
                         'venue_name': team_data['venue_name'],
                         'home_team_abb': team_data['home_team_abb'],
                         'is_home': team_data['is_home'],
@@ -202,7 +220,37 @@ class DailyEngine:
                                 multiplier *= 0.95
                                 breakdown.append(f"BvP Weak ({bvp['pa']} PA): -5%")
 
-                    # 4. Batting Order Context
+                        # 4. Basestealing Environment (for Speedsters)
+                        sprint_speed = self.defense.get_sprint_speed(mlb_id)
+                        if sprint_speed > 28.5:
+                            sb_env_mult = 1.0
+                            sb_breakdown = []
+                            
+                            # Catcher Pop Time
+                            c_id = matchup.get('opposing_c_id')
+                            if c_id:
+                                pop_time = self.defense.get_pop_time(c_id)
+                                if pop_time > 2.00:
+                                    sb_env_mult *= 1.10
+                                    sb_breakdown.append(f"Slow Catcher ({pop_time}s): +10%")
+                                elif pop_time < 1.90:
+                                    sb_env_mult *= 0.90
+                                    sb_breakdown.append(f"Elite Catcher ({pop_time}s): -10%")
+                            
+                            # Pitcher SB Rate
+                            sb_rate = self.defense.get_pitcher_sb_rate(sp_id, year=year)
+                            if sb_rate > 0.85:
+                                sb_env_mult *= 1.05
+                                sb_breakdown.append(f"Fast SP Delivery ({int(sb_rate*100)}% SB): +5%")
+                            elif sb_rate < 0.65:
+                                sb_env_mult *= 0.95
+                                sb_breakdown.append(f"Elite Hold-on SP ({int(sb_rate*100)}% SB): -5%")
+                                
+                            if sb_env_mult != 1.0:
+                                multiplier *= sb_env_mult
+                                breakdown.append(", ".join(sb_breakdown))
+
+                    # 5. Batting Order Context
                     order_str = matchup.get('batting_order', '-')
                     if order_str and order_str != '-' and len(order_str) >= 1:
                         order_val = int(order_str[0])
@@ -278,7 +326,7 @@ class DailyEngine:
         hitters['SP_xERA'] = sp_xeras
         hitters['Warning'] = warnings
         
-        return hitters[hitters['DailyScore'] > 0].copy()
+        return hitters.copy()
 
 if __name__ == "__main__":
     engine = DailyEngine()
