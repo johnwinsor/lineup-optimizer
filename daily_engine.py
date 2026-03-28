@@ -220,31 +220,42 @@ class DailyEngine:
                                 multiplier *= 0.95
                                 breakdown.append(f"BvP Weak ({bvp['pa']} PA): -5%")
 
-                        # 4. Basestealing Environment (for Speedsters)
+                        # 4. Basestealing Environment (Tiered)
                         sprint_speed = self.defense.get_sprint_speed(mlb_id)
+                        
+                        tier_mult = 0.0
                         if sprint_speed > 28.5:
+                            tier_mult = 1.0 # Full impact for Elite
+                        elif sprint_speed >= 27.5:
+                            tier_mult = 0.5 # Half impact for Aggressive
+                            
+                        if tier_mult > 0:
                             sb_env_mult = 1.0
                             sb_breakdown = []
                             
-                            # Catcher Pop Time
+                            # Catcher Pop Time (Deterrent Factor - Max 5%)
                             c_id = matchup.get('opposing_c_id')
                             if c_id:
                                 pop_time = self.defense.get_pop_time(c_id)
                                 if pop_time > 2.00:
-                                    sb_env_mult *= 1.10
-                                    sb_breakdown.append(f"Slow Catcher ({pop_time}s): +10%")
+                                    boost = 1.0 + (0.05 * tier_mult)
+                                    sb_env_mult *= boost
+                                    sb_breakdown.append(f"Slow Catcher ({pop_time}s): +{((boost-1)*100):.1f}%")
                                 elif pop_time < 1.90:
-                                    sb_env_mult *= 0.90
-                                    sb_breakdown.append(f"Elite Catcher ({pop_time}s): -10%")
+                                    penalty = 1.0 - (0.05 * tier_mult)
+                                    sb_env_mult *= penalty
+                                    sb_breakdown.append(f"Elite Catcher ({pop_time}s): -{((1-penalty)*100):.1f}%")
                             
-                            # Pitcher SB Rate
+                            # Pitcher SB Rate (Primary Factor - Max 10%)
                             sb_rate = self.defense.get_pitcher_sb_rate(sp_id, year=year)
                             if sb_rate > 0.85:
-                                sb_env_mult *= 1.05
-                                sb_breakdown.append(f"Fast SP Delivery ({int(sb_rate*100)}% SB): +5%")
+                                boost = 1.0 + (0.10 * tier_mult)
+                                sb_env_mult *= boost
+                                sb_breakdown.append(f"Slow SP Delivery ({int(sb_rate*100)}% SB): +{int((boost-1)*100)}%")
                             elif sb_rate < 0.65:
-                                sb_env_mult *= 0.95
-                                sb_breakdown.append(f"Elite Hold-on SP ({int(sb_rate*100)}% SB): -5%")
+                                penalty = 1.0 - (0.10 * tier_mult)
+                                sb_env_mult *= penalty
+                                sb_breakdown.append(f"Elite Hold-on SP ({int(sb_rate*100)}% SB): -{int((1-penalty)*100)}%")
                                 
                             if sb_env_mult != 1.0:
                                 multiplier *= sb_env_mult
