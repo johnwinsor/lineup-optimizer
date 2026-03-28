@@ -5,6 +5,12 @@ on:
     - cron: '0 0-1 * * *'   # 12 AM and 1 AM UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   optimize:
     runs-on: ubuntu-latest
