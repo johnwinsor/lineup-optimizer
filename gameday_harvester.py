@@ -205,6 +205,54 @@ class GameDayHarvester:
                         
         return matchups
 
+    def get_last_starting_order(self, person_id, year=2025):
+        if not person_id:
+            return "5"
+            
+        cache_key = f"last_order_{person_id}_{year}"
+        if cache_key in self.player_id_cache:
+            return self.player_id_cache[cache_key]
+            
+        try:
+            person = statsapi.get('person', {
+                'personId': person_id,
+                'hydrate': f'stats(group=[hitting],type=[gameLog],season={year})'
+            })
+            
+            if 'people' in person:
+                p = person['people'][0]
+                if 'stats' in p:
+                    for s in p['stats']:
+                        if s['type']['displayName'] == 'gameLog':
+                            # Check most recent 5 games to avoid excessive API calls
+                            splits = list(reversed(s['splits']))[:5]
+                            for split in splits:
+                                game_id = split['game']['gamePk']
+                                try:
+                                    box = statsapi.boxscore_data(game_id)
+                                    for team in ['away', 'home']:
+                                        batters = box.get(f'{team}Batters', [])
+                                        for batter in batters:
+                                            if batter.get('personId') == person_id:
+                                                order = batter.get('battingOrder')
+                                                # Starting order looks like '100', '200', etc.
+                                                if order and order.endswith('00') and len(order) == 3:
+                                                    self.player_id_cache[cache_key] = order[0]
+                                                    return order[0]
+                                except Exception:
+                                    continue
+        except Exception:
+            pass
+            
+        # Fallback to 2025 if 2026 failed and we are in 2026
+        if year == 2026:
+            res = self.get_last_starting_order(person_id, year=2025)
+            self.player_id_cache[cache_key] = res
+            return res
+            
+        self.player_id_cache[cache_key] = "5"
+        return "5"
+
     def get_batter_data(self, person_id):
         if not person_id:
             return {'hand': 'R'}

@@ -2,6 +2,7 @@ import pandas as pd
 from optimizer import OttoneuOptimizer
 from datetime import datetime
 import os
+import re
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -83,17 +84,24 @@ def main():
             mlb_id = optimizer.daily_engine.harvester.get_mlb_id(name, target_year=year)
             matchup = matchups.get(mlb_id, {})
             
+            order = "-"
             if not matchup and name in all_hitters['Name'].values:
                 # Check if they were a 'Pending' starter
                 proj_row = all_hitters[all_hitters['Name'] == name]
                 if not proj_row.empty and 'Lineup Pending' in proj_row['Breakdown'].values[0]:
-                    order_list.append('TBA')
-                    continue
-
-            order = matchup.get('batting_order', '-')
-            # Convert '100' to '1', etc.
-            clean_order = order[0] if order and order != '-' and len(order) >= 1 else '-'
-            order_list.append(clean_order)
+                    # Extract assumed order from breakdown e.g. "Lineup Pending (Assumed #1)"
+                    breakdown = proj_row['Breakdown'].values[0]
+                    match = re.search(r'Assumed #(\d)', breakdown)
+                    if match:
+                        order = f"{match.group(1)}*" 
+                    else:
+                        order = "TBA"
+            else:
+                raw_order = matchup.get('batting_order', '-')
+                # Convert '100' to '1', etc.
+                order = raw_order[0] if raw_order and raw_order != '-' and len(raw_order) >= 1 else '-'
+            
+            order_list.append(order)
         lineup['Order'] = order_list
 
         # === TABLE 1: RECOMMENDED LINEUP ===

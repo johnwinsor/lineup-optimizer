@@ -130,9 +130,11 @@ class DailyEngine:
                 # Team is playing, but player not in boxscore yet (Lineup Pending)
                 team_data = teams_playing[team_abb]
                 if not team_data['has_lineup']:
+                    # Look up historical order if possible
+                    last_order = self.harvester.get_last_starting_order(mlb_id, year=year)
                     matchup = {
                         'is_starting': True,
-                        'batting_order': '500', # Default to middle of order
+                        'batting_order': f"{last_order}00", 
                         'is_pending': True,
                         'opposing_sp_name': team_data['opposing_sp_name'],
                         'opposing_sp_id': team_data['opposing_sp_id'],
@@ -150,7 +152,8 @@ class DailyEngine:
                     multiplier = 1.0
                     
                     if matchup.get('is_pending'):
-                        breakdown.append("Lineup Pending (Assumed #5)")
+                        order_val = int(matchup.get('batting_order', '5')[0])
+                        breakdown.append(f"Lineup Pending (Assumed #{order_val})")
                     
                     breakdown.append(f"Base: {base_score:.2f}")
                     

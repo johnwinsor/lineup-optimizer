@@ -22,18 +22,18 @@ The optimizer is a multi-stage pipeline designed for **Daily 5x5 Roto Efficiency
 The final `ProjScore` for a player on a given day is: 
 `Baseline Score * [Park Factor] * [Pitcher Skill] * [Platoon Factor] * [Order Factor] * [BvP Factor] * [StatCast Boosts] * [Weather Factor]`
 
-### Lineup Pending Logic (Optimistic Projection):
+### Lineup Pending Logic (Historical Assumption):
 When a team is scheduled to play but the official lineup has not yet been announced:
 1.  **Status**: The player is marked as **"Pending"** in the optimizer.
-2.  **Order**: Displayed as **"TBA"**.
-3.  **Multiplier**: The algorithm applies a **1.05x multiplier** (Assumed #5 slot) to ensure core players are included in the recommendation until confirmed otherwise.
-4.  **Note**: The Breakdown column clarifies: **"Lineup Pending (Assumed #5)"**.
+2.  **Order**: Displayed as **"X*"** (e.g., **"1*"**), where X is the batting order from the last completed game they started in. Falls back to **"5*"** if no history is found.
+3.  **Multiplier**: The algorithm applies the appropriate order multiplier (e.g., 1.15x for #1) based on this historical assumption to ensure core players are prioritized correctly.
+4.  **Note**: The Breakdown column clarifies: **"Lineup Pending (Assumed #X)"**.
 
 ### Multipliers & Weights:
 | Factor | Condition | Impact |
 | :--- | :--- | :--- |
 | **Order Factor** | Batting Order Position (1 to 9) | **0.85x to 1.15x** |
-| **Lineup Pending** | Game scheduled, card not posted | **1.05x (Assumed #5)** |
+| **Lineup Pending** | Game scheduled, card not posted | **Historical Order Multiplier** |
 | **Park Factor** | Numerical lookup per stadium | **0.9x to 1.2x** |
 | **Wind (Out)** | Speed >= 10 MPH blowing Out | **+5% to +10%** |
 | **Wind (In)** | Speed >= 10 MPH blowing In | **-5% to -10%** |

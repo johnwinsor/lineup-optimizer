@@ -3,6 +3,7 @@ from gameday_harvester import GameDayHarvester
 import pandas as pd
 from datetime import datetime
 from display_utils import print_header, display_dataframe, print_narrative, print_totals
+import re
 
 class Backtester:
     def __init__(self, league_id=1077, team_id=7582, projection_system="steamer"):
@@ -60,7 +61,18 @@ class Backtester:
                 ev = ev_stats.get(mlb_id, {'avg_ev': 0, 'max_ev': 0})
                 
                 order = matchup.get('batting_order', '-')
-                clean_order = 'TBA' if is_pending else (order[0] if order and order != '-' and len(order) >= 1 else '-')
+                clean_order = order[0] if order and order != '-' and len(order) >= 1 else '-'
+                
+                # Handle pending lineup case
+                if is_pending:
+                    proj_row = all_hitters[all_hitters['Name'] == player_name]
+                    if not proj_row.empty:
+                        breakdown = proj_row['Breakdown'].values[0]
+                        match = re.search(r'Assumed #(\d)', breakdown)
+                        if match:
+                            clean_order = f"{match.group(1)}*" 
+                        else:
+                            clean_order = "TBA"
 
                 started_data.append({
                     'Slot': row['Slot'],
@@ -119,7 +131,17 @@ class Backtester:
 
                 if not matchup and team_data and not team_data.get('has_lineup'):
                     note = "Lineup Pending (Assumed Bench)."
-                    order = 'TBA'
+                    # Check for assumed order if they were a pending starter
+                    proj_row = all_hitters[all_hitters['Name'] == name]
+                    if not proj_row.empty:
+                        breakdown = proj_row['Breakdown'].values[0]
+                        match = re.search(r'Assumed #(\d)', breakdown)
+                        if match:
+                            order = f"{match.group(1)}*" 
+                        else:
+                            order = "TBA"
+                    else:
+                        order = "TBA"
                     status = team_data.get('game_status', '-')
                 elif not matchup.get('is_starting', False):
                     note = "Not in MLB Starting Lineup (Benched/IL/Rest)."

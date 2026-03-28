@@ -146,7 +146,7 @@ The foundation of the score uses season-long Steamer projections:
 ### 2. The Daily Multipliers
 The **Daily Engine** then applies dynamic multipliers to the baseline based on the day's specific context:
 - **Order Factor:** Rewards high-volume slots (**+15% for Leadoff**) and penalizes the bottom of the order (**-15% for 9th**).
-- **Lineup Pending (New!):** Optimistically projects starters for teams playing but with no posted lineup. Assumes a **#5 slot (1.05x)** to ensure core players are included in recommendations with a **"TBA"** order status.
+- **Lineup Pending (New!):** Optimistically projects starters for teams playing but with no posted lineup. Assumes the **batting order from the player's last completed start** (e.g., **"1*"**) to ensure core players are prioritized correctly based on their typical role.
 - **Park Factor:** 0.90x to 1.20x (e.g., Coors Field vs. Petco Park).
 - **Pitcher Skill:** 0.70x to 1.30x (Based on the opposing SP's xERA/SIERA).
 - **Platoon Advantage:** +10% for opposite hand, -15% for L/L matchups.
