@@ -1,0 +1,31 @@
+name: Hourly Lineup Update
+on:
+  schedule:
+    - cron: '0 12-23 * * *' # Every hour from 12 PM to 11 PM UTC
+    - cron: '0 0-1 * * *'   # 12 AM and 1 AM UTC
+  workflow_dispatch:
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+        
+      - name: Install dependencies
+        run: uv sync
+        
+      - name: Run Optimizer
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: uv run python main.py --projection atc
+        
+      - name: Commit lineup data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add web_lineup.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Hourly lineup update [skip ci]"
+          git push

@@ -44,6 +44,23 @@ Keep the tone professional, analytical, and focused on maximizing 5x5 Roto effic
         return f"⚠️ Failed to generate AI narrative: {e}"
 
 import argparse
+import json
+
+def save_web_json(lineup_df, sat_df, target_date, ai_narrative, projection_system):
+    """Saves the optimization results to a JSON file for the web dashboard."""
+    data = {
+        "target_date": target_date,
+        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "projection_system": projection_system.upper(),
+        "total_efficiency_score": round(lineup_df['Score'].sum(), 2) if not lineup_df.empty else 0,
+        "narrative": ai_narrative,
+        "recommended_lineup": lineup_df.to_dict(orient="records") if not lineup_df.empty else [],
+        "players_sat": sat_df.to_dict(orient="records") if not sat_df.empty else []
+    }
+    
+    with open("web_lineup.json", "w") as f:
+        json.dump(data, f, indent=4)
+    print(f"\n[green]Web dashboard data exported to web_lineup.json[/green]")
 
 def main():
     parser = argparse.ArgumentParser(description="Zurich Zebras Lineup Optimizer")
@@ -150,7 +167,16 @@ def main():
                 team_data = teams_playing.get(team_abb, {})
                 if not matchup and team_data and not team_data.get('has_lineup'):
                     note = "Lineup Pending (Assumed Bench)."
-                    clean_order = 'TBA'
+                    # Check for assumed order from historical detection
+                    if not proj_row.empty:
+                        breakdown = proj_row['Breakdown'].values[0]
+                        match = re.search(r'Assumed #(\d)', breakdown)
+                        if match:
+                            clean_order = f"{match.group(1)}*" 
+                        else:
+                            clean_order = "TBA"
+                    else:
+                        clean_order = "TBA"
                 elif not matchup.get('is_starting', False):
                     note = "Not in MLB Starting Lineup (Benched/IL/Rest)."
                 else:
@@ -181,6 +207,12 @@ def main():
         
         print_info("\n[dim]Algorithm: Maximize projected 5x5 efficiency subject to positional caps.[/dim]")
         print_info("[dim]Factors: SIERA Difficulty, Platoon Splits, Elite BvP, StatCast Peripherals, Weather.[/dim]")
+        
+        # Save JSON for the web
+        # Ensure Slot is converted from Categorical to string for JSON serialization
+        if 'Slot' in lineup.columns:
+            lineup['Slot'] = lineup['Slot'].astype(str)
+        save_web_json(lineup, df_sat, target_date, ai_narrative, args.projection)
     else:
         print(f"\nNo valid starters found for {target_date}. This may be an off-day or lineups are not yet posted.")
 

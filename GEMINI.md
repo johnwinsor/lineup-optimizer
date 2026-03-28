@@ -74,7 +74,20 @@ The algorithm transitions from prior-season (2025) to current-season (2026) perf
 - **Analyze Spring Performances**: `uv run python spring_analyzer.py --pa 15`
 - **Refresh All Data**: `uv run python fetch_statcast.py`
 
-## 6. Implementation Notes & Disambiguation
+## 6. Web Dashboard & Automation (New!)
+The optimizer now includes a zero-cost static web dashboard hosted on GitHub Pages.
+
+### How it works:
+1.  **Automation**: GitHub Actions run `fetch_statcast.py` daily (4 AM UTC) and `main.py` hourly during the MLB season.
+2.  **Data Bridge**: `main.py` exports a `web_lineup.json` file containing the optimized lineup and AI narrative.
+3.  **Frontend**: `index.html` (Tailwind + Alpine.js) fetches the JSON and renders the dashboard.
+
+### Setup Instructions:
+1.  **Secrets**: Add `GEMINI_API_KEY` to your GitHub Repository Secrets.
+2.  **GitHub Pages**: In your repo settings, enable GitHub Pages and set it to deploy from the `main` branch (root folder).
+3.  **URL**: Your dashboard will be live at `https://<your-username>.github.io/lineup-optimizer/`.
+
+## 7. Implementation Notes & Disambiguation
 - **Efficiency Focus**: The core goal is to maximize stats *per slot*, adhering to the Ottoneu 162-game season cap.
 - **Zebras Floor**: A minimum efficiency threshold (default: 40.0) that must be met to start a non-core player.
 - **Narrative Logic**: Post-game summaries use a `TotalProd` (5x5 weighted) score to evaluate "Wins" and "Flops."

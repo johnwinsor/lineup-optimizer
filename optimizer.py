@@ -112,7 +112,9 @@ class OttoneuOptimizer:
         if not chosen_players:
             return pd.DataFrame()
             
-        return pd.DataFrame(chosen_players).sort_values(by='Slot')
+        df = pd.DataFrame(chosen_players)
+        df['Slot'] = pd.Categorical(df['Slot'], categories=slots, ordered=True)
+        return df.sort_values(by='Slot')
 
     def _get_eligibility(self, pos_str):
         return pos_str.replace('/', ' ').split()

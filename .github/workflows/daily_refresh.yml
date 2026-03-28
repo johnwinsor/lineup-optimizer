@@ -1,0 +1,28 @@
+name: Daily Data Refresh
+on:
+  schedule:
+    - cron: '0 4 * * *' # 4:00 AM UTC
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+        
+      - name: Install dependencies
+        run: uv sync
+        
+      - name: Fetch Statcast and Projections
+        run: uv run python fetch_statcast.py
+        
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add *.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Daily projection refresh [skip ci]"
+          git push

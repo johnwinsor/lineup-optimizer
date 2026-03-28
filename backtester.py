@@ -115,24 +115,32 @@ class Backtester:
             
             ev = ev_stats.get(mlb_id, {'avg_ev': 0, 'max_ev': 0})
                 
-            # Determine Why they Sat
-            proj_score = 0.0
+            # Determine Why they Sat (Logic synced with main.py)
+            proj_row = all_hitters[all_hitters['Name'] == name]
+            proj_score = proj_row['DailyScore'].values[0] if not proj_row.empty else 0.0
+            warning = proj_row['Warning'].values[0] if not proj_row.empty else ""
             min_floor = self.optimizer.min_score
             order = "-"
-            matchup = {}
-            if not mlb_id or (mlb_id not in matchups and team_abb not in teams_playing):
+            status = "-"
+            
+            if row.get('Injured') == True:
+                note = "Injured (IL) - Not available."
+            elif warning == "🚨 MINORS":
+                note = "In the Minors (Not on Active Roster)."
+            elif not mlb_id or (mlb_id not in matchups and team_abb not in teams_playing):
                 note = "Team Off-day or No Game Scheduled."
             else:
                 matchup = matchups.get(mlb_id, {})
                 team_data = teams_playing.get(team_abb, {})
+                status = matchup.get('game_status', team_data.get('game_status', '-'))
                 
+                # Resolve Order
                 o_str = matchup.get('batting_order', '-')
                 order = o_str[0] if o_str and o_str != '-' and len(o_str) >= 1 else '-'
 
                 if not matchup and team_data and not team_data.get('has_lineup'):
                     note = "Lineup Pending (Assumed Bench)."
-                    # Check for assumed order if they were a pending starter
-                    proj_row = all_hitters[all_hitters['Name'] == name]
+                    # Check for assumed order from historical detection
                     if not proj_row.empty:
                         breakdown = proj_row['Breakdown'].values[0]
                         match = re.search(r'Assumed #(\d)', breakdown)
@@ -142,16 +150,10 @@ class Backtester:
                             order = "TBA"
                     else:
                         order = "TBA"
-                    status = team_data.get('game_status', '-')
                 elif not matchup.get('is_starting', False):
                     note = "Not in MLB Starting Lineup (Benched/IL/Rest)."
-                    status = matchup.get('game_status', '-')
                 else:
                     # They were starting in MLB but not picked by our optimizer
-                    proj_row = all_hitters[all_hitters['Name'] == name]
-                    proj_score = proj_row['DailyScore'].values[0] if not proj_row.empty else 0
-                    status = matchup.get('game_status', '-')
-                    
                     if proj_score < min_floor:
                         note = f"Benched - Below Zebras Floor ({min_floor})."
                     else:
@@ -160,7 +162,7 @@ class Backtester:
             sat_data.append({
                 'Player': name,
                 'POS': row['POS'],
-                'Status': status if 'status' in locals() else "-",
+                'Status': status,
                 'Order': order,
                 'Proj': float(proj_score),
                 'Actual': f"{p_stats['H']}/{p_stats['AB']} {p_stats['R']}R {p_stats['HR']}HR {p_stats['RBI']}RBI {p_stats['SB']}SB",
