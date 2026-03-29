@@ -3,6 +3,7 @@ from optimizer import OttoneuOptimizer
 from datetime import datetime
 import os
 import re
+import pytz
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -74,7 +75,10 @@ def main():
     parser.add_argument("--skip-ai", action="store_true", help="Skip AI narrative generation to save API quota")
     args = parser.parse_args()
 
-    # Determine target date and year
+    # Determine target date and year using MLB (Eastern) Time
+    mlb_tz = pytz.timezone('US/Eastern')
+    now_mlb = datetime.now(mlb_tz)
+    
     if args.date:
         target_date = args.date
         try:
@@ -83,8 +87,8 @@ def main():
             print(f"Error: Invalid date format '{target_date}'. Use YYYY-MM-DD.")
             return
     else:
-        target_date = datetime.now().strftime("%Y-%m-%d")
-        year = datetime.now().year
+        target_date = now_mlb.strftime("%Y-%m-%d")
+        year = now_mlb.year
 
     optimizer = OttoneuOptimizer(projection_system=args.projection)
     
