@@ -47,17 +47,18 @@ jobs:
           TOMORROW=$(date -d "+1 day" +%Y-%m-%d)
           uv run python main.py --projection steamer --date $TOMORROW --output lineup_steamer_tomorrow.json
         
+      - name: Prepare public files
+        run: |
+          mkdir -p public
+          cp index.html public/
+          cp lineup_*.json public/
+        
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: ./public
           publish_branch: gh-pages
           keep_files: false
-          destination_dir: .
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          # We only want to publish the web dashboard files
-          glob_pattern: |
-            index.html
-            lineup_*.json
