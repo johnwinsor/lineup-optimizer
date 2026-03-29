@@ -48,6 +48,7 @@ jobs:
           # Use Python to get tomorrow's date in MLB Time
           TOMORROW=$(python -c "import datetime, pytz; tz=pytz.timezone('US/Eastern'); print((datetime.datetime.now(tz) + datetime.timedelta(days=1)).strftime('%Y-%m-%d'))")
           uv run python main.py --projection steamer --date $TOMORROW --output lineup_steamer_tomorrow.json
+
         
       - name: Prepare public files
         run: |
