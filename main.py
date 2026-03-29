@@ -197,19 +197,22 @@ def main():
                         note = f"Benched - Lower projected efficiency than other options."
 
             sat_data.append({
+                'Slot': 'BN',
                 'Player': name,
                 'POS': row['POS'],
                 'Order': clean_order,
                 'Opponent': opponent,
                 'SP_xERA': sp_xera,
-                'Proj': proj_score,
-                'Breakdown': breakdown,
-                'Note': note
+                'Score': proj_score,
+                'Breakdown': f"{breakdown} ({note})" if note else breakdown,
+                'Warning': warning
             })
 
         df_sat = pd.DataFrame(sat_data)
         if not df_sat.empty:
-            display_dataframe(df_sat, title="PLAYERS SAT", columns=['Player', 'POS', 'Order', 'Opponent', 'SP_xERA', 'Proj', 'Breakdown', 'Note'])
+            cols = ['Slot', 'Player', 'Order', 'Opponent', 'SP_xERA', 'Score', 'Breakdown', 'Warning']
+            cols = [c for c in cols if c in df_sat.columns]
+            display_dataframe(df_sat, title="PLAYERS SAT", columns=cols)
 
         # Narrative Generation
         ai_narrative = generate_ai_narrative(lineup, target_date, skip_ai=args.skip_ai)

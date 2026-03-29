@@ -50,7 +50,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="text-[10px] text-slate-500 text-right uppercase tracking-widest">
+                <div class="text-[12px] text-slate-500 text-right uppercase tracking-widest">
                     Last Updated: <span class="text-slate-400" x-text="data?.last_updated || 'Loading...'"></span>
                 </div>
             </div>
@@ -110,9 +110,9 @@
                                     </td>
                                     <td class="px-6 py-4 text-right font-mono font-bold text-green-400" x-text="p.Score.toFixed(1)"></td>
                                     <td class="px-6 py-4">
-                                        <div class="text-[10px] text-slate-500 max-w-xs leading-tight" x-text="p.Breakdown"></div>
+                                        <div class="text-[12px] text-slate-500 max-w-xs leading-tight" x-text="p.Breakdown"></div>
                                         <template x-if="p.Warning">
-                                            <div class="mt-1 text-[10px] text-red-400 font-bold" x-text="p.Warning"></div>
+                                            <div class="mt-1 text-[12px] text-red-400 font-bold" x-text="p.Warning"></div>
                                         </template>
                                     </td>
                                 </tr>
@@ -124,29 +124,43 @@
 
             <!-- Benched Table -->
             <section>
-                <h2 class="text-lg font-bold text-white mb-4 flex items-center opacity-60">
+                <h2 class="text-lg font-bold text-white mb-4 flex items-center opacity-60 uppercase tracking-widest">
                     Players Sat
                 </h2>
                 <div class="overflow-x-auto rounded-xl border border-slate-700 bg-slate-900/40">
-                    <table class="w-full text-left border-collapse opacity-70">
+                    <table class="w-full text-left border-collapse opacity-80">
                         <thead>
-                            <tr class="bg-slate-800/40 text-slate-500 text-[10px] uppercase tracking-widest border-b border-slate-700">
-                                <th class="px-6 py-3">Player</th>
-                                <th class="px-6 py-3 text-center">Order</th>
-                                <th class="px-6 py-3 text-right">Proj</th>
-                                <th class="px-6 py-3">Note</th>
+                            <tr class="bg-slate-800/40 text-slate-500 text-xs uppercase tracking-widest border-b border-slate-700">
+                                <th class="px-6 py-4 font-semibold">Slot</th>
+                                <th class="px-6 py-4 font-semibold">Player</th>
+                                <th class="px-6 py-4 font-semibold text-center">Order</th>
+                                <th class="px-6 py-4 font-semibold">Matchup</th>
+                                <th class="px-6 py-4 font-semibold text-right">Score</th>
+                                <th class="px-6 py-4 font-semibold">Breakdown</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-800">
                             <template x-for="p in data?.players_sat" :key="p.Player">
-                                <tr class="text-sm">
-                                    <td class="px-6 py-3">
-                                        <span class="font-medium text-slate-300" x-text="p.Player"></span>
-                                        <span class="text-[10px] text-slate-600 ml-1" x-text="p.POS"></span>
+                                <tr class="hover:bg-slate-800/20 transition-colors">
+                                    <td class="px-6 py-4 text-slate-500 font-bold" x-text="p.Slot"></td>
+                                    <td class="px-6 py-4">
+                                        <div class="font-bold text-slate-300" x-text="p.Player"></div>
+                                        <div class="text-[12px] text-slate-600" x-text="p.POS"></div>
                                     </td>
-                                    <td class="px-6 py-3 text-center text-slate-500" x-text="p.Order"></td>
-                                    <td class="px-6 py-3 text-right font-mono text-slate-500" x-text="p.Proj.toFixed(1)"></td>
-                                    <td class="px-6 py-3 text-xs text-slate-600 italic" x-text="p.Note"></td>
+                                    <td class="px-6 py-4 text-center">
+                                        <span :class="p.Order.includes('*') ? 'text-amber-600/60 italic' : 'text-slate-500'" x-text="p.Order"></span>
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <div class="text-xs text-slate-500" x-text="p.Opponent"></div>
+                                        <div class="text-[12px] text-slate-600">SP xERA: <span x-text="p.SP_xERA"></span></div>
+                                    </td>
+                                    <td class="px-6 py-4 text-right font-mono text-slate-500" x-text="p.Score.toFixed(1)"></td>
+                                    <td class="px-6 py-4">
+                                        <div class="text-[12px] text-slate-600 max-w-xs leading-tight" x-text="p.Breakdown"></div>
+                                        <template x-if="p.Warning">
+                                            <div class="mt-1 text-[12px] text-red-400/50 font-bold" x-text="p.Warning"></div>
+                                        </template>
+                                    </td>
                                 </tr>
                             </template>
                         </tbody>
@@ -182,7 +196,8 @@
                 async fetchData() {
                     try {
                         const filename = `lineup_${this.activeProj}_${this.activeDate}.json`;
-                        const response = await fetch(filename);
+                        // Add cache-buster to ensure we get fresh data
+                        const response = await fetch(`${filename}?t=${new Date().getTime()}`);
                         if (!response.ok) throw new Error('File not found');
                         this.data = await response.json();
                         this.loading = false;
