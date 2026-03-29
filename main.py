@@ -8,16 +8,20 @@ from google.genai import types
 from dotenv import load_dotenv
 from display_utils import print_header, display_dataframe, print_narrative, print_section, print_info
 
-# Load environment variables from .env file
-load_dotenv()
+# Load environment variables from .env file, overriding any existing shell variables
+load_dotenv(override=True)
 
-def generate_ai_narrative(lineup_df, date_str):
+def generate_ai_narrative(lineup_df, date_str, skip_ai=False):
+    if skip_ai:
+        return "AI Narrative generation skipped."
+        
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         return "⚠️ GEMINI_API_KEY environment variable not set. Please set it to enable AI-generated narratives."
     
     try:
         print("\nGenerating AI Narrative...")
+        # Create client explicitly with the key from environment
         client = genai.Client(api_key=api_key)
         
         # Convert lineup data to a readable format for the LLM
@@ -36,7 +40,7 @@ Write a concise, 2-paragraph pre-game narrative for the team.
 Keep the tone professional, analytical, and focused on maximizing 5x5 Roto efficiency. Do not use filler introductions like 'Here is the narrative'.
 """
         response = client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-3.1-flash-lite-preview',
             contents=prompt,
         )
         return response.text
@@ -46,7 +50,7 @@ Keep the tone professional, analytical, and focused on maximizing 5x5 Roto effic
 import argparse
 import json
 
-def save_web_json(lineup_df, sat_df, target_date, ai_narrative, projection_system):
+def save_web_json(lineup_df, sat_df, target_date, ai_narrative, projection_system, filename="web_lineup.json"):
     """Saves the optimization results to a JSON file for the web dashboard."""
     data = {
         "target_date": target_date,
@@ -58,14 +62,16 @@ def save_web_json(lineup_df, sat_df, target_date, ai_narrative, projection_syste
         "players_sat": sat_df.to_dict(orient="records") if not sat_df.empty else []
     }
     
-    with open("web_lineup.json", "w") as f:
+    with open(filename, "w") as f:
         json.dump(data, f, indent=4)
-    print(f"\n[green]Web dashboard data exported to web_lineup.json[/green]")
+    print(f"\n[green]Web dashboard data exported to {filename}[/green]")
 
 def main():
     parser = argparse.ArgumentParser(description="Zurich Zebras Lineup Optimizer")
     parser.add_argument("--projection", type=str, default="steamer", help="Projection system (steamer, atc, thebat)")
     parser.add_argument("--date", type=str, help="Target date (YYYY-MM-DD). Defaults to today.")
+    parser.add_argument("--output", type=str, default="web_lineup.json", help="Output JSON filename for web dashboard")
+    parser.add_argument("--skip-ai", action="store_true", help="Skip AI narrative generation to save API quota")
     args = parser.parse_args()
 
     # Determine target date and year
@@ -202,7 +208,7 @@ def main():
             display_dataframe(df_sat, title="PLAYERS SAT", columns=['Player', 'POS', 'Order', 'Opponent', 'SP_xERA', 'Proj', 'Breakdown', 'Note'])
 
         # Narrative Generation
-        ai_narrative = generate_ai_narrative(lineup, target_date)
+        ai_narrative = generate_ai_narrative(lineup, target_date, skip_ai=args.skip_ai)
         print_narrative(ai_narrative)
         
         print_info("\n[dim]Algorithm: Maximize projected 5x5 efficiency subject to positional caps.[/dim]")
@@ -212,7 +218,7 @@ def main():
         # Ensure Slot is converted from Categorical to string for JSON serialization
         if 'Slot' in lineup.columns:
             lineup['Slot'] = lineup['Slot'].astype(str)
-        save_web_json(lineup, df_sat, target_date, ai_narrative, args.projection)
+        save_web_json(lineup, df_sat, target_date, ai_narrative, args.projection, args.output)
     else:
         print(f"\nNo valid starters found for {target_date}. This may be an off-day or lineups are not yet posted.")
 

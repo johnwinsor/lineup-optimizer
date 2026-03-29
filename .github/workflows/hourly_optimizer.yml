@@ -23,15 +23,34 @@ jobs:
       - name: Install dependencies
         run: uv sync
         
-      - name: Run Optimizer
+      - name: Run Optimizer (Today - ATC)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: uv run python main.py --projection atc
+        run: uv run python main.py --projection atc --output lineup_atc_today.json
+        
+      - name: Run Optimizer (Today - Steamer)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: uv run python main.py --projection steamer --output lineup_steamer_today.json
+        
+      - name: Run Optimizer (Tomorrow - ATC)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          TOMORROW=$(date -d "+1 day" +%Y-%m-%d)
+          uv run python main.py --projection atc --date $TOMORROW --output lineup_atc_tomorrow.json
+
+      - name: Run Optimizer (Tomorrow - Steamer)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          TOMORROW=$(date -d "+1 day" +%Y-%m-%d)
+          uv run python main.py --projection steamer --date $TOMORROW --output lineup_steamer_tomorrow.json
         
       - name: Commit lineup data
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add web_lineup.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Hourly lineup update [skip ci]"
+          git add lineup_*.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Hourly lineup update (Multi-Projection) [skip ci]"
           git push
