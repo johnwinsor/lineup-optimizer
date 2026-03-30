@@ -16,9 +16,38 @@
         
         <!-- Header -->
         <header class="mb-8 border-b border-slate-700 pb-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div>
-                <h1 class="text-3xl font-bold text-white tracking-tight">Zurich Zebras Optimizer</h1>
-                <p class="text-slate-400 mt-1">Ottoneu Team 7582 • Daily 5x5 Roto Efficiency</p>
+            <div class="flex items-center gap-4">
+                <!-- Pinstripe Interlocking ZZ Logo -->
+                <div class="relative w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-slate-400 shadow-2xl overflow-hidden group">
+                    <svg viewBox="0 0 100 100" class="w-16 h-16 transform group-hover:scale-110 transition-transform duration-500">
+                        <defs>
+                            <pattern id="pinstripe" x="0" y="0" width="12" height="10" patternUnits="userSpaceOnUse">
+                                <line x1="6" y1="0" x2="6" y2="10" stroke="#1e3a8a" stroke-width="0.8" opacity="0.4" />
+                            </pattern>
+                        </defs>
+                        <!-- Pinstripe Background -->
+                        <rect width="100" height="100" fill="url(#pinstripe)" />
+                        
+                        <!-- Back Z (Black - Offset Top-Left) -->
+                        <path d="M22,28 L62,28 L62,38 L38,72 L62,72 L62,82 L22,82 L22,72 L46,38 L22,38 Z" 
+                              fill="black" 
+                              stroke="#1e293b" 
+                              stroke-width="1"/>
+                              
+                        <!-- Front Z (White - Offset Bottom-Right) -->
+                        <path d="M38,18 L78,18 L78,28 L54,62 L78,62 L78,72 L38,72 L38,62 L62,28 L38,28 Z" 
+                              fill="white" 
+                              stroke="black" 
+                              stroke-width="2.5"/>
+                              
+                        <!-- Interlocking Cutout Effect (The bridge) -->
+                        <path d="M54,28 L62,28 L62,38 L54,38 Z" fill="black"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-white tracking-tight">Zurich Zebras <span class="text-indigo-500 italic">Optimizer</span></h1>
+                    <p class="text-slate-400 mt-1 uppercase text-[10px] tracking-[0.2em] font-semibold">Ottoneu League 1077 • Team 7582</p>
+                </div>
             </div>
             <div class="flex flex-col items-end gap-2 w-full md:w-auto">
                 <div class="flex gap-2">
