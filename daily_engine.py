@@ -146,185 +146,188 @@ class DailyEngine:
                     }
 
             if matchup:
-                if matchup.get('is_starting') or matchup.get('is_pending'):
+                # We now calculate score/opponent for anyone with a matchup (even bench)
+                # but only mark 'starting' for those in the actual lineup
+                if matchup.get('is_pending'):
                     starting = True
-                    base_score = row['Score']
-                    multiplier = 1.0
+                    order_val = int(matchup.get('batting_order', '5')[0])
+                    breakdown.append(f"Lineup Pending (Assumed #{order_val})")
+                elif matchup.get('is_starting'):
+                    starting = True
+
+                base_score = row['Score']
+                multiplier = 1.0
+                
+                breakdown.append(f"Base: {base_score:.2f}")
+                
+                if weight_current > 0:
+                    breakdown.append(f"Recency: {int(weight_current*100)}%")
+                
+                # 1. Venue
+                venue = matchup.get('venue_name', '')
+                park_multiplier = get_park_multiplier(venue)
+                if park_multiplier != 1.0:
+                    multiplier *= park_multiplier
+                    diff = int((park_multiplier - 1.0) * 100)
+                    if diff != 0:
+                        breakdown.append(f"Park: {diff:+}%")
+                
+                # 2. Opposing Pitcher
+                sp_id = matchup.get('opposing_sp_id')
+                if sp_id:
+                    sp_data = self.harvester.get_pitcher_data(sp_id, year=year, weight_current=weight_current)
                     
-                    if matchup.get('is_pending'):
-                        order_val = int(matchup.get('batting_order', '5')[0])
-                        breakdown.append(f"Lineup Pending (Assumed #{order_val})")
+                    # Use SIERA as the primary skill metric if available, then xERA, then ERA
+                    pitcher_skill = sp_data.get('SIERA', sp_data.get('xera', sp_data.get('era', 4.0)))
+                    sp_xera = f"{pitcher_skill:.2f}"
+                    opponent = f"{matchup.get('opposing_sp_name')} ({sp_data['hand']})"
                     
-                    breakdown.append(f"Base: {base_score:.2f}")
+                    era_factor = 1.0 + ((pitcher_skill - 4.0) / 4.0)
+                    era_factor = max(0.7, min(1.3, era_factor))
+                    multiplier *= era_factor
                     
-                    if weight_current > 0:
-                        breakdown.append(f"Recency: {int(weight_current*100)}%")
+                    diff = int((era_factor - 1.0) * 100)
+                    if diff != 0:
+                        breakdown.append(f"SP Skill: {diff:+}%")
                     
-                    # 1. Venue
-                    venue = matchup.get('venue_name', '')
-                    park_multiplier = get_park_multiplier(venue)
-                    if park_multiplier != 1.0:
-                        multiplier *= park_multiplier
-                        diff = int((park_multiplier - 1.0) * 100)
-                        if diff != 0:
-                            breakdown.append(f"Park: {diff:+}%")
+                    # Platoon
+                    batter_hand_data = self.harvester.get_batter_data(mlb_id)
+                    b_hand = batter_hand_data['hand']
+                    p_hand = sp_data['hand']
                     
-                    # 2. Opposing Pitcher
-                    sp_id = matchup.get('opposing_sp_id')
-                    if sp_id:
-                        sp_data = self.harvester.get_pitcher_data(sp_id, year=year, weight_current=weight_current)
-                        
-                        # Use SIERA as the primary skill metric if available, then xERA, then ERA
-                        pitcher_skill = sp_data.get('SIERA', sp_data.get('xera', sp_data.get('era', 4.0)))
-                        sp_xera = f"{pitcher_skill:.2f}"
-                        opponent = f"{matchup.get('opposing_sp_name')} ({sp_data['hand']})"
-                        
-                        era_factor = 1.0 + ((pitcher_skill - 4.0) / 4.0)
-                        era_factor = max(0.7, min(1.3, era_factor))
-                        multiplier *= era_factor
-                        
-                        diff = int((era_factor - 1.0) * 100)
-                        if diff != 0:
-                            breakdown.append(f"SP Skill: {diff:+}%")
-                        
-                        # Platoon
-                        batter_hand_data = self.harvester.get_batter_data(mlb_id)
-                        b_hand = batter_hand_data['hand']
-                        p_hand = sp_data['hand']
-                        
-                        if b_hand == 'S':
-                            multiplier *= 1.05
-                            breakdown.append("Switch: +5%")
-                        elif b_hand != p_hand:
-                            multiplier *= 1.10
-                            breakdown.append("Platoon: +10%")
+                    if b_hand == 'S':
+                        multiplier *= 1.05
+                        breakdown.append("Switch: +5%")
+                    elif b_hand != p_hand:
+                        multiplier *= 1.10
+                        breakdown.append("Platoon: +10%")
+                    else:
+                        if b_hand == 'L':
+                            multiplier *= 0.85
+                            breakdown.append("Platoon (L/L): -15%")
                         else:
-                            if b_hand == 'L':
-                                multiplier *= 0.85
-                                breakdown.append("Platoon (L/L): -15%")
-                            else:
-                                multiplier *= 0.95
-                                breakdown.append("Platoon (R/R): -5%")
+                            multiplier *= 0.95
+                            breakdown.append("Platoon (R/R): -5%")
 
-                        # 3. BvP
-                        bvp = self.harvester.get_bvp_data(mlb_id, sp_id)
-                        if bvp and bvp['pa'] >= 5:
-                            ops = bvp['ops']
-                            if ops > 1.000:
-                                multiplier *= 1.15
-                                breakdown.append(f"BvP Elite ({bvp['pa']} PA): +15%")
-                            elif ops > 0.850:
-                                multiplier *= 1.05
-                                breakdown.append(f"BvP Good ({bvp['pa']} PA): +5%")
-                            elif ops < 0.500:
-                                multiplier *= 0.85
-                                breakdown.append(f"BvP Poor ({bvp['pa']} PA): -15%")
-                            elif ops < 0.650:
-                                multiplier *= 0.95
-                                breakdown.append(f"BvP Weak ({bvp['pa']} PA): -5%")
+                    # 3. BvP
+                    bvp = self.harvester.get_bvp_data(mlb_id, sp_id)
+                    if bvp and bvp['pa'] >= 5:
+                        ops = bvp['ops']
+                        if ops > 1.000:
+                            multiplier *= 1.15
+                            breakdown.append(f"BvP Elite ({bvp['pa']} PA): +15%")
+                        elif ops > 0.850:
+                            multiplier *= 1.05
+                            breakdown.append(f"BvP Good ({bvp['pa']} PA): +5%")
+                        elif ops < 0.500:
+                            multiplier *= 0.85
+                            breakdown.append(f"BvP Poor ({bvp['pa']} PA): -15%")
+                        elif ops < 0.650:
+                            multiplier *= 0.95
+                            breakdown.append(f"BvP Weak ({bvp['pa']} PA): -5%")
 
-                        # 4. Basestealing Environment (Tiered)
-                        sprint_speed = self.defense.get_sprint_speed(mlb_id)
+                    # 4. Basestealing Environment (Tiered)
+                    sprint_speed = self.defense.get_sprint_speed(mlb_id)
+                    
+                    tier_mult = 0.0
+                    if sprint_speed > 28.5:
+                        tier_mult = 1.0 # Full impact for Elite
+                    elif sprint_speed >= 27.5:
+                        tier_mult = 0.5 # Half impact for Aggressive
                         
-                        tier_mult = 0.0
-                        if sprint_speed > 28.5:
-                            tier_mult = 1.0 # Full impact for Elite
-                        elif sprint_speed >= 27.5:
-                            tier_mult = 0.5 # Half impact for Aggressive
-                            
-                        if tier_mult > 0:
-                            sb_env_mult = 1.0
-                            sb_breakdown = []
-                            
-                            # Catcher Pop Time (Deterrent Factor - Max 5%)
-                            c_id = matchup.get('opposing_c_id')
-                            if c_id:
-                                pop_time = self.defense.get_pop_time(c_id)
-                                if pop_time > 2.00:
-                                    boost = 1.0 + (0.05 * tier_mult)
-                                    sb_env_mult *= boost
-                                    sb_breakdown.append(f"Slow Catcher ({pop_time}s): +{((boost-1)*100):.1f}%")
-                                elif pop_time < 1.90:
-                                    penalty = 1.0 - (0.05 * tier_mult)
-                                    sb_env_mult *= penalty
-                                    sb_breakdown.append(f"Elite Catcher ({pop_time}s): -{((1-penalty)*100):.1f}%")
-                            
-                            # Pitcher SB Rate (Primary Factor - Max 10%)
-                            sb_rate = self.defense.get_pitcher_sb_rate(sp_id, year=year)
-                            if sb_rate > 0.85:
-                                boost = 1.0 + (0.10 * tier_mult)
+                    if tier_mult > 0:
+                        sb_env_mult = 1.0
+                        sb_breakdown = []
+                        
+                        # Catcher Pop Time (Deterrent Factor - Max 5%)
+                        c_id = matchup.get('opposing_c_id')
+                        if c_id:
+                            pop_time = self.defense.get_pop_time(c_id)
+                            if pop_time > 2.00:
+                                boost = 1.0 + (0.05 * tier_mult)
                                 sb_env_mult *= boost
-                                sb_breakdown.append(f"Slow SP Delivery ({int(sb_rate*100)}% SB): +{int((boost-1)*100)}%")
-                            elif sb_rate < 0.65:
-                                penalty = 1.0 - (0.10 * tier_mult)
+                                sb_breakdown.append(f"Slow Catcher ({pop_time}s): +{((boost-1)*100):.1f}%")
+                            elif pop_time < 1.90:
+                                penalty = 1.0 - (0.05 * tier_mult)
                                 sb_env_mult *= penalty
-                                sb_breakdown.append(f"Elite Hold-on SP ({int(sb_rate*100)}% SB): -{int((1-penalty)*100)}%")
-                                
-                            if sb_env_mult != 1.0:
-                                multiplier *= sb_env_mult
-                                breakdown.append(", ".join(sb_breakdown))
-
-                    # 5. Batting Order Context
-                    order_str = matchup.get('batting_order', '-')
-                    if order_str and order_str != '-' and len(order_str) >= 1:
-                        order_val = int(order_str[0])
-                        order_multiplier = 1.0
-                        if order_val == 1: order_multiplier = 1.15
-                        elif order_val == 2: order_multiplier = 1.12
-                        elif order_val == 3 or order_val == 4: order_multiplier = 1.10
-                        elif order_val == 5: order_multiplier = 1.05
-                        elif order_val == 6: order_multiplier = 1.00
-                        elif order_val == 7: order_multiplier = 0.95
-                        elif order_val == 8: order_multiplier = 0.90
-                        elif order_val == 9: order_multiplier = 0.85
+                                sb_breakdown.append(f"Elite Catcher ({pop_time}s): -{((1-penalty)*100):.1f}%")
                         
-                        multiplier *= order_multiplier
-                        diff = int((order_multiplier - 1.0) * 100)
-                        if diff != 0:
-                            breakdown.append(f"Order #{order_val}: {diff:+}%")
-
-                    # 5. Batter StatCast (Blended)
-                    sc_hitter = self.harvester.get_hitter_statcast_data(mlb_id, weight_current=weight_current)
-                    is_superstar = False
-                    if sc_hitter is not None:
-                        xwoba = float(sc_hitter.get('xwOBA', 0))
-                        if xwoba > 0.400:
-                            is_superstar = True 
-                            multiplier *= 1.10
-                            breakdown.append("xwOBA Elite: +10%")
-                        elif xwoba > 0.370:
-                            multiplier *= 1.05
-                            breakdown.append("xwOBA Good: +5%")
-                        
-                        barrel_pct = float(sc_hitter.get('Barrel%', 0))
-                        if barrel_pct > 15.0:
-                            multiplier *= 1.05
-                            breakdown.append("Barrel: +5%")
-
-                    daily_score = base_score * multiplier
-                    if is_superstar:
-                        daily_score = max(daily_score, base_score * 0.85)
-
-                    # 5. Weather
-                    home_abb = matchup.get('home_team_abb')
-                    if home_abb in weather_report:
-                        w = weather_report[home_abb]
-                        if not w['is_dome']:
-                            if w['wind_dir'] == "Out" and w['wind_speed'] >= 10:
-                                boost = 1.05 if w['wind_speed'] < 20 else 1.10
-                                multiplier *= boost
-                                breakdown.append(f"Wind Out: +{int((boost-1)*100)}%")
-                            elif w['wind_dir'] == "In" and w['wind_speed'] >= 10:
-                                penalty = 0.95 if w['wind_speed'] < 20 else 0.90
-                                multiplier *= penalty
-                                breakdown.append(f"Wind In: -{int((1-penalty)*100)}%")
+                        # Pitcher SB Rate (Primary Factor - Max 10%)
+                        sb_rate = self.defense.get_pitcher_sb_rate(sp_id, year=year)
+                        if sb_rate > 0.85:
+                            boost = 1.0 + (0.10 * tier_mult)
+                            sb_env_mult *= boost
+                            sb_breakdown.append(f"Slow SP Delivery ({int(sb_rate*100)}% SB): +{int((boost-1)*100)}%")
+                        elif sb_rate < 0.65:
+                            penalty = 1.0 - (0.10 * tier_mult)
+                            sb_env_mult *= penalty
+                            sb_breakdown.append(f"Elite Hold-on SP ({int(sb_rate*100)}% SB): -{int((1-penalty)*100)}%")
                             
-                            if w['rain_risk'] >= 60:
-                                warning = f"🚨 HIGH RAIN RISK ({w['rain_risk']}%)"
-                            elif w['rain_risk'] >= 30:
-                                warning = f"⚠️ Rain Risk ({w['rain_risk']}%)"
+                        if sb_env_mult != 1.0:
+                            multiplier *= sb_env_mult
+                            breakdown.append(", ".join(sb_breakdown))
 
-                    daily_score = base_score * multiplier
+                # 5. Batting Order Context
+                order_str = matchup.get('batting_order', '-')
+                if order_str and order_str != '-' and len(order_str) >= 1:
+                    order_val = int(order_str[0])
+                    order_multiplier = 1.0
+                    if order_val == 1: order_multiplier = 1.15
+                    elif order_val == 2: order_multiplier = 1.12
+                    elif order_val == 3 or order_val == 4: order_multiplier = 1.10
+                    elif order_val == 5: order_multiplier = 1.05
+                    elif order_val == 6: order_multiplier = 1.00
+                    elif order_val == 7: order_multiplier = 0.95
+                    elif order_val == 8: order_multiplier = 0.90
+                    elif order_val == 9: order_multiplier = 0.85
+                    
+                    multiplier *= order_multiplier
+                    diff = int((order_multiplier - 1.0) * 100)
+                    if diff != 0:
+                        breakdown.append(f"Order #{order_val}: {diff:+}%")
+
+                # 5. Batter StatCast (Blended)
+                sc_hitter = self.harvester.get_hitter_statcast_data(mlb_id, weight_current=weight_current)
+                is_superstar = False
+                if sc_hitter is not None:
+                    xwoba = float(sc_hitter.get('xwOBA', 0))
+                    if xwoba > 0.400:
+                        is_superstar = True 
+                        multiplier *= 1.10
+                        breakdown.append("xwOBA Elite: +10%")
+                    elif xwoba > 0.370:
+                        multiplier *= 1.05
+                        breakdown.append("xwOBA Good: +5%")
+                    
+                    barrel_pct = float(sc_hitter.get('Barrel%', 0))
+                    if barrel_pct > 15.0:
+                        multiplier *= 1.05
+                        breakdown.append("Barrel: +5%")
+
+                daily_score = base_score * multiplier
+                if is_superstar:
+                    daily_score = max(daily_score, base_score * 0.85)
+
+                # 5. Weather
+                home_abb = matchup.get('home_team_abb')
+                if home_abb in weather_report:
+                    w = weather_report[home_abb]
+                    if not w['is_dome']:
+                        if w['wind_dir'] == "Out" and w['wind_speed'] >= 10:
+                            boost = 1.05 if w['wind_speed'] < 20 else 1.10
+                            multiplier *= boost
+                            breakdown.append(f"Wind Out: +{int((boost-1)*100)}%")
+                        elif w['wind_dir'] == "In" and w['wind_speed'] >= 10:
+                            penalty = 0.95 if w['wind_speed'] < 20 else 0.90
+                            multiplier *= penalty
+                            breakdown.append(f"Wind In: -{int((1-penalty)*100)}%")
+                        
+                        if w['rain_risk'] >= 60:
+                            warning = f"🚨 HIGH RAIN RISK ({w['rain_risk']}%)"
+                        elif w['rain_risk'] >= 30:
+                            warning = f"⚠️ Rain Risk ({w['rain_risk']}%)"
+
+                daily_score = base_score * multiplier
 
             daily_scores.append(daily_score)
             is_starting.append(starting)
