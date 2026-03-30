@@ -56,7 +56,7 @@ def save_web_json(lineup_df, sat_df, target_date, ai_narrative, projection_syste
     """Saves the optimization results to a JSON file for the web dashboard."""
     data = {
         "target_date": target_date,
-        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "last_updated": datetime.now(pytz.UTC).isoformat(),
         "projection_system": projection_system.upper(),
         "total_efficiency_score": round(lineup_df['Score'].sum(), 2) if not lineup_df.empty else 0,
         "narrative": ai_narrative,
