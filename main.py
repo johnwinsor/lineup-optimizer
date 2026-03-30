@@ -180,7 +180,7 @@ def main():
                 # Check if team is playing but lineup isn't out
                 team_data = teams_playing.get(team_abb, {})
                 if not matchup and team_data and not team_data.get('has_lineup'):
-                    note = "Lineup Pending (Assumed Bench)."
+                    note = "Lineup Pending (Not picked by Optimizer)."
                     # Check for assumed order from historical detection
                     if not proj_row.empty:
                         breakdown = proj_row['Breakdown'].values[0]
@@ -191,7 +191,7 @@ def main():
                             clean_order = "TBA"
                     else:
                         clean_order = "TBA"
-                elif not matchup.get('is_starting', False):
+                elif not matchup.get('is_starting', False) and team_data.get('has_lineup'):
                     note = "Not in MLB Starting Lineup (Benched/IL/Rest)."
                 else:
                     # Starting in MLB but not picked by our optimizer
