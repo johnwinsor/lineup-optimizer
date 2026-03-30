@@ -172,11 +172,14 @@ class GameDayHarvester:
                 if box.get('awayBatters'):
                     for batter in box['awayBatters']:
                         if isinstance(batter, dict) and 'personId' in batter:
-                            is_start = batter.get('battingOrder', '0').endswith('00') and len(batter.get('battingOrder', '0')) == 3
+                            raw_order = batter.get('battingOrder', '')
+                            is_start = raw_order.endswith('00') and len(raw_order) == 3
+                            clean_order = raw_order[0] if is_start else '-'
+                            
                             if is_start: matchups['_teams_playing'][away_abb]['has_lineup'] = True
                             matchups[batter['personId']] = {
                                 'is_starting': is_start,
-                                'batting_order': batter.get('battingOrder'),
+                                'batting_order': clean_order,
                                 'opposing_sp_name': home_sp['name'] if home_sp else None,
                                 'opposing_sp_id': home_sp['personId'] if home_sp else None,
                                 'opposing_c_id': home_c['personId'] if home_c else None,
@@ -189,11 +192,14 @@ class GameDayHarvester:
                 if box.get('homeBatters'):
                     for batter in box['homeBatters']:
                         if isinstance(batter, dict) and 'personId' in batter:
-                            is_start = batter.get('battingOrder', '0').endswith('00') and len(batter.get('battingOrder', '0')) == 3
+                            raw_order = batter.get('battingOrder', '')
+                            is_start = raw_order.endswith('00') and len(raw_order) == 3
+                            clean_order = raw_order[0] if is_start else '-'
+                            
                             if is_start: matchups['_teams_playing'][home_abb]['has_lineup'] = True
                             matchups[batter['personId']] = {
                                 'is_starting': is_start,
-                                'batting_order': batter.get('battingOrder'),
+                                'batting_order': clean_order,
                                 'opposing_sp_name': away_sp['name'] if away_sp else None,
                                 'opposing_sp_id': away_sp['personId'] if away_sp else None,
                                 'opposing_c_id': away_c['personId'] if away_c else None,

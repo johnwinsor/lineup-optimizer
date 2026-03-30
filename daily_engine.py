@@ -154,6 +154,9 @@ class DailyEngine:
                     breakdown.append(f"Lineup Pending (Assumed #{order_val})")
                 elif matchup.get('is_starting'):
                     starting = True
+                else:
+                    # Bench Assumption for comparison (Assume middle of order)
+                    breakdown.append("Bench Assumption (Assumed #5)")
 
                 base_score = row['Score']
                 multiplier = 1.0
@@ -269,7 +272,10 @@ class DailyEngine:
 
                 # 5. Batting Order Context
                 order_str = matchup.get('batting_order', '-')
-                if order_str and order_str != '-' and len(order_str) >= 1:
+                if order_str == '-' and not matchup.get('is_starting') and not matchup.get('is_pending'):
+                    # Default for bench players whose team is playing
+                    multiplier *= 1.05
+                elif order_str and order_str != '-' and len(order_str) >= 1:
                     order_val = int(order_str[0])
                     order_multiplier = 1.0
                     if order_val == 1: order_multiplier = 1.15
