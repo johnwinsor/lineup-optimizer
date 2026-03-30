@@ -8,6 +8,7 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 from display_utils import print_header, display_dataframe, print_narrative, print_section, print_info
+from crosswalks import normalize_name
 
 # Load environment variables from .env file, overriding any existing shell variables
 load_dotenv(override=True)
@@ -97,6 +98,7 @@ def main():
     # 1. Gather Data for both tables
     print("Analyzing Roster and Matchups...")
     all_hitters = optimizer.daily_engine.get_daily_projections(target_date)
+    all_hitters['norm_name_main'] = all_hitters['Name'].apply(normalize_name)
     full_roster = optimizer.enricher.enrich_roster()
     matchups = optimizer.daily_engine.harvester.get_daily_matchups(target_date)
     
@@ -156,10 +158,12 @@ def main():
             clean_order = order[0] if order and order != '-' and len(order) >= 1 else '-'
             
             # Determine Why they Sat (Logic mirrored from backtester.py)
-            proj_row = all_hitters[all_hitters['Name'] == name]
+            norm_name = normalize_name(name)
+            proj_row = all_hitters[all_hitters['norm_name_main'] == norm_name]
+            
             proj_score = proj_row['DailyScore'].values[0] if not proj_row.empty else 0.0
             breakdown = proj_row['Breakdown'].values[0] if not proj_row.empty else "-"
-            opponent = proj_row['Opponent'].values[0] if not proj_row.empty else "-"
+            opponent = proj_row['Opponent'].values[0] if not proj_row.empty else "N/A"
             sp_xera = proj_row['SP_xERA'].values[0] if not proj_row.empty else "-"
             warning = proj_row['Warning'].values[0] if not proj_row.empty else ""
             min_floor = optimizer.min_score
