@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="text-[12px] text-slate-500 text-right uppercase tracking-widest">
-                    Last Updated: <span class="text-slate-400" x-text="data?.last_updated || 'Loading...'"></span>
+                    Last Updated: <span class="text-slate-400" x-text="formatDate(data?.last_updated) || 'Loading...'"></span>
                 </div>
             </div>
 
@@ -206,6 +206,18 @@
                         this.data = { narrative: "⚠️ Data not yet available for this combination. Run the optimizer to generate it.", recommended_lineup: [], players_sat: [] };
                         this.loading = false;
                     }
+                },
+                formatDate(isoString) {
+                    if (!isoString) return '';
+                    const date = new Date(isoString);
+                    return date.toLocaleString(undefined, {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit'
+                    });
                 }
             }
         }
