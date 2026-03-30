@@ -89,19 +89,13 @@ def main():
     for stats_type in ["bat", "pit"]:
         type_label = "Hitters" if stats_type == "bat" else "Pitchers"
         for system in ["steamer", "atc"]:
-            proj_file = f"projections-{system}-{stats_type}.json"
-            
-            # Legacy mapping for projections-steamer.json and projections-atc.json (hitters)
+            # Standard filenames that enricher.py expects
             if stats_type == "bat":
-                legacy_file = f"projections-{system}.json"
+                effective_file = f"projections-{system}.json"
             else:
-                legacy_file = None
+                effective_file = f"projections-{system}-pit.json"
 
             old_proj_data = None
-            effective_file = proj_file
-            if legacy_file and os.path.exists(legacy_file):
-                effective_file = legacy_file
-            
             if os.path.exists(effective_file):
                 try:
                     with open(effective_file, 'r') as f:
