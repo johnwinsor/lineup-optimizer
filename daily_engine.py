@@ -76,6 +76,7 @@ class DailyEngine:
         opponents = []
         sp_xeras = []
         warnings = []
+        game_times = []
         
         teams_playing = matchups.get('_teams_playing', {})
         
@@ -97,6 +98,7 @@ class DailyEngine:
             opponent = "N/A"
             sp_xera = "-"
             warning = ""
+            game_time = None
             
             # Check for Injury status from Ottoneu
             if row.get('Injured') == True:
@@ -106,6 +108,7 @@ class DailyEngine:
                 opponents.append("N/A")
                 sp_xeras.append("-")
                 warnings.append("🚨 INJURED (IL)")
+                game_times.append(None)
                 continue
 
             # Check for Active Roster status (Minors check)
@@ -121,6 +124,7 @@ class DailyEngine:
                     opponents.append("N/A")
                     sp_xeras.append("-")
                     warnings.append("🚨 MINORS")
+                    game_times.append(None)
                     continue
 
             matchup = None
@@ -142,10 +146,12 @@ class DailyEngine:
                         'venue_name': team_data['venue_name'],
                         'home_team_abb': team_data['home_team_abb'],
                         'is_home': team_data['is_home'],
-                        'game_status': team_data['game_status']
+                        'game_status': team_data['game_status'],
+                        'game_time': team_data.get('game_time')
                     }
 
             if matchup:
+                game_time = matchup.get('game_time')
                 # We now calculate score/opponent for anyone with a matchup (even bench)
                 # but only mark 'starting' for those in the actual lineup
                 if matchup.get('is_pending'):
@@ -348,6 +354,7 @@ class DailyEngine:
             opponents.append(opponent)
             sp_xeras.append(sp_xera)
             warnings.append(warning)
+            game_times.append(game_time)
             
         hitters['DailyScore'] = daily_scores
         hitters['IsStarting'] = is_starting
@@ -355,6 +362,7 @@ class DailyEngine:
         hitters['Opponent'] = opponents
         hitters['SP_xERA'] = sp_xeras
         hitters['Warning'] = warnings
+        hitters['GameTime'] = game_times
         
         return hitters.copy()
 

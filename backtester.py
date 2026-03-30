@@ -74,11 +74,20 @@ class Backtester:
                         else:
                             clean_order = "TBA"
 
+                def format_terminal_time(iso_str):
+                    if not iso_str: return "-"
+                    try:
+                        dt = datetime.fromisoformat(iso_str.replace('Z', '+00:00'))
+                        return dt.astimezone(None).strftime('%I:%M %p') # Local time
+                    except:
+                        return "-"
+
                 started_data.append({
                     'Slot': row['Slot'],
                     'Player': player_name,
                     'Status': matchup.get('game_status', 'Unknown'),
                     'Order': clean_order,
+                    'Start': format_terminal_time(matchup.get('game_time')),
                     'Opponent': f"{matchup.get('opposing_sp_name')} ({sp_data['hand']} {sp_data.get('xera', sp_data['era']):.1f})",
                     'Proj': float(row['Score']),
                     'Actual': f"{p_stats['H']}/{p_stats['AB']} {p_stats['R']}R {p_stats['HR']}HR {p_stats['RBI']}RBI {p_stats['SB']}SB",
@@ -164,6 +173,7 @@ class Backtester:
                 'POS': row['POS'],
                 'Status': status,
                 'Order': order,
+                'Start': format_terminal_time(matchup.get('game_time') if matchup else None),
                 'Proj': float(proj_score),
                 'Actual': f"{p_stats['H']}/{p_stats['AB']} {p_stats['R']}R {p_stats['HR']}HR {p_stats['RBI']}RBI {p_stats['SB']}SB",
                 'stats': p_stats,
@@ -183,11 +193,11 @@ class Backtester:
         # Print Tables
         df_started = pd.DataFrame(started_data)
         display_dataframe(df_started, title="LINEUP STARTED", 
-                          columns=['Slot', 'Player', 'Order', 'Opponent', 'Proj', 'Actual', 'Status', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Breakdown'])
+                          columns=['Slot', 'Player', 'Order', 'Start', 'Opponent', 'Proj', 'Actual', 'Status', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Breakdown'])
 
         df_sat = pd.DataFrame(sat_data)
         display_dataframe(df_sat, title="PLAYERS SAT", 
-                          columns=['Player', 'POS', 'Order', 'Proj', 'Actual', 'Status', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Note'])
+                          columns=['Player', 'POS', 'Order', 'Start', 'Proj', 'Actual', 'Status', 'SO', 'SB/CS', 'EV (Avg/Max)', 'Note'])
 
         # Totals
         avg = (total_h / total_ab) if total_ab > 0 else 0.0

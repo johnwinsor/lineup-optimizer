@@ -107,6 +107,8 @@ class OttoneuOptimizer:
                         res_dict['SP_xERA'] = hitters.iloc[p]['SP_xERA']
                     if 'Warning' in hitters.columns:
                         res_dict['Warning'] = hitters.iloc[p]['Warning']
+                    if 'GameTime' in hitters.columns:
+                        res_dict['GameTime'] = hitters.iloc[p]['GameTime']
                     chosen_players.append(res_dict)
         
         if not chosen_players:

@@ -88,6 +88,7 @@
                                 <th class="px-6 py-4 font-semibold">Slot</th>
                                 <th class="px-6 py-4 font-semibold">Player</th>
                                 <th class="px-6 py-4 font-semibold text-center">Order</th>
+                                <th class="px-6 py-4 font-semibold text-center">Start</th>
                                 <th class="px-6 py-4 font-semibold">Matchup</th>
                                 <th class="px-6 py-4 font-semibold text-right">Score</th>
                                 <th class="px-6 py-4 font-semibold">Breakdown</th>
@@ -104,6 +105,7 @@
                                     <td class="px-6 py-4 text-center">
                                         <span :class="p.Order.includes('*') ? 'text-amber-400 italic' : 'text-slate-300'" x-text="p.Order"></span>
                                     </td>
+                                    <td class="px-6 py-4 text-center text-xs text-slate-400" x-text="formatTime(p.GameTime)"></td>
                                     <td class="px-6 py-4">
                                         <div class="text-sm" x-text="p.Opponent"></div>
                                         <div class="text-xs text-slate-500">SP xERA: <span x-text="p.SP_xERA"></span></div>
@@ -134,6 +136,7 @@
                                 <th class="px-6 py-4 font-semibold">Slot</th>
                                 <th class="px-6 py-4 font-semibold">Player</th>
                                 <th class="px-6 py-4 font-semibold text-center">Order</th>
+                                <th class="px-6 py-4 font-semibold text-center">Start</th>
                                 <th class="px-6 py-4 font-semibold">Matchup</th>
                                 <th class="px-6 py-4 font-semibold text-right">Score</th>
                                 <th class="px-6 py-4 font-semibold">Breakdown</th>
@@ -150,6 +153,7 @@
                                     <td class="px-6 py-4 text-center">
                                         <span :class="p.Order.includes('*') ? 'text-amber-600/60 italic' : 'text-slate-500'" x-text="p.Order"></span>
                                     </td>
+                                    <td class="px-6 py-4 text-center text-[10px] text-slate-600" x-text="formatTime(p.GameTime)"></td>
                                     <td class="px-6 py-4">
                                         <div class="text-xs text-slate-500" x-text="p.Opponent"></div>
                                         <div class="text-[12px] text-slate-600">SP xERA: <span x-text="p.SP_xERA"></span></div>
@@ -196,14 +200,17 @@
                 async fetchData() {
                     try {
                         const filename = `lineup_${this.activeProj}_${this.activeDate}.json`;
+                        console.log("Fetching:", filename);
                         // Add cache-buster to ensure we get fresh data
                         const response = await fetch(`${filename}?t=${new Date().getTime()}`);
-                        if (!response.ok) throw new Error('File not found');
+                        console.log("Response status:", response.status);
+                        if (!response.ok) throw new Error(`File not found: ${filename}`);
                         this.data = await response.json();
+                        console.log("Data loaded:", this.data);
                         this.loading = false;
                     } catch (e) {
                         console.error("Failed to load lineup data", e);
-                        this.data = { narrative: "⚠️ Data not yet available for this combination. Run the optimizer to generate it.", recommended_lineup: [], players_sat: [] };
+                        this.data = { narrative: `⚠️ ${e.message}. Run the optimizer to generate it.`, recommended_lineup: [], players_sat: [] };
                         this.loading = false;
                     }
                 },
@@ -217,6 +224,14 @@
                         hour: '2-digit',
                         minute: '2-digit',
                         second: '2-digit'
+                    });
+                },
+                formatTime(isoString) {
+                    if (!isoString) return '-';
+                    const date = new Date(isoString);
+                    return date.toLocaleTimeString(undefined, {
+                        hour: '2-digit',
+                        minute: '2-digit'
                     });
                 }
             }

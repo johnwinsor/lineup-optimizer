@@ -51,17 +51,22 @@ Keep the tone professional, analytical, and focused on maximizing 5x5 Roto effic
 
 import argparse
 import json
+import numpy as np
 
 def save_web_json(lineup_df, sat_df, target_date, ai_narrative, projection_system, filename="web_lineup.json"):
     """Saves the optimization results to a JSON file for the web dashboard."""
+    # Sanitize DataFrames: Replace NaN/NaT with None so they become 'null' in JSON
+    lineup_clean = lineup_df.replace({np.nan: None}).where(pd.notnull(lineup_df), None)
+    sat_clean = sat_df.replace({np.nan: None}).where(pd.notnull(sat_df), None)
+
     data = {
         "target_date": target_date,
         "last_updated": datetime.now(pytz.UTC).isoformat(),
         "projection_system": projection_system.upper(),
         "total_efficiency_score": round(lineup_df['Score'].sum(), 2) if not lineup_df.empty else 0,
         "narrative": ai_narrative,
-        "recommended_lineup": lineup_df.to_dict(orient="records") if not lineup_df.empty else [],
-        "players_sat": sat_df.to_dict(orient="records") if not sat_df.empty else []
+        "recommended_lineup": lineup_clean.to_dict(orient="records") if not lineup_clean.empty else [],
+        "players_sat": sat_clean.to_dict(orient="records") if not sat_clean.empty else []
     }
     
     with open(filename, "w") as f:
@@ -132,9 +137,20 @@ def main():
             
             order_list.append(order)
         lineup['Order'] = order_list
+        
+        # Add Start column for terminal
+        def format_terminal_time(iso_str):
+            if not iso_str: return "-"
+            try:
+                dt = datetime.fromisoformat(iso_str.replace('Z', '+00:00'))
+                return dt.astimezone(None).strftime('%I:%M %p') # Local time
+            except:
+                return "-"
+        
+        lineup['Start'] = lineup['GameTime'].apply(format_terminal_time)
 
         # === TABLE 1: RECOMMENDED LINEUP ===
-        cols = ['Slot', 'Player', 'Order', 'Opponent', 'SP_xERA', 'Score', 'Breakdown', 'Warning']
+        cols = ['Slot', 'Player', 'Order', 'Start', 'Opponent', 'SP_xERA', 'Score', 'Breakdown', 'Warning']
         cols = [c for c in cols if c in lineup.columns]
         display_dataframe(lineup, title="RECOMMENDED DAILY LINEUP", columns=cols)
         
@@ -205,16 +221,18 @@ def main():
                 'Player': name,
                 'POS': row['POS'],
                 'Order': clean_order,
+                'Start': format_terminal_time(proj_row['GameTime'].values[0] if not proj_row.empty else None),
                 'Opponent': opponent,
                 'SP_xERA': sp_xera,
                 'Score': proj_score,
                 'Breakdown': f"{breakdown} ({note})" if note else breakdown,
-                'Warning': warning
+                'Warning': warning,
+                'GameTime': proj_row['GameTime'].values[0] if not proj_row.empty else None
             })
 
         df_sat = pd.DataFrame(sat_data)
         if not df_sat.empty:
-            cols = ['Slot', 'Player', 'Order', 'Opponent', 'SP_xERA', 'Score', 'Breakdown', 'Warning']
+            cols = ['Slot', 'Player', 'Order', 'Start', 'Opponent', 'SP_xERA', 'Score', 'Breakdown', 'Warning']
             cols = [c for c in cols if c in df_sat.columns]
             display_dataframe(df_sat, title="PLAYERS SAT", columns=cols)
 

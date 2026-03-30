@@ -72,6 +72,7 @@ class GameDayHarvester:
         
         for game in games:
             game_id = game['game_id']
+            game_time = game.get('game_datetime')
             away_id = game.get('away_id')
             home_id = game.get('home_id')
             venue = game.get('venue_name', 'Unknown')
@@ -152,6 +153,7 @@ class GameDayHarvester:
                     'home_team_abb': home_abb,
                     'is_home': False,
                     'game_status': status,
+                    'game_time': game_time,
                     'active_roster': self.active_rosters.get(away_id, set())
                 }
             if home_abb:
@@ -164,6 +166,7 @@ class GameDayHarvester:
                     'home_team_abb': home_abb,
                     'is_home': True,
                     'game_status': status,
+                    'game_time': game_time,
                     'active_roster': self.active_rosters.get(home_id, set())
                 }
             
@@ -186,7 +189,8 @@ class GameDayHarvester:
                                 'venue_name': venue,
                                 'home_team_abb': home_abb,
                                 'is_home': False,
-                                'game_status': status
+                                'game_status': status,
+                                'game_time': game_time
                             }
                             
                 if box.get('homeBatters'):
@@ -206,7 +210,8 @@ class GameDayHarvester:
                                 'venue_name': venue,
                                 'home_team_abb': home_abb,
                                 'is_home': True,
-                                'game_status': status
+                                'game_status': status,
+                                'game_time': game_time
                             }
                         
         return matchups
