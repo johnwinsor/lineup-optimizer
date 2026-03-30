@@ -329,19 +329,19 @@ class DailyEngine:
                             breakdown.append(f"Wind In: -{int((1-penalty)*100)}%")
                         
                         if w['rain_risk'] >= 60:
-                                    warning = f"🚨 HIGH RAIN RISK ({w['rain_risk']}%)"
-                                elif w['rain_risk'] >= 30:
-                                    warning = f"⚠️ Rain Risk ({w['rain_risk']}%)"
+                            warning = f"🚨 HIGH RAIN RISK ({w['rain_risk']}%)"
+                        elif w['rain_risk'] >= 30:
+                            warning = f"⚠️ Rain Risk ({w['rain_risk']}%)"
 
-                        # Final calculation: Apply -100% penalty if confirmed NOT starting
-                        # (Starters and Pending players keep their scores)
-                        if not starting:
-                            daily_score = 0.0
-                            breakdown.append("Not Starting: -100%")
-                        else:
-                            daily_score = base_score * multiplier
-                            if is_superstar:
-                                daily_score = max(daily_score, base_score * 0.85)
+                # Final calculation: Apply -100% penalty if confirmed NOT starting
+                # (Starters and Pending players keep their scores)
+                if not starting:
+                    daily_score = 0.0
+                    breakdown.append("Not Starting: -100%")
+                else:
+                    daily_score = base_score * multiplier
+                    if is_superstar:
+                        daily_score = max(daily_score, base_score * 0.85)
             daily_scores.append(daily_score)
             is_starting.append(starting)
             breakdowns.append(", ".join(breakdown) if breakdown else "Base")
