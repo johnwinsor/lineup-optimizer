@@ -1,5 +1,7 @@
 name: Hourly Lineup Update
 on:
+  push:
+    branches: [ main ]
   schedule:
     - cron: '0 12-23 * * *' # Every hour from 12 PM to 11 PM UTC
     - cron: '0 0-1 * * *'   # 12 AM and 1 AM UTC
