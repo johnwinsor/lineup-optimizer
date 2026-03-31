@@ -167,9 +167,9 @@
                                 <div class="text-[11px] border-t border-slate-700/50 pt-2 mt-2">
                                     <div class="flex justify-between font-semibold">
                                         <span class="text-slate-300" x-text="p.Player"></span>
-                                        <span class="text-green-400" x-text="p.Actual.split(',')[0]"></span>
+                                        <span class="text-indigo-400" x-text="`${p['Proj Score']} → ${p['Actual Score']}`"></span>
                                     </div>
-                                    <div class="text-slate-500 italic truncate" x-text="p.Actual.split(',').slice(1).join(',')"></div>
+                                    <div class="text-slate-500 italic truncate" x-text="p.Actual"></div>
                                 </div>
                             </template>
                             <template x-if="day.pitchers.length === 0">
