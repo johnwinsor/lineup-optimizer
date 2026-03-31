@@ -114,7 +114,7 @@ The system moves beyond season averages to target high-upside daily matchups:
 - **StatCast Peripherals**: Real-time boosts for elite **xwOBA** and **Barrel%** trends.
 - **Recency Bias**: Time-weighted stabilization logic that progressively shifts focus from prior-season baselines to current-season performance.
 
-## 📈 Efficiency Algorithms
+### 📉 Efficiency Algorithms
 
 ### Hitter Efficiency (Proj)
 > **Baseline Score** = `[(R + HR + RBI + SB) / PA * 100] + [AVG * 100]`
@@ -123,7 +123,23 @@ The system moves beyond season averages to target high-upside daily matchups:
 ### Pitcher Efficiency (Proj)
 > **PitcherProjScore** = `BaseScore * [Park Factor (Inv)] * [Weather Factor] * [Statcast Boost] * [Agg BvP Factor] * [Opponent Power]`
 - **Base Score:** `(K/9 * 0.4) + (5.0 - ERA) + (1.5 - WHIP) * 2.0`. Rewards high strikeout rates and elite ratios.
-- **Rigorous Opponent Research:** Analyzes the specific 9 hitters in the opposing lineup (or projected top 9 if official card is pending) to calculate **Aggregate BvP OPS** and **Opponent Lineup Power**.
+
+### 🔍 Rigorous Research Metrics
+The "Rigorous Research" layer analyzes the specific 9 batters in the opposing lineup to calculate the following multipliers:
+
+1. **Agg BvP (Aggregate Batter vs. Pitcher):**
+    - **Concept:** Measures historical dominance. Does this pitcher have a career "edge" over these specific hitters?
+    - **Logic:** Calculates the average career OPS allowed by the pitcher to the current lineup.
+    - **Impact:** A group OPS < .700 provides a boost; an OPS > .850 results in a penalty. This captures "Pitcher Nemesis" scenarios that standard projections often miss.
+
+2. **Opp Power (Opponent Lineup Power):**
+    - **Concept:** Measures raw talent. How dangerous is the opposing offense today?
+    - **Logic:** Averages the **Zebras Efficiency Scores** (our 0–100 baseline) for all 9 hitters in the opposing lineup.
+    - **Impact:** High-talent lineups (e.g., Dodgers, Braves) apply a penalty, while low-talent lineups (e.g., rebuilding teams) apply a boost. This prevents starting mid-tier pitchers against elite offenses just because they are in a "pitcher-friendly" park.
+
+3. **Projected 9 Fallback:**
+    - If official lineups are not yet posted (e.g., for games tomorrow), the engine automatically identifies the **top 9 likely starters** for the opponent based on projected PA and performance. This ensures that historical research is applied even for future starts.
+
 
 ## 📊 Understanding the Tiers
 #### Hitter Tiers

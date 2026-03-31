@@ -45,14 +45,33 @@ class PitcherBacktester:
             
             p_stats = actuals.get(mlb_id, {'IP': '0.0', 'H': 0, 'ER': 0, 'BB': 0, 'SO': 0, 'W': 0, 'L': 0})
             
-            # IP cleaning
+            # IP cleaning and actual score calculation
             ip_str = str(p_stats['IP'])
-            
+            try:
+                # Convert standard MLB IP (e.g. 6.1) to decimal innings (6.33)
+                parts = ip_str.split('.')
+                innings = float(parts[0])
+                outs = float(parts[1]) if len(parts) > 1 else 0
+                ip_decimal = innings + (outs / 3.0)
+            except:
+                ip_decimal = 0.0
+
+            actual_score = 0.0
+            if ip_decimal > 0:
+                act_k9 = (p_stats['SO'] / ip_decimal) * 9
+                act_era = (p_stats['ER'] / ip_decimal) * 9
+                act_whip = (p_stats['H'] + p_stats['BB']) / ip_decimal
+                # Apply the Zebras Pitcher Formula V1
+                actual_score = (act_k9 * 0.4) + (5.0 - act_era) + (1.5 - act_whip) * 2.0
+                # Cap actual score to avoid infinity/extremes in tiny samples
+                actual_score = max(-5.0, min(15.0, actual_score))
+
             results_data.append({
                 'Player': player_name,
                 'Team': row['Team'],
                 'Opponent': row['Opponent'],
                 'Proj Score': round(row['DailyScore'], 1),
+                'Actual Score': round(actual_score, 1),
                 'Actual': f"{ip_str} IP, {p_stats['ER']} ER, {p_stats['SO']} K, {'W' if p_stats['W'] else ('L' if p_stats['L'] else '-')}",
                 'IP': ip_str,
                 'ER': p_stats['ER'],
@@ -70,7 +89,7 @@ class PitcherBacktester:
 
         df_results = pd.DataFrame(results_data)
         display_dataframe(df_results, title="PITCHER PERFORMANCE", 
-                          columns=['Player', 'Team', 'Opponent', 'Proj Score', 'Actual', 'Breakdown'])
+                          columns=['Player', 'Team', 'Opponent', 'Proj Score', 'Actual Score', 'Actual', 'Breakdown'])
 
         # Simple Narrative
         narrative_parts = []
