@@ -11,7 +11,36 @@ class Backtester:
         self.harvester = self.optimizer.daily_engine.harvester
         self.projection_system = projection_system
 
-    def run_backtest(self, target_date: str):
+    def save_web_json(self, started_data, sat_data, target_date, filename):
+        """Saves backtest results to a JSON file for the web dashboard."""
+        import numpy as np
+        import json
+        
+        # Calculate totals
+        total_r = sum(p['stats']['R'] for p in started_data)
+        total_hr = sum(p['stats']['HR'] for p in started_data)
+        total_rbi = sum(p['stats']['RBI'] for p in started_data)
+        total_sb = sum(p['stats']['SB'] for p in started_data)
+        total_h = sum(p['stats']['H'] for p in started_data)
+        total_ab = sum(p['stats']['AB'] for p in started_data)
+        avg = (total_h / total_ab) if total_ab > 0 else 0.0
+
+        data = {
+            "target_date": target_date,
+            "last_updated": datetime.now().isoformat(),
+            "projection_system": self.projection_system.upper(),
+            "totals": {
+                "R": total_r, "HR": total_hr, "RBI": total_rbi, "SB": total_sb, "AVG": round(avg, 3)
+            },
+            "started": started_data,
+            "sat": sat_data
+        }
+        
+        with open(filename, 'w') as f:
+            json.dump(data, f, indent=4)
+        print(f"Historical results saved to {filename}")
+
+    def run_backtest(self, target_date: str, output_json=None):
         print_header(f"Zurich Zebras Backtester [{self.projection_system.upper()}]", target_date)
         
         # 1. Get All Players and their Daily Status
@@ -253,6 +282,9 @@ class Backtester:
 
         if narrative_parts:
             print_narrative("\n\n".join(narrative_parts))
+            
+        if output_json:
+            self.save_web_json(started_data, sat_data, target_date, output_json)
 
 if __name__ == "__main__":
     import argparse
@@ -261,6 +293,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Backtest the Ottoneu Lineup Optimizer for a specific date.")
     parser.add_argument("date", nargs="?", default=today, help=f"The date to backtest in YYYY-MM-DD format (default: {today})")
     parser.add_argument("--projection", type=str, default="steamer", help="Projection system (steamer, atc, thebat)")
+    parser.add_argument("--output", type=str, help="Output JSON filename for web dashboard")
     
     args = parser.parse_args()
     
@@ -272,4 +305,4 @@ if __name__ == "__main__":
         exit(1)
 
     backtester = Backtester(projection_system=args.projection)
-    backtester.run_backtest(args.date)
+    backtester.run_backtest(args.date, output_json=args.output)

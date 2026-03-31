@@ -389,6 +389,37 @@ class GameDayHarvester:
                                 
         return actuals
 
+    def get_actual_pitching_stats(self, target_date: str):
+        actuals = {}
+        dt = datetime.strptime(target_date, "%Y-%m-%d")
+        formatted_date = dt.strftime("%m/%d/%Y")
+        games = statsapi.schedule(date=formatted_date)
+        
+        for game in games:
+            try:
+                box = statsapi.boxscore_data(game['game_id'])
+            except Exception:
+                continue
+                
+            for team_pitchers in ['awayPitchers', 'homePitchers']:
+                if box.get(team_pitchers):
+                    for pitcher in box[team_pitchers]:
+                        if isinstance(pitcher, dict) and 'personId' in pitcher:
+                            try:
+                                actuals[pitcher['personId']] = {
+                                    'IP': pitcher.get('ip', '0.0'),
+                                    'H': int(pitcher.get('h', 0)),
+                                    'ER': int(pitcher.get('er', 0)),
+                                    'BB': int(pitcher.get('bb', 0)),
+                                    'SO': int(pitcher.get('k', 0)),
+                                    'W': 1 if pitcher.get('win') else 0,
+                                    'L': 1 if pitcher.get('loss') else 0
+                                }
+                            except (ValueError, TypeError):
+                                pass
+                                
+        return actuals
+
     def get_statcast_ev_stats(self, target_date: str):
         """
         Returns { personId: {'avg_ev': float, 'max_ev': float} }

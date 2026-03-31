@@ -33,38 +33,19 @@ jobs:
           echo "Current directory files:"
           ls -F
         
-      - name: Run Optimizer (Today - ATC)
+      - name: Run Full Optimizer (Hitters & Pitchers)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: uv run python main.py --projection atc --output lineup_atc_today.json
-        
-      - name: Run Optimizer (Today - Steamer)
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: uv run python main.py --projection steamer --output lineup_steamer_today.json
-        
-      - name: Run Optimizer (Tomorrow - ATC)
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          # Use Python to get tomorrow's date in MLB Time
-          TOMORROW=$(python -c "import datetime, pytz; tz=pytz.timezone('US/Eastern'); print((datetime.datetime.now(tz) + datetime.timedelta(days=1)).strftime('%Y-%m-%d'))")
-          uv run python main.py --projection atc --date $TOMORROW --output lineup_atc_tomorrow.json
-
-      - name: Run Optimizer (Tomorrow - Steamer)
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          # Use Python to get tomorrow's date in MLB Time
-          TOMORROW=$(python -c "import datetime, pytz; tz=pytz.timezone('US/Eastern'); print((datetime.datetime.now(tz) + datetime.timedelta(days=1)).strftime('%Y-%m-%d'))")
-          uv run python main.py --projection steamer --date $TOMORROW --output lineup_steamer_tomorrow.json
-
+        run: uv run python update_web_data.py
         
       - name: Prepare public files
         run: |
           mkdir -p public
           cp index.html public/
           cp lineup_*.json public/
+          cp pitchers_*.json public/
+          cp results_*.json public/
+          cp pitcher_results_*.json public/
           touch public/.nojekyll
           echo "Files to be deployed:"
           ls -R public/

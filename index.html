@@ -101,6 +101,85 @@
                 <div class="text-lg leading-relaxed text-slate-200 whitespace-pre-wrap italic" x-text="data?.narrative"></div>
             </section>
 
+            <!-- Probable Starters Section (New) -->
+            <section x-show="pitcherData?.pitcher_starts?.length > 0">
+                <h2 class="text-xl font-bold text-white mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM9 12a1 1 0 112 0 1 1 0 01-2 0zm1-9a7 7 0 110 14 7 7 0 010-14z"></path></svg>
+                    Probable Starting Pitchers
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <template x-for="p in pitcherData?.pitcher_starts" :key="p.Player">
+                        <div class="bg-slate-800/80 rounded-xl p-5 border-l-4 border-red-500 shadow-lg hover:bg-slate-800 transition-all">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <div class="text-lg font-bold text-white" x-text="p.Player"></div>
+                                    <div class="text-xs text-slate-400 uppercase tracking-wider" x-text="`${p.Team} vs ${p.Opponent}`"></div>
+                                </div>
+                                <div class="text-2xl font-mono font-bold text-green-400" x-text="p.Score.toFixed(1)"></div>
+                            </div>
+                            <div class="text-[11px] text-slate-500 leading-tight mb-3 italic" x-text="p.Breakdown"></div>
+                            <div class="flex justify-between items-center text-[10px] text-slate-500 font-semibold uppercase">
+                                <span x-text="formatTime(p.GameTime)"></span>
+                                <span class="text-red-400" x-show="p.Warning" x-text="p.Warning"></span>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </section>
+
+            <!-- Recent Performance Section (New) -->
+            <section x-show="recentHistory.length > 0">
+                <h2 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4 flex items-center">
+                    <svg class="w-4 h-4 mr-2 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Recent Performance
+                </h2>
+                <div class="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
+                    <template x-for="day in recentHistory" :key="day.date">
+                        <div class="min-w-[280px] bg-slate-800/40 rounded-xl p-4 border border-slate-700 shadow-lg">
+                            <div class="text-xs font-bold text-indigo-400 uppercase mb-3" x-text="formatHistoryDate(day.date)"></div>
+                            
+                            <!-- Hitter Totals -->
+                            <div class="grid grid-cols-5 gap-1 mb-4 text-center">
+                                <div class="bg-slate-900/60 rounded p-1">
+                                    <div class="text-[9px] text-slate-500 uppercase">R</div>
+                                    <div class="text-sm font-bold text-white" x-text="day.totals.R"></div>
+                                </div>
+                                <div class="bg-slate-900/60 rounded p-1">
+                                    <div class="text-[9px] text-slate-500 uppercase">HR</div>
+                                    <div class="text-sm font-bold text-white" x-text="day.totals.HR"></div>
+                                </div>
+                                <div class="bg-slate-900/60 rounded p-1">
+                                    <div class="text-[9px] text-slate-500 uppercase">RBI</div>
+                                    <div class="text-sm font-bold text-white" x-text="day.totals.RBI"></div>
+                                </div>
+                                <div class="bg-slate-900/60 rounded p-1">
+                                    <div class="text-[9px] text-slate-500 uppercase">SB</div>
+                                    <div class="text-sm font-bold text-white" x-text="day.totals.SB"></div>
+                                </div>
+                                <div class="bg-slate-900/60 rounded p-1">
+                                    <div class="text-[9px] text-slate-500 uppercase">AVG</div>
+                                    <div class="text-sm font-bold text-green-400" x-text="day.totals.AVG.toFixed(3).replace('0.', '.')"></div>
+                                </div>
+                            </div>
+
+                            <!-- Pitcher Result -->
+                            <template x-for="p in day.pitchers" :key="p.Player">
+                                <div class="text-[11px] border-t border-slate-700/50 pt-2 mt-2">
+                                    <div class="flex justify-between font-semibold">
+                                        <span class="text-slate-300" x-text="p.Player"></span>
+                                        <span class="text-green-400" x-text="p.Actual.split(',')[0]"></span>
+                                    </div>
+                                    <div class="text-slate-500 italic truncate" x-text="p.Actual.split(',').slice(1).join(',')"></div>
+                                </div>
+                            </template>
+                            <template x-if="day.pitchers.length === 0">
+                                <div class="text-[10px] text-slate-600 italic text-center py-2">No starting pitchers</div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+            </section>
+
             <!-- Main Lineup Table -->
             <section>
                 <div class="flex justify-between items-end mb-4">
@@ -208,11 +287,14 @@
         function dashboard() {
             return {
                 data: null,
+                pitcherData: null,
+                recentHistory: [],
                 loading: true,
                 activeDate: 'today',
                 activeProj: 'atc',
                 async init() {
                     await this.fetchData();
+                    await this.fetchHistory();
                 },
                 async switchDate(date) {
                     if (this.activeDate === date) return;
@@ -225,20 +307,61 @@
                     this.activeProj = proj;
                     this.loading = true;
                     await this.fetchData();
+                    await this.fetchHistory();
+                },
+                async fetchHistory() {
+                    this.recentHistory = [];
+                    const tz = 'America/New_York';
+                    const now = new Date();
+                    
+                    // We need to fetch the last 3 days relative to Today
+                    for (let i = 1; i <= 3; i++) {
+                        const d = new Date();
+                        d.setDate(now.getDate() - i);
+                        const dateStr = d.toISOString().split('T')[0];
+                        
+                        try {
+                            const hFile = `results_${this.activeProj}_${dateStr}.json`;
+                            const pFile = `pitcher_results_${this.activeProj}_${dateStr}.json`;
+                            
+                            const [hRes, pRes] = await Promise.all([
+                                fetch(`${hFile}?t=${new Date().getTime()}`),
+                                fetch(`${pFile}?t=${new Date().getTime()}`)
+                            ]);
+                            
+                            if (hRes.ok) {
+                                const hData = await hRes.json();
+                                const pData = pRes.ok ? await pRes.json() : { pitcher_starts: [] };
+                                this.recentHistory.push({
+                                    date: dateStr,
+                                    totals: hData.totals,
+                                    pitchers: pData.pitcher_starts || []
+                                });
+                            }
+                        } catch (e) {
+                            console.warn(`Could not load history for ${dateStr}`, e);
+                        }
+                    }
                 },
                 async fetchData() {
                     try {
-                        const filename = `lineup_${this.activeProj}_${this.activeDate}.json`;
-                        console.log("Fetching:", filename);
-                        // Add cache-buster to ensure we get fresh data
-                        const response = await fetch(`${filename}?t=${new Date().getTime()}`);
-                        console.log("Response status:", response.status);
-                        if (!response.ok) throw new Error(`File not found: ${filename}`);
-                        this.data = await response.json();
-                        console.log("Data loaded:", this.data);
+                        const t = new Date().getTime();
+                        const hFile = `lineup_${this.activeProj}_${this.activeDate}.json`;
+                        const pFile = `pitchers_${this.activeProj}_${this.activeDate}.json`;
+                        
+                        console.log("Fetching:", hFile, pFile);
+                        
+                        const [hRes, pRes] = await Promise.all([
+                            fetch(`${hFile}?t=${t}`),
+                            fetch(`${pFile}?t=${t}`)
+                        ]);
+                        
+                        if (hRes.ok) this.data = await hRes.json();
+                        if (pRes.ok) this.pitcherData = await pRes.json();
+                        
                         this.loading = false;
                     } catch (e) {
-                        console.error("Failed to load lineup data", e);
+                        console.error("Failed to load dashboard data", e);
                         this.data = { narrative: `⚠️ ${e.message}. Run the optimizer to generate it.`, recommended_lineup: [], players_sat: [] };
                         this.loading = false;
                     }
@@ -254,6 +377,11 @@
                         minute: '2-digit',
                         second: '2-digit'
                     });
+                },
+                formatHistoryDate(dateStr) {
+                    const [y, m, d] = dateStr.split('-');
+                    const date = new Date(y, m - 1, d);
+                    return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric', weekday: 'short' });
                 },
                 formatTime(isoString) {
                     if (!isoString) return '-';

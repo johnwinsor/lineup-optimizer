@@ -18,9 +18,25 @@ The optimizer is a multi-stage pipeline designed for **Daily 5x5 Roto Efficiency
 - **Batch Backtester (`batch_backtester.py`)**: Runs randomized simulations across the season to generate aggregate success rate reports.
 - **Free Agent Scout (`scout.py`)**: Analyzes all available free agent hitters in League 1077 and ranks them by their Zebras Efficiency Score. Fixed bug in name cleaning logic.
 
+- **Pitcher Optimizer (`pitcher_optimizer.py`)**: Orchestrates the daily pitcher evaluation and generates JSON reports for the dashboard.
+- **Pitcher Daily Engine (`pitcher_daily_engine.py`)**: Applies dynamic multipliers (Venue, Weather, Statcast, BvP, Opponent Strength) to rostered starters.
+- **Pitcher Enricher (`pitcher_enricher.py`)**: Maps rostered pitchers to ATC/Steamer projections and calculates a base efficiency score.
+
 ## 2. The "Zebras Algorithm" (Projection Logic)
-The final `ProjScore` for a player on a given day is: 
-`Baseline Score * [Park Factor] * [Pitcher Skill] * [Platoon Factor] * [Order Factor] * [BvP Factor] * [StatCast Boosts] * [Weather Factor]`
+### Hitter Algorithm (V2):
+...
+### Pitcher Algorithm (V1):
+The final `PitcherProjScore` for a starter is:
+`BaseScore * [Park Factor (Inv)] * [Weather Factor] * [Statcast Boost] * [Agg BvP Factor] * [Opponent Power]`
+
+| Factor | Condition | Impact |
+| :--- | :--- | :--- |
+| **Base Score** | `(K/9 * 0.4) + (5.0 - ERA) + (1.5 - WHIP) * 2.0` | **Baseline** |
+| **Park Factor** | Inverse of hitter multiplier (e.g. Coors = 0.85x) | **0.8x to 1.2x** |
+| **Weather** | Wind In (+), Wind Out (-), Heat (>85F) (-) | **±5% to 10%** |
+| **Statcast** | `(Projected ERA - Blended xERA) * 0.1` | **Dynamic** |
+| **Agg BvP** | Average OPS allowed to current lineup (min 3 PA) | **0.85x to 1.15x** |
+| **Opp Power** | Aggregate Efficiency Score of opposing lineup | **0.85x to 1.15x** |
 
 ### Lineup Pending Logic (Historical Assumption):
 When a team is scheduled to play but the official lineup has not yet been announced:
@@ -66,7 +82,8 @@ The algorithm transitions from prior-season (2025) to current-season (2026) perf
 ## 5. Operational Commands
 - **Run Optimizer (Today)**: `uv run python main.py`
 - **Run Live Dashboard (Today)**: `uv run python backtester.py`
-- **Run Historical Backtest**: `uv run python backtester.py YYYY-MM-DD`
+- **Run Hitter Backtest**: `uv run python backtester.py YYYY-MM-DD`
+- **Run Pitcher Backtest**: `uv run python pitcher_backtester.py YYYY-MM-DD`
 - **Find Free Agent Upgrades**: `uv run python scout.py --pa 50`
 - **Harvest Spring Stats**: `uv run python spring_harvester.py`
 - **Scout Spring Hitters**: `uv run python scout_spring_fa.py --pa 15`
