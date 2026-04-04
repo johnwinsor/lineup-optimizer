@@ -5,17 +5,26 @@ from harvester import OttoneuScraper
 from crosswalks import normalize_name
 
 class PitcherEnricher:
+    _projection_cache = {}
+
     def __init__(self, league_id=1077, team_id=7582, projection_system="steamer"):
         self.scraper = OttoneuScraper(league_id, team_id)
         self.projection_system = projection_system.lower()
 
     def fetch_projections(self):
+        cache_key = self.projection_system
+        if cache_key in PitcherEnricher._projection_cache:
+            return PitcherEnricher._projection_cache[cache_key].copy()
+
+        print(f"Loading {self.projection_system.upper()} pitcher projections from local cache...")
         filename = f"projections-{self.projection_system}-pit.json"
         
         try:
             with open(filename, "r") as f:
                 data = json.load(f)
-            return pd.DataFrame(data)
+            df = pd.DataFrame(data)
+            PitcherEnricher._projection_cache[cache_key] = df
+            return df.copy()
         except FileNotFoundError:
             raise Exception(f"Failed to load {self.projection_system.upper()} pitcher projections. Run fetch_statcast.py first.")
 

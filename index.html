@@ -45,12 +45,24 @@
                     </svg>
                 </div>
                 <div>
-                    <h1 class="text-3xl font-bold text-white tracking-tight">Zurich Zebras <span class="text-indigo-500 italic">Optimizer</span></h1>
-                    <p class="text-slate-400 mt-1 uppercase text-[10px] tracking-[0.2em] font-semibold">Ottoneu League 1077 • Team 7582</p>
+                    <h1 class="text-3xl font-bold text-white tracking-tight" x-text="selectedTeam === '7582' ? 'Zurich Zebras' : (selectedTeam === '7587' ? 'Ghost Ride the WHIP' : 'Team ' + selectedTeam)"></h1>
+                    <p class="text-slate-400 mt-1 uppercase text-[10px] tracking-[0.2em] font-semibold">Ottoneu League 1077 • Team <span x-text="selectedTeam"></span></p>
                 </div>
             </div>
             <div class="flex flex-col items-end gap-2 w-full md:w-auto">
                 <div class="flex gap-2">
+                    <!-- Team Selector -->
+                    <div class="relative inline-block w-full md:w-48">
+                        <select @change="switchTeam($event.target.value)" 
+                                class="w-full bg-slate-800 border border-slate-700 text-white text-xs font-bold uppercase py-2 px-3 rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option value="7582" :selected="selectedTeam === '7582'">Zurich Zebras (7582)</option>
+                            <option value="7587" :selected="selectedTeam === '7587'">Ghost Ride (7587)</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-400">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 7.414 8.242 6 9.656 9.293 12.95z"/></svg>
+                        </div>
+                    </div>
+
                     <!-- Projection Toggle -->
                     <div class="inline-flex p-1 bg-slate-800 rounded-lg border border-slate-700">
                         <button @click="switchProj('atc')" 
@@ -122,59 +134,6 @@
                                 <span x-text="formatTime(p.GameTime)"></span>
                                 <span class="text-red-400" x-show="p.Warning" x-text="p.Warning"></span>
                             </div>
-                        </div>
-                    </template>
-                </div>
-            </section>
-
-            <!-- Recent Performance Section (New) -->
-            <section x-show="recentHistory.length > 0">
-                <h2 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4 flex items-center">
-                    <svg class="w-4 h-4 mr-2 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    Recent Performance
-                </h2>
-                <div class="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
-                    <template x-for="day in recentHistory" :key="day.date">
-                        <div class="min-w-[280px] bg-slate-800/40 rounded-xl p-4 border border-slate-700 shadow-lg">
-                            <div class="text-xs font-bold text-indigo-400 uppercase mb-3" x-text="formatHistoryDate(day.date)"></div>
-                            
-                            <!-- Hitter Totals -->
-                            <div class="grid grid-cols-5 gap-1 mb-4 text-center">
-                                <div class="bg-slate-900/60 rounded p-1">
-                                    <div class="text-[9px] text-slate-500 uppercase">R</div>
-                                    <div class="text-sm font-bold text-white" x-text="day.totals.R"></div>
-                                </div>
-                                <div class="bg-slate-900/60 rounded p-1">
-                                    <div class="text-[9px] text-slate-500 uppercase">HR</div>
-                                    <div class="text-sm font-bold text-white" x-text="day.totals.HR"></div>
-                                </div>
-                                <div class="bg-slate-900/60 rounded p-1">
-                                    <div class="text-[9px] text-slate-500 uppercase">RBI</div>
-                                    <div class="text-sm font-bold text-white" x-text="day.totals.RBI"></div>
-                                </div>
-                                <div class="bg-slate-900/60 rounded p-1">
-                                    <div class="text-[9px] text-slate-500 uppercase">SB</div>
-                                    <div class="text-sm font-bold text-white" x-text="day.totals.SB"></div>
-                                </div>
-                                <div class="bg-slate-900/60 rounded p-1">
-                                    <div class="text-[9px] text-slate-500 uppercase">AVG</div>
-                                    <div class="text-sm font-bold text-green-400" x-text="day.totals.AVG.toFixed(3).replace('0.', '.')"></div>
-                                </div>
-                            </div>
-
-                            <!-- Pitcher Result -->
-                            <template x-for="p in day.pitchers" :key="p.Player">
-                                <div class="text-[11px] border-t border-slate-700/50 pt-2 mt-2">
-                                    <div class="flex justify-between font-semibold">
-                                        <span class="text-slate-300" x-text="p.Player"></span>
-                                        <span class="text-indigo-400" x-text="`${p['Proj Score']} → ${p['Actual Score']}`"></span>
-                                    </div>
-                                    <div class="text-slate-500 italic truncate" x-text="p.Actual"></div>
-                                </div>
-                            </template>
-                            <template x-if="day.pitchers.length === 0">
-                                <div class="text-[10px] text-slate-600 italic text-center py-2">No starting pitchers</div>
-                            </template>
                         </div>
                     </template>
                 </div>
@@ -288,13 +247,19 @@
             return {
                 data: null,
                 pitcherData: null,
-                recentHistory: [],
                 loading: true,
                 activeDate: 'today',
                 activeProj: 'atc',
+                selectedTeam: localStorage.getItem('selectedTeam') || '7582',
                 async init() {
                     await this.fetchData();
-                    await this.fetchHistory();
+                },
+                async switchTeam(teamId) {
+                    if (this.selectedTeam === teamId) return;
+                    this.selectedTeam = teamId;
+                    localStorage.setItem('selectedTeam', teamId);
+                    this.loading = true;
+                    await this.fetchData();
                 },
                 async switchDate(date) {
                     if (this.activeDate === date) return;
@@ -307,46 +272,13 @@
                     this.activeProj = proj;
                     this.loading = true;
                     await this.fetchData();
-                    await this.fetchHistory();
-                },
-                async fetchHistory() {
-                    this.recentHistory = [];
-                    const tz = 'America/New_York';
-                    const now = new Date();
-                    
-                    // We need to fetch the last 3 days relative to Today
-                    for (let i = 1; i <= 3; i++) {
-                        const d = new Date();
-                        d.setDate(now.getDate() - i);
-                        const dateStr = d.toISOString().split('T')[0];
-                        
-                        try {
-                            const hFile = `results_${this.activeProj}_${dateStr}.json`;
-                            const pFile = `pitcher_results_${this.activeProj}_${dateStr}.json`;
-                            
-                            const [hRes, pRes] = await Promise.all([
-                                fetch(`${hFile}?t=${new Date().getTime()}`),
-                                fetch(`${pFile}?t=${new Date().getTime()}`)
-                            ]);
-                            
-                            if (hRes.ok) {
-                                const hData = await hRes.json();
-                                const pData = pRes.ok ? await pRes.json() : { pitcher_starts: [] };
-                                this.recentHistory.push({
-                                    date: dateStr,
-                                    totals: hData.totals,
-                                    pitchers: pData.pitcher_starts || []
-                                });
-                            }
-                        } catch (e) {
-                            console.warn(`Could not load history for ${dateStr}`, e);
-                        }
-                    }
                 },
                 async fetchData() {
                     try {
                         const t = new Date().getTime();
-                        const hFile = `lineup_${this.activeProj}_${this.activeDate}.json`;
+                        // Filename format: lineup_7582_atc_today.json
+                        const hFile = `lineup_${this.selectedTeam}_${this.activeProj}_${this.activeDate}.json`;
+                        // Pitchers stay Zebras-only for now
                         const pFile = `pitchers_${this.activeProj}_${this.activeDate}.json`;
                         
                         console.log("Fetching:", hFile, pFile);
@@ -357,7 +289,13 @@
                         ]);
                         
                         if (hRes.ok) this.data = await hRes.json();
-                        if (pRes.ok) this.pitcherData = await pRes.json();
+                        
+                        // Load pitcher data only for Team 7582 for now
+                        if (this.selectedTeam === '7582' && pRes.ok) {
+                            this.pitcherData = await pRes.json();
+                        } else {
+                            this.pitcherData = { pitcher_starts: [] };
+                        }
                         
                         this.loading = false;
                     } catch (e) {
@@ -383,11 +321,6 @@
                         minute: '2-digit',
                         second: '2-digit'
                     });
-                },
-                formatHistoryDate(dateStr) {
-                    const [y, m, d] = dateStr.split('-');
-                    const date = new Date(y, m - 1, d);
-                    return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric', weekday: 'short' });
                 },
                 formatLongDate(dateStr) {
                     if (!dateStr) return '';

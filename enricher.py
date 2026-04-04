@@ -6,11 +6,17 @@ from harvester import OttoneuScraper
 from crosswalks import normalize_name
 
 class OttoneuEnricher:
+    _projection_cache = {}
+
     def __init__(self, league_id=1077, team_id=7582, projection_system="steamer"):
         self.scraper = OttoneuScraper(league_id, team_id)
         self.projection_system = projection_system.lower()
 
     def fetch_projections(self):
+        cache_key = self.projection_system
+        if cache_key in OttoneuEnricher._projection_cache:
+            return OttoneuEnricher._projection_cache[cache_key].copy()
+
         print(f"Loading {self.projection_system.upper()} batting projections from local cache...")
         filename = f"projections-{self.projection_system}.json"
         
@@ -21,7 +27,9 @@ class OttoneuEnricher:
         try:
             with open(filename, "r") as f:
                 data = json.load(f)
-            return pd.DataFrame(data)
+            df = pd.DataFrame(data)
+            OttoneuEnricher._projection_cache[cache_key] = df
+            return df.copy()
         except FileNotFoundError:
             raise Exception(f"Failed to load {self.projection_system.upper()} projections. Please run 'uv run python fetch_statcast.py' first.")
 

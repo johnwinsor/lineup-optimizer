@@ -73,32 +73,31 @@ def save_web_json(lineup_df, sat_df, target_date, ai_narrative, projection_syste
         json.dump(data, f, indent=4)
     print(f"\n[green]Web dashboard data exported to {filename}[/green]")
 
-def main():
-    parser = argparse.ArgumentParser(description="Zurich Zebras Lineup Optimizer")
-    parser.add_argument("--projection", type=str, default="steamer", help="Projection system (steamer, atc, thebat)")
-    parser.add_argument("--date", type=str, help="Target date (YYYY-MM-DD). Defaults to today.")
-    parser.add_argument("--output", type=str, default="web_lineup.json", help="Output JSON filename for web dashboard")
-    parser.add_argument("--skip-ai", action="store_true", help="Skip AI narrative generation to save API quota")
-    args = parser.parse_args()
-
+def run_optimizer_hitter(projection_system="steamer", target_date=None, team_id=7582, output_filename=None, skip_ai=False):
     # Determine target date and year using MLB (Eastern) Time
     mlb_tz = pytz.timezone('US/Eastern')
     now_mlb = datetime.now(mlb_tz)
     
-    if args.date:
-        target_date = args.date
+    if target_date:
         try:
             year = int(target_date.split("-")[0])
         except (ValueError, IndexError):
             print(f"Error: Invalid date format '{target_date}'. Use YYYY-MM-DD.")
-            return
+            return None
     else:
         target_date = now_mlb.strftime("%Y-%m-%d")
         year = now_mlb.year
 
-    optimizer = OttoneuOptimizer(projection_system=args.projection)
+    # Determine output filename if not provided
+    if not output_filename:
+        output_filename = f"web_lineup_{team_id}.json"
+
+    optimizer = OttoneuOptimizer(team_id=team_id, projection_system=projection_system)
     
-    print_header(f"Zurich Zebras (Ottoneu Team 7582) Lineup Optimizer [{args.projection.upper()}]", target_date)
+    team_name = "Zurich Zebras" if team_id == 7582 else f"Team {team_id}"
+    if team_id == 7587: team_name = "Ghost Ride the WHIP"
+    
+    print_header(f"{team_name} ({team_id}) Lineup Optimizer [{projection_system.upper()}]", target_date)
     
     # 1. Gather Data for both tables
     print("Analyzing Roster and Matchups...")
@@ -236,9 +235,11 @@ def main():
             cols = [c for c in cols if c in df_sat.columns]
             display_dataframe(df_sat, title="PLAYERS SAT", columns=cols)
 
-        # Narrative Generation
-        ai_narrative = generate_ai_narrative(lineup, target_date, skip_ai=args.skip_ai)
-        print_narrative(ai_narrative)
+        # Narrative Generation - ONLY for Zurich Zebras
+        skip_narrative_final = skip_ai or (team_id != 7582)
+        ai_narrative = generate_ai_narrative(lineup, target_date, skip_ai=skip_narrative_final)
+        if not skip_narrative_final:
+            print_narrative(ai_narrative)
         
         print_info("\n[dim]Algorithm: Maximize projected 5x5 efficiency subject to positional caps.[/dim]")
         print_info("[dim]Factors: SIERA Difficulty, Platoon Splits, Elite BvP, StatCast Peripherals, Weather.[/dim]")
@@ -247,9 +248,23 @@ def main():
         # Ensure Slot is converted from Categorical to string for JSON serialization
         if 'Slot' in lineup.columns:
             lineup['Slot'] = lineup['Slot'].astype(str)
-        save_web_json(lineup, df_sat, target_date, ai_narrative, args.projection, args.output)
+        save_web_json(lineup, df_sat, target_date, ai_narrative, projection_system, output_filename)
     else:
-        print(f"\nNo valid starters found for {target_date}. This may be an off-day or lineups are not yet posted.")
+        print(f"\\nNo valid starters found for {target_date}. This may be an off-day or lineups are not yet posted.")
 
-if __name__ == "__main__":
-    main()
+def main():
+    parser = argparse.ArgumentParser(description="Ottoneu Lineup Optimizer")
+    parser.add_argument("--projection", type=str, default="steamer", help="Projection system (steamer, atc, thebat)")
+    parser.add_argument("--date", type=str, help="Target date (YYYY-MM-DD). Defaults to today.")
+    parser.add_argument("--team", type=int, default=7582, help="Ottoneu Team ID")
+    parser.add_argument("--output", type=str, help="Output JSON filename for web dashboard")
+    parser.add_argument("--skip-ai", action="store_true", help="Skip AI narrative generation to save API quota")
+    args = parser.parse_args()
+
+    run_optimizer_hitter(
+        projection_system=args.projection,
+        target_date=args.date,
+        team_id=args.team,
+        output_filename=args.output,
+        skip_ai=args.skip_ai
+    )

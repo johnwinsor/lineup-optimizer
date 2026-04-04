@@ -8,6 +8,15 @@ from defense_harvester import DefenseHarvester
 from crosswalks import TeamCrosswalk, PlayerCrosswalk
 
 class GameDayHarvester:
+    _instance = None
+    _matchups_cache = {} # Shared across all instances
+
+    @classmethod
+    def get_instance(cls):
+        if cls._instance is None:
+            cls._instance = GameDayHarvester()
+        return cls._instance
+
     def __init__(self):
         # Cache for player IDs to avoid repeated lookups
         self.player_id_cache = {}
@@ -64,6 +73,10 @@ class GameDayHarvester:
         return None
 
     def get_daily_matchups(self, target_date: str):
+        if target_date in self._matchups_cache:
+            return self._matchups_cache[target_date]
+
+        print(f"Fetching fresh matchups for {target_date} from MLB API...")
         matchups = {'_teams_playing': {}}
         dt = datetime.strptime(target_date, "%Y-%m-%d")
         formatted_date = dt.strftime("%m/%d/%Y")
@@ -214,6 +227,7 @@ class GameDayHarvester:
                                 'game_time': game_time
                             }
                         
+        self._matchups_cache[target_date] = matchups
         return matchups
 
     def get_last_starting_order(self, person_id, year=2025):

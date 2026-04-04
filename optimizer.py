@@ -9,11 +9,11 @@ class OttoneuOptimizer:
         self.enricher = OttoneuEnricher(league_id, team_id, projection_system=projection_system)
         self.daily_engine = DailyEngine(league_id, team_id, projection_system=projection_system)
         self.min_score = min_score
-        # Players who should never be benched if they are starting in MLB
+        # Players who should never be benched if they are starting in MLB (Team 7582 specific)
         self.do_not_sit = [
             "Trea Turner", "Yordan Alvarez", "Kyle Schwarber", 
             "Christian Yelich", "Junior Caminero", "Kazuma Okamoto"
-        ]
+        ] if team_id == 7582 else []
 
     def optimize_lineup(self, target_date=None):
         if target_date:

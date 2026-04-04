@@ -1,10 +1,12 @@
-import subprocess
 import datetime
 import pytz
 import argparse
+import json
+from main import run_optimizer_hitter
+from pitcher_optimizer import run_pitcher_optimizer
 
 def main():
-    parser = argparse.ArgumentParser(description="Update all 4 local lineup JSON files")
+    parser = argparse.ArgumentParser(description="Update all team lineup JSON files (Optimized)")
     parser.add_argument("--skip-ai", action="store_true", help="Skip AI narrative generation to save quota")
     args = parser.parse_args()
 
@@ -29,54 +31,39 @@ def main():
         ("steamer", tomorrow, "pitchers_steamer_tomorrow.json"),
     ]
 
-    # Define historical jobs (Last 3 days)
-    history_jobs = []
-    for i in range(1, 4):
-        past_date = (datetime.datetime.now(tz) - datetime.timedelta(days=i)).strftime('%Y-%m-%d')
-        for proj in ["atc", "steamer"]:
-            history_jobs.append((proj, past_date, f"results_{proj}_{past_date}.json"))
-            history_jobs.append((proj, past_date, f"pitcher_results_{proj}_{past_date}.json", "pitcher"))
-
-    print(f"🚀 Updating local web data for {today}, {tomorrow}, and recent history...")
+    # Define the Teams
+    teams = [7582, 7587]
+    
+    print(f"🚀 Updating local web data for {len(teams)} teams for {today} and {tomorrow}...")
+    print("✨ Optimization: Reusing projection data in-memory across all runs.")
 
     # Run Hitters (Today/Tomorrow)
-    for proj, date, filename in jobs:
-        print(f"\n--- Generating Hitter Lineup: {filename} ({proj.upper()}) ---")
-        cmd = [
-            "uv", "run", "python", "main.py",
-            "--projection", proj,
-            "--date", date,
-            "--output", filename
-        ]
-        if args.skip_ai:
-            cmd.append("--skip-ai")
+    for team in teams:
+        for proj, date, base_filename in jobs:
+            # Filename format: lineup_7582_atc_today.json
+            filename = base_filename.replace("lineup_", f"lineup_{team}_")
+            print(f"\n--- Generating Hitter Lineup: {filename} (Team {team}, {proj.upper()}) ---")
             
-        subprocess.run(cmd)
+            # Call directly instead of subprocess
+            run_optimizer_hitter(
+                projection_system=proj,
+                target_date=date,
+                team_id=team,
+                output_filename=filename,
+                skip_ai=args.skip_ai
+            )
 
-    # Run Pitchers (Today/Tomorrow)
+    # Run Pitchers (Today/Tomorrow) - Still Zebras only for now
     for proj, date, filename in pitcher_jobs:
         print(f"\n--- Generating Pitcher Lineup: {filename} ({proj.upper()}) ---")
-        cmd = [
-            "uv", "run", "python", "pitcher_optimizer.py",
-            "--proj", proj,
-            "--date", date,
-            "--output", filename
-        ]
-        subprocess.run(cmd)
-
-    # Run History
-    for job in history_jobs:
-        proj, date, filename = job[0], job[1], job[2]
-        is_pitcher = len(job) > 3
         
-        if is_pitcher:
-            print(f"\n--- Generating Historical Pitcher Results: {filename} ---")
-            cmd = ["uv", "run", "python", "pitcher_backtester.py", date, "--proj", proj, "--output", filename]
-        else:
-            print(f"\n--- Generating Historical Hitter Results: {filename} ---")
-            cmd = ["uv", "run", "python", "backtester.py", date, "--projection", proj, "--output", filename]
-            
-        subprocess.run(cmd)
+        # Call directly instead of subprocess
+        data = run_pitcher_optimizer(target_date=date, projection_system=proj)
+        
+        # Save JSON manually since run_pitcher_optimizer returns dict
+        with open(filename, 'w') as f:
+            json.dump(data, f, indent=4)
+        print(f"Web dashboard data exported to {filename}")
 
     print("\n✅ All JSON files updated. Refresh your local browser to see changes.")
 
