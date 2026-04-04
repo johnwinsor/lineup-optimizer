@@ -30,6 +30,7 @@ jobs:
           mkdir -p public
           # Copy everything needed for the dashboard and the optimizer
           cp index.html public/
+          cp about.html public/
           cp *.json public/ 2>/dev/null || true
           touch public/.nojekyll
           
