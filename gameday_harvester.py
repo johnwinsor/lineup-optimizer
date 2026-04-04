@@ -5,7 +5,7 @@ from datetime import datetime
 import requests
 from statcast_harvester import StatCastHarvester
 from defense_harvester import DefenseHarvester
-from crosswalks import TeamCrosswalk, PlayerCrosswalk
+from crosswalks import TeamCrosswalk, PlayerCrosswalk, get_team_ottoneu
 
 class GameDayHarvester:
     _instance = None
@@ -103,8 +103,8 @@ class GameDayHarvester:
                         self.active_rosters[t_id] = set()
 
             # Resolve team abbreviations from schedule IDs (more reliable for future games)
-            away_abb = self.get_team_abb(away_id)
-            home_abb = self.get_team_abb(home_id)
+            away_abb = get_team_ottoneu(self.get_team_abb(away_id))
+            home_abb = get_team_ottoneu(self.get_team_abb(home_id))
             
             away_sp = None
             home_sp = None

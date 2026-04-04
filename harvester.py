@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import re
 
 class OttoneuScraper:
     _roster_cache = {} # { team_id: (hitters_df, pitchers_df) }
@@ -64,7 +65,7 @@ class OttoneuScraper:
                         # Robust team extraction
                         teams = ['ARI', 'ATL', 'BAL', 'BOS', 'CHC', 'CHW', 'CIN', 'CLE', 'COL', 'DET', 
                                  'HOU', 'KCR', 'LAA', 'LAD', 'MIA', 'MIL', 'MIN', 'NYM', 'NYY', 'OAK', 
-                                 'PHI', 'PIT', 'SDP', 'SEA', 'SFG', 'STL', 'TBR', 'TEX', 'TOR', 'WSH']
+                                 'PHI', 'PIT', 'SDP', 'SEA', 'SFG', 'STL', 'TBR', 'TEX', 'TOR', 'WSH', 'WSN', 'ATH']
                         
                         team_candidate = ""
                         # Try to find a known team in the text
@@ -74,15 +75,17 @@ class OttoneuScraper:
                                 break
                         
                         # Extract name (everything before the first paren or team code)
-                        name_part = full_text
-                        for t in teams:
-                            if t in name_part:
-                                name_part = name_part.split(t)[0].strip()
+                        name_part = full_text.replace('\n', ' ').strip()
+                        
+                        # Regex to strip common Ottoneu suffixes and team codes
+                        # This matches a team code (3 uppercase letters) at the end of the string
+                        name_part = re.sub(r'([A-Z]{3})$', '', name_part).strip()
+                        # Also strip parentheses
                         if '(' in name_part:
                             name_part = name_part.split('(')[0].strip()
                         
-                        row_data['Name'] = name_part
-                        row_data['Team'] = team_candidate
+                        row_data['Name'] = name_part.strip()
+                        row_data['Team'] = team_candidate.strip()
                         
                         # Extract FGID
                         fg_link = col.find("a", href=lambda x: x and "fangraphs.com" in x)
@@ -96,6 +99,8 @@ class OttoneuScraper:
                     if header == 'POS':
                         row_data[header] = val
                         row_data['PosList'] = val.replace('/', ' ').split()
+                    elif header == 'Team' and val:
+                        row_data['Team'] = val
                     else:
                         row_data[header] = val
             data.append(row_data)

@@ -5,14 +5,27 @@ class TeamCrosswalk:
     # MLB StatsAPI -> Ottoneu/FanGraphs
     MLB_TO_OTTONEU = {
         'CWS': 'CHW',
+        'CHA': 'CHW',
         'KC': 'KCR',
-        'WSH': 'WAS',
+        'KCA': 'KCR',
+        'WSH': 'WSN',
+        'WAS': 'WSN',
         'SD': 'SDP',
+        'SDN': 'SDP',
         'SF': 'SFG',
+        'SFN': 'SFG',
         'AZ': 'ARI',
         'TB': 'TBR',
-        'ANA': 'LAA', # Historical/Alternate
-        'FLA': 'MIA'  # Historical
+        'TBA': 'TBR',
+        'ANA': 'LAA',
+        'FLA': 'MIA',
+        'ATH': 'ATH',
+        'OAK': 'ATH',
+        'SLN': 'STL',
+        'NYA': 'NYY',
+        'NYN': 'NYM',
+        'CHN': 'CHC',
+        'LAN': 'LAD'
     }
 
     # Ottoneu/FanGraphs -> MLB StatsAPI
@@ -21,11 +34,17 @@ class TeamCrosswalk:
     @classmethod
     def to_ottoneu(cls, mlb_abb):
         if not mlb_abb: return ""
+        # If it's already an Ottoneu abbreviation (like ARI), return it
+        if mlb_abb in cls.OTTONEU_TO_MLB:
+            return mlb_abb
         return cls.MLB_TO_OTTONEU.get(mlb_abb, mlb_abb)
 
     @classmethod
     def to_mlb(cls, ott_abb):
         if not ott_abb: return ""
+        # If it's already an MLB abbreviation (like CWS), return it
+        if ott_abb in cls.MLB_TO_OTTONEU:
+            return ott_abb
         return cls.OTTONEU_TO_MLB.get(ott_abb, ott_abb)
 
 class PlayerCrosswalk:

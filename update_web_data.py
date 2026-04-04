@@ -32,7 +32,7 @@ def main():
     ]
 
     # Define the Teams
-    teams = [7582, 7587, 7581]
+    teams = [7582, 7587, 7581, 7641]
     
     print(f"🚀 Updating local web data for {len(teams)} teams for {today} and {tomorrow}...")
     print("✨ Optimization: Reusing projection data in-memory across all runs.")
