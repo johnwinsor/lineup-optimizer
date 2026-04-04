@@ -45,7 +45,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h1 class="text-3xl font-bold text-white tracking-tight" x-text="selectedTeam === '7582' ? 'Zurich Zebras' : (selectedTeam === '7587' ? 'Ghost Ride the WHIP' : (selectedTeam === '7581' ? 'Austin Waves' : 'Team ' + selectedTeam))"></h1>
+                    <h1 class="text-3xl font-bold text-white tracking-tight" x-text="selectedTeam === '7582' ? 'Zurich Zebras' : (selectedTeam === '7587' ? 'Ghost Ride the WHIP' : (selectedTeam === '7581' ? 'Austin Waves' : (selectedTeam === '7641' ? 'LawDog' : 'Team ' + selectedTeam)))"></h1>
                     <p class="text-slate-400 mt-1 uppercase text-[10px] tracking-[0.2em] font-semibold">Ottoneu League 1077 • Team <span x-text="selectedTeam"></span></p>
                 </div>
             </div>
@@ -60,9 +60,10 @@
                     <div class="relative inline-block w-full md:w-48">
                         <select @change="switchTeam($event.target.value)" 
                                 class="w-full bg-slate-800 border border-slate-700 text-white text-xs font-bold uppercase py-2 px-3 rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                            <option value="7582" :selected="selectedTeam === '7582'">Zurich Zebras (7582)</option>
-                            <option value="7587" :selected="selectedTeam === '7587'">Ghost Ride (7587)</option>
-                            <option value="7581" :selected="selectedTeam === '7581'">Austin Waves (7581)</option>
+                            <option value="7582" :selected="selectedTeam === '7582'">ZZ: Zurich Zebras</option>
+                            <option value="7587" :selected="selectedTeam === '7587'">GR: Ghost Ride the WHIP</option>
+                            <option value="7581" :selected="selectedTeam === '7581'">AW: Austin Waves</option>
+                            <option value="7641" :selected="selectedTeam === '7641'">LD: LawDog</option>
                         </select>
                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-400">
                             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 7.414 8.242 6 9.656 9.293 12.95z"/></svg>
