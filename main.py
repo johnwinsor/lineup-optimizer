@@ -96,6 +96,7 @@ def run_optimizer_hitter(projection_system="steamer", target_date=None, team_id=
     
     team_name = "Zurich Zebras" if team_id == 7582 else f"Team {team_id}"
     if team_id == 7587: team_name = "Ghost Ride the WHIP"
+    if team_id == 7581: team_name = "Austin Waves"
     
     print_header(f"{team_name} ({team_id}) Lineup Optimizer [{projection_system.upper()}]", target_date)
     

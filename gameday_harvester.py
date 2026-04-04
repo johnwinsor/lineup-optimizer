@@ -9,7 +9,9 @@ from crosswalks import TeamCrosswalk, PlayerCrosswalk
 
 class GameDayHarvester:
     _instance = None
-    _matchups_cache = {} # Shared across all instances
+    _matchups_cache = {} 
+    _bvp_cache = {} # Shared batter vs pitcher stats
+    _player_data_cache = {} # Shared hand/stats/etc
 
     @classmethod
     def get_instance(cls):
@@ -283,8 +285,8 @@ class GameDayHarvester:
             return {'hand': 'R'}
             
         cache_key = f"batter_{person_id}"
-        if cache_key in self.player_id_cache:
-            return self.player_id_cache[cache_key]
+        if cache_key in self._player_data_cache:
+            return self._player_data_cache[cache_key]
 
         data = {'hand': 'R'}
         try:
@@ -295,7 +297,7 @@ class GameDayHarvester:
         except Exception:
             pass
             
-        self.player_id_cache[cache_key] = data
+        self._player_data_cache[cache_key] = data
         return data
 
     def get_hitter_statcast_data(self, person_id, weight_current=0.0):
@@ -305,9 +307,9 @@ class GameDayHarvester:
         if not batter_id or not pitcher_id:
             return None
             
-        cache_key = f"bvp_{batter_id}_{pitcher_id}"
-        if cache_key in self.player_id_cache:
-            return self.player_id_cache[cache_key]
+        cache_key = f"{batter_id}_{pitcher_id}"
+        if cache_key in self._bvp_cache:
+            return self._bvp_cache[cache_key]
 
         data = None
         try:
@@ -326,7 +328,7 @@ class GameDayHarvester:
         except Exception:
             pass
             
-        self.player_id_cache[cache_key] = data
+        self._bvp_cache[cache_key] = data
         return data
 
     def get_pitcher_data(self, person_id, year=2025, weight_current=0.0):
@@ -334,8 +336,8 @@ class GameDayHarvester:
             return {'hand': 'R', 'era': 4.0, 'xera': 4.0}
             
         cache_key = f"pitcher_{person_id}_{year}_{weight_current}"
-        if cache_key in self.player_id_cache:
-            return self.player_id_cache[cache_key]
+        if cache_key in self._player_data_cache:
+            return self._player_data_cache[cache_key]
 
         data = {'hand': 'R', 'era': 4.0, 'xera': 4.0}
         
@@ -368,7 +370,7 @@ class GameDayHarvester:
         except Exception:
             pass
             
-        self.player_id_cache[cache_key] = data
+        self._player_data_cache[cache_key] = data
         return data
 
     def get_actual_boxscore_stats(self, target_date: str):

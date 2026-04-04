@@ -40,6 +40,7 @@ jobs:
         run: |
           mkdir -p public
           cp index.html public/
+          cp about.html public/
           cp *.json public/
           touch public/.nojekyll
           echo "Files to be deployed:"

@@ -3,11 +3,11 @@ from datetime import datetime, timedelta
 import json
 from pitcher_daily_engine import PitcherDailyEngine
 
-def run_pitcher_optimizer(target_date=None, projection_system="atc"):
+def run_pitcher_optimizer(target_date=None, projection_system="atc", team_id=7582):
     if target_date is None:
         target_date = datetime.now().strftime("%Y-%m-%d")
         
-    engine = PitcherDailyEngine(projection_system=projection_system)
+    engine = PitcherDailyEngine(projection_system=projection_system, team_id=team_id)
     projections = engine.get_daily_projections(target_date)
     
     # Filter for starters
@@ -39,11 +39,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Zurich Zebras Pitcher Optimizer")
     parser.add_argument("--date", type=str, help="Target date (YYYY-MM-DD)")
     parser.add_argument("--proj", type=str, default="atc", choices=["atc", "steamer"], help="Projection system")
+    parser.add_argument("--team", type=int, default=7582, help="Ottoneu Team ID")
     parser.add_argument("--output", type=str, help="Output JSON file")
     
     args = parser.parse_args()
     
-    data = run_pitcher_optimizer(target_date=args.date, projection_system=args.proj)
+    data = run_pitcher_optimizer(target_date=args.date, projection_system=args.proj, team_id=args.team)
     
     if args.output:
         with open(args.output, 'w') as f:

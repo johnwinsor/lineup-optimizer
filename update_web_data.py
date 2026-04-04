@@ -32,7 +32,7 @@ def main():
     ]
 
     # Define the Teams
-    teams = [7582, 7587]
+    teams = [7582, 7587, 7581]
     
     print(f"🚀 Updating local web data for {len(teams)} teams for {today} and {tomorrow}...")
     print("✨ Optimization: Reusing projection data in-memory across all runs.")
@@ -53,17 +53,20 @@ def main():
                 skip_ai=args.skip_ai
             )
 
-    # Run Pitchers (Today/Tomorrow) - Still Zebras only for now
-    for proj, date, filename in pitcher_jobs:
-        print(f"\n--- Generating Pitcher Lineup: {filename} ({proj.upper()}) ---")
-        
-        # Call directly instead of subprocess
-        data = run_pitcher_optimizer(target_date=date, projection_system=proj)
-        
-        # Save JSON manually since run_pitcher_optimizer returns dict
-        with open(filename, 'w') as f:
-            json.dump(data, f, indent=4)
-        print(f"Web dashboard data exported to {filename}")
+    # Run Pitchers (Today/Tomorrow)
+    for team in teams:
+        for proj, date, base_filename in pitcher_jobs:
+            # Filename format: pitchers_7582_atc_today.json
+            filename = base_filename.replace("pitchers_", f"pitchers_{team}_")
+            print(f"\n--- Generating Pitcher Lineup: {filename} (Team {team}, {proj.upper()}) ---")
+            
+            # Call directly instead of subprocess
+            data = run_pitcher_optimizer(target_date=date, projection_system=proj, team_id=team)
+            
+            # Save JSON manually since run_pitcher_optimizer returns dict
+            with open(filename, 'w') as f:
+                json.dump(data, f, indent=4)
+            print(f"Web dashboard data exported to {filename}")
 
     print("\n✅ All JSON files updated. Refresh your local browser to see changes.")
 

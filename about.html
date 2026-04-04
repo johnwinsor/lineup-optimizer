@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology | Zurich Zebras Optimizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .prose h3 { color: #818cf8; margin-top: 2rem; font-weight: 700; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.05em; }
+        .prose p { margin-top: 1rem; line-height: 1.75; color: #cbd5e1; }
+        .prose ul { margin-top: 1rem; list-style-type: disc; padding-left: 1.5rem; color: #94a3b8; }
+        .prose li { margin-top: 0.5rem; }
+    </style>
+</head>
+<body class="p-4 md:p-8 font-sans">
+    <div class="max-w-3xl mx-auto">
+        
+        <!-- Navigation -->
+        <nav class="mb-12">
+            <a href="index.html" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-bold text-sm uppercase tracking-widest transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Dashboard
+            </a>
+        </nav>
+
+        <header class="mb-12 border-b border-slate-700 pb-8">
+            <h1 class="text-4xl font-bold text-white tracking-tight mb-4">Methodology & Design</h1>
+            <p class="text-slate-400 text-lg italic">The Science of Daily Roto Efficiency</p>
+        </header>
+
+        <div class="prose prose-slate prose-invert max-w-none">
+            <p>Welcome to the Zurich Zebras Optimizer, a high-precision decision-engine designed specifically for the rigors of <strong>Ottoneu Daily 5x5 (Roto) competition</strong>.</p>
+            
+            <p>In a format defined by a strict 162-game cap, every plate appearance and every inning pitched is a finite resource. Our mission is to ensure that no "empty" stats ever enter your lineup. By combining elite industry projections with real-time environmental data and advanced Statcast peripherals, we provide a mathematically optimized roadmap to maximize your team's efficiency every single day.</p>
+
+            <h3>The Architecture of a Zebra Score</h3>
+            <p>The "Zebra Score" is our proprietary metric for daily production. It is not a simple projection of raw totals; rather, it is an <strong>Efficiency Rating</strong> designed to identify who will produce the most value <em>per slot</em>.</p>
+
+            <h4 class="text-white font-bold mt-6">Hitter Efficiency (V2 Algorithm)</h4>
+            <p>A hitter's daily score begins with a baseline derived from their counting stat production (Runs, HR, RBI, SB) per plate appearance, added to their projected Batting Average. We then apply multipliers for:</p>
+            <ul>
+                <li><strong>Platoon Advantage:</strong> Contextual adjustments based on opposing SP handedness.</li>
+                <li><strong>Batting Order Density:</strong> Boosts for top-of-the-order starters.</li>
+                <li><strong>Venue & Weather:</strong> Statcast park factors combined with real-time wind and temperature data.</li>
+            </ul>
+
+            <h4 class="text-white font-bold mt-6">Pitcher Precision (V1 Algorithm)</h4>
+            <p>Pitcher scores reward the "Ottoneu Trifecta": High Strikeouts, Low ERA, and elite WHIP.</p>
+            <ul>
+                <li><strong>Opponent Power Index:</strong> Aggregate efficiency of the entire opposing 9-man lineup.</li>
+                <li><strong>Skill Delta:</strong> Comparison of season-long ERA against Statcast-derived SIERA and xERA.</li>
+            </ul>
+
+            <h3>The Stabilization Curve</h3>
+            <p>In the early months of a new season, we utilize a <strong>Weighted Stabilization Curve</strong> to bridge the gap between proven performance and emerging trends:</p>
+            <div class="bg-slate-800/50 rounded-lg p-4 mt-4 border border-slate-700">
+                <table class="w-full text-sm text-left">
+                    <thead>
+                        <tr class="text-slate-500 uppercase text-[10px] tracking-widest border-b border-slate-700">
+                            <th class="pb-2">Month</th>
+                            <th class="pb-2">2025 Weight</th>
+                            <th class="pb-2">2026 Weight</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-300">
+                        <tr><td class="py-2 font-bold">April</td><td>100%</td><td>0%</td></tr>
+                        <tr><td class="py-2 font-bold">May</td><td>70%</td><td>30%</td></tr>
+                        <tr><td class="py-2 font-bold">June</td><td>40%</td><td>60%</td></tr>
+                        <tr><td class="py-2 font-bold">July+</td><td>0%</td><td>100%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>The Superstar Shield</h3>
+            <p>Players with a Statcast xwOBA above .400 are protected by the <strong>Superstar Shield</strong>. Their scores are never allowed to drop below 85% of their baseline, ensuring your anchors stay in the lineup when active, regardless of difficult matchups.</p>
+
+            <h3>Data Sources</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-lg">
+                    <div class="text-indigo-400 text-[10px] uppercase font-bold mb-1">League Data</div>
+                    <div class="text-white text-sm">Ottoneu (League 1077)</div>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-lg">
+                    <div class="text-indigo-400 text-[10px] uppercase font-bold mb-1">Projections</div>
+                    <div class="text-white text-sm">ATC & Steamer</div>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-lg">
+                    <div class="text-indigo-400 text-[10px] uppercase font-bold mb-1">Live Environment</div>
+                    <div class="text-white text-sm">MLB Stats API & Rotowire</div>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-lg">
+                    <div class="text-indigo-400 text-[10px] uppercase font-bold mb-1">Advanced Metrics</div>
+                    <div class="text-white text-sm">Baseball Savant & FanGraphs</div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-20 pt-8 border-t border-slate-800 text-slate-500 text-sm text-center">
+            &copy; 2026 Zurich Zebras Analytical Department
+        </footer>
+    </div>
+</body>
+</html>
