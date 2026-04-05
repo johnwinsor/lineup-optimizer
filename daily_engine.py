@@ -77,20 +77,16 @@ class DailyEngine:
         sp_xeras = []
         warnings = []
         game_times = []
+        is_opener_list = []
         
         teams_playing = matchups.get('_teams_playing', {})
         
         for _, row in hitters.iterrows():
             player_name = row['Name']
             team_abb = row.get('Team')
-            # 1. Use xMLBAMID if available from projections (MOST RELIABLE)
-            mlb_id = row.get('xMLBAMID') 
             
-            # 2. Fallback to name-based lookup if ID is missing (new players/scouted)
-            if pd.isna(mlb_id) or not mlb_id:
-                mlb_id = self.harvester.get_mlb_id(player_name, target_year=year, team_abb=team_abb)
-            else:
-                mlb_id = int(mlb_id)
+            # Use name-based lookup with team info to ensure correct ID (disambiguates Max Muncy, etc)
+            mlb_id = self.harvester.get_mlb_id(player_name, target_year=year, team_abb=team_abb)
             
             daily_score = 0.0
             starting = False
@@ -99,6 +95,7 @@ class DailyEngine:
             sp_xera = "-"
             warning = ""
             game_time = None
+            is_opener = False
             
             # Check for Injury status from Ottoneu
             if row.get('Injured') == True:
@@ -109,22 +106,25 @@ class DailyEngine:
                 sp_xeras.append("-")
                 warnings.append("🚨 INJURED (IL)")
                 game_times.append(None)
+                is_opener_list.append(False)
                 continue
 
             # Check for Active Roster status (Minors check)
             if team_abb in teams_playing:
                 team_data = teams_playing[team_abb]
                 active_roster = team_data.get('active_roster', set())
+                
                 # If they have an MLB ID, check if they are in the active roster
                 # We skip this if they are already confirmed in the boxscore (mlb_id in matchups)
                 if mlb_id and mlb_id not in matchups and mlb_id not in active_roster:
                     daily_scores.append(0.0)
                     is_starting.append(False)
-                    breakdowns.append("In Minors (Not on Active Roster)")
+                    breakdowns.append(f"In Minors (Not on Active Roster for {team_abb})")
                     opponents.append("N/A")
                     sp_xeras.append("-")
                     warnings.append("🚨 MINORS")
                     game_times.append(None)
+                    is_opener_list.append(False)
                     continue
 
             matchup = None
@@ -133,6 +133,19 @@ class DailyEngine:
             elif team_abb in teams_playing:
                 # Team is playing, but player not in boxscore yet (Lineup Pending)
                 team_data = teams_playing[team_abb]
+                
+                # Check for rainouts / postponements
+                if team_data.get('is_postponed'):
+                    daily_scores.append(0.0)
+                    is_starting.append(False)
+                    breakdowns.append("RAINOUT (Postponed)")
+                    opponents.append(team_data.get('opposing_sp_name', 'N/A'))
+                    sp_xeras.append("-")
+                    warnings.append("🚨 RAINOUT / POSTPONED")
+                    game_times.append(team_data.get('game_time'))
+                    is_opener_list.append(False)
+                    continue
+
                 if not team_data['has_lineup']:
                     # Look up historical order if possible
                     last_order = self.harvester.get_last_starting_order(mlb_id, year=year)
@@ -153,7 +166,7 @@ class DailyEngine:
             if matchup:
                 game_time = matchup.get('game_time')
                 
-                # Check for rainouts / postponements
+                # Double check for rainouts / postponements
                 if matchup.get('is_postponed'):
                     daily_scores.append(0.0)
                     is_starting.append(False)
@@ -164,6 +177,7 @@ class DailyEngine:
                     game_times.append(game_time)
                     is_opener_list.append(False)
                     continue
+
                 # We now calculate score/opponent for anyone with a matchup (even bench)
                 # but only mark 'starting' for those in the actual lineup
                 if matchup.get('is_pending'):
@@ -201,7 +215,9 @@ class DailyEngine:
                     # Use SIERA as the primary skill metric if available, then xERA, then ERA
                     pitcher_skill = sp_data.get('SIERA', sp_data.get('xera', sp_data.get('era', 4.0)))
                     sp_xera = f"{pitcher_skill:.2f}"
-                    opponent = f"{matchup.get('opposing_sp_name')} ({sp_data['hand']})"
+                    
+                    opp_name = matchup.get('opposing_sp_name', 'Unknown')
+                    opponent = f"{opp_name} ({sp_data['hand']})"
                     
                     era_factor = 1.0 + ((pitcher_skill - 4.0) / 4.0)
                     era_factor = max(0.7, min(1.3, era_factor))
@@ -291,7 +307,6 @@ class DailyEngine:
                 # 5. Batting Order Context
                 order_str = matchup.get('batting_order', '-')
                 if order_str == '-' and not matchup.get('is_starting') and not matchup.get('is_pending'):
-                    # Default for bench players whose team is playing
                     multiplier *= 1.05
                 elif order_str and order_str != '-' and len(order_str) >= 1:
                     order_val = int(order_str[0])
@@ -310,8 +325,8 @@ class DailyEngine:
                     if diff != 0:
                         breakdown.append(f"Order #{order_val}: {diff:+}%")
 
-                # 5. Batter StatCast (Blended)
-                sc_hitter = self.harvester.get_hitter_statcast_data(mlb_id, weight_current=weight_current)
+                # StatCast (Blended)
+                sc_hitter = self.harvester.statcast.get_blended_hitter_stats(mlb_id, weight_current=weight_current)
                 is_superstar = False
                 if sc_hitter is not None:
                     xwoba = float(sc_hitter.get('xwOBA', 0))
@@ -351,8 +366,6 @@ class DailyEngine:
                         elif w['rain_risk'] >= 30:
                             warning = f"⚠️ Rain Risk ({w['rain_risk']}%)"
 
-                # Final calculation: Apply -100% penalty if confirmed NOT starting
-                # (Starters and Pending players keep their scores)
                 if not starting:
                     daily_score = 0.0
                     breakdown.append("Not Starting: -100%")
@@ -367,6 +380,7 @@ class DailyEngine:
             sp_xeras.append(sp_xera)
             warnings.append(warning)
             game_times.append(game_time)
+            is_opener_list.append(is_opener)
             
         hitters['DailyScore'] = daily_scores
         hitters['IsStarting'] = is_starting
@@ -375,13 +389,12 @@ class DailyEngine:
         hitters['SP_xERA'] = sp_xeras
         hitters['Warning'] = warnings
         hitters['GameTime'] = game_times
+        hitters['IsOpener'] = is_opener_list
         
         return hitters.copy()
 
 if __name__ == "__main__":
     engine = DailyEngine()
     test_date = "2024-06-15"
-    print(f"Running Daily Engine for {test_date}...")
     projections = engine.get_daily_projections(test_date)
-    print(f"Found {len(projections)} starters for Zebras today.")
     print(projections[['Name', 'POS', 'DailyScore', 'Opponent']].sort_values(by='DailyScore', ascending=False).head(10))

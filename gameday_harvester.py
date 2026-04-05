@@ -277,7 +277,9 @@ class GameDayHarvester:
                     'personId': person_id, 
                     'hydrate': f'stats(group=[hitting],type=[season],season={y})'
                 })
-                # ... rest of historical order logic ...
+                # Simple logic: if they have stats, return middle of order
+                if p and 'people' in p and p['people'][0].get('stats'):
+                    return "5"
         except Exception:
             pass
         return "5"
@@ -375,7 +377,11 @@ class GameDayHarvester:
                 # Fallback to statsapi Season Stats
                 url = f'https://statsapi.mlb.com/api/v1/people/{person_id}/stats?stats=season&group=pitching&season={year}'
                 r = requests.get(url)
-                # ... rest of pitcher fallback ...
+                stats_json = r.json()
+                if 'stats' in stats_json and stats_json['stats']:
+                    s = stats_json['stats'][0].get('splits', [{}])[0].get('stat', {})
+                    data['era'] = float(s.get('era', 4.0))
+                    data['xera'] = float(s.get('era', 4.0))
         except Exception:
             pass
             

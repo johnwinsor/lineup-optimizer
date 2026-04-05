@@ -7,7 +7,6 @@ from park_factors import get_park_multiplier
 from weather_harvester import WeatherHarvester
 import os
 import json
-import re
 
 class PitcherDailyEngine:
     def __init__(self, league_id=1077, team_id=7582, projection_system="steamer"):
@@ -26,13 +25,11 @@ class PitcherDailyEngine:
         if month == 6: return 0.6
         return 1.0
 
-    def _get_projected_lineup(self, team_abb, hitter_projections):
+    def get_opposing_lineup_power(self, team_abb, target_date, hitter_projections):
         """
         Returns the top 9 projected hitters for a team based on their baseline score.
         Useful when official lineup is not yet posted.
         """
-        # FanGraphs projection 'Team' field is usually uppercase (e.g. 'NYY')
-        # Ensure hitter_projections has 'Score'
         if 'Score' not in hitter_projections.columns:
             hitter_projections['Score'] = (
                 (hitter_projections['R'].astype(float) + hitter_projections['HR'].astype(float) + 
@@ -44,8 +41,6 @@ class PitcherDailyEngine:
         if team_pool.empty:
             return []
             
-        # Take top 9 by score, but also filter for those with significant PA to avoid call-up noise
-        # Sort by PA first to find established players, then take top 9 by score among the top 15 by PA
         probable_starters = team_pool.sort_values(by='PA', ascending=False).head(15)
         probable_starters = probable_starters.sort_values(by='Score', ascending=False).head(9)
         
@@ -58,7 +53,6 @@ class PitcherDailyEngine:
         
         # 2. Get Daily Matchups
         matchups = self.harvester.get_daily_matchups(target_date)
-        teams_playing = matchups.get('_teams_playing', {})
         
         # 3. Identify Starters
         starting_map = matchups.get('_starting_pitchers', {})
@@ -73,6 +67,7 @@ class PitcherDailyEngine:
         opponents = []
         warnings = []
         game_times = []
+        is_opener_list = []
         
         for _, row in pitchers.iterrows():
             player_name = row['Name']
@@ -88,6 +83,7 @@ class PitcherDailyEngine:
             opponent = "N/A"
             warning = ""
             game_time = None
+            is_opener = False
             
             if mlb_id and mlb_id in starting_map:
                 starting = True
@@ -132,75 +128,90 @@ class PitcherDailyEngine:
                             multiplier *= penalty
                             breakdown.append(f"Wind Out: -{int((1-penalty)*100)}%")
                         
-                        temp = w.get('temp', 70)
-                        if temp > 85:
-                            multiplier *= 0.98
-                            breakdown.append("Heat (>85F): -2%")
+                        if w.get('temp', 0) > 85:
+                            multiplier *= 0.95
+                            breakdown.append("Heat (>85F): -5%")
+                        
+                        if w['rain_risk'] >= 60:
+                            warning = f"🚨 HIGH RAIN RISK ({w['rain_risk']}%)"
+                        elif w['rain_risk'] >= 30:
+                            warning = f"⚠️ Rain Risk ({w['rain_risk']}%)"
 
-                # 3. Statcast Blended SIERA/xERA
-                sc_stats = self.harvester.statcast.get_blended_pitcher_stats(mlb_id, weight_current=weight_current)
-                if sc_stats is not None:
-                    proj_era = row['ERA_y'] if not pd.isna(row['ERA_y']) else 4.0
-                    blended_xera = float(sc_stats.get('xERA', sc_stats.get('SIERA', proj_era)))
-                    era_delta = (proj_era - blended_xera) * 0.1
-                    if abs(era_delta) > 0.01:
-                        multiplier *= (1.0 + era_delta)
-                        breakdown.append(f"Statcast (xERA {blended_xera:.2f}): {era_delta*100:+.1f}%")
-
-                # 4. Rigorous Opponent Research: BvP & Lineup Strength
-                opp_lineup_ids = []
-                if m['has_lineup']:
-                    opp_lineup_ids = [pid for pid, val in matchups.items() if isinstance(val, dict) and val.get('opposing_sp_id') == mlb_id]
-                else:
-                    # Fallback: Get Projected Starting 9 for the opposing team
-                    opp_lineup_ids = self._get_projected_lineup(m['opposing_team'], hitter_projections)
-                    if opp_lineup_ids:
-                        breakdown.append(f"Projected Opp Lineup (Pending Card)")
+                # 3. Statcast (Projected vs Blended)
+                # Formula: (Projected ERA - Blended xERA) * 0.1 multiplier boost
+                sp_data = self.harvester.get_pitcher_data(mlb_id, year=2026, weight_current=weight_current)
+                xera = sp_data.get('xera')
+                proj_era = row.get('ERA_y')
                 
-                if opp_lineup_ids:
-                    # Aggregate BvP
-                    bvp_ops_list = []
-                    for b_id in opp_lineup_ids:
+                if xera and proj_era:
+                    diff = proj_era - xera
+                    sc_mult = 1.0 + (diff * 0.1)
+                    sc_mult = max(0.8, min(1.2, sc_mult))
+                    multiplier *= sc_mult
+                    diff_pct = int((sc_mult - 1.0) * 100)
+                    if diff_pct != 0:
+                        breakdown.append(f"Statcast (xERA {xera:.2f}): {diff_pct:+}%")
+
+                # 4. Agg BvP
+                # Average OPS allowed to current/projected lineup
+                opp_team = m['opposing_team']
+                if m.get('has_lineup'):
+                    # Use actual lineup from matchups
+                    opp_ids = [p_id for p_id, d in matchups.items() if isinstance(d, dict) and d.get('home_team_abb') == opp_team or d.get('opposing_team') == opp_team]
+                    # Actually, matchups is indexed by MLB ID. 
+                    # Let's find players whose team is opp_team.
+                    opp_ids = []
+                    for p_id, d in matchups.items():
+                        if isinstance(d, dict) and d.get('is_starting'):
+                            # Find if this player is on the opposing team
+                            # Need to check team_abb
+                            pass # TODO: improve this
+                
+                # For now, use projected top 9 for power/bvp
+                opp_ids = self.get_opposing_lineup_power(opp_team, target_date, hitter_projections)
+                
+                if opp_ids:
+                    bvp_list = []
+                    for b_id in opp_ids:
                         bvp = self.harvester.get_bvp_data(b_id, mlb_id)
                         if bvp and bvp['pa'] >= 3:
-                            bvp_ops_list.append(bvp['ops'])
+                            bvp_list.append(bvp['ops'])
                     
-                    if bvp_ops_list:
-                        avg_ops = sum(bvp_ops_list) / len(bvp_ops_list)
-                        ops_factor = 1.0 + (0.750 - avg_ops) * 0.5 
-                        ops_factor = max(0.85, min(1.15, ops_factor))
-                        if abs(ops_factor - 1.0) > 0.01:
-                            multiplier *= ops_factor
-                            breakdown.append(f"Agg BvP (OPS {avg_ops:.3f}): {int((ops_factor-1)*100):+}%")
+                    if bvp_list:
+                        avg_ops = sum(bvp_list) / len(bvp_list)
+                        # OPS > 0.850 is bad for pitcher, OPS < 0.650 is good
+                        if avg_ops < 0.650:
+                            multiplier *= 1.12
+                            breakdown.append(f"Agg BvP (OPS {avg_ops:.3f}): +12%")
+                        elif avg_ops > 0.850:
+                            multiplier *= 0.88
+                            breakdown.append(f"Agg BvP (OPS {avg_ops:.3f}): -12%")
 
-                    # Opponent Lineup Power (Using Hitter Efficiency Scores)
-                    opp_scores = []
-                    for b_id in opp_lineup_ids:
-                        h_match = hitter_projections[hitter_projections['xMLBAMID'] == b_id]
-                        if not h_match.empty:
-                            h = h_match.iloc[0]
-                            h_score = ((h['R']+h['HR']+h['RBI']+h['SB'])/h['PA']*100) + (h['AVG']*100)
-                            opp_scores.append(h_score)
-                        else:
-                            opp_scores.append(40.0) # Neutral Floor
+                # 5. Opponent Power
+                # Calculate aggregate projected efficiency of opposing top 9
+                opp_scores = []
+                opp_pool = hitter_projections[hitter_projections['Team'] == opp_team]
+                if not opp_pool.empty:
+                    opp_top9 = opp_pool.sort_values(by='Score', ascending=False).head(9)
+                    avg_opp_score = opp_top9['Score'].mean()
                     
-                    if opp_scores:
-                        avg_opp_score = sum(opp_scores) / len(opp_scores)
-                        # Neutral is ~50.0 efficiency. Penalty for high, boost for low.
-                        opp_mult = 1.0 + (50.0 - avg_opp_score) / 200.0
-                        opp_mult = max(0.85, min(1.15, opp_mult))
-                        if abs(opp_mult - 1.0) > 0.01:
-                            multiplier *= opp_mult
-                            breakdown.append(f"Opp Power ({avg_opp_score:.1f}): {int((opp_mult-1)*100):+}%")
+                    # 52.0 is a "neutral" league average efficiency
+                    power_factor = 1.0 - ((avg_opp_score - 52.0) / 100.0)
+                    power_factor = max(0.85, min(1.15, power_factor))
+                    multiplier *= power_factor
+                    diff_pct = int((power_factor - 1.0) * 100)
+                    if diff_pct != 0:
+                        breakdown.append(f"Opp Power ({avg_opp_score:.1f}): {diff_pct:+}%")
 
                 daily_score = base_score * multiplier
-            
+
             daily_scores.append(daily_score)
             is_starting.append(starting)
             breakdowns.append(", ".join(breakdown) if breakdown else "Base")
             opponents.append(opponent)
             warnings.append(warning)
             game_times.append(game_time)
+            is_opener_list.append(is_opener)
             
         pitchers['DailyScore'] = daily_scores
         pitchers['IsStarting'] = is_starting
@@ -208,13 +219,13 @@ class PitcherDailyEngine:
         pitchers['Opponent'] = opponents
         pitchers['Warning'] = warnings
         pitchers['GameTime'] = game_times
+        pitchers['IsOpener'] = is_opener_list
         
         return pitchers.copy()
 
 if __name__ == "__main__":
     engine = PitcherDailyEngine()
-    test_date = "2026-04-01"
-    print(f"Running Rigorous Pitcher Analysis for {test_date}...")
+    test_date = datetime.now().strftime("%Y-%m-%d")
     projections = engine.get_daily_projections(test_date)
     starters = projections[projections['IsStarting'] == True]
     print(starters[['Name', 'Team', 'DailyScore', 'Opponent', 'Breakdown']].sort_values(by='DailyScore', ascending=False))

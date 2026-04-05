@@ -172,8 +172,8 @@ def run_optimizer_hitter(projection_system="steamer", target_date=None, team_id=
             if name in started_names:
                 continue
                 
-            mlb_id = harvester.get_mlb_id(name, target_year=year)
             team_abb = row.get('Team')
+            mlb_id = harvester.get_mlb_id(name, target_year=year, team_abb=team_abb)
             matchup = matchups.get(mlb_id, {})
             order = matchup.get('batting_order', '-')
             clean_order = order[0] if order and order != '-' and len(order) >= 1 else '-'
