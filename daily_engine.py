@@ -109,6 +109,21 @@ class DailyEngine:
                     is_opener_list.append(False)
                     continue
 
+            # 4. Check FanGraphs Level (New reliable check)
+            fg_id = row.get('playerid')
+            if fg_id:
+                fg_level = self.enricher.scraper.get_player_level(fg_id)
+                if fg_level != "MLB":
+                    daily_scores.append(0.0)
+                    is_starting.append(False)
+                    breakdowns.append(f"In the Minors ({fg_level})")
+                    opponents.append("N/A")
+                    sp_xeras.append("-")
+                    warnings.append("🚨 MINORS")
+                    game_times.append(None)
+                    is_opener_list.append(False)
+                    continue
+
             matchup = None
             if mlb_id and mlb_id in matchups:
                 matchup = matchups[mlb_id]

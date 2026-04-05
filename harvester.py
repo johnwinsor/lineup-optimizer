@@ -11,6 +11,45 @@ class OttoneuScraper:
         self.team_id = team_id
         self.url = f"https://ottoneu.fangraphs.com/{league_id}/team?team={team_id}"
 
+    _level_cache = {} # { fg_id: level_string }
+
+    def get_player_level(self, fg_id):
+        if not fg_id: return "MLB"
+        if fg_id in self._level_cache:
+            return self._level_cache[fg_id]
+        
+        try:
+            url = f"https://www.fangraphs.com/players/player/{fg_id}/stats"
+            response = requests.get(url, timeout=5)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.content, "html.parser")
+                # Look for (AAA), (AA), etc. in the team/position area
+                # It's often in a <span> or aria-label
+                text = soup.get_text()
+                # Search for level patterns
+                levels = ["(AAA)", "(AA)", "(A+)", "(A)", "(A-)", "(RK)"]
+                for level in levels:
+                    if level in text:
+                        res = level.strip("()")
+                        self._level_cache[fg_id] = res
+                        return res
+                
+                # Check for "mlevel":"..." in the scripts
+                scripts = soup.find_all("script")
+                for script in scripts:
+                    if script.string and '"mlevel":' in script.string:
+                        match = re.search(r'"mlevel":"([^"]+)"', script.string)
+                        if match:
+                            mlevel = match.group(1)
+                            if mlevel != "MLB":
+                                self._level_cache[fg_id] = mlevel
+                                return mlevel
+            
+            self._level_cache[fg_id] = "MLB"
+            return "MLB"
+        except Exception:
+            return "MLB"
+
     def get_roster(self):
         if self.team_id in OttoneuScraper._roster_cache:
             h, p = OttoneuScraper._roster_cache[self.team_id]

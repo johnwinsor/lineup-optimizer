@@ -262,42 +262,57 @@ class GameDayHarvester:
         self._matchups_cache[target_date] = matchups
         return matchups
 
-    def get_last_starting_order(self, person_id, year=2025):
+    def get_last_starting_order(self, person_id, year=2026):
         if not person_id:
             return "5"
-            
-        cache_key = f"last_order_{person_id}_{year}"
+
+        # Use a simple cache key that doesn't depend on the year
+        cache_key = f"last_order_{person_id}"
         if cache_key in self.player_id_cache:
             return self.player_id_cache[cache_key]
-            
+
         try:
-            # Fetch the most recent game logs for this player
-            params = {
-                'personId': person_id,
-                'hydrate': f'stats(group=[hitting],type=[gameLog],season={year})'
-            }
-            p = statsapi.get('person', params)
-            
-            if p and 'people' in p and p['people'][0].get('stats'):
-                stats_list = p['people'][0]['stats']
-                for s in stats_list:
-                    if s.get('type', {}).get('displayName') == 'gameLog':
-                        splits = s.get('splits', [])
-                        if splits:
-                            # Look for the most recent game where they actually started (order ends in '00')
-                            for game in reversed(splits):
-                                raw_order = game.get('stat', {}).get('battingOrder')
-                                if raw_order and raw_order.endswith('00'):
-                                    order = raw_order[0]
-                                    self.player_id_cache[cache_key] = order
-                                    return order
+            # Check current year then previous year
+            for check_year in [year, year - 1]:
+                params = {
+                    'personId': person_id,
+                    'hydrate': f'stats(group=[hitting],type=[gameLog],season={check_year})'
+                }
+                p = statsapi.get('person', params)
+
+                if p and 'people' in p and p['people'][0].get('stats'):
+                    stats_list = p['people'][0]['stats']
+                    for s in stats_list:
+                        if s.get('type', {}).get('displayName') == 'gameLog':
+                            splits = s.get('splits', [])
+                            if splits:
+                                # Look for the most recent 5 games where they might have started
+                                # We limit to 5 to avoid too many API calls for boxscores
+                                for split in reversed(splits[-5:]):
+                                    game_pk = split.get('game', {}).get('gamePk')
+                                    if not game_pk: continue
+
+                                    try:
+                                        # Fetch boxscore for this game
+                                        box = statsapi.boxscore_data(game_pk)
+                                        # Search in both away and home batters
+                                        for team in ['awayBatters', 'homeBatters']:
+                                            for batter in box.get(team, []):
+                                                if batter.get('personId') == person_id:
+                                                    order = batter.get('battingOrder', '')
+                                                    # Starts end in '00'
+                                                    if order and order.endswith('00'):
+                                                        res = order[0]
+                                                        self.player_id_cache[cache_key] = res
+                                                        return res
+                                    except Exception:
+                                        continue
         except Exception:
             pass
-            
+
         # Fallback to middle of the order
         self.player_id_cache[cache_key] = "5"
         return "5"
-
     def get_team_abb(self, team_id):
         if not team_id: return ""
         if team_id in self.team_abb_cache:
