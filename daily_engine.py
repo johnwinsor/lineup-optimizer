@@ -152,6 +152,18 @@ class DailyEngine:
 
             if matchup:
                 game_time = matchup.get('game_time')
+                
+                # Check for rainouts / postponements
+                if matchup.get('is_postponed'):
+                    daily_scores.append(0.0)
+                    is_starting.append(False)
+                    breakdowns.append("RAINOUT (Postponed)")
+                    opponents.append(matchup.get('opposing_sp_name', 'N/A'))
+                    sp_xeras.append("-")
+                    warnings.append("🚨 RAINOUT / POSTPONED")
+                    game_times.append(game_time)
+                    is_opener_list.append(False)
+                    continue
                 # We now calculate score/opponent for anyone with a matchup (even bench)
                 # but only mark 'starting' for those in the actual lineup
                 if matchup.get('is_pending'):

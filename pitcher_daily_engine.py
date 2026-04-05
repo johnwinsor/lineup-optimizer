@@ -74,6 +74,7 @@ class PitcherDailyEngine:
                     'is_home': not data['is_home'],
                     'game_time': data.get('game_time'),
                     'game_status': data.get('game_status'),
+                    'is_postponed': data.get('is_postponed', False),
                     'has_lineup': data.get('has_lineup', False)
                 }
 
@@ -108,6 +109,17 @@ class PitcherDailyEngine:
                 m = starting_map[mlb_id]
                 opponent = m['opposing_team']
                 game_time = m['game_time']
+                
+                # Check for rainouts / postponements
+                if m.get('is_postponed'):
+                    daily_scores.append(0.0)
+                    is_starting.append(False)
+                    breakdowns.append("RAINOUT (Postponed)")
+                    opponents.append(opponent)
+                    warnings.append("🚨 RAINOUT / POSTPONED")
+                    game_times.append(game_time)
+                    is_opener_list.append(False)
+                    continue
                 
                 base_score = row['Score']
                 multiplier = 1.0
