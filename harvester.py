@@ -74,17 +74,11 @@ class OttoneuScraper:
                                 team_candidate = t
                                 break
                         
-                        # Extract name (everything before the first paren or team code)
-                        name_part = full_text.replace('\n', ' ').strip()
+                        # The cleaner way to get the name is to look specifically at the link text
+                        # rather than the full cell text which contains team/IL codes.
+                        name_part = link.text.strip()
                         
-                        # Regex to strip common Ottoneu suffixes and team codes
-                        # This matches a team code (3 uppercase letters) at the end of the string
-                        name_part = re.sub(r'([A-Z]{3})$', '', name_part).strip()
-                        # Also strip parentheses
-                        if '(' in name_part:
-                            name_part = name_part.split('(')[0].strip()
-                        
-                        row_data['Name'] = name_part.strip()
+                        row_data['Name'] = name_part
                         row_data['Team'] = team_candidate.strip()
                         
                         # Extract FGID
