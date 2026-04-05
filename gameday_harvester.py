@@ -271,17 +271,31 @@ class GameDayHarvester:
             return self.player_id_cache[cache_key]
             
         try:
-            # Check past season and current season stats separately for reliability
-            for y in [year, year + 1]:
-                p = statsapi.get('person', {
-                    'personId': person_id, 
-                    'hydrate': f'stats(group=[hitting],type=[season],season={y})'
-                })
-                # Simple logic: if they have stats, return middle of order
-                if p and 'people' in p and p['people'][0].get('stats'):
-                    return "5"
+            # Fetch the most recent game logs for this player
+            params = {
+                'personId': person_id,
+                'hydrate': f'stats(group=[hitting],type=[gameLog],season={year})'
+            }
+            p = statsapi.get('person', params)
+            
+            if p and 'people' in p and p['people'][0].get('stats'):
+                stats_list = p['people'][0]['stats']
+                for s in stats_list:
+                    if s.get('type', {}).get('displayName') == 'gameLog':
+                        splits = s.get('splits', [])
+                        if splits:
+                            # Look for the most recent game where they actually started (order ends in '00')
+                            for game in reversed(splits):
+                                raw_order = game.get('stat', {}).get('battingOrder')
+                                if raw_order and raw_order.endswith('00'):
+                                    order = raw_order[0]
+                                    self.player_id_cache[cache_key] = order
+                                    return order
         except Exception:
             pass
+            
+        # Fallback to middle of the order
+        self.player_id_cache[cache_key] = "5"
         return "5"
 
     def get_team_abb(self, team_id):

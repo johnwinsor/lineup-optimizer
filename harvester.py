@@ -24,15 +24,19 @@ class OttoneuScraper:
         soup = BeautifulSoup(response.content, "html.parser")
         tables = soup.find_all("table")
         if len(tables) < 2:
+            # Fallback for different page structures
+            tables = soup.find_all("table", class_="rumble-table")
+            
+        if len(tables) < 2:
             raise Exception("Could not find both hitters and pitchers tables on page")
             
-        hitters = self._parse_table(tables[0])
-        pitchers = self._parse_table(tables[1])
+        hitters = self._parse_table(tables[0], is_pitcher=False)
+        pitchers = self._parse_table(tables[1], is_pitcher=True)
         
         OttoneuScraper._roster_cache[self.team_id] = (hitters, pitchers)
         return hitters.copy(), pitchers.copy()
 
-    def _parse_table(self, table):
+    def _parse_table(self, table, is_pitcher=False):
         headers_row = table.find("thead").find_all("th")
         headers = [th.text.strip() for th in headers_row]
         rows = table.find("tbody").find_all("tr")
@@ -42,52 +46,53 @@ class OttoneuScraper:
             cols = row.find_all("td")
             if not cols: continue
             
+            # Check if this is a section header (like "Minors" or "Injured")
+            if len(cols) == 1 and 'section-leader' in cols[0].get('class', []):
+                continue
+
             row_data = {}
+            # Check for Minors/IL status based on row class or position in table
+            is_minors = 'minors' in str(row.get('class', [])).lower()
+            
             for i, col in enumerate(cols):
                 if i >= len(headers): break
                 header = headers[i]
                 
-                # Ottoneu calls the name column "Player" now, but we expect "Name"
                 if header == 'Player' or header == 'Name':
-                    # Parse name and Ottoneu ID
                     link = col.find("a")
+                    full_text = col.text.strip()
+                    
+                    # Robust team extraction from the full cell text
+                    teams = ['ARI', 'ATL', 'BAL', 'BOS', 'CHC', 'CHW', 'CIN', 'CLE', 'COL', 'DET', 
+                             'HOU', 'KCR', 'LAA', 'LAD', 'MIA', 'MIL', 'MIN', 'NYM', 'NYY', 'OAK', 
+                             'PHI', 'PIT', 'SDP', 'SEA', 'SFG', 'STL', 'TBR', 'TEX', 'TOR', 'WSH', 'WSN', 'ATH']
+                    
+                    team_candidate = ""
+                    for t in teams:
+                        # Look for team code surrounded by whitespace or at the end
+                        if re.search(rf'\b{t}\b', full_text):
+                            team_candidate = t
+                            break
+                    
                     if link:
                         row_data['OttoneuID'] = link['href'].split('=')[-1]
-                        full_text = col.text.strip()
+                        row_data['Name'] = link.text.strip()
+                        row_data['Team'] = team_candidate
                         
-                        # Fix: Improve injury detection by counting "IL" and specifically handling "MIL"
+                        # Injury detection
                         il_count = full_text.count('IL')
                         if "MIL" in full_text:
                             row_data['Injured'] = il_count > 1
                         else:
                             row_data['Injured'] = il_count > 0
-                        
-                        # Robust team extraction
-                        teams = ['ARI', 'ATL', 'BAL', 'BOS', 'CHC', 'CHW', 'CIN', 'CLE', 'COL', 'DET', 
-                                 'HOU', 'KCR', 'LAA', 'LAD', 'MIA', 'MIL', 'MIN', 'NYM', 'NYY', 'OAK', 
-                                 'PHI', 'PIT', 'SDP', 'SEA', 'SFG', 'STL', 'TBR', 'TEX', 'TOR', 'WSH', 'WSN', 'ATH']
-                        
-                        team_candidate = ""
-                        # Try to find a known team in the text
-                        for t in teams:
-                            if t in full_text:
-                                team_candidate = t
-                                break
-                        
-                        # The cleaner way to get the name is to look specifically at the link text
-                        # rather than the full cell text which contains team/IL codes.
-                        name_part = link.text.strip()
-                        
-                        row_data['Name'] = name_part
-                        row_data['Team'] = team_candidate.strip()
-                        
-                        # Extract FGID
+                            
+                        # FGID extraction
                         fg_link = col.find("a", href=lambda x: x and "fangraphs.com" in x)
                         if fg_link:
                             row_data['FGID'] = fg_link['href'].split('playerid=')[-1].split('&')[0]
                     else:
-                        row_data['Name'] = col.text.strip()
-                        row_data['Team'] = ""
+                        row_data['Name'] = full_text
+                        row_data['Team'] = team_candidate
                 else:
                     val = col.text.strip()
                     if header == 'POS':
@@ -97,6 +102,11 @@ class OttoneuScraper:
                         row_data['Team'] = val
                     else:
                         row_data[header] = val
+            
+            # Additional check for minors players who often have no team listed in the table
+            if is_minors:
+                row_data['IsMinors'] = True
+                
             data.append(row_data)
         
         return pd.DataFrame(data)
@@ -104,7 +114,4 @@ class OttoneuScraper:
 if __name__ == "__main__":
     scraper = OttoneuScraper()
     hitters, pitchers = scraper.get_roster()
-    print("Hitters Columns:", hitters.columns.tolist())
-    print(hitters[['Name', 'Team', 'Injured', 'FGID', 'OttoneuID']].head())
-    print("\nPitchers Columns:", pitchers.columns.tolist())
-    print(pitchers[['Name', 'Team', 'Injured', 'FGID', 'OttoneuID']].head())
+    print(hitters[['Name', 'Team', 'Injured']].head())

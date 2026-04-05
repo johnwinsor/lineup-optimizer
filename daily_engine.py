@@ -17,41 +17,12 @@ class DailyEngine:
         self.defense = DefenseHarvester()
 
     def _get_recency_weight(self, target_date: str):
-        """
-        Calculates the weight for current season data based on the date.
-        """
         dt = datetime.strptime(target_date, "%Y-%m-%d")
         month = dt.month
         if month <= 4: return 0.0
         if month == 5: return 0.3
         if month == 6: return 0.6
         return 1.0
-
-    def get_free_agent_projections(self, target_date: str):
-        """
-        Loads the free_agents.json and calculates daily projections for them.
-        """
-        if not os.path.exists('free_agents.json'):
-            return pd.DataFrame()
-            
-        with open('free_agents.json', 'r') as f:
-            data = json.load(f).get('data', [])
-        
-        df = pd.DataFrame(data)
-        if df.empty: return pd.DataFrame()
-        
-        # Map fields to match Ottoneu Roster format
-        df['Name'] = df['Name'].apply(lambda x: re.search(r'>(.*?)</a>', x).group(1) if '>' in str(x) else x)
-        df['Team'] = df['Team'].apply(lambda x: re.search(r'>(.*?)</a>', x).group(1) if '>' in str(x) else x)
-        df['POS'] = df['position']
-        
-        # Calculate Base Efficiency Score (Algorithm V2)
-        df['Score'] = (
-            (df['R'].astype(float) + df['HR'].astype(float) + df['RBI'].astype(float) + df['SB'].astype(float)) / 
-            df['PA'].astype(float).replace(0, 1) * 100
-        ) + (df['AVG'].astype(float) * 100)
-        
-        return self._process_daily_multipliers(df, target_date)
 
     def get_daily_projections(self, target_date: str):
         # 1. Base Roster and Season-long Projections
@@ -85,7 +56,7 @@ class DailyEngine:
             player_name = row['Name']
             team_abb = row.get('Team')
             
-            # Use name-based lookup with team info to ensure correct ID (disambiguates Max Muncy, etc)
+            # Use name-based lookup with team info to ensure correct ID
             mlb_id = self.harvester.get_mlb_id(player_name, target_year=year, team_abb=team_abb)
             
             daily_score = 0.0
@@ -97,7 +68,7 @@ class DailyEngine:
             game_time = None
             is_opener = False
             
-            # Check for Injury status from Ottoneu
+            # 1. Check for Injury status from Ottoneu
             if row.get('Injured') == True:
                 daily_scores.append(0.0)
                 is_starting.append(False)
@@ -109,13 +80,24 @@ class DailyEngine:
                 is_opener_list.append(False)
                 continue
 
-            # Check for Active Roster status (Minors check)
+            # 2. Check for explicit Minors status from Ottoneu (Reliable source)
+            if row.get('IsMinors') == True:
+                daily_scores.append(0.0)
+                is_starting.append(False)
+                breakdowns.append(f"In Minors (Ottoneu Status)")
+                opponents.append("N/A")
+                sp_xeras.append("-")
+                warnings.append("🚨 MINORS")
+                game_times.append(None)
+                is_opener_list.append(False)
+                continue
+
+            # 3. Double-check for Active Roster status from MLB API
             if team_abb in teams_playing:
                 team_data = teams_playing[team_abb]
                 active_roster = team_data.get('active_roster', set())
                 
                 # If they have an MLB ID, check if they are in the active roster
-                # We skip this if they are already confirmed in the boxscore (mlb_id in matchups)
                 if mlb_id and mlb_id not in matchups and mlb_id not in active_roster:
                     daily_scores.append(0.0)
                     is_starting.append(False)
@@ -131,10 +113,9 @@ class DailyEngine:
             if mlb_id and mlb_id in matchups:
                 matchup = matchups[mlb_id]
             elif team_abb in teams_playing:
-                # Team is playing, but player not in boxscore yet (Lineup Pending)
                 team_data = teams_playing[team_abb]
                 
-                # Check for rainouts / postponements
+                # Check for rainouts
                 if team_data.get('is_postponed'):
                     daily_scores.append(0.0)
                     is_starting.append(False)
@@ -147,7 +128,6 @@ class DailyEngine:
                     continue
 
                 if not team_data['has_lineup']:
-                    # Look up historical order if possible
                     last_order = self.harvester.get_last_starting_order(mlb_id, year=year)
                     matchup = {
                         'is_starting': True,
@@ -160,13 +140,13 @@ class DailyEngine:
                         'home_team_abb': team_data['home_team_abb'],
                         'is_home': team_data['is_home'],
                         'game_status': team_data['game_status'],
-                        'game_time': team_data.get('game_time')
+                        'game_time': team_data.get('game_time'),
+                        'is_postponed': team_data.get('is_postponed', False)
                     }
 
             if matchup:
                 game_time = matchup.get('game_time')
                 
-                # Double check for rainouts / postponements
                 if matchup.get('is_postponed'):
                     daily_scores.append(0.0)
                     is_starting.append(False)
@@ -178,8 +158,6 @@ class DailyEngine:
                     is_opener_list.append(False)
                     continue
 
-                # We now calculate score/opponent for anyone with a matchup (even bench)
-                # but only mark 'starting' for those in the actual lineup
                 if matchup.get('is_pending'):
                     starting = True
                     order_val = int(matchup.get('batting_order', '5')[0])
@@ -187,18 +165,16 @@ class DailyEngine:
                 elif matchup.get('is_starting'):
                     starting = True
                 else:
-                    # Bench Assumption for comparison (Assume middle of order)
                     breakdown.append("Bench Assumption (Assumed #5)")
 
                 base_score = row['Score']
                 multiplier = 1.0
-                
                 breakdown.append(f"Base: {base_score:.2f}")
                 
                 if weight_current > 0:
                     breakdown.append(f"Recency: {int(weight_current*100)}%")
                 
-                # 1. Venue
+                # Venue
                 venue = matchup.get('venue_name', '')
                 park_multiplier = get_park_multiplier(venue)
                 if park_multiplier != 1.0:
@@ -207,12 +183,10 @@ class DailyEngine:
                     if diff != 0:
                         breakdown.append(f"Park: {diff:+}%")
                 
-                # 2. Opposing Pitcher
+                # Opposing Pitcher
                 sp_id = matchup.get('opposing_sp_id')
                 if sp_id:
                     sp_data = self.harvester.get_pitcher_data(sp_id, year=year, weight_current=weight_current)
-                    
-                    # Use SIERA as the primary skill metric if available, then xERA, then ERA
                     pitcher_skill = sp_data.get('SIERA', sp_data.get('xera', sp_data.get('era', 4.0)))
                     sp_xera = f"{pitcher_skill:.2f}"
                     
@@ -246,7 +220,7 @@ class DailyEngine:
                             multiplier *= 0.95
                             breakdown.append("Platoon (R/R): -5%")
 
-                    # 3. BvP
+                    # BvP
                     bvp = self.harvester.get_bvp_data(mlb_id, sp_id)
                     if bvp and bvp['pa'] >= 5:
                         ops = bvp['ops']
@@ -263,20 +237,15 @@ class DailyEngine:
                             multiplier *= 0.95
                             breakdown.append(f"BvP Weak ({bvp['pa']} PA): -5%")
 
-                    # 4. Basestealing Environment (Tiered)
+                    # Basestealing Environment
                     sprint_speed = self.defense.get_sprint_speed(mlb_id)
-                    
                     tier_mult = 0.0
-                    if sprint_speed > 28.5:
-                        tier_mult = 1.0 # Full impact for Elite
-                    elif sprint_speed >= 27.5:
-                        tier_mult = 0.5 # Half impact for Aggressive
+                    if sprint_speed > 28.5: tier_mult = 1.0
+                    elif sprint_speed >= 27.5: tier_mult = 0.5
                         
                     if tier_mult > 0:
                         sb_env_mult = 1.0
                         sb_breakdown = []
-                        
-                        # Catcher Pop Time (Deterrent Factor - Max 5%)
                         c_id = matchup.get('opposing_c_id')
                         if c_id:
                             pop_time = self.defense.get_pop_time(c_id)
@@ -289,7 +258,6 @@ class DailyEngine:
                                 sb_env_mult *= penalty
                                 sb_breakdown.append(f"Elite Catcher ({pop_time}s): -{((1-penalty)*100):.1f}%")
                         
-                        # Pitcher SB Rate (Primary Factor - Max 10%)
                         sb_rate = self.defense.get_pitcher_sb_rate(sp_id, year=year)
                         if sb_rate > 0.85:
                             boost = 1.0 + (0.10 * tier_mult)
@@ -304,7 +272,7 @@ class DailyEngine:
                             multiplier *= sb_env_mult
                             breakdown.append(", ".join(sb_breakdown))
 
-                # 5. Batting Order Context
+                # Batting Order Context
                 order_str = matchup.get('batting_order', '-')
                 if order_str == '-' and not matchup.get('is_starting') and not matchup.get('is_pending'):
                     multiplier *= 1.05
@@ -325,7 +293,7 @@ class DailyEngine:
                     if diff != 0:
                         breakdown.append(f"Order #{order_val}: {diff:+}%")
 
-                # StatCast (Blended)
+                # StatCast
                 sc_hitter = self.harvester.statcast.get_blended_hitter_stats(mlb_id, weight_current=weight_current)
                 is_superstar = False
                 if sc_hitter is not None:
@@ -347,7 +315,7 @@ class DailyEngine:
                 if is_superstar:
                     daily_score = max(daily_score, base_score * 0.85)
 
-                # 5. Weather
+                # Weather
                 home_abb = matchup.get('home_team_abb')
                 if home_abb in weather_report:
                     w = weather_report[home_abb]
@@ -361,6 +329,10 @@ class DailyEngine:
                             multiplier *= penalty
                             breakdown.append(f"Wind In: -{int((1-penalty)*100)}%")
                         
+                        if w.get('temp', 0) > 85:
+                            multiplier *= 0.95
+                            breakdown.append("Heat (>85F): -5%")
+                        
                         if w['rain_risk'] >= 60:
                             warning = f"🚨 HIGH RAIN RISK ({w['rain_risk']}%)"
                         elif w['rain_risk'] >= 30:
@@ -373,6 +345,7 @@ class DailyEngine:
                     daily_score = base_score * multiplier
                     if is_superstar:
                         daily_score = max(daily_score, base_score * 0.85)
+            
             daily_scores.append(daily_score)
             is_starting.append(starting)
             breakdowns.append(", ".join(breakdown) if breakdown else "Base")
@@ -395,6 +368,6 @@ class DailyEngine:
 
 if __name__ == "__main__":
     engine = DailyEngine()
-    test_date = "2024-06-15"
+    test_date = datetime.now().strftime("%Y-%m-%d")
     projections = engine.get_daily_projections(test_date)
     print(projections[['Name', 'POS', 'DailyScore', 'Opponent']].sort_values(by='DailyScore', ascending=False).head(10))
