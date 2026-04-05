@@ -88,7 +88,7 @@ class DailyEngine:
             
             # 2. Fallback to name-based lookup if ID is missing (new players/scouted)
             if pd.isna(mlb_id) or not mlb_id:
-                mlb_id = self.harvester.get_mlb_id(player_name, target_year=year)
+                mlb_id = self.harvester.get_mlb_id(player_name, target_year=year, team_abb=team_abb)
             else:
                 mlb_id = int(mlb_id)
             

@@ -61,23 +61,8 @@ class PitcherDailyEngine:
         teams_playing = matchups.get('_teams_playing', {})
         
         # 3. Identify Starters
-        starting_map = {}
-        for team_abb, data in teams_playing.items():
-            sp_id = data.get('opposing_sp_id')
-            sp_name = data.get('opposing_sp_name')
-            if sp_id:
-                starting_map[sp_id] = {
-                    'name': sp_name,
-                    'opposing_team': team_abb,
-                    'venue_name': data['venue_name'],
-                    'home_team_abb': data['home_team_abb'],
-                    'is_home': not data['is_home'],
-                    'game_time': data.get('game_time'),
-                    'game_status': data.get('game_status'),
-                    'is_postponed': data.get('is_postponed', False),
-                    'has_lineup': data.get('has_lineup', False)
-                }
-
+        starting_map = matchups.get('_starting_pitchers', {})
+        
         is_today = target_date == datetime.now().strftime("%Y-%m-%d")
         weather_report = self.weather.get_weather_report() if is_today else {}
         weight_current = self._get_recency_weight(target_date)

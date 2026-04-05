@@ -29,7 +29,7 @@ class GameDayHarvester:
         self.statcast = StatCastHarvester()
         self.defense = DefenseHarvester()
 
-    def get_mlb_id(self, player_name, target_year=2025):
+    def get_mlb_id(self, player_name, target_year=2025, team_abb=None):
         # Clean name for search
         search_name = player_name
         suffixes = [' Jr.', ' Sr.', ' II', ' III', ' IV']
@@ -38,15 +38,30 @@ class GameDayHarvester:
         
         try:
             # Use statsapi.lookup_player for the most reliable mapping to personId
-            # We don't cache this at class level because names can be ambiguous
-            cache_key = f"id_{player_name}_{target_year}"
+            cache_key = f"id_{player_name}_{target_year}_{team_abb}"
             if cache_key in self.player_id_cache:
                 return self.player_id_cache[cache_key]
 
             results = statsapi.lookup_player(search_name)
             if results:
-                # If multiple found, pick the one active in the target year
-                # Or just the first one if only one exists
+                # If team_abb is provided, filter by team
+                if team_abb:
+                    target_mlb_abb = TeamCrosswalk.to_mlb(team_abb)
+                    for r in results:
+                        # Check current team of each result
+                        p_id = r['id']
+                        p_info = statsapi.get('person', {'personId': p_id})
+                        if p_info and 'people' in p_info:
+                            curr_team = p_info['people'][0].get('currentTeam', {}).get('id')
+                            if curr_team:
+                                team_data = statsapi.get('team', {'teamId': curr_team})
+                                if team_data and 'teams' in team_data:
+                                    abb = team_data['teams'][0].get('abbreviation')
+                                    if abb == target_mlb_abb:
+                                        self.player_id_cache[cache_key] = p_id
+                                        return p_id
+
+                # If only one exists or no team match found, pick the first
                 p_id = results[0]['id']
                 self.player_id_cache[cache_key] = p_id
                 return p_id
@@ -61,7 +76,7 @@ class GameDayHarvester:
             return self._matchups_cache[target_date]
 
         print(f"Fetching fresh matchups for {target_date} from MLB API...")
-        matchups = {'_teams_playing': {}}
+        matchups = {'_teams_playing': {}, '_starting_pitchers': {}}
         dt = datetime.strptime(target_date, "%Y-%m-%d")
         formatted_date = dt.strftime("%m/%d/%Y")
         
@@ -170,6 +185,32 @@ class GameDayHarvester:
                     'is_postponed': is_postponed,
                     'game_time': game_time,
                     'active_roster': self.active_rosters.get(home_id, set())
+                }
+            
+            # Add pitchers to global map (handles doubleheaders)
+            if away_sp and 'personId' in away_sp:
+                matchups['_starting_pitchers'][away_sp['personId']] = {
+                    'name': away_sp['name'],
+                    'opposing_team': home_abb,
+                    'venue_name': venue,
+                    'home_team_abb': home_abb,
+                    'is_home': False,
+                    'game_status': status,
+                    'is_postponed': is_postponed,
+                    'game_time': game_time,
+                    'has_lineup': box is not None
+                }
+            if home_sp and 'personId' in home_sp:
+                matchups['_starting_pitchers'][home_sp['personId']] = {
+                    'name': home_sp['name'],
+                    'opposing_team': away_abb,
+                    'venue_name': venue,
+                    'home_team_abb': home_abb,
+                    'is_home': True,
+                    'game_status': status,
+                    'is_postponed': is_postponed,
+                    'game_time': game_time,
+                    'has_lineup': box is not None
                 }
             
             # Process batters if boxscore is available

@@ -116,7 +116,11 @@ def run_optimizer_hitter(projection_system="steamer", target_date=None, team_id=
         order_list = []
         for _, row in lineup.iterrows():
             name = row['Player']
-            mlb_id = optimizer.daily_engine.harvester.get_mlb_id(name, target_year=year)
+            # We need the team abbreviation for this player to disambiguate
+            p_roster_row = full_roster[full_roster['Name'] == name]
+            p_team = p_roster_row['Team'].values[0] if not p_roster_row.empty else None
+            
+            mlb_id = optimizer.daily_engine.harvester.get_mlb_id(name, target_year=year, team_abb=p_team)
             matchup = matchups.get(mlb_id, {})
             
             order = "-"
