@@ -116,6 +116,27 @@ Controlled by `config.RECENCY_WEIGHTS` and `get_recency_weight(target_date)`.
 
 ---
 
+## Breakdown Field Schema
+
+`Breakdown` in the hitter lineup JSON is a **structured list of chip objects**, not a string:
+
+```json
+[
+  {"label": "Base",                  "value": "64.76",  "type": "info"},
+  {"label": "Park",                  "value": "+14%",   "type": "positive"},
+  {"label": "SP Skill",              "value": "+15%",   "type": "positive"},
+  {"label": "Dynamic Platoon (R)",   "value": "-15%",   "type": "negative"},
+  {"label": "Order #2",             "value": "+8%",    "type": "positive"},
+  {"label": "xwOBA Good",           "value": "0.393",  "type": "info"}
+]
+```
+
+`type` values: `"positive"` | `"negative"` | `"info"` | `"status"`.
+
+Built by `_chip()` in `daily_engine.py`. Any code that consumes `Breakdown` as a string must use `_breakdown_to_str()` from `main.py` (used for AI narrative and terminal display). The frontend renders chips directly from the list — no parsing required.
+
+---
+
 ## Execution Order (Important)
 
 In `update_web_data.py`, jobs are ordered **STEAMER before ATC** for each team and date. This matters because STEAMER often resolves MLB IDs that ATC can't (some players absent from ATC projections). Once STEAMER populates the crosswalk, ATC reads it.

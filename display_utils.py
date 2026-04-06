@@ -93,8 +93,17 @@ def display_dataframe(df: pd.DataFrame, title: str = None, columns: list = None,
                     else:
                         row_data.append(str(val))
                 elif col == "Breakdown" or col == "Note":
-                    # Stylize breakdown details
-                    val_str = str(val)
+                    # Convert structured chip list to readable text if needed
+                    if isinstance(val, list):
+                        parts = []
+                        for c in val:
+                            if isinstance(c, dict):
+                                parts.append(f"{c['label']}: {c['value']}" if c.get('value') else c['label'])
+                            else:
+                                parts.append(str(c))
+                        val_str = ', '.join(parts)
+                    else:
+                        val_str = str(val)
                     val_str = val_str.replace("SP Skill: +", "[bold green]SP Skill: +[/bold green]")
                     val_str = val_str.replace("Platoon: +", "[bold cyan]Platoon: +[/bold cyan]")
                     val_str = val_str.replace("BvP: +", "[bold yellow]BvP: +[/bold yellow]")

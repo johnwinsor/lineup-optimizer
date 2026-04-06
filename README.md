@@ -126,11 +126,12 @@ When a team hasn't posted its official lineup:
 ## 📊 Score Tiers
 
 #### Hitter Tiers
-| Score | Tier |
-| :--- | :--- |
-| **90+** | Elite — top hitter, weak pitcher, hitter's park |
-| **60–85** | Strong play |
-| **40** | Zebras Floor — hard cutoff; below this we bench to preserve game caps |
+| Score | Color | Tier |
+| :--- | :--- | :--- |
+| **90+** | Green | Elite — top hitter, weak pitcher, hitter's park |
+| **60–89** | Sky/Blue | Strong play |
+| **40–59** | Yellow | Marginal — starts only if no better option |
+| **< 40** | Muted | Below Zebras Floor — benched to preserve game caps |
 
 #### Pitcher Tiers
 | Score | Tier |
@@ -190,7 +191,7 @@ uv run python fa_backtester.py 2025-07-04
 
 Zero-cost static dashboard hosted on GitHub Pages.
 
-**Features:** Multi-projection toggle (ATC / Steamer), Today / Tomorrow views, pitcher cards, 3-day history, AI analyst (Google Gemini), live game status.
+**Features:** Multi-projection toggle (ATC / Steamer), Today / Tomorrow views, pitcher cards, AI analyst (Google Gemini), live game status. Lineup scores are color-coded by tier (green / sky / yellow). Each player's score breakdown is displayed as color-coded chips — green for positive multipliers, red for penalties, slate for informational context. Fully responsive: card layout on mobile, table on desktop.
 
 **Architecture:**
 - **Daily (4 AM UTC)**: `fetch_statcast.py` → `build_crosswalk.py` → `update_web_data.py --skip-ai` → deploy to gh-pages

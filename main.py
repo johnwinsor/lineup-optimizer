@@ -18,6 +18,35 @@ logger = logging.getLogger(__name__)
 # Load environment variables from .env file
 load_dotenv(override=True)
 
+def _breakdown_to_str(breakdown):
+    """Convert a structured chip list to a human-readable string.
+    Used for terminal display, AI narrative, and any legacy string context.
+    """
+    if not breakdown:
+        return "-"
+    if isinstance(breakdown, list):
+        parts = []
+        for c in breakdown:
+            if isinstance(c, dict):
+                parts.append(f"{c['label']}: {c['value']}" if c.get('value') else c['label'])
+            else:
+                parts.append(str(c))
+        return ', '.join(parts)
+    return str(breakdown)
+
+
+def _get_pending_order(breakdown):
+    """Return the assumed batting order digit from a Lineup Pending chip, or None."""
+    if isinstance(breakdown, list):
+        for c in breakdown:
+            if isinstance(c, dict) and c.get('label', '').startswith('Lineup Pending'):
+                m = re.search(r'Assumed #(\d)', c['label'])
+                return m.group(1) if m else None
+        return None
+    m = re.search(r'Assumed #(\d)', str(breakdown))
+    return m.group(1) if m else None
+
+
 def generate_ai_narrative(lineup_df, date_str, skip_ai=False):
     if skip_ai:
         return "AI Narrative generation skipped."
@@ -32,7 +61,9 @@ def generate_ai_narrative(lineup_df, date_str, skip_ai=False):
         client = genai.Client(api_key=api_key)
         
         # Convert lineup data to a readable format for the LLM
-        lineup_text = lineup_df[['Player', 'Opponent', 'Score', 'Breakdown', 'Warning']].to_string(index=False)
+        narrative_df = lineup_df[['Player', 'Opponent', 'Score', 'Breakdown', 'Warning']].copy()
+        narrative_df['Breakdown'] = narrative_df['Breakdown'].apply(_breakdown_to_str)
+        lineup_text = narrative_df.to_string(index=False)
         
         prompt = f"""
 You are the lead fantasy baseball analyst for the Zurich Zebras (Ottoneu Team 7582).
@@ -135,14 +166,9 @@ def run_optimizer_hitter(projection_system="steamer", target_date=None, team_id=
             if not matchup and name in all_hitters['Name'].values:
                 # Check if they were a 'Pending' starter
                 proj_row = all_hitters[all_hitters['Name'] == name]
-                if not proj_row.empty and 'Lineup Pending' in proj_row['Breakdown'].values[0]:
-                    # Extract assumed order from breakdown e.g. "Lineup Pending (Assumed #1)"
-                    breakdown = proj_row['Breakdown'].values[0]
-                    match = re.search(r'Assumed #(\d)', breakdown)
-                    if match:
-                        order = f"{match.group(1)}*" 
-                    else:
-                        order = "TBA"
+                if not proj_row.empty and _get_pending_order(proj_row['Breakdown'].values[0]) is not None:
+                    order_num = _get_pending_order(proj_row['Breakdown'].values[0])
+                    order = f"{order_num}*"
             else:
                 raw_order = matchup.get('batting_order', '-')
                 # Convert '100' to '1', etc.
@@ -210,14 +236,9 @@ def run_optimizer_hitter(projection_system="steamer", target_date=None, team_id=
                 team_data = teams_playing.get(team_abb, {})
                 if not matchup and team_data and not team_data.get('has_lineup'):
                     note = "Lineup Pending (Not picked by Optimizer)."
-                    # Check for assumed order from historical detection
                     if not proj_row.empty:
-                        breakdown = proj_row['Breakdown'].values[0]
-                        match = re.search(r'Assumed #(\d)', breakdown)
-                        if match:
-                            clean_order = f"{match.group(1)}*" 
-                        else:
-                            clean_order = "TBA"
+                        order_num = _get_pending_order(proj_row['Breakdown'].values[0])
+                        clean_order = f"{order_num}*" if order_num else "TBA"
                     else:
                         clean_order = "TBA"
                 elif not matchup.get('is_starting', False) and team_data.get('has_lineup'):
@@ -238,7 +259,7 @@ def run_optimizer_hitter(projection_system="steamer", target_date=None, team_id=
                 'Opponent': opponent,
                 'SP_xERA': sp_xera,
                 'Score': proj_score,
-                'Breakdown': f"{breakdown} ({note})" if note else breakdown,
+                'Breakdown': (breakdown + [{"label": note, "value": None, "type": "info"}]) if note else breakdown,
                 'Warning': warning,
                 'GameTime': proj_row['GameTime'].values[0] if not proj_row.empty else None
             })

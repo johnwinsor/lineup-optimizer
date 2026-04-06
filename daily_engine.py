@@ -8,6 +8,16 @@ from weather_harvester import WeatherHarvester
 import config as C
 
 
+def _chip(label, value=None, chip_type="info"):
+    """Return a structured breakdown chip dict.
+
+    label     — human-readable factor name (e.g. "Park", "Dynamic Platoon (R)")
+    value     — formatted value string (e.g. "+14%", "64.76"), or None
+    chip_type — "positive" | "negative" | "info" | "status"
+    """
+    return {"label": label, "value": value, "type": chip_type}
+
+
 class DailyEngine:
     def __init__(self, league_id=1077, team_id=7582, projection_system="steamer"):
         self.enricher = OttoneuEnricher(league_id, team_id, projection_system=projection_system)
@@ -72,8 +82,9 @@ class DailyEngine:
             # ── 1. Injured (Ottoneu flag) ───────────────────────────────────
             if row.get('Injured') is True:
                 daily_scores.append(0.0); is_starting.append(False)
-                breakdowns.append("IL (Injured)"); opponents.append("N/A")
-                sp_xeras.append("-"); warnings.append("🚨 INJURED (IL)")
+                breakdowns.append([_chip("IL (Injured)", chip_type="status")])
+                opponents.append("N/A"); sp_xeras.append("-")
+                warnings.append("🚨 INJURED (IL)")
                 game_times.append(None); is_opener_list.append(False)
                 continue
 
@@ -85,7 +96,7 @@ class DailyEngine:
                     status = mlb_statuses[lookup_id]
                     if status['is_minors']:
                         daily_scores.append(0.0); is_starting.append(False)
-                        breakdowns.append(f"In the Minors ({status['team_name']})")
+                        breakdowns.append([_chip(f"In the Minors ({status['team_name']})", chip_type="status")])
                         opponents.append("N/A"); sp_xeras.append("-")
                         warnings.append("🚨 MINORS")
                         game_times.append(None); is_opener_list.append(False)
@@ -96,7 +107,7 @@ class DailyEngine:
             # ── 2b. Ottoneu IsMinors fallback — only when MLB ID could not be resolved ──
             if not mlb_id and row.get('IsMinors') is True:
                 daily_scores.append(0.0); is_starting.append(False)
-                breakdowns.append("In Minors (Ottoneu Roster — no MLB ID resolved)")
+                breakdowns.append([_chip("In Minors (Ottoneu Roster — no MLB ID resolved)", chip_type="status")])
                 opponents.append("N/A"); sp_xeras.append("-")
                 warnings.append("🚨 MINORS")
                 game_times.append(None); is_opener_list.append(False)
@@ -109,7 +120,7 @@ class DailyEngine:
                 if mlb_id and mlb_id not in matchups and mlb_id not in active_roster:
                     if not mlb_confirmed_major:
                         daily_scores.append(0.0); is_starting.append(False)
-                        breakdowns.append(f"In Minors (Not on Active Roster for {team_abb})")
+                        breakdowns.append([_chip(f"In Minors (Not on Active Roster for {team_abb})", chip_type="status")])
                         opponents.append("N/A"); sp_xeras.append("-")
                         warnings.append("🚨 MINORS")
                         game_times.append(None); is_opener_list.append(False)
@@ -124,7 +135,7 @@ class DailyEngine:
 
                 if team_data.get('is_postponed'):
                     daily_scores.append(0.0); is_starting.append(False)
-                    breakdowns.append("RAINOUT (Postponed)")
+                    breakdowns.append([_chip("RAINOUT (Postponed)", chip_type="status")])
                     opponents.append(team_data.get('opposing_sp_name', 'N/A'))
                     sp_xeras.append("-"); warnings.append("🚨 RAINOUT / POSTPONED")
                     game_times.append(team_data.get('game_time')); is_opener_list.append(False)
@@ -153,7 +164,7 @@ class DailyEngine:
 
                 if matchup.get('is_postponed'):
                     daily_scores.append(0.0); is_starting.append(False)
-                    breakdowns.append("RAINOUT (Postponed)")
+                    breakdowns.append([_chip("RAINOUT (Postponed)", chip_type="status")])
                     opponents.append(matchup.get('opposing_sp_name', 'N/A'))
                     sp_xeras.append("-"); warnings.append("🚨 RAINOUT / POSTPONED")
                     game_times.append(game_time); is_opener_list.append(False)
@@ -162,18 +173,18 @@ class DailyEngine:
                 if matchup.get('is_pending'):
                     starting = True
                     order_val = int(matchup.get('batting_order', '5')[0])
-                    breakdown.append(f"Lineup Pending (Assumed #{order_val})")
+                    breakdown.append(_chip(f"Lineup Pending (Assumed #{order_val})"))
                 elif matchup.get('is_starting'):
                     starting = True
                 else:
-                    breakdown.append("Bench Assumption (Assumed #5)")
+                    breakdown.append(_chip("Bench Assumption (Assumed #5)"))
 
                 base_score = row['Score']
                 multiplier = 1.0
-                breakdown.append(f"Base: {base_score:.2f}")
+                breakdown.append(_chip("Base", f"{base_score:.2f}"))
 
                 if weight_current > 0:
-                    breakdown.append(f"Recency: {int(weight_current * 100)}%")
+                    breakdown.append(_chip("Recency", f"{int(weight_current * 100)}%"))
 
                 # Park factor
                 venue = matchup.get('venue_name', '')
@@ -182,7 +193,7 @@ class DailyEngine:
                     multiplier *= park_mult
                     diff = int((park_mult - 1.0) * 100)
                     if diff != 0:
-                        breakdown.append(f"Park: {diff:+}%")
+                        breakdown.append(_chip("Park", f"{diff:+}%", "positive" if diff > 0 else "negative"))
 
                 # Opposing pitcher
                 sp_id = matchup.get('opposing_sp_id')
@@ -197,7 +208,7 @@ class DailyEngine:
                     multiplier *= era_factor
                     diff = int((era_factor - 1.0) * 100)
                     if diff != 0:
-                        breakdown.append(f"SP Skill: {diff:+}%")
+                        breakdown.append(_chip("SP Skill", f"{diff:+}%", "positive" if diff > 0 else "negative"))
 
                     # Platoon splits
                     b_hand = self.harvester.get_batter_data(mlb_id)['hand']
@@ -217,23 +228,23 @@ class DailyEngine:
                             applied_dynamic = True
                             diff = int((platoon_mult - 1.0) * 100)
                             if diff != 0:
-                                breakdown.append(f"Dynamic Platoon ({p_hand}): {diff:+}%")
+                                breakdown.append(_chip(f"Dynamic Platoon ({p_hand})", f"{diff:+}%", "positive" if diff > 0 else "negative"))
                             else:
-                                breakdown.append(f"Neutral Platoon ({p_hand})")
+                                breakdown.append(_chip(f"Neutral Platoon ({p_hand})"))
 
                     if not applied_dynamic:
                         if b_hand == 'S':
                             multiplier *= C.SWITCH_HIT_BONUS
-                            breakdown.append(f"Switch: +{int((C.SWITCH_HIT_BONUS - 1) * 100)}%")
+                            breakdown.append(_chip("Switch", f"+{int((C.SWITCH_HIT_BONUS - 1) * 100)}%", "positive"))
                         elif b_hand != p_hand:
                             multiplier *= C.PLATOON_ADVANTAGE_BONUS
-                            breakdown.append(f"Platoon: +{int((C.PLATOON_ADVANTAGE_BONUS - 1) * 100)}%")
+                            breakdown.append(_chip("Platoon", f"+{int((C.PLATOON_ADVANTAGE_BONUS - 1) * 100)}%", "positive"))
                         elif b_hand == 'L':
                             multiplier *= C.PLATOON_LL_PENALTY
-                            breakdown.append(f"Platoon (L/L): {int((C.PLATOON_LL_PENALTY - 1) * 100)}%")
+                            breakdown.append(_chip("Platoon (L/L)", f"{int((C.PLATOON_LL_PENALTY - 1) * 100)}%", "negative"))
                         else:
                             multiplier *= C.PLATOON_RR_PENALTY
-                            breakdown.append(f"Platoon (R/R): {int((C.PLATOON_RR_PENALTY - 1) * 100)}%")
+                            breakdown.append(_chip("Platoon (R/R)", f"{int((C.PLATOON_RR_PENALTY - 1) * 100)}%", "negative"))
 
                     # BvP
                     bvp = self.harvester.get_bvp_data(mlb_id, sp_id)
@@ -241,16 +252,16 @@ class DailyEngine:
                         ops = bvp['ops']
                         if ops > C.BVP_ELITE_OPS:
                             multiplier *= C.BVP_ELITE_MULT
-                            breakdown.append(f"BvP Elite ({bvp['pa']} PA): +{int((C.BVP_ELITE_MULT - 1) * 100)}%")
+                            breakdown.append(_chip(f"BvP Elite ({bvp['pa']} PA)", f"+{int((C.BVP_ELITE_MULT - 1) * 100)}%", "positive"))
                         elif ops > C.BVP_GOOD_OPS:
                             multiplier *= C.BVP_GOOD_MULT
-                            breakdown.append(f"BvP Good ({bvp['pa']} PA): +{int((C.BVP_GOOD_MULT - 1) * 100)}%")
+                            breakdown.append(_chip(f"BvP Good ({bvp['pa']} PA)", f"+{int((C.BVP_GOOD_MULT - 1) * 100)}%", "positive"))
                         elif ops < C.BVP_POOR_OPS:
                             multiplier *= C.BVP_POOR_MULT
-                            breakdown.append(f"BvP Poor ({bvp['pa']} PA): {int((C.BVP_POOR_MULT - 1) * 100)}%")
+                            breakdown.append(_chip(f"BvP Poor ({bvp['pa']} PA)", f"{int((C.BVP_POOR_MULT - 1) * 100)}%", "negative"))
                         elif ops < C.BVP_WEAK_OPS:
                             multiplier *= C.BVP_WEAK_MULT
-                            breakdown.append(f"BvP Weak ({bvp['pa']} PA): {int((C.BVP_WEAK_MULT - 1) * 100)}%")
+                            breakdown.append(_chip(f"BvP Weak ({bvp['pa']} PA)", f"{int((C.BVP_WEAK_MULT - 1) * 100)}%", "negative"))
 
                     # Basestealing environment
                     sprint_speed = self.defense.get_sprint_speed(mlb_id)
@@ -263,32 +274,32 @@ class DailyEngine:
 
                     if tier_mult > 0:
                         sb_env_mult = 1.0
-                        sb_breakdown = []
+                        sb_chips = []
                         c_id = matchup.get('opposing_c_id')
                         if c_id:
                             pop_time = self.defense.get_pop_time(c_id)
                             if pop_time > C.CATCHER_POP_SLOW:
                                 boost = 1.0 + (C.SB_CATCHER_MULT * tier_mult)
                                 sb_env_mult *= boost
-                                sb_breakdown.append(f"Slow Catcher ({pop_time}s): +{((boost - 1) * 100):.1f}%")
+                                sb_chips.append(_chip(f"Slow Catcher ({pop_time}s)", f"+{((boost - 1) * 100):.1f}%", "positive"))
                             elif pop_time < C.CATCHER_POP_ELITE:
                                 penalty = 1.0 - (C.SB_CATCHER_MULT * tier_mult)
                                 sb_env_mult *= penalty
-                                sb_breakdown.append(f"Elite Catcher ({pop_time}s): -{((1 - penalty) * 100):.1f}%")
+                                sb_chips.append(_chip(f"Elite Catcher ({pop_time}s)", f"-{((1 - penalty) * 100):.1f}%", "negative"))
 
                         sb_rate = self.defense.get_pitcher_sb_rate(sp_id, year=year)
                         if sb_rate > C.SB_RATE_SLOW_SP:
                             boost = 1.0 + (C.SB_PITCHER_MULT * tier_mult)
                             sb_env_mult *= boost
-                            sb_breakdown.append(f"Slow SP Delivery ({int(sb_rate * 100)}% SB): +{int((boost - 1) * 100)}%")
+                            sb_chips.append(_chip(f"Slow SP Delivery ({int(sb_rate * 100)}% SB)", f"+{int((boost - 1) * 100)}%", "positive"))
                         elif sb_rate < C.SB_RATE_HOLD_SP:
                             penalty = 1.0 - (C.SB_PITCHER_MULT * tier_mult)
                             sb_env_mult *= penalty
-                            sb_breakdown.append(f"Elite Hold SP ({int(sb_rate * 100)}% SB): -{int((1 - penalty) * 100)}%")
+                            sb_chips.append(_chip(f"Elite Hold SP ({int(sb_rate * 100)}% SB)", f"-{int((1 - penalty) * 100)}%", "negative"))
 
                         if sb_env_mult != 1.0:
                             multiplier *= sb_env_mult
-                            breakdown.append(", ".join(sb_breakdown))
+                            breakdown.extend(sb_chips)
 
                 # Batting order
                 order_str = matchup.get('batting_order', '-')
@@ -299,7 +310,7 @@ class DailyEngine:
                         multiplier *= order_mult
                         diff = int((order_mult - 1.0) * 100)
                         if diff != 0:
-                            breakdown.append(f"Order #{order_val}: {diff:+}%")
+                            breakdown.append(_chip(f"Order #{order_val}", f"{diff:+}%", "positive" if diff > 0 else "negative"))
                     except (ValueError, IndexError):
                         pass
 
@@ -310,9 +321,9 @@ class DailyEngine:
                 if sc_hitter is not None:
                     xwoba = float(sc_hitter.get('xwOBA', 0))
                     if xwoba > C.XWOBA_ELITE:
-                        breakdown.append(f"xwOBA Elite ({xwoba:.3f})")
+                        breakdown.append(_chip("xwOBA Elite", f"{xwoba:.3f}"))
                     elif xwoba > C.XWOBA_GOOD:
-                        breakdown.append(f"xwOBA Good ({xwoba:.3f})")
+                        breakdown.append(_chip("xwOBA Good", f"{xwoba:.3f}"))
 
                 # Weather (applied after score so it doesn't compound the superstar floor)
                 home_abb = matchup.get('home_team_abb')
@@ -322,11 +333,11 @@ class DailyEngine:
                         if w['wind_dir'] == "Out" and w['wind_speed'] >= C.WIND_SPEED_MODERATE:
                             boost = C.WIND_OUT_STRONG_MULT if w['wind_speed'] >= C.WIND_SPEED_STRONG else C.WIND_OUT_MODERATE_MULT
                             multiplier *= boost
-                            breakdown.append(f"Wind Out: +{int((boost - 1) * 100)}%")
+                            breakdown.append(_chip("Wind Out", f"+{int((boost - 1) * 100)}%", "positive"))
                         elif w['wind_dir'] == "In" and w['wind_speed'] >= C.WIND_SPEED_MODERATE:
                             penalty = C.WIND_IN_STRONG_MULT if w['wind_speed'] >= C.WIND_SPEED_STRONG else C.WIND_IN_MODERATE_MULT
                             multiplier *= penalty
-                            breakdown.append(f"Wind In: -{int((1 - penalty) * 100)}%")
+                            breakdown.append(_chip("Wind In", f"-{int((1 - penalty) * 100)}%", "negative"))
 
                         if w['rain_risk'] >= C.RAIN_HIGH_RISK_PCT:
                             warning = f"🚨 HIGH RAIN RISK ({w['rain_risk']}%)"
@@ -335,7 +346,7 @@ class DailyEngine:
 
                 if not starting:
                     daily_score = 0.0
-                    breakdown.append("Not Starting: -100%")
+                    breakdown.append(_chip("Not Starting", "-100%", "status"))
                 else:
                     # Cap total multiplier — prevents extreme compounding when
                     # several favorable/unfavorable factors stack simultaneously
@@ -344,7 +355,7 @@ class DailyEngine:
 
             daily_scores.append(daily_score)
             is_starting.append(starting)
-            breakdowns.append(", ".join(breakdown) if breakdown else "Base")
+            breakdowns.append(breakdown)
             opponents.append(opponent)
             sp_xeras.append(sp_xera)
             warnings.append(warning)
