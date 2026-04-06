@@ -4,7 +4,14 @@
       "Bash(ls -1 /Users/johnwinsor/projects/lineup-optimizer/*.py)",
       "Bash(xargs basename:*)",
       "Bash(python:*)",
-      "Bash(grep -v \"^$\")"
+      "Bash(grep -v \"^$\")",
+      "Bash(python3:*)",
+      "Bash(1 ls:*)",
+      "Bash(ls /Users/johnwinsor/projects/lineup-optimizer/*.py)",
+      "Bash(xargs -I{} basename {})",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
