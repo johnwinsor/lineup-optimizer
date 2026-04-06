@@ -196,6 +196,13 @@ python -m http.server 8000
 
 ---
 
+## Known Issues (not yet resolved)
+
+- **Silent exception handling in `gameday_harvester.py`** — several `except: pass` or bare `except Exception` blocks swallow errors without logging. This makes failures invisible in production. Should be replaced with `logger.warning(...)` calls throughout.
+- **`steamer-hitters.json` backward-compat reference in `scout_harvester.py`** — `scout_harvester.py` still fetches `zebras_roster_api.json` which was deleted. Will fail silently if run. Needs cleanup when the scouting suite is revisited.
+
+---
+
 ## Design Decisions & Pitfalls
 
 - **Do not use `xMLBAMID` from projections for MLB ID resolution.** It works for STEAMER but breaks for ATC and any player absent from projections. Always use `get_mlb_id()` with the roster FGID.
