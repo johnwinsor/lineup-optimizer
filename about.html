@@ -40,9 +40,10 @@
             <h4 class="text-white font-bold mt-6">Hitter Efficiency (V2 Algorithm)</h4>
             <p>A hitter's daily score begins with a baseline derived from their counting stat production (Runs, HR, RBI, SB) per plate appearance, added to their projected Batting Average. We then apply multipliers for:</p>
             <ul>
-                <li><strong>Platoon Advantage:</strong> Contextual adjustments based on opposing SP handedness.</li>
-                <li><strong>Batting Order Density:</strong> Boosts for top-of-the-order starters.</li>
+                <li><strong>Dynamic Platoon Splits:</strong> Real-world adjustments based on career OPS vs LHP/RHP directly from the MLB Stats API.</li>
+                <li><strong>Batting Order Density:</strong> Boosts for top-of-the-order starters, with historical order analysis for pending lineups.</li>
                 <li><strong>Venue & Weather:</strong> Statcast park factors combined with real-time wind and temperature data.</li>
+                <li><strong>Instant Roster Tracking:</strong> Direct MLB API integration for immediate detection of minor league promotions.</li>
             </ul>
 
             <h4 class="text-white font-bold mt-6">Pitcher Precision (V1 Algorithm)</h4>
@@ -87,7 +88,7 @@
                 </div>
                 <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-lg">
                     <div class="text-indigo-400 text-[10px] uppercase font-bold mb-1">Live Environment</div>
-                    <div class="text-white text-sm">MLB Stats API & Rotowire</div>
+                    <div class="text-white text-sm">MLB Stats API (Lineups, Platoon, Roster) & Rotowire</div>
                 </div>
                 <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-lg">
                     <div class="text-indigo-400 text-[10px] uppercase font-bold mb-1">Advanced Metrics</div>
