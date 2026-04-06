@@ -102,6 +102,29 @@
             </div>
         </div>
 
+        <div class="prose prose-slate prose-invert max-w-none mt-12">
+            <h3>Reading the Dashboard</h3>
+
+            <h4 class="text-white font-bold mt-6">Score Colors</h4>
+            <p>Hitter scores are color-coded by tier so you can assess the lineup at a glance:</p>
+            <ul>
+                <li><strong class="text-green-400">Green (90+)</strong> — Elite play: weak pitcher, favorable park, strong platoon.</li>
+                <li><strong class="text-sky-400">Sky / Blue (60–89)</strong> — Strong start, solidly above floor.</li>
+                <li><strong class="text-yellow-400">Yellow (40–59)</strong> — Marginal; starts only when no better option is available.</li>
+                <li><strong class="text-slate-400">Muted (&lt; 40)</strong> — Below the Zebras Floor. Player is benched to preserve game caps.</li>
+            </ul>
+
+            <h4 class="text-white font-bold mt-6">Breakdown Chips</h4>
+            <p>Each player's row shows individual scoring factors as small chips rather than a flat string. The color of each chip tells you at a glance whether a factor is helping or hurting:</p>
+            <ul>
+                <li><strong class="text-green-300">Green chip</strong> — Positive multiplier (e.g. <em>Park: +14%</em>, <em>SP Skill: +15%</em>, <em>Order #2: +8%</em>).</li>
+                <li><strong class="text-red-300">Red chip</strong> — Negative multiplier (e.g. <em>Dynamic Platoon (R): −15%</em>, <em>Wind In: −5%</em>).</li>
+                <li><strong class="text-slate-400">Slate chip</strong> — Informational context only; no score impact (e.g. <em>Base: 64.76</em>, <em>xwOBA Good: 0.393</em>).</li>
+                <li><strong class="text-red-400">Red status chip</strong> — Player status flags: <em>In the Minors</em>, <em>IL (Injured)</em>, <em>RAINOUT</em>.</li>
+            </ul>
+            <p>All multipliers compound multiplicatively. The total is capped at <strong>+35% / −30%</strong> before being applied to the base score.</p>
+        </div>
+
         <footer class="mt-20 pt-8 border-t border-slate-800 text-slate-500 text-sm text-center">
             &copy; 2026 Zurich Zebras Analytical Department
         </footer>

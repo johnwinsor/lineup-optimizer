@@ -155,14 +155,52 @@
                     </h2>
                     <span class="text-sm text-slate-500" x-text="data?.target_date"></span>
                 </div>
-                <div class="overflow-x-auto rounded-xl border border-slate-700 bg-slate-900 shadow-2xl">
+                <!-- Mobile Cards (shown below md breakpoint) -->
+                <div class="md:hidden space-y-3">
+                    <template x-for="p in data?.recommended_lineup" :key="p.Player">
+                        <div class="bg-slate-900 border border-slate-700 rounded-xl p-4 shadow-lg">
+                            <!-- Header: slot + name + score -->
+                            <div class="flex justify-between items-start mb-3">
+                                <div>
+                                    <span class="text-indigo-400 font-bold text-xs uppercase tracking-wider" x-text="p.Slot"></span>
+                                    <div class="font-bold text-white text-base mt-0.5" x-text="p.Player"></div>
+                                    <div class="text-xs text-slate-500" x-text="p.POS"></div>
+                                </div>
+                                <div class="text-2xl font-mono font-bold" :class="getScoreColor(p.Score)" x-text="p.Score.toFixed(1)"></div>
+                            </div>
+                            <!-- Game + matchup -->
+                            <div class="flex items-center gap-3 py-2.5 border-t border-slate-800 text-xs">
+                                <div class="flex items-center gap-1.5 shrink-0">
+                                    <span :class="p.Order.includes('*') ? 'text-amber-400 italic font-bold' : 'text-slate-200 font-bold'" x-text="p.Order"></span>
+                                    <span class="text-slate-500" x-text="formatTime(p.GameTime)"></span>
+                                </div>
+                                <div class="text-slate-400 truncate">
+                                    <span x-text="p.Opponent"></span>
+                                    <span class="text-slate-600 ml-1.5">xERA <span x-text="p.SP_xERA"></span></span>
+                                </div>
+                            </div>
+                            <!-- Breakdown chips -->
+                            <div class="flex flex-wrap gap-1 pt-2.5 border-t border-slate-800">
+                                <template x-for="(chip, idx) in getBreakdownChips(p.Breakdown)" :key="idx">
+                                    <span :class="chip.type === 'positive' ? 'bg-green-500/20 text-green-300 border-green-500/40' : chip.type === 'negative' ? 'bg-red-500/20 text-red-300 border-red-500/40' : chip.type === 'status' ? 'bg-red-700/30 text-red-400 border-red-600/40' : 'bg-slate-700/50 text-slate-400 border-slate-600/40'"
+                                          class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium border whitespace-nowrap"
+                                          x-text="chipText(chip)"></span>
+                                </template>
+                            </div>
+                            <template x-if="p.Warning">
+                                <div class="mt-2 text-xs text-red-400 font-bold" x-text="p.Warning"></div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+                <!-- Desktop Table (hidden below md breakpoint) -->
+                <div class="hidden md:block overflow-x-auto rounded-xl border border-slate-700 bg-slate-900 shadow-2xl">
                     <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="bg-slate-800/80 text-slate-400 text-xs uppercase tracking-widest border-b border-slate-700">
                                 <th class="px-6 py-4 font-semibold">Slot</th>
                                 <th class="px-6 py-4 font-semibold">Player</th>
-                                <th class="px-6 py-4 font-semibold text-center">Order</th>
-                                <th class="px-6 py-4 font-semibold text-center">Start</th>
+                                <th class="px-4 py-4 font-semibold text-center">Game</th>
                                 <th class="px-6 py-4 font-semibold">Matchup</th>
                                 <th class="px-6 py-4 font-semibold text-right">Score</th>
                                 <th class="px-6 py-4 font-semibold">Breakdown</th>
@@ -176,17 +214,23 @@
                                         <div class="font-bold text-white" x-text="p.Player"></div>
                                         <div class="text-xs text-slate-500" x-text="p.POS"></div>
                                     </td>
-                                    <td class="px-6 py-4 text-center">
-                                        <span :class="p.Order.includes('*') ? 'text-amber-400 italic' : 'text-slate-300'" x-text="p.Order"></span>
+                                    <td class="px-4 py-4 text-center">
+                                        <span :class="p.Order.includes('*') ? 'text-amber-400 italic' : 'text-slate-300'" class="text-sm font-semibold block" x-text="p.Order"></span>
+                                        <span class="text-[10px] text-slate-500 block" x-text="formatTime(p.GameTime)"></span>
                                     </td>
-                                    <td class="px-6 py-4 text-center text-xs text-slate-400" x-text="formatTime(p.GameTime)"></td>
                                     <td class="px-6 py-4">
                                         <div class="text-sm" x-text="p.Opponent"></div>
                                         <div class="text-xs text-slate-500">SP xERA: <span x-text="p.SP_xERA"></span></div>
                                     </td>
-                                    <td class="px-6 py-4 text-right font-mono font-bold text-green-400" x-text="p.Score.toFixed(1)"></td>
+                                    <td class="px-6 py-4 text-right font-mono font-bold" :class="getScoreColor(p.Score)" x-text="p.Score.toFixed(1)"></td>
                                     <td class="px-6 py-4">
-                                        <div class="text-[12px] text-slate-500 max-w-xs leading-tight" x-text="p.Breakdown"></div>
+                                        <div class="flex flex-wrap gap-1">
+                                            <template x-for="(chip, idx) in getBreakdownChips(p.Breakdown)" :key="idx">
+                                                <span :class="chip.type === 'positive' ? 'bg-green-500/20 text-green-300 border-green-500/40' : chip.type === 'negative' ? 'bg-red-500/20 text-red-300 border-red-500/40' : chip.type === 'status' ? 'bg-red-700/30 text-red-400 border-red-600/40' : 'bg-slate-700/50 text-slate-400 border-slate-600/40'"
+                                                      class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium border whitespace-nowrap"
+                                                      x-text="chipText(chip)"></span>
+                                            </template>
+                                        </div>
                                         <template x-if="p.Warning">
                                             <div class="mt-1 text-[12px] text-red-400 font-bold" x-text="p.Warning"></div>
                                         </template>
@@ -203,14 +247,52 @@
                 <h2 class="text-lg font-bold text-white mb-4 flex items-center opacity-60 uppercase tracking-widest">
                     Players Sat
                 </h2>
-                <div class="overflow-x-auto rounded-xl border border-slate-700 bg-slate-900/40">
-                    <table class="w-full text-left border-collapse opacity-80">
+                <!-- Mobile Cards (shown below md breakpoint) -->
+                <div class="md:hidden space-y-3">
+                    <template x-for="p in data?.players_sat" :key="p.Player">
+                        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4">
+                            <!-- Header: slot + name + score -->
+                            <div class="flex justify-between items-start mb-3">
+                                <div>
+                                    <span class="text-slate-500 font-bold text-xs uppercase tracking-wider" x-text="p.Slot"></span>
+                                    <div class="font-bold text-slate-300 text-base mt-0.5" x-text="p.Player"></div>
+                                    <div class="text-xs text-slate-600" x-text="p.POS"></div>
+                                </div>
+                                <div class="text-xl font-mono font-bold text-slate-500" x-text="p.Score.toFixed(1)"></div>
+                            </div>
+                            <!-- Game + matchup -->
+                            <div class="flex items-center gap-3 py-2.5 border-t border-slate-800 text-xs">
+                                <div class="flex items-center gap-1.5 shrink-0">
+                                    <span :class="p.Order.includes('*') ? 'text-amber-600/60 italic font-bold' : 'text-slate-500 font-bold'" x-text="p.Order"></span>
+                                    <span class="text-slate-600" x-text="formatTime(p.GameTime)"></span>
+                                </div>
+                                <div class="text-slate-500 truncate">
+                                    <span x-text="p.Opponent"></span>
+                                    <span class="text-slate-700 ml-1.5">xERA <span x-text="p.SP_xERA"></span></span>
+                                </div>
+                            </div>
+                            <!-- Breakdown chips -->
+                            <div class="flex flex-wrap gap-1 pt-2.5 border-t border-slate-800">
+                                <template x-for="(chip, idx) in getBreakdownChips(p.Breakdown)" :key="idx">
+                                    <span :class="chip.type === 'positive' ? 'bg-green-500/20 text-green-300 border-green-500/40' : chip.type === 'negative' ? 'bg-red-500/20 text-red-300 border-red-500/40' : chip.type === 'status' ? 'bg-red-700/30 text-red-400 border-red-600/40' : 'bg-slate-700/50 text-slate-400 border-slate-600/40'"
+                                          class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium border whitespace-nowrap"
+                                          x-text="chipText(chip)"></span>
+                                </template>
+                            </div>
+                            <template x-if="p.Warning">
+                                <div class="mt-2 text-xs text-red-400/50 font-bold" x-text="p.Warning"></div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+                <!-- Desktop Table (hidden below md breakpoint) -->
+                <div class="hidden md:block overflow-x-auto rounded-xl border border-slate-700 bg-slate-900/40">
+                    <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="bg-slate-800/40 text-slate-500 text-xs uppercase tracking-widest border-b border-slate-700">
                                 <th class="px-6 py-4 font-semibold">Slot</th>
                                 <th class="px-6 py-4 font-semibold">Player</th>
-                                <th class="px-6 py-4 font-semibold text-center">Order</th>
-                                <th class="px-6 py-4 font-semibold text-center">Start</th>
+                                <th class="px-4 py-4 font-semibold text-center">Game</th>
                                 <th class="px-6 py-4 font-semibold">Matchup</th>
                                 <th class="px-6 py-4 font-semibold text-right">Score</th>
                                 <th class="px-6 py-4 font-semibold">Breakdown</th>
@@ -224,17 +306,23 @@
                                         <div class="font-bold text-slate-300" x-text="p.Player"></div>
                                         <div class="text-[12px] text-slate-600" x-text="p.POS"></div>
                                     </td>
-                                    <td class="px-6 py-4 text-center">
-                                        <span :class="p.Order.includes('*') ? 'text-amber-600/60 italic' : 'text-slate-500'" x-text="p.Order"></span>
+                                    <td class="px-4 py-4 text-center">
+                                        <span :class="p.Order.includes('*') ? 'text-amber-600/60 italic' : 'text-slate-500'" class="text-sm font-semibold block" x-text="p.Order"></span>
+                                        <span class="text-[10px] text-slate-600 block" x-text="formatTime(p.GameTime)"></span>
                                     </td>
-                                    <td class="px-6 py-4 text-center text-[10px] text-slate-600" x-text="formatTime(p.GameTime)"></td>
                                     <td class="px-6 py-4">
                                         <div class="text-xs text-slate-500" x-text="p.Opponent"></div>
                                         <div class="text-[12px] text-slate-600">SP xERA: <span x-text="p.SP_xERA"></span></div>
                                     </td>
                                     <td class="px-6 py-4 text-right font-mono text-slate-500" x-text="p.Score.toFixed(1)"></td>
                                     <td class="px-6 py-4">
-                                        <div class="text-[12px] text-slate-600 max-w-xs leading-tight" x-text="p.Breakdown"></div>
+                                        <div class="flex flex-wrap gap-1">
+                                            <template x-for="(chip, idx) in getBreakdownChips(p.Breakdown)" :key="idx">
+                                                <span :class="chip.type === 'positive' ? 'bg-green-500/20 text-green-300 border-green-500/40' : chip.type === 'negative' ? 'bg-red-500/20 text-red-300 border-red-500/40' : chip.type === 'status' ? 'bg-red-700/30 text-red-400 border-red-600/40' : 'bg-slate-700/50 text-slate-400 border-slate-600/40'"
+                                                      class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium border whitespace-nowrap"
+                                                      x-text="chipText(chip)"></span>
+                                            </template>
+                                        </div>
                                         <template x-if="p.Warning">
                                             <div class="mt-1 text-[12px] text-red-400/50 font-bold" x-text="p.Warning"></div>
                                         </template>
@@ -318,6 +406,19 @@
                         this.data = { narrative: `⚠️ ${e.message}. Run the optimizer to generate it.`, recommended_lineup: [], players_sat: [] };
                         this.loading = false;
                     }
+                },
+                getBreakdownChips(breakdown) {
+                    if (!breakdown || !Array.isArray(breakdown)) return [];
+                    return breakdown;
+                },
+                chipText(chip) {
+                    return chip.value ? chip.label + ': ' + chip.value : chip.label;
+                },
+                getScoreColor(score) {
+                    if (score >= 90) return 'text-green-400';
+                    if (score >= 60) return 'text-sky-400';
+                    if (score >= 40) return 'text-yellow-400';
+                    return 'text-slate-500';
                 },
                 getPitcherColor(score) {
                     if (score >= 7.0) return 'border-green-500';
