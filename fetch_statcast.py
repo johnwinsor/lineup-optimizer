@@ -4,9 +4,9 @@ import os
 import sys
 from datetime import datetime
 
-# We will fetch data for both the prior season (2025) and the current season (2026)
-PRIOR_SEASON = 2025
-CURRENT_SEASON = 2026
+_now = datetime.now()
+PRIOR_SEASON = _now.year - 1
+CURRENT_SEASON = _now.year
 
 def get_url(stats_type, season):
     # type=24 is hitters, type=502 is pitchers
@@ -17,6 +17,13 @@ def get_url(stats_type, season):
     else:
         url += "&type=502"
     return url
+
+def fetch_if_missing(url, filename, description):
+    """Prior-year StatCast data is immutable — skip the download if the file already exists."""
+    if os.path.exists(filename):
+        print(f"Skipping {description} — {filename} already present.")
+        return True
+    return fetch_and_save(url, filename, description)
 
 def fetch_and_save(url, filename, description):
     print(f"Fetching {description}...")
@@ -77,9 +84,9 @@ def compare_steamer_projections(old_data, new_data):
     print("-------------------------------------------\n")
 
 def main():
-    # 1. Prior Year Data (Baseline)
-    fetch_and_save(get_url('bat', PRIOR_SEASON), f"statcast-hitters-{PRIOR_SEASON}.json", f"{PRIOR_SEASON} MLB Hitters")
-    fetch_and_save(get_url('pit', PRIOR_SEASON), f"statcast-pitchers-{PRIOR_SEASON}.json", f"{PRIOR_SEASON} MLB Pitchers")
+    # 1. Prior Year Data (Baseline) — immutable, skip if already fetched this season
+    fetch_if_missing(get_url('bat', PRIOR_SEASON), f"statcast-hitters-{PRIOR_SEASON}.json", f"{PRIOR_SEASON} MLB Hitters")
+    fetch_if_missing(get_url('pit', PRIOR_SEASON), f"statcast-pitchers-{PRIOR_SEASON}.json", f"{PRIOR_SEASON} MLB Pitchers")
 
     # 2. Current Year Data (Recency)
     fetch_and_save(get_url('bat', CURRENT_SEASON), f"statcast-hitters-{CURRENT_SEASON}.json", f"{CURRENT_SEASON} MLB Hitters")

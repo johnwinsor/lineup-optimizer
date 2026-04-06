@@ -1,8 +1,13 @@
 name: Daily Data Refresh
 on:
   schedule:
-    - cron: '0 4 * * *' # 4:00 AM UTC
-  workflow_dispatch: # Allow manual trigger
+    - cron: '0 4 * * *' # 4:00 AM UTC — refresh projections before the day's games
+  workflow_dispatch:
+
+# Prevent concurrent gh-pages deploys; cancel the waiting run if a new one queues up
+concurrency:
+  group: gh-pages-deploy
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -13,33 +18,48 @@ env:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Install uv
-        run: curl -LsSf https://astral.sh/uv/install.sh | sh
-        
+        uses: astral-sh/setup-uv@v5
+
       - name: Install dependencies
         run: uv sync
-        
-      - name: Fetch Statcast and Projections
+
+      - name: Download existing data from gh-pages
+        run: |
+          # Pull existing JSON (crosswalk, prior-year StatCast) so fetch_statcast.py
+          # can skip immutable prior-year files that are already present.
+          git fetch origin gh-pages
+          git checkout origin/gh-pages -- "*.json" || true
+
+      - name: Fetch StatCast and Projections
         run: uv run python fetch_statcast.py
-        
+
+      - name: Run optimizer (post-projection refresh)
+        # AI narrative skipped — this is a data refresh run, not the primary hourly update
+        run: uv run python update_web_data.py --skip-ai
+
       - name: Prepare deployment
         run: |
           mkdir -p public
-          # Copy everything needed for the dashboard and the optimizer
           cp index.html public/
           cp about.html public/
           cp *.json public/ 2>/dev/null || true
           touch public/.nojekyll
-          
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          keep_files: true # IMPORTANT: We want to keep existing files
+          keep_files: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "::warning::Daily refresh failed — projection data and lineups may be stale"

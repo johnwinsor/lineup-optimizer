@@ -1,9 +1,14 @@
 name: Hourly Lineup Update
 on:
   schedule:
-    - cron: '0 12-23 * * *' # Every hour from 12 PM to 11 PM UTC
-    - cron: '0 0-1 * * *'   # 12 AM and 1 AM UTC
+    - cron: '0 12-23 * * *' # Every hour from 12 PM to 11 PM UTC (8 AM–7 PM ET)
+    - cron: '0 0-1 * * *'   # 12 AM and 1 AM UTC (8 PM–9 PM ET)
   workflow_dispatch:
+
+# Prevent concurrent gh-pages deploys; cancel the waiting run if a new one queues up
+concurrency:
+  group: gh-pages-deploy
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -14,28 +19,29 @@ env:
 jobs:
   optimize:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Install uv
-        run: curl -LsSf https://astral.sh/uv/install.sh | sh
-        
+        uses: astral-sh/setup-uv@v5
+
       - name: Install dependencies
         run: uv sync
-        
+
       - name: Download existing data from gh-pages
         run: |
-          # We checkout the gh-pages branch into a temporary folder to get the latest projections
+          # Pull latest JSON files (crosswalk, projections, prior lineup data)
           git fetch origin gh-pages
           git checkout origin/gh-pages -- "*.json" || true
           echo "Current directory files:"
           ls -F
-        
+
       - name: Run Full Optimizer (Hitters & Pitchers)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: uv run python update_web_data.py
-        
+
       - name: Prepare public files
         run: |
           mkdir -p public
@@ -45,7 +51,7 @@ jobs:
           touch public/.nojekyll
           echo "Files to be deployed:"
           ls -R public/
-        
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -55,3 +61,7 @@ jobs:
           keep_files: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "::warning::Hourly optimizer failed — lineup data may be stale"
