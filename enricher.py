@@ -1,87 +1,116 @@
 import pandas as pd
 import json
-import requests
 import os
+import logging
 from harvester import OttoneuScraper
 from crosswalks import normalize_name
 
-class OttoneuEnricher:
-    _projection_cache = {}
+logger = logging.getLogger(__name__)
+
+
+class BaseEnricher:
+    """
+    Shared projection-loading and player-matching logic for both hitter
+    and pitcher enrichers. Subclasses implement `projection_filename` and
+    `enrich_roster()`.
+    """
+    _projection_cache = {}  # Keyed by filename — shared across all subclasses
 
     def __init__(self, league_id=1077, team_id=7582, projection_system="steamer"):
         self.scraper = OttoneuScraper(league_id, team_id)
         self.projection_system = projection_system.lower()
 
+    @property
+    def projection_filename(self):
+        raise NotImplementedError
+
     def fetch_projections(self):
-        cache_key = self.projection_system
-        if cache_key in OttoneuEnricher._projection_cache:
-            return OttoneuEnricher._projection_cache[cache_key].copy()
+        cache_key = self.projection_filename
+        if cache_key in BaseEnricher._projection_cache:
+            return BaseEnricher._projection_cache[cache_key].copy()
 
-        print(f"Loading {self.projection_system.upper()} batting projections from local cache...")
-        filename = f"projections-{self.projection_system}.json"
-        
-        # Backward compatibility for old filename
-        if not os.path.exists(filename) and self.projection_system == "steamer":
-            filename = "steamer-hitters.json"
-
+        logger.info(f"Loading {self.projection_system.upper()} projections from {self.projection_filename}...")
         try:
-            with open(filename, "r") as f:
+            with open(self.projection_filename, "r") as f:
                 data = json.load(f)
             df = pd.DataFrame(data)
-            OttoneuEnricher._projection_cache[cache_key] = df
+            BaseEnricher._projection_cache[cache_key] = df
             return df.copy()
         except FileNotFoundError:
-            raise Exception(f"Failed to load {self.projection_system.upper()} projections. Please run 'uv run python fetch_statcast.py' first.")
+            raise Exception(
+                f"Projection file '{self.projection_filename}' not found. "
+                "Run 'uv run python fetch_statcast.py' first."
+            )
+
+    def _build_indexes(self, projections):
+        """
+        Builds two O(1) lookup dicts from the projections DataFrame.
+        Returns (by_fgid, by_name) where:
+          by_fgid  = {str(playerid): Series}
+          by_name  = {normalized_name: Series}  (first occurrence wins)
+        """
+        projections = projections.copy()
+        projections['norm_name'] = projections['PlayerName'].apply(normalize_name)
+        by_fgid = {str(r['playerid']): r for _, r in projections.iterrows()}
+        by_name = {}
+        for _, r in projections.iterrows():
+            nn = r['norm_name']
+            if nn not in by_name:
+                by_name[nn] = r
+        return by_fgid, by_name
+
+    def _match_player(self, row, by_fgid, by_name):
+        """
+        Returns the matched projection row (Series) or None.
+        Prefers FGID match; falls back to normalized name.
+        """
+        fgid = str(row.get('FGID', ''))
+        if fgid and fgid not in ('nan', ''):
+            m = by_fgid.get(fgid)
+            if m is not None:
+                return m
+        return by_name.get(normalize_name(str(row.get('Name', ''))))
+
+
+class OttoneuEnricher(BaseEnricher):
+
+    @property
+    def projection_filename(self):
+        return f"projections-{self.projection_system}.json"
 
     def enrich_roster(self):
-        hitters, pitchers = self.scraper.get_roster()
+        hitters, _ = self.scraper.get_roster()
         projections = self.fetch_projections()
-        
-        # Initialize result columns in hitters
+
+        # Initialize projection columns
         for col in ['playerid', 'PA_y', 'R_y', 'HR_y', 'RBI_y', 'SB_y', 'AVG_y', 'xMLBAMID']:
             hitters[col] = None
 
-        # Create normalization mapping for projections
-        projections['norm_name'] = projections['PlayerName'].apply(normalize_name)
-        
-        # 1. Match Loop
-        for idx, row in hitters.iterrows():
-            name = row['Name']
-            fgid = str(row.get('FGID', ''))
-            norm = normalize_name(name)
-            
-            match = pd.DataFrame()
-            
-            # Try FGID match if available
-            if fgid and fgid != 'nan' and fgid != '':
-                match = projections[projections['playerid'].astype(str) == fgid]
-            
-            # Try Normalized Name match if no FGID match
-            if match.empty:
-                match = projections[projections['norm_name'] == norm]
-            
-            if not match.empty:
-                m = match.iloc[0]
-                hitters.at[idx, 'playerid'] = m['playerid']
-                hitters.at[idx, 'PA_y'] = m['PA']
-                hitters.at[idx, 'R_y'] = m['R']
-                hitters.at[idx, 'HR_y'] = m['HR']
-                hitters.at[idx, 'RBI_y'] = m['RBI']
-                hitters.at[idx, 'SB_y'] = m['SB']
-                hitters.at[idx, 'AVG_y'] = m['AVG']
-                hitters.at[idx, 'xMLBAMID'] = m['xMLBAMID']
+        by_fgid, by_name = self._build_indexes(projections)
 
-        # Calculate a simple efficiency score
-        # Note: We use .astype(float) and handle division by zero
+        for idx, row in hitters.iterrows():
+            m = self._match_player(row, by_fgid, by_name)
+            if m is not None:
+                hitters.at[idx, 'playerid']  = m['playerid']
+                hitters.at[idx, 'PA_y']      = m['PA']
+                hitters.at[idx, 'R_y']       = m['R']
+                hitters.at[idx, 'HR_y']      = m['HR']
+                hitters.at[idx, 'RBI_y']     = m['RBI']
+                hitters.at[idx, 'SB_y']      = m['SB']
+                hitters.at[idx, 'AVG_y']     = m['AVG']
+                hitters.at[idx, 'xMLBAMID']  = m['xMLBAMID']
+
+        # Zebras hitter efficiency score: (R+HR+RBI+SB)/PA*100 + AVG*100
         hitters['Score'] = (
-            (hitters['R_y'].fillna(0).astype(float) + 
-             hitters['HR_y'].fillna(0).astype(float) + 
-             hitters['RBI_y'].fillna(0).astype(float) + 
-             hitters['SB_y'].fillna(0).astype(float)) / 
+            (hitters['R_y'].fillna(0).astype(float) +
+             hitters['HR_y'].fillna(0).astype(float) +
+             hitters['RBI_y'].fillna(0).astype(float) +
+             hitters['SB_y'].fillna(0).astype(float)) /
             hitters['PA_y'].fillna(1).astype(float).replace(0, 1) * 100
         ) + (hitters['AVG_y'].fillna(0).astype(float) * 100)
-        
+
         return hitters.sort_values(by='Score', ascending=False)
+
 
 if __name__ == "__main__":
     enricher = OttoneuEnricher()

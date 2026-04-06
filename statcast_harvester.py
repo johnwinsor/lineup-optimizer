@@ -1,16 +1,22 @@
 import json
 import pandas as pd
 import os
+import logging
+from datetime import datetime
+
+logger = logging.getLogger(__name__)
 
 class StatCastHarvester:
-    def __init__(self, prior_year=2025, current_year=2026):
+    def __init__(self, prior_year=None, current_year=None):
+        current_year = current_year or datetime.now().year
+        prior_year = prior_year or (current_year - 1)
         self.prior_year = prior_year
         self.current_year = current_year
-        
+
         # Load Prior Year
         self.prior_hitters = self._load_data(f'statcast-hitters-{prior_year}.json')
         self.prior_pitchers = self._load_data(f'statcast-pitchers-{prior_year}.json')
-        
+
         # Load Current Year
         self.current_hitters = self._load_data(f'statcast-hitters-{current_year}.json')
         self.current_pitchers = self._load_data(f'statcast-pitchers-{current_year}.json')
@@ -26,7 +32,7 @@ class StatCastHarvester:
                     return df.set_index('xMLBAMID')
                 return df
         except Exception as e:
-            print(f"Error loading {filename}: {e}")
+            logger.warning(f"Failed to load StatCast file '{filename}': {e}")
             return pd.DataFrame()
 
     def get_blended_hitter_stats(self, mlb_id, weight_current=0.0):

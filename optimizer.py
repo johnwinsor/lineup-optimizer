@@ -1,25 +1,26 @@
 import pandas as pd
 import numpy as np
+import logging
 from scipy.optimize import linprog
 from enricher import OttoneuEnricher
 from daily_engine import DailyEngine
+import config as C
+
+logger = logging.getLogger(__name__)
+
 
 class OttoneuOptimizer:
-    def __init__(self, league_id=1077, team_id=7582, min_score=40.0, projection_system="steamer"):
+    def __init__(self, league_id=1077, team_id=7582, min_score=None, projection_system="steamer"):
         self.enricher = OttoneuEnricher(league_id, team_id, projection_system=projection_system)
         self.daily_engine = DailyEngine(league_id, team_id, projection_system=projection_system)
-        self.min_score = min_score
-        # Players who should never be benched if they are starting in MLB (Team 7582 specific)
-        self.do_not_sit = [
-            "Trea Turner", "Yordan Alvarez", "Kyle Schwarber", 
-            "Christian Yelich", "Junior Caminero", "Kazuma Okamoto"
-        ] if team_id == 7582 else []
+        self.min_score = min_score if min_score is not None else C.MIN_SCORE_FLOOR
+        # Pull "do not sit" list from config; defaults to empty for unlisted teams
+        self.do_not_sit = C.DO_NOT_SIT.get(team_id, [])
 
     def optimize_lineup(self, target_date=None):
         if target_date:
-            print(f"Optimizing for specific date: {target_date}")
+            logger.info(f"Optimizing lineup for {target_date}...")
             hitters = self.daily_engine.get_daily_projections(target_date)
-            # Filter for players who are actually starting in MLB
             hitters = hitters[hitters['IsStarting'] == True].copy()
             score_col = 'DailyScore'
             current_min = self.min_score
@@ -28,93 +29,87 @@ class OttoneuOptimizer:
             hitters = hitters.dropna(subset=['Score'])
             score_col = 'Score'
             current_min = 0
-            
+
         if hitters.empty:
-            print("No players available to optimize.")
+            logger.warning("No players available to optimize — roster is empty after filtering.")
             return None
-            
+
         slots = ['C1', 'C2', '1B', '2B', 'SS', 'MI', '3B', 'OF1', 'OF2', 'OF3', 'OF4', 'OF5', 'UTIL']
         num_players = len(hitters)
         num_slots = len(slots)
-        
-        # objective function: maximize (Score - min_score)
+
+        # Objective: maximise (score - floor), with large bonus to force DNS players in
         c = []
         for _, row in hitters.iterrows():
             is_core = row['Name'] in self.do_not_sit
-            for s in range(num_slots):
-                profit = (row[score_col] - current_min)
+            for _ in slots:
+                profit = row[score_col] - current_min
                 if is_core and target_date:
-                    profit += 1000 # Force inclusion of DO NOT SIT players
+                    profit += 1000  # Force inclusion
                 c.append(-profit)
-        
-        A_eq = []
-        b_eq = []
-        A_ub = []
-        b_ub = []
-        
+
+        A_ub, b_ub = [], []
+        A_eq, b_eq = [], []
+
+        # Each slot filled at most once (≤1 when daily — allows empty slots on off-days)
         for s in range(num_slots):
-            row_constraint = np.zeros(num_players * num_slots)
+            row_c = np.zeros(num_players * num_slots)
             for p in range(num_players):
-                row_constraint[p * num_slots + s] = 1
+                row_c[p * num_slots + s] = 1
             if target_date:
-                A_ub.append(row_constraint)
-                b_ub.append(1)
+                A_ub.append(row_c); b_ub.append(1)
             else:
-                A_eq.append(row_constraint)
-                b_eq.append(1)
-            
+                A_eq.append(row_c); b_eq.append(1)
+
+        # Each player used in at most one slot
         for p in range(num_players):
-            row_constraint = np.zeros(num_players * num_slots)
+            row_c = np.zeros(num_players * num_slots)
             for s in range(num_slots):
-                row_constraint[p * num_slots + s] = 1
-            A_ub.append(row_constraint)
-            b_ub.append(1)
-            
+                row_c[p * num_slots + s] = 1
+            A_ub.append(row_c); b_ub.append(1)
+
+        # Positional eligibility bounds
         bounds = []
-        for p_idx, player_row in hitters.iterrows():
+        for _, player_row in hitters.iterrows():
             eligibility = self._get_eligibility(player_row['POS'])
             for s_name in slots:
-                if self._is_eligible(s_name, eligibility):
-                    bounds.append((0, 1))
-                else:
-                    bounds.append((0, 0))
-                    
-        if not A_eq:
-            A_eq, b_eq = None, None
-            
-        res = linprog(c, A_ub=A_ub, b_ub=b_ub, A_eq=A_eq, b_eq=b_eq, bounds=bounds, method='highs')
-        
+                bounds.append((0, 1) if self._is_eligible(s_name, eligibility) else (0, 0))
+
+        res = linprog(
+            c,
+            A_ub=A_ub, b_ub=b_ub,
+            A_eq=A_eq if A_eq else None,
+            b_eq=b_eq if b_eq else None,
+            bounds=bounds,
+            method='highs',
+        )
+
         if not res.success:
-            print("Optimization failed:", res.message)
+            logger.error(f"LP optimization failed: {res.message}")
             return None
-            
-        chosen_players = []
+
+        chosen = []
         x = res.x.reshape((num_players, num_slots))
         for p in range(num_players):
             for s in range(num_slots):
                 if x[p, s] > 0.5:
-                    res_dict = {
-                        'Slot': slots[s],
-                        'Player': hitters.iloc[p]['Name'],
-                        'POS': hitters.iloc[p]['POS'],
-                        'Score': hitters.iloc[p][score_col]
+                    player = hitters.iloc[p]
+                    entry = {
+                        'Slot':   slots[s],
+                        'Player': player['Name'],
+                        'POS':    player['POS'],
+                        'Score':  player[score_col],
                     }
-                    if 'Breakdown' in hitters.columns:
-                        res_dict['Breakdown'] = hitters.iloc[p]['Breakdown']
-                    if 'Opponent' in hitters.columns:
-                        res_dict['Opponent'] = hitters.iloc[p]['Opponent']
-                    if 'SP_xERA' in hitters.columns:
-                        res_dict['SP_xERA'] = hitters.iloc[p]['SP_xERA']
-                    if 'Warning' in hitters.columns:
-                        res_dict['Warning'] = hitters.iloc[p]['Warning']
-                    if 'GameTime' in hitters.columns:
-                        res_dict['GameTime'] = hitters.iloc[p]['GameTime']
-                    chosen_players.append(res_dict)
-        
-        if not chosen_players:
+                    for col in ('Breakdown', 'Opponent', 'SP_xERA', 'Warning', 'GameTime'):
+                        if col in hitters.columns:
+                            entry[col] = player[col]
+                    chosen.append(entry)
+
+        if not chosen:
+            logger.warning("Optimizer produced no selections — all scores may be below floor.")
             return pd.DataFrame()
-            
-        df = pd.DataFrame(chosen_players)
+
+        df = pd.DataFrame(chosen)
         df['Slot'] = pd.Categorical(df['Slot'], categories=slots, ordered=True)
         return df.sort_values(by='Slot')
 
@@ -122,30 +117,24 @@ class OttoneuOptimizer:
         return pos_str.replace('/', ' ').split()
 
     def _is_eligible(self, slot_name, eligibility):
-        if slot_name.startswith('C'):
-            return 'C' in eligibility
-        if slot_name == '1B':
-            return '1B' in eligibility
-        if slot_name == '2B':
-            return '2B' in eligibility
-        if slot_name == 'SS':
-            return 'SS' in eligibility
-        if slot_name == 'MI':
-            return '2B' in eligibility or 'SS' in eligibility
-        if slot_name == '3B':
-            return '3B' in eligibility
-        if slot_name.startswith('OF'):
-            return 'OF' in eligibility
-        if slot_name == 'UTIL':
-            return True # any hitter
+        if slot_name.startswith('C'):  return 'C'  in eligibility
+        if slot_name == '1B':          return '1B' in eligibility
+        if slot_name == '2B':          return '2B' in eligibility
+        if slot_name == 'SS':          return 'SS' in eligibility
+        if slot_name == 'MI':          return '2B' in eligibility or 'SS' in eligibility
+        if slot_name == '3B':          return '3B' in eligibility
+        if slot_name.startswith('OF'): return 'OF' in eligibility
+        if slot_name == 'UTIL':        return True
         return False
 
+
 if __name__ == "__main__":
+    import config as C
+    C.setup_logging()
     optimizer = OttoneuOptimizer()
-    lineup = optimizer.optimize_lineup(target_date="2024-06-15")
+    lineup = optimizer.optimize_lineup(target_date="2025-06-15")
     if lineup is not None and not lineup.empty:
-        print("Optimized Lineup:")
-        print(lineup)
-        print(f"\nTotal Team Score: {lineup['Score'].sum():.2f}")
+        print(lineup[['Slot', 'Player', 'Score']].to_string(index=False))
+        print(f"\nTotal Score: {lineup['Score'].sum():.2f}")
     else:
         print("No valid lineup generated.")

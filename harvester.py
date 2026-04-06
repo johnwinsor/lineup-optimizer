@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import re
+import logging
+
+logger = logging.getLogger(__name__)
 
 class OttoneuScraper:
     _roster_cache = {} # { team_id: (hitters_df, pitchers_df) }
@@ -23,18 +26,14 @@ class OttoneuScraper:
             response = requests.get(url, timeout=5)
             if response.status_code == 200:
                 soup = BeautifulSoup(response.content, "html.parser")
-                # Look for (AAA), (AA), etc. in the team/position area
-                # It's often in a <span> or aria-label
                 text = soup.get_text()
-                # Search for level patterns
                 levels = ["(AAA)", "(AA)", "(A+)", "(A)", "(A-)", "(RK)"]
                 for level in levels:
                     if level in text:
                         res = level.strip("()")
                         self._level_cache[fg_id] = res
                         return res
-                
-                # Check for "mlevel":"..." in the scripts
+
                 scripts = soup.find_all("script")
                 for script in scripts:
                     if script.string and '"mlevel":' in script.string:
@@ -44,10 +43,11 @@ class OttoneuScraper:
                             if mlevel != "MLB":
                                 self._level_cache[fg_id] = mlevel
                                 return mlevel
-            
+
             self._level_cache[fg_id] = "MLB"
             return "MLB"
-        except Exception:
+        except Exception as e:
+            logger.warning(f"get_player_level failed for fgid={fg_id}: {e}")
             return "MLB"
 
     def get_roster(self):
@@ -55,7 +55,7 @@ class OttoneuScraper:
             h, p = OttoneuScraper._roster_cache[self.team_id]
             return h.copy(), p.copy()
 
-        print(f"Scraping Ottoneu roster for team {self.team_id}...")
+        logger.info(f"Scraping Ottoneu roster for team {self.team_id}...")
         response = requests.get(self.url)
         if response.status_code != 200:
             raise Exception(f"Failed to fetch {self.url}: {response.status_code}")
@@ -79,19 +79,26 @@ class OttoneuScraper:
         headers_row = table.find("thead").find_all("th")
         headers = [th.text.strip() for th in headers_row]
         rows = table.find("tbody").find_all("tr")
-        
+
         data = []
+        current_section = "active"  # Track which section we're in
         for row in rows:
             cols = row.find_all("td")
             if not cols: continue
-            
-            # Check if this is a section header (like "Minors" or "Injured")
+
+            # Section header row (e.g. "Minors", "Injured List") — update section and skip
             if len(cols) == 1 and 'section-leader' in cols[0].get('class', []):
+                section_text = cols[0].text.strip().lower()
+                if 'minor' in section_text:
+                    current_section = "minors"
+                elif 'injur' in section_text or 'il' in section_text:
+                    current_section = "injured"
+                else:
+                    current_section = "active"
                 continue
 
             row_data = {}
-            # Check for Minors/IL status based on row class or position in table
-            is_minors = 'minors' in str(row.get('class', [])).lower()
+            is_minors = current_section == "minors"
             
             for i, col in enumerate(cols):
                 if i >= len(headers): break
@@ -117,18 +124,30 @@ class OttoneuScraper:
                         row_data['OttoneuID'] = link['href'].split('=')[-1]
                         row_data['Name'] = link.text.strip()
                         row_data['Team'] = team_candidate
-                        
-                        # Injury detection
+
+                        # Minors detection — level appears in the tinytext span (e.g. "MIL A+")
+                        minor_levels = ['AAA', 'AA', 'A+', 'A-', ' A ', 'RK']
+                        span = col.find('span', class_='tinytext')
+                        span_text = span.text.strip() if span else ''
+                        row_data['IsMinors'] = any(lvl in span_text for lvl in minor_levels)
+
+                        # Injury detection — count "IL" occurrences, but MIL contains "IL"
                         il_count = full_text.count('IL')
                         if "MIL" in full_text:
                             row_data['Injured'] = il_count > 1
                         else:
                             row_data['Injured'] = il_count > 0
-                            
-                        # FGID extraction
+
+                        # FGID extraction — handles both old (?playerid=) and new (/players/name/ID/) formats
                         fg_link = col.find("a", href=lambda x: x and "fangraphs.com" in x)
                         if fg_link:
-                            row_data['FGID'] = fg_link['href'].split('playerid=')[-1].split('&')[0]
+                            href = fg_link['href']
+                            if 'playerid=' in href:
+                                row_data['FGID'] = href.split('playerid=')[-1].split('&')[0]
+                            else:
+                                m = re.search(r'/players/[^/]+/([^/]+)/', href)
+                                if m:
+                                    row_data['FGID'] = m.group(1)
                     else:
                         row_data['Name'] = full_text
                         row_data['Team'] = team_candidate
@@ -142,10 +161,6 @@ class OttoneuScraper:
                     else:
                         row_data[header] = val
             
-            # Additional check for minors players who often have no team listed in the table
-            if is_minors:
-                row_data['IsMinors'] = True
-                
             data.append(row_data)
         
         return pd.DataFrame(data)

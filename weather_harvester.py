@@ -1,8 +1,17 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import time
+import logging
+
+logger = logging.getLogger(__name__)
+
+WEATHER_TTL_SECONDS = 3600  # Re-fetch at most once per hour
 
 class WeatherHarvester:
+    _cache = None
+    _cache_time = 0.0
+
     def __init__(self):
         self.url = "https://www.rotowire.com/baseball/weather.php"
         self.team_map = {
@@ -17,6 +26,10 @@ class WeatherHarvester:
         }
 
     def get_weather_report(self):
+        now = time.time()
+        if WeatherHarvester._cache is not None and (now - WeatherHarvester._cache_time) < WEATHER_TTL_SECONDS:
+            return WeatherHarvester._cache
+
         try:
             response = requests.get(self.url, timeout=10)
             if response.status_code != 200:
@@ -77,10 +90,12 @@ class WeatherHarvester:
                     'is_dome': "dome" in details.lower() or "roof closed" in details.lower()
                 }
                 
+            WeatherHarvester._cache = report
+            WeatherHarvester._cache_time = now
             return report
         except Exception as e:
-            print(f"Error harvesting weather: {e}")
-            return {}
+            logger.warning(f"Weather harvest failed: {e}")
+            return WeatherHarvester._cache if WeatherHarvester._cache is not None else {}
 
 if __name__ == "__main__":
     harvester = WeatherHarvester()

@@ -2,73 +2,68 @@ import datetime
 import pytz
 import argparse
 import json
+import logging
+import config as C
 from main import run_optimizer_hitter
 from pitcher_optimizer import run_pitcher_optimizer
 
+C.setup_logging()
+logger = logging.getLogger(__name__)
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Update all team lineup JSON files (Optimized)")
-    parser.add_argument("--skip-ai", action="store_true", help="Skip AI narrative generation to save quota")
+    parser = argparse.ArgumentParser(description="Update all team lineup JSON files")
+    parser.add_argument("--skip-ai", action="store_true", help="Skip AI narrative generation")
     args = parser.parse_args()
 
-    # Determine Today and Tomorrow in MLB Time
     tz = pytz.timezone('US/Eastern')
-    today = datetime.datetime.now(tz).strftime('%Y-%m-%d')
+    today    = datetime.datetime.now(tz).strftime('%Y-%m-%d')
     tomorrow = (datetime.datetime.now(tz) + datetime.timedelta(days=1)).strftime('%Y-%m-%d')
 
-    # Define the 4 combinations for hitters
-    jobs = [
-        ("atc", today, "lineup_atc_today.json"),
-        ("steamer", today, "lineup_steamer_today.json"),
-        ("atc", tomorrow, "lineup_atc_tomorrow.json"),
+    hitter_jobs = [
+        ("atc",     today,    "lineup_atc_today.json"),
+        ("steamer", today,    "lineup_steamer_today.json"),
+        ("atc",     tomorrow, "lineup_atc_tomorrow.json"),
         ("steamer", tomorrow, "lineup_steamer_tomorrow.json"),
     ]
-    
-    # Define the 4 combinations for pitchers
     pitcher_jobs = [
-        ("atc", today, "pitchers_atc_today.json"),
-        ("steamer", today, "pitchers_steamer_today.json"),
-        ("atc", tomorrow, "pitchers_atc_tomorrow.json"),
+        ("atc",     today,    "pitchers_atc_today.json"),
+        ("steamer", today,    "pitchers_steamer_today.json"),
+        ("atc",     tomorrow, "pitchers_atc_tomorrow.json"),
         ("steamer", tomorrow, "pitchers_steamer_tomorrow.json"),
     ]
 
-    # Define the Teams
-    teams = [7582, 7587, 7581, 7641]
-    
-    print(f"🚀 Updating local web data for {len(teams)} teams for {today} and {tomorrow}...")
-    print("✨ Optimization: Reusing projection data in-memory across all runs.")
+    print(f"Updating web data for {len(C.TEAM_IDS)} teams — {today} and {tomorrow}...")
 
-    # Run Hitters (Today/Tomorrow)
-    for team in teams:
-        for proj, date, base_filename in jobs:
-            # Filename format: lineup_7582_atc_today.json
-            filename = base_filename.replace("lineup_", f"lineup_{team}_")
-            print(f"\n--- Generating Hitter Lineup: {filename} (Team {team}, {proj.upper()}) ---")
-            
-            # Call directly instead of subprocess
-            run_optimizer_hitter(
-                projection_system=proj,
-                target_date=date,
-                team_id=team,
-                output_filename=filename,
-                skip_ai=args.skip_ai
-            )
+    for team in C.TEAM_IDS:
+        team_name = C.TEAM_NAMES.get(team, f"Team {team}")
 
-    # Run Pitchers (Today/Tomorrow)
-    for team in teams:
-        for proj, date, base_filename in pitcher_jobs:
-            # Filename format: pitchers_7582_atc_today.json
-            filename = base_filename.replace("pitchers_", f"pitchers_{team}_")
-            print(f"\n--- Generating Pitcher Lineup: {filename} (Team {team}, {proj.upper()}) ---")
-            
-            # Call directly instead of subprocess
-            data = run_pitcher_optimizer(target_date=date, projection_system=proj, team_id=team)
-            
-            # Save JSON manually since run_pitcher_optimizer returns dict
-            with open(filename, 'w') as f:
-                json.dump(data, f, indent=4)
-            print(f"Web dashboard data exported to {filename}")
+        for proj, date, base_file in hitter_jobs:
+            filename = base_file.replace("lineup_", f"lineup_{team}_")
+            print(f"  [{team_name}] {proj.upper()} hitters {date} → {filename}")
+            try:
+                run_optimizer_hitter(
+                    projection_system=proj,
+                    target_date=date,
+                    team_id=team,
+                    output_filename=filename,
+                    skip_ai=args.skip_ai,
+                )
+            except Exception as e:
+                logger.error(f"Hitter job failed ({team}, {proj}, {date}): {e}")
 
-    print("\n✅ All JSON files updated. Refresh your local browser to see changes.")
+        for proj, date, base_file in pitcher_jobs:
+            filename = base_file.replace("pitchers_", f"pitchers_{team}_")
+            print(f"  [{team_name}] {proj.upper()} pitchers {date} → {filename}")
+            try:
+                data = run_pitcher_optimizer(target_date=date, projection_system=proj, team_id=team)
+                with open(filename, 'w') as f:
+                    json.dump(data, f, indent=4)
+            except Exception as e:
+                logger.error(f"Pitcher job failed ({team}, {proj}, {date}): {e}")
+
+    print("Done. All JSON files updated.")
+
 
 if __name__ == "__main__":
     main()

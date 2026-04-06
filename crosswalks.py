@@ -28,8 +28,24 @@ class TeamCrosswalk:
         'LAN': 'LAD'
     }
 
-    # Ottoneu/FanGraphs -> MLB StatsAPI
-    OTTONEU_TO_MLB = {v: k for k, v in MLB_TO_OTTONEU.items()}
+    # Ottoneu/FanGraphs -> MLB StatsAPI (explicit — auto-reversal loses the canonical code)
+    OTTONEU_TO_MLB = {
+        'CHW': 'CWS',
+        'KCR': 'KC',
+        'WSN': 'WSH',
+        'SDP': 'SD',
+        'SFG': 'SF',
+        'ARI': 'AZ',
+        'TBR': 'TB',
+        'LAA': 'LAA',
+        'MIA': 'MIA',
+        'ATH': 'ATH',
+        'STL': 'STL',
+        'NYY': 'NYY',
+        'NYM': 'NYM',
+        'CHC': 'CHC',
+        'LAD': 'LAD',
+    }
 
     @classmethod
     def to_ottoneu(cls, mlb_abb):

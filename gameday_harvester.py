@@ -3,15 +3,45 @@ from pybaseball import playerid_lookup
 import pandas as pd
 from datetime import datetime
 import requests
+import json
+import logging
+import os
 from statcast_harvester import StatCastHarvester
 from defense_harvester import DefenseHarvester
-from crosswalks import TeamCrosswalk, PlayerCrosswalk, get_team_ottoneu
+from crosswalks import TeamCrosswalk, PlayerCrosswalk, get_team_ottoneu, normalize_name
+
+logging.basicConfig(level=logging.WARNING, format='%(levelname)s [%(filename)s:%(lineno)d] %(message)s')
+logger = logging.getLogger(__name__)
+
+PLAYER_ID_CROSSWALK_FILE = "player_id_crosswalk.json"
 
 class GameDayHarvester:
     _instance = None
-    _matchups_cache = {} 
-    _bvp_cache = {} # Shared batter vs pitcher stats
+    _matchups_cache = {}
+    _bvp_cache = {}         # Shared batter vs pitcher stats
     _player_data_cache = {} # Shared hand/stats/etc
+    _id_crosswalk = None    # Persistent FGID -> MLB BAMID crosswalk
+    _boxscore_cache = {}    # game_pk -> boxscore_data result
+
+    @classmethod
+    def _load_id_crosswalk(cls):
+        if cls._id_crosswalk is None:
+            try:
+                with open(PLAYER_ID_CROSSWALK_FILE, 'r') as f:
+                    cls._id_crosswalk = json.load(f)
+                logger.info(f"Loaded {len(cls._id_crosswalk)} entries from player ID crosswalk.")
+            except (FileNotFoundError, json.JSONDecodeError):
+                cls._id_crosswalk = {}
+        return cls._id_crosswalk
+
+    @classmethod
+    def _save_id_crosswalk(cls):
+        if cls._id_crosswalk is not None:
+            try:
+                with open(PLAYER_ID_CROSSWALK_FILE, 'w') as f:
+                    json.dump(cls._id_crosswalk, f, indent=2)
+            except Exception as e:
+                logger.warning(f"Failed to save player ID crosswalk: {e}")
 
     @classmethod
     def get_instance(cls):
@@ -29,53 +59,109 @@ class GameDayHarvester:
         self.statcast = StatCastHarvester()
         self.defense = DefenseHarvester()
 
-    def get_mlb_id(self, player_name, target_year=2025, team_abb=None):
+    def get_mlb_id(self, player_name, target_year=None, team_abb=None, fg_id=None):
+        if target_year is None:
+            target_year = datetime.now().year
+
+        # 1. Check persistent FGID crosswalk first (most reliable)
+        if fg_id:
+            fg_key = str(fg_id)
+            crosswalk = self._load_id_crosswalk()
+            if fg_key in crosswalk:
+                return crosswalk[fg_key]['mlb_id']
+
         # Clean name for search
         search_name = player_name
         suffixes = [' Jr.', ' Sr.', ' II', ' III', ' IV']
         for s in suffixes:
             search_name = search_name.replace(s, '')
-        
+        search_name = normalize_name(search_name)
+
+        cache_key = f"id_{player_name}_{target_year}_{team_abb}"
+        if cache_key in self.player_id_cache:
+            return self.player_id_cache[cache_key]
+
+        p_id = None
+        target_mlb_abb = TeamCrosswalk.to_mlb(team_abb) if team_abb else None
+
+        def _team_matches(person_id):
+            """Returns True if this person belongs to the target MLB org (handles minor leaguers via parentOrgId)."""
+            if not target_mlb_abb:
+                return True
+            try:
+                p_info = statsapi.get('person', {'personId': person_id, 'hydrate': 'currentTeam'})
+                if p_info and 'people' in p_info:
+                    current_team = p_info['people'][0].get('currentTeam', {})
+                    for check_id in filter(None, [current_team.get('id'), current_team.get('parentOrgId')]):
+                        team_data = statsapi.get('team', {'teamId': check_id})
+                        if team_data and 'teams' in team_data:
+                            if team_data['teams'][0].get('abbreviation') == target_mlb_abb:
+                                return True
+            except Exception as e:
+                logger.warning(f"_team_matches failed for person {person_id}: {e}")
+            return False
+
         try:
-            # Use statsapi.lookup_player for the most reliable mapping to personId
-            cache_key = f"id_{player_name}_{target_year}_{team_abb}"
-            if cache_key in self.player_id_cache:
-                return self.player_id_cache[cache_key]
-
+            # 2. statsapi MLB-level name lookup
+            # With multiple results, verify team to avoid nickname false positives (e.g. Severino/Peña).
+            # With a single result, trust it — team verification can fail on abbreviation edge cases.
             results = statsapi.lookup_player(search_name)
-            if results:
-                # If team_abb is provided, filter by team
-                if team_abb:
-                    target_mlb_abb = TeamCrosswalk.to_mlb(team_abb)
-                    for r in results:
-                        # Check current team of each result
-                        p_id = r['id']
-                        p_info = statsapi.get('person', {'personId': p_id})
-                        if p_info and 'people' in p_info:
-                            curr_team = p_info['people'][0].get('currentTeam', {}).get('id')
-                            if curr_team:
-                                team_data = statsapi.get('team', {'teamId': curr_team})
-                                if team_data and 'teams' in team_data:
-                                    abb = team_data['teams'][0].get('abbreviation')
-                                    if abb == target_mlb_abb:
-                                        self.player_id_cache[cache_key] = p_id
-                                        return p_id
-
-                # If only one exists or no team match found, pick the first
+            if len(results) == 1:
                 p_id = results[0]['id']
-                self.player_id_cache[cache_key] = p_id
-                return p_id
-        except Exception:
-            pass
-            
-        self.player_id_cache[cache_key] = None
-        return None
+            else:
+                for r in results:
+                    if _team_matches(r['id']):
+                        p_id = r['id']
+                        break
+        except Exception as e:
+            logger.warning(f"statsapi.lookup_player failed for '{player_name}': {e}")
+
+        # 3. MiLB search fallback — searches High-A through Triple-A when MLB lookup misses
+        if p_id is None and team_abb:
+            for sport_id in [11, 12, 13, 14, 15, 16]:
+                try:
+                    results = statsapi.lookup_player(search_name, sportId=sport_id)
+                    for r in results:
+                        if _team_matches(r['id']):
+                            p_id = r['id']
+                            logger.info(f"Found '{player_name}' via MiLB search (sportId={sport_id}): {p_id}")
+                            break
+                    if p_id:
+                        break
+                except Exception as e:
+                    logger.warning(f"MiLB lookup (sportId={sport_id}) failed for '{player_name}': {e}")
+
+        # 4. Pybaseball fallback
+        if p_id is None:
+            try:
+                name_parts = search_name.split()
+                if len(name_parts) >= 2:
+                    lookup = playerid_lookup(name_parts[-1], name_parts[0])
+                    if not lookup.empty:
+                        lookup = lookup.sort_values(by='mlb_played_last', ascending=False)
+                        p_id = int(lookup.iloc[0]['key_mlbam'])
+            except Exception as e:
+                logger.warning(f"pybaseball fallback failed for '{player_name}': {e}")
+
+        if p_id is None:
+            logger.warning(f"Could not resolve MLB ID for '{player_name}' (team={team_abb}, fgid={fg_id})")
+
+        # Cache in memory
+        self.player_id_cache[cache_key] = p_id
+
+        # Persist to crosswalk if we have an FGID anchor
+        if p_id and fg_id:
+            crosswalk = self._load_id_crosswalk()
+            crosswalk[str(fg_id)] = {'mlb_id': p_id, 'name': player_name}
+            self._save_id_crosswalk()
+
+        return p_id
 
     def get_daily_matchups(self, target_date: str):
         if target_date in self._matchups_cache:
             return self._matchups_cache[target_date]
 
-        print(f"Fetching fresh matchups for {target_date} from MLB API...")
+        logger.info(f"Fetching fresh matchups for {target_date} from MLB API...")
         matchups = {'_teams_playing': {}, '_starting_pitchers': {}}
         dt = datetime.strptime(target_date, "%Y-%m-%d")
         formatted_date = dt.strftime("%m/%d/%Y")
@@ -99,7 +185,8 @@ class GameDayHarvester:
                     try:
                         roster = statsapi.get('team_roster', {'teamId': t_id, 'rosterType': 'active'})
                         self.active_rosters[t_id] = {p['person']['id'] for p in roster.get('roster', [])}
-                    except Exception:
+                    except Exception as e:
+                        logger.warning(f"Failed to fetch active roster for team {t_id}: {e}")
                         self.active_rosters[t_id] = set()
 
             # Resolve team abbreviations from schedule IDs (more reliable for future games)
@@ -113,7 +200,9 @@ class GameDayHarvester:
             
             try:
                 # Try to get detailed boxscore (best for confirmed lineups)
-                box = statsapi.boxscore_data(game_id)
+                if game_id not in self._boxscore_cache:
+                    self._boxscore_cache[game_id] = statsapi.boxscore_data(game_id)
+                box = self._boxscore_cache[game_id]
                 if box:
                     for p in box.get('awayPitchers', []):
                         if p.get('personId') and p.get('name') != 'Pitchers':
@@ -132,7 +221,8 @@ class GameDayHarvester:
                         if b.get('position') == 'C':
                             home_c = {'name': b['name'], 'personId': b['personId']}
                             break
-            except Exception:
+            except Exception as e:
+                logger.warning(f"Boxscore fetch failed for game {game_id}: {e}")
                 box = None
 
             # Fallback for pitchers if boxscore is empty (crucial for future games)
@@ -144,8 +234,8 @@ class GameDayHarvester:
                         away_sp = {'name': probables['away']['fullName'], 'personId': probables['away']['id']}
                     if not home_sp and probables.get('home'):
                         home_sp = {'name': probables['home']['fullName'], 'personId': probables['home']['id']}
-                except Exception:
-                    pass
+                except Exception as e:
+                    logger.warning(f"Probable pitcher fallback failed for game {game_id}: {e}")
 
             # Fallback for catchers (crucial for Lineup Pending scenarios)
             if not away_c:
@@ -293,8 +383,10 @@ class GameDayHarvester:
                                     if not game_pk: continue
 
                                     try:
-                                        # Fetch boxscore for this game
-                                        box = statsapi.boxscore_data(game_pk)
+                                        # Fetch boxscore with caching to avoid repeated API hits
+                                        if game_pk not in self._boxscore_cache:
+                                            self._boxscore_cache[game_pk] = statsapi.boxscore_data(game_pk)
+                                        box = self._boxscore_cache[game_pk]
                                         # Search in both away and home batters
                                         for team in ['awayBatters', 'homeBatters']:
                                             for batter in box.get(team, []):
@@ -305,10 +397,11 @@ class GameDayHarvester:
                                                         res = order[0]
                                                         self.player_id_cache[cache_key] = res
                                                         return res
-                                    except Exception:
+                                    except Exception as e:
+                                        logger.warning(f"Boxscore lookup failed for game {game_pk}: {e}")
                                         continue
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(f"get_last_starting_order failed for player {person_id}: {e}")
 
         # Fallback to middle of the order
         self.player_id_cache[cache_key] = "5"
@@ -335,7 +428,8 @@ class GameDayHarvester:
                     is_minors = 'parentOrgId' in current_team
                     team_name = current_team.get('name', 'Unknown')
                     results[p_id] = {'is_minors': is_minors, 'team_name': team_name}
-            except Exception:
+            except Exception as e:
+                logger.warning(f"get_player_statuses batch failed: {e}")
                 continue
         return results
 
@@ -375,7 +469,8 @@ class GameDayHarvester:
                                 except ValueError:
                                     continue
                     results[p_id] = splits_data
-            except Exception:
+            except Exception as e:
+                logger.warning(f"get_platoon_splits batch failed (year={year}): {e}")
                 continue
         return results
 
@@ -390,8 +485,8 @@ class GameDayHarvester:
                 abb = team['teams'][0].get('abbreviation', '')
                 self.team_abb_cache[team_id] = abb
                 return abb
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(f"get_team_abb failed for team {team_id}: {e}")
         return ""
 
     def get_batter_data(self, person_id):
@@ -408,8 +503,8 @@ class GameDayHarvester:
             if player and 'people' in player:
                 p = player['people'][0]
                 data['hand'] = p.get('batSide', {}).get('code', 'R')
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(f"get_batter_data failed for player {person_id}: {e}")
             
         self._player_data_cache[cache_key] = data
         return data
@@ -428,7 +523,7 @@ class GameDayHarvester:
         data = None
         try:
             url = f'https://statsapi.mlb.com/api/v1/people/{batter_id}/stats?stats=vsPlayerTotal&group=hitting&opposingPlayerId={pitcher_id}'
-            r = requests.get(url)
+            r = requests.get(url, timeout=10)
             stats_json = r.json()
             if 'stats' in stats_json and stats_json['stats']:
                 splits = stats_json['stats'][0].get('splits', [])
@@ -439,8 +534,8 @@ class GameDayHarvester:
                         'ops': float(s.get('ops', 0.0)),
                         'avg': float(s.get('avg', 0.0))
                     }
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(f"get_bvp_data failed for batter {batter_id} vs pitcher {pitcher_id}: {e}")
             
         self._bvp_cache[cache_key] = data
         return data
@@ -471,14 +566,14 @@ class GameDayHarvester:
             else:
                 # Fallback to statsapi Season Stats
                 url = f'https://statsapi.mlb.com/api/v1/people/{person_id}/stats?stats=season&group=pitching&season={year}'
-                r = requests.get(url)
+                r = requests.get(url, timeout=10)
                 stats_json = r.json()
                 if 'stats' in stats_json and stats_json['stats']:
                     s = stats_json['stats'][0].get('splits', [{}])[0].get('stat', {})
                     data['era'] = float(s.get('era', 4.0))
                     data['xera'] = float(s.get('era', 4.0))
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(f"get_pitcher_data failed for player {person_id}: {e}")
             
         self._player_data_cache[cache_key] = data
         return data
@@ -491,8 +586,12 @@ class GameDayHarvester:
         
         for game in games:
             try:
-                box = statsapi.boxscore_data(game['game_id'])
-            except Exception:
+                gid = game['game_id']
+                if gid not in self._boxscore_cache:
+                    self._boxscore_cache[gid] = statsapi.boxscore_data(gid)
+                box = self._boxscore_cache[gid]
+            except Exception as e:
+                logger.warning(f"Boxscore fetch failed for game {game['game_id']}: {e}")
                 continue
                 
             for team_batters in ['awayBatters', 'homeBatters']:

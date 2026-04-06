@@ -4,13 +4,18 @@ from datetime import datetime
 import os
 import re
 import pytz
+import logging
 from google import genai
-from google.genai import types
 from dotenv import load_dotenv
 from display_utils import print_header, display_dataframe, print_narrative, print_section, print_info
 from crosswalks import normalize_name
+import config as C
 
-# Load environment variables from .env file, overriding any existing shell variables
+# Boot logging before anything else
+C.setup_logging()
+logger = logging.getLogger(__name__)
+
+# Load environment variables from .env file
 load_dotenv(override=True)
 
 def generate_ai_narrative(lineup_df, date_str, skip_ai=False):
@@ -78,26 +83,29 @@ def run_optimizer_hitter(projection_system="steamer", target_date=None, team_id=
     mlb_tz = pytz.timezone('US/Eastern')
     now_mlb = datetime.now(mlb_tz)
     
+    # Validate inputs early — fail fast with a clear message
+    try:
+        projection_system = C.validate_projection_system(projection_system)
+    except ValueError as e:
+        logger.error(str(e))
+        return None
+
     if target_date:
         try:
+            C.validate_date(target_date)
             year = int(target_date.split("-")[0])
-        except (ValueError, IndexError):
-            print(f"Error: Invalid date format '{target_date}'. Use YYYY-MM-DD.")
+        except ValueError as e:
+            logger.error(str(e))
             return None
     else:
         target_date = now_mlb.strftime("%Y-%m-%d")
         year = now_mlb.year
 
-    # Determine output filename if not provided
     if not output_filename:
         output_filename = f"web_lineup_{team_id}.json"
 
     optimizer = OttoneuOptimizer(team_id=team_id, projection_system=projection_system)
-    
-    team_name = "Zurich Zebras" if team_id == 7582 else f"Team {team_id}"
-    if team_id == 7587: team_name = "Ghost Ride the WHIP"
-    if team_id == 7581: team_name = "Austin Waves"
-    if team_id == 7641: team_name = "LawDog"
+    team_name = C.TEAM_NAMES.get(team_id, f"Team {team_id}")
     
     print_header(f"{team_name} ({team_id}) Lineup Optimizer [{projection_system.upper()}]", target_date)
     
@@ -256,7 +264,7 @@ def run_optimizer_hitter(projection_system="steamer", target_date=None, team_id=
             lineup['Slot'] = lineup['Slot'].astype(str)
         save_web_json(lineup, df_sat, target_date, ai_narrative, projection_system, output_filename)
     else:
-        print(f"\\nNo valid starters found for {target_date}. This may be an off-day or lineups are not yet posted.")
+        logger.warning(f"No valid starters found for {target_date} — off-day or lineups not yet posted.")
 
 def main():
     parser = argparse.ArgumentParser(description="Ottoneu Lineup Optimizer")
