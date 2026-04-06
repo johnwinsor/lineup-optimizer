@@ -41,6 +41,18 @@ class DailyEngine:
         year = dt.year
         weight_current = self._get_recency_weight(target_date) if year == 2026 else 0.0
         
+        # Pre-fetch MLB ID statuses in bulk for efficiency
+        all_mlb_ids = []
+        player_id_to_mlb = {}
+        for idx, row in hitters.iterrows():
+            mlb_id = self.harvester.get_mlb_id(row['Name'], target_year=year, team_abb=row.get('Team'))
+            if mlb_id:
+                all_mlb_ids.append(mlb_id)
+                player_id_to_mlb[idx] = mlb_id
+        
+        mlb_statuses = self.harvester.get_player_statuses(all_mlb_ids)
+        platoon_splits = self.harvester.get_platoon_splits(all_mlb_ids, year=2025)
+        
         daily_scores = []
         is_starting = []
         breakdowns = []
@@ -52,12 +64,10 @@ class DailyEngine:
         
         teams_playing = matchups.get('_teams_playing', {})
         
-        for _, row in hitters.iterrows():
+        for idx, row in hitters.iterrows():
             player_name = row['Name']
             team_abb = row.get('Team')
-            
-            # Use name-based lookup with team info to ensure correct ID
-            mlb_id = self.harvester.get_mlb_id(player_name, target_year=year, team_abb=team_abb)
+            mlb_id = player_id_to_mlb.get(idx)
             
             daily_score = 0.0
             starting = False
@@ -92,37 +102,59 @@ class DailyEngine:
                 is_opener_list.append(False)
                 continue
 
-            # 3. Double-check for Active Roster status from MLB API
+            # 3. MLB API Status Check (Direct source truth)
+            mlb_confirmed_major = False
+            if mlb_id and mlb_id in mlb_statuses:
+                status = mlb_statuses[mlb_id]
+                if status['is_minors']:
+                    daily_scores.append(0.0)
+                    is_starting.append(False)
+                    breakdowns.append(f"In the Minors ({status['team_name']})")
+                    opponents.append("N/A")
+                    sp_xeras.append("-")
+                    warnings.append("🚨 MINORS")
+                    game_times.append(None)
+                    is_opener_list.append(False)
+                    continue
+                else:
+                    # Explicitly on a Major League roster (active or IL)
+                    mlb_confirmed_major = True
+
+            # 4. Double-check for Active Roster status from MLB API (Legacy check)
             if team_abb in teams_playing:
                 team_data = teams_playing[team_abb]
                 active_roster = team_data.get('active_roster', set())
                 
                 # If they have an MLB ID, check if they are in the active roster
                 if mlb_id and mlb_id not in matchups and mlb_id not in active_roster:
-                    daily_scores.append(0.0)
-                    is_starting.append(False)
-                    breakdowns.append(f"In Minors (Not on Active Roster for {team_abb})")
-                    opponents.append("N/A")
-                    sp_xeras.append("-")
-                    warnings.append("🚨 MINORS")
-                    game_times.append(None)
-                    is_opener_list.append(False)
-                    continue
+                    # Only mark as minors if not already confirmed major (e.g., might be on IL)
+                    if not mlb_confirmed_major:
+                        daily_scores.append(0.0)
+                        is_starting.append(False)
+                        breakdowns.append(f"In Minors (Not on Active Roster for {team_abb})")
+                        opponents.append("N/A")
+                        sp_xeras.append("-")
+                        warnings.append("🚨 MINORS")
+                        game_times.append(None)
+                        is_opener_list.append(False)
+                        continue
 
-            # 4. Check FanGraphs Level (New reliable check)
-            fg_id = row.get('playerid')
-            if fg_id:
-                fg_level = self.enricher.scraper.get_player_level(fg_id)
-                if fg_level != "MLB":
-                    daily_scores.append(0.0)
-                    is_starting.append(False)
-                    breakdowns.append(f"In the Minors ({fg_level})")
-                    opponents.append("N/A")
-                    sp_xeras.append("-")
-                    warnings.append("🚨 MINORS")
-                    game_times.append(None)
-                    is_opener_list.append(False)
-                    continue
+            # 5. Check FanGraphs Level (Backup reliable check)
+            # Skip if MLB API already confirmed they are on a Major League roster
+            if not mlb_confirmed_major:
+                fg_id = row.get('playerid')
+                if fg_id:
+                    fg_level = self.enricher.scraper.get_player_level(fg_id)
+                    if fg_level != "MLB":
+                        daily_scores.append(0.0)
+                        is_starting.append(False)
+                        breakdowns.append(f"In the Minors ({fg_level})")
+                        opponents.append("N/A")
+                        sp_xeras.append("-")
+                        warnings.append("🚨 MINORS")
+                        game_times.append(None)
+                        is_opener_list.append(False)
+                        continue
 
             matchup = None
             if mlb_id and mlb_id in matchups:
@@ -221,19 +253,45 @@ class DailyEngine:
                     b_hand = batter_hand_data['hand']
                     p_hand = sp_data['hand']
                     
-                    if b_hand == 'S':
-                        multiplier *= 1.05
-                        breakdown.append("Switch: +5%")
-                    elif b_hand != p_hand:
-                        multiplier *= 1.10
-                        breakdown.append("Platoon: +10%")
-                    else:
-                        if b_hand == 'L':
-                            multiplier *= 0.85
-                            breakdown.append("Platoon (L/L): -15%")
+                    splits = platoon_splits.get(mlb_id, {})
+                    ops_vs_l = splits.get('vs_l')
+                    ops_vs_r = splits.get('vs_r')
+                    
+                    applied_dynamic = False
+                    if ops_vs_l and ops_vs_r:
+                        # Use actual career delta if available
+                        relevant_ops = ops_vs_l if p_hand == 'L' else ops_vs_r
+                        baseline_ops = (ops_vs_l + ops_vs_r) / 2.0
+                        
+                        if baseline_ops > 0:
+                            platoon_mult = relevant_ops / baseline_ops
+                            # Cap the dynamic impact to avoid small-sample insanity
+                            platoon_mult = max(0.80, min(1.20, platoon_mult))
+                            
+                            multiplier *= platoon_mult
+                            applied_dynamic = True
+                            
+                            diff = int((platoon_mult - 1.0) * 100)
+                            if diff != 0:
+                                breakdown.append(f"Dynamic Platoon ({p_hand}): {diff:+}%")
+                            else:
+                                breakdown.append(f"Neutral Platoon ({p_hand})")
+
+                    if not applied_dynamic:
+                        # Fallback to static logic
+                        if b_hand == 'S':
+                            multiplier *= 1.05
+                            breakdown.append("Switch: +5%")
+                        elif b_hand != p_hand:
+                            multiplier *= 1.10
+                            breakdown.append("Platoon: +10%")
                         else:
-                            multiplier *= 0.95
-                            breakdown.append("Platoon (R/R): -5%")
+                            if b_hand == 'L':
+                                multiplier *= 0.85
+                                breakdown.append("Platoon (L/L): -15%")
+                            else:
+                                multiplier *= 0.95
+                                breakdown.append("Platoon (R/R): -5%")
 
                     # BvP
                     bvp = self.harvester.get_bvp_data(mlb_id, sp_id)

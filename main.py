@@ -248,7 +248,7 @@ def run_optimizer_hitter(projection_system="steamer", target_date=None, team_id=
             print_narrative(ai_narrative)
         
         print_info("\n[dim]Algorithm: Maximize projected 5x5 efficiency subject to positional caps.[/dim]")
-        print_info("[dim]Factors: SIERA Difficulty, Platoon Splits, Elite BvP, StatCast Peripherals, Weather.[/dim]")
+        print_info("[dim]Factors: SIERA Difficulty, Dynamic Platoon Splits, Elite BvP, StatCast Peripherals, Weather.[/dim]")
         
         # Save JSON for the web
         # Ensure Slot is converted from Categorical to string for JSON serialization

@@ -313,6 +313,72 @@ class GameDayHarvester:
         # Fallback to middle of the order
         self.player_id_cache[cache_key] = "5"
         return "5"
+    def get_player_statuses(self, mlb_ids):
+        """Fetches current team status for multiple MLB IDs in bulk."""
+        if not mlb_ids: return {}
+        
+        # Convert to strings and filter out None
+        ids = [str(i) for i in mlb_ids if i]
+        if not ids: return {}
+        
+        results = {}
+        # Batch by 50 to avoid URL length issues
+        for i in range(0, len(ids), 50):
+            batch = ids[i:i+50]
+            try:
+                params = {'personIds': ','.join(batch), 'hydrate': 'currentTeam'}
+                p = statsapi.get('people', params)
+                for person in p.get('people', []):
+                    p_id = person.get('id')
+                    current_team = person.get('currentTeam', {})
+                    # If parentOrgId is present, they are in the minors (assigned to an affiliate)
+                    is_minors = 'parentOrgId' in current_team
+                    team_name = current_team.get('name', 'Unknown')
+                    results[p_id] = {'is_minors': is_minors, 'team_name': team_name}
+            except Exception:
+                continue
+        return results
+
+    def get_platoon_splits(self, mlb_ids, year=2025):
+        """Fetches vs LHP and vs RHP OPS splits for multiple MLB IDs in bulk."""
+        if not mlb_ids: return {}
+        
+        ids = [str(i) for i in mlb_ids if i]
+        results = {}
+        
+        # Batch by 50
+        for i in range(0, len(ids), 50):
+            batch = ids[i:i+50]
+            try:
+                # vl = vs Left, vr = vs Right
+                params = {
+                    'personIds': ','.join(batch), 
+                    'hydrate': f'stats(group=[hitting],type=[statSplits],season={year},sitCodes=[vl,vr])'
+                }
+                p = statsapi.get('people', params)
+                for person in p.get('people', []):
+                    p_id = person.get('id')
+                    splits_data = {'vs_l': None, 'vs_r': None}
+                    
+                    stats = person.get('stats', [])
+                    if stats:
+                        for split in stats[0].get('splits', []):
+                            desc = split.get('split', {}).get('description')
+                            ops_str = split.get('stat', {}).get('ops')
+                            if ops_str:
+                                try:
+                                    ops_val = float(ops_str)
+                                    if desc == 'vs Left':
+                                        splits_data['vs_l'] = ops_val
+                                    elif desc == 'vs Right':
+                                        splits_data['vs_r'] = ops_val
+                                except ValueError:
+                                    continue
+                    results[p_id] = splits_data
+            except Exception:
+                continue
+        return results
+
     def get_team_abb(self, team_id):
         if not team_id: return ""
         if team_id in self.team_abb_cache:

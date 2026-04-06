@@ -11,10 +11,11 @@ The "Zebra Score" is our proprietary metric for daily production. It is not a si
 
 #### Hitter Efficiency (V2 Algorithm)
 A hitter's daily score begins with a baseline derived from their counting stat production (Runs, HR, RBI, SB) per plate appearance, added to their projected Batting Average. We then apply a series of dynamic, context-aware multipliers:
-*   **Platoon Advantage**: Scores are adjusted based on the handedness of the opposing pitcher (including specific penalties for Left-on-Left matchups).
-*   **Batting Order Density**: Players at the top of the lineup receive a boost to reflect the higher probability of additional plate appearances and run-scoring opportunities.
+*   **Dynamic Platoon Splits**: Rather than using static weights, we ingest real-world career performance data (OPS vs LHP/RHP) directly from the MLB Stats API. A hitter's score is dynamically adjusted based on their historical delta against the specific handedness of today's opposing pitcher.
+*   **Batting Order Density**: Players at the top of the lineup receive a boost to reflect the higher probability of additional plate appearances and run-scoring opportunities. Historical orders are automatically retrieved via boxscore analysis for players with "Pending" lineups.
 *   **Venue & Environment**: We ingest Statcast park factors for all 30 MLB stadiums. A hitter in Coors Field receives a significantly different weight than one in Oracle Park.
 *   **Weather Dynamics**: Real-time wind speed, wind direction, and air density (heat) are factored in. 15mph wind blowing "Out" in Wrigley is treated as a major performance catalyst.
+*   **Real-Time Roster Tracking**: We interface directly with the MLB Stats API to track player promotions and levels. This ensures that newly promoted players (e.g. from AAA to MLB) are unlocked in the optimizer instantly, bypassing the lag of third-party platforms.
 
 #### Pitcher Precision (V1 Algorithm)
 Pitcher scores are designed to reward the "Ottoneu Trifecta": High Strikeouts, Low ERA, and elite WHIP. 
@@ -54,6 +55,7 @@ To maintain mathematical rigor, we pull from the most trusted repositories in pr
 | **League Roster & Eligibility** | Ottoneu (League 1077) | Hourly |
 | **Baseline Projections** | ATC (Ariel Cohen) & Steamer | Daily |
 | **Live MLB Lineups** | MLB Stats API | Hourly |
+| **Platoon Splits & Roster Status** | MLB Stats API (Real-time) | Hourly |
 | **Advanced Metrics (xwOBA, SIERA)** | Baseball Savant / FanGraphs | Daily |
 | **Batter vs. Pitcher (BvP)** | MLB Historical Data | Real-time per run |
 | **Weather & Wind Risk** | Rotowire Weather Report | Hourly |
