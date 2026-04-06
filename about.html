@@ -37,12 +37,20 @@
             <h3>The Architecture of a Zebra Score</h3>
             <p>The "Zebra Score" is our proprietary metric for daily production. It is not a simple projection of raw totals; rather, it is an <strong>Efficiency Rating</strong> designed to identify who will produce the most value <em>per slot</em>.</p>
 
-            <h4 class="text-white font-bold mt-6">Hitter Efficiency (V2 Algorithm)</h4>
-            <p>A hitter's daily score begins with a baseline derived from their counting stat production (Runs, HR, RBI, SB) per plate appearance, added to their projected Batting Average. We then apply multipliers for:</p>
+            <h4 class="text-white font-bold mt-6">Hitter Efficiency (V3 Algorithm)</h4>
+            <p>A hitter's daily score begins with a baseline derived from full-season projections (ATC or Steamer), scaled to a per-game rate:</p>
+            <div class="bg-slate-800/50 rounded-lg p-4 mt-4 border border-slate-700">
+                <code class="text-indigo-300 text-sm">Base Score = ((R + HR + RBI + SB × 1.5) / PA × 100) + (AVG × 89)</code>
+            </div>
+            <p>SB is weighted 1.5× to reflect category scarcity. The AVG coefficient of 89 uses a consistent H/PA denominator (AVG × 0.89 AB/PA). The <strong>total daily multiplier is capped at +35% / −30%</strong> to prevent extreme compounding.</p>
             <ul>
-                <li><strong>Dynamic Platoon Splits:</strong> Real-world adjustments based on career OPS vs LHP/RHP directly from the MLB Stats API.</li>
-                <li><strong>Batting Order Density:</strong> Boosts for top-of-the-order starters, with historical order analysis for pending lineups.</li>
-                <li><strong>Venue & Weather:</strong> Statcast park factors combined with real-time wind and temperature data.</li>
+                <li><strong>Dynamic Platoon Splits:</strong> Career OPS vs LHP/RHP from the MLB Stats API. Static fallbacks: opposite-hand +7%, L vs L −10%, R vs R −3%. Switch hitters receive a +3% bonus.</li>
+                <li><strong>Batting Order Density:</strong> Range of +10% (leadoff) to −9% (ninth) — research-calibrated ±10% spread.</li>
+                <li><strong>Opposing Pitcher Difficulty:</strong> ERA-based adjustment capped at ±20% vs. a 4.00 league-average baseline.</li>
+                <li><strong>Batter vs. Pitcher (BvP):</strong> Applied only with ≥25 PA. Effect sizes are deliberately modest (±3–8%) to reflect BvP's limited predictive signal at typical sample sizes.</li>
+                <li><strong>Basestealing Environment:</strong> Applied only to players with elite (≥28.5 ft/s) or above-average (≥27.5 ft/s) sprint speed. Adjustments for catcher pop time (slow >2.05s, elite <1.90s) and pitcher hold rate are intentionally small (±2–4%) — these factors affect the full score rather than just the SB component, so overcounting is a real risk.</li>
+                <li><strong>Venue & Weather:</strong> Statcast park factors combined with real-time wind data (up to ±10% for strong winds). Heat is not penalized — warm air reduces density and slightly aids ball carry.</li>
+                <li><strong>xwOBA & Barrel Rate:</strong> Elite Statcast indicators are surfaced in the breakdown for context only — no separate multiplier is applied, as projection systems already incorporate contact quality.</li>
                 <li><strong>Instant Roster Tracking:</strong> Direct MLB API integration for immediate detection of minor league promotions.</li>
             </ul>
 
@@ -72,9 +80,6 @@
                     </tbody>
                 </table>
             </div>
-
-            <h3>The Superstar Shield</h3>
-            <p>Players with a Statcast xwOBA above .400 are protected by the <strong>Superstar Shield</strong>. Their scores are never allowed to drop below 85% of their baseline, ensuring your anchors stay in the lineup when active, regardless of difficult matchups.</p>
 
             <h3>Data Sources</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
