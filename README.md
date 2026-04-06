@@ -1,201 +1,239 @@
 # Zurich Zebras Ottoneu Optimizer
 
-A daily lineup optimization and backtesting framework for the Zurich Zebras (Ottoneu Team 7582). This tool maximizes 5x5 Roto efficiency by dynamically projecting daily player performance based on real-time matchups, advanced StatCast peripherals, and historical BvP data.
+A daily lineup optimization and backtesting framework for four Ottoneu teams in League 1077. Maximizes 5x5 Roto efficiency by projecting daily player performance from real-time matchups, StatCast peripherals, and historical BvP data.
 
 ## 🚀 Quick Start
 
 ### 1. Installation
-This project uses `uv` for lightning-fast dependency management.
 ```bash
-# Clone the repository and sync dependencies
 uv sync
 ```
 
-### 2. Prepare Data
-Ensure you have the latest StatCast datasets and Steamer projections cached locally.
-**Note:** You must run this script once a day before running the main optimizer or free agent tools, as they now rely on this cached data to run much faster! It will also output a summary of any significant shifts in player projections.
+### 2. Prepare Data (once per day)
+Fetch StatCast datasets, projections, and resolve player ID crosswalk:
 ```bash
 uv run python fetch_statcast.py
+uv run python build_crosswalk.py
 ```
 
 ### 3. Generate Today's Optimal Lineup
-Run the main hitter optimizer:
 ```bash
 uv run python main.py
 ```
 
 ### 4. Evaluate Starting Pitchers
-Run the pitcher optimizer to see efficiency rankings for rostered starters:
 ```bash
 uv run python pitcher_optimizer.py
 ```
 
-## 🧪 Backtesting Workflow
+---
 
-The backtesting framework allows you to "time travel" to any date to evaluate the algorithm's predictive accuracy against actual MLB box scores.
+## 🧪 Backtesting & Algorithm Validation
 
-### Run a Hitter Backtest
+These tools run manually against historical data to evaluate and tune the scoring algorithm. They are not part of the automated daily pipeline.
+
+### `backtester.py` — Single-Date Hitter Simulation
+Runs the optimizer against a past date and compares the recommended lineup to actual MLB box scores. Useful for spot-checking algorithm decisions and validating that start/bench calls were correct.
+
 ```bash
 uv run python backtester.py 2025-07-04
+uv run python backtester.py 2025-07-04 --projection atc
 ```
 
-### Run a Pitcher Backtest
+Output includes: predicted score vs actual 5x5 production for each started and benched player, with live game status if run against today.
+
+### `pitcher_backtester.py` — Single-Date Pitcher Simulation
+Same concept applied to starting pitchers — compares projected pitcher efficiency scores to actual K, ERA, and WHIP results for a given date.
+
 ```bash
 uv run python pitcher_backtester.py 2025-07-04
 ```
 
-### Run a Season Audit
-Run 50 random simulations across the 2025 season to see the aggregate success rate of the algorithm:
+### `batch_backtester.py` — Season-Wide Accuracy Audit
+Runs 50 randomly sampled dates from the 2025 season and aggregates start/bench accuracy across all five Roto categories (R, HR, RBI, SB, AVG). Produces a summary of how often the algorithm started the more productive player.
+
 ```bash
-uv run python batch_backtester.py
+uv run python batch_backtester.py                    # 50 random dates, Steamer
+uv run python batch_backtester.py --projection atc   # same with ATC
 ```
+
+Use this before and after tuning multipliers in `config.py` to measure whether a change improves aggregate accuracy.
+
+---
 
 ## 🚀 Projection System Selection
 
-The optimizer supports multiple projection baselines. You can toggle between them using the `--projection` flag:
+The optimizer supports two projection baselines, toggled with `--projection`:
 
-- **Steamer (`--projection steamer`)**: The default system. Aggressive on breakout candidates.
-- **ATC (`--projection atc`)**: Ariel Theoretical Composite. A weighted average of multiple systems. Highly recommended for "Efficiency Maximization" as it reduces outlier variance.
+- **Steamer (`--projection steamer`)**: Default. Aggressive on breakout candidates.
+- **ATC (`--projection atc`)**: Ariel Theoretical Composite. Weighted average of multiple systems; reduces outlier variance.
 
-#### Usage Examples:
-- **Run Optimizer with ATC**: `uv run python main.py --projection atc`
-- **Backtest with ATC**: `uv run python backtester.py --projection atc`
-- **Batch Test with ATC**: `uv run python batch_backtester.py --projection atc`
-- **Scout Free Agents**: `uv run python scout.py --projection atc`
-
-## 📊 Compact Terminal Display
-
-The Zurich Zebras optimizer is designed for mobile and laptop developers. To prevent table overlap on smaller screens, we use a compact display strategy:
-
-- **Non-Expanding Tables**: Tables in `display_utils.py` do not force full-terminal width.
-- **Shorthand Stats**: The backtester uses compact 5x5 notation: `H/AB R R HR HR RBI I SB S`.
-- **Simplified Box Lines**: We use `SIMPLE_HEAD` borders to maximize content area.
-- **Shortened Opponent Data**: Pitcher skill (xERA/SIERA) is rounded to 1 decimal place.
-
-### Find Free Agent Upgrades
-Scout the most efficient available hitters in your league (League 1077):
 ```bash
-# Refresh free agent list
-uv run python scout_harvester.py
-
-# Find top performers with at least 50 Plate Appearances
-uv run python scout.py --pa 50
+uv run python main.py --projection atc
+uv run python backtester.py --projection atc
+uv run python batch_backtester.py --projection atc
+uv run python scout.py --projection atc
 ```
 
-### Audit Free Agent History
-Analyze the actual historical performance of free agents for a specific date:
+---
+
+## 🧠 The Zebras Algorithm (V3)
+
+### Hitter Efficiency
+
+A hitter's daily score starts from their full-season projection, scaled to per-game:
+
+```
+Base Score = ((R + HR + RBI + SB × 1.5) / PA × 100) + (AVG × 89)
+```
+
+- SB weighted **1.5×** for category scarcity
+- AVG coefficient **89** = consistent H/PA denominator (AVG × 0.89 AB/PA)
+
+Context-aware multipliers are then applied. The **total multiplier is capped at +35% / −30%** to prevent compounding extremes.
+
+| Factor | Condition | Impact |
+| :--- | :--- | :--- |
+| **Batting Order** | Position 1–9 | **+10% to −9%** |
+| **SP Skill** | ERA-based, 4.00 neutral | **±20% max** |
+| **Dynamic Platoon** | Career OPS vs LHP/RHP (MLB API) | **±15% max** |
+| **Static Platoon** | Fallback when splits unavailable | **+7% / −3% to −10%** |
+| **BvP** | Career OPS vs this SP (min **25 PA**) | **±3% to ±8%** |
+| **Park Factor** | Statcast venue run environment | **varies** |
+| **Wind Out** | ≥10 MPH blowing out | **+5% to +10%** |
+| **Wind In** | ≥10 MPH blowing in | **−5% to −10%** |
+| **SB Environment** | Sprint speed ≥27.5 ft/s only | **±2–4%** |
+| **xwOBA / Barrel%** | Elite thresholds | **Informational only** |
+| **Total cap** | All factors combined | **+35% / −30%** |
+
+### Pitcher Efficiency (V1)
+
+```
+PitcherScore = BaseScore × Park × Weather × StatCast × Agg BvP × Opp Power
+```
+
+Base Score: `(K/9 × 0.4) + (5.0 − ERA) + (1.5 − WHIP) × 2.0`
+
+### Lineup Pending Logic
+
+When a team hasn't posted its official lineup:
+- Player marked **"Pending"** with order displayed as **"X\*"**
+- Historical last-started batting position is used
+- Appropriate order multiplier applied; fallback is #5
+
+---
+
+## 📊 Score Tiers
+
+#### Hitter Tiers
+| Score | Tier |
+| :--- | :--- |
+| **90+** | Elite — top hitter, weak pitcher, hitter's park |
+| **60–85** | Strong play |
+| **40** | Zebras Floor — hard cutoff; below this we bench to preserve game caps |
+
+#### Pitcher Tiers
+| Score | Tier |
+| :--- | :--- |
+| **7.0+** | Elite start |
+| **5.0–6.5** | Strong start |
+| **3.0–4.5** | Streamer / baseline |
+| **< 2.5** | Avoid |
+
+---
+
+## 🔑 Player ID Crosswalk
+
+All downstream processes (daily engine, StatCast lookups, future Baseball Savant enrichment) rely on a pre-built FGID → MLB ID crosswalk, stored in `player_id_crosswalk.json`.
+
+```bash
+uv run python build_crosswalk.py             # resolve new/unknown players only
+uv run python build_crosswalk.py --force     # re-resolve all (use after trade deadline)
+uv run python build_crosswalk.py --report    # inspect current contents
+```
+
+The crosswalk is rebuilt daily by GitHub Actions before the optimizer runs.
+
+---
+
+## 🔍 Free Agent Scouting
+
+These tools help identify roster upgrade opportunities within League 1077. They run manually on demand and are not part of the automated pipeline.
+
+### `scout_harvester.py` — Refresh Free Agent Pool
+Fetches all available free agents in League 1077 from the FanGraphs API and saves them to `free_agents.json`. Run this first before using the scout.
+
+```bash
+uv run python scout_harvester.py
+```
+
+### `scout.py` — Rank Available Free Agents
+Loads the free agent pool, projects each player using the Zebras efficiency score, enriches with StatCast metrics, and ranks by projected value. Use this to find pickups your current roster is missing.
+
+```bash
+uv run python scout.py --pa 50                   # min 50 PA (filters out small samples)
+uv run python scout.py --pa 30 --projection atc  # ATC projections, lower PA floor
+```
+
+### `fa_backtester.py` — Audit Free Agent Performance
+For a given historical date, fetches all free agents, projects them using the daily engine, and compares projections to actual box score results. Useful for identifying which free agents the algorithm would have correctly flagged as high-value adds.
+
 ```bash
 uv run python fa_backtester.py 2025-07-04
 ```
 
-## 🌸 Spring Training Analyzer
+> **Note:** A dedicated scouting web front-end is planned — see `TODO.md`. The goal is a separate dashboard that surfaces free agent opportunities using advanced StatCast metrics (xwOBA, barrel rate, sprint speed, hard-hit rate) beyond what the daily optimizer exposes.
 
-The Spring Training Analyzer is a specialized scouting tool designed for the early season. it bridges the gap between traditional box score stats (`wRC+`) and underlying StatCast metrics to find breakouts and hidden gems.
-
-### Basic Usage
-Refresh your local spring training data first, then run the analyzer:
-```bash
-# Refresh data from FanGraphs
-uv run python spring_harvester.py
-
-# Run top performer analysis (Min 15 PA)
-uv run python spring_analyzer.py --pa 15
-```
-
-## 🧠 The Zebras Algorithm
-
-The system moves beyond season averages to target high-upside daily matchups:
-
-- **Numerical Park Factors**: Applies stadium-specific multipliers for all 30 MLB parks (e.g., Coors Field, Camden Yards).
-- **Weather & Wind**: Scrapes real-time weather from Rotowire to apply boosts for wind blowing out (+10%) and penalties for wind blowing in. Generates rain risk warnings (🚨).
-- **Pitcher Difficulty**: Prioritizes **xERA** and **SIERA** over surface ERA to identify vulnerable pitchers.
-- **Bi-directional Platoon**: Rewards opposite-hand advantages (+10%) and penalizes same-side disadvantages (up to -15% for L/L).
-- **Elite BvP**: Applies bonuses for hitters with a proven historical track record against a specific SP (min 5 PA).
-- **StatCast Peripherals**: Real-time boosts for elite **xwOBA** and **Barrel%** trends.
-- **Recency Bias**: Time-weighted stabilization logic that progressively shifts focus from prior-season baselines to current-season performance.
-
-### 📉 Efficiency Algorithms
-
-### Hitter Efficiency (Proj)
-> **Baseline Score** = `[(R + HR + RBI + SB) / PA * 100] + [AVG * 100]`
-- **Superstar Shield:** Elite hitters (xwOBA > .400) have a **protected floor of 85% of their baseline score**, preventing them from being benched due to extreme matchups.
-
-### Pitcher Efficiency (Proj)
-> **PitcherProjScore** = `BaseScore * [Park Factor (Inv)] * [Weather Factor] * [Statcast Boost] * [Agg BvP Factor] * [Opponent Power]`
-- **Base Score:** `(K/9 * 0.4) + (5.0 - ERA) + (1.5 - WHIP) * 2.0`. Rewards high strikeout rates and elite ratios.
-
-### 🔍 Rigorous Research Metrics
-The "Rigorous Research" layer analyzes the specific 9 batters in the opposing lineup to calculate the following multipliers:
-
-1. **Agg BvP (Aggregate Batter vs. Pitcher):**
-    - **Concept:** Measures historical dominance. Does this pitcher have a career "edge" over these specific hitters?
-    - **Logic:** Calculates the average career OPS allowed by the pitcher to the current lineup.
-    - **Impact:** A group OPS < .700 provides a boost; an OPS > .850 results in a penalty. This captures "Pitcher Nemesis" scenarios that standard projections often miss.
-
-2. **Opp Power (Opponent Lineup Power):**
-    - **Concept:** Measures raw talent. How dangerous is the opposing offense today?
-    - **Logic:** Averages the **Zebras Efficiency Scores** (our 0–100 baseline) for all 9 hitters in the opposing lineup.
-    - **Impact:** High-talent lineups (e.g., Dodgers, Braves) apply a penalty, while low-talent lineups (e.g., rebuilding teams) apply a boost. This prevents starting mid-tier pitchers against elite offenses just because they are in a "pitcher-friendly" park.
-
-3. **Projected 9 Fallback:**
-    - If official lineups are not yet posted (e.g., for games tomorrow), the engine automatically identifies the **top 9 likely starters** for the opponent based on projected PA and performance. This ensures that historical research is applied even for future starts.
-
-
-## 📊 Understanding the Tiers
-#### Hitter Tiers
-| Score Range | Tier | Rationale |
-| :--- | :--- | :--- |
-| **90.0+** | **Elite / Superstar** | A top-tier hitter facing a weak pitcher in a hitter's park. |
-| **60.0 - 85.0** | **Strong Play** | An everyday starter with a clear advantage (Platoon or high Order). |
-| **40.0** | **Zebras Floor** | **Hard Cutoff**. Below this, we bench the player to save game caps. |
-
-#### Pitcher Tiers
-| Score Range | Tier | Rationale |
-| :--- | :--- | :--- |
-| **7.0+** | **Elite Start** | An ace-level projection in a favorable park/matchup. |
-| **5.0 - 6.5** | **Strong Start** | Solid SP with a clear tactical advantage. |
-| **3.0 - 4.5** | **Streamer / Baseline** | Standard outing; typical for mid-rotation arms. |
-| **< 2.5** | **Dangerous** | Avoid starting due to poor ratios or elite opposing offense. |
+---
 
 ## 🌐 Automated Web Dashboard
 
-The Zurich Zebras Optimizer features a **zero-cost static web dashboard** hosted on GitHub Pages. 
+Zero-cost static dashboard hosted on GitHub Pages.
 
-### Features
-- **Multi-Projection Support**: Toggle between **ATC** and **Steamer** baselines.
-- **Advance Planning**: View optimized lineups for both **Today** and **Tomorrow**.
-- **Pitcher Evaluation**: Daily efficiency cards for rostered starting pitchers.
-- **Recent Performance**: Visual 3-day history showing actual Roto production and pitcher results.
-- **AI Analyst**: Real-time pre-game narrative generated by Google Gemini.
-- **Live Status**: Displays game status (e.g., "Top 3rd", "Warmup", "Final") and live stats when games are active.
+**Features:** Multi-projection toggle (ATC / Steamer), Today / Tomorrow views, pitcher cards, 3-day history, AI analyst (Google Gemini), live game status.
 
-### Architecture
-1.  **Automation (GitHub Actions)**:
-    - **Daily Refresh**: Runs `fetch_statcast.py` at 4 AM UTC to update seasonal baselines and projections.
-    - **Hourly Updates**: Runs `update_web_data.py` every hour to refresh lineups, pitchers, weather, and recent history.
-2.  **Data Layer**: Python scripts export state to structured JSON files (Lineups, Pitcher Starts, and 3-day History). These are hosted directly on the `gh-pages` branch.
-3.  **Frontend**: A lightweight `index.html` built with **Tailwind CSS** and **Alpine.js**.
+**Architecture:**
+- **Daily (4 AM UTC)**: `fetch_statcast.py` → `build_crosswalk.py` → `update_web_data.py --skip-ai` → deploy to gh-pages
+- **Hourly (8 AM–9 PM ET)**: `update_web_data.py` → deploy to gh-pages
 
-### Local Web Development
-1.  **Generate Data**: Run `python update_web_data.py --skip-ai`.
-2.  **Launch Server**: Run `python -m http.server 8000`.
-3.  **View**: Open `http://localhost:8000` in your browser.
+**Local development:**
+```bash
+uv run python update_web_data.py --skip-ai
+python -m http.server 8000
+# open http://localhost:8000
+```
+
+---
 
 ## 🛠 Project Structure
 
-- `main.py`: Entry point for daily hitter optimization.
-- `pitcher_optimizer.py`: Entry point for daily pitcher optimization.
-- `index.html`: Web dashboard frontend (Alpine.js + Tailwind).
-- `update_web_data.py`: Helper script to generate all web JSON views.
-- `backtester.py`: Simulation engine for historical hitter analysis.
-- `pitcher_backtester.py`: Simulation engine for historical pitcher analysis.
-- `pitcher_daily_engine.py`: Logic for applying pitcher matchup multipliers.
-- `pitcher_enricher.py`: Maps pitchers to projection systems.
-- `daily_engine.py`: Logic for applying daily hitter matchup multipliers.
-- `harvester.py`: Ottoneu roster and FanGraphs scraper.
-- `gameday_harvester.py`: MLB Stats API interface for lineups, BvP, and actual results.
-- `statcast_harvester.py`: Local lookup for advanced StatCast metrics.
-- `optimizer.py`: SciPy-based linear programming optimizer.
+| File | Purpose |
+| :--- | :--- |
+| `main.py` | Entry point — daily hitter optimization |
+| `pitcher_optimizer.py` | Entry point — daily pitcher optimization |
+| `update_web_data.py` | Generate all team/projection JSON views |
+| `build_crosswalk.py` | Pre-build FGID → MLB ID crosswalk for all teams |
+| `fetch_statcast.py` | Fetch StatCast datasets and projections |
+| `daily_engine.py` | Hitter scoring: applies daily multipliers |
+| `pitcher_daily_engine.py` | Pitcher scoring: applies matchup multipliers |
+| `enricher.py` | Maps roster to projection systems; calculates base score |
+| `pitcher_enricher.py` | Maps pitchers to projection systems |
+| `optimizer.py` | SciPy linear programming solver (13 slots) |
+| `harvester.py` | Ottoneu roster scraper (FanGraphs links, IsMinors) |
+| `gameday_harvester.py` | MLB Stats API: lineups, BvP, ID resolution, statuses |
+| `statcast_harvester.py` | Local lookup for cached StatCast metrics |
+| `weather_harvester.py` | Real-time wind/rain from Rotowire |
+| `park_factors.py` | Numerical venue multipliers for all 30 parks |
+| `crosswalks.py` | Team abbreviation mappings (Ottoneu ↔ MLB API) |
+| `config.py` | All scoring constants and multiplier bounds |
+| `backtester.py` | Single-date hitter simulation: predicted lineup vs actual box scores |
+| `pitcher_backtester.py` | Single-date pitcher simulation: projected vs actual results |
+| `batch_backtester.py` | Season-wide accuracy audit across 50 random dates |
+| `fa_backtester.py` | Free agent backtest: project FA pool vs actual results for a date |
+| `scout.py` | Rank available free agents by Zebras efficiency score |
+| `scout_harvester.py` | Fetch current free agent pool from FanGraphs API |
+| `TODO.md` | Feature backlog |
 
 ---
+
 *Built for the 162-game grind. Efficiency is the only metric that matters.*

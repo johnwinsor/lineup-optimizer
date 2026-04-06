@@ -116,11 +116,6 @@ def main():
             if old_proj_data and new_proj_data and stats_type == "bat":
                 print(f"\n--- {system.upper()} {type_label} Changes ---")
                 compare_steamer_projections(old_proj_data, new_proj_data)
-            
-            # Backward compatibility for the original steamer-hitters.json
-            if system == "steamer" and stats_type == "bat":
-                import shutil
-                shutil.copy2(effective_file, "steamer-hitters.json")
 
 if __name__ == "__main__":
     main()

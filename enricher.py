@@ -100,14 +100,20 @@ class OttoneuEnricher(BaseEnricher):
                 hitters.at[idx, 'AVG_y']     = m['AVG']
                 hitters.at[idx, 'xMLBAMID']  = m['xMLBAMID']
 
-        # Zebras hitter efficiency score: (R+HR+RBI+SB)/PA*100 + AVG*100
-        hitters['Score'] = (
-            (hitters['R_y'].fillna(0).astype(float) +
-             hitters['HR_y'].fillna(0).astype(float) +
-             hitters['RBI_y'].fillna(0).astype(float) +
-             hitters['SB_y'].fillna(0).astype(float)) /
-            hitters['PA_y'].fillna(1).astype(float).replace(0, 1) * 100
-        ) + (hitters['AVG_y'].fillna(0).astype(float) * 100)
+        # Zebras hitter efficiency score — three improvements vs. original formula:
+        #   1. Consistent denominator: AVG coefficient changed from 100 to 89
+        #      (reflects H/PA = AVG × AB/PA ≈ AVG × 0.89 rather than mixing H/AB with counting/PA)
+        #   2. SB weighted 1.5× to reflect category scarcity in 5×5 Roto
+        #      (stolen bases are meaningfully harder to replace than R/HR/RBI at league scale)
+        #   3. PA normalization retained — for two starters with the same PA/game,
+        #      per-PA rate correctly ranks daily expected quality
+        pa  = hitters['PA_y'].fillna(1).astype(float).replace(0, 1)
+        r   = hitters['R_y'].fillna(0).astype(float)
+        hr  = hitters['HR_y'].fillna(0).astype(float)
+        rbi = hitters['RBI_y'].fillna(0).astype(float)
+        sb  = hitters['SB_y'].fillna(0).astype(float)
+        avg = hitters['AVG_y'].fillna(0).astype(float)
+        hitters['Score'] = ((r + hr + rbi + sb * 1.5) / pa * 100) + (avg * 89)
 
         return hitters.sort_values(by='Score', ascending=False)
 

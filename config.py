@@ -33,34 +33,35 @@ def get_recency_weight(target_date: str) -> float:
 # ---------------------------------------------------------------------------
 # Opposing pitcher difficulty
 # ---------------------------------------------------------------------------
-ERA_FACTOR_MIN = 0.70       # Maximum penalty (facing an ace)
-ERA_FACTOR_MAX = 1.30       # Maximum boost (facing a bad pitcher)
+ERA_FACTOR_MIN = 0.80       # Maximum penalty (facing an ace) — research supports ~±10-15%
+ERA_FACTOR_MAX = 1.20       # Maximum boost (facing a bad pitcher)
 ERA_FACTOR_NEUTRAL = 4.00   # League-average ERA — used as the baseline divisor
 
 # ---------------------------------------------------------------------------
 # Platoon splits
 # ---------------------------------------------------------------------------
-PLATOON_MULT_MIN = 0.80
-PLATOON_MULT_MAX = 1.20
-SWITCH_HIT_BONUS = 1.05          # Switch hitters are never fully penalized
-PLATOON_ADVANTAGE_BONUS = 1.10   # Opposite-hand matchup (e.g. LHB vs RHP)
-PLATOON_LL_PENALTY = 0.85        # Same-hand disadvantage: L batter vs L pitcher
-PLATOON_RR_PENALTY = 0.95        # Same-hand disadvantage: R batter vs R pitcher
+PLATOON_MULT_MIN = 0.85
+PLATOON_MULT_MAX = 1.15
+SWITCH_HIT_BONUS = 1.03          # Switch hitters are never fully penalized
+PLATOON_ADVANTAGE_BONUS = 1.07   # Opposite-hand matchup (e.g. LHB vs RHP)
+PLATOON_LL_PENALTY = 0.90        # Same-hand disadvantage: L batter vs L pitcher — research: ~−8 to −12%
+PLATOON_RR_PENALTY = 0.97        # Same-hand disadvantage: R batter vs R pitcher — research: ~−2 to −5%
 
 # ---------------------------------------------------------------------------
 # Batter vs Pitcher (BvP)
 # ---------------------------------------------------------------------------
-BVP_MIN_PA = 5             # Minimum plate appearances before BvP is applied
+BVP_MIN_PA = 25            # Minimum PA before BvP is applied — below ~100 PA is mostly noise;
+                           # 25 is a pragmatic floor that catches meaningful history
 
 BVP_ELITE_OPS = 1.000      # Career OPS vs this pitcher — elite
 BVP_GOOD_OPS  = 0.850      # Good
 BVP_WEAK_OPS  = 0.650      # Weak
 BVP_POOR_OPS  = 0.500      # Poor
 
-BVP_ELITE_MULT = 1.15
-BVP_GOOD_MULT  = 1.05
-BVP_WEAK_MULT  = 0.95
-BVP_POOR_MULT  = 0.85
+BVP_ELITE_MULT = 1.08      # Reduced from 1.15 — BvP signal is real but small at any PA count
+BVP_GOOD_MULT  = 1.03      # Reduced from 1.05
+BVP_WEAK_MULT  = 0.97      # Reduced from 0.95
+BVP_POOR_MULT  = 0.92      # Reduced from 0.85
 
 # ---------------------------------------------------------------------------
 # Basestealing environment
@@ -68,35 +69,34 @@ BVP_POOR_MULT  = 0.85
 SPRINT_SPEED_ELITE = 28.5   # ft/s — elite speed; full SB tier multiplier
 SPRINT_SPEED_GOOD  = 27.5   # ft/s — good speed; half SB tier multiplier
 
-CATCHER_POP_SLOW  = 2.00    # Pop time (sec) — slow catcher, SB boost
+CATCHER_POP_SLOW  = 2.05    # Pop time (sec) — below-average catcher, SB boost (MLB avg ~2.01s)
 CATCHER_POP_ELITE = 1.90    # Pop time (sec) — elite catcher, SB penalty
-SB_CATCHER_MULT   = 0.05    # Per-tier boost/penalty for catcher pop time
+SB_CATCHER_MULT   = 0.02    # Per-tier boost/penalty for catcher pop time
+                             # Reduced from 0.05 — multiplier applies to full score, not just SB component,
+                             # so a small coefficient is needed to avoid overstating the effect.
 
 SB_RATE_SLOW_SP = 0.85      # SP SB-allowed rate — easy to run on
 SB_RATE_HOLD_SP = 0.65      # SP SB-allowed rate — hard to run on
-SB_PITCHER_MULT = 0.10      # Per-tier boost/penalty for SP hold ability
+SB_PITCHER_MULT = 0.04      # Per-tier boost/penalty for SP hold ability
+                             # Reduced from 0.10 — same rationale as SB_CATCHER_MULT.
 
 # ---------------------------------------------------------------------------
 # Batting order
 # ---------------------------------------------------------------------------
 ORDER_MULTIPLIERS = {
-    1: 1.15, 2: 1.12, 3: 1.10, 4: 1.10,
-    5: 1.05, 6: 1.00, 7: 0.95, 8: 0.90, 9: 0.85,
+    1: 1.10, 2: 1.08, 3: 1.06, 4: 1.04,
+    5: 1.02, 6: 1.00, 7: 0.97, 8: 0.94, 9: 0.91,
 }
+# Spread tightened from ±15% to ±10%; still reflects PA exposure research
 
 # ---------------------------------------------------------------------------
-# StatCast / xwOBA
+# StatCast / xwOBA — thresholds kept for informational breakdown display;
+# multipliers removed: xwOBA quality is already captured by the projection
+# system, and applying a second boost creates systematic double-counting.
 # ---------------------------------------------------------------------------
 XWOBA_ELITE = 0.400
 XWOBA_GOOD  = 0.370
-XWOBA_ELITE_MULT = 1.10
-XWOBA_GOOD_MULT  = 1.05
-
-BARREL_PCT_ELITE      = 15.0
-BARREL_PCT_ELITE_MULT = 1.05
-
-# Superstar shield: elite xwOBA players can't fall below this fraction of base score
-SUPERSTAR_FLOOR = 0.85
+BARREL_PCT_ELITE = 15.0
 
 # ---------------------------------------------------------------------------
 # Weather
@@ -109,11 +109,20 @@ WIND_OUT_STRONG_MULT   = 1.10
 WIND_IN_MODERATE_MULT  = 0.95
 WIND_IN_STRONG_MULT    = 0.90
 
-HEAT_THRESHOLD = 85    # °F — above this, apply heat penalty
-HEAT_PENALTY   = 0.95
+HEAT_THRESHOLD = 85    # °F — threshold for informational display only;
+                       # heat actually reduces air density and helps ball carry,
+                       # so no penalty is applied (removed directionally wrong −5%)
 
 RAIN_HIGH_RISK_PCT     = 60   # % chance — high risk warning
 RAIN_MODERATE_RISK_PCT = 30   # % chance — moderate risk warning
+
+# ---------------------------------------------------------------------------
+# Total daily multiplier cap — prevents extreme compounding when multiple
+# favorable/unfavorable factors stack. Acts as a safety net; with calibrated
+# individual multipliers this should rarely trigger.
+# ---------------------------------------------------------------------------
+DAILY_MULT_MAX = 1.35   # No player gets more than +35% above their base score
+DAILY_MULT_MIN = 0.70   # No player gets penalised more than −30% below base
 
 # ---------------------------------------------------------------------------
 # Pitcher scoring

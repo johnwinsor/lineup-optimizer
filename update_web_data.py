@@ -21,16 +21,16 @@ def main():
     tomorrow = (datetime.datetime.now(tz) + datetime.timedelta(days=1)).strftime('%Y-%m-%d')
 
     hitter_jobs = [
-        ("atc",     today,    "lineup_atc_today.json"),
         ("steamer", today,    "lineup_steamer_today.json"),
-        ("atc",     tomorrow, "lineup_atc_tomorrow.json"),
+        ("atc",     today,    "lineup_atc_today.json"),
         ("steamer", tomorrow, "lineup_steamer_tomorrow.json"),
+        ("atc",     tomorrow, "lineup_atc_tomorrow.json"),
     ]
     pitcher_jobs = [
-        ("atc",     today,    "pitchers_atc_today.json"),
         ("steamer", today,    "pitchers_steamer_today.json"),
-        ("atc",     tomorrow, "pitchers_atc_tomorrow.json"),
+        ("atc",     today,    "pitchers_atc_today.json"),
         ("steamer", tomorrow, "pitchers_steamer_tomorrow.json"),
+        ("atc",     tomorrow, "pitchers_atc_tomorrow.json"),
     ]
 
     print(f"Updating web data for {len(C.TEAM_IDS)} teams — {today} and {tomorrow}...")

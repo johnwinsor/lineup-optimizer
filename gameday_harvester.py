@@ -103,16 +103,17 @@ class GameDayHarvester:
 
         try:
             # 2. statsapi MLB-level name lookup
-            # With multiple results, verify team to avoid nickname false positives (e.g. Severino/Peña).
-            # With a single result, trust it — team verification can fail on abbreviation edge cases.
+            # Always run _team_matches() when team_abb is provided — this prevents nickname false
+            # positives (e.g. "luis pena" returning Severino) regardless of result count.
+            # When no team_abb is given, trust a single result directly.
             results = statsapi.lookup_player(search_name)
-            if len(results) == 1:
-                p_id = results[0]['id']
-            else:
+            if results and team_abb:
                 for r in results:
                     if _team_matches(r['id']):
                         p_id = r['id']
                         break
+            elif len(results) == 1:
+                p_id = results[0]['id']
         except Exception as e:
             logger.warning(f"statsapi.lookup_player failed for '{player_name}': {e}")
 

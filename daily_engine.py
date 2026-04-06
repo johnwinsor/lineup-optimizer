@@ -30,25 +30,16 @@ class DailyEngine:
         current_year = datetime.now().year
         weight_current = C.get_recency_weight(target_date) if year >= current_year else 0.0
 
-        # ── ID resolution ───────────────────────────────────────────────────
+        # ── ID resolution (roster-driven, projection-system-agnostic) ──────
+        # Always resolve via FGID crosswalk → name search → MiLB fallback.
+        # xMLBAMID from projections is intentionally ignored here: a player's
+        # roster status is a fact about the player, not the projection system.
         player_id_to_mlb = {}
         for idx, row in hitters.iterrows():
-            mlb_id = row.get('xMLBAMID')
-            if not mlb_id or pd.isna(mlb_id):
-                fg_id = row.get('FGID')
-                mlb_id = self.harvester.get_mlb_id(
-                    row['Name'], target_year=year, team_abb=row.get('Team'), fg_id=fg_id
-                )
-            else:
-                mlb_id = int(mlb_id)
-                fg_id = row.get('FGID')
-                if fg_id:
-                    crosswalk = self.harvester._load_id_crosswalk()
-                    fg_key = str(fg_id)
-                    if fg_key not in crosswalk:
-                        crosswalk[fg_key] = {'mlb_id': mlb_id, 'name': row['Name']}
-                        self.harvester._save_id_crosswalk()
-
+            mlb_id = self.harvester.get_mlb_id(
+                row['Name'], target_year=year,
+                team_abb=row.get('Team'), fg_id=row.get('FGID')
+            )
             if mlb_id:
                 player_id_to_mlb[idx] = int(mlb_id)
 
@@ -195,7 +186,6 @@ class DailyEngine:
 
                 # Opposing pitcher
                 sp_id = matchup.get('opposing_sp_id')
-                is_superstar = False
                 if sp_id:
                     sp_data = self.harvester.get_pitcher_data(sp_id, year=year, weight_current=weight_current)
                     pitcher_skill = sp_data.get('SIERA', sp_data.get('xera', sp_data.get('era', C.ERA_FACTOR_NEUTRAL)))
@@ -313,22 +303,16 @@ class DailyEngine:
                     except (ValueError, IndexError):
                         pass
 
-                # StatCast
+                # StatCast — informational only; no multiplier applied.
+                # xwOBA and Barrel% quality is already embedded in the projection
+                # system (Steamer/ATC). Applying a second multiplier double-counts it.
                 sc_hitter = self.harvester.statcast.get_blended_hitter_stats(mlb_id, weight_current=weight_current)
                 if sc_hitter is not None:
                     xwoba = float(sc_hitter.get('xwOBA', 0))
                     if xwoba > C.XWOBA_ELITE:
-                        is_superstar = True
-                        multiplier *= C.XWOBA_ELITE_MULT
-                        breakdown.append(f"xwOBA Elite: +{int((C.XWOBA_ELITE_MULT - 1) * 100)}%")
+                        breakdown.append(f"xwOBA Elite ({xwoba:.3f})")
                     elif xwoba > C.XWOBA_GOOD:
-                        multiplier *= C.XWOBA_GOOD_MULT
-                        breakdown.append(f"xwOBA Good: +{int((C.XWOBA_GOOD_MULT - 1) * 100)}%")
-
-                    barrel_pct = float(sc_hitter.get('Barrel%', 0))
-                    if barrel_pct > C.BARREL_PCT_ELITE:
-                        multiplier *= C.BARREL_PCT_ELITE_MULT
-                        breakdown.append(f"Barrel: +{int((C.BARREL_PCT_ELITE_MULT - 1) * 100)}%")
+                        breakdown.append(f"xwOBA Good ({xwoba:.3f})")
 
                 # Weather (applied after score so it doesn't compound the superstar floor)
                 home_abb = matchup.get('home_team_abb')
@@ -344,10 +328,6 @@ class DailyEngine:
                             multiplier *= penalty
                             breakdown.append(f"Wind In: -{int((1 - penalty) * 100)}%")
 
-                        if w.get('temp', 0) > C.HEAT_THRESHOLD:
-                            multiplier *= C.HEAT_PENALTY
-                            breakdown.append(f"Heat (>{C.HEAT_THRESHOLD}F): {int((C.HEAT_PENALTY - 1) * 100)}%")
-
                         if w['rain_risk'] >= C.RAIN_HIGH_RISK_PCT:
                             warning = f"🚨 HIGH RAIN RISK ({w['rain_risk']}%)"
                         elif w['rain_risk'] >= C.RAIN_MODERATE_RISK_PCT:
@@ -357,9 +337,10 @@ class DailyEngine:
                     daily_score = 0.0
                     breakdown.append("Not Starting: -100%")
                 else:
+                    # Cap total multiplier — prevents extreme compounding when
+                    # several favorable/unfavorable factors stack simultaneously
+                    multiplier = max(C.DAILY_MULT_MIN, min(C.DAILY_MULT_MAX, multiplier))
                     daily_score = base_score * multiplier
-                    if is_superstar:
-                        daily_score = max(daily_score, base_score * C.SUPERSTAR_FLOOR)
 
             daily_scores.append(daily_score)
             is_starting.append(starting)

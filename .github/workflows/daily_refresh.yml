@@ -38,6 +38,9 @@ jobs:
       - name: Fetch StatCast and Projections
         run: uv run python fetch_statcast.py
 
+      - name: Build player ID crosswalk
+        run: uv run python build_crosswalk.py
+
       - name: Run optimizer (post-projection refresh)
         # AI narrative skipped — this is a data refresh run, not the primary hourly update
         run: uv run python update_web_data.py --skip-ai
