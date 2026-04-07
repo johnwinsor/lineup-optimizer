@@ -107,9 +107,13 @@ Cover the following, in whatever order feels natural:
 
 Analytical tone. No filler intro. 2–3 paragraphs.
 """
-        max_attempts = 5
-        delays = [5, 15, 30, 60]  # seconds between attempts 1-2, 2-3, 3-4, 4-5
-        for attempt in range(1, max_attempts + 1):
+        def _is_transient(exc):
+            s = str(exc)
+            return any(code in s for code in ('503', '429', 'UNAVAILABLE', 'RESOURCE_EXHAUSTED'))
+
+        # Primary model — 5 attempts with escalating backoff
+        primary_exhausted = False
+        for attempt in range(1, 6):
             try:
                 response = client.models.generate_content(
                     model='gemini-3.1-flash-lite-preview',
@@ -117,14 +121,34 @@ Analytical tone. No filler intro. 2–3 paragraphs.
                 )
                 return response.text
             except Exception as e:
-                err_str = str(e)
-                is_transient = any(code in err_str for code in ('503', '429', 'UNAVAILABLE', 'RESOURCE_EXHAUSTED'))
-                if is_transient and attempt < max_attempts:
-                    delay = delays[attempt - 1]
-                    logger.warning(f"Gemini API transient error (attempt {attempt}/{max_attempts}), retrying in {delay}s: {e}")
+                if _is_transient(e) and attempt < 5:
+                    delay = [5, 15, 30, 60][attempt - 1]
+                    logger.warning(f"Gemini primary transient error (attempt {attempt}/5), retrying in {delay}s: {e}")
                     time.sleep(delay)
+                elif _is_transient(e):
+                    primary_exhausted = True
+                    break  # capacity exhausted — try fallback
                 else:
-                    raise
+                    raise  # non-transient (auth, bad request) — fail fast on both models
+
+        # Fallback model — 3 attempts with shorter backoff
+        if primary_exhausted:
+            logger.warning("Primary model exhausted — switching to fallback (gemini-2.5-flash-lite)")
+            for attempt in range(1, 4):
+                try:
+                    response = client.models.generate_content(
+                        model='gemini-2.5-flash-lite',
+                        contents=prompt,
+                    )
+                    logger.info(f"Narrative generated via fallback model (attempt {attempt}/3)")
+                    return response.text
+                except Exception as e:
+                    if _is_transient(e) and attempt < 3:
+                        delay = 10 * attempt  # 10s, 20s
+                        logger.warning(f"Gemini fallback transient error (attempt {attempt}/3), retrying in {delay}s: {e}")
+                        time.sleep(delay)
+                    else:
+                        raise
     except Exception as e:
         return f"⚠️ Failed to generate AI narrative: {e}"
 
