@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-07",
-    "last_updated": "2026-04-07T16:29:19.638932+00:00",
+    "last_updated": "2026-04-07T17:57:08.412470+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 717.13,
-    "narrative": "The Austin Waves head into today\u2019s slate with a lineup anchored by Gunnar Henderson (79.79) and Josh Lowe (71.68), our two most potent plays. Henderson is the clear top option; he benefits from a favorable matchup against S. Smith and gains a tangible boost from the opponent's slow delivery, which historically inflates his stolen base probability\u2014a critical lever for our roster composition. Lowe, meanwhile, projects as a high-upside play against Reynaldo L\u00f3pez. Despite batting lower in the order, his dynamic platoon advantage against the right-handed L\u00f3pez makes him a cornerstone of today's scoring potential. While our outfield rotation is robust, we are proceeding with caution on Luis Robert Jr. (46.41); despite his talent, the confluence of a matchup against Zac Gallen and unfavorable wind conditions has significantly suppressed his efficiency score, keeping him near our benching threshold.\n\nThe most difficult roster decision involved leaving Vladimir Guerrero Jr. (50.61) on the bench. While his xwOBA profile remains elite, he fell just short of the cut due to a challenging matchup against Yoshinobu Yamamoto, whose SP_xERA of 3.32 presents a significant hurdle. The optimizer prioritized the consistency of Marcell Ozuna (51.49) in that utility spot, largely due to Ozuna\u2019s favorable BvP history, which provided the slight edge needed to displace Vladdy in a crowded lineup. As we finalize our configuration, be advised that the \"Lineup Pending\" status for most of our starters introduces volatility; adjustments to batting order\u2014particularly for Drake Baldwin or Nolan Schanuel\u2014could necessitate mid-day re-evaluation if they drop out of premium run-production slots. Watch the weather reports closely, as any shift in wind speed at the park hosting the Luis Robert Jr. game could further erode his value.",
+    "narrative": "Today\u2019s aggressive lineup configuration for the Austin Waves is anchored by **Gunnar Henderson** (79.79), who remains our highest-efficiency play. His matchup against Smith is ideal; the projection is boosted by a high-upside dynamic platoon advantage (+14%) and the fact that Smith possesses a slow delivery, which historically facilitates stolen base opportunities\u2014our scarcest and most coveted category. Similarly, **Josh Lowe** (71.68) earns a promotion into the starting outfield. Despite batting seventh, he benefits significantly from a soft matchup against Reynaldo L\u00f3pez, whose 6.36 xERA provides the most favorable SP environment of the day, netting **Josh Lowe** a +19% skill bonus. **Kyle Tucker** (67.98) rounds out the top tier of hitters, maintaining a high floor despite facing Kevin Gausman, as his elite xwOBA (0.372) and consistent placement in the #2 hole stabilize his production regardless of the tougher arm.\n\nThe most difficult decision for the optimizer involved the benching of **Vladimir Guerrero Jr.** (50.61), who narrowly missed the cut. While he possesses an elite 0.384 xwOBA, his score was suppressed by the necessity of facing Yoshinobu Yamamoto, a high-skill arm (-16% SP adjustment), and a negative platoon split. He was ultimately edged out by **Marcell Ozuna** (51.49), whose BvP history against Nick Pivetta (35 PA, +8% boost) provided just enough efficiency to justify the start. Meanwhile, we are closely monitoring the weather risk for **Luis Robert Jr.** (46.41); while he holds a spot, his score is severely hampered by a \"Wind In\" factor (-9%) and a -15% dynamic platoon hit against Gallen, making him a candidate to be swapped if the stadium conditions worsen before first pitch. We are proceeding with caution as several spots, including **Drake Baldwin**, **Nolan Schanuel**, **Nasim Nunez**, **Luis Garc\u00eda Jr.**, **Andy Pages**, and **Jackson Merrill**, remain subject to final lineup confirmation.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -139,11 +139,6 @@
             "Score": 79.78850711408806,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "60.65",
                     "type": "info"
@@ -178,7 +173,7 @@
             "SP_xERA": "4.20",
             "Warning": "",
             "GameTime": "2026-04-07T19:10:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "07:10 PM"
         },
         {
@@ -257,7 +252,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Trevor Rogers (L)",
+            "Opponent": "Rogers, Tr (L)",
             "SP_xERA": "3.75",
             "Warning": "",
             "GameTime": "2026-04-07T19:10:00Z",
@@ -359,11 +354,6 @@
             "Score": 46.40974005619303,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "57.33",
                     "type": "info"
@@ -394,11 +384,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Zac Gallen (R)",
+            "Opponent": "Gallen (R)",
             "SP_xERA": "4.24",
             "Warning": "",
             "GameTime": "2026-04-07T20:10:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "08:10 PM"
         },
         {
@@ -622,17 +612,12 @@
             "Slot": "BN",
             "Player": "Jorge Polanco",
             "POS": "2B/3B",
-            "Order": "3*",
+            "Order": "3",
             "Start": "08:10 PM",
-            "Opponent": "Zac Gallen (R)",
+            "Opponent": "Gallen (R)",
             "SP_xERA": "4.24",
             "Score": 49.06438873091322,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.26",
@@ -664,7 +649,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -833,17 +818,12 @@
             "Slot": "BN",
             "Player": "Coby Mayo",
             "POS": "1B/3B",
-            "Order": "8*",
+            "Order": "8",
             "Start": "07:10 PM",
             "Opponent": "Smith, S (R)",
             "SP_xERA": "4.20",
             "Score": 44.29214232436923,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.57",
@@ -875,7 +855,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }

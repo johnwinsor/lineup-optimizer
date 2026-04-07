@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-07",
-    "last_updated": "2026-04-07T16:29:11.010311+00:00",
+    "last_updated": "2026-04-07T17:57:01.032211+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 728.49,
-    "narrative": "The Austin Waves roster is anchored today by Gunnar Henderson (81.17) and Josh Lowe (72.21), both of whom benefit significantly from favorable matchups against pitchers with exploitable metrics. Henderson is our premier play; beyond his high base expectation, he faces a slow-delivering opponent (93rd percentile for potential SB thefts), allowing his elite sprint speed to maximize value in our scarcest category. Meanwhile, Josh Lowe\u2019s score is buoyed by a 19% boost from Reynaldo L\u00f3pez\u2019s weak projected xERA (6.36), effectively insulating him against the lower-order lineup penalty. Nolan Schanuel (67.16) also thrives in this same matchup, making the 1B/OF stack against L\u00f3pez a pillar of today's scoring strategy.\n\nWhile the core looks stable, we are monitoring several high-leverage pivots. The most difficult exclusion remains Marcell Ozuna (52.61), who narrowly missed the cut; despite an elite BvP history against Nick Pivetta (+8%), his score was suppressed by a park penalty (-2%) and his lower placement in the projected batting order, leaving the optimizer to prioritize the higher-upside speed profiles in the outfield. Risk mitigation is paramount today, particularly with Luis Robert Jr. (45.68), whose score is vulnerable due to a -9% wind-in penalty at the stadium and a difficult clash with Zac Gallen. Owners should closely monitor official lineups, as the \u201cLineup Pending\u201d status for key contributors like Tucker and Guerrero Jr. remains a point of volatility given their tough matchups against Gausman and Yamamoto, respectively.",
+    "narrative": "The Austin Waves enter today\u2019s slate with **Gunnar Henderson** as our premier offensive anchor, boasting an elite 81.16 score against S. Smith. His matchup is structurally perfect: a favorable pitcher matchup, a prime #2 slot, and a crucial boost from Smith\u2019s slow delivery, which provides a tangible efficiency lift for our stolen base strategy. Meanwhile, **Josh Lowe** emerges as a surprising high-ceiling play at 72.21. Despite batting lower in the order, he benefits immensely from a matchup against Reynaldo L\u00f3pez, whose 6.36 xERA is the softest target on the board today. The 14% boost from our dynamic platoon modeling against L\u00f3pez makes **Josh Lowe** a superior play to several of our higher-carded bats who are facing tougher arms.\n\nOur most difficult roster decision involved leaving **Marcell Ozuna** on the bench. His 52.61 score was bolstered by an elite 8% BvP historical edge, but he ultimately lost the numbers game to the positional flexibility and platoon upside offered by **Andy Pages** and **Vladimir Guerrero Jr.**. While **Marcell Ozuna** remains a potent weapon, the optimizer prioritized the volume of **Nasim Nunez** and **Drake Baldwin** in favorable spots to maximize our categories. We are tracking several \"Lineup Pending\" designations closely; **Kyle Tucker** and **Jackson Merrill** face elite competition in Kevin Gausman and Paul Skenes, respectively, and any shift in their batting order could necessitate a quick pivot to preserve our game caps.\n\nFinally, caution is warranted regarding the bottom of our outfield depth. **Luis Robert Jr.** carries the lowest score of our active starters (45.68), heavily hampered by a -9% wind penalty at the park and a tough draw against Gallen. We are effectively betting on his talent floor here, but he is the first player on the chopping block should we need to conserve games later in the week. **Miguel Vargas** also sits on the fringe (49.69); if his lineup placement drifts lower than the assumed #3, we may see his efficiency drop below our acceptable threshold, forcing us to lean into the depth provided by **Jorge Polanco** or **Coby Mayo** if they find their way into their respective lineups.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -139,11 +139,6 @@
             "Score": 81.1685875440519,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "61.70",
                     "type": "info"
@@ -178,7 +173,7 @@
             "SP_xERA": "4.20",
             "Warning": "",
             "GameTime": "2026-04-07T19:10:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "07:10 PM"
         },
         {
@@ -257,7 +252,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Trevor Rogers (L)",
+            "Opponent": "Rogers, Tr (L)",
             "SP_xERA": "3.75",
             "Warning": "",
             "GameTime": "2026-04-07T19:10:00Z",
@@ -403,11 +398,6 @@
             "Score": 45.6802685606111,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "56.43",
                     "type": "info"
@@ -438,11 +428,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Zac Gallen (R)",
+            "Opponent": "Gallen (R)",
             "SP_xERA": "4.24",
             "Warning": "",
             "GameTime": "2026-04-07T20:10:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "08:10 PM"
         },
         {
@@ -622,17 +612,12 @@
             "Slot": "BN",
             "Player": "Jorge Polanco",
             "POS": "2B/3B",
-            "Order": "3*",
+            "Order": "3",
             "Start": "08:10 PM",
-            "Opponent": "Zac Gallen (R)",
+            "Opponent": "Gallen (R)",
             "SP_xERA": "4.24",
             "Score": 49.5033854481999,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.74",
@@ -664,7 +649,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -833,17 +818,12 @@
             "Slot": "BN",
             "Player": "Coby Mayo",
             "POS": "1B/3B",
-            "Order": "8*",
+            "Order": "8",
             "Start": "07:10 PM",
             "Opponent": "Smith, S (R)",
             "SP_xERA": "4.20",
             "Score": 45.06853308575896,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.42",
@@ -875,7 +855,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
