@@ -47,35 +47,64 @@ def _get_pending_order(breakdown):
     return m.group(1) if m else None
 
 
-def generate_ai_narrative(lineup_df, date_str, skip_ai=False):
+def generate_ai_narrative(lineup_df, sat_df, date_str, projection_system="steamer", team_name="Zurich Zebras", team_id=7582, skip_ai=False):
     if skip_ai:
         return "AI Narrative generation skipped."
-        
+
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         return "⚠️ GEMINI_API_KEY environment variable not set. Please set it to enable AI-generated narratives."
-    
+
     try:
         print("\nGenerating AI Narrative...")
-        # Create client explicitly with the key from environment
         client = genai.Client(api_key=api_key)
-        
-        # Convert lineup data to a readable format for the LLM
-        narrative_df = lineup_df[['Player', 'Opponent', 'Score', 'Breakdown', 'Warning']].copy()
+
+        proj_label = "Steamer" if projection_system == "steamer" else "ATC (Ariel Theoretical Composite)"
+
+        starter_cols = [c for c in ['Slot', 'Player', 'Order', 'Opponent', 'SP_xERA', 'Score', 'Breakdown', 'Warning'] if c in lineup_df.columns]
+        narrative_df = lineup_df[starter_cols].copy()
         narrative_df['Breakdown'] = narrative_df['Breakdown'].apply(_breakdown_to_str)
         lineup_text = narrative_df.to_string(index=False)
-        
-        prompt = f"""
-You are the lead fantasy baseball analyst for the Zurich Zebras (Ottoneu Team 7582).
-Today is {date_str}. Review the team's optimized starting lineup below.
 
-LINEUP DATA:
+        sat_text = "(none)"
+        if sat_df is not None and not sat_df.empty:
+            sat_cols = [c for c in ['Player', 'Slot', 'Opponent', 'SP_xERA', 'Score', 'Breakdown', 'Warning'] if c in sat_df.columns]
+            top_sat = sat_df[sat_cols].sort_values('Score', ascending=False).head(4).copy()
+            top_sat['Breakdown'] = top_sat['Breakdown'].apply(_breakdown_to_str)
+            sat_text = top_sat.to_string(index=False)
+
+        prompt = f"""
+You are the lead fantasy baseball analyst for {team_name} (Ottoneu Team {team_id}), competing in a 5x5 Roto league.
+The five scoring categories are: Runs (R), Home Runs (HR), RBI, Stolen Bases (SB), and Batting Average (AVG).
+SB is the scarcest category — players with elite sprint speed are significantly overweighted in selection decisions.
+Today is {date_str}. Projections sourced from {proj_label}.
+
+SCORING SCALE (daily efficiency score):
+- 90+  : Elite — weak pitcher, hitter's park, strong platoon/order advantage all aligned
+- 60–89: Strong — recommended start
+- 40–59: Marginal — starts only if no better option available
+- <40  : Below floor — benched to preserve game caps
+
+CONTEXT FOR DATA FIELDS:
+- SP_xERA: opposing starter's expected ERA. Below 3.00 = elite arm (tough), above 5.00 = favorable matchup.
+- Order: batting position in today's confirmed lineup. "Lineup Pending" means official lineup not yet posted; historical position assumed.
+- Breakdown: factors that raised or lowered the score from the base projection (park, platoon, BvP, wind, batting order, etc.)
+- Warning: weather or situational flags that introduce risk.
+
+STARTING LINEUP:
 {lineup_text}
 
-Write a concise, 2-paragraph pre-game narrative for the team. 
-- Paragraph 1: Highlight the top plays of the day (high scores, great matchups/platoon advantages).
-- Paragraph 2: Mention any borderline plays, weather warnings, or interesting 'Historical Edge' (BvP) matchups.
-Keep the tone professional, analytical, and focused on maximizing 5x5 Roto efficiency. Do not use filler introductions like 'Here is the narrative'.
+TOP BENCHED PLAYERS (scored well but did not make the cut):
+{sat_text}
+
+Write a pre-game narrative for {team_name}. Be specific — reference actual player names, scores, and matchup details.
+Cover the following, in whatever order feels natural:
+1. The strongest plays of the day: who has the best combination of score, matchup context, and situational factors — and why.
+2. Any notable platoon edges, favorable parks, wind, or BvP historical edges driving a score higher than the raw projection suggests.
+3. The most interesting bench decision: which benched player came closest to making the lineup and what tipped the optimizer the other way.
+4. Any warnings or risks worth flagging — weather, lineup pending, elite opposing pitcher — that could affect the day.
+
+Analytical tone. No filler intro. 2–3 paragraphs.
 """
         response = client.models.generate_content(
             model='gemini-3.1-flash-lite-preview',
@@ -270,10 +299,16 @@ def run_optimizer_hitter(projection_system="steamer", target_date=None, team_id=
             cols = [c for c in cols if c in df_sat.columns]
             display_dataframe(df_sat, title="PLAYERS SAT", columns=cols)
 
-        # Narrative Generation - ONLY for Zurich Zebras
-        skip_narrative_final = skip_ai or (team_id != 7582)
-        ai_narrative = generate_ai_narrative(lineup, target_date, skip_ai=skip_narrative_final)
-        if not skip_narrative_final:
+        # Narrative Generation - all teams, today only (tomorrow gated in update_web_data.py)
+        team_name = C.TEAM_NAMES.get(team_id, f"Team {team_id}")
+        ai_narrative = generate_ai_narrative(
+            lineup, df_sat, target_date,
+            projection_system=projection_system,
+            team_name=team_name,
+            team_id=team_id,
+            skip_ai=skip_ai,
+        )
+        if not skip_ai:
             print_narrative(ai_narrative)
         
         print_info("\n[dim]Algorithm: Maximize projected 5x5 efficiency subject to positional caps.[/dim]")

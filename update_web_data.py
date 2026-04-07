@@ -47,7 +47,7 @@ def main():
                     target_date=date,
                     team_id=team,
                     output_filename=filename,
-                    skip_ai=args.skip_ai,
+                    skip_ai=args.skip_ai or (date == tomorrow),
                 )
             except Exception as e:
                 logger.error(f"Hitter job failed ({team}, {proj}, {date}): {e}")
