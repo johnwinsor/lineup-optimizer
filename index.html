@@ -117,7 +117,7 @@
                     <svg class="w-4 h-4 mr-2 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     Daily Narrative <span class="ml-2 text-slate-500" x-text="data?.target_date ? `for ${formatLongDate(data.target_date)}` : ''"></span>
                 </h2>
-                <div class="text-lg leading-relaxed text-slate-200 whitespace-pre-wrap italic" x-text="data?.narrative"></div>
+                <div class="text-lg leading-relaxed text-slate-200 whitespace-pre-wrap" x-html="renderMarkdown(data?.narrative)"></div>
             </section>
 
             <!-- Probable Starters Section (New) -->
@@ -406,6 +406,12 @@
                         this.data = { narrative: `⚠️ ${e.message}. Run the optimizer to generate it.`, recommended_lineup: [], players_sat: [] };
                         this.loading = false;
                     }
+                },
+                renderMarkdown(text) {
+                    if (!text) return '';
+                    return text
+                        .replace(/\*\*(.*?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
+                        .replace(/\*((?!\*)(.*?))\*/g, '<em>$1</em>');
                 },
                 getBreakdownChips(breakdown) {
                     if (!breakdown || !Array.isArray(breakdown)) return [];
