@@ -107,7 +107,8 @@ Cover the following, in whatever order feels natural:
 
 Analytical tone. No filler intro. 2–3 paragraphs.
 """
-        max_attempts = 3
+        max_attempts = 5
+        delays = [5, 15, 30, 60]  # seconds between attempts 1-2, 2-3, 3-4, 4-5
         for attempt in range(1, max_attempts + 1):
             try:
                 response = client.models.generate_content(
@@ -119,7 +120,7 @@ Analytical tone. No filler intro. 2–3 paragraphs.
                 err_str = str(e)
                 is_transient = any(code in err_str for code in ('503', '429', 'UNAVAILABLE', 'RESOURCE_EXHAUSTED'))
                 if is_transient and attempt < max_attempts:
-                    delay = 2 ** attempt  # 2s, 4s
+                    delay = delays[attempt - 1]
                     logger.warning(f"Gemini API transient error (attempt {attempt}/{max_attempts}), retrying in {delay}s: {e}")
                     time.sleep(delay)
                 else:
