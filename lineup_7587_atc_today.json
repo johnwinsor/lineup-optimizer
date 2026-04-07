@@ -1,15 +1,15 @@
 {
     "target_date": "2026-04-07",
-    "last_updated": "2026-04-07T05:50:22.083658+00:00",
+    "last_updated": "2026-04-07T13:00:44.033867+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 808.9,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 761.12,
+    "narrative": "The slate today presents a high-floor opportunity for the squad, headlined by Mickey Moniak and James Wood, who anchor our efficiency metrics with scores of 75.98 and 71.11, respectively. Moniak\u2019s projection is bolstered significantly by a favorable +14% park adjustment and a solid matchup against Mike Burrows (3.87 xERA). Meanwhile, Wood benefits from a prime lead-off spot against southpaw Matthew Liberatore. We are also leaning heavily on the platoon advantages for Vinnie Pasquantino (68.03) and Jazz Chisholm Jr. (67.99) against Aaron Civale; Chisholm remains a vital component of our strategy, as we prioritize his offensive versatility in the middle-infield slot to maintain pressure in the R/RBI categories.\n\nOur most difficult decision occurred at the fringe of the starting nine, where Zach McKinstry (49.01) narrowly missed the cut behind the stability of Dalton Rushing. While McKinstry\u2019s park and SP-skill metrics were attractive, the optimizer favored Rushing\u2019s platoon edge against Kevin Gausman, despite the latter's tougher xERA. We are treading cautiously regarding the weather; the \"Wind In\" factor is dampening the output for nearly half our roster, most notably dragging down Gabriel Moreno and Jose Caballero. Consequently, managers should monitor the final lineups closely, as our projections assume standard batting order placement; any shifts in the order for Moreno or our OF/UTIL slots could necessitate a quick pivot to preserve our strict daily game caps.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Gabriel Moreno",
             "POS": "C",
-            "Score": 49.97084732442198,
+            "Score": 44.973762591979785,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #4)",
@@ -40,6 +40,11 @@
                     "label": "Order #4",
                     "value": "+4%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-9%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Freddy Peralta (R)",
@@ -53,7 +58,7 @@
             "Slot": "C2",
             "Player": "Dalton Rushing",
             "POS": "C",
-            "Score": 50.629029159140934,
+            "Score": 47.10700973937462,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -76,8 +81,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
+                    "label": "Platoon",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
@@ -97,7 +102,7 @@
             "Slot": "1B",
             "Player": "Vinnie Pasquantino",
             "POS": "1B",
-            "Score": 71.6066380771285,
+            "Score": 68.02630617327206,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -123,6 +128,11 @@
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Gavin Williams (R)",
@@ -134,18 +144,18 @@
         },
         {
             "Slot": "2B",
-            "Player": "Max Muncy",
-            "POS": "2B/SS/3B",
-            "Score": 55.912316982530044,
+            "Player": "Jose Caballero",
+            "POS": "2B/SS/3B/OF",
+            "Score": 50.47236207407052,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
+                    "label": "Lineup Pending (Assumed #8)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "52.79",
+                    "value": "59.45",
                     "type": "info"
                 },
                 {
@@ -155,25 +165,30 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+9%",
+                    "value": "+11%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-9%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Cam Schlittler (R)",
-            "SP_xERA": "3.84",
+            "Opponent": "Aaron Civale (R)",
+            "SP_xERA": "4.45",
             "Warning": "",
             "GameTime": "2026-04-07T23:05:00Z",
-            "Order": "7*",
+            "Order": "8*",
             "Start": "11:05 PM"
         },
         {
@@ -229,7 +244,7 @@
             "Slot": "MI",
             "Player": "Jazz Chisholm Jr.",
             "POS": "2B/3B",
-            "Score": 75.54841932237966,
+            "Score": 67.9935773901417,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -255,6 +270,11 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+7%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-9%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Aaron Civale (R)",
@@ -315,53 +335,68 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Jose Caballero",
-            "POS": "2B/SS/3B/OF",
-            "Score": 56.0804023045228,
+            "Player": "Corbin Carroll",
+            "POS": "OF",
+            "Score": 60.3695275789136,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #8)",
+                    "label": "Lineup Pending (Assumed #2)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "59.45",
+                    "value": "63.66",
                     "type": "info"
                 },
                 {
                     "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (92% SB)",
                     "value": "+4%",
                     "type": "positive"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "+11%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-13%",
-                    "type": "negative"
+                    "label": "xwOBA Good",
+                    "value": "0.372",
+                    "type": "info"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Wind In",
+                    "value": "-9%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Aaron Civale (R)",
-            "SP_xERA": "4.45",
+            "Opponent": "Freddy Peralta (R)",
+            "SP_xERA": "3.68",
             "Warning": "",
-            "GameTime": "2026-04-07T23:05:00Z",
-            "Order": "8*",
-            "Start": "11:05 PM"
+            "GameTime": "2026-04-07T20:10:00Z",
+            "Order": "2*",
+            "Start": "08:10 PM"
         },
         {
             "Slot": "OF2",
             "Player": "Giancarlo Stanton",
             "POS": "OF",
-            "Score": 63.56672174414005,
+            "Score": 57.21004956972604,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -392,6 +427,11 @@
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-9%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Aaron Civale (R)",
@@ -405,7 +445,7 @@
             "Slot": "OF3",
             "Player": "Mickey Moniak",
             "POS": "OF",
-            "Score": 73.86501250215878,
+            "Score": 75.97964860410815,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -436,11 +476,6 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
                 }
             ],
             "Opponent": "Mike Burrows (R)",
@@ -498,7 +533,7 @@
             "Slot": "OF5",
             "Player": "Tyler Soderstrom",
             "POS": "1B/OF",
-            "Score": 60.97875859215919,
+            "Score": 54.88088273294327,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -529,6 +564,11 @@
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-9%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Cam Schlittler (R)",
@@ -540,68 +580,8 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Corbin Carroll",
-            "POS": "OF",
-            "Score": 67.07725286545956,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "63.66",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Slow SP Delivery (92% SB)",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.372",
-                    "type": "info"
-                }
-            ],
-            "Opponent": "Freddy Peralta (R)",
-            "SP_xERA": "3.68",
-            "Warning": "",
-            "GameTime": "2026-04-07T20:10:00Z",
-            "Order": "2*",
-            "Start": "08:10 PM"
-        }
-    ],
-    "players_sat": [
-        {
-            "Slot": "BN",
             "Player": "Josh Naylor",
             "POS": "1B",
-            "Order": "4*",
-            "Start": "12:05 AM",
-            "Opponent": "Nathan Eovaldi (R)",
-            "SP_xERA": "3.17",
             "Score": 50.440144331328895,
             "Breakdown": [
                 {
@@ -628,16 +608,17 @@
                     "label": "Order #4",
                     "value": "+4%",
                     "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
                 }
             ],
+            "Opponent": "Nathan Eovaldi (R)",
+            "SP_xERA": "3.17",
             "Warning": "",
-            "GameTime": "2026-04-08T00:05:00Z"
-        },
+            "GameTime": "2026-04-08T00:05:00Z",
+            "Order": "4*",
+            "Start": "12:05 AM"
+        }
+    ],
+    "players_sat": [
         {
             "Slot": "BN",
             "Player": "Brice Turang",
@@ -715,6 +696,60 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Max Muncy",
+            "POS": "2B/SS/3B",
+            "Order": "7*",
+            "Start": "11:05 PM",
+            "Opponent": "Cam Schlittler (R)",
+            "SP_xERA": "3.84",
+            "Score": 44.669874918715514,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #7)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "52.79",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-04-07T23:05:00Z"
         },
         {
             "Slot": "BN",
@@ -797,7 +832,7 @@
             "Start": "12:40 AM",
             "Opponent": "Mike Burrows (R)",
             "SP_xERA": "3.87",
-            "Score": 51.76724447158983,
+            "Score": 45.962679302006535,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -820,18 +855,13 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #9",
                     "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
                     "type": "negative"
                 },
                 {
@@ -851,7 +881,7 @@
             "Start": "11:07 PM",
             "Opponent": "Kevin Gausman (R)",
             "SP_xERA": "3.79",
-            "Score": 50.53677358460653,
+            "Score": 45.263371123604124,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -874,8 +904,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
+                    "label": "Switch",
+                    "value": "+3%",
                     "type": "positive"
                 },
                 {
@@ -900,7 +930,7 @@
             "Start": "05:10 PM",
             "Opponent": "Noah Cameron (L)",
             "SP_xERA": "4.33",
-            "Score": 48.24525900901337,
+            "Score": 45.8329960585627,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -925,6 +955,11 @@
                 {
                     "label": "Order #8",
                     "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
                     "type": "negative"
                 },
                 {
