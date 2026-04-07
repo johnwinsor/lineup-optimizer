@@ -3,6 +3,7 @@ from optimizer import OttoneuOptimizer
 from datetime import datetime
 import os
 import re
+import time
 import pytz
 import logging
 from google import genai
@@ -106,11 +107,23 @@ Cover the following, in whatever order feels natural:
 
 Analytical tone. No filler intro. 2–3 paragraphs.
 """
-        response = client.models.generate_content(
-            model='gemini-3.1-flash-lite-preview',
-            contents=prompt,
-        )
-        return response.text
+        max_attempts = 3
+        for attempt in range(1, max_attempts + 1):
+            try:
+                response = client.models.generate_content(
+                    model='gemini-3.1-flash-lite-preview',
+                    contents=prompt,
+                )
+                return response.text
+            except Exception as e:
+                err_str = str(e)
+                is_transient = any(code in err_str for code in ('503', '429', 'UNAVAILABLE', 'RESOURCE_EXHAUSTED'))
+                if is_transient and attempt < max_attempts:
+                    delay = 2 ** attempt  # 2s, 4s
+                    logger.warning(f"Gemini API transient error (attempt {attempt}/{max_attempts}), retrying in {delay}s: {e}")
+                    time.sleep(delay)
+                else:
+                    raise
     except Exception as e:
         return f"⚠️ Failed to generate AI narrative: {e}"
 
