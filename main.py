@@ -67,6 +67,11 @@ def generate_ai_narrative(lineup_df, sat_df, date_str, projection_system="steame
         narrative_df['Breakdown'] = narrative_df['Breakdown'].apply(_breakdown_to_str)
         lineup_text = narrative_df.to_string(index=False)
 
+        # Build explicit name list for the formatting rule
+        starter_names = lineup_df['Player'].tolist() if 'Player' in lineup_df.columns else []
+        sat_names = sat_df['Player'].tolist() if sat_df is not None and 'Player' in sat_df.columns else []
+        roster_names = ', '.join(f'**{n}**' for n in starter_names + sat_names)
+
         sat_text = "(none)"
         if sat_df is not None and not sat_df.empty:
             sat_cols = [c for c in ['Player', 'Slot', 'Opponent', 'SP_xERA', 'Score', 'Breakdown', 'Warning'] if c in sat_df.columns]
@@ -97,6 +102,9 @@ STARTING LINEUP:
 
 TOP BENCHED PLAYERS (scored well but did not make the cut):
 {sat_text}
+
+FORMATTING RULE: Wrap the name in **double asterisks** every time you mention one of our rostered players — including the first mention and any repeat mentions. Do NOT bold opposing pitchers or other players not on our roster.
+Our rostered players in this narrative: {roster_names}
 
 Write a pre-game narrative for {team_name}. Be specific — reference actual player names, scores, and matchup details.
 Cover the following, in whatever order feels natural:
