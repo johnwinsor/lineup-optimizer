@@ -61,21 +61,25 @@ class WeatherHarvester:
                 
                 wind_speed = 0
                 wind_dir = "None"
-                wind_match = re.search(r'(\d+) MPH wind blowing ([\w\s-]+)', details)
+                # Only match known field-direction phrases. "blowing in New York City"
+                # is a location clause, not a direction — the greedy [\w\s-]+ pattern
+                # was a false positive because "in" appears in "in New York City".
+                wind_match = re.search(
+                    r'(\d+) MPH wind blowing (out(?:\s+to\b)?|in(?:\s+from\b)?|left[\s-]to[\s-]right|right[\s-]to[\s-]left)',
+                    details, re.IGNORECASE
+                )
                 if wind_match:
                     wind_speed = int(wind_match.group(1))
                     raw_dir = wind_match.group(2).lower()
-                    
-                    if "out" in raw_dir:
+
+                    if raw_dir.startswith("out"):
                         wind_dir = "Out"
-                    elif "in" in raw_dir:
+                    elif raw_dir.startswith("in"):
                         wind_dir = "In"
-                    elif "right to left" in raw_dir or "r-l" in raw_dir:
+                    elif "right to left" in raw_dir or "right-to-left" in raw_dir:
                         wind_dir = "R-L"
-                    elif "left to right" in raw_dir or "l-r" in raw_dir:
+                    elif "left to right" in raw_dir or "left-to-right" in raw_dir:
                         wind_dir = "L-R"
-                    else:
-                        wind_dir = "Cross"
                 
                 # Check for "In" or "Out" or "Left to Right" etc.
                 # Rotowire often says "blowing out", "blowing in", "blowing right to left"

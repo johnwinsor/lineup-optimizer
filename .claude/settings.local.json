@@ -11,7 +11,12 @@
       "Bash(xargs -I{} basename {})",
       "Bash(git add:*)",
       "Bash(git rm:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebFetch(domain:www.covers.com)",
+      "Bash(curl -s \"https://www.covers.com/sport/mlb/weather\" -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\")",
+      "WebFetch(domain:occupyfantasy.com)",
+      "WebSearch",
+      "Bash(uv run:*)"
     ]
   }
 }
