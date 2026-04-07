@@ -453,20 +453,24 @@ class GameDayHarvester:
                 p = statsapi.get('people', params)
                 for person in p.get('people', []):
                     p_id = person.get('id')
-                    splits_data = {'vs_l': None, 'vs_r': None}
-                    
+                    splits_data = {'vs_l': None, 'vs_r': None, 'pa_vs_l': 0, 'pa_vs_r': 0}
+
                     stats = person.get('stats', [])
                     if stats:
                         for split in stats[0].get('splits', []):
                             desc = split.get('split', {}).get('description')
-                            ops_str = split.get('stat', {}).get('ops')
+                            stat = split.get('stat', {})
+                            ops_str = stat.get('ops')
+                            pa = int(stat.get('plateAppearances', 0) or 0)
                             if ops_str:
                                 try:
                                     ops_val = float(ops_str)
                                     if desc == 'vs Left':
                                         splits_data['vs_l'] = ops_val
+                                        splits_data['pa_vs_l'] = pa
                                     elif desc == 'vs Right':
                                         splits_data['vs_r'] = ops_val
+                                        splits_data['pa_vs_r'] = pa
                                 except ValueError:
                                     continue
                     results[p_id] = splits_data

@@ -53,6 +53,9 @@ PLATOON_RR_PENALTY = 0.97        # Same-hand disadvantage: R batter vs R pitcher
 BVP_MIN_PA = 25            # Minimum PA before BvP is applied — below ~100 PA is mostly noise;
                            # 25 is a pragmatic floor that catches meaningful history
 
+PLATOON_MIN_PA = 50        # Minimum PA vs each handedness before dynamic platoon is trusted;
+                           # below this, fall back to static platoon to avoid small-sample noise
+
 BVP_ELITE_OPS = 1.000      # Career OPS vs this pitcher — elite
 BVP_GOOD_OPS  = 0.850      # Good
 BVP_WEAK_OPS  = 0.650      # Weak

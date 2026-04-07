@@ -216,9 +216,13 @@ class DailyEngine:
                     splits = platoon_splits.get(mlb_id, {})
                     ops_vs_l = splits.get('vs_l')
                     ops_vs_r = splits.get('vs_r')
+                    pa_vs_l = splits.get('pa_vs_l', 0)
+                    pa_vs_r = splits.get('pa_vs_r', 0)
 
                     applied_dynamic = False
-                    if ops_vs_l and ops_vs_r:
+                    if (ops_vs_l and ops_vs_r
+                            and pa_vs_l >= C.PLATOON_MIN_PA
+                            and pa_vs_r >= C.PLATOON_MIN_PA):
                         relevant_ops = ops_vs_l if p_hand == 'L' else ops_vs_r
                         baseline_ops = (ops_vs_l + ops_vs_r) / 2.0
                         if baseline_ops > 0:
