@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-11",
-    "last_updated": "2026-04-11T19:31:15.283394+00:00",
+    "last_updated": "2026-04-11T20:23:29.912337+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 775.07,
-    "narrative": "For today\u2019s slate, our lineup leans heavily on high-efficiency matchups against favorable pitching, led by **Corbin Carroll**, who anchors the roster with an elite 85.94 score. **Corbin Carroll** benefits from a potent combination of a 4.79 xERA opponent, favorable park factors, and a prime #2 spot in the order. Alongside him, **Mickey Moniak** (75.98) and **Vinnie Pasquantino** (72.92) provide substantial upside; both are clear starts due to their dynamic platoon advantages against right-handed starters, with **Vinnie Pasquantino** further bolstered by wind-assisted hitting conditions that should play to his power profile. **Josh Naylor** (71.88) also remains a cornerstone today, as his favorable matchup against Lance McCullers Jr. creates a high-floor outcome for our 1B slot.\n\nThe most difficult decision on the bench involved **Trevor Story**, who posted a 50.66 score but was ultimately squeezed out by the depth of our starting core. While **Trevor Story** offers some stability, the optimizer favored the higher volatility and specific platoon advantages offered by **Jose Caballero** (51.75) and **Alex Freeland** (52.28) in their respective roles. We are operating with several \"Lineup Pending\" designations for **Dalton Rushing**, **Josh Naylor**, **Alex Freeland**, and **Mickey Moniak**; should any of these players drop further down their respective lineups than the assumed positions, their efficiency scores will need to be re-evaluated to ensure we aren't burning valuable plate appearances on low-leverage spots. \n\nFinally, keep a close eye on **Max Muncy** (52.79) as he faces Senga. While his score keeps him in the starting lineup, he is contending with an elite hold pitcher and a negative platoon split, making him the most likely candidate to be swapped for a bench asset if lineups shift. We are prioritizing SB upside across the board, but with **James Wood** (60.96) leading off against a lefty, we have the balanced potential to compete in AVG and counting stats even if the SB opportunities remain limited against the day's specific battery pairings.",
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with an aggressive offensive posture, highlighted by **Corbin Carroll** (85.94), who remains the cornerstone of our strategy against Taijuan Walker. **Corbin Carroll** thrives here due to a favorable park shift and a high-leverage spot in the two-hole, mitigating the minor risk posed by a quick-to-the-plate catcher. Following closely in efficiency, **Mickey Moniak** (75.98) and **Vinnie Pasquantino** (72.92) provide elite upside. **Mickey Moniak** benefits from a massive platoon advantage against Germ\u00e1n M\u00e1rquez, while **Vinnie Pasquantino** is perfectly positioned against Erick Fedde, whose 5.60 xERA is the softest matchup on the board. These three should be our primary engines for runs and RBI as we lean into favorable platoon splits across the board.\n\nThe most difficult roster decision involved leaving **Trevor Story** (50.66) on the bench. While his score is respectable, he ultimately fell short of the threshold required to displace the more efficient **Jose Caballero** or **Max Muncy**. The optimizer prioritized the lineup stability of our primary starters over the moderate floor offered by **Trevor Story**, despite his favorable matchup against Leahy. Meanwhile, managers should monitor the situation with **Dalton Rushing**, **Josh Naylor**, **Alex Freeland**, and **Mickey Moniak**; as these remain \"Lineup Pending,\" any drastic shifts in their projected batting order could compress their efficiency scores further. We are banking on the current projections, but maintain the flexibility to pivot if these lineups shift toward the bottom of the order.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -519,17 +519,12 @@
             "Slot": "BN",
             "Player": "Trevor Story",
             "POS": "SS",
-            "Order": "6*",
+            "Order": "6",
             "Start": "11:15 PM",
             "Opponent": "Leahy (R)",
             "SP_xERA": "3.73",
             "Score": 50.659090541640616,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.24",
@@ -551,7 +546,7 @@
                     "type": "info"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -613,11 +608,51 @@
             "Player": "Seiya Suzuki",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "06:20 PM",
+            "Opponent": "Ashcraft, B (R)",
+            "SP_xERA": "3.61",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "55.58",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (62% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -625,7 +660,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-04-11T18:20:00Z"
         },
         {
             "Slot": "BN",
@@ -633,7 +668,7 @@
             "POS": "3B",
             "Order": "5",
             "Start": "11:15 PM",
-            "Opponent": "Parker Messick (L)",
+            "Opponent": "Messick (L)",
             "SP_xERA": "3.43",
             "Score": 47.302958715612675,
             "Breakdown": [
