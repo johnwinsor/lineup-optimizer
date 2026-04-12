@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-12",
-    "last_updated": "2026-04-12T05:56:29.337579+00:00",
+    "last_updated": "2026-04-12T12:41:10.996987+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 795.58,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 804.94,
+    "narrative": "The Zurich Zebras face a high-variance slate today, with **Christian Yelich** (71.96) and **Trea Turner** (71.43) anchoring our lineup as the premier plays. **Yelich** benefits significantly from a favorable dynamic platoon advantage (+13%) against the right-handed Zack Littell, while **Turner** remains a must-start despite facing a tough assignment in Zac Gallen; his leadoff role and elite speed profile provide a high floor for SB production, our most critical category. **Kyle Schwarber** (67.82) also offers elite power potential in the same contest, bolstered by an xwOBA of .402, and **Colt Keith** (67.49) is a standout value play today, capitalizing on a weak 4.38 xERA opposing starter and a favorable #3 slot in the order.\n\nThe most difficult bench decision involved **Jerar Encarnacion**, whose 59.78 score narrowly missed the cutoff. While his +16% park factor against Cade Povich was tempting, the optimizer favored **Kazuma Okamoto** (58.71) and **Junior Caminero** (58.73) for their stability in middle-order roles, despite slightly lower raw projections. We are monitoring the status of **Pete Crow-Armstrong** (63.14) closely; while he is currently active, his score is inflated by a 10% wind-out boost, and any shifts in the weather could render him a liability against Bubba Chandler. Similarly, **Yordan Alvarez** (55.60) carries significant risk; facing Logan Gilbert\u2019s elite skill profile (-19% SP skill) makes him our most volatile start, requiring us to trade raw power for a difficult matchup ceiling.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -151,7 +151,7 @@
             "Slot": "2B",
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
-            "Score": 61.67731448501796,
+            "Score": 64.76118020926886,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -186,6 +186,11 @@
                 {
                     "label": "Order #2",
                     "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -244,7 +249,7 @@
             "Slot": "MI",
             "Player": "Chase Meidroth",
             "POS": "2B/SS",
-            "Score": 58.14542936030319,
+            "Score": 61.05270082831835,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -274,6 +279,11 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -516,9 +526,9 @@
         },
         {
             "Slot": "OF5",
-            "Player": "Jerar Encarnacion",
+            "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Score": 59.77655271153438,
+            "Score": 63.13655620035419,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -527,26 +537,36 @@
                 },
                 {
                     "label": "Base",
-                    "value": "47.55",
+                    "value": "59.99",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+16%",
+                    "value": "+4%",
                     "type": "positive"
                 },
                 {
-                    "label": "Platoon",
-                    "value": "+7%",
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Cade Povich (L)",
-            "SP_xERA": "4.02",
+            "Opponent": "Bubba Chandler (R)",
+            "SP_xERA": "3.09",
             "Warning": "",
-            "GameTime": "2026-04-12T17:35:00Z",
+            "GameTime": "2026-04-12T18:20:00Z",
             "Order": "6*",
-            "Start": "05:35 PM"
+            "Start": "06:20 PM"
         },
         {
             "Slot": "UTIL",
@@ -594,50 +614,6 @@
         }
     ],
     "players_sat": [
-        {
-            "Slot": "BN",
-            "Player": "Pete Crow-Armstrong",
-            "POS": "OF",
-            "Order": "6*",
-            "Start": "06:20 PM",
-            "Opponent": "Bubba Chandler (R)",
-            "SP_xERA": "3.09",
-            "Score": 57.396869273049255,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "59.99",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-04-12T18:20:00Z"
-        },
         {
             "Slot": "BN",
             "Player": "Hyeseong Kim",
@@ -744,7 +720,7 @@
             "Start": "06:15 PM",
             "Opponent": "Brayan Bello (R)",
             "SP_xERA": "4.55",
-            "Score": 53.00997360106655,
+            "Score": 55.66047228111988,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -775,6 +751,11 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
@@ -832,6 +813,45 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Jerar Encarnacion",
+            "POS": "OF",
+            "Order": "6*",
+            "Start": "05:35 PM",
+            "Opponent": "Cade Povich (L)",
+            "SP_xERA": "4.02",
+            "Score": 59.77655271153438,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "47.55",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-04-12T17:35:00Z"
         },
         {
             "Slot": "BN",

@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-12",
-    "last_updated": "2026-04-12T05:57:17.814544+00:00",
+    "last_updated": "2026-04-12T12:43:10.125999+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 789.59,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 792.23,
+    "narrative": "For today\u2019s slate, **Daulton Varsho** (72.31) and **Bryson Stott** (68.67) represent our strongest daily plays, both benefiting from favorable matchups against right-handed starters with middling xERA profiles. **Daulton Varsho** is particularly well-positioned; his matchup against Taj Bradley grants him a significant boost from a combination of positive park factors and a strong platoon advantage, providing the high-ceiling output we look for in our OF5 slot. Similarly, **Bryson Stott** finds himself in a prime spot against Zac Gallen, where his elite dynamic platoon efficiency and a favorable batting order placement elevate his efficiency score well into the recommended tier. **Geraldo Perdomo** (68.20) also merits attention; despite a slightly tougher individual matchup against Andrew Painter, the SP Skill projection is significantly higher than his baseline, making him a high-efficiency anchor in our UTIL slot.\n\nWhile several players are hovering in the high 50s, the decision to bench **Jos\u00e9 Ram\u00edrez** (54.71) stands as the most difficult call of the day. Despite his pedigree, the algorithm penalized him heavily due to the daunting task of facing Chris Sale, where the opposing SP skill negative factor outweighed his historical baseline. **Jos\u00e9 Ram\u00edrez** ultimately fell short of the threshold because his BvP history and the pitcher\u2019s dominance suppressed his daily expected value below the likes of **Masyn Winn** and **Luis Arraez**, who face more forgiving arms in Brayan Bello and Cade Povich, respectively. \n\nManagers should remain vigilant regarding the \"Lineup Pending\" status across the board, as all scores are predicated on assumed batting orders. **Taylor Ward** and **Jeremiah Jackson** benefit immensely from the 16% park boost in their environment, but their upside is tethered to official confirmation of their order positioning. We are currently navigating a risk profile involving **Matt Chapman**, whose matchup against Cade Povich is dampened by an elite hold situation that restricts his stolen base upside\u2014a critical concern given our emphasis on speed scarcity. Monitor the weather and lineup changes closely, as any shift from the top-third of the order will trigger a reassessment of our daily efficiency targets.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -183,47 +183,47 @@
         },
         {
             "Slot": "SS",
-            "Player": "Geraldo Perdomo",
+            "Player": "Masyn Winn",
             "POS": "SS",
-            "Score": 68.2027220298549,
+            "Score": 57.34478040754716,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
+                    "label": "Lineup Pending (Assumed #6)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "53.83",
+                    "value": "49.46",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
                     "value": "-4%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "SP Skill",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Andrew Painter (R)",
-            "SP_xERA": "4.82",
+            "Opponent": "Brayan Bello (R)",
+            "SP_xERA": "4.55",
             "Warning": "",
-            "GameTime": "2026-04-12T17:35:00Z",
-            "Order": "3*",
-            "Start": "05:35 PM"
+            "GameTime": "2026-04-12T18:15:00Z",
+            "Order": "6*",
+            "Start": "06:15 PM"
         },
         {
             "Slot": "MI",
@@ -540,8 +540,58 @@
         },
         {
             "Slot": "UTIL",
+            "Player": "Geraldo Perdomo",
+            "POS": "SS",
+            "Score": 68.2027220298549,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "53.83",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Andrew Painter (R)",
+            "SP_xERA": "4.82",
+            "Warning": "",
+            "GameTime": "2026-04-12T17:35:00Z",
+            "Order": "3*",
+            "Start": "05:35 PM"
+        }
+    ],
+    "players_sat": [
+        {
+            "Slot": "BN",
             "Player": "Jos\u00e9 Ram\u00edrez",
             "POS": "3B",
+            "Order": "3*",
+            "Start": "11:20 PM",
+            "Opponent": "Chris Sale (L)",
+            "SP_xERA": "2.88",
             "Score": 54.70922397734891,
             "Breakdown": [
                 {
@@ -578,17 +628,16 @@
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
                 }
             ],
-            "Opponent": "Chris Sale (L)",
-            "SP_xERA": "2.88",
             "Warning": "",
-            "GameTime": "2026-04-12T23:20:00Z",
-            "Order": "3*",
-            "Start": "11:20 PM"
-        }
-    ],
-    "players_sat": [
+            "GameTime": "2026-04-12T23:20:00Z"
+        },
         {
             "Slot": "BN",
             "Player": "Tyler Freeman",
@@ -597,7 +646,7 @@
             "Start": "08:10 PM",
             "Opponent": "Nick Pivetta (R)",
             "SP_xERA": "3.69",
-            "Score": 52.09847966885356,
+            "Score": 54.70340365229624,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -627,6 +676,11 @@
                 {
                     "label": "Order #2",
                     "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 },
                 {
@@ -738,50 +792,6 @@
         },
         {
             "Slot": "BN",
-            "Player": "Masyn Winn",
-            "POS": "SS",
-            "Order": "6*",
-            "Start": "06:15 PM",
-            "Opponent": "Brayan Bello (R)",
-            "SP_xERA": "4.55",
-            "Score": 54.61407657861634,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.46",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+13%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-04-12T18:15:00Z"
-        },
-        {
-            "Slot": "BN",
             "Player": "Brendan Donovan",
             "POS": "2B/SS/3B/OF",
             "Order": "5*",
@@ -871,7 +881,7 @@
             "Start": "08:10 PM",
             "Opponent": "Kyle Freeland (L)",
             "SP_xERA": "4.41",
-            "Score": 46.97413535297041,
+            "Score": 49.32284212061893,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -897,6 +907,11 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "-7%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
