@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-12",
-    "last_updated": "2026-04-12T23:26:51.467020+00:00",
+    "last_updated": "2026-04-13T02:04:11.822011+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 807.81,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a lineup anchored by **Christian Yelich** and **Trea Turner**, who emerge as our top options with efficiency scores of 72.61 and 71.43, respectively. **Christian Yelich** benefits from a massive 13% dynamic platoon boost and a favorable matchup against Littell, making him our primary offensive engine. Meanwhile, **Trea Turner** maintains his status as an elite play despite facing a stiff test in Gallen; his spot at the top of the order and the associated volume remain the highest floor in our 5x5 build. High-scoring support comes from **Kyle Schwarber** (67.82) and **Caleb Durbin** (67.85), both of whom are buoyed by an anticipated wind-out effect and the aggressive baserunning environment presented by today\u2019s opposing batteries.\n\nThe most difficult decision on the bench involved **Victor Scott II**, whose 58.31 score fell just short of **Kazuma Okamoto** (58.71) and **Pete Crow-Armstrong** (61.24). While **Victor Scott II** offers the high-upside speed we covet, his placement in the 9-hole severely dampened his efficiency, forcing the algorithm to prioritize the higher lineup spots held by **Chase Meidroth** and **Junior Caminero**. We are monitoring the risk profile of **Yordan Alvarez**, whose score of 53.98 is suppressed by a brutal matchup against Gilbert. While his raw talent is undeniable, he is trending toward a \"marginal\" start; however, given his elite xwOBA, we are keeping him active to avoid leaving production on the bench. Conversely, while **Dillon Dingler** is currently sub-50, his matchup against Alcantara suggests a slow-delivery environment that may create opportunistic stolen base windows, keeping him in the lineup despite his modest baseline projection.",
+    "total_efficiency_score": 795.35,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Trea Turner** (73.57) and **Christian Yelich** (72.61) anchoring the lineup as our most reliable offensive drivers. **Trea Turner** benefits from a high-leadoff position and a favorable BvP trend against Gallen, while **Christian Yelich** faces a prime dynamic platoon advantage against Littell, driving his score deep into the strong tier. Both **Kyle Schwarber** (67.82) and **Colt Keith** (67.49) also offer significant upside; **Colt Keith** specifically benefits from an elite combination of a favorable park and a slow opposing delivery that should invite aggressive baserunning opportunities, a crucial factor for our SB-weighted roster strategy.\n\nManaging our depth remains a precise exercise, evidenced by the exclusion of **Pete Crow-Armstrong** (55.67). While he displayed potential against Chandler, the optimizer ultimately favored the efficiency of **Jerar Encarnacion** (56.19) due to a massive 16% park factor bump that outweighed the marginal gains of **Pete Crow-Armstrong**\u2019s platoon edge. Elsewhere, we are cautious with **Yordan Alvarez** (53.98); while his raw talent remains elite, a sub-3.00 xERA matchup against Gilbert suppresses his daily floor, making him a start based on quality rather than a ceiling-chaser today. Conversely, **Josh Smith** (62.01) represents a high-leverage start, as he faces a favorable 5.52 xERA from Sasaki, allowing him to outperform several of our bench options despite a lower spot in the batting order. We continue to monitor the status of **Hyeseong Kim**, **Carson Benge**, **Victor Scott II**, **Zac Veen**, **Lars Nootbaar**, and **Luis Pena** as potential rotation pivots, but for today, the current configuration offers the most robust path to balancing our 5x5 categories.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -136,7 +136,7 @@
             "Slot": "2B",
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
-            "Score": 67.84504593351977,
+            "Score": 61.67731448501796,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -167,11 +167,6 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+10%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Pallante (R)",
@@ -185,7 +180,7 @@
             "Slot": "SS",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Score": 71.4272022364104,
+            "Score": 73.57001830350272,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -208,6 +203,11 @@
                     "type": "negative"
                 },
                 {
+                    "label": "BvP Good (26 PA)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
@@ -224,7 +224,7 @@
             "Slot": "MI",
             "Player": "Chase Meidroth",
             "POS": "2B/SS",
-            "Score": 59.94265172234892,
+            "Score": 57.0882397355704,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -249,11 +249,6 @@
                 {
                     "label": "Order #2",
                     "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -395,7 +390,7 @@
             "Slot": "OF3",
             "Player": "Josh Smith",
             "POS": "1B/2B/SS/3B/OF",
-            "Score": 62.537536230126015,
+            "Score": 62.00944147973827,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -416,11 +411,6 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Sasaki (R)",
@@ -476,47 +466,37 @@
         },
         {
             "Slot": "OF5",
-            "Player": "Pete Crow-Armstrong",
+            "Player": "Jerar Encarnacion",
             "POS": "OF",
-            "Score": 61.242459514343565,
+            "Score": 56.18995954884231,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "59.99",
+                    "value": "47.55",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
+                    "value": "+16%",
                     "type": "positive"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "-19%",
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+10%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Chandler (R)",
-            "SP_xERA": "3.09",
+            "Opponent": "Povich (L)",
+            "SP_xERA": "4.02",
             "Warning": "",
-            "GameTime": "2026-04-12T18:20:00Z",
-            "Order": "7",
-            "Start": "06:20 PM"
+            "GameTime": "2026-04-12T17:35:00Z",
+            "Order": "8",
+            "Start": "05:35 PM"
         },
         {
             "Slot": "UTIL",
@@ -561,13 +541,57 @@
     "players_sat": [
         {
             "Slot": "BN",
+            "Player": "Pete Crow-Armstrong",
+            "POS": "OF",
+            "Order": "7",
+            "Start": "06:20 PM",
+            "Opponent": "Chandler (R)",
+            "SP_xERA": "3.09",
+            "Score": 55.674963194857774,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "59.99",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-04-12T18:20:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Hyeseong Kim",
             "POS": "2B/SS/OF",
             "Order": "9",
             "Start": "08:10 PM",
             "Opponent": "deGrom (R)",
             "SP_xERA": "3.32",
-            "Score": 42.39383883618912,
+            "Score": 40.3750846058944,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -593,11 +617,6 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 },
                 {
                     "label": "Benched - Lower projected efficiency than other options.",
@@ -660,7 +679,7 @@
             "Start": "06:15 PM",
             "Opponent": "Bello (R)",
             "SP_xERA": "4.55",
-            "Score": 58.310970961173204,
+            "Score": 53.00997360106655,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -686,11 +705,6 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+10%",
-                    "type": "positive"
                 },
                 {
                     "label": "Benched - Lower projected efficiency than other options.",
@@ -748,45 +762,6 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Jerar Encarnacion",
-            "POS": "OF",
-            "Order": "8",
-            "Start": "05:35 PM",
-            "Opponent": "Povich (L)",
-            "SP_xERA": "4.02",
-            "Score": 56.18995954884231,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "47.55",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+16%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Benched - Lower projected efficiency than other options.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-04-12T17:35:00Z"
         },
         {
             "Slot": "BN",
