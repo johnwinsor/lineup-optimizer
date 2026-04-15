@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-15",
-    "last_updated": "2026-04-15T18:10:37.204093+00:00",
+    "last_updated": "2026-04-15T19:23:03.362444+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 860.83,
-    "narrative": "\u26a0\ufe0f Failed to generate AI narrative: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\\nPlease retry in 22.826589413s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '22s'}]}}",
+    "total_efficiency_score": 861.88,
+    "narrative": "For today\u2019s slate, **Jazz Chisholm Jr.** (79.09) and **Mickey Moniak** (75.97) stand out as our primary engines. **Jazz Chisholm Jr.** benefits from a soft matchup against Jack Kochanowicz, and while the opposing catcher\u2019s pop time slightly suppresses his stolen base floor, the favorable park shift and high-skill matchup make him a locked-in core play. **Mickey Moniak** is this morning's biggest riser; despite being a projected #3 hitter against Spencer Arrighetti, he boasts a massive +14% platoon advantage and a +6% order bonus, further bolstered by the pitcher\u2019s slow delivery, which projects as a gold mine for our stolen base-starved categories. Similarly, **Josh Naylor** (74.14) and **Tyler Soderstrom** (71.06) are set up for high-leverage production against favorable pitching, with **Tyler Soderstrom** specifically benefiting from a +10% park factor that pushes his efficiency well into the \"Strong\" category.\n\nOur most difficult bench decision involved **Brice Turang**, who fell just short with a 54.21 score. Despite a top-third lineup slot, the combination of a daunting matchup against Dylan Cease and a negative SP skill impact kept him sidelined in favor of more efficient platoon-advantaged bats like **Vinnie Pasquantino** (63.50), who remains a critical utility piece due to his +14% dynamic platoon edge against Flaherty. We are also closely monitoring the weather situation for **James Wood**; although he possesses an elite #1 order position, his 53.50 score\u2014hampered by a tough matchup against Montgomery and a 37% rain risk\u2014made him the odd man out. We continue to hold **Gabriel Moreno**, **Carson Williams**, **Zach McKinstry**, **Kyle Karros**, **Alex Freeland**, and **Travis Bazzana** in reserve, prioritizing today\u2019s specific park and platoon advantages to maximize our limited games cap.\n\nFinally, keep a close eye on the catchers; **Dalton Rushing** (54.06) and **Luis Campusano** (49.43) are in \"Marginal\" territory, and both are currently flagged with \"Lineup Pending\" status. While we expect them to start, their lower-order placement significantly drags down their efficiency. **Corbin Carroll** remains our X-factor; despite facing a difficult arm in Bradish, his +16% park factor, wind-aided upside, and strong xwOBA suggest he can easily outperform his 71.79 score. We are betting heavily on these platoon-favorable dynamics to bridge the gap in HR and SB production tonight.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -144,11 +144,6 @@
             "Score": 79.09529626350077,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "61.03",
                     "type": "info"
@@ -183,7 +178,7 @@
             "SP_xERA": "5.35",
             "Warning": "",
             "GameTime": "2026-04-15T23:05:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "11:05 PM"
         },
         {
@@ -379,11 +374,6 @@
             "Score": 58.71328711623433,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "59.45",
                     "type": "info"
@@ -423,20 +413,15 @@
             "SP_xERA": "5.35",
             "Warning": "",
             "GameTime": "2026-04-15T23:05:00Z",
-            "Order": "8*",
+            "Order": "8",
             "Start": "11:05 PM"
         },
         {
             "Slot": "OF3",
             "Player": "Giancarlo Stanton",
             "POS": "OF",
-            "Score": 69.94021883314538,
+            "Score": 68.59521462481565,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.17",
@@ -458,8 +443,8 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
@@ -467,7 +452,7 @@
             "SP_xERA": "5.35",
             "Warning": "",
             "GameTime": "2026-04-15T23:05:00Z",
-            "Order": "4*",
+            "Order": "5",
             "Start": "11:05 PM"
         },
         {
@@ -567,13 +552,8 @@
             "Slot": "UTIL",
             "Player": "Vinnie Pasquantino",
             "POS": "1B",
-            "Score": 61.10963933886549,
+            "Score": 63.50609578352689,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.02",
@@ -595,16 +575,16 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jack Flaherty (R)",
+            "Opponent": "Flaherty (R)",
             "SP_xERA": "3.67",
             "Warning": "",
             "GameTime": "2026-04-15T22:40:00Z",
-            "Order": "5*",
+            "Order": "3",
             "Start": "10:40 PM"
         }
     ],
@@ -613,17 +593,12 @@
             "Slot": "BN",
             "Player": "James Wood",
             "POS": "OF",
-            "Order": "1*",
+            "Order": "1",
             "Start": "10:40 PM",
-            "Opponent": "Mason Montgomery (L)",
+            "Opponent": "Montgomery, M (L)",
             "SP_xERA": "3.55",
-            "Score": 54.04670131070632,
+            "Score": 53.506234297599256,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.50",
@@ -645,17 +620,22 @@
                     "type": "info"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
             ],
-            "Warning": "\u26a0\ufe0f Rain Risk (31%)",
+            "Warning": "\u26a0\ufe0f Rain Risk (37%)",
             "GameTime": "2026-04-15T22:40:00Z"
         },
         {
@@ -713,7 +693,7 @@
             "POS": "OF",
             "Order": "5*",
             "Start": "10:40 PM",
-            "Opponent": "Jes\u00fas Luzardo (L)",
+            "Opponent": "Luzardo (L)",
             "SP_xERA": "3.40",
             "Score": 53.504864248432895,
             "Breakdown": [
@@ -818,17 +798,12 @@
             "Slot": "BN",
             "Player": "Zach McKinstry",
             "POS": "2B/SS/3B/OF",
-            "Order": "9*",
+            "Order": "7",
             "Start": "10:40 PM",
-            "Opponent": "Seth Lugo (R)",
+            "Opponent": "Lugo, S (R)",
             "SP_xERA": "4.53",
-            "Score": 48.21132230322598,
+            "Score": 51.39009080673538,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.73",
@@ -855,12 +830,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #9",
-                    "value": "-8%",
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
