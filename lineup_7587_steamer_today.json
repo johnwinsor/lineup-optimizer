@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-15",
-    "last_updated": "2026-04-15T13:09:56.084416+00:00",
+    "last_updated": "2026-04-15T15:06:33.934191+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 869.28,
-    "narrative": "Today's slate presents several strong options for Ghost Ride the WHIP, led by **Jazz Chisholm Jr.** and **Josh Naylor**. **Jazz Chisholm Jr.** checks in with a robust 77.3 score, boosted by a favorable park, an offensive-friendly park, and a \"Dynamic Platoon\" advantage against Jack Kochanowicz. The optimizer also factored in his general offensive prowess, noted as \"Elite Catcher (1.89s),\" which adds a slight personal efficiency multiplier. **Josh Naylor** is also a prime candidate for a big day, with a 74.8 score. His matchup against Randy V\u00e1squez, who has a concerning 5.43 SP_xERA, is exceptionally favorable. A \"Dynamic Platoon\" edge and the assumed #4 spot in the order are further positives.\n\nOther hitters showing significant upside include **Mickey Moniak** (75.7), who benefits immensely from a \"Dynamic Platoon\" edge and a \"Slow SP Delivery\" advantage against Spencer Arrighetti, along with a projected #3 lineup spot. **Tyler Soderstrom** (75.1) shares the same favorable matchup against Kumar Rocker, also getting a \"Dynamic Platoon\" boost and batting fourth. **Giancarlo Stanton** (71.0) and **Corbin Carroll** (72.7) also project well, with **Carroll**'s score notably elevated by a strong park factor and batting second. On the flip side, **James Wood** is a bit of an unknown at the top of the order, with a solid 62.6 score but batting first and facing a pending lineup, though he does carry a \"Rain Risk (31%)\" warning.\n\nThe most interesting bench decision revolves around **Jose Caballero**, who narrowly missed a starting spot with a 55.4 score. His score was impacted by a negative \"Dynamic Platoon\" and the inherent risks associated with \"Lineup Pending\" status not being selected by the optimizer. However, his underlying projection was strong, and he's certainly one to monitor, especially if other options falter or if his situation becomes clearer. It's also worth noting the \"Rain Risk (36%)\" associated with **Vinnie Pasquantino**, who still managed a respectable 63.8 score despite the potential weather interruption. The absence of a listed SP_xERA for **James Wood**'s opponent, and the various \"Lineup Pending\" statuses across several players, means we\u2019ll need to stay vigilant for any lineup adjustments before game time.",
+    "total_efficiency_score": 864.63,
+    "narrative": "Today's strongest plays are driven by a confluence of favorable matchups and specific situational advantages. **Jazz Chisholm Jr.** stands out with an impressive score of 77.3, largely due to a plus park factor and a significant boost from facing a weaker starter in Jack Kochanowicz (5.35 xERA). The \"Dynamic Platoon (R)\" advantage also adds a considerable 7% to his score. Following closely is **Mickey Moniak**, who boasts a 75.7 score. His assignment against Arrighetti (5.10 xERA) is a significant upgrade, amplified by a powerful \"Dynamic Platoon (R)\" edge of 14% and an extra 2% from the pitcher's slow delivery. **Tyler Soderstrom** also benefits from similar positive factors against Kumar Rocker, posting a 75.1 score with a 6% \"Dynamic Platoon (R)\" boost and a favorable park.\n\nSeveral other hitters present compelling cases for starting. **Josh Naylor** (74.8) is in a strong position against Randy V\u00e1squez (5.43 xERA), with his \"Dynamic Platoon (R)\" advantage contributing +5%. **Corbin Carroll** (72.8) is a high-upside play despite a tough opponent in Bradish (2.63 xERA); his 16% park factor, 8% batting order boost (hitting 2nd), and a 6% \"Dynamic Platoon (R)\" edge help overcome the matchup. Similarly, **Giancarlo Stanton** (71.1) finds himself in a good spot against Kochanowicz, with his score boosted by park, SP skill, and batting order. **Austin Riley** (68.6) also has a solid day projected, with his score elevated by facing Chris Paddack (4.64 xERA) and a positive batting order.\n\nThe most interesting bench decision involves **Jose Caballero**. Despite a projected score of 55.5, he narrowly missed out on a starting spot. His score was negatively impacted by a significant 13% penalty from \"Dynamic Platoon (R)\" and the \"Elite Catcher\" designation, which reduces his score by 1%. The optimizer favored other players with higher scores or less severe positional/platoon drawbacks, even though his raw projection against Jack Kochanowicz (5.35 xERA) was solid. It's worth noting the \"Lineup Pending\" status for several players, including **Luis Campusano** and **Dalton Rushing**, which means their final scores could fluctuate once official lineups are confirmed. Furthermore, **James Wood** and **Vinnie Pasquantino** carry a \"Rain Risk\" warning, with probabilities of 31% and 36% respectively, which could impact their playing time and production today.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -190,13 +190,8 @@
             "Slot": "SS",
             "Player": "Trevor Story",
             "POS": "SS",
-            "Score": 60.261872533527,
+            "Score": 62.67234743486808,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.68",
@@ -221,13 +216,18 @@
                     "label": "Elite Hold SP (61% SB)",
                     "value": "-4%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Simeon Woods Richardson (R)",
+            "Opponent": "Woods Richardson (R)",
             "SP_xERA": "4.47",
             "Warning": "",
             "GameTime": "2026-04-15T17:40:00Z",
-            "Order": "6*",
+            "Order": "4",
             "Start": "05:40 PM"
         },
         {
@@ -370,7 +370,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kyle Bradish (R)",
+            "Opponent": "Bradish (R)",
             "SP_xERA": "2.63",
             "Warning": "",
             "GameTime": "2026-04-15T16:35:00Z",
@@ -381,7 +381,7 @@
             "Slot": "OF2",
             "Player": "James Wood",
             "POS": "OF",
-            "Score": 62.61741718978604,
+            "Score": 55.56195325726363,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -399,13 +399,23 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Mason Montgomery (L)",
+            "SP_xERA": "3.55",
             "Warning": "\u26a0\ufe0f Rain Risk (31%)",
             "GameTime": "2026-04-15T22:40:00Z",
             "Order": "1*",

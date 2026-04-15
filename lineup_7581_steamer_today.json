@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-15",
-    "last_updated": "2026-04-15T13:15:28.439659+00:00",
+    "last_updated": "2026-04-15T15:11:03.800023+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 852.05,
-    "narrative": "Today's slate presents several compelling opportunities for the Austin Waves, with **Gunnar Henderson** leading the charge with a robust 79.4 score. His favorable matchup against a left-handed Eduardo Rodriguez, combined with a potent offensive park and his typical leadoff spot, are key drivers. While the Dynamic Platoon advantage against lefties is a slight negative (-15%), the park boost (+16%) and his premier batting order slot (+10%) more than compensate. **Kyle Tucker** also stands out with a strong 77.0 score, benefiting from an xwOBA of 0.372 against Clay Holmes and a prime #2 lineup spot. **Jackson Merrill**'s 75.1 score is another highlight, capitalizing on a favorable matchup against Emerson Hancock and a significant boost from his assumed #3 lineup position (+6%), along with a dynamic platoon advantage against righties (+13%).\n\nSeveral other hitters are in strong starting positions. **Josh Lowe** (72.2) and **Nolan Schanuel** (69.2) both benefit greatly from facing pitchers with elevated SP_xERA figures (Luis Gil at 5.74) and strong park factors, pushing them comfortably into the \"Strong\" category. **Coby Mayo** also posts a solid 66.7, aided by the same park and pitcher combination as **Gunnar Henderson**. It\u2019s worth noting the positive park factors are a consistent theme for several hitters today, enhancing their scoring potential. **Drake Baldwin** (67.6) and **Jacob Wilson** (65.7) also get significant boosts from assumed lineup spots and favorable pitcher matchups, despite some platoon factors.\n\nThe most intriguing bench decision involves **Vladimir Guerrero Jr.**, who logged a 59.7 score, just shy of a starting spot. While his raw projection was strong (62.9), the optimizer opted for players with better platoon splits or lineup position advantages in their specific matchups. **Luis Garc\u00eda Jr.** was flagged with a \"Rain Risk (31%)\" warning, indicating potential for game disruption, but his 58.5 score still lands him in the \"Strong\" starting tier. Both **Marcell Ozuna** (63.3) and **Andy Pages** (59.1) also carry the \"Rain Risk\" warning, though their scores keep them in the lineup for now. **Heliot Ramos** presents a marginal play with a 42.6 score, facing a tougher opponent in Rhett Lowder (3.31 SP_xERA), and would be one of the first to be reconsidered if weather or lineup changes shift opportunities.",
+    "total_efficiency_score": 836.26,
+    "narrative": "Today's strongest plays for the Austin Waves are being driven by a combination of favorable matchups and advantageous lineup spots. **Gunnar Henderson** leads the charge with a robust 77.95 score, fueled by a significant park boost (+16%) and a strong matchup against Eduardo Rodriguez (4.48 SP_xERA). His typical #2 lineup spot also contributes +8% to his score. **Kyle Tucker** is another top play at 76.99, benefiting from a good matchup against Clay Holmes (4.43 SP_xERA), a strong xwOBA of 0.372, and a projected #2 lineup spot (+8%). Close behind, **Jackson Merrill** posts a 75.10, showcasing a strong performance despite a slight park deficit (-2%). His significant boost comes from a tough assignment against Emerson Hancock (4.76 SP_xERA), where the upside is high, a dynamic platoon advantage (+13%), and his projected #3 lineup spot (+6%). **Josh Lowe** also presents a compelling option with a 72.21 score, facing Luis Gil (5.74 SP_xERA), a highly favorable matchup that adds +19% to his score, compounded by a dynamic platoon advantage (+14%) and his projected #7 spot.\n\nSeveral players are seeing notable boosts from situational factors. **Nolan Schanuel** benefits from a favorable park (+4%) and a commanding +19% boost against Luis Gil (5.74 SP_xERA), pushing his score to 69.15. **Coby Mayo** also gets a significant park boost (+16%) against the same left-handed pitcher, Eduardo Rodriguez, and a positive platoon advantage. While **Luis Garc\u00eda Jr.**'s score of 44.11 is borderline, it's important to note his projected #2 lineup spot (+8%) against a left-handed pitcher, which can be a factor even with the potential for rain. On the bench, **Vladimir Guerrero Jr.** is the most intriguing decision, posting a strong 59.73. His excellent xwOBA of 0.384 and favorable projected #3 lineup spot were nearly enough to warrant a start, but he was ultimately edged out by other players with slightly better matchup dynamics or lineup certainty.\n\nWe have a couple of situational warnings to monitor. **Luis Garc\u00eda Jr.** and **Marcell Ozuna** are both flagged with a 31% Rain Risk against Mason Montgomery and Jake Irvin respectively. Additionally, **Luis Garc\u00eda Jr.**'s matchup against a lefty while potentially facing a lineup pending situation introduces some uncertainty. **Andy Pages**'s projection is slightly tempered by the presence of an \"Elite Hold SP\" which impacts stolen base potential, a category that is particularly scarce and weighted heavily. Finally, the \"Lineup Pending\" status for several players means their projected lineup spots are assumptions and could shift, potentially impacting their final scores.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -141,7 +141,7 @@
             "Slot": "2B",
             "Player": "Luis Garc\u00eda Jr.",
             "POS": "1B/2B",
-            "Score": 58.45220013958832,
+            "Score": 44.11293066614795,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -159,13 +159,23 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Mason Montgomery (L)",
+            "SP_xERA": "3.55",
             "Warning": "\u26a0\ufe0f Rain Risk (31%)",
             "GameTime": "2026-04-15T22:40:00Z",
             "Order": "2*",
@@ -219,13 +229,8 @@
             "Slot": "MI",
             "Player": "Gunnar Henderson",
             "POS": "SS",
-            "Score": 79.38994155789379,
+            "Score": 77.946488075023,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "61.70",
@@ -247,8 +252,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -261,7 +266,7 @@
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-04-15T16:35:00Z",
-            "Order": "1*",
+            "Order": "2",
             "Start": "04:35 PM"
         },
         {
@@ -270,11 +275,6 @@
             "POS": "1B/3B",
             "Score": 66.71819997054705,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.42",
@@ -296,8 +296,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
                 },
                 {
@@ -310,7 +310,7 @@
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-04-15T16:35:00Z",
-            "Order": "8*",
+            "Order": "7",
             "Start": "04:35 PM"
         },
         {
@@ -756,9 +756,9 @@
             "POS": "2B/SS",
             "Order": "9*",
             "Start": "10:40 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 47.338256072865065,
+            "Opponent": "Mason Montgomery (L)",
+            "SP_xERA": "3.55",
+            "Score": 43.290799080317555,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -774,6 +774,16 @@
                     "label": "Park",
                     "value": "-2%",
                     "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #9",
@@ -888,9 +898,9 @@
             "POS": "3B",
             "Order": "3*",
             "Start": "10:40 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 49.09804251731501,
+            "Opponent": "Mason Montgomery (L)",
+            "SP_xERA": "3.55",
+            "Score": 39.32788267909707,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -905,6 +915,16 @@
                 {
                     "label": "Park",
                     "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-9%",
                     "type": "negative"
                 },
                 {

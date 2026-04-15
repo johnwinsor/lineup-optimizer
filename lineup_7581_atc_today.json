@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-15",
-    "last_updated": "2026-04-15T13:17:45.160168+00:00",
+    "last_updated": "2026-04-15T15:13:00.839811+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 836.05,
-    "narrative": "Today's slate presents several strong plays for the Austin Waves, led by **Gunnar Henderson** with an elite score of 78.04. His strong projection is significantly boosted by a hitter-friendly park (+16%) and a favorable matchup against an opponent with a middling SP_xERA of 4.48. **Kyle Tucker** also stands out with a 77.16 score, benefiting from a similar SP_xERA and a good xwOBA of 0.372. **Jackson Merrill** is another top option, earning a 75.27 score, helped by a substantial boost from a dynamic platoon advantage (+13%) against an opponent with a higher SP_xERA (4.76). **Josh Lowe** is projected for 71.68, with a strong park factor (+4%) and a significant platoon edge (+14%) against Luis Gil.\n\nSeveral players show notable advantages from specific situations. **Drake Baldwin**'s score of 66.86 is elevated by a favorable park (+1%) and his projected #2 lineup spot (+8%), despite a moderate SP_xERA. **Jacob Wilson** benefits from a considerable park boost (+10%) to reach a 63.52 score. The platoon advantage for **Liam Hicks** (+11%) against Bryce Elder contributes to his 53.73 projection. On the flip side, **Luis Robert Jr.**'s score of 42.11 is heavily penalized (-19%) by the elite presence of Shohei Ohtani, despite a favorable park and lineup spot.\n\nThe most interesting bench decision involves **Vladimir Guerrero Jr.**, whose score of 57.15 was just shy of making the starting lineup. His projection was solid, with a good xwOBA of 0.384, but the optimizer opted for other options. For those with games featuring potential weather concerns, **Luis Garc\u00eda Jr.**'s matchup has a 31% rain risk, and **Marcell Ozuna** also carries a similar warning in his game. It's also worth noting **Luis Robert Jr.**'s matchup against Shohei Ohtani, an elite pitcher who will present a significant challenge.",
+    "total_efficiency_score": 820.47,
+    "narrative": "Today's slate presents a number of strong starting options for the Austin Waves, with **Gunnar Henderson** leading the way at **76.62**. His elite score is buoyed by a fantastic park factor (+16%), a favorable matchup against Eduardo Rodriguez (4.48 SP_xERA), and a strong batting order position (assumed #2). **Kyle Tucker** is another top play, coming in at **77.16**, benefiting from a similar park and the presumed #2 lineup slot, though he faces a slightly tougher matchup against Clay Holmes (4.43 SP_xERA). **Jackson Merrill** also offers significant upside at **75.27**, boosted by a high SP_xERA from Emerson Hancock (4.76) and a dynamic platoon advantage. It's also worth highlighting **Josh Lowe** (**71.68**) and **Coby Mayo** (**65.57**), both of whom are set to benefit from Luis Gil's high SP_xERA (5.74) and favorable park conditions, in addition to strong lineup slots.\n\nSeveral players received significant boosts from specific situational factors. **Nolan Schanuel** (**64.32**) and **Jacob Wilson** (**63.52**) both see their scores elevated by a combination of Luis Gil's high SP_xERA and a substantial park advantage, with **Schanuel** getting an additional edge from his assumed #3 spot. **Drake Baldwin** (**66.86**) also benefits from a strong matchup against Chris Paddack (4.64 SP_xERA) and a projected #2 lineup spot, while **Liam Hicks** (**53.73**) sees a notable boost from a dynamic platoon advantage against Bryce Elder (4.29 SP_xERA).\n\nThe most compelling bench decision today involves **Vladimir Guerrero Jr.**, who scored **57.15** and was just shy of cracking the starting lineup. His strong xwOBA (0.384) and a projected #3 lineup spot against Chad Patrick (3.90 SP_xERA) were nearly enough, but the optimizer ultimately prioritized other options. It\u2019s important to note the weather risk for **Luis Garc\u00eda Jr.** and **Marcell Ozuna**, both of whom have a 31% chance of rain, which could impact their performance today. Additionally, **Luis Robert Jr.** faces an extremely tough test against Shohei Ohtani (2.67 SP_xERA), leading to a lower score than his inherent talent might suggest.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -141,7 +141,7 @@
             "Slot": "2B",
             "Player": "Luis Garc\u00eda Jr.",
             "POS": "1B/2B",
-            "Score": 57.75171773648102,
+            "Score": 43.58428791861515,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -159,13 +159,23 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Mason Montgomery (L)",
+            "SP_xERA": "3.55",
             "Warning": "\u26a0\ufe0f Rain Risk (31%)",
             "GameTime": "2026-04-15T22:40:00Z",
             "Order": "2*",
@@ -219,13 +229,8 @@
             "Slot": "MI",
             "Player": "Gunnar Henderson",
             "POS": "SS",
-            "Score": 78.04010280875258,
+            "Score": 76.62119184859344,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "60.65",
@@ -247,8 +252,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -261,7 +266,7 @@
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-04-15T16:35:00Z",
-            "Order": "1*",
+            "Order": "2",
             "Start": "04:35 PM"
         },
         {
@@ -270,11 +275,6 @@
             "POS": "1B/3B",
             "Score": 65.56885273141862,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.57",
@@ -296,8 +296,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
                 },
                 {
@@ -310,7 +310,7 @@
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-04-15T16:35:00Z",
-            "Order": "8*",
+            "Order": "7",
             "Start": "04:35 PM"
         },
         {
@@ -359,6 +359,89 @@
         },
         {
             "Slot": "OF2",
+            "Player": "Andy Pages",
+            "POS": "OF",
+            "Score": 58.11379703869935,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #7)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "55.13",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Elite Hold SP (53% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Clay Holmes (R)",
+            "SP_xERA": "4.43",
+            "Warning": "",
+            "GameTime": "2026-04-16T02:10:00Z",
+            "Order": "7*",
+            "Start": "02:10 AM"
+        },
+        {
+            "Slot": "OF3",
+            "Player": "Luis Robert Jr.",
+            "POS": "OF",
+            "Score": 42.105200048855764,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #2)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "57.33",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Shohei Ohtani (R)",
+            "SP_xERA": "2.67",
+            "Warning": "",
+            "GameTime": "2026-04-16T02:10:00Z",
+            "Order": "2*",
+            "Start": "02:10 AM"
+        },
+        {
+            "Slot": "OF4",
             "Player": "Jackson Merrill",
             "POS": "OF",
             "Score": 75.26806529669553,
@@ -405,89 +488,6 @@
             "GameTime": "2026-04-16T01:40:00Z",
             "Order": "3*",
             "Start": "01:40 AM"
-        },
-        {
-            "Slot": "OF3",
-            "Player": "Luis Robert Jr.",
-            "POS": "OF",
-            "Score": 42.105200048855764,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "57.33",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-15%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Shohei Ohtani (R)",
-            "SP_xERA": "2.67",
-            "Warning": "",
-            "GameTime": "2026-04-16T02:10:00Z",
-            "Order": "2*",
-            "Start": "02:10 AM"
-        },
-        {
-            "Slot": "OF4",
-            "Player": "Andy Pages",
-            "POS": "OF",
-            "Score": 58.11379703869935,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "55.13",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Neutral Platoon (R)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Elite Hold SP (53% SB)",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Clay Holmes (R)",
-            "SP_xERA": "4.43",
-            "Warning": "",
-            "GameTime": "2026-04-16T02:10:00Z",
-            "Order": "7*",
-            "Start": "02:10 AM"
         },
         {
             "Slot": "OF5",
@@ -756,9 +756,9 @@
             "POS": "2B/SS",
             "Order": "9*",
             "Start": "10:40 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 45.55926272244438,
+            "Opponent": "Mason Montgomery (L)",
+            "SP_xERA": "3.55",
+            "Score": 41.663911017949154,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -774,6 +774,16 @@
                     "label": "Park",
                     "value": "-2%",
                     "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #9",
@@ -888,9 +898,9 @@
             "POS": "3B",
             "Order": "3*",
             "Start": "10:40 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 48.621322678155046,
+            "Opponent": "Mason Montgomery (L)",
+            "SP_xERA": "3.55",
+            "Score": 38.94602668354146,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -905,6 +915,16 @@
                 {
                     "label": "Park",
                     "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-9%",
                     "type": "negative"
                 },
                 {
