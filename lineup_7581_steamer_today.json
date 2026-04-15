@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-15",
-    "last_updated": "2026-04-15T22:48:31.638879+00:00",
+    "last_updated": "2026-04-15T23:46:32.309681+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 791.75,
-    "narrative": "\u26a0\ufe0f Failed to generate AI narrative: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\\nPlease retry in 28.388585184s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}",
+    "total_efficiency_score": 792.52,
+    "narrative": "\u26a0\ufe0f Failed to generate AI narrative: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\\nPlease retry in 27.70560916s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash-lite', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '27s'}]}}",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -129,6 +129,45 @@
         },
         {
             "Slot": "SS",
+            "Player": "Jacob Wilson",
+            "POS": "SS",
+            "Score": 63.205727036153434,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "54.87",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Rocker (R)",
+            "SP_xERA": "4.32",
+            "Warning": "",
+            "GameTime": "2026-04-16T01:40:00Z",
+            "Order": "5",
+            "Start": "01:40 AM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Gunnar Henderson",
             "POS": "SS",
             "Score": 77.946488075023,
@@ -170,50 +209,6 @@
             "GameTime": "2026-04-15T16:35:00Z",
             "Order": "2",
             "Start": "04:35 PM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Jacob Wilson",
-            "POS": "SS",
-            "Score": 65.68438299835553,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "54.87",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Kumar Rocker (R)",
-            "SP_xERA": "4.32",
-            "Warning": "",
-            "GameTime": "2026-04-16T01:40:00Z",
-            "Order": "3*",
-            "Start": "01:40 AM"
         },
         {
             "Slot": "3B",
@@ -261,6 +256,40 @@
         },
         {
             "Slot": "OF1",
+            "Player": "Luis Robert Jr.",
+            "POS": "OF",
+            "Score": 41.44338761003956,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "56.43",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Ohtani (R)",
+            "SP_xERA": "2.67",
+            "Warning": "",
+            "GameTime": "2026-04-16T02:10:00Z",
+            "Order": "2",
+            "Start": "02:10 AM"
+        },
+        {
+            "Slot": "OF2",
             "Player": "Jackson Merrill",
             "POS": "OF",
             "Score": 75.10420550207523,
@@ -304,16 +333,11 @@
             "Start": "01:40 AM"
         },
         {
-            "Slot": "OF2",
+            "Slot": "OF3",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 59.05909879580758,
+            "Score": 60.8856688616573,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.03",
@@ -333,31 +357,21 @@
                     "label": "Elite Hold SP (53% SB)",
                     "value": "-2%",
                     "type": "negative"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
                 }
             ],
             "Opponent": "Holmes, C (R)",
             "SP_xERA": "4.43",
             "Warning": "",
             "GameTime": "2026-04-16T02:10:00Z",
-            "Order": "7*",
+            "Order": "6",
             "Start": "02:10 AM"
         },
         {
-            "Slot": "OF3",
+            "Slot": "OF4",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 76.9949953887026,
+            "Score": 78.42082863664155,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "63.50",
@@ -374,8 +388,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 },
                 {
@@ -388,41 +402,7 @@
             "SP_xERA": "4.43",
             "Warning": "",
             "GameTime": "2026-04-16T02:10:00Z",
-            "Order": "2*",
-            "Start": "02:10 AM"
-        },
-        {
-            "Slot": "OF4",
-            "Player": "Luis Robert Jr.",
-            "POS": "OF",
-            "Score": 41.44338761003956,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "56.43",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-15%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Shohei Ohtani (R)",
-            "SP_xERA": "2.67",
-            "Warning": "",
-            "GameTime": "2026-04-16T02:10:00Z",
-            "Order": "2",
+            "Order": "1",
             "Start": "02:10 AM"
         },
         {
@@ -503,7 +483,7 @@
             ],
             "Opponent": "Irvin, J (R)",
             "SP_xERA": "4.92",
-            "Warning": "\u26a0\ufe0f Rain Risk (37%)",
+            "Warning": "",
             "GameTime": "2026-04-15T22:40:00Z",
             "Order": "5",
             "Start": "10:40 PM"
@@ -624,7 +604,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "\u26a0\ufe0f Rain Risk (37%)",
+            "Warning": "",
             "GameTime": "2026-04-15T22:40:00Z"
         },
         {
@@ -688,17 +668,12 @@
             "Slot": "BN",
             "Player": "Josh Jung",
             "POS": "3B",
-            "Order": "6*",
+            "Order": "6",
             "Start": "01:40 AM",
-            "Opponent": "J.T. Ginn (R)",
+            "Opponent": "Ginn (R)",
             "SP_xERA": "3.57",
             "Score": 49.655807044049965,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.79",
@@ -720,7 +695,7 @@
                     "type": "info"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -769,7 +744,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (33%)",
             "GameTime": "2026-04-15T23:40:00Z"
         },
         {
@@ -818,7 +793,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "\u26a0\ufe0f Rain Risk (37%)",
+            "Warning": "",
             "GameTime": "2026-04-15T22:40:00Z"
         }
     ]

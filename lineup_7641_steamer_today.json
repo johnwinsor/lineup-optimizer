@@ -1,12 +1,51 @@
 {
     "target_date": "2026-04-15",
-    "last_updated": "2026-04-15T22:54:48.307998+00:00",
+    "last_updated": "2026-04-15T23:52:27.505216+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 854.08,
-    "narrative": "\u26a0\ufe0f Failed to generate AI narrative: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\\nPlease retry in 11.721905836s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}",
+    "total_efficiency_score": 849.35,
+    "narrative": "\u26a0\ufe0f Failed to generate AI narrative: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\\nPlease retry in 32.509396438s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32s'}]}}",
     "recommended_lineup": [
         {
             "Slot": "C1",
+            "Player": "Will Smith",
+            "POS": "C",
+            "Score": 65.97391523971582,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "53.52",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.378",
+                    "type": "info"
+                }
+            ],
+            "Opponent": "Holmes, C (R)",
+            "SP_xERA": "4.43",
+            "Warning": "",
+            "GameTime": "2026-04-16T02:10:00Z",
+            "Order": "3",
+            "Start": "02:10 AM"
+        },
+        {
+            "Slot": "C2",
             "Player": "Yainer Diaz",
             "POS": "C",
             "Score": 65.12238919697919,
@@ -38,50 +77,6 @@
             "GameTime": "2026-04-16T00:10:00Z",
             "Order": "6",
             "Start": "12:10 AM"
-        },
-        {
-            "Slot": "C2",
-            "Player": "Will Smith",
-            "POS": "C",
-            "Score": 65.97391523971582,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "53.52",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.378",
-                    "type": "info"
-                }
-            ],
-            "Opponent": "Holmes, C (R)",
-            "SP_xERA": "4.43",
-            "Warning": "",
-            "GameTime": "2026-04-16T02:10:00Z",
-            "Order": "3*",
-            "Start": "02:10 AM"
         },
         {
             "Slot": "1B",
@@ -122,7 +117,7 @@
             ],
             "Opponent": "Burke, S (R)",
             "SP_xERA": "4.47",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (33%)",
             "GameTime": "2026-04-15T23:40:00Z",
             "Order": "3",
             "Start": "11:40 PM"
@@ -290,50 +285,6 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Taylor Ward",
-            "POS": "OF",
-            "Score": 71.18811740319575,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "52.73",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+16%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+12%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+9%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Rodriguez, Ed (L)",
-            "SP_xERA": "4.48",
-            "Warning": "",
-            "GameTime": "2026-04-15T16:35:00Z",
-            "Order": "1",
-            "Start": "04:35 PM"
-        },
-        {
-            "Slot": "OF2",
             "Player": "Gavin Sheets",
             "POS": "1B/OF",
             "Score": 61.498400167785356,
@@ -372,7 +323,7 @@
             "Start": "01:40 AM"
         },
         {
-            "Slot": "OF3",
+            "Slot": "OF2",
             "Player": "Daulton Varsho",
             "POS": "OF",
             "Score": 58.534423996948135,
@@ -416,16 +367,11 @@
             "Start": "11:40 PM"
         },
         {
-            "Slot": "OF4",
+            "Slot": "OF3",
             "Player": "Lawrence Butler",
             "POS": "OF",
-            "Score": 74.60805297402167,
+            "Score": 69.87361727659233,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.27",
@@ -447,17 +393,61 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Kumar Rocker (R)",
+            "Opponent": "Rocker (R)",
             "SP_xERA": "4.32",
             "Warning": "",
             "GameTime": "2026-04-16T01:40:00Z",
-            "Order": "1*",
+            "Order": "8",
             "Start": "01:40 AM"
+        },
+        {
+            "Slot": "OF4",
+            "Player": "Taylor Ward",
+            "POS": "OF",
+            "Score": 71.18811740319575,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "52.73",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+12%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+9%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Rodriguez, Ed (L)",
+            "SP_xERA": "4.48",
+            "Warning": "",
+            "GameTime": "2026-04-15T16:35:00Z",
+            "Order": "1",
+            "Start": "04:35 PM"
         },
         {
             "Slot": "OF5",
@@ -638,8 +628,8 @@
             "Order": "5",
             "Start": "10:40 PM",
             "Opponent": "Lowder (R)",
-            "SP_xERA": "3.12",
-            "Score": 47.10596855797547,
+            "SP_xERA": "3.54",
+            "Score": 52.11097771726037,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -653,7 +643,7 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-19%",
+                    "value": "-11%",
                     "type": "negative"
                 },
                 {
@@ -682,8 +672,8 @@
             "Order": "2",
             "Start": "10:40 PM",
             "Opponent": "Lowder (R)",
-            "SP_xERA": "3.12",
-            "Score": 49.350492369445696,
+            "SP_xERA": "3.54",
+            "Score": 54.5939821836993,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -697,7 +687,7 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-19%",
+                    "value": "-11%",
                     "type": "negative"
                 },
                 {
@@ -726,8 +716,8 @@
             "Order": "6",
             "Start": "10:40 PM",
             "Opponent": "Lowder (R)",
-            "SP_xERA": "3.12",
-            "Score": 45.74309289386586,
+            "SP_xERA": "3.54",
+            "Score": 50.603296513839105,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -741,7 +731,7 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-19%",
+                    "value": "-11%",
                     "type": "negative"
                 },
                 {
@@ -784,8 +774,8 @@
             "Order": "9",
             "Start": "10:40 PM",
             "Opponent": "Lowder (R)",
-            "SP_xERA": "3.12",
-            "Score": 37.243549755069004,
+            "SP_xERA": "3.54",
+            "Score": 41.200676916545085,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -799,7 +789,7 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-19%",
+                    "value": "-11%",
                     "type": "negative"
                 },
                 {
@@ -813,7 +803,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Benched - Below Zebras Floor (40.0).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
