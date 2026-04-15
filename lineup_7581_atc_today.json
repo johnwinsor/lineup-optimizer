@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-14",
-    "last_updated": "2026-04-14T23:37:40.904691+00:00",
+    "last_updated": "2026-04-15T01:58:59.174991+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 755.94,
-    "narrative": "For today\u2019s slate, **Gunnar Henderson** stands out as the clear anchor of the Austin Waves offense, boasting an elite 81.88 efficiency score. With favorable wind conditions and a matchup against a pitcher with a slow delivery, **Gunnar Henderson** is perfectly positioned to leverage his speed\u2014a vital asset given our focus on the scarcity of stolen bases. **Luis Garc\u00eda Jr.** (70.49) and **Josh Jung** (62.36) also provide excellent stability, benefiting from park factors and strong platoon dynamics. While **Luis Robert Jr.** and **Andy Pages** hover near the bottom of our starters due to tougher matchups against high-skill arms, the high projected output of **Kyle Tucker** (58.48) against McLean provides the necessary cushion to keep our lineup floor high.\n\nThe decision to bench **Vladimir Guerrero Jr.** (52.06) remains the most contentious call of the day. Despite his high base talent, **Vladimir Guerrero Jr.** fell just short of the efficiency threshold when measured against the specific matchup advantages held by **Brady House** and **Liam Hicks**. While **Vladimir Guerrero Jr.** offers significant power potential, the optimizer favored the structural lineup advantages and platoon-adjusted efficiency of our starters. We are keeping a close watch on **Luis Robert Jr.**, as the elite hold capability of Yamamoto poses a distinct risk to his stolen base production, potentially suppressing his final fantasy output. We remain committed to maximizing daily efficiency while protecting our game caps across the roster.",
+    "total_efficiency_score": 746.15,
+    "narrative": "The Austin Waves enter today\u2019s slate with **Gunnar Henderson** headlining the offense. With an elite efficiency score of 81.88, **Gunnar Henderson** occupies the prime leadoff spot against a favorable matchup and benefits from a significant 16% park factor boost. Critically, his profile today includes a \"Slow SP Delivery\" indicator, which provides a key 2% bump in SB probability\u2014the scarcest asset in our 5x5 build. **Luis Garc\u00eda Jr.** (70.49) and **Josh Jung** (62.36) also grade out as strong starts. **Luis Garc\u00eda Jr.** leverages a 14% platoon advantage against a high-xERA starter, while **Josh Jung** utilizes a 10% park factor surge to comfortably clear the start threshold despite facing a respectable arm in Springs.\n\nWhile we are fielding a high-ceiling lineup, we must manage the risk presented by several tough opposing arms. **Luis Robert Jr.** (41.97) and **Andy Pages** (42.81) occupy the lower end of our starting efficiency range, largely suppressed by the elite nature of their respective matchups against Yamamoto and McLean. The most difficult personnel decision involved **Vladimir Guerrero Jr.**, who finished with a respectable 52.06 score. Although he carries a strong xwOBA, his score was dampened by a negative platoon and SP skill factors, leading us to favor the slightly higher-upside defensive and situational profiles of **Drake Baldwin** and **Jackson Merrill** today. We are playing a cautious hand with **Luis Robert Jr.**; his score is dragged down by a high-hold opposing pitcher that limits his high-end stolen base potential, serving as a reminder that even our elite speed threats must be deployed strategically to preserve game caps.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -87,7 +87,7 @@
             "Slot": "1B",
             "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Score": 57.38254417802226,
+            "Score": 54.61712036221396,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -101,8 +101,8 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+3%",
-                    "type": "positive"
+                    "value": "-1%",
+                    "type": "negative"
                 },
                 {
                     "label": "Dynamic Platoon (L)",
@@ -116,7 +116,7 @@
                 }
             ],
             "Opponent": "McClanahan (L)",
-            "SP_xERA": "4.15",
+            "SP_xERA": "3.95",
             "Warning": "",
             "GameTime": "2026-04-14T23:40:00Z",
             "Order": "1",
@@ -235,11 +235,6 @@
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Kelly, Me (R)",
@@ -285,45 +280,6 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Andy Pages",
-            "POS": "OF",
-            "Score": 44.94941053684573,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "55.13",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Neutral Platoon (R)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "McLean (R)",
-            "SP_xERA": "3.04",
-            "Warning": "",
-            "GameTime": "2026-04-15T02:10:00Z",
-            "Order": "7",
-            "Start": "02:10 AM"
-        },
-        {
-            "Slot": "OF2",
             "Player": "Heliot Ramos",
             "POS": "OF",
             "Score": 52.492489741552916,
@@ -360,6 +316,40 @@
             "GameTime": "2026-04-14T22:40:00Z",
             "Order": "7",
             "Start": "10:40 PM"
+        },
+        {
+            "Slot": "OF2",
+            "Player": "Andy Pages",
+            "POS": "OF",
+            "Score": 42.80896241604355,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "55.13",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "McLean (R)",
+            "SP_xERA": "3.04",
+            "Warning": "",
+            "GameTime": "2026-04-15T02:10:00Z",
+            "Order": "7",
+            "Start": "02:10 AM"
         },
         {
             "Slot": "OF3",
@@ -404,7 +394,7 @@
             "Slot": "OF4",
             "Player": "Luis Robert Jr.",
             "POS": "OF",
-            "Score": 44.07210274031176,
+            "Score": 41.973431181249296,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -430,11 +420,6 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Yamamoto (R)",
@@ -448,7 +433,7 @@
             "Slot": "OF5",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 58.4838066913757,
+            "Score": 55.6988635155959,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -474,11 +459,6 @@
                     "label": "xwOBA Good",
                     "value": "0.372",
                     "type": "info"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "McLean (R)",
@@ -610,7 +590,7 @@
             "Start": "02:10 AM",
             "Opponent": "Yamamoto (R)",
             "SP_xERA": "3.32",
-            "Score": 46.736843651897516,
+            "Score": 44.511279668473826,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -630,11 +610,6 @@
                 {
                     "label": "Order #3",
                     "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 },
                 {
