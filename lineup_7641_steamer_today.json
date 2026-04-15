@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-15",
-    "last_updated": "2026-04-15T20:58:23.553824+00:00",
+    "last_updated": "2026-04-15T22:01:53.364261+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 852.88,
-    "narrative": "For today\u2019s slate, **Jos\u00e9 Ram\u00edrez** leads the offensive charge with an elite 75.02 score, buoyed by favorable wind conditions and a solid matchup against May. While **Ram\u00edrez** remains our anchor, the most opportunistic plays reside at the top of the order where **Lawrence Butler** (74.61) and **Taylor Ward** (71.19) offer high-ceiling value. **Butler**\u2019s projection is bolstered significantly by his assumed lead-off role against the hittable Kumar Rocker, while **Ward** benefits from a 16% park factor boost and an ideal platoon alignment against Rodriguez. Similarly, **Brendan Donovan** and **Cal Raleigh** are set up for success against the vulnerable Randy V\u00e1squez (5.43 xERA), making them high-leverage plays in our quest to maximize R and RBI output.\n\nStrategic roster construction for this 5x5 format requires prioritizing dynamic platoon edges, which drove our preference for **Jeremiah Jackson** (67.21) over lower-ceiling alternatives. **Jackson** sees a notable +16% park adjustment and a wind-aided boost that keeps him ahead of the curve. On the bench, **Geraldo Perdomo** came closest to cracking the lineup with a 54.56 score, but his outlook was ultimately stifled by an unfavorable matchup against Bradish (2.63 xERA). The sheer efficiency of the starting corps\u2014specifically the platoon-heavy profiles of **Jonathan Aranda** and **Will Smith**\u2014made it impossible to squeeze **Perdomo**, **Luis Arraez**, or **Matt Chapman** into the starting slots today.\n\nWe are monitoring the status of **Will Smith**, **Gavin Sheets**, **Lawrence Butler**, **Brendan Donovan**, and **Cal Raleigh**, as all five are currently listed as \"Lineup Pending.\" Should any of these players drop in the order or sit entirely, the efficiency score for the entire lineup will shift. Notably, **Daulton Varsho** carries a slight risk; despite his strong baseline, the matchup against an elite arm like Patrick, combined with a projected reduction in SB opportunity, keeps his score at a modest 58.53. We are comfortable with these exposures, provided the wind-out conditions at **Jeremiah Jackson**'s and **Jos\u00e9 Ram\u00edrez**'s venues hold firm throughout the first pitch.",
+    "total_efficiency_score": 854.08,
+    "narrative": "\u26a0\ufe0f Failed to generate AI narrative: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\\nPlease retry in 6.670202757s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -336,13 +336,8 @@
             "Slot": "OF2",
             "Player": "Gavin Sheets",
             "POS": "1B/OF",
-            "Score": 60.292549184103294,
+            "Score": 61.498400167785356,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.14",
@@ -362,13 +357,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+7%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Emerson Hancock (R)",
+            "Opponent": "Hancock (R)",
             "SP_xERA": "4.76",
             "Warning": "",
             "GameTime": "2026-04-16T01:40:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "01:40 AM"
         },
         {
@@ -466,11 +466,6 @@
             "Score": 68.26204627150634,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "50.56",
                     "type": "info"
@@ -496,11 +491,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Randy V\u00e1squez (R)",
+            "Opponent": "V\u00e1squez, R (R)",
             "SP_xERA": "5.43",
             "Warning": "",
             "GameTime": "2026-04-16T01:40:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "01:40 AM"
         },
         {
@@ -509,11 +504,6 @@
             "POS": "C",
             "Score": 68.74573237625775,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "57.79",
@@ -545,11 +535,11 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Randy V\u00e1squez (R)",
+            "Opponent": "V\u00e1squez, R (R)",
             "SP_xERA": "5.43",
             "Warning": "",
             "GameTime": "2026-04-16T01:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "01:40 AM"
         }
     ],
