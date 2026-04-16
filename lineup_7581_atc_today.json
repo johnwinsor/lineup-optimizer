@@ -1,15 +1,15 @@
 {
     "target_date": "2026-04-16",
-    "last_updated": "2026-04-16T06:05:21.910439+00:00",
+    "last_updated": "2026-04-16T13:10:38.868080+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 469.15,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 472.56,
+    "narrative": "For April 16, the Austin Waves lineup centers on **Jackson Merrill** (67.37) and **Jacob Wilson** (62.77), both of whom offer the most compelling value against their respective right-handed matchups. **Jackson Merrill** benefits from a strong platoon advantage against Luis Castillo, with his projection boosted by +13% via matchup dynamics, while **Jacob Wilson** is primed to capitalize on a favorable environment against Jack Leiter, aided by a +10% park factor. Similarly, **Vladimir Guerrero Jr.** (61.05) remains an essential anchor in the utility slot; his consistent ability to command the zone against Brandon Sproat\u2014backed by an xwOBA of .384\u2014keeps his efficiency score comfortably in the \"Strong\" range despite a slight negative adjustment for platoon dynamics.\n\nThe optimizer faced a difficult decision at the bench regarding **Miguel Vargas**, who landed at 48.23, barely missing the cutoff to displace **Nolan Schanuel** (49.64). While **Miguel Vargas** showed promise against Steven Matz, the decision ultimately favored **Nolan Schanuel** due to the expectation of a #3 spot in the order and favorable wind conditions that provide a modest +5% lift to his output. Managers must monitor the 34% rain risk surrounding **Heliot Ramos**, whose marginal score of 40.28 is heavily pressured by a -19% penalty against Chase Burns; if the weather report worsens or the lineup position shifts unfavorably, we are prepared to pivot to more stable bench assets. Additionally, while we prioritize stolen bases, **Nasim Nunez** (40.67) remained benched despite his speed, as his #9 batting order position significantly suppressed his total scoring potential against Braxton Ashcraft.",
     "recommended_lineup": [
         {
             "Slot": "1B",
-            "Player": "Miguel Vargas",
-            "POS": "1B/3B",
-            "Score": 48.23318366867938,
+            "Player": "Nolan Schanuel",
+            "POS": "1B",
+            "Score": 49.63990994473403,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -18,36 +18,41 @@
                 },
                 {
                     "label": "Base",
-                    "value": "49.46",
+                    "value": "48.17",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
+                    "value": "+4%",
+                    "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-9%",
+                    "value": "-10%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+2%",
-                    "type": "positive"
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
                 },
                 {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Steven Matz (L)",
-            "SP_xERA": "3.62",
+            "Opponent": "Max Fried (L)",
+            "SP_xERA": "3.60",
             "Warning": "",
-            "GameTime": "2026-04-16T18:10:00Z",
+            "GameTime": "2026-04-16T17:35:00Z",
             "Order": "3*",
-            "Start": "06:10 PM"
+            "Start": "05:35 PM"
         },
         {
             "Slot": "2B",
@@ -254,7 +259,7 @@
             ],
             "Opponent": "Chase Burns (R)",
             "SP_xERA": "2.76",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (34%)",
             "GameTime": "2026-04-16T16:40:00Z",
             "Order": "7*",
             "Start": "04:40 PM"
@@ -302,7 +307,7 @@
             "Slot": "OF5",
             "Player": "Josh Lowe",
             "POS": "OF",
-            "Score": 40.105149294497835,
+            "Score": 42.11040675922273,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -338,6 +343,11 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Max Fried (L)",
@@ -622,6 +632,55 @@
         },
         {
             "Slot": "BN",
+            "Player": "Miguel Vargas",
+            "POS": "1B/3B",
+            "Order": "3*",
+            "Start": "06:10 PM",
+            "Opponent": "Steven Matz (L)",
+            "SP_xERA": "3.62",
+            "Score": 48.23318366867938,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.46",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-04-16T18:10:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Coby Mayo",
             "POS": "1B/3B",
             "Order": "7*",
@@ -663,55 +722,6 @@
             ],
             "Warning": "",
             "GameTime": "2026-04-16T22:10:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Nolan Schanuel",
-            "POS": "1B",
-            "Order": "3*",
-            "Start": "05:35 PM",
-            "Opponent": "Max Fried (L)",
-            "SP_xERA": "3.60",
-            "Score": 47.276104709270506,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "48.17",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-10%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Neutral Platoon (L)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-04-16T17:35:00Z"
         },
         {
             "Slot": "BN",
