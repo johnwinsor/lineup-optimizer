@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-17",
-    "last_updated": "2026-04-17T17:43:03.143873+00:00",
+    "last_updated": "2026-04-17T18:46:43.898782+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 858.01,
-    "narrative": "For today\u2019s slate, **Tyler Soderstrom** (76.91) and **Mickey Moniak** (74.94) stand as our primary offensive engines. **Soderstrom** benefits significantly from a high-run-environment park and a favorable matchup against Davis Martin, while **Mickey Moniak** is positioned to exploit a rare combination: a 14% park boost and the aggressive \"slow delivery\" profile of Tyler Glasnow, which creates an elite environment for his stolen base upside. Similarly, **Austin Riley** (72.31) remains a locked-in staple; despite the presence of a tough catcher behind the plate, the 19% SP skill boost provided by Taijuan Walker keeps his ceiling high for power production.\n\nThe most difficult decision on the board was keeping **Trevor Story** (58.15) on the bench. While his score is respectable, he ultimately fell short due to the \"elite hold\" profile of Casey Mize, which suppresses his stolen base efficiency, and a lack of the same explosive platoon leverage that pushed players like **Jazz Chisholm Jr.** (74.18) into the starting lineup. **Jazz Chisholm Jr.**, in particular, looks like a priority start today; he secures a massive 7% dynamic platoon advantage against Michael Wacha, mitigating the minor penalty for batting seventh. Meanwhile, **Corbin Carroll** (65.24) remains a strong start despite facing a southpaw in Eric Lauer; his ability to force the issue on the basepaths, combined with a high 0.372 xwOBA, ensures that his floor remains well above our bench alternatives like **James Wood** or **Josh Naylor**, both of whom are facing high-end arms in Logan Webb and Jacob deGrom, respectively.\n\nRisk management is paramount today as most of our core is playing under \"Lineup Pending\" status. While we have projected based on historical batting orders, any volatility in position\u2014particularly for **Dalton Rushing** or **Alex Freeland**\u2014could shift their daily efficiency scores. We are especially wary of the bottom of our lineup, where **Luis Campusano** (43.96) is hovering dangerously close to our \"below floor\" threshold. Should the confirmed lineups deviate significantly from our projections, we are prepared to pivot to the high-upside bench options like **James Wood** to ensure we don't bleed plate appearances while chasing category-specific gains in SB and HR.",
+    "total_efficiency_score": 856.25,
+    "narrative": "The offensive engine for Ghost Ride the WHIP relies on high-upside matchups against mediocre arms today, with **Tyler Soderstrom** (76.91) and **Mickey Moniak** (74.94) leading the charge as our strongest plays. **Soderstrom** benefits from a massive 17% boost due to the soft matchup against Davis Martin, while **Moniak** is our primary stolen base threat in a prime spot against Tyler Glasnow; despite Glasnow\u2019s reputation, the park factors and **Moniak**'s 100% stolen base expectation against this specific battery elevate him to elite status. **Austin Riley** (72.31) and **Jazz Chisholm Jr.** (74.18) also anchor the daily output, with **Riley** providing stability against Taijuan Walker and **Chisholm** capitalizing on the favorable park dynamics against Michael Wacha.\n\nWe are navigating a few close calls regarding our utility and bench slots. **Trevor Story** (58.15) was the most difficult exclusion of the morning; while he carries a respectable score, the combination of a tough matchup against Casey Mize and the high efficiency of our starters left him on the outside looking in. Similarly, **James Wood** (53.71) remains benched due to a difficult draw against Logan Webb, which effectively negated the value of his top-of-the-order potential. We are monitoring **Dalton Rushing**, **Luis Campusano**, **Vinnie Pasquantino**, **Brice Turang**, **Alex Freeland**, **Max Muncy**, **Corbin Carroll**, **Giancarlo Stanton**, and **Seiya Suzuki** closely as lineups finalize; all are presently projected as strong starts, but any late-scratches\u2014especially regarding the stolen base threats like **Turang** or **Carroll**\u2014will necessitate a pivot toward reserves like **Josh Naylor** or **Jose Caballero**.\n\nWe remain cautious of our catchers, specifically **Luis Campusano**, whose score (43.96) is hovering just above our marginal threshold. While **Rushing** (64.84) provides solid production, we are thin at the position and are keeping an eye on **Gabriel Moreno**, **Zach McKinstry**, **Kyle Karros**, **Carson Williams**, and **Travis Bazzana** to ensure we aren't burning daily game caps on players with sub-40 projected efficiency. Every decision today is calculated to maximize our 5x5 categories, prioritizing the high sprint speeds of **Moniak**, **Turang**, and **Carroll** to keep us competitive in the league's scarcest category.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -371,7 +371,7 @@
             "Slot": "OF2",
             "Player": "Corbin Carroll",
             "POS": "OF",
-            "Score": 65.23547105996651,
+            "Score": 63.476234568817496,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -390,13 +390,18 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-3%",
+                    "value": "-19%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-6%",
-                    "type": "negative"
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (85% SB)",
+                    "value": "+4%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #2",
@@ -409,8 +414,8 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Eric Lauer (L)",
-            "SP_xERA": "3.88",
+            "Opponent": "Braydon Fisher (R)",
+            "SP_xERA": "3.09",
             "Warning": "",
             "GameTime": "2026-04-18T01:40:00Z",
             "Order": "2*",
@@ -760,17 +765,12 @@
             "Slot": "BN",
             "Player": "Trevor Story",
             "POS": "SS",
-            "Order": "4*",
+            "Order": "4",
             "Start": "11:15 PM",
             "Opponent": "Casey Mize (R)",
             "SP_xERA": "3.96",
             "Score": 58.14929160801967,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.68",
@@ -802,7 +802,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -840,7 +840,7 @@
             "POS": "2B/SS/3B/OF",
             "Order": "7*",
             "Start": "11:15 PM",
-            "Opponent": "Ranger Suarez (L)",
+            "Opponent": "Suarez (L)",
             "SP_xERA": "3.73",
             "Score": 48.539521120304556,
             "Breakdown": [

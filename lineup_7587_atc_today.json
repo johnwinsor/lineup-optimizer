@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-17",
-    "last_updated": "2026-04-17T17:43:10.388452+00:00",
+    "last_updated": "2026-04-17T18:46:54.684198+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 851.8,
-    "narrative": "Today\u2019s slate for **Ghost Ride the WHIP** is headlined by high-ceiling matchups for **Jazz Chisholm Jr.** (75.89) and **Mickey Moniak** (75.17), both of whom benefit significantly from favorable park factors and high-leverage platoon advantages. **Mickey Moniak** is particularly intriguing against Tyler Glasnow; while the SP skill is moderate, the 14% park boost and the pitcher\u2019s slow delivery create a prime environment for **Mickey Moniak** to exploit his elite sprint speed for a stolen base. **Jazz Chisholm Jr.**, similarly, projects well against Michael Wacha, with a 15% skill edge for the batter allowing him to anchor our production in the middle of the order. **Tyler Soderstrom** and **Austin Riley** also maintain strong efficiency scores (72.72 and 71.42, respectively) as both benefit from attacking the 4.79 xERA of Taijuan Walker and the favorable hitting environment against Davis Martin.\n\nThe most difficult bench decision involved **Alex Freeland**, who posted a 58.63 efficiency score\u2014falling just shy of our rotation threshold. While the park factors and SP skill were favorable, his projected slot at the bottom of the order (-8% adjustment) provided too much drag to displace **Trevor Story** or **Max Muncy** in the current lineup configuration. **Corbin Carroll** remains a core start despite a tougher L/L matchup against Eric Lauer, as his base projection is high enough to withstand the -6% platoon penalty, and his presence on the basepaths remains vital given our emphasis on stolen bases.\n\nWe must remain vigilant regarding the \"Lineup Pending\" status for nearly every player today. While we have utilized historical expectations for **Luis Campusano**, **Dalton Rushing**, **Vinnie Pasquantino**, **Brice Turang**, **Max Muncy**, **Trevor Story**, **Jazz Chisholm Jr.**, **Tyler Soderstrom**, **Giancarlo Stanton**, **Mickey Moniak**, **Corbin Carroll**, and **Austin Riley**, these scores could fluctuate significantly if late-breaking lineup changes move our hitters into lower spots or out of the starting nine entirely. Furthermore, while **James Wood** (52.25) and **Josh Naylor** (49.78) are currently on the bench, they are our primary emergency pivots should weather or late scratches force a pivot in our offensive strategy. Keep a close watch on these developments to protect our daily efficiency targets.",
+    "total_efficiency_score": 850.07,
+    "narrative": "Ghost Ride the WHIP enters April 17 with an aggressive stance on speed and favorable matchups against mid-rotation arms. **Jazz Chisholm Jr.** (75.89) and **Mickey Moniak** (75.17) anchor the lineup, offering the highest daily efficiency scores. **Mickey Moniak** is particularly intriguing against Tyler Glasnow; despite the SP skill, the park factor and an elite dynamic platoon advantage make him a prime candidate for a multi-hit performance. Similarly, **Jazz Chisholm Jr.** draws a targetable matchup against Michael Wacha. The projection model favors **Austin Riley** (71.42) due to a 19% boost from Taijuan Walker\u2019s weak xERA, and the high-ceiling combination of **Tyler Soderstrom** (72.72) and **Giancarlo Stanton** (67.12) against Davis Martin suggests a heavy lean into power-hitting environments today.\n\nThe most difficult decision on the bench was **Alex Freeland**, who posted a respectable 58.63 but ultimately fell short due to his projected #9 spot in the order, which heavily penalized his efficiency score. While **Alex Freeland** offers switch-hitting versatility, the optimizer prioritized the higher-order stability provided by **Brice Turang** and **Corbin Carroll**. Speaking of **Corbin Carroll**, he remains a start despite facing a tougher arm in Braydon Fisher (3.09 xERA); his elite sprint speed and aggressive matchup profile against a slow delivery pitcher keep his floor high even when the SP skill metrics are unfavorable.\n\nRisk management remains a primary focus, as we are currently operating with several \"Lineup Pending\" assumptions. While **Vinnie Pasquantino** (65.80) and **Dalton Rushing** (64.76) look sharp, any late shifts in lineup construction could compress their scores. **Trevor Story** (59.81) is the closest to the marginal tier, largely because of the \"Elite Hold\" risk associated with Casey Mize\u2019s ability to stifle base runners. We are holding **James Wood**, **Josh Naylor**, and **Jose Caballero** in reserve; while their raw talent is undeniable, the current matchup spread dictates that we prioritize the efficiency of the starting nine over their specific platoon profiles today.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -237,11 +237,6 @@
             "Score": 59.809891165017476,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "56.24",
                     "type": "info"
@@ -276,7 +271,7 @@
             "SP_xERA": "3.96",
             "Warning": "",
             "GameTime": "2026-04-17T23:15:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "11:15 PM"
         },
         {
@@ -508,7 +503,7 @@
             "Slot": "OF5",
             "Player": "Corbin Carroll",
             "POS": "OF",
-            "Score": 64.33816188444986,
+            "Score": 62.603123563709715,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -527,13 +522,18 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-3%",
+                    "value": "-19%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-6%",
-                    "type": "negative"
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (85% SB)",
+                    "value": "+4%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #2",
@@ -546,8 +546,8 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Eric Lauer (L)",
-            "SP_xERA": "3.88",
+            "Opponent": "Braydon Fisher (R)",
+            "SP_xERA": "3.09",
             "Warning": "",
             "GameTime": "2026-04-18T01:40:00Z",
             "Order": "2*",
@@ -815,7 +815,7 @@
             "POS": "2B/SS/3B/OF",
             "Order": "7*",
             "Start": "11:15 PM",
-            "Opponent": "Ranger Suarez (L)",
+            "Opponent": "Suarez (L)",
             "SP_xERA": "3.73",
             "Score": 49.36287964625458,
             "Breakdown": [
