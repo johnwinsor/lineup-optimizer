@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-18",
-    "last_updated": "2026-04-18T21:26:15.453122+00:00",
+    "last_updated": "2026-04-18T22:25:16.344427+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 640.06,
-    "narrative": "The Zurich Zebras are positioned for a high-ceiling offensive output today, anchored by the elite tier matchups of **Yordan Alvarez** (77.33) and **Carson Benge** (67.06). **Yordan Alvarez** serves as our premier play against Pallante, whose 4.44 xERA provides a soft landing for a hitter of his caliber, buoyed further by a solid order position. Simultaneously, **Carson Benge** benefits from a strong platoon advantage against Taillon, while **Colt Keith** (66.56) overcomes a wind-in factor thanks to a prime #3 spot and a favorable matchup against Bello. **Pete Crow-Armstrong** remains a high-upside start; while his #8 spot hurts, his 92% stolen base success rate against the specific cadence of Peralta earns him a massive boost in our scarcity-weighted 5x5 framework.\n\nThe primary conflict in today\u2019s optimization centered on the fringe utility slot. **Junior Caminero** (53.51) ultimately edged out the lower-scoring cohort because, despite facing an elite arm in Skenes, his dynamic platoon splits and premium #2 lineup spot offered a higher floor than **Gary Sanchez** (52.55) or **Kazuma Okamoto** (53.16). While **Caleb Durbin** (40.36) remains active, he sits precariously close to the bench floor; facing Skubal with wind blowing in makes him a strictly volume-based play for his stolen base utility, as his raw scoring potential is severely hampered by the SP\u2019s elite skill profile. We continue to monitor the status of **Christian Yelich**, **Hyeseong Kim**, and **Victor Scott II**, whose absence from the active lineup\u2014or the major league roster in the case of **Zac Veen**\u2014continues to compress our available options for the MI/OF depth roles held by reserves like **Lars Nootbaar**, **Jerar Encarnacion**, **Dillon Dingler**, **Josh Smith**, and **Luis Pena**. Managers should keep a close watch on weather reports, as the wind-in warnings for **Colt Keith** and **Caleb Durbin** represent the highest variance points in today's projection.",
+    "total_efficiency_score": 638.13,
+    "narrative": "The Zurich Zebras face a challenging slate today, headlined by **Yordan Alvarez**, who anchors the lineup with a robust score of 77.33. Despite a slight park penalty, his elite xwOBA against Pallante makes him the safest bet for production. **Carson Benge** (67.06) and **Colt Keith** (66.56) are our next most efficient plays; both benefit from favorable, sub-5.00 xERA matchups and advantageous batting order positioning, with **Colt Keith** effectively neutralizing the wind-in risk through his strong platoon edge. Meanwhile, **Pete Crow-Armstrong** (62.57) warrants a start despite hitting 8th; his ability to exploit the opposing pitcher\u2019s slow delivery significantly boosts his potential for stolen bases, a critical necessity in our current roster construction.\n\nThe most difficult bench decision involved **Caleb Durbin** (40.36), who narrowly made the cut despite facing an elite arm in Skubal. While his score was hampered by the 2.71 xERA and detrimental wind conditions, his 42% stolen base potential against this specific battery kept him in the lineup over our other bench options. Conversely, we are navigating significant roster friction with **Christian Yelich** on the IL and both **Victor Scott II** and **Zac Veen** currently unavailable, limiting our flexibility. We remain cautious regarding **Trea Turner** and **Kyle Schwarber**, both of whom are projected to face Sale; while their individual base projections remain high, the -19% SP skill penalty against Sale introduces a distinct risk of a stagnant day in the runs and RBI columns. We will continue to monitor the status of **Lars Nootbaar**, **Jerar Encarnacion**, **Dillon Dingler**, **Josh Smith**, and **Luis Pena** to ensure we are maximizing our daily game caps effectively.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -258,7 +258,7 @@
             "Slot": "OF1",
             "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Score": 64.50518929271863,
+            "Score": 62.570033613937056,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -279,6 +279,11 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+14%",
                     "type": "positive"
+                },
+                {
+                    "label": "BvP Weak (37 PA)",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
                     "label": "Slow SP Delivery (92% SB)",
@@ -600,11 +605,46 @@
             "Player": "Dillon Dingler",
             "POS": "C",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Bello (R)",
+            "SP_xERA": "4.55",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "47.33",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -612,7 +652,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-04-18T20:10:00Z"
         },
         {
             "Slot": "BN",
