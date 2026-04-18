@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-18",
-    "last_updated": "2026-04-18T05:43:53.018226+00:00",
+    "last_updated": "2026-04-18T12:43:11.163766+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 825.9,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 822.2,
+    "narrative": "The Austin Waves head into today\u2019s slate with a potent offensive profile, anchored by **Kyle Tucker** (85.72) and **Gunnar Henderson** (83.18). **Kyle Tucker** is our premier play, benefiting from a highly favorable park factor (+14%) against Ryan Feltner, whose projected xERA of 4.63 offers a prime opportunity for power production. Similarly, **Gunnar Henderson** occupies the lead-off spot with a significant surge in expected performance; while he faces a slight penalty for the opponent\u2019s elite control in the run game, his current trajectory and batting order placement make him indispensable despite a 31% rain risk at the stadium. **Andy Pages** also earns a high-confidence start (73.82) due to his own matchup with Feltner, with his scoring bolstered by the park environment and a favorable green light to steal against a pitcher with a slow delivery.\n\nStrategic benching remains critical in maintaining our category efficiency, and the most difficult decision involved **Brady House** (63.81). He was our top-scoring reserve, nearly displacing **Miguel Vargas** (64.21) or **Jackson Merrill** (55.56) in the starting nine. Ultimately, **Brady House** fell just short because the optimizer preferred the superior projected run-creation context surrounding **Miguel Vargas** in his specific lineup slot. We are also closely monitoring **Luis Robert Jr.** (59.35), whose score is suppressed by a difficult platoon split against Jameson Taillon; he stays in the lineup only because his speed-threat profile against a slow-working pitcher provides unique value in our 5x5 format. We continue to hold high-upside assets like **Jordan Westburg**, **Marcell Ozuna**, **Josh Jung**, **Coby Mayo**, and **Liam Hicks** on the bench, waiting for optimal platoon alignment to deploy them in our bid to climb the standings.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -176,7 +176,7 @@
             ],
             "Opponent": "Gavin Williams (R)",
             "SP_xERA": "4.35",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (31%)",
             "GameTime": "2026-04-18T22:10:00Z",
             "Order": "1*",
             "Start": "10:10 PM"
@@ -227,9 +227,9 @@
         },
         {
             "Slot": "3B",
-            "Player": "Jorge Polanco",
-            "POS": "2B/3B",
-            "Score": 64.93783193518321,
+            "Player": "Miguel Vargas",
+            "POS": "1B/3B",
+            "Score": 64.21189471336594,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -238,41 +238,36 @@
                 },
                 {
                     "label": "Base",
-                    "value": "53.74",
+                    "value": "49.13",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
                     "value": "+10%",
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+15%",
+                    "type": "positive"
+                },
+                {
                     "label": "Dynamic Platoon (R)",
-                    "value": "-5%",
+                    "value": "-2%",
                     "type": "negative"
                 },
                 {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Jameson Taillon (R)",
-            "SP_xERA": "4.40",
+            "Opponent": "Luis Severino (R)",
+            "SP_xERA": "4.61",
             "Warning": "",
-            "GameTime": "2026-04-18T18:20:00Z",
+            "GameTime": "2026-04-18T20:05:00Z",
             "Order": "3*",
-            "Start": "06:20 PM"
+            "Start": "08:05 PM"
         },
         {
             "Slot": "OF1",
@@ -425,7 +420,7 @@
             "Slot": "OF4",
             "Player": "Luis Robert Jr.",
             "POS": "OF",
-            "Score": 62.31963084369007,
+            "Score": 59.35202937494292,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #4)",
@@ -460,11 +455,6 @@
                 {
                     "label": "Order #4",
                     "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -598,6 +588,55 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Jorge Polanco",
+            "POS": "2B/3B",
+            "Order": "3*",
+            "Start": "06:20 PM",
+            "Opponent": "Jameson Taillon (R)",
+            "SP_xERA": "4.40",
+            "Score": 61.845554223984,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "53.74",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-5%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-04-18T18:20:00Z"
         },
         {
             "Slot": "BN",
@@ -846,57 +885,8 @@
                     "type": "info"
                 }
             ],
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (31%)",
             "GameTime": "2026-04-18T22:10:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Miguel Vargas",
-            "POS": "1B/3B",
-            "Order": "3*",
-            "Start": "08:05 PM",
-            "Opponent": "Luis Severino (R)",
-            "SP_xERA": "4.61",
-            "Score": 64.21189471336594,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.13",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+15%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-04-18T20:05:00Z"
         },
         {
             "Slot": "BN",
