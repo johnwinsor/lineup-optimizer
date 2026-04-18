@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-18",
-    "last_updated": "2026-04-18T20:27:41.203620+00:00",
+    "last_updated": "2026-04-18T21:26:11.869411+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 650.29,
-    "narrative": "The Zurich Zebras enter April 18th with a clear focal point in **Yordan Alvarez**, who anchors the lineup with an elite 81.48 score. Facing Pallante, **Yordan Alvarez** benefits from a strong platoon advantage and a favorable pitcher profile, making him our primary offensive engine. **Colt Keith** also presents a high-upside play at 69.64; his promotion to the three-hole against Bello, combined with a significant park factor boost, positions him to capitalize on early RBI opportunities. Meanwhile, **Pete Crow-Armstrong** earns a start at 65.42 largely due to his elite stolen base potential; even from the eight-hole, his dynamic platoon edge and the specific timing of the opposing pitcher\u2019s delivery against the run make him a vital asset in our pursuit of the scarcest category.\n\nNavigating the rotation against top-tier arms requires tactical discipline. While **Trea Turner** and **Kyle Schwarber** face a formidable challenge in Sale, their scores remain resilient at 55.23 and 53.83, respectively, bolstered by their high spots in the order and inherent ability to impact the scoreboard regardless of pitcher dominance. The most difficult personnel decision involved **Junior Caminero**, whose 55.03 score was essentially neck-and-neck with the remainder of our utility group. Ultimately, the optimizer favored keeping him in the lineup despite the tough matchup against Skenes to maintain our aggressive ceiling. We continue to monitor the status of **Christian Yelich**, **Hyeseong Kim**, **Zac Veen**, and **Victor Scott II**, all of whom remain sidelined, while keeping secondary options like **Lars Nootbaar**, **Josh Smith**, **Dillon Dingler**, **Jerar Encarnacion**, and **Luis Pena** ready should roster flexibility dictate a pivot. \n\nBe advised that today\u2019s lineup rests on the assumption of **Kazuma Okamoto** batting seventh; should the official card shift him lower, his 53.49 score may contract further. We are also treading carefully with **Caleb Durbin** (43.74); while his speed is a differentiator, the combination of facing a high-skill arm in Skubal and a lower batting order position makes him our most marginal start. We are prioritizing efficient plate appearances today to stay within our game caps while squeezing every possible point from our high-speed depth.",
+    "total_efficiency_score": 646.12,
+    "narrative": "The Zurich Zebras face a difficult scheduling gauntlet today, specifically dealing with high-end arms like Skubal and Sale. **Yordan Alvarez** (81.48) is our premier offensive engine, benefiting from a soft matchup against Pallante; his elite xwOBA and favorable platoon advantage make him the only \"Strong\" play near our ceiling. **Colt Keith** (67.65) and **Pete Crow-Armstrong** (65.42) are our next most reliable options. While **Colt Keith** is hitting in the heart of the order, **Pete Crow-Armstrong** is a strategic necessity; his high score is driven by a strong platoon edge and, critically, the opposing pitcher\u2019s slow delivery, which maximizes his elite SB potential. **Carson Benge** (63.10) also grades out well, buoyed by the leadoff spot and a favorable matchup against Taillon.\n\nNavigating the pitching slate requires careful risk management, as we are avoiding a total benching despite the tough matchups. **Trea Turner** (55.23) and **Junior Caminero** (55.03) are clear pivots against elite arms, but both are started for their high base-floor metrics and premium lineup slots. **Caleb Durbin** sits on the low end of our starting threshold (41.55). He barely held his spot; while his SB upside is the primary reason he isn't riding the pine, he faces a significant downgrade against Skubal, compounded by a \"Wind In\" warning that caps his power potential. Among the bench, **Victor Scott II** was the closest to cracking the lineup, but he remains relegated to the bench today as we prioritize the defensive and structural alignment of the current starters. \n\nWarning: We must monitor the weather in multiple parks as \"Wind In\" reports are suppressing the scores of **Caleb Durbin** and **Colt Keith**. Furthermore, while **Trea Turner** and **Kyle Schwarber** project reasonably well, both face Sale, an elite arm capable of dragging their daily efficiency well below the projected thresholds. Ensure all bench assets, including **Christian Yelich** and the minor leaguers **Zac Veen** and **Hyeseong Kim**, remain inactive to preserve our weekly game caps.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -51,11 +51,6 @@
             "Score": 53.48712654559417,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "52.07",
                     "type": "info"
@@ -81,18 +76,18 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Zac Gallen (R)",
+            "Opponent": "Gallen (R)",
             "SP_xERA": "4.24",
             "Warning": "",
             "GameTime": "2026-04-19T00:10:00Z",
-            "Order": "7*",
+            "Order": "7",
             "Start": "12:10 AM"
         },
         {
             "Slot": "2B",
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
-            "Score": 43.738839496209266,
+            "Score": 41.5518975213988,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -122,6 +117,11 @@
                 {
                     "label": "Order #7",
                     "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
                     "type": "negative"
                 }
             ],
@@ -214,7 +214,7 @@
             "Slot": "3B",
             "Player": "Colt Keith",
             "POS": "1B/2B/3B",
-            "Score": 69.64096041430255,
+            "Score": 67.65427690667778,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -240,6 +240,11 @@
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Bello (R)",
