@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-19",
-    "last_updated": "2026-04-19T21:31:00.135636+00:00",
+    "last_updated": "2026-04-19T22:28:23.684261+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 766.79,
-    "narrative": "The LawDog lineup is headlined today by **Tyler Freeman**, whose elite score of 72.83 makes him our strongest play against Sasaki. He benefits from a rare combination of an elite matchup (5.52 xERA) and a massive 14% park factor boost, allowing him to capitalize on the favorable conditions. **Will Smith** follows closely at 71.28; despite facing a competent arm in Lorenzen, he is anchored in a prime #3 hole with an excellent xwOBA projection of 0.378. We are also looking for significant production from **Jonathan Aranda** (66.50) and **Jos\u00e9 Ram\u00edrez** (66.01), both of whom benefit from favorable platoon dynamics. **Jonathan Aranda** specifically gets a vital 5% bump from wind conditions blowing out, making him a high-upside play against M. Keller.\n\nThe benching process was rigorous today, with **Matt Chapman** (52.74) falling just short of displacing our lower-scoring OF options. While **Matt Chapman** projects well, his efficiency was ultimately stunted by a negative platoon split against the lefty Poulin, leading the optimizer to prioritize the higher-ceiling matchups of our primary starters. We must maintain caution regarding **Gleyber Torres** and **Wenceel Perez**; both are facing Crochet, who remains a genuine threat with a stiff 2.86 xERA, severely dampening their raw power projections. Finally, while **Cal Raleigh** (59.90) and **Yainer Diaz** (57.94) are firmly in the \"Strong\" start tier, we will be monitoring the late-game defensive usage for **Yainer Diaz** given his #7 spot in the order, ensuring we don't bleed too much efficiency if the game gets out of hand.",
+    "total_efficiency_score": 761.08,
+    "narrative": "For today\u2019s slate, **Tyler Freeman** stands as our premier offensive anchor, boasting a commanding 72.83 score. A soft matchup against Sasaki (5.52 xERA) coupled with a massive 14% park-factor boost creates the perfect storm for production. We are also leaning heavily on the top-of-the-order firepower provided by **Jonathan Aranda** (66.50) and **Jos\u00e9 Ram\u00edrez** (66.01). **Jonathan Aranda** benefits specifically from a favorable wind projection and a dynamic platoon advantage that pushes his ceiling well beyond his base projection. Meanwhile, **Will Smith** remains a high-floor play at 65.58; despite a poor BvP history against his opponent, the combination of a hitter-friendly park and a #3 lineup spot keeps him firmly in our starting rotation.\n\nThe most difficult decision on the bench was undoubtedly **Matt Chapman**. With a 52.74 score, he was the first man out, narrowly edged by the tactical decision to prioritize positional flexibility and the specific dynamic platoon advantages held by **Luis Arraez** and **Jung Hoo Lee** in their respective matchups. While **Matt Chapman** is perfectly capable of clearing the fence, the optimizer preferred the high-contact profile of **Luis Arraez** to secure category stability. We are closely monitoring the threat of Garrett Crochet, who remains a legitimate risk for **Gleyber Torres** and **Wenceel Perez**; his elite skill profile necessitates a cautious approach, as his presence on the mound suppresses their scores significantly despite their platoon advantages. Managers should note that while we are running a full roster, any late-breaking weather alerts in the Chicago/Cleveland area could jeopardize the efficiency of our exposure to those games.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -457,7 +457,7 @@
             "Slot": "UTIL",
             "Player": "Will Smith",
             "POS": "C",
-            "Score": 71.28448031213807,
+            "Score": 65.58172188716702,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -478,6 +478,11 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+4%",
                     "type": "positive"
+                },
+                {
+                    "label": "BvP Poor (41 PA)",
+                    "value": "-7%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #3",
@@ -504,11 +509,41 @@
             "Player": "Lawrence Butler",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:05 PM",
+            "Opponent": "Schultz (L)",
+            "SP_xERA": "3.86",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "55.27",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -516,7 +551,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-04-19T20:05:00Z"
         },
         {
             "Slot": "BN",
@@ -660,7 +695,7 @@
             "Order": "6",
             "Start": "08:07 PM",
             "Opponent": "Urena (R)",
-            "SP_xERA": "1.59",
+            "SP_xERA": "2.35",
             "Score": 41.770372287663,
             "Breakdown": [
                 {
