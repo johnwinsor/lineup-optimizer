@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-20",
-    "last_updated": "2026-04-20T06:21:39.053188+00:00",
+    "last_updated": "2026-04-20T13:10:36.292392+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 748.23,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 754.13,
+    "narrative": "For today\u2019s slate, **Jos\u00e9 Ram\u00edrez** (80.96) is our clear centerpiece, boasting an elite efficiency score driven by a favorable matchup against Spencer Arrighetti (xERA 5.10). His combination of a prime #3 spot and a high stolen-base upside against a pitcher with a slow delivery makes him our premier play. **Will Smith** (74.95) remains a secondary anchor, benefiting significantly from the matchup against Jose Quintana; despite the volatility of a pending lineup, **Will Smith** projects as our most reliable source of production today given the favorable xERA of his opposing starter. We are also leaning into the volume of **Lawrence Butler** (65.53) and **Bryson Stott** (64.42), both of whom capitalize on soft opposing arms, with **Lawrence Butler** showing high upside despite a lower lineup position due to a favorable platoon split against Emerson Hancock.\n\nThe most difficult decision on the bench was **Gleyber Torres** (41.31), who fell just shy of our rotation cutoff. While **Gleyber Torres** offers a decent floor, he was edged out by **Daulton Varsho** (41.43) and **Masyn Winn** (45.10); the optimizer favored the specific platoon advantages of the active roster over the marginal raw projection of **Gleyber Torres**. We are tracking weather closely for **Jeremiah Jackson** and **Taylor Ward**, as both received a +5% boost due to wind projections at their stadium, though we remain wary of Seth Lugo\u2019s ability to stifle offense. Elsewhere, **Cal Raleigh** (50.40) and **Jonathan Aranda** (50.93) are starts on merit, but they face stiffer tests against J.T. Ginn and Rhett Lowder respectively, requiring us to monitor the final lineups to ensure no late-scratch risks compromise our limited game caps. We continue to hold **Geraldo Perdomo**, **Matt Chapman**, **Luis Arraez**, **Jung Hoo Lee**, **Gavin Sheets**, **Drew Gilbert**, and **Wenceel Perez** in reserve due to scheduling or lack of current production parity.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -430,7 +430,7 @@
             "Slot": "OF3",
             "Player": "Jeremiah Jackson",
             "POS": "2B/SS/3B/OF",
-            "Score": 57.38005703685807,
+            "Score": 60.24905988870097,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -465,6 +465,11 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -523,7 +528,7 @@
             "Slot": "OF5",
             "Player": "Taylor Ward",
             "POS": "OF",
-            "Score": 60.57665652068392,
+            "Score": 63.60548934671811,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -553,6 +558,11 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -646,17 +656,12 @@
             "Slot": "BN",
             "Player": "Gleyber Torres",
             "POS": "2B",
-            "Order": "2*",
+            "Order": "2",
             "Start": "03:10 PM",
-            "Opponent": "Sonny Gray (R)",
+            "Opponent": "Gray, S (R)",
             "SP_xERA": "3.29",
             "Score": 41.307384468772625,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.02",
@@ -683,7 +688,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -695,45 +700,20 @@
             "Slot": "BN",
             "Player": "Wenceel Perez",
             "POS": "OF",
-            "Order": "6*",
-            "Start": "03:10 PM",
-            "Opponent": "Sonny Gray (R)",
-            "SP_xERA": "3.29",
-            "Score": 38.63732140557522,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.58",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-17%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-11%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-04-20T15:10:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
