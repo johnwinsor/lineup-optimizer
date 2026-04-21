@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-21",
-    "last_updated": "2026-04-21T20:04:21.101443+00:00",
+    "last_updated": "2026-04-21T21:38:34.582964+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 759.33,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with **Kyle Schwarber** (78.02) and **Trea Turner** (77.29) anchoring the offensive production. Both players benefit significantly from a favorable wind-out scenario and prime spot-in-order projections against Shota Imanaga. **Kyle Schwarber** remains a daily priority given his elite 0.402 xwOBA, while **Trea Turner** provides the necessary categorical depth for our SB-weighted strategy, despite facing a slight efficiency penalty due to Imanaga\u2019s ability to hold runners. Further down the order, **Caleb Durbin** (63.36) and **Kazuma Okamoto** (62.07) offer high-floor utility; **Caleb Durbin** draws a soft matchup against Gil, whose 5.74 xERA provides the most favorable SP volatility in today\u2019s lineup, helping offset the efficiency loss of his #8 batting spot.\n\nThe most difficult roster decision today was excluding **Pete Crow-Armstrong** (41.99). While his elite sprint speed and base-stealing upside are integral to our philosophy, the optimizer docked his efficiency heavily due to a rough platoon disadvantage against Jes\u00fas Luzardo and the high volume of base-path risk associated with a lefty-lefty matchup. Consequently, **Victor Scott II** (54.58) and **Carson Benge** (52.08) were favored for their slightly higher categorical stability. We are also closely monitoring the 42% rain risk at the stadium where **Hyeseong Kim** (56.85) and **Jerar Encarnacion** are set to play; if that game is delayed, our bench utility for **Luke Raley** or **Jerar Encarnacion** will need to be re-evaluated against the evening slate. Meanwhile, **Yordan Alvarez** (53.84) remains in the UTIL slot despite a negative platoon shift, as his base power remains too significant to bench even against a tough arm like Messick.",
+    "total_efficiency_score": 761.98,
+    "narrative": "The Zurich Zebras enter April 21 with a primary offensive engine fueled by **Kyle Schwarber** (78.02) and **Trea Turner** (77.29), who headline our lineup against Imanaga. Both benefit significantly from favorable park factors and wind-out conditions at the stadium, with **Kyle Schwarber**\u2019s elite 0.402 xwOBA providing the highest ceiling of the day. While **Trea Turner** faces a slight efficiency penalty due to an elite opposing hold-percentage pitcher, his ability to contribute in the scarcest category (SB) keeps him in elite territory. **Kazuma Okamoto** (65.17) also stands out as a strong start; despite his lineup status being officially pending, the combination of a soft matchup against Kochanowicz and favorable wind conditions makes him a reliable anchor at 1B.\n\nThe decision-making process for the remaining slots leaned heavily into matchup-adjusted efficiency. **Caleb Durbin** (63.36) remains a high-value play despite hitting 8th, as he effectively weaponizes the SP\u2019s 5.74 xERA to drive our daily offensive output. Conversely, **Pete Crow-Armstrong** (41.99) narrowly missed the final lineup spot; while his raw base projection is high, the combination of a difficult matchup against Luzardo and a severe dynamic platoon penalty (L/L) forced him to the bench in favor of higher-floor options. \n\nRisk management remains a priority for the coaching staff today. **Hyeseong Kim** (56.84) warrants close monitoring as the game approaches, as a 42% rain probability poses a genuine threat to his contribution potential. Furthermore, we are keeping a close eye on **Junior Caminero** (50.77), whose scoring has been dampened by a challenging matchup against a high-skill arm (2.76 xERA). With **Christian Yelich** sidelined, **Colt Keith** inactive, and **Zac Veen** currently down in the minors with the Albuquerque Isotopes, our depth is tested, necessitating a conservative approach with **Josh Smith** (44.75) and **Yordan Alvarez** (53.83) to avoid unnecessary hits to our game caps if the matchups fail to materialize as projected.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -82,7 +82,7 @@
             "Slot": "1B",
             "Player": "Kazuma Okamoto",
             "POS": "1B/3B",
-            "Score": 62.06699131047623,
+            "Score": 65.17034087600005,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -112,6 +112,11 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -198,7 +203,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Merrill Kelly (R)",
+            "Opponent": "Kelly, Me (R)",
             "SP_xERA": "3.95",
             "Warning": "",
             "GameTime": "2026-04-22T01:40:00Z",
@@ -211,11 +216,6 @@
             "POS": "SS",
             "Score": 77.29233246044419,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "60.20",
@@ -252,11 +252,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Shota Imanaga (L)",
+            "Opponent": "Imanaga (L)",
             "SP_xERA": "4.36",
             "Warning": "",
             "GameTime": "2026-04-21T23:40:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:40 PM"
         },
         {
@@ -305,11 +305,6 @@
             "Score": 78.02359676366233,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "58.83",
                     "type": "info"
@@ -345,11 +340,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Shota Imanaga (L)",
+            "Opponent": "Imanaga (L)",
             "SP_xERA": "4.36",
             "Warning": "",
             "GameTime": "2026-04-21T23:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "11:40 PM"
         },
         {
@@ -434,7 +429,7 @@
             "Slot": "OF4",
             "Player": "Josh Smith",
             "POS": "1B/2B/SS/3B/OF",
-            "Score": 45.20635126844751,
+            "Score": 44.75428775576304,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -452,12 +447,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Carmen Mlodzinski (R)",
+            "Opponent": "Mlodzinski (R)",
             "SP_xERA": "3.73",
             "Warning": "",
             "GameTime": "2026-04-22T00:05:00Z",
@@ -511,7 +511,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Landen Roupp (R)",
+            "Opponent": "Roupp (R)",
             "SP_xERA": "4.36",
             "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-04-22T01:45:00Z",
@@ -568,17 +568,12 @@
             "Slot": "BN",
             "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Order": "8*",
+            "Order": "9",
             "Start": "11:40 PM",
-            "Opponent": "Jes\u00fas Luzardo (L)",
+            "Opponent": "Luzardo (L)",
             "SP_xERA": "3.40",
             "Score": 41.991856700600415,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "59.99",
@@ -610,8 +605,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #9",
+                    "value": "-8%",
                     "type": "negative"
                 },
                 {
@@ -620,7 +615,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -699,45 +694,20 @@
             "Slot": "BN",
             "Player": "Luke Raley",
             "POS": "1B/OF",
-            "Order": "6*",
-            "Start": "01:40 AM",
-            "Opponent": "Jacob Lopez (L)",
-            "SP_xERA": "3.76",
-            "Score": 38.92800332524896,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "48.39",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-5%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-5%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-04-22T01:40:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
@@ -767,55 +737,20 @@
             "Slot": "BN",
             "Player": "Jerar Encarnacion",
             "POS": "OF",
-            "Order": "8*",
-            "Start": "01:45 AM",
-            "Opponent": "Yoshinobu Yamamoto (R)",
-            "SP_xERA": "3.32",
-            "Score": 36.682244871345176,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "47.55",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-16%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
-            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
-            "GameTime": "2026-04-22T01:45:00Z"
+            "Warning": "",
+            "GameTime": null
         },
         {
             "Slot": "BN",

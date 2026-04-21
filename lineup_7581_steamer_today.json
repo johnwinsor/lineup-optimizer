@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-21",
-    "last_updated": "2026-04-21T20:05:39.374733+00:00",
+    "last_updated": "2026-04-21T21:40:13.601070+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 806.52,
-    "narrative": "The Austin Waves enter today\u2019s slate with a high-ceiling core, anchored by **Kyle Tucker** (77.10) and **Vladimir Guerrero Jr.** (74.92), who both benefit from favorable matchups against pitchers with elevated xERAs. **Kyle Tucker** is our premier play, as he faces a soft matchup against Roupp and benefits from wind-out conditions, providing the ideal blend of power and stolen base upside. Similarly, **Luis Garc\u00eda Jr.** (74.56) is a standout target today; he exploits a massive 6.36 xERA from his opposing starter, with the optimization algorithm rewarding his spot in the #2 hole and a favorable platoon advantage. **Jackson Merrill** (70.77) also presents significant value, buoyed by a 14% park factor boost and a prime hitting environment against a pitcher who struggles to neutralize his platoon split.\n\nRegarding our bench decisions, **Marcell Ozuna** (59.22) was the clear \"first man out,\" missing the cut by less than a point of efficiency. While his power metrics remain stable, he was passed over in favor of higher-upside profiles like **Nasim Nunez** (68.23) and **Andy Pages** (62.83), whose roles as primary runners and situational hitters carry more weight given our aggressive pursuit of the stolen base category. We are monitoring a 42% rain risk in the **Andy Pages** and **Kyle Tucker** game; should that tilt into a delay, we are prepared to pivot to the bench. Furthermore, while **Gunnar Henderson** (57.76) and **Nolan Schanuel** (60.71) are locked into the lineup pending final confirmation, the volatility of the \"Lineup Pending\" status requires us to keep a close watch on **Coby Mayo** and **Josh Jung**, both of whom are ready to sub in should our projected starters lose their order-of-batting advantages.",
+    "total_efficiency_score": 814.76,
+    "narrative": "The Austin Waves head into today\u2019s slate with a potent offensive outlook, anchored by **Vladimir Guerrero Jr.** (78.67) and **Kyle Tucker** (77.10). **Vladimir Guerrero Jr.** is our premier play, benefiting from a soft matchup against Jack Kochanowicz, whose 5.35 xERA provides a ceiling-raising environment bolstered by favorable winds. **Kyle Tucker** remains an elite daily start despite a 42% rain risk in his contest against Roupp; his high xwOBA and favorable placement in the order cement his status as an essential anchor. Meanwhile, **Luis Garc\u00eda Jr.** (74.56) and **Nasim Nunez** (68.23) are both highly recommended starts, as both capitalize on the significant 6.36 xERA of L\u00f3pez, R, providing the necessary efficiency to attack our scarcest category, stolen bases.\n\nOur most difficult bench decision involved **Marcell Ozuna** (59.22), who fell just shy of the active roster. While **Marcell Ozuna** offers substantial power, his marginal efficiency score relative to the rest of the lineup\u2014specifically compared to the high-upside matchup exploitation offered by **Luis Garc\u00eda Jr.** and **Nasim Nunez**\u2014led the optimizer to favor the latter duo for their superior situational platoon edges. We are also closely monitoring the 42% rain risk affecting **Andy Pages** and **Kyle Tucker**; should those games be delayed or postponed, **Marcell Ozuna** is the immediate pivot to ensure our game caps remain optimized. Caution is also advised regarding the \"Lineup Pending\" status of **Nolan Schanuel**, **Miguel Vargas**, **Andy Pages**, **Kyle Tucker**, **Josh Lowe**, and **Vladimir Guerrero Jr.**; should any of these players move down in their respective batting orders, their daily efficiency scores will require re-evaluation before first pitch.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -87,7 +87,7 @@
             "Slot": "1B",
             "Player": "Nolan Schanuel",
             "POS": "1B",
-            "Score": 60.71073770481727,
+            "Score": 63.746274590058135,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -117,6 +117,11 @@
                 {
                     "label": "Order #3",
                     "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -204,13 +209,8 @@
             "Slot": "MI",
             "Player": "Gunnar Henderson",
             "POS": "SS",
-            "Score": 57.76116285601659,
+            "Score": 56.7109598949981,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "61.70",
@@ -237,8 +237,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -251,7 +251,7 @@
             "SP_xERA": "3.85",
             "Warning": "",
             "GameTime": "2026-04-21T23:40:00Z",
-            "Order": "1*",
+            "Order": "2",
             "Start": "11:40 PM"
         },
         {
@@ -296,7 +296,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Merrill Kelly (R)",
+            "Opponent": "Kelly, Me (R)",
             "SP_xERA": "3.95",
             "Warning": "",
             "GameTime": "2026-04-22T01:40:00Z",
@@ -350,7 +350,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Landen Roupp (R)",
+            "Opponent": "Roupp (R)",
             "SP_xERA": "4.36",
             "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-04-22T01:45:00Z",
@@ -404,7 +404,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Landen Roupp (R)",
+            "Opponent": "Roupp (R)",
             "SP_xERA": "4.36",
             "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-04-22T01:45:00Z",
@@ -417,11 +417,6 @@
             "POS": "OF",
             "Score": 70.77338337783172,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.63",
@@ -452,14 +447,14 @@
             "SP_xERA": "3.69",
             "Warning": "",
             "GameTime": "2026-04-22T00:40:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "12:40 AM"
         },
         {
             "Slot": "OF4",
             "Player": "Josh Lowe",
             "POS": "OF",
-            "Score": 50.22583514054952,
+            "Score": 52.737126897577,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -495,6 +490,11 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Patrick Corbin (L)",
@@ -552,7 +552,7 @@
             "Slot": "UTIL",
             "Player": "Vladimir Guerrero Jr.",
             "POS": "1B",
-            "Score": 74.92305302979302,
+            "Score": 78.66920568128269,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -588,6 +588,11 @@
                     "label": "xwOBA Good",
                     "value": "0.384",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Jack Kochanowicz (R)",
@@ -629,7 +634,7 @@
             "POS": "SS",
             "Order": "5*",
             "Start": "01:40 AM",
-            "Opponent": "Luis Castillo (R)",
+            "Opponent": "Castillo, L (R)",
             "SP_xERA": "4.03",
             "Score": 51.00862185100442,
             "Breakdown": [
@@ -695,17 +700,12 @@
             "Slot": "BN",
             "Player": "Heliot Ramos",
             "POS": "OF",
-            "Order": "7*",
+            "Order": "7",
             "Start": "01:45 AM",
             "Opponent": "Yoshinobu Yamamoto (R)",
             "SP_xERA": "3.32",
             "Score": 41.440060104511176,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.27",
@@ -742,7 +742,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -754,17 +754,12 @@
             "Slot": "BN",
             "Player": "Marcell Ozuna",
             "POS": "Util",
-            "Order": "4*",
+            "Order": "4",
             "Start": "12:05 AM",
             "Opponent": "Rocker (R)",
             "SP_xERA": "4.32",
             "Score": 59.21998571024165,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.73",
@@ -786,7 +781,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -800,7 +795,7 @@
             "POS": "3B",
             "Order": "6",
             "Start": "12:05 AM",
-            "Opponent": "Carmen Mlodzinski (R)",
+            "Opponent": "Mlodzinski (R)",
             "SP_xERA": "3.73",
             "Score": 47.15049848211435,
             "Breakdown": [
@@ -832,17 +827,12 @@
             "Slot": "BN",
             "Player": "Coby Mayo",
             "POS": "1B/3B",
-            "Order": "7*",
+            "Order": "8",
             "Start": "11:40 PM",
             "Opponent": "Bubic (L)",
             "SP_xERA": "3.85",
-            "Score": 52.035003204679356,
+            "Score": 50.42567320865834,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.42",
@@ -869,8 +859,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
                 },
                 {
@@ -879,7 +869,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
