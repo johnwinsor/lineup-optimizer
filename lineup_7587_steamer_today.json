@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-20",
-    "last_updated": "2026-04-20T23:36:25.935943+00:00",
+    "last_updated": "2026-04-21T02:01:28.440825+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 490.31,
-    "narrative": "Our offensive engine today centers on the elite scoring trio of **Austin Riley**, **Tyler Soderstrom**, and **James Wood**, all of whom surpass the 70-point threshold. **Austin Riley** is the clear anchor at 72.43, benefiting from a highly favorable matchup against Jake Irvin (xERA 4.92) and a prime cleanup spot. **James Wood** follows closely at 71.27; his role as the table-setter out of the leadoff spot against Bryce Elder is a massive boost to his floor, while **Tyler Soderstrom** leverages the same exploitable matchup against Hancock to provide excellent power upside from the OF1 slot. These three are the pillars of today's efficiency strategy, effectively negating the lower projections elsewhere in the order.\n\nThe most difficult decision on the card was keeping **Kyle Karros** on the bench at 44.69. While he offers some intrigue against the lefty Wrobleski and carries a slight boost due to a favorable park environment, he fell just short of the efficiency required to crack the starting nine. The optimizer prioritized the higher-ceiling matchups found in **Josh Naylor** and **Max Muncy**, despite their tougher direct SP matchups. We are proceeding with caution regarding **Dalton Rushing**, whose efficiency sits at a marginal 54.28; while the park factors and opposing SP skill help, batting in the nine-hole combined with a tough lefty-on-lefty platoon disadvantage makes him a candidate to be swapped if our deeper bench options\u2014should they enter the game\u2014show better situational leverage. With **Corbin Carroll**, **Jose Caballero**, and **Mickey Moniak** all unavailable due to scheduled off-days or confirmed benching, our remaining roster depth, including **Jazz Chisholm Jr.**, **Giancarlo Stanton**, **Seiya Suzuki**, **Brice Turang**, **Gabriel Moreno**, **Luis Campusano**, **Zach McKinstry**, **Alex Freeland**, **Carson Williams**, and **Travis Bazzana**, remains on high alert for pinch-hit opportunities to protect our game caps.",
+    "total_efficiency_score": 487.53,
+    "narrative": "For today\u2019s slate, our lineup leans heavily on high-upside middle-of-the-order bats facing favorable pitching matchups. **Austin Riley** (72.43) and **Tyler Soderstrom** (71.59) headline the day as our strongest plays, both benefiting from the soft 4.92 and 4.76 xERA matchups against Jake Irvin and Hancock, respectively. **James Wood** is our premium table-setter today; batting leadoff against Elder, he earns a massive +10% order bonus, pushing his score to 71.27. While **Vinnie Pasquantino** is facing a tough arm in Bradish (2.63 xERA), the dynamic platoon edge keeps his floor stable at 55.60, ensuring he remains a viable anchor for our 5x5 counting stats.\n\nThe most difficult decision on the bench was **Kyle Karros**. Despite a favorable park factor and a platoon advantage that pushed his score to 44.69, he ultimately fell short of our efficiency threshold. The optimizer prioritized the higher-ceiling profiles of **Trevor Story** and **Josh Naylor**, who, despite their own hurdles against mid-tier arms, provide better categorical stability. We are also monitoring the status of **Dalton Rushing**; his score of 54.29 is hampered by the difficult L/L platoon matchup against Quintana and a suboptimal #9 spot in the order, making him our riskiest active starter. With **Corbin Carroll**, **Jose Caballero**, and **Mickey Moniak** unavailable today due to team off-days or lineup absences, we are lean at the margins and need our core of **Austin Riley** and **Tyler Soderstrom** to shoulder the offensive burden. \n\nWe are currently managing a thin bench, with the rest of the roster\u2014including **Giancarlo Stanton**, **Seiya Suzuki**, **Brice Turang**, **Gabriel Moreno**, **Luis Campusano**, **Zach McKinstry**, **Alex Freeland**, **Carson Williams**, and **Travis Bazzana**\u2014either on rest or awaiting better matchups to preserve our limited game caps. We will continue to pivot toward high-speed assets like **Jazz Chisholm Jr.** whenever he rotates back into the active mix to address our critical need for stolen bases.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -48,7 +48,7 @@
             "Slot": "1B",
             "Player": "Vinnie Pasquantino",
             "POS": "1B",
-            "Score": 58.381250982808176,
+            "Score": 55.60119141219826,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -73,11 +73,6 @@
                 {
                     "label": "Order #3",
                     "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -434,11 +429,51 @@
             "Player": "Seiya Suzuki",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:40 PM",
+            "Opponent": "Nola, A (R)",
+            "SP_xERA": "3.81",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "54.74",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Catcher (1.88s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (62% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -446,7 +481,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-04-20T23:40:00Z"
         },
         {
             "Slot": "BN",
