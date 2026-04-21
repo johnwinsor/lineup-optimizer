@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-21",
-    "last_updated": "2026-04-21T19:03:15.962141+00:00",
+    "last_updated": "2026-04-21T20:06:41.419569+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 785.05,
-    "narrative": "Our offense centers around the elite matchup for **Jos\u00e9 Ram\u00edrez**, who commands the day\u2019s highest projection (83.34) against Ryan Weiss. With a shaky 6.75 xERA opposing him and favorable wind conditions, **Jos\u00e9 Ram\u00edrez** is an auto-start with massive ceiling potential. We are also leaning into significant platoon advantages today; **Gleyber Torres** (63.57) benefits from a strong 13% boost against Kyle Harrison, and **Taylor Ward** (63.72) is set to capitalize on favorable park factors and platoon splits against Kris Bubic. Meanwhile, **Daulton Varsho** (67.50) is a high-value play despite the \"Elite Catcher\" defensive penalty; his matchup against Jack Kochanowicz provides enough SP-related upside to outweigh the risks associated with the bottom-third of the batting order.\n\nThe most difficult decision on the bench involved **Matt Chapman** (49.36). He was the closest to cracking the starting nine, but the combination of facing a high-caliber arm in Yoshinobu Yamamoto and a 35% rain risk effectively neutralized his output, pushing our optimizer to favor the safer floor provided by **Geraldo Perdomo** (62.94). We are also closely monitoring the lineup status of **Will Smith** and **Luis Arraez**, both of whom carry weather warnings. If the rain risk in their respective games forces a late scratch, we are prepared to pivot to the bench, though we caution that replacing **Luis Arraez** during a start against Yamamoto is a high-variance move given the lack of superior available alternatives today. Proceed with standard caution regarding the \"Lineup Pending\" tags for our catchers, **Will Smith** and **Cal Raleigh**, who remain primary anchors if confirmed in the top-three spots.",
+    "total_efficiency_score": 781.72,
+    "narrative": "The focal point for LawDog today is undoubtedly **Jos\u00e9 Ram\u00edrez**, who commands the highest efficiency rating on the board at 83.34. He faces a favorable matchup against Weiss, who possesses a poor 6.75 xERA, and the advantage is further compounded by a wind-out forecast. While **Geraldo Perdomo** (62.94) and **Gleyber Torres** (63.56) provide strong, high-floor stability against their respective right-handed and left-handed counterparts, **Daulton Varsho** (67.49) remains a priority play despite facing a high-hold pitcher. His explosive platoon advantage (+10%) outweighs the threat of an elite catcher, making him a high-leverage start for our SB-starved rotation. **Taylor Ward** (63.71) also benefits significantly from a 9% platoon boost, cementing his spot in the outfield over marginal options.\n\nEfficiency remains our primary heuristic, and the most difficult exclusion was **Matt Chapman**, who fell just short at 49.36. While his base projection is solid, the matchup against Yamamoto\u2014who carries an elite 3.32 xERA\u2014suppressed his score below our threshold, exacerbated by a 42% rain risk in that stadium. We chose to prioritize the higher-upside efficiency of **Gavin Sheets** and **Lawrence Butler** in the outfield slots. We must remain vigilant regarding **Will Smith** and **Luis Arraez**, as both are currently tethered to the same rain-threatened environment; should the weather forecast deteriorate or lineups shift, we will need to pivot quickly to preserve our daily game caps. **Cal Raleigh** rounds out the top tier at 60.30, providing necessary production from the catcher position despite the stiff test posed by Jacob Lopez.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -54,7 +54,7 @@
             ],
             "Opponent": "Landen Roupp (R)",
             "SP_xERA": "4.36",
-            "Warning": "\u26a0\ufe0f Rain Risk (35%)",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-04-22T01:45:00Z",
             "Order": "3*",
             "Start": "01:45 AM"
@@ -152,44 +152,64 @@
             ],
             "Opponent": "Yoshinobu Yamamoto (R)",
             "SP_xERA": "3.32",
-            "Warning": "\u26a0\ufe0f Rain Risk (35%)",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-04-22T01:45:00Z",
             "Order": "2*",
             "Start": "01:45 AM"
         },
         {
             "Slot": "2B",
-            "Player": "Gleyber Torres",
-            "POS": "2B",
-            "Score": 63.56573708780647,
+            "Player": "Bryson Stott",
+            "POS": "2B/SS",
+            "Score": 51.29077053318485,
             "Breakdown": [
                 {
+                    "label": "Lineup Pending (Assumed #7)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Base",
-                    "value": "50.02",
+                    "value": "53.67",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+5%",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+9%",
                     "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (L)",
-                    "value": "+13%",
-                    "type": "positive"
+                    "value": "-13%",
+                    "type": "negative"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Elite Hold SP (40% SB)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kyle Harrison (L)",
-            "SP_xERA": "3.97",
+            "Opponent": "Shota Imanaga (L)",
+            "SP_xERA": "4.36",
             "Warning": "",
-            "GameTime": "2026-04-21T22:40:00Z",
-            "Order": "2",
-            "Start": "10:40 PM"
+            "GameTime": "2026-04-21T23:40:00Z",
+            "Order": "7*",
+            "Start": "11:40 PM"
         },
         {
             "Slot": "SS",
@@ -301,7 +321,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Ryan Weiss (R)",
+            "Opponent": "Weiss (R)",
             "SP_xERA": "6.75",
             "Warning": "",
             "GameTime": "2026-04-21T22:10:00Z",
@@ -350,7 +370,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kris Bubic (L)",
+            "Opponent": "Bubic (L)",
             "SP_xERA": "3.85",
             "Warning": "",
             "GameTime": "2026-04-21T23:40:00Z",
@@ -531,7 +551,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kris Bubic (L)",
+            "Opponent": "Bubic (L)",
             "SP_xERA": "3.85",
             "Warning": "",
             "GameTime": "2026-04-21T23:40:00Z",
@@ -540,109 +560,40 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Yainer Diaz",
-            "POS": "C",
-            "Score": 54.620221392984725,
+            "Player": "Gleyber Torres",
+            "POS": "2B",
+            "Score": 63.56573708780647,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "52.32",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Cecconi (R)",
-            "SP_xERA": "4.19",
-            "Warning": "",
-            "GameTime": "2026-04-21T22:10:00Z",
-            "Order": "7*",
-            "Start": "10:10 PM"
-        }
-    ],
-    "players_sat": [
-        {
-            "Slot": "BN",
-            "Player": "Bryson Stott",
-            "POS": "2B/SS",
-            "Order": "7*",
-            "Start": "11:40 PM",
-            "Opponent": "Shota Imanaga (L)",
-            "SP_xERA": "4.36",
-            "Score": 51.29077053318485,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "53.67",
+                    "value": "50.02",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+9%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-13%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Elite Hold SP (40% SB)",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
                     "value": "+5%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
                 }
             ],
+            "Opponent": "Harrison (L)",
+            "SP_xERA": "3.97",
             "Warning": "",
-            "GameTime": "2026-04-21T23:40:00Z"
-        },
+            "GameTime": "2026-04-21T22:40:00Z",
+            "Order": "2",
+            "Start": "10:40 PM"
+        }
+    ],
+    "players_sat": [
         {
             "Slot": "BN",
             "Player": "Tyler Freeman",
@@ -661,6 +612,50 @@
             ],
             "Warning": "",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Yainer Diaz",
+            "POS": "C",
+            "Order": "7",
+            "Start": "10:10 PM",
+            "Opponent": "Messick (L)",
+            "SP_xERA": "3.43",
+            "Score": 46.740624625266385,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "52.32",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-14%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-04-21T22:10:00Z"
         },
         {
             "Slot": "BN",
@@ -767,7 +762,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "\u26a0\ufe0f Rain Risk (35%)",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-04-22T01:45:00Z"
         },
         {
@@ -864,7 +859,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "\u26a0\ufe0f Rain Risk (35%)",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-04-22T01:45:00Z"
         },
         {
@@ -923,7 +918,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "\u26a0\ufe0f Rain Risk (35%)",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-04-22T01:45:00Z"
         }
     ]
