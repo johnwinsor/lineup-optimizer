@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-21",
-    "last_updated": "2026-04-21T06:05:43.227570+00:00",
+    "last_updated": "2026-04-21T13:04:43.318279+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 765.86,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 778.53,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Kyle Schwarber** (78.02) and **Trea Turner** (77.29) headlining the lineup as the clear objective choices. Both benefit immensely from a favorable wind-out scenario and matchup against Shota Imanaga, whose 4.36 xERA suggests vulnerability. **Kyle Schwarber** continues to be a focal point due to his elite 0.402 xwOBA, while **Trea Turner** remains the cornerstone for stolen base production, mitigating the risk of facing a southpaw with his dynamic platoon advantage. **Caleb Durbin** also projects as a high-value start (65.38) despite the lower lineup placement, as the favorable matchup against Luis Gil provides a significant skill-based boost to his daily efficiency.\n\nThe most difficult decision for the optimizer was the exclusion of **Josh Smith** (43.54) and **Pete Crow-Armstrong** (41.99) from the starting nine. While **Pete Crow-Armstrong** carries substantial upside in our scarcity-driven SB category, the combination of a tough matchup against Jes\u00fas Luzardo and the negative pressure from his #8 spot in the order kept him below the threshold. The decision to prioritize **Hyeseong Kim** (56.85) over these bench options remains contingent on the confirmed lineup and a weather system that bears monitoring, as the 35% rain risk adds volatility to his projection. Elsewhere, the team is banking on **Kazuma Okamoto** (62.07) to capitalize on the weak 5.35 xERA of Jack Kochanowicz, helping bolster our RBI production in a favorable park environment.\n\nWe are proceeding with caution regarding **Yordan Alvarez** (53.84) and **Junior Caminero** (50.78). **Yordan Alvarez** faces a difficult task against Parker Messick, where his platoon disadvantage and the negative SP skill factor weigh heavily on his score, while **Junior Caminero** faces an uphill battle against Chase Burns\u2019s elite 2.76 xERA. Despite these hurdles, their inherent talent floors keep them in the lineup over the current bench options. We will finalize these slots once official batting orders are posted, keeping a close eye on **Hyeseong Kim** and the potential weather delays.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -180,7 +180,7 @@
             "Slot": "SS",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Score": 73.61174520042304,
+            "Score": 77.29233246044419,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -215,6 +215,11 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -356,7 +361,7 @@
             "Slot": "OF2",
             "Player": "Kyle Schwarber",
             "POS": "OF",
-            "Score": 74.3081873939641,
+            "Score": 78.02359676366233,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -392,6 +397,11 @@
                     "label": "xwOBA Elite",
                     "value": "0.402",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Shota Imanaga (L)",
@@ -405,7 +415,7 @@
             "Slot": "OF3",
             "Player": "Yordan Alvarez",
             "POS": "OF",
-            "Score": 51.274686632157064,
+            "Score": 53.83842096376492,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -436,6 +446,11 @@
                     "label": "xwOBA Good",
                     "value": "0.393",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Parker Messick (L)",
@@ -449,7 +464,7 @@
             "Slot": "OF4",
             "Player": "Hyeseong Kim",
             "POS": "2B/SS/OF",
-            "Score": 54.139311687582826,
+            "Score": 56.84627727196197,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -485,11 +500,16 @@
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Landen Roupp (R)",
             "SP_xERA": "4.36",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (35%)",
             "GameTime": "2026-04-22T01:45:00Z",
             "Order": "8*",
             "Start": "01:45 AM"
@@ -635,6 +655,11 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
                     "label": "Lineup Pending (Not picked by Optimizer).",
                     "value": null,
                     "type": "info"
@@ -767,7 +792,7 @@
             "Start": "01:45 AM",
             "Opponent": "Yoshinobu Yamamoto (R)",
             "SP_xERA": "3.32",
-            "Score": 34.93547130604303,
+            "Score": 36.682244871345176,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -800,12 +825,17 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
                     "label": "Lineup Pending (Not picked by Optimizer).",
                     "value": null,
                     "type": "info"
                 }
             ],
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (35%)",
             "GameTime": "2026-04-22T01:45:00Z"
         },
         {

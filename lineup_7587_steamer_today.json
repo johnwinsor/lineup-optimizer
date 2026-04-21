@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-21",
-    "last_updated": "2026-04-21T06:06:05.119827+00:00",
+    "last_updated": "2026-04-21T13:06:05.213802+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 830.25,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 835.06,
+    "narrative": "For today\u2019s slate, our offensive engine is headlined by **Corbin Carroll**, who commands an elite score of 87.14. He sits in a prime spot against Sean Burke, benefiting from a favorable wind and, most crucially, a slow pitcher delivery that provides an optimal environment for his stolen base upside\u2014a priority for our roster construction. Joining him at the top of the hierarchy are **James Wood** (78.42) and **Mickey Moniak** (75.75). **James Wood** earns his high marks by leading off against the highly hittable Reynaldo L\u00f3pez, while **Mickey Moniak** exploits a massive park factor boost in a favorable matchup against Randy V\u00e1squez. Both **Trevor Story** (72.05) and **Brice Turang** (71.53) are also strong starts, with **Trevor Story** specifically seeing his score inflated by a massive 19% boost due to the lackluster profile of Luis Gil.\n\nWe are paying close attention to **Vinnie Pasquantino**, whose dynamic platoon edge against Shane Baz lifts him to a 72.01 rating. Conversely, our toughest bench decision involved **Alex Freeland**, who fell just short of the cut at 49.73. Despite his potential, the optimizer favored **Jose Caballero**'s better park environment and the overall roster balance, opting to bench **Alex Freeland** rather than risk a sub-50 performance during a marginal weather event. We are also keeping **Giancarlo Stanton**, **Austin Riley**, and **Jazz Chisholm Jr.** on standby; while they remain elite talents, their matchups against tough lefties like Connelly Early and Foster Griffin made them suboptimal for today\u2019s specific category needs.\n\nOwners should exercise caution with **Dalton Rushing** (51.38), who faces both a difficult matchup against Landen Roupp and a 35% rain risk. While his underlying metrics are solid, the weather-related variance combined with an unfavorable spot in the batting order makes him a start only if necessary. We are also monitoring **Seiya Suzuki** (51.64); he faces a tough challenge against the elite arm of Jes\u00fas Luzardo and must navigate an \"elite hold\" catcher profile that dampens his stolen base potential. Keep a close eye on the official lineups for **Luis Campusano** and **Kyle Karros**, as their projected production is heavily sensitive to their final placement in the order.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -43,7 +43,7 @@
             "Slot": "C2",
             "Player": "Dalton Rushing",
             "POS": "C",
-            "Score": 48.936138334087126,
+            "Score": 51.38294525079149,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -79,11 +79,16 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Landen Roupp (R)",
             "SP_xERA": "4.36",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (35%)",
             "GameTime": "2026-04-22T01:45:00Z",
             "Order": "9*",
             "Start": "01:45 AM"
@@ -413,47 +418,62 @@
         },
         {
             "Slot": "OF3",
-            "Player": "Giancarlo Stanton",
+            "Player": "Seiya Suzuki",
             "POS": "OF",
-            "Score": 49.27098030229608,
+            "Score": 51.642848808180474,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
+                    "label": "Lineup Pending (Assumed #5)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "55.05",
+                    "value": "54.74",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+7%",
+                    "value": "+4%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-19%",
+                    "value": "-14%",
                     "type": "negative"
                 },
                 {
-                    "label": "Neutral Platoon (L)",
-                    "value": null,
-                    "type": "info"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Connelly Early (L)",
-            "SP_xERA": "2.34",
+            "Opponent": "Jes\u00fas Luzardo (L)",
+            "SP_xERA": "3.40",
             "Warning": "",
-            "GameTime": "2026-04-21T22:45:00Z",
-            "Order": "4*",
-            "Start": "10:45 PM"
+            "GameTime": "2026-04-21T23:40:00Z",
+            "Order": "5*",
+            "Start": "11:40 PM"
         },
         {
             "Slot": "OF4",
@@ -684,52 +704,42 @@
         },
         {
             "Slot": "BN",
-            "Player": "Seiya Suzuki",
+            "Player": "Giancarlo Stanton",
             "POS": "OF",
-            "Order": "5*",
-            "Start": "11:40 PM",
-            "Opponent": "Jes\u00fas Luzardo (L)",
-            "SP_xERA": "3.40",
-            "Score": 49.18366553160045,
+            "Order": "4*",
+            "Start": "10:45 PM",
+            "Opponent": "Connelly Early (L)",
+            "SP_xERA": "2.34",
+            "Score": 49.27098030229608,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
+                    "label": "Lineup Pending (Assumed #4)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "54.74",
+                    "value": "55.05",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-14%",
+                    "value": "-19%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+2%",
-                    "type": "positive"
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
                 },
                 {
-                    "label": "Elite Catcher (1.86s)",
-                    "value": "-1.0%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Elite Hold SP (60% SB)",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 },
                 {
@@ -739,7 +749,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-04-21T23:40:00Z"
+            "GameTime": "2026-04-21T22:45:00Z"
         },
         {
             "Slot": "BN",
@@ -841,7 +851,7 @@
             "Start": "01:45 AM",
             "Opponent": "Landen Roupp (R)",
             "SP_xERA": "4.36",
-            "Score": 47.359220008429865,
+            "Score": 49.72718100885135,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -874,12 +884,17 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
                     "label": "Lineup Pending (Not picked by Optimizer).",
                     "value": null,
                     "type": "info"
                 }
             ],
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (35%)",
             "GameTime": "2026-04-22T01:45:00Z"
         },
         {
