@@ -1,15 +1,15 @@
 {
     "target_date": "2026-04-22",
-    "last_updated": "2026-04-22T20:08:10.975509+00:00",
+    "last_updated": "2026-04-22T21:44:30.313070+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 822.06,
-    "narrative": "For April 22, 2026, the optimizer highlights **James Wood** (78.42) and **Mickey Moniak** (75.75) as our high-ceiling anchors. **James Wood** draws a favorable matchup against a weak 5.07 xERA arm, and his lead-off spot maximizes his stolen base potential, which remains our primary objective. Similarly, **Mickey Moniak** benefits from a massive park factor boost and the combination of a high-xERA opponent and a slow-delivering pitcher, which increases the likelihood of a multi-bagger day. **Vinnie Pasquantino** (71.51) also earns a strong start; his matchup against Bassitt is bolstered significantly by favorable wind conditions at the stadium, turning an already solid base projection into a high-efficiency play.\n\nOur middle-infield rotation sees **Brice Turang** (61.93) take the priority slot over **Trevor Story** (52.19) and **Alex Freeland** (50.23). While **Brice Turang** faces a respectable arm, his role at the top of the order provides the necessary floor to suppress the variance of our lower-scoring bench pieces. The most difficult decision rested on **Kyle Karros**, who posted a 62.71 score but ultimately landed on the bench due to the sheer density of superior options in our outfield and utility slots. **Kyle Karros** has shown efficiency, but the specific combination of **Mickey Moniak**\u2019s speed-advantage matchup and the raw power output expected from **Austin Riley** (67.02) and **Josh Naylor** (67.20) created a barrier to entry he couldn't clear today.\n\nRisks remain, particularly regarding our catching tandem. Both **Dalton Rushing** (57.03) and **Luis Campusano** (59.72) are projected with pending lineups, and their scores are sensitive to order fluctuations; should either drop lower in the order, their efficiency will plummet. Additionally, **Corbin Carroll** (53.84) faces a stiff challenge against a 2.60 xERA pitcher, significantly dragging down his base projection. Despite the scarcity of stolen bases, we are proceeding with caution here, as the quality of the opposing arm outweighs the potential for a favorable platoon or order placement.",
+    "total_efficiency_score": 825.03,
+    "narrative": "The optimal path for Ghost Ride the WHIP today is led by our outfield heavy hitters against exploitable arms. **James Wood** (78.42) and **Mickey Moniak** (75.75) represent the strongest plays on the board, both benefitting from favorable matchups against starters with xERAs above 5.00. **Mickey Moniak** specifically stands out; while the park factor in his favor is significant, his ability to capitalize on the opposing pitcher's slow delivery\u2014an extra 2% boost to his already elite sprint-focused valuation\u2014solidifies his must-start status. Meanwhile, **Vinnie Pasquantino** (71.51) earns a high-tier nod in the UTIL spot, as favorable wind conditions and a strong platoon split against the right-handed starter elevate his efficiency score well above his baseline projection.\n\nThe most difficult decision on the bench was undoubtedly **Kyle Karros** (62.71). Despite a score that would have qualified him for a start in most other contexts, the depth of our middle infield and the relative strength of our outfield options forced his exclusion. The optimizer leaned heavily toward **Brice Turang** and **Jose Caballero** due to their lead-off and bottom-of-order situational impacts, respectively, as well as the need to prioritize pure stolen base upside. Risks for the day remain centered on the bottom of our lineup, particularly **Dalton Rushing** and **Alex Freeland**, whose scores are contingent on pending lineup confirmations. While **Dalton Rushing** maintains a solid 59.88, the uncertainty regarding his spot in the order warrants close monitoring, especially as we balance the aggressive game-cap management inherent in our long-term Roto strategy.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Dalton Rushing",
             "POS": "C",
-            "Score": 57.032598673582626,
+            "Score": 59.88422860726177,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -40,6 +40,11 @@
                     "label": "Elite Catcher (1.86s)",
                     "value": "-1.0%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Tyler Mahle (R)",
@@ -55,11 +60,6 @@
             "POS": "C",
             "Score": 59.72513677222714,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.59",
@@ -90,7 +90,7 @@
             "SP_xERA": "4.69",
             "Warning": "",
             "GameTime": "2026-04-23T00:40:00Z",
-            "Order": "8*",
+            "Order": "8",
             "Start": "12:40 AM"
         },
         {
@@ -134,47 +134,47 @@
         },
         {
             "Slot": "2B",
-            "Player": "Jazz Chisholm Jr.",
-            "POS": "2B/3B",
-            "Score": 52.62431036091913,
+            "Player": "Brice Turang",
+            "POS": "2B",
+            "Score": 61.93136441700241,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "59.66",
+                    "value": "54.37",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+7%",
+                    "value": "+5%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-6%",
+                    "value": "-1%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-7%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (61% SB)",
+                    "value": "-4%",
                     "type": "negative"
                 },
                 {
-                    "label": "Elite Hold SP (60% SB)",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Suarez (L)",
-            "SP_xERA": "3.73",
+            "Opponent": "Mize (R)",
+            "SP_xERA": "3.96",
             "Warning": "",
-            "GameTime": "2026-04-22T22:45:00Z",
-            "Order": "7",
-            "Start": "10:45 PM"
+            "GameTime": "2026-04-22T22:40:00Z",
+            "Order": "1",
+            "Start": "10:40 PM"
         },
         {
             "Slot": "SS",
@@ -222,47 +222,52 @@
         },
         {
             "Slot": "MI",
-            "Player": "Brice Turang",
-            "POS": "2B",
-            "Score": 61.93136441700241,
+            "Player": "Alex Freeland",
+            "POS": "2B/SS/3B",
+            "Score": 52.73861226725637,
             "Breakdown": [
                 {
+                    "label": "Lineup Pending (Assumed #9)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Base",
-                    "value": "54.37",
+                    "value": "47.81",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-1%",
+                    "value": "-3%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
+                    "label": "SP Skill",
+                    "value": "+15%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Switch",
                     "value": "+3%",
                     "type": "positive"
                 },
                 {
-                    "label": "Elite Hold SP (61% SB)",
-                    "value": "-4%",
+                    "label": "Order #9",
+                    "value": "-8%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Mize (R)",
-            "SP_xERA": "3.96",
+            "Opponent": "Tyler Mahle (R)",
+            "SP_xERA": "4.62",
             "Warning": "",
-            "GameTime": "2026-04-22T22:40:00Z",
-            "Order": "1",
-            "Start": "10:40 PM"
+            "GameTime": "2026-04-23T01:45:00Z",
+            "Order": "9*",
+            "Start": "01:45 AM"
         },
         {
             "Slot": "3B",
@@ -349,11 +354,6 @@
             "Score": 53.84644090908205,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "64.55",
                     "type": "info"
@@ -384,11 +384,11 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Anthony Kay (L)",
+            "Opponent": "Kay (L)",
             "SP_xERA": "2.60",
             "Warning": "",
             "GameTime": "2026-04-23T01:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "01:40 AM"
         },
         {
@@ -397,11 +397,6 @@
             "POS": "OF",
             "Score": 61.05900589407242,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.74",
@@ -423,7 +418,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Elite Catcher (1.86s)",
+                    "label": "Elite Catcher (1.88s)",
                     "value": "-1.0%",
                     "type": "negative"
                 },
@@ -433,11 +428,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kyle Backhus (L)",
+            "Opponent": "Backhus (L)",
             "SP_xERA": "4.06",
             "Warning": "",
             "GameTime": "2026-04-22T23:40:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "11:40 PM"
         },
         {
@@ -516,7 +511,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Walker Buehler (R)",
+            "Opponent": "Buehler (R)",
             "SP_xERA": "5.19",
             "Warning": "",
             "GameTime": "2026-04-23T00:40:00Z",
@@ -569,6 +564,55 @@
         }
     ],
     "players_sat": [
+        {
+            "Slot": "BN",
+            "Player": "Jazz Chisholm Jr.",
+            "POS": "2B/3B",
+            "Order": "7",
+            "Start": "10:45 PM",
+            "Opponent": "Suarez (L)",
+            "SP_xERA": "3.73",
+            "Score": 52.62431036091913,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "59.66",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-7%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-04-22T22:45:00Z"
+        },
         {
             "Slot": "BN",
             "Player": "Tyler Soderstrom",
@@ -756,60 +800,11 @@
         },
         {
             "Slot": "BN",
-            "Player": "Alex Freeland",
-            "POS": "2B/SS/3B",
-            "Order": "9*",
-            "Start": "01:45 AM",
-            "Opponent": "Tyler Mahle (R)",
-            "SP_xERA": "4.62",
-            "Score": 50.22724977833939,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "47.81",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+15%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-04-23T01:45:00Z"
-        },
-        {
-            "Slot": "BN",
             "Player": "Kyle Karros",
             "POS": "3B",
             "Order": "7",
             "Start": "12:40 AM",
-            "Opponent": "Walker Buehler (R)",
+            "Opponent": "Buehler (R)",
             "SP_xERA": "5.19",
             "Score": 62.71342799148163,
             "Breakdown": [
