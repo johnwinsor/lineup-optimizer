@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-22",
-    "last_updated": "2026-04-22T23:41:11.934829+00:00",
+    "last_updated": "2026-04-23T02:04:51.574846+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 836.11,
-    "narrative": "The Austin Waves enter today\u2019s slate with a high-ceiling core, anchored by **Gunnar Henderson** (83.29) and **Kyle Tucker** (81.77). **Gunnar Henderson** holds the highest score of the day, buoyed by the leadoff spot against Wacha and a favorable wind-out condition, while **Kyle Tucker** leverages an elite xwOBA against Mahle. **Luis Robert Jr.** (76.18) and **Jackson Merrill** (75.10) also present elite scoring profiles; **Luis Robert Jr.** benefits from a significant platoon advantage against the left-handed Prielipp, and **Jackson Merrill** sees a 14% boost from park factors, making them essential starters as we hunt for counting stats.\n\nThe most difficult roster decision involved leaving **Marcell Ozuna** (60.81) on the bench. Despite a solid projection, the optimization model favored the efficiency of **Vladimir Guerrero Jr.** (61.33) and the high-leverage lineup placement of our core starters. We continue to monitor the marginal starts, specifically **Jacob Wilson** (40.46) and **Heliot Ramos** (40.72). Both are flirting with the \"below floor\" designation due to matchups against elite arms in Gilbert and Ohtani, respectively; while we are comfortable running them out, they represent the highest volatility in today's lineup. Conversely, **Luis Garc\u00eda Jr.** (74.55) is an excellent play today, maximizing his platoon edge against Fuentes in a favorable matchup.\n\nStrategic warnings are in place for **Andy Pages**, who draws a slight penalty for facing an elite defensive catcher, and **Heliot Ramos**, whose matchup against Ohtani is our most dangerous individual encounter. While we maintain a deep bench with players like **Coby Mayo**, **Nolan Schanuel**, and **Josh Jung**, the current lineup configuration maximizes our potential for stolen bases and high-probability run generation. We remain committed to these rostered starters, but will be prepared to adjust for **Dominic Smith**, **Jordan Westburg**, **Jorge Polanco**, **Josh Lowe**, or **Nasim Nunez** if late-breaking injury news or extreme lineup shifts disrupt our current projected advantages.",
+    "total_efficiency_score": 786.59,
+    "narrative": "The Austin Waves enter today\u2019s slate with a high-floor lineup, led by the elite pairing of **Gunnar Henderson** (83.29) and **Kyle Tucker** (77.88). **Gunnar Henderson** is the clear standout; his role at the top of the order combined with a 4.61 xERA matchup against Wacha generates significant run-scoring potential. We are also capitalizing on high-leverage spots for **Luis Garc\u00eda Jr.** (74.56), **Luis Robert Jr.** (74.29), and **Jackson Merrill** (75.10). **Jackson Merrill** specifically benefits from an elite park factor (+14%) and a favorable matchup against Sugano, making him a prime candidate for multi-hit production. **Luis Garc\u00eda Jr.** and **Brady House** are both projected for strong days against Fuentes, as the 5.07 xERA provides a clear lane for our offense to exploit the bottom of the pitching rotation.\n\nThe most difficult decision on the bench involved **Marcell Ozuna** (60.82), who graded out as a strong start but was ultimately squeezed out by the efficiency of our outfield and utility spots. While **Marcell Ozuna** carries significant power, the calculated platoon advantages for **Miguel Vargas** and the positional necessity of keeping **Drake Baldwin** in the C1 slot forced him to the pine. We are monitoring **Jacob Wilson** closely; his score of 40.47 is the lowest in the starting lineup, a direct result of facing an elite arm in Gilbert (2.86 xERA). If the lineup remains tight, we may look to pinch-hit **Nolan Schanuel** or **Josh Jung** late in the game if the situation demands a high-contact replacement. Overall, the squad is well-positioned, though we remain vigilant regarding any last-minute weather shifts that could impact the run-scoring environments for **Andy Pages** and the rest of the outfield.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -85,42 +85,47 @@
         },
         {
             "Slot": "1B",
-            "Player": "Miguel Vargas",
-            "POS": "1B/3B",
-            "Score": 62.8675192974972,
+            "Player": "Vladimir Guerrero Jr.",
+            "POS": "1B",
+            "Score": 61.335582731257716,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "49.13",
+                    "value": "62.88",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+3%",
+                    "value": "+1%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+12%",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-7%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
+                    "label": "xwOBA Good",
+                    "value": "0.384",
+                    "type": "info"
                 }
             ],
-            "Opponent": "Rodriguez, Ed (L)",
-            "SP_xERA": "4.48",
+            "Opponent": "Soriano, J (R)",
+            "SP_xERA": "3.93",
             "Warning": "",
-            "GameTime": "2026-04-23T01:40:00Z",
-            "Order": "2",
-            "Start": "01:40 AM"
+            "GameTime": "2026-04-22T19:07:00Z",
+            "Order": "3",
+            "Start": "07:07 PM"
         },
         {
             "Slot": "2B",
@@ -163,6 +168,45 @@
         },
         {
             "Slot": "SS",
+            "Player": "Gunnar Henderson",
+            "POS": "SS",
+            "Score": 83.29399761556267,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "61.70",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+15%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Wacha (R)",
+            "SP_xERA": "4.61",
+            "Warning": "",
+            "GameTime": "2026-04-22T18:10:00Z",
+            "Order": "1",
+            "Start": "06:10 PM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Jacob Wilson",
             "POS": "SS",
             "Score": 40.46663609629385,
@@ -201,93 +245,49 @@
             "Start": "08:10 PM"
         },
         {
-            "Slot": "MI",
-            "Player": "Gunnar Henderson",
-            "POS": "SS",
-            "Score": 83.29399761556267,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "61.70",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+15%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Wacha (R)",
-            "SP_xERA": "4.61",
-            "Warning": "",
-            "GameTime": "2026-04-22T18:10:00Z",
-            "Order": "1",
-            "Start": "06:10 PM"
-        },
-        {
             "Slot": "3B",
-            "Player": "Brady House",
-            "POS": "3B",
-            "Score": 63.80665902808555,
+            "Player": "Miguel Vargas",
+            "POS": "1B/3B",
+            "Score": 62.8675192974972,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "47.26",
+                    "value": "49.13",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
+                    "value": "+3%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "+12%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+9%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Fuentes (R)",
-            "SP_xERA": "5.07",
+            "Opponent": "Rodriguez, Ed (L)",
+            "SP_xERA": "4.48",
             "Warning": "",
-            "GameTime": "2026-04-22T22:45:00Z",
-            "Order": "3",
-            "Start": "10:45 PM"
+            "GameTime": "2026-04-23T01:40:00Z",
+            "Order": "2",
+            "Start": "01:40 AM"
         },
         {
-            "Slot": "OF1",
+            "Slot": "OF2",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 63.363927566382486,
+            "Score": 60.346597682269035,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -318,11 +318,6 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Mahle (R)",
@@ -333,10 +328,10 @@
             "Start": "01:45 AM"
         },
         {
-            "Slot": "OF2",
+            "Slot": "OF3",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 81.772759111293,
+            "Score": 77.87881820123143,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -367,11 +362,6 @@
                     "label": "xwOBA Good",
                     "value": "0.372",
                     "type": "info"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Mahle (R)",
@@ -382,7 +372,46 @@
             "Start": "01:45 AM"
         },
         {
-            "Slot": "OF3",
+            "Slot": "OF4",
+            "Player": "Luis Robert Jr.",
+            "POS": "OF",
+            "Score": 74.29336690682092,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "56.43",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+12%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Prielipp (L)",
+            "SP_xERA": "4.50",
+            "Warning": "",
+            "GameTime": "2026-04-22T23:10:00Z",
+            "Order": "3",
+            "Start": "11:10 PM"
+        },
+        {
+            "Slot": "OF5",
             "Player": "Jackson Merrill",
             "POS": "OF",
             "Score": 75.10420550207523,
@@ -421,20 +450,20 @@
             "Start": "12:40 AM"
         },
         {
-            "Slot": "OF4",
-            "Player": "Luis Robert Jr.",
-            "POS": "OF",
-            "Score": 76.18269781257273,
+            "Slot": "UTIL",
+            "Player": "Brady House",
+            "POS": "3B",
+            "Score": 63.80665902808555,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "56.43",
+                    "value": "47.26",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
+                    "value": "+4%",
+                    "type": "positive"
                 },
                 {
                     "label": "SP Skill",
@@ -442,8 +471,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+14%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+9%",
                     "type": "positive"
                 },
                 {
@@ -452,100 +481,12 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Prielipp (L)",
-            "SP_xERA": "5.40",
+            "Opponent": "Fuentes (R)",
+            "SP_xERA": "5.07",
             "Warning": "",
-            "GameTime": "2026-04-22T23:10:00Z",
+            "GameTime": "2026-04-22T22:45:00Z",
             "Order": "3",
-            "Start": "11:10 PM"
-        },
-        {
-            "Slot": "OF5",
-            "Player": "Heliot Ramos",
-            "POS": "OF",
-            "Score": 40.72178403821425,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "52.27",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Ohtani (R)",
-            "SP_xERA": "2.67",
-            "Warning": "",
-            "GameTime": "2026-04-23T01:45:00Z",
-            "Order": "7",
-            "Start": "01:45 AM"
-        },
-        {
-            "Slot": "UTIL",
-            "Player": "Vladimir Guerrero Jr.",
-            "POS": "1B",
-            "Score": 61.335582731257716,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "62.88",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-7%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.384",
-                    "type": "info"
-                }
-            ],
-            "Opponent": "Soriano, J (R)",
-            "SP_xERA": "3.93",
-            "Warning": "",
-            "GameTime": "2026-04-22T19:07:00Z",
-            "Order": "3",
-            "Start": "07:07 PM"
+            "Start": "10:45 PM"
         }
     ],
     "players_sat": [
@@ -664,6 +605,50 @@
             ],
             "Warning": "",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Heliot Ramos",
+            "POS": "OF",
+            "Order": "7",
+            "Start": "01:45 AM",
+            "Opponent": "Ohtani (R)",
+            "SP_xERA": "2.67",
+            "Score": 38.78265146496595,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "52.27",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Below Zebras Floor (40.0).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-04-23T01:45:00Z"
         },
         {
             "Slot": "BN",
@@ -790,7 +775,7 @@
             "Start": "06:10 PM",
             "Opponent": "Wacha (R)",
             "SP_xERA": "4.61",
-            "Score": 50.30474981102609,
+            "Score": 47.90928553431057,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -816,11 +801,6 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 },
                 {
                     "label": "Benched - Lower projected efficiency than other options.",
