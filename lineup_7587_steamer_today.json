@@ -1,49 +1,10 @@
 {
     "target_date": "2026-04-24",
-    "last_updated": "2026-04-24T21:41:04.312017+00:00",
+    "last_updated": "2026-04-24T22:34:22.137742+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 743.45,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with **Jazz Chisholm Jr.** (76.59) and **James Wood** (75.23) serving as our primary engines. **Jazz Chisholm Jr.** benefits significantly from the matchup against McCullers Jr.; beyond a strong baseline, the combination of a favorable platoon and the pitcher\u2019s notoriously slow delivery creates an elite environment for a stolen base, our most critical scarcity. Similarly, **James Wood** leverages his leadoff spot and a high-upside matchup to anchor our outfield production. While **Trevor Story** (73.82) finds himself in the utility spot, he is arguably our most efficient play per dollar today, as a massive 16% boost from a hitter-friendly park and a soft opposing arm makes him a high-floor asset that easily clears the daily efficiency threshold.\n\nThe optimizer\u2019s toughest cut centered on **Seiya Suzuki** (44.34), who just missed the cut for the final lineup slot. While his projected base is respectable, the combination of an elite arm in Sheehan and the uncertainty of a pending lineup forced him to remain on the bench in favor of higher-floor plays. Elsewhere, the lineup carries calculated risks: **Brice Turang** faces a brutal matchup against Skenes, and while his leadoff status provides a buffer, his score of 48.20 remains precarious. We are also monitoring **Dalton Rushing** and **Alex Freeland**, both of whom are currently listed with pending lineups. Their projections are anchored by assumptions regarding their batting order; should **Dalton Rushing** slide further down the order than seventh or **Alex Freeland** be shuffled out of the bottom third, their efficiency scores will crater. We remain committed to maximizing stolen base opportunities, even when it requires starting high-variance players like **Jose Caballero** against tough tactical conditions.",
+    "total_efficiency_score": 688.61,
+    "narrative": "The offensive ceiling for Ghost Ride the WHIP today rests on a trio of high-efficiency starts against favorable matchups. **Jazz Chisholm Jr.** (76.59) headlines our output, as he faces McCullers Jr. in a setup that maximizes his specific elite-speed profile; the combination of a high xERA and McCullers Jr.'s slow delivery to the plate creates a perfect storm for **Jazz Chisholm Jr.** to capitalize on the scarcest category, stolen bases. Similarly, **James Wood** (75.23) is a priority play batting leadoff against Hudson, B. His score is bolstered by a commanding 19% SP skill advantage and the prime opportunity afforded by the leadoff spot to catalyze our counting stats. **Trevor Story** (73.82) also demands attention, as he draws a significantly favorable park factor (+16%) that elevates his raw projection, making him our highest-scoring UTIL play despite the neutral platoon stance.\n\nWhile **Mickey Moniak** (63.92) is a mandatory start due to his leadoff duties and a robust 14% platoon advantage against Peralta, F, we must be cautious with the lower-scoring end of our roster. **Brice Turang** (48.20) and **Alex Freeland** (49.29) hover dangerously close to our \"Below Floor\" threshold. **Brice Turang** faces a significant test against Skenes, whose elite profile (-19% SP skill adjustment) and the threat of a high-end catcher\u2019s pop time (1.89s) severely dampen the base projection for a speed-reliant player. Our most difficult bench decision involved **Seiya Suzuki** (44.34), who was the first cut from the starting nine. While his projected efficiency exceeded our 40.0 floor, the optimizer opted for the higher matchup upside provided by **Jose Caballero** and **Tyler Soderstrom**, as **Seiya Suzuki** was penalized for lingering uncertainty regarding his spot in the batting order and a difficult matchup against the effective Sheehan. We remain wary of **Brice Turang** and **Alex Freeland** today; should the early innings confirm Skenes\u2019 dominance, we will look to minimize plate appearance leakage to protect our cumulative game caps.",
     "recommended_lineup": [
-        {
-            "Slot": "C1",
-            "Player": "Dalton Rushing",
-            "POS": "C",
-            "Score": 54.83886189068017,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "48.03",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Jameson Taillon (R)",
-            "SP_xERA": "4.40",
-            "Warning": "",
-            "GameTime": "2026-04-25T02:15:00Z",
-            "Order": "7*",
-            "Start": "02:15 AM"
-        },
         {
             "Slot": "1B",
             "Player": "Josh Naylor",
@@ -129,11 +90,6 @@
             "Score": 49.29105703055341,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "47.81",
                     "type": "info"
@@ -158,7 +114,7 @@
             "SP_xERA": "4.40",
             "Warning": "",
             "GameTime": "2026-04-25T02:15:00Z",
-            "Order": "9*",
+            "Order": "9",
             "Start": "02:15 AM"
         },
         {
@@ -524,7 +480,7 @@
             "POS": "OF",
             "Order": "4*",
             "Start": "02:15 AM",
-            "Opponent": "Emmet Sheehan (R)",
+            "Opponent": "Sheehan (R)",
             "SP_xERA": "3.20",
             "Score": 44.3414961074443,
             "Breakdown": [
@@ -637,6 +593,25 @@
             "Breakdown": [
                 {
                     "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Dalton Rushing",
+            "POS": "C",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
