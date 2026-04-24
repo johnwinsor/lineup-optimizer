@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-24",
-    "last_updated": "2026-04-24T06:13:25.542265+00:00",
+    "last_updated": "2026-04-24T13:04:00.863325+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 839.85,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 849.03,
+    "narrative": "For today\u2019s slate, **Jos\u00e9 Ram\u00edrez** is our anchor, leading the team with a 72.54 score against Max Scherzer. While the matchup is theoretically challenging, **Jos\u00e9 Ram\u00edrez** remains a must-start due to his elite offensive floor and elevated lineup position. The most explosive potential, however, lies with **Taylor Ward** (69.17) and **Jeremiah Jackson** (64.76). They benefit from a massive +16% park factor in a matchup against Brayan Bello; despite the 34% rain risk, the combination of favorable conditions and their high projected efficiency makes them essential pieces of our attack. Elsewhere, **Matt Chapman** (67.70) receives a secondary boost from Alcantara\u2019s slow delivery, which adds a valuable fractional edge in stolen base potential\u2014a critical consideration given our strategy to emphasize speed.\n\nOur most difficult bench decision involved **Drew Gilbert**, whose 51.20 score was hampered primarily by an unfavorable lineup projection (#8 hole) and a lack of confirmed status. He sits just outside the threshold for active duty, though his speed profile against a pitcher like Alcantara keeps him on the radar should we need a late-game pivot. We are also monitoring **Wenceel Perez** closely; while his 57.31 score is on the lower end of our starts, he is included for his opportunistic stolen base potential against Andrew Abbott. We must remain vigilant regarding the 34% rain risk looming over **Taylor Ward** and **Jeremiah Jackson**, as any potential postponement would force us to scramble for replacements from our bench depth, such as **Yainer Diaz** or **Lawrence Butler**, to maintain our daily game cap efficiency.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -151,7 +151,7 @@
             "Slot": "2B",
             "Player": "Luis Arraez",
             "POS": "1B/2B",
-            "Score": 61.07677864715232,
+            "Score": 64.13061757950993,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -181,6 +181,11 @@
                 {
                     "label": "Order #2",
                     "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -278,7 +283,7 @@
             "Slot": "3B",
             "Player": "Matt Chapman",
             "POS": "3B",
-            "Score": 64.47939312165366,
+            "Score": 67.70336277773633,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -314,6 +319,11 @@
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Sandy Alcantara (R)",
@@ -325,47 +335,52 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Jeremiah Jackson",
-            "POS": "2B/SS/3B/OF",
-            "Score": 64.75762506277901,
+            "Player": "Wenceel Perez",
+            "POS": "OF",
+            "Score": 57.30902278137494,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
+                    "label": "Lineup Pending (Assumed #8)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "48.39",
+                    "value": "49.58",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "+16%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+13%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
                     "value": "+3%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "SP Skill",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+11%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Brayan Bello (R)",
-            "SP_xERA": "4.55",
+            "Opponent": "Andrew Abbott (L)",
+            "SP_xERA": "4.20",
             "Warning": "",
-            "GameTime": "2026-04-24T23:05:00Z",
-            "Order": "7*",
-            "Start": "11:05 PM"
+            "GameTime": "2026-04-24T22:40:00Z",
+            "Order": "8*",
+            "Start": "10:40 PM"
         },
         {
             "Slot": "OF2",
@@ -406,7 +421,7 @@
             ],
             "Opponent": "Brayan Bello (R)",
             "SP_xERA": "4.55",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (34%)",
             "GameTime": "2026-04-24T23:05:00Z",
             "Order": "2*",
             "Start": "11:05 PM"
@@ -457,58 +472,9 @@
         },
         {
             "Slot": "OF4",
-            "Player": "Wenceel Perez",
-            "POS": "OF",
-            "Score": 57.30902278137494,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.58",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+11%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Slow SP Delivery (100% SB)",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Andrew Abbott (L)",
-            "SP_xERA": "4.20",
-            "Warning": "",
-            "GameTime": "2026-04-24T22:40:00Z",
-            "Order": "8*",
-            "Start": "10:40 PM"
-        },
-        {
-            "Slot": "OF5",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
-            "Score": 58.026819292378114,
+            "Score": 60.92816025699702,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -539,6 +505,11 @@
                     "label": "Slow SP Delivery (97% SB)",
                     "value": "+2%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Sandy Alcantara (R)",
@@ -547,6 +518,50 @@
             "GameTime": "2026-04-25T02:15:00Z",
             "Order": "6*",
             "Start": "02:15 AM"
+        },
+        {
+            "Slot": "OF5",
+            "Player": "Jeremiah Jackson",
+            "POS": "2B/SS/3B/OF",
+            "Score": 64.75762506277901,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #7)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "48.39",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Brayan Bello (R)",
+            "SP_xERA": "4.55",
+            "Warning": "\u26a0\ufe0f Rain Risk (34%)",
+            "GameTime": "2026-04-24T23:05:00Z",
+            "Order": "7*",
+            "Start": "11:05 PM"
         },
         {
             "Slot": "UTIL",
@@ -855,7 +870,7 @@
             "Start": "02:15 AM",
             "Opponent": "Sandy Alcantara (R)",
             "SP_xERA": "4.38",
-            "Score": 48.763409655147136,
+            "Score": 51.2015801379045,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -891,6 +906,11 @@
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
