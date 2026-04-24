@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-24",
-    "last_updated": "2026-04-24T20:39:20.975819+00:00",
+    "last_updated": "2026-04-24T21:41:07.476081+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 742.56,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate focusing heavily on exploiting the matchup against Lance McCullers Jr., where **Jazz Chisholm Jr.** leads our positional players with a 76.01 efficiency score. His profile is maximized by a favorable platoon split and a slow delivery from the opposing pitcher, which provides an ideal environment for his elite stolen base potential. **Trevor Story** remains our most potent threat despite a 34% rain risk, as his 75.93 score is anchored by a park factor boost that outweighs the volatility of the weather. **James Wood** is our premier outfield start; batting leadoff against a lefty-leaning matchup, his 73.18 score reflects the significant value of his position in the order and the favorable matchup against Hudson.\n\nWhile **Giancarlo Stanton** (65.91) and **Mickey Moniak** (64.12) are locked into strong starts due to their respective platoon advantages and speed profiles, the benching of **Seiya Suzuki** proved to be the most difficult decision. With a score of 45.02, **Seiya Suzuki** was on the fringe, but he was ultimately relegated to the bench because the optimizer prioritized the higher ceiling of **Austin Riley** (62.13) and the extreme situational value of **Jose Caballero** (58.17) in a speed-heavy context. We are monitoring the pending lineups for **Dalton Rushing**, **Jazz Chisholm Jr.**, **Jose Caballero**, and **Alex Freeland** closely; should any of these players move down the order, their efficiency scores will slide further, potentially forcing us to look toward deeper bench depth like **Kyle Karros** or **Max Muncy**, though the latter remains below our operational floor of 40.0.",
+    "total_efficiency_score": 742.94,
+    "narrative": "The highlight of today\u2019s slate centers on the favorable matchup against McCullers Jr., providing an elite springboard for **Jazz Chisholm Jr.** (78.36), whose speed-centric profile benefits immensely from the pitcher\u2019s slow delivery. **Trevor Story** (75.93) represents our strongest overall play, as he leverages a significant park factor boost and a favorable matchup against Young to anchor the middle infield. While **Brice Turang** (49.29) faces a daunting challenge against an arm like Skenes, his leadoff spot and stolen base potential keep him in the green, serving as a tactical gamble despite the negative SP skill adjustment.\n\nOur lineup construction emphasizes volume against mediocre arms, though the bench decision regarding **Seiya Suzuki** (45.02) was a razor-thin calculation. While **Seiya Suzuki** projects well in a vacuum, the optimizer demoted him due to the elite nature of Sheehan and the uncertainty of a pending lineup, favoring the higher-floor volume of **Tyler Soderstrom** and **Jose Caballero**. We are monitoring potential weather interference in multiple parks, and we must remain vigilant regarding **Dalton Rushing** and **Alex Freeland**, as their projections are heavily dependent on \"Lineup Pending\" assumptions. Should those spots in the order fluctuate downward, we are prepared to pivot to the bench, though for now, the objective is to maximize our efficiency in stolen bases and counting stats while avoiding the sub-40 danger zone that claimed **Max Muncy** (39.73).",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -87,13 +87,8 @@
             "Slot": "2B",
             "Player": "Jazz Chisholm Jr.",
             "POS": "2B/3B",
-            "Score": 76.00707665414498,
+            "Score": 78.35781098365462,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "61.03",
@@ -118,18 +113,13 @@
                     "label": "Slow SP Delivery (100% SB)",
                     "value": "+2%",
                     "type": "positive"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
                 }
             ],
             "Opponent": "McCullers Jr. (R)",
             "SP_xERA": "4.94",
             "Warning": "",
             "GameTime": "2026-04-25T00:10:00Z",
-            "Order": "7*",
+            "Order": "6",
             "Start": "12:10 AM"
         },
         {
@@ -161,7 +151,7 @@
             ],
             "Opponent": "Young (R)",
             "SP_xERA": "4.67",
-            "Warning": "\u26a0\ufe0f Rain Risk (34%)",
+            "Warning": "",
             "GameTime": "2026-04-24T23:05:00Z",
             "Order": "6",
             "Start": "11:05 PM"
@@ -170,13 +160,8 @@
             "Slot": "MI",
             "Player": "Brice Turang",
             "POS": "2B",
-            "Score": 49.38121725336394,
+            "Score": 49.2897705547466,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.60",
@@ -198,23 +183,28 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Paul Skenes (R)",
+            "Opponent": "Skenes (R)",
             "SP_xERA": "3.10",
             "Warning": "",
             "GameTime": "2026-04-24T23:40:00Z",
-            "Order": "2*",
+            "Order": "1",
             "Start": "11:40 PM"
         },
         {
             "Slot": "3B",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Score": 62.12825596336004,
+            "Score": 63.370821082627245,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -235,13 +225,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+1%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Painter (R)",
             "SP_xERA": "4.42",
             "Warning": "",
             "GameTime": "2026-04-24T23:15:00Z",
-            "Order": "6",
+            "Order": "5",
             "Start": "11:15 PM"
         },
         {
@@ -331,13 +326,8 @@
             "Slot": "OF3",
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
-            "Score": 58.165843879719326,
+            "Score": 56.30948716015382,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "59.45",
@@ -364,8 +354,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #9",
+                    "value": "-8%",
                     "type": "negative"
                 }
             ],
@@ -373,7 +363,7 @@
             "SP_xERA": "4.94",
             "Warning": "",
             "GameTime": "2026-04-25T00:10:00Z",
-            "Order": "8*",
+            "Order": "9",
             "Start": "12:10 AM"
         },
         {
@@ -414,13 +404,8 @@
             "Slot": "OF5",
             "Player": "Giancarlo Stanton",
             "POS": "OF",
-            "Score": 65.90520620815622,
+            "Score": 64.6377983964609,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.17",
@@ -442,8 +427,8 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
@@ -451,7 +436,7 @@
             "SP_xERA": "4.94",
             "Warning": "",
             "GameTime": "2026-04-25T00:10:00Z",
-            "Order": "4*",
+            "Order": "5",
             "Start": "12:10 AM"
         },
         {
