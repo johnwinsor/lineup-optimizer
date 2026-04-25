@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-25",
-    "last_updated": "2026-04-25T19:40:32.109461+00:00",
+    "last_updated": "2026-04-25T20:31:33.081833+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 732.28,
-    "narrative": "For today\u2019s slate, **Corbin Carroll** stands alone as our elite play (85.94). He is the clear anchor of the lineup, benefitting from a massive 19% SP skill boost against M\u00e1rquez and a favorable 86% stolen base success rate against a pitcher with a notably slow delivery. When paired with the speed-first profile we prioritize at Ghost Ride the WHIP, **Corbin Carroll** is in a tier of his own. Behind him, **Seiya Suzuki** (69.55) and **Brice Turang** (66.73) provide excellent value. **Seiya Suzuki** draws a plus matchup against Sasaki with beneficial wind conditions, while **Brice Turang**\u2019s projected leadoff spot combined with a solid SP skill boost makes him a critical engine for run production today.\n\nThe most difficult decision on the bench was undoubtedly **Alex Freeland**, whose 49.73 score fell just short of the efficiency threshold needed to supplant our starters. While **Alex Freeland** offers switch-hitting versatility, his projected ninth-spot in the order dragged down his aggregate score, making him less efficient than the high-upside plays like **Tyler Soderstrom** or **Max Muncy**. Meanwhile, we are closely monitoring the lineup for **Jazz Chisholm Jr.**, **Seiya Suzuki**, and **Giancarlo Stanton**; should any of these veterans shift significantly down the batting order, their efficiency scores will crater. We are also steering clear of **Austin Riley** today, as the 2.73 xERA of Wheeler and an elite catcher matchup create a high-risk environment that necessitates a benching. \n\nBeyond our core starters, keep a weather eye on the status of **Mickey Moniak**, who is confirmed for a rainout and must remain benched. We are also managing the potential platoon volatility for **Vinnie Pasquantino**, who faces a tough assignment against Urena (2.35 xERA); while his platoon edge holds his score above 50, his ceiling is limited by the pitcher's dominance. We proceed with confidence, focusing our leverage on the speed-heavy profiles of **James Wood** and **Brice Turang** to maintain our lead in the category wars.",
+    "total_efficiency_score": 723.57,
+    "narrative": "The Ghost Ride the WHIP lineup is anchored today by **Corbin Carroll**, who sits in an elite tier with a score of 85.93. The combination of a highly favorable matchup against M\u00e1rquez (5.26 xERA) and the significant stolen base upside provided by a slow pitcher delivery creates the perfect environment for **Corbin Carroll** to exploit. Joining him as a high-floor play is **Seiya Suzuki** (69.54), whose strong score is bolstered by a potent wind-out factor and a favorable matchup against Sasaki. While **Seiya Suzuki** remains in a pending lineup status, his projected output remains significantly higher than the rest of the utility tier, making him a cornerstone for our production today.\n\nThe most difficult decision for the optimizer centered on the benching of **Alex Freeland** (49.73). Despite a solid profile, his projected slotting at the bottom of the order and a lower base efficiency forced him to the pine in favor of the higher-upside profiles like **Brice Turang** (65.39). **Brice Turang** earns his spot at the top of the lineup, where his elite lead-off status (+10% score adjustment) helps neutralize the risk posed by Keller. Meanwhile, we are monitoring the matchup for **Vinnie Pasquantino** (53.20); he faces a difficult assignment against Urena (2.35 xERA), but his strong platoon advantage keeps him viable as a UTIL play.\n\nRisk management remains a priority given the volatility of our \"lineup pending\" spots for **Jazz Chisholm Jr.**, **Seiya Suzuki**, and **Giancarlo Stanton**. We have already removed **Mickey Moniak** from active consideration due to a confirmed rainout, ensuring we don't waste game caps on zeros. While **Austin Riley** was considered, his difficult matchup against a top-tier arm in Wheeler caused his score to plummet, keeping him benched alongside **Jose Caballero**. We will continue to evaluate if any late-breaking lineup changes for **Dalton Rushing**, **Josh Naylor**, **Trevor Story**, **Max Muncy**, **James Wood**, or **Tyler Soderstrom** require further tactical pivots before first pitch.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -165,13 +165,8 @@
             "Slot": "MI",
             "Player": "Brice Turang",
             "POS": "2B",
-            "Score": 66.72996656104854,
+            "Score": 65.39536722982758,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.60",
@@ -193,16 +188,21 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Mitch Keller (R)",
+            "Opponent": "Keller, M (R)",
             "SP_xERA": "4.25",
             "Warning": "",
             "GameTime": "2026-04-25T23:10:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:10 PM"
         },
         {
@@ -285,6 +285,45 @@
         },
         {
             "Slot": "OF2",
+            "Player": "James Wood",
+            "POS": "OF",
+            "Score": 51.96236356758839,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "56.50",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Schultz (L)",
+            "SP_xERA": "3.38",
+            "Warning": "",
+            "GameTime": "2026-04-25T20:10:00Z",
+            "Order": "1",
+            "Start": "08:10 PM"
+        },
+        {
+            "Slot": "OF3",
             "Player": "Seiya Suzuki",
             "POS": "OF",
             "Score": 69.54515567811191,
@@ -326,45 +365,6 @@
             "GameTime": "2026-04-25T23:15:00Z",
             "Order": "5*",
             "Start": "11:15 PM"
-        },
-        {
-            "Slot": "OF3",
-            "Player": "James Wood",
-            "POS": "OF",
-            "Score": 59.34163413339975,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "56.50",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Neutral Platoon (L)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Schultz (L)",
-            "SP_xERA": "3.86",
-            "Warning": "",
-            "GameTime": "2026-04-25T20:10:00Z",
-            "Order": "1",
-            "Start": "08:10 PM"
         },
         {
             "Slot": "OF4",
@@ -562,17 +562,12 @@
             "Slot": "BN",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Order": "5*",
+            "Order": "6",
             "Start": "11:15 PM",
-            "Opponent": "Zack Wheeler (R)",
+            "Opponent": "Wheeler (R)",
             "SP_xERA": "2.73",
-            "Score": 44.512123521712184,
+            "Score": 43.639336785992334,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.58",
@@ -594,7 +589,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Elite Catcher (1.86s)",
+                    "label": "Elite Catcher (1.88s)",
                     "value": "-1.0%",
                     "type": "negative"
                 },
@@ -604,12 +599,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
