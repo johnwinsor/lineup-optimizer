@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-24",
-    "last_updated": "2026-04-24T23:33:35.772663+00:00",
+    "last_updated": "2026-04-25T01:52:48.496663+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 733.8,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a potent offensive outlook, anchored by the high-ceiling production of **Yordan Alvarez** (70.94) and **Junior Caminero** (70.65). Both benefit from premium #2 lineup spots and favorable matchups against right-handed starters Warren and Bradley, respectively. The most aggressive play is undoubtedly **Trea Turner** (68.42), whose elite lead-off status against Holmes provides the necessary stability to chase both runs and scarce stolen base opportunities. **Caleb Durbin** (67.42) also projects as a high-value play; despite hitting 8th, his massive +16% park and SP skill boosts make him a core piece for today\u2019s production targets.\n\nThe optimizer\u2019s most difficult exclusion was **Pete Crow-Armstrong** (50.22). While his dynamic platoon advantage against Sheehan provides a decent floor, his lower-third lineup projection and the significant SP skill penalty against Sheehan\u2019s sub-3.20 xERA caused him to fall just behind our primary starters. We are also monitoring **Josh Smith**, whose score of 57.10 remains tempered by the 1.89s pop-time of the opposing catcher, which creates an inherent risk for his stolen base efficiency. With **Christian Yelich**, **Colt Keith**, and **Victor Scott II** all currently sidelined, our depth is thinner than usual, necessitating a high-volume performance from our outfield core of **Kyle Schwarber**, **Luke Raley**, **Carson Benge**, and **Hyeseong Kim** to maintain our competitive edge in the 5x5 categories.",
+    "total_efficiency_score": 734.01,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with a lineup anchored by the high-upside pairing of **Yordan Alvarez** (70.94) and **Junior Caminero** (70.65). **Yordan Alvarez** benefits from a steady 0.393 xwOBA and a favorable matchup against Warren, while **Junior Caminero** projects for significant volume out of the two-hole, overcoming a slight park penalty with an 11% boost from the opposing pitcher\u2019s skill profile. While **Trea Turner** (68.42) remains a top-tier play due to his elite lead-off status, **Caleb Durbin** (67.42) serves as our tactical highlight; despite batting eighth, his 16% park and SP skill adjustments make him a massive leverage play against Young, capitalizing on our strategic emphasis on speed-threat efficiency.\n\nRegarding personnel adjustments, **Carson Benge** (51.67) represented our most difficult bench decision. While his platoon advantage against Lorenzen was promising, he fell just short of the efficiency thresholds required to unseat **Pete Crow-Armstrong** or **Hyeseong Kim**, both of whom maintain higher base utility within our current roster construction. We are exercising caution with **Pete Crow-Armstrong** today, whose score of 51.88 is heavily muted by a tough matchup against Sheehan; should his sprint-speed utility fail to manifest in early innings, we will look to rotate in depth options like **Lars Nootbaar** or **Zac Veen** to maintain our SB pacing. \n\nFinally, managers should monitor the weather closely for the **Dillon Dingler** (61.29) and **Kazuma Okamoto** (54.55) matchup against the pitching staff; while **Dillon Dingler** earns a significant boost from the slow delivery of Abbott\u2014offering a prime opportunity for steals\u2014the overall risk profile is elevated by the volatile 4.20 xERA environment. We remain firm on sitting **Christian Yelich**, **Colt Keith**, and **Victor Scott II** due to IL status or lack of confirmed lineup placement, ensuring our game caps are strictly reserved for active, high-efficiency contributors.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -32,7 +32,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Slow SP Delivery (100% SB)",
+                    "label": "Slow SP Delivery (85% SB)",
                     "value": "+2%",
                     "type": "positive"
                 },
@@ -324,45 +324,6 @@
         },
         {
             "Slot": "OF3",
-            "Player": "Carson Benge",
-            "POS": "OF",
-            "Score": 51.67124735510638,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "49.81",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Lorenzen (R)",
-            "SP_xERA": "4.16",
-            "Warning": "",
-            "GameTime": "2026-04-24T23:10:00Z",
-            "Order": "7",
-            "Start": "11:10 PM"
-        },
-        {
-            "Slot": "OF4",
             "Player": "Hyeseong Kim",
             "POS": "2B/SS/OF",
             "Score": 57.49766983959972,
@@ -388,8 +349,42 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Jameson Taillon (R)",
+            "Opponent": "Taillon (R)",
             "SP_xERA": "4.40",
+            "Warning": "",
+            "GameTime": "2026-04-25T02:15:00Z",
+            "Order": "8",
+            "Start": "02:15 AM"
+        },
+        {
+            "Slot": "OF4",
+            "Player": "Pete Crow-Armstrong",
+            "POS": "OF",
+            "Score": 51.877939535256054,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "59.99",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Sheehan (R)",
+            "SP_xERA": "3.20",
             "Warning": "",
             "GameTime": "2026-04-25T02:15:00Z",
             "Order": "8",
@@ -482,50 +477,6 @@
     "players_sat": [
         {
             "Slot": "BN",
-            "Player": "Pete Crow-Armstrong",
-            "POS": "OF",
-            "Order": "9*",
-            "Start": "02:15 AM",
-            "Opponent": "Sheehan (R)",
-            "SP_xERA": "3.20",
-            "Score": 50.222260613918095,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "59.99",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-04-25T02:15:00Z"
-        },
-        {
-            "Slot": "BN",
             "Player": "Christian Yelich",
             "POS": "OF",
             "Order": "-",
@@ -553,11 +504,46 @@
             "Player": "Colt Keith",
             "POS": "1B/2B/3B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "10:40 PM",
+            "Opponent": "Abbott, A (L)",
+            "SP_xERA": "4.20",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "50.75",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Slow SP Delivery (85% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -565,7 +551,51 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-04-24T22:40:00Z"
+        },
+        {
+            "Slot": "BN",
+            "Player": "Carson Benge",
+            "POS": "OF",
+            "Order": "7",
+            "Start": "11:10 PM",
+            "Opponent": "Lorenzen (R)",
+            "SP_xERA": "4.16",
+            "Score": 51.67124735510638,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "49.81",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-04-24T23:10:00Z"
         },
         {
             "Slot": "BN",
