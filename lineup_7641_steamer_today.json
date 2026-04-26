@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-26",
-    "last_updated": "2026-04-26T14:02:12.446442+00:00",
+    "last_updated": "2026-04-26T14:53:07.578821+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 800.48,
-    "narrative": "Today\u2019s lineup is anchored by **Jos\u00e9 Ram\u00edrez**, who boasts our highest efficiency rating at 81.68. His matchup against Patrick Corbin provides a massive ceiling, compounded by the 86% stolen base allowance of the opposing starter, which grants **Jos\u00e9 Ram\u00edrez** a significant boost in our scarcest category. Beyond our anchor, **Cal Raleigh** (64.10) and **Lawrence Butler** (63.52) provide substantial value; **Lawrence Butler** benefits from a 13% dynamic platoon edge against the right-handed Kumar Rocker, while **Cal Raleigh** capitalizes on a high-skill matchup against Michael McGreevy, making them both high-floor plays to bolster our HR and RBI counts.\n\nThe most difficult decision for the optimizer was the exclusion of **Matt Chapman** (56.26), who sat just shy of our starting threshold. While **Matt Chapman** offers a strong baseline, the optimizer preferred the slightly higher stability of **Masyn Winn** and **Geraldo Perdomo** to manage roster efficiency. Investors should note the elevated risk profiles for **Tyler Freeman** and **Taylor Ward**. **Tyler Freeman** is facing an \"in\" wind at the park that drags his score down to a 56.77, while **Taylor Ward** is battling an elite arm in Connelly Early (2.34 xERA). Despite the 16% park factor bonus for **Taylor Ward**, his efficiency remains sensitive to the tough opposing starter, and we will be monitoring confirmed lineups closely as all projections rely on assumed batting order placements.",
+    "total_efficiency_score": 805.52,
+    "narrative": "LawDog\u2019s lineup for today is anchored by **Jos\u00e9 Ram\u00edrez**, who boasts an elite 81.68 score. The matchup against Corbin is a primary driver; beyond the favorable park factors and SP skill, the high probability of stolen base opportunities against a slow-delivery pitcher makes **Jos\u00e9 Ram\u00edrez** a must-start staple for our 5x5 objectives. Similarly, **Daulton Varsho** (68.04) serves as a priority play today. His matchup against Slade Cecconi is bolstered by a perfect 100% stolen base expectation against the opposing arm, making him a high-leverage asset in our chase for the scarcest category. **Lawrence Butler** (63.52) also emerges as a value play; while his eighth-spot order projection creates a drag on his score, his +13% dynamic platoon edge against Kumar Rocker makes him significantly more viable than his standard baseline suggests.\n\nThe most difficult roster decision involved the marginal 50-range tier, specifically regarding **Matt Chapman**. He logged a strong 56.26 score\u2014closely trailing **Tyler Freeman** (56.77)\u2014but was relegated to the bench primarily due to the SP skill profile of Max Meyer. While **Matt Chapman** benefits from park factors and platoon splits, the optimizer prioritized the higher projected lineup positioning of **Tyler Freeman** and the specific steal-holding risks associated with the opposing pitchers. Meanwhile, investors should monitor the \"Lineup Pending\" status for **Will Smith**, **Cal Raleigh**, **Luis Arraez**, **Geraldo Perdomo**, **Tyler Freeman**, **Taylor Ward**, **Gavin Sheets**, and **Lawrence Butler**. With half our lineup relying on assumed positioning, any major shifts\u2014particularly moving **Taylor Ward** or **Geraldo Perdomo** down from the leadoff spot\u2014will drastically dampen their projected efficiency. We are also proceeding with caution regarding **Taylor Ward**; despite a high park-adjusted score, the elite 2.34 xERA of Connelly Early poses a significant floor risk for the entire offense.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -96,7 +96,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Michael McGreevy (R)",
+            "Opponent": "McGreevy (R)",
             "SP_xERA": "4.57",
             "Warning": "",
             "GameTime": "2026-04-26T18:15:00Z",
@@ -109,11 +109,6 @@
             "POS": "1B",
             "Score": 63.34019568746979,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.07",
@@ -149,7 +144,7 @@
             "SP_xERA": "4.47",
             "Warning": "",
             "GameTime": "2026-04-26T17:40:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "05:40 PM"
         },
         {
@@ -208,11 +203,6 @@
             "Score": 57.99079208171523,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "51.22",
                     "type": "info"
@@ -242,7 +232,7 @@
             "SP_xERA": "4.76",
             "Warning": "",
             "GameTime": "2026-04-26T18:15:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "06:15 PM"
         },
         {
@@ -321,7 +311,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Patrick Corbin (L)",
+            "Opponent": "Corbin (L)",
             "SP_xERA": "4.42",
             "Warning": "",
             "GameTime": "2026-04-26T17:37:00Z",
@@ -332,13 +322,8 @@
             "Slot": "OF1",
             "Player": "Daulton Varsho",
             "POS": "OF",
-            "Score": 63.00104800416161,
+            "Score": 68.04113184449454,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.81",
@@ -363,13 +348,18 @@
                     "label": "Slow SP Delivery (100% SB)",
                     "value": "+2%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Slade Cecconi (R)",
             "SP_xERA": "4.19",
             "Warning": "",
             "GameTime": "2026-04-26T17:37:00Z",
-            "Order": "6*",
+            "Order": "2",
             "Start": "05:37 PM"
         },
         {
@@ -588,45 +578,20 @@
             "Slot": "BN",
             "Player": "Bryson Stott",
             "POS": "2B/SS",
-            "Order": "6*",
-            "Start": "05:35 PM",
-            "Opponent": "Chris Sale (L)",
-            "SP_xERA": "2.88",
-            "Score": 37.657676881900976,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "53.80",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-13%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-04-26T17:35:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
@@ -803,17 +768,12 @@
             "Slot": "BN",
             "Player": "Gleyber Torres",
             "POS": "2B",
-            "Order": "2*",
+            "Order": "2",
             "Start": "05:40 PM",
-            "Opponent": "Rhett Lowder (R)",
+            "Opponent": "Lowder (R)",
             "SP_xERA": "3.10",
             "Score": 38.65931960784908,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.97",
@@ -840,7 +800,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -852,17 +812,12 @@
             "Slot": "BN",
             "Player": "Wenceel Perez",
             "POS": "OF",
-            "Order": "8*",
+            "Order": "8",
             "Start": "05:40 PM",
-            "Opponent": "Rhett Lowder (R)",
+            "Opponent": "Lowder (R)",
             "SP_xERA": "3.10",
             "Score": 34.23467741548312,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.91",
@@ -889,7 +844,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
