@@ -1,15 +1,15 @@
 {
     "target_date": "2026-04-26",
-    "last_updated": "2026-04-26T22:37:15.547716+00:00",
+    "last_updated": "2026-04-26T23:39:51.237053+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 717.64,
-    "narrative": "Today's slate presents a few high-upside plays for Ghost Ride the WHIP, headlined by **Jazz Chisholm Jr.** (**79.9**), **James Wood** (**73.2**), and **Mickey Moniak** (**69.3**). **Jazz Chisholm Jr.'s** strong score is buoyed by a plus matchup against Arrighetti (SP_xERA 5.10), where he benefits from a dynamic platoon advantage and a favorable batting order slot. **James Wood** also faces a shaky opposing starter in Hudson, B (SP_xERA 4.76), and his batting order position of #1, combined with a hitter-friendly park, significantly boosts his score beyond the base projection. **Mickey Moniak** is another standout, facing Senga (SP_xERA 4.52), but a significant dynamic platoon advantage and a #3 batting order spot are key drivers for his robust **69.3** score, overcoming a park downgrade.\n\nSeveral players are positioned for success due to specific situational factors. **Tyler Soderstrom** (**65.9**) gets a boost from a dynamic platoon advantage and his #3 spot in the order against Rocker (SP_xERA 4.32). **Brice Turang** (**58.6**) is also a solid play, with his #1 batting order slot against Mlodzinski (SP_xERA 3.73) more than compensating for a slightly tougher pitcher. **Jose Caballero** (**56.3**) sees a large boost from facing the high xERA Arrighetti (SP_xERA 5.10), though his batting order position drags the score down slightly. On the flip side, **Vinnie Pasquantino** (**39.3**) is the most notable bench decision. He was projected to score well (Base: 54.02) with a decent matchup against Detmers (SP_xERA 3.06), but a significant platoon disadvantage (Dynamic Platoon (L): -15%) and his batting order position ultimately pushed him below the floor, narrowly missing out on a start. We should also be mindful of the wind factor impacting games involving **Dalton Rushing**, **Kyle Karros**, **Seiya Suzuki**, and **Mickey Moniak**, with the \"Wind Out\" adding value for **Rushing** and **Suzuki**, while \"Wind In\" poses a slight risk for **Karros** and **Moniak**.",
+    "total_efficiency_score": 714.78,
+    "narrative": "Today, **James Wood** and **Corbin Carroll** stand out as our strongest plays, with **James Wood** carrying the highest score at 73.18 against Hudson (L) and **Corbin Carroll** not far behind at 71.54 against King (R). Both benefit significantly from their lineup slots, hitting 1 and 3 respectively, which boosts their scores by 10% and 6%. **James Wood**'s strong park-adjusted score and **Corbin Carroll**'s favorable xwOBA further solidify their positions. Additionally, **Mickey Moniak** is a strong contender with a 69.27, buoyed by a dynamic platoon advantage against Senga (R) and a healthy +14% boost from this factor, along with his #3 lineup spot.\n\nWe have several players benefiting from situational factors. **Brice Turang**\u2019s score of 58.63 is significantly enhanced by his leadoff spot, contributing a +10% to his score, despite facing a strong arm in Mlodzinski (R). **Jose Caballero**, while projected to have a solid outing at 56.31 against Arrighetti (R), benefits from a \"Slow SP Delivery\" factor, worth +2%, and a decent SP skill adjustment. **Jazz Chisholm Jr.** also sees a substantial boost to his 79.92 score due to the same \"Slow SP Delivery\" factor and a favorable dynamic platoon.\n\nThe most interesting bench decision is **Vinnie Pasquantino**, who scored 39.32. While his raw projection of 54.02 was respectable, a significant -15% dynamic platoon disadvantage against Detmers (L) and a below-floor score of <40 kept him out of the starting lineup. He was the closest to making the cut among those not starting, but the matchup and optimization threshold pushed him to the bench. We should also note the **Austin Riley** situation; his score of 52.00 is negatively impacted by an \"Elite Hold SP (62% SB)\" factor, highlighting the league's emphasis on stolen bases.\n\nSeveral players face concerning matchups or risks. **Luis Campusano**\u2019s 44.41 score is impacted by a weaker projected performance against Nelson (R) and a low lineup spot (#8). **Dalton Rushing** faces Imanaga (L) with a 46.97 score, which, despite some positive factors like a wind advantage, is tempered by the opposing pitcher's skill and a challenging L/L platoon. **Kyle Karros**\u2019s 45.85 is also hampered by a strong opposing pitcher and park factors. Finally, be aware of the \"Lineup Pending\" status for some players, though today's listed starters appear confirmed.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Luis Campusano",
             "POS": "C",
-            "Score": 43.12005085573519,
+            "Score": 44.413652381407246,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -25,6 +25,11 @@
                     "label": "Platoon (R/R)",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "BvP Good (52 PA)",
+                    "value": "+3%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #8",
@@ -458,7 +463,7 @@
             "Slot": "UTIL",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Score": 56.16141608843955,
+            "Score": 52.00131119299958,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -478,11 +483,6 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "BvP Elite (60 PA)",
-                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -702,11 +702,41 @@
             "Player": "Alex Freeland",
             "POS": "2B/SS/3B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Imanaga (L)",
+            "SP_xERA": "4.36",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "46.40",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+9%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -714,7 +744,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-04-26T20:10:00Z"
         },
         {
             "Slot": "BN",

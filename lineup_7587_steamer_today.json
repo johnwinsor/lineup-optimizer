@@ -1,15 +1,15 @@
 {
     "target_date": "2026-04-26",
-    "last_updated": "2026-04-26T22:35:04.457010+00:00",
+    "last_updated": "2026-04-26T23:37:51.661436+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 761.64,
-    "narrative": "Today's lineup for Ghost Ride the WHIP is headlined by **Jazz Chisholm Jr.** and **James Wood**, both boasting elite scores of 78.13 and 75.23 respectively. **Jazz Chisholm Jr.**'s strong outing is fueled by a significant boost from the Steamer projection, amplified by dynamic platoon advantages against an Orioles right-hander and a favorable batting order position of 5th. The slow delivery of the opposing pitcher also adds a slight edge in the all-important stolen base category. Similarly, **James Wood**'s 75.23 score is buoyed by hitting leadoff and a favorable matchup against a left-handed pitcher, with his score elevated by strong underlying projections that the optimizer believes will overcome the neutral platoon matchup. **Corbin Carroll** also presents a strong option with a 72.54 score, benefitting from his typically strong offensive profile and hitting third, though the presence of an established right-handed pitcher in King, M. does temper his upside slightly compared to the top two.\n\nSeveral players are seeing their scores boosted by specific situational factors. **Mickey Moniak**'s 69.06 score, for instance, is significantly elevated by dynamic platoon advantages against a right-handed pitcher and his projected 3rd spot in the order, with wind blowing in at his park also factored in. **Tyler Soderstrom** also lands comfortably above the recommended start threshold with a 69.65 score, driven by similar platoon benefits and a 3rd spot in the lineup. On the flip side, **Vinnie Pasquantino** presents a cautionary tale, with his score of 41.10 significantly depressed by a tough matchup against a left-handed pitcher with a strong xERA, despite hitting third in a hitter-friendly park.\n\nThe most compelling bench decision today involves **Josh Naylor**. While he isn't in the lineup today, if he were, his score would likely be strong given his historical production. However, the optimizer has prioritized current starters with better matchup grades and confirmed spots in the order. It's worth noting the challenging matchups some of our hitters face, particularly **Vinnie Pasquantino** against Detmers (L) with a 3.06 xERA, and **Kyle Karros** against Senga (R) with a 4.52 xERA, where wind conditions blowing in could further suppress offensive output. **Jose Caballero** also faces a righty with a 5.10 xERA, but the slow delivery of the opposing pitcher provides a marginal upside for stolen bases.",
+    "total_efficiency_score": 758.78,
+    "narrative": "Today's strongest starting plays for Ghost Ride the WHIP are anchored by a pair of outfielders with significant upside. **James Wood** checks in with a robust 75.23 score, boosted by batting leadoff and a dynamic platoon advantage against the lefty Hudson, B. His score also benefits from a 10% bump due to his lineup order, overcoming a slight park disadvantage. Not far behind is **Corbin Carroll** at 72.54. While facing a right-handed pitcher in King, M, **Corbin Carroll** benefits from a strong xwOBA of 0.372 and a pair of order-based boosts, landing him comfortably in the \"Elite\" tier. **Tyler Soderstrom** also offers solid value at 69.65, riding a strong offensive projection and benefiting from batting third.\n\nSeveral players have seen their scores significantly elevated by matchup specifics. **Jazz Chisholm Jr.** (78.13) is a top play, benefitting from a favorable matchup against Arrighetti (R) with an elevated SP_xERA of 5.10, and a +7% boost from his dynamic platoon advantage. His offensive order at #5 also provides a small bump. Similarly, **Mickey Moniak** (69.06) is well-positioned, with his score boosted by a dynamic platoon advantage and a strong batting order position, despite facing Senga (R). **Jose Caballero** (53.20) also benefits from the high SP_xERA of Arrighetti (R), with his score getting a significant lift from pitcher skill.\n\nThe most interesting bench decision comes down to positional depth. While **Josh Naylor**, **Giancarlo Stanton**, and **Trevor Story** are all not in the lineup, **Gabriel Moreno** was also unavailable due to injury. However, looking at players who *did* score well but narrowly missed out, **Austin Riley** at 52.65 was the closest. His score was dragged down by a tough matchup against an elite catcher (1.88s) and an elite opposing pitcher with high SB retention, ultimately pushing him to the bench in favor of more optimal plays at his position. We will be monitoring the status of **Gabriel Moreno** closely as he is currently Injured (IL).",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Luis Campusano",
             "POS": "C",
-            "Score": 45.06977264808491,
+            "Score": 46.421865827527455,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -25,6 +25,11 @@
                     "label": "Platoon (R/R)",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "BvP Good (52 PA)",
+                    "value": "+3%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #8",
@@ -497,7 +502,7 @@
             "Slot": "UTIL",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Score": 56.864903448274696,
+            "Score": 52.652688378032124,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -517,11 +522,6 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "BvP Elite (60 PA)",
-                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -673,11 +673,41 @@
             "Player": "Alex Freeland",
             "POS": "2B/SS/3B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Imanaga (L)",
+            "SP_xERA": "4.36",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "47.81",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+9%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -685,7 +715,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-04-26T20:10:00Z"
         },
         {
             "Slot": "BN",
