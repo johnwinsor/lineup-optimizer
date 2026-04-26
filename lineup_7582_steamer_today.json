@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-26",
-    "last_updated": "2026-04-26T20:29:47.523653+00:00",
+    "last_updated": "2026-04-26T21:32:30.399004+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 670.46,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with **Yordan Alvarez** standing as our undisputed anchor. Facing a favorable matchup against Gil (5.74 xERA), **Yordan Alvarez** projects for an elite 87.42 efficiency score, bolstered by a significant SP skill advantage and a high xwOBA. **Junior Caminero** also ranks as a primary pillar at 73.02; he draws a prime batting spot in the two-hole against Woods Richardson, leveraging a positive platoon split and favorable SP skill projections. While we maintain a focus on speed, these two power threats provide the necessary floor to sustain our offensive output despite several challenging individual matchups across the diamond.\n\nThe optimizer faced its toughest decision regarding the MI and OF slots, ultimately leaving **Chase Meidroth** on the bench with a 44.88 score. While **Chase Meidroth** benefits from a lead-off spot, he was squeezed out by the sheer volume of high-pedigree bats like **Kazuma Okamoto** and the speed-dependent utility of **Josh Smith**. We are tracking the stolen base potential of **Victor Scott II** closely; despite a lower base projection, his role as a primary speed engine keeps him in the lineup, even against the tough Hancock. Managers should note the significant hurdle posed by Sale facing **Trea Turner** and **Kyle Schwarber**; while their scores remain solid, the elite SP skill of Sale introduces inherent volatility to their outcomes today.",
+    "total_efficiency_score": 676.67,
+    "narrative": "Today's slate for the Zurich Zebras presents some excellent opportunities, particularly in the heart of our order. **Junior Caminero** stands out with a robust 73.0 score, fueled by a favorable matchup against Woods Richardson (4.47 SP_xERA) and his placement in the crucial #2 spot in the batting order, which adds 8% to his score. **Yordan Alvarez** is another top play at 87.4, capitalizing on a very weak opposing starter in Gil (5.74 SP_xERA) and a strong #2 lineup slot. His xwOBA of 0.393 further solidifies his elite status for today. **Trea Turner** also checks in with a strong 53.6, benefiting from a potent #1 lineup spot against a tough but beatable Sale (2.88 SP_xERA), with his dynamic platoon advantage chipping in positively.\n\nWe're seeing several players benefit from situational advantages. **Colt Keith** (48.2) gets a boost from a favorable park factor (+3%) and his #3 lineup spot, overcoming a challenging opposing starter. **Victor Scott II** (54.6) has a solid score, with his dynamic platoon advantage against a right-handed pitcher and a decent park factor helping to offset an average starter. Conversely, **Gary Sanchez** at C1 is a marginal play with a score of 44.9; while batting cleanup is helpful, the opposing starter Mlodzinski's decent ERA and a slight park downgrade limit his upside. A notable warning to monitor is the \"Lineup Pending\" status for **Caleb Durbin**, though his current score of 48.1 suggests he'd be a reasonable start if placed optimally.\n\nThe most difficult bench decision today involves **Hyeseong Kim**. He posted a respectable 47.0 score, demonstrating a positive matchup against Imanaga and benefiting from favorable wind conditions. However, his projected efficiency was just edged out by other available options, leading to his benching, with the optimizer prioritizing higher scores for today's active roster. **Pete Crow-Armstrong** also had an intriguing score of 42.6, but a significant platoon disadvantage against a lefty starter and a lower projected efficiency kept him on the bench, despite a strong base projection.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -46,6 +46,50 @@
         },
         {
             "Slot": "1B",
+            "Player": "Josh Smith",
+            "POS": "1B/2B/SS/3B/OF",
+            "Score": 48.16496901577774,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "47.89",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-10%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Ginn (R)",
+            "SP_xERA": "3.57",
+            "Warning": "",
+            "GameTime": "2026-04-26T18:35:00Z",
+            "Order": "7",
+            "Start": "06:35 PM"
+        },
+        {
+            "Slot": "2B",
             "Player": "Colt Keith",
             "POS": "1B/2B/3B",
             "Score": 48.21118851612387,
@@ -84,7 +128,46 @@
             "Start": "05:40 PM"
         },
         {
-            "Slot": "2B",
+            "Slot": "SS",
+            "Player": "Trea Turner",
+            "POS": "SS",
+            "Score": 53.634490772686284,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "59.08",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Sale (L)",
+            "SP_xERA": "2.88",
+            "Warning": "",
+            "GameTime": "2026-04-26T17:35:00Z",
+            "Order": "1",
+            "Start": "05:35 PM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
             "Score": 48.09302485620468,
@@ -128,89 +211,6 @@
             "Start": "05:35 PM"
         },
         {
-            "Slot": "SS",
-            "Player": "Trea Turner",
-            "POS": "SS",
-            "Score": 53.634490772686284,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "59.08",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Sale (L)",
-            "SP_xERA": "2.88",
-            "Warning": "",
-            "GameTime": "2026-04-26T17:35:00Z",
-            "Order": "1",
-            "Start": "05:35 PM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Hyeseong Kim",
-            "POS": "2B/SS/OF",
-            "Score": 47.01658503671763,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "52.24",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+9%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Elite Hold SP (40% SB)",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Imanaga (L)",
-            "SP_xERA": "4.36",
-            "Warning": "",
-            "GameTime": "2026-04-26T20:10:00Z",
-            "Order": "9",
-            "Start": "08:10 PM"
-        },
-        {
             "Slot": "3B",
             "Player": "Junior Caminero",
             "POS": "3B",
@@ -251,45 +251,6 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Luke Raley",
-            "POS": "1B/OF",
-            "Score": 57.48953775275628,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "48.04",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "McGreevy (R)",
-            "SP_xERA": "4.57",
-            "Warning": "",
-            "GameTime": "2026-04-26T18:15:00Z",
-            "Order": "5",
-            "Start": "06:15 PM"
-        },
-        {
-            "Slot": "OF2",
             "Player": "Kyle Schwarber",
             "POS": "OF",
             "Score": 52.28106396898952,
@@ -333,19 +294,19 @@
             "Start": "05:35 PM"
         },
         {
-            "Slot": "OF3",
-            "Player": "Yordan Alvarez",
+            "Slot": "OF2",
+            "Player": "Carson Benge",
             "POS": "OF",
-            "Score": 87.42244547832874,
+            "Score": 53.231976916540255,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "64.76",
+                    "value": "46.86",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "-2%",
+                    "value": "-4%",
                     "type": "negative"
                 },
                 {
@@ -359,25 +320,25 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
-                    "label": "xwOBA Good",
-                    "value": "0.393",
-                    "type": "info"
+                    "label": "Wind In",
+                    "value": "-5%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Gil (R)",
-            "SP_xERA": "5.74",
+            "Opponent": "Dollander (R)",
+            "SP_xERA": "4.99",
             "Warning": "",
-            "GameTime": "2026-04-26T18:10:00Z",
-            "Order": "2",
-            "Start": "06:10 PM"
+            "GameTime": "2026-04-26T17:45:00Z",
+            "Order": "7",
+            "Start": "05:45 PM"
         },
         {
-            "Slot": "OF4",
+            "Slot": "OF3",
             "Player": "Victor Scott II",
             "POS": "OF",
             "Score": 54.64943271090587,
@@ -421,48 +382,87 @@
             "Start": "06:15 PM"
         },
         {
-            "Slot": "OF5",
-            "Player": "Josh Smith",
-            "POS": "1B/2B/SS/3B/OF",
-            "Score": 48.16496901577774,
+            "Slot": "OF4",
+            "Player": "Luke Raley",
+            "POS": "1B/OF",
+            "Score": 57.48953775275628,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "47.89",
+                    "value": "48.04",
                     "type": "info"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "-10%",
+                    "label": "Park",
+                    "value": "-4%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
+                    "label": "SP Skill",
                     "value": "+14%",
                     "type": "positive"
                 },
                 {
-                    "label": "Elite Catcher (1.89s)",
-                    "value": "-1.0%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Slow SP Delivery (100% SB)",
-                    "value": "+2%",
+                    "label": "Platoon",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Ginn (R)",
-            "SP_xERA": "3.57",
+            "Opponent": "McGreevy (R)",
+            "SP_xERA": "4.57",
             "Warning": "",
-            "GameTime": "2026-04-26T18:35:00Z",
-            "Order": "7",
-            "Start": "06:35 PM"
+            "GameTime": "2026-04-26T18:15:00Z",
+            "Order": "5",
+            "Start": "06:15 PM"
+        },
+        {
+            "Slot": "OF5",
+            "Player": "Yordan Alvarez",
+            "POS": "OF",
+            "Score": 87.42244547832874,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "64.76",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.393",
+                    "type": "info"
+                }
+            ],
+            "Opponent": "Gil (R)",
+            "SP_xERA": "5.74",
+            "Warning": "",
+            "GameTime": "2026-04-26T18:10:00Z",
+            "Order": "2",
+            "Start": "06:10 PM"
         },
         {
             "Slot": "UTIL",
@@ -577,6 +577,55 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Hyeseong Kim",
+            "POS": "2B/SS/OF",
+            "Order": "9",
+            "Start": "08:10 PM",
+            "Opponent": "Imanaga (L)",
+            "SP_xERA": "4.36",
+            "Score": 47.01658503671763,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "52.24",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+9%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (40% SB)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-04-26T20:10:00Z"
         },
         {
             "Slot": "BN",
@@ -707,60 +756,6 @@
             ],
             "Warning": "",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Carson Benge",
-            "POS": "OF",
-            "Order": "-",
-            "Start": "05:40 PM",
-            "Opponent": "Quintana (L)",
-            "SP_xERA": "5.04",
-            "Score": 0.0,
-            "Breakdown": [
-                {
-                    "label": "Bench Assumption (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "46.86",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Not Starting",
-                    "value": "-100%",
-                    "type": "status"
-                },
-                {
-                    "label": "Benched - Below Zebras Floor (40.0).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-04-26T17:40:00Z"
         },
         {
             "Slot": "BN",
