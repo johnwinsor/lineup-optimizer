@@ -1,21 +1,16 @@
 {
     "target_date": "2026-04-26",
-    "last_updated": "2026-04-26T17:33:07.110021+00:00",
+    "last_updated": "2026-04-26T18:39:22.334080+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 703.27,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with **Jazz Chisholm Jr.** and **James Wood** serving as our clear offensive anchors. **Jazz Chisholm Jr.** boasts the highest efficiency score at 79.92, largely due to a favorable matchup against Arrighetti, who offers a massive boost in SP Skill (+19%) and a slow delivery that essentially guarantees premium stolen base opportunities. Similarly, **James Wood** (73.18) benefits from a high SP skill rating and a prime lead-off slot, while **Corbin Carroll** (71.54) remains a core start; his elite xwOBA metrics and favorable platoon split against King, M outweigh the moderate toughness of the matchup. **Tyler Soderstrom** also provides significant value (65.85) thanks to his #3 spot in the lineup and a favorable platoon advantage against Rocker.\n\nConversely, our benching decisions were dictated by a rigid adherence to our 40-point \"Zebras\" floor. **Vinnie Pasquantino** was the most difficult exclusion, landing at 39.32; despite his strong base projection, he was ultimately sunk by the negative platoon split against Detmers and the resulting decrease in his efficiency score. We continue to prioritize stolen base upside in our start/sit process, which kept **Brice Turang** in the lineup at 58.63 despite a moderate SP matchup. Caution is warranted for several players whose roles are currently \"Lineup Pending,\" most notably **Dalton Rushing**, **Alex Freeland**, and **Seiya Suzuki**. While **Seiya Suzuki** holds a respectable 49.86, he is facing a tough 2.89 xERA arm in Wrobleski, and we are tracking weather reports closely, as any shift in wind direction at his park could further suppress his ceiling. \n\nAcross the rest of the roster, **Mickey Moniak** presents an interesting case; while his base score is bolstered by a strong platoon edge (+14%), he faces a dual risk factor with a tough pitcher and unfavorable wind conditions. Meanwhile, **Austin Riley** remains a solid play (56.16) primarily due to his historical BvP excellence, which helps offset the defensive prowess of the opposing catcher. We are keeping a close watch on **Jose Caballero** (56.31); while his SP skill projection is favorable, his deep spot in the order (-8%) remains a drag on his overall output. We move into today\u2019s action with a focus on high-variance speed threats, looking to capitalize on the weak SP-delivery matchups identified in our model.",
+    "total_efficiency_score": 653.01,
+    "narrative": "For today\u2019s slate, **Jazz Chisholm Jr.** (79.92) and **James Wood** (73.18) headline our production expectations. **Jazz Chisholm Jr.** benefits significantly from a favorable matchup against Arrighetti, where his dynamic platoon advantage (+7%) and the opponent's slow delivery\u2014which we project will yield a 100% stolen base opportunity rate\u2014create an elite ceiling. Similarly, **James Wood** is locked into the leadoff spot against the leaky 4.76 xERA of Hudson, providing the perfect engine for our stolen base-starved lineup. **Corbin Carroll** (71.54) remains a foundational start as well; despite facing a competent arm in King, his .372 xwOBA and prime hitting position keep him well above the 70-point threshold.\n\nThe tightest margin on our lineup card today involves **Vinnie Pasquantino**, who finished just shy of the 40-point threshold at 39.32. While **Vinnie Pasquantino** usually provides steady value, his severe platoon disadvantage against Detmers (-15%) and the negative impact of facing a sub-3.10 xERA arm pushed him into the bench rotation. Meanwhile, **Jose Caballero** remains in the lineup despite a lower base projection because the specific situational boost from Arrighetti\u2019s slow delivery\u2014which theoretically offsets his bottom-of-the-order placement\u2014keeps his efficiency high enough to chase those precious, scarce stolen bases.\n\nWe are proceeding with caution regarding **Dalton Rushing** (46.97) and **Mickey Moniak** (50.49). **Dalton Rushing** is battling a L/L platoon disadvantage against Imanaga, and while wind blowing out provides a marginal buffer, he remains a volatile start. **Mickey Moniak** faces the most significant structural headwind; despite a positive platoon split, the combination of a pitcher with a 3.04 xERA and stadium-specific wind blowing in (-5%) nearly pushed him into the bench tier. Ensure monitoring for any late-inning defensive substitutions, as these marginal plays represent the most significant risk to our daily efficiency targets.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Dalton Rushing",
             "POS": "C",
-            "Score": 48.427422261270905,
+            "Score": 46.97459959343277,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "47.97",
@@ -37,16 +32,21 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
                     "label": "Wind Out",
                     "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Shota Imanaga (L)",
+            "Opponent": "Imanaga (L)",
             "SP_xERA": "4.36",
             "Warning": "",
             "GameTime": "2026-04-26T20:10:00Z",
-            "Order": "6*",
+            "Order": "7",
             "Start": "08:10 PM"
         },
         {
@@ -119,6 +119,45 @@
         },
         {
             "Slot": "2B",
+            "Player": "Brice Turang",
+            "POS": "2B",
+            "Score": 58.626498633555926,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "55.60",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Mlodzinski (R)",
+            "SP_xERA": "3.73",
+            "Warning": "",
+            "GameTime": "2026-04-26T18:10:00Z",
+            "Order": "1",
+            "Start": "06:10 PM"
+        },
+        {
+            "Slot": "SS",
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
             "Score": 56.30948716015382,
@@ -162,86 +201,47 @@
             "Start": "06:10 PM"
         },
         {
-            "Slot": "SS",
-            "Player": "Alex Freeland",
-            "POS": "2B/SS/3B",
-            "Score": 49.781206282761126,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "46.40",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+9%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Shota Imanaga (L)",
-            "SP_xERA": "4.36",
-            "Warning": "",
-            "GameTime": "2026-04-26T20:10:00Z",
-            "Order": "9*",
-            "Start": "08:10 PM"
-        },
-        {
             "Slot": "MI",
-            "Player": "Brice Turang",
-            "POS": "2B",
-            "Score": 58.626498633555926,
+            "Player": "Jazz Chisholm Jr.",
+            "POS": "2B/3B",
+            "Score": 79.92496720332771,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "55.60",
+                    "value": "61.03",
                     "type": "info"
                 },
                 {
                     "label": "Park",
-                    "value": "-1%",
+                    "value": "-2%",
                     "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-6%",
-                    "type": "negative"
+                    "value": "+19%",
+                    "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+3%",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Mlodzinski (R)",
-            "SP_xERA": "3.73",
+            "Opponent": "Arrighetti (R)",
+            "SP_xERA": "5.10",
             "Warning": "",
             "GameTime": "2026-04-26T18:10:00Z",
-            "Order": "1",
+            "Order": "5",
             "Start": "06:10 PM"
         },
         {
@@ -271,7 +271,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "BvP Elite (60 PA)",
+                    "label": "BvP Elite (61 PA)",
                     "value": "+8%",
                     "type": "positive"
                 },
@@ -294,95 +294,7 @@
             "Start": "05:35 PM"
         },
         {
-            "Slot": "OF1",
-            "Player": "Seiya Suzuki",
-            "POS": "OF",
-            "Score": 49.85825681064639,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "55.58",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Slow SP Delivery (85% SB)",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Justin Wrobleski (L)",
-            "SP_xERA": "2.89",
-            "Warning": "",
-            "GameTime": "2026-04-26T20:10:00Z",
-            "Order": "5*",
-            "Start": "08:10 PM"
-        },
-        {
             "Slot": "OF2",
-            "Player": "James Wood",
-            "POS": "OF",
-            "Score": 73.17789280060568,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "56.50",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Neutral Platoon (L)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Hudson, B (L)",
-            "SP_xERA": "4.76",
-            "Warning": "",
-            "GameTime": "2026-04-26T18:10:00Z",
-            "Order": "1",
-            "Start": "06:10 PM"
-        },
-        {
-            "Slot": "OF4",
             "Player": "Mickey Moniak",
             "POS": "OF",
             "Score": 50.48997177691439,
@@ -431,6 +343,45 @@
             "Start": "05:40 PM"
         },
         {
+            "Slot": "OF4",
+            "Player": "James Wood",
+            "POS": "OF",
+            "Score": 73.17789280060568,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "56.50",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Hudson, B (L)",
+            "SP_xERA": "4.76",
+            "Warning": "",
+            "GameTime": "2026-04-26T18:10:00Z",
+            "Order": "1",
+            "Start": "06:10 PM"
+        },
+        {
             "Slot": "OF5",
             "Player": "Corbin Carroll",
             "POS": "OF",
@@ -466,47 +417,47 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Jazz Chisholm Jr.",
-            "POS": "2B/3B",
-            "Score": 79.92496720332771,
+            "Player": "Seiya Suzuki",
+            "POS": "OF",
+            "Score": 50.83586968928651,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "61.03",
+                    "value": "55.58",
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "-2%",
+                    "label": "SP Skill",
+                    "value": "-19%",
                     "type": "negative"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Slow SP Delivery (100% SB)",
+                    "label": "Dynamic Platoon (L)",
                     "value": "+2%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
+                    "label": "Slow SP Delivery (85% SB)",
                     "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Arrighetti (R)",
-            "SP_xERA": "5.10",
+            "Opponent": "Wrobleski (L)",
+            "SP_xERA": "2.89",
             "Warning": "",
-            "GameTime": "2026-04-26T18:10:00Z",
-            "Order": "5",
-            "Start": "06:10 PM"
+            "GameTime": "2026-04-26T20:10:00Z",
+            "Order": "4",
+            "Start": "08:10 PM"
         }
     ],
     "players_sat": [
@@ -573,7 +524,7 @@
             "POS": "1B",
             "Order": "3",
             "Start": "08:10 PM",
-            "Opponent": "Reid Detmers (L)",
+            "Opponent": "Detmers (L)",
             "SP_xERA": "3.06",
             "Score": 39.32451609725954,
             "Breakdown": [
@@ -755,6 +706,25 @@
             ],
             "Warning": "",
             "GameTime": "2026-04-26T17:40:00Z"
+        },
+        {
+            "Slot": "BN",
+            "Player": "Alex Freeland",
+            "POS": "2B/SS/3B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
         },
         {
             "Slot": "BN",
