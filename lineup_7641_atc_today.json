@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-26",
-    "last_updated": "2026-04-26T15:37:57.959399+00:00",
+    "last_updated": "2026-04-26T16:35:16.539472+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 798.03,
-    "narrative": "The clear anchor for today\u2019s lineup is **Jos\u00e9 Ram\u00edrez**, who boasts an elite 81.07 score against Corbin. The matchup against a vulnerable southpaw, combined with a positive wind factor and favorable pitcher delivery speed, makes him the premier start for our squad. Following closely is **Daulton Varsho** (70.35), whose profile is bolstered by the 100% stolen base opportunity against Cecconi, a critical factor given our league's scarcity-driven prioritization of speed. Both **Cal Raleigh** (65.16) and **Jonathan Aranda** (64.74) provide significant value; **Cal Raleigh** benefits from a strong platoon advantage and an optimal #2 spot, while **Jonathan Aranda** sees his projection spike due to a 12% boost from platoon dynamics, cementing his role as a high-floor producer today.\n\nThe most difficult decision for the optimizer involved **Jung Hoo Lee**, whose 50.73 score fell just short of the threshold to displace our projected starters. While **Jung Hoo Lee** benefits from a +10% platoon edge against Max Meyer, the combination of a park penalty and Meyer\u2019s relatively strong xERA suppressed his score, keeping him on the bench. We are also monitoring several \"Lineup Pending\" designations, specifically for **Will Smith**, **Luis Arraez**, **Geraldo Perdomo**, **Matt Chapman**, **Taylor Ward**, **Tyler Freeman**, and **Gavin Sheets**. If these anticipated batting positions shift, we may see volatility in our efficiency scores. Notably, **Gleyber Torres** was excluded from the lineup entirely, as his 38.70 score failed to clear our 40-point \"Below Floor\" threshold, largely due to a combination of a tough matchup against Lowder and poor platoon metrics, keeping him sidelined to preserve our strict game caps.",
+    "narrative": "Our offensive engine today is anchored by **Jos\u00e9 Ram\u00edrez**, who commands an elite score of 81.07. Facing Corbin, **Jos\u00e9 Ram\u00edrez** benefits from a rare intersection of a favorable park, moderate SP skill, and a \"Slow SP Delivery\" factor that bolsters his stolen base potential\u2014a critical component for LawDog\u2019s roster construction. Following him is **Daulton Varsho**, our highest-rated outfielder at 70.35. **Daulton Varsho** is a prime start against Cecconi, with a dual boost from park dimensions and the pitcher's high stolen base concession rate, maximizing his utility in a category where we prioritize speed. Meanwhile, **Cal Raleigh** (65.16) and **Jonathan Aranda** (64.73) provide robust secondary scoring, with **Jonathan Aranda** specifically benefiting from a +12% adjustment for a favorable platoon matchup against Woods Richardson.\n\nThe primary lineup construction decision centered on the bottom of the order, where **Gavin Sheets** (51.27) squeezed into the final UTIL slot. **Jung Hoo Lee** was the most difficult exclusion, finishing at a 50.73; while **Jung Hoo Lee** enjoys a strong platoon advantage against Max Meyer, his lower projected upside in home runs and RBI relative to the rest of the utility pool forced him to the bench. We are also monitoring several \"Lineup Pending\" statuses, specifically for **Will Smith**, **Luis Arraez**, **Geraldo Perdomo**, **Matt Chapman**, **Tyler Freeman**, and **Gavin Sheets**. Any significant shifts in their projected batting order will impact their run-scoring potential. Additionally, users should note that **Taylor Ward** faces a high-risk matchup against Early, whose 2.34 xERA represents the toughest test on our slate; while the park factor keeps **Taylor Ward** viable, the downward pressure from the pitcher\u2019s skill rating remains a primary risk factor. Finally, **Gleyber Torres** was excluded with a score of 38.69, falling well below our 40-point efficiency floor as he continues to struggle with platoon-neutral splits against Lowder.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -135,7 +135,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Simeon Woods Richardson (R)",
+            "Opponent": "Woods Richardson (R)",
             "SP_xERA": "4.47",
             "Warning": "",
             "GameTime": "2026-04-26T17:40:00Z",
@@ -320,11 +320,6 @@
             "Score": 59.455732675075325,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "52.93",
                     "type": "info"
@@ -350,11 +345,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Connelly Early (L)",
+            "Opponent": "Early (L)",
             "SP_xERA": "2.34",
             "Warning": "",
             "GameTime": "2026-04-26T17:35:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "05:35 PM"
         },
         {
@@ -772,17 +767,12 @@
             "Slot": "BN",
             "Player": "Jeremiah Jackson",
             "POS": "2B/SS/3B/OF",
-            "Order": "6*",
+            "Order": "7",
             "Start": "05:35 PM",
-            "Opponent": "Connelly Early (L)",
+            "Opponent": "Early (L)",
             "SP_xERA": "2.34",
-            "Score": 43.626741230121404,
+            "Score": 42.31793899321776,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.39",
@@ -804,7 +794,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
