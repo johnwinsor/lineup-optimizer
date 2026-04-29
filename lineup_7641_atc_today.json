@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-29",
-    "last_updated": "2026-04-29T19:14:09.996050+00:00",
+    "last_updated": "2026-04-29T20:56:33.792993+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 537.85,
-    "narrative": "The LawDog lineup for April 29th is anchored by two high-upside outfielders who are poised to exploit favorable conditions. **Lawrence Butler** carries the day\u2019s highest projection (73.43), benefiting from a significant 10% park boost and a soft matchup against Michael Wacha. Paired with **Daulton Varsho** (70.72), who enjoys an excellent platoon advantage against Nick Pivetta/Bello and a 13% skill-based boost, these two represent our primary engine for counting stats. **Jonathan Aranda** also stands out as an elite play; despite a standard projection, the 12% platoon edge against Graham Ashcraft makes him a high-efficiency target at 1B, while **Cal Raleigh** remains a constant threat, leveraged here by an aggressive #2 spot in the order that maximizes his rbi and run potential.\n\nThe most difficult decision for the optimizer today involved the marginal range, specifically keeping **Masyn Winn** and **Matt Chapman** active while moving **Luis Arraez** to the bench. **Masyn Winn** remains in the lineup to hunt for stolen bases\u2014our most critical scarcity category\u2014despite a neutral score of 41.17, as his speed profile provides utility that the pure floor of **Luis Arraez** (40.28) lacks. **Matt Chapman** clears the 40.0 threshold by a hair at 42.56, though he is on thin ice; he and **Bryson Stott** (51.79) are both tethered to a 40% rain risk, which could dampen their output or result in shortened appearances. We are keeping a close watch on **Masyn Winn** and **Lawrence Butler**, whose scores are currently based on pending lineup assumptions; should they slide down the order, those efficiency numbers will likely crater toward our benched cohort, including **Gleyber Torres** and **Jung Hoo Lee**, who currently sit below the 40.0 efficiency floor.",
+    "total_efficiency_score": 539.14,
+    "narrative": "Today\u2019s optimal lineup for LawDog hinges on a core of high-ceiling outfielders and corner infielders positioned to exploit favorable matchups against moderate pitching. **Lawrence Butler** emerges as our top play with a 73.43 efficiency score; despite the uncertainty of a pending lineup, his combination of a 4.61 xERA matchup, favorable park factors, and a strong platoon edge makes him our most potent asset. **Daulton Varsho** follows closely at 70.72, benefiting from a high-efficiency matchup against Bello and a surge in platoon-adjusted production. Meanwhile, **Jonathan Aranda** (67.67) and **Cal Raleigh** (67.47) provide excellent stability at 1B and C, respectively, with **Cal Raleigh** anchored by a beneficial #2 spot in the order that boosts his overall scoring outlook.\n\nThe most difficult decision on the card was the final utility spot, where **Matt Chapman** (42.56) narrowly edged out **Luis Arraez** (40.28). While **Luis Arraez** offers a consistent profile, his efficiency was capped by the daunting 3.02 xERA of S\u00e1nchez and the negative platoon splits inherent in that matchup. **Matt Chapman** secures the spot despite his own matchup concerns, as his park-adjusted projection holds enough weight to clear the 40.0 threshold. We must exercise caution with **Bryson Stott** and **Matt Chapman** today, as both are tethered to a 40% rain risk; should those games be delayed or postponed, we will need to pivot quickly to our bench assets. While **Masyn Winn** remains active, his 41.17 score sits dangerously close to our floor; his reliance on wind assistance and the difficulty of facing a 3.09 xERA arm suggest he is a prime candidate for immediate re-evaluation if late-breaking lineup data shifts the projections.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -139,11 +139,6 @@
             "Score": 41.169109792994455,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "49.46",
                     "type": "info"
@@ -169,11 +164,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Bubba Chandler (R)",
+            "Opponent": "Chandler (R)",
             "SP_xERA": "3.09",
             "Warning": "",
             "GameTime": "2026-04-29T22:40:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "10:40 PM"
         },
         {
@@ -208,7 +203,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Brandon Sproat (R)",
+            "Opponent": "Sproat (R)",
             "SP_xERA": "4.17",
             "Warning": "",
             "GameTime": "2026-04-29T23:40:00Z",
@@ -219,7 +214,7 @@
             "Slot": "3B",
             "Player": "Jos\u00e9 Ram\u00edrez",
             "POS": "3B",
-            "Score": 64.50394880317009,
+            "Score": 65.79402777923349,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -235,6 +230,11 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "-2%",
                     "type": "negative"
+                },
+                {
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+2%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #3",
@@ -446,7 +446,7 @@
             "POS": "C",
             "Order": "TBA",
             "Start": "10:35 PM",
-            "Opponent": null,
+            "Opponent": "Brandon Young",
             "SP_xERA": "-",
             "Score": 0.0,
             "Breakdown": [
@@ -468,17 +468,12 @@
             "Slot": "BN",
             "Player": "Gleyber Torres",
             "POS": "2B",
-            "Order": "2*",
+            "Order": "2",
             "Start": "11:15 PM",
-            "Opponent": "JR Ritchie (R)",
+            "Opponent": "Ritchie (R)",
             "SP_xERA": "2.57",
             "Score": 37.9458069324867,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.02",
@@ -505,7 +500,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -517,17 +512,12 @@
             "Slot": "BN",
             "Player": "Wenceel Perez",
             "POS": "OF",
-            "Order": "8*",
+            "Order": "8",
             "Start": "11:15 PM",
-            "Opponent": "JR Ritchie (R)",
+            "Opponent": "Ritchie (R)",
             "SP_xERA": "2.57",
             "Score": 34.70426153125768,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.58",
@@ -554,7 +544,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
