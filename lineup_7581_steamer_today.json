@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-29",
-    "last_updated": "2026-04-29T22:50:57.935104+00:00",
+    "last_updated": "2026-04-29T23:46:53.355175+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 704.16,
-    "narrative": "Our primary objective for today\u2019s slate centers on **Kyle Tucker** (76.90) and **Jackson Merrill** (74.69), who represent our highest-ceiling plays against favorable pitching matchups. **Kyle Tucker** benefits from a strong wind-out factor and consistent contact metrics (xwOBA 0.372) against Alcantara, while **Jackson Merrill** occupies the leadoff spot against Taillon, leveraging a significant +13% platoon boost to maximize his production. Similarly, **Vladimir Guerrero Jr.** (72.43) and **Josh Lowe** (72.21) offer high-floor outcomes. **Josh Lowe** is particularly notable; despite the park downgrade, his 19% boost from Fedde\u2019s projected struggles and a 93% efficiency rating regarding stolen base opportunities make him an essential start given our desperate need for speed.\n\nThe most difficult decision on the bench was **Miguel Vargas** (58.56). He flirted with a starting spot, but ultimately lost out to the superior platoon and order-based efficiency of **Liam Hicks** (51.47) and **Nasim Nunez** (50.48), whose situational advantages\u2014namely **Liam Hicks**\u2019s wind-aided outlook and the necessity of keeping high-speed options active\u2014tipped the scale. While **Miguel Vargas** remains a solid depth piece, he did not clear the 60-point threshold required to displace our core starters in this specific matchup configuration.\n\nFinally, we must monitor the environment closely. **Drake Baldwin** faces a significant hurdle in the form of Skubal\u2019s 2.71 xERA; his sub-50 score (47.27) suggests he is merely a \"marginal\" play, and we are rostering him primarily out of necessity given the lack of alternatives. Most critically, our roster is reeling from the loss of **Gunnar Henderson**, whose game was postponed today, and **Jordan Westburg**, who remains sidelined on the IL. With no active production from those slots, we must rely on the calculated platoon advantages of **Andy Pages** and **Marcell Ozuna** to carry our offensive output through the evening.",
+    "total_efficiency_score": 707.03,
+    "narrative": "The Austin Waves lineup today is anchored by three high-upside plays that capitalize on favorable matchups and situational advantages. **Vladimir Guerrero Jr.** (78.22) commands the highest score of the day, buoyed by a strong BvP history and a favorable matchup against Bello. He is closely followed by **Kyle Tucker** (76.90) and **Jackson Merrill** (74.68), both of whom benefit from positive wind conditions and projected platoon advantages. **Josh Lowe** (72.20) also presents significant value; beyond his solid matchup against Fedde, his score received a unique boost from the opposing pitcher\u2019s slow delivery, which provides a high-probability opportunity for him to pad our scarce stolen base totals.\n\nWhile the core of the lineup is set, the decision to bench **Miguel Vargas** (58.56) was the most difficult pivot of the day. Despite a solid score driven by a favorable batting order position, **Miguel Vargas** was pushed out by the higher efficiency of **Marcell Ozuna** and the overall depth of the infield/utility corps. Elsewhere, we are navigating a few situational hurdles: **Drake Baldwin** faces the toughest matchup of the day against the elite Skubal, suppressing his output, while the rainout of **Gunnar Henderson** and the lingering injury to **Jordan Westburg** leave us shuffling depth behind **Nasim Nunez** and **Jacob Wilson** to maintain production in the middle infield. We will continue to monitor the status of bench assets like **Brady House**, **Heliot Ramos**, and **Coby Mayo** as we look to conserve game caps for later in the week.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -87,7 +87,7 @@
             "Slot": "1B",
             "Player": "Vladimir Guerrero Jr.",
             "POS": "1B",
-            "Score": 72.42980539553463,
+            "Score": 78.22418982717738,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -108,6 +108,11 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "-7%",
                     "type": "negative"
+                },
+                {
+                    "label": "BvP Elite (31 PA)",
+                    "value": "+8%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #3",
@@ -240,45 +245,6 @@
             "Start": "06:35 PM"
         },
         {
-            "Slot": "OF1",
-            "Player": "Josh Lowe",
-            "POS": "OF",
-            "Score": 72.20636522635176,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "53.49",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Slow SP Delivery (93% SB)",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Fedde (R)",
-            "SP_xERA": "5.60",
-            "Warning": "",
-            "GameTime": "2026-04-29T17:10:00Z",
-            "Order": "6",
-            "Start": "05:10 PM"
-        },
-        {
             "Slot": "OF2",
             "Player": "Andy Pages",
             "POS": "OF",
@@ -362,7 +328,7 @@
             "Start": "07:10 PM"
         },
         {
-            "Slot": "OF5",
+            "Slot": "OF4",
             "Player": "Jackson Merrill",
             "POS": "OF",
             "Score": 74.68581032050186,
@@ -401,10 +367,49 @@
             "Start": "08:10 PM"
         },
         {
+            "Slot": "OF5",
+            "Player": "Josh Lowe",
+            "POS": "OF",
+            "Score": 72.20636522635176,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "53.49",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (93% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Fedde (R)",
+            "SP_xERA": "5.60",
+            "Warning": "",
+            "GameTime": "2026-04-29T17:10:00Z",
+            "Order": "6",
+            "Start": "05:10 PM"
+        },
+        {
             "Slot": "UTIL",
             "Player": "Marcell Ozuna",
             "POS": "Util",
-            "Score": 61.52869257674672,
+            "Score": 58.59875483499688,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -429,11 +434,6 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
