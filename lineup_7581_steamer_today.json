@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-30",
-    "last_updated": "2026-04-30T17:17:06.947573+00:00",
+    "last_updated": "2026-04-30T19:10:12.034289+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 428.61,
-    "narrative": "Today\u2019s lineup for the Austin Waves leans heavily into high-floor leadoff men and favorable park factors, with **Jacob Wilson** leading the charge at a 74.08 efficiency score. **Wilson** benefits from a massive 10% boost in park favorability and an advantageous matchup against Cameron (L); his leadoff positioning maximizes his volume, making him our highest-rated start. Similarly, **Gunnar Henderson** earns a 73.05 score despite facing a tough arm in Lambert; the combination of a 16% park boost and the dynamic platoon advantage against the right-hander offsets the skill of the opposing pitcher, keeping him in the elite tier of our daily rotation. **Vladimir Guerrero Jr.** remains a cornerstone at 71.02, as his strong xwOBA profile and high-leverage order spot continue to drive value even against a solid arm like Ober.\n\nThe bench decision process was most difficult regarding **Coby Mayo**, who finished at 39.83, narrowly missing our 40-point \"Below Floor\" threshold. While **Mayo** gains significant value from the same park factors boosting **Gunnar Henderson**, his projected spot at the bottom of the order and the platoon disadvantage against Lambert ultimately lowered his efficiency below the cutoff. Meanwhile, we remain in a holding pattern with **Luis Robert Jr.** on the IL, and lack meaningful contributions today from **Kyle Tucker** and **Jackson Merrill** due to team off-days. With **Nasim Nunez** (47.72) and **Heliot Ramos** (48.04) rounding out the active roster, we are prioritizing their sprint speed and stolen base potential\u2014the scarcest commodities in our league\u2014to mitigate the risk posed by elite arms like Peralta and S\u00e1nchez. \n\nInvestors should monitor the status of **Vladimir Guerrero Jr.**, as his lineup position remains pending; any shift toward the lower half of the order would necessitate a re-evaluation of his current 71.02 score. Furthermore, while **Nasim Nunez** presents a lower efficiency score, his matchup against a pitcher with a slow delivery provides an isolated boost to his stolen base probability, justifying his inclusion over other bench options despite the marginal raw output. We are effectively betting on the speed profiles of **Nasim Nunez**, **Jacob Wilson**, and **Heliot Ramos** to provide the necessary category velocity to support the power production expected from **Vladimir Guerrero Jr.** and **Gunnar Henderson**.",
+    "total_efficiency_score": 479.73,
+    "narrative": "The Austin Waves offensive engine today is anchored by **Gunnar Henderson**, whose elite 80.36 efficiency score makes him the undisputed focal point of the lineup. Facing a favorable park environment against Lambert, **Gunnar Henderson** benefits from a massive 16% park boost and a +14% platoon edge, effectively neutralizing the mid-tier xERA of the opposing arm. Alongside him, **Jacob Wilson** presents our highest ceiling for stolen bases; his 74.08 score is fueled by a leadoff spot and a 10% park factor that creates a high-leverage opportunity to manufacture runs against Cameron. While **Luis Garc\u00eda Jr.** remains a strong play at 60.56, his 14% platoon advantage against Peralta helps him overcome the pitcher's sub-4.00 xERA, solidifying his role in the middle of our order.\n\nEfficiency drops off significantly in the bottom third of our lineup, particularly with **Coby Mayo** (43.81) and **Nasim Nunez** (47.72). While **Nasim Nunez** is primarily rostered for his stolen base utility, the optimizer flagged his 4% boost based on the slow delivery profile of Peralta, providing a marginal floor despite the low batting order spot. The most difficult bench decision involved **Drake Baldwin**, who sits at 54.14; he was considered for the UTIL slot, but we opted for the higher projected production of **Gunnar Henderson**. We are also navigating a light day regarding our bench depth, with **Kyle Tucker**, **Andy Pages**, and **Jackson Merrill** all inactive, and **Luis Robert Jr.** remaining sidelined on the IL. We will be closely monitoring the final lineup for **Vladimir Guerrero Jr.**; the 71.02 score assumes he holds the #3 spot, but any shift down the order could dampen his output against Ober.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -221,6 +221,45 @@
             "Start": "05:10 PM"
         },
         {
+            "Slot": "3B",
+            "Player": "Coby Mayo",
+            "POS": "1B/3B",
+            "Score": 43.80820930145789,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "49.42",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-12%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Lambert, P (R)",
+            "SP_xERA": "3.52",
+            "Warning": "",
+            "GameTime": "2026-04-30T16:35:00Z",
+            "Order": "8",
+            "Start": "04:35 PM"
+        },
+        {
             "Slot": "OF1",
             "Player": "Heliot Ramos",
             "POS": "OF",
@@ -268,7 +307,7 @@
             "Slot": "UTIL",
             "Player": "Gunnar Henderson",
             "POS": "SS",
-            "Score": 73.05438884202283,
+            "Score": 80.3598277262251,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -282,7 +321,7 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-19%",
+                    "value": "-12%",
                     "type": "negative"
                 },
                 {
@@ -297,7 +336,7 @@
                 }
             ],
             "Opponent": "Lambert, P (R)",
-            "SP_xERA": "2.77",
+            "SP_xERA": "3.52",
             "Warning": "",
             "GameTime": "2026-04-30T16:35:00Z",
             "Order": "1",
@@ -512,50 +551,6 @@
         },
         {
             "Slot": "BN",
-            "Player": "Coby Mayo",
-            "POS": "1B/3B",
-            "Order": "8",
-            "Start": "04:35 PM",
-            "Opponent": "Lambert, P (R)",
-            "SP_xERA": "2.77",
-            "Score": 39.825644819507175,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "49.42",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+16%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Benched - Below Zebras Floor (40.0).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-04-30T16:35:00Z"
-        },
-        {
-            "Slot": "BN",
             "Player": "Miguel Vargas",
             "POS": "1B/3B",
             "Order": "-",
@@ -597,11 +592,41 @@
             "Player": "Dominic Smith",
             "POS": "1B/OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "04:15 PM",
+            "Opponent": "Valdez, F (L)",
+            "SP_xERA": "3.66",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "46.16",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -609,7 +634,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-04-30T16:15:00Z"
         },
         {
             "Slot": "BN",

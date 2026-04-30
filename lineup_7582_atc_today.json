@@ -1,9 +1,9 @@
 {
     "target_date": "2026-04-30",
-    "last_updated": "2026-04-30T17:10:35.560715+00:00",
+    "last_updated": "2026-04-30T19:08:32.566948+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 370.98,
-    "narrative": "The Zurich Zebras enter April 30 with **Yordan Alvarez** standing out as the clear cornerstone of the daily lineup, boasting an elite score of 82.97. While Bassitt represents a moderate challenge, the combination of a significant park boost (+16%) and a strong BvP historical edge\u2014notably a .393 xwOBA against similar profiles\u2014cements **Yordan Alvarez** as our primary source of offensive production today. **Colt Keith** also provides strong value at 62.32, benefiting from an advantageous matchup against Elder, while **Kazuma Okamoto** remains a solid, if slightly risky, play at 59.99 as we await final confirmation of his spot in the batting order.\n\nOur aggressive pursuit of stolen bases requires constant vigilance, and today\u2019s lineup highlights the complex cost-benefit analysis of the speed-oriented roster. **Trea Turner** (54.95) and **Kyle Schwarber** (51.19) both contend with the difficult task of facing Logan Webb; while the pitcher's elite skill drags down their raw projections, the model offsets this with positive adjustments for Turner\u2019s stolen base probability and the order placements for both. The most difficult decision involved **Jerar Encarnacion**, who fell just short of our internal floor at 39.79. Despite a favorable platoon edge against S\u00e1nchez, his lower spot in the batting order and the high-skill profile of the opposing starter forced us to bench him to preserve our limited game caps for higher-ceiling opportunities. We are keeping a close watch on the status of **Christian Yelich**, **Hyeseong Kim**, **Gary Sanchez**, **Zac Veen**, **Luke Raley**, **Lars Nootbaar**, **Dillon Dingler**, **Josh Smith**, **Chase Meidroth**, **Luis Pena**, and **Pedro Ramirez**, as well as the idle **Junior Caminero**, **Pete Crow-Armstrong**, and **Caleb Durbin**, all of whom remain vital depth pieces as we navigate the upcoming series.",
+    "total_efficiency_score": 368.86,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Yordan Alvarez** serving as the clear cornerstone of the offense. With an elite efficiency score of 82.97, **Yordan Alvarez** benefits from a prime hitting environment and a significant BvP edge against Bassitt, bolstered by a 16% park factor and an elite .393 xwOBA, making him the only \"Strong\" play near the elite threshold. Conversely, the matchups for **Trea Turner** and **Kyle Schwarber** against Logan Webb are cautionary. While both remain in the starting lineup, their scores are depressed into the low 50s by Webb\u2019s skill set; **Trea Turner** remains a vital engine for our SB-starved squad, but he faces a sub-3.15 xERA challenge that limits his ceiling today.\n\nElsewhere, we are leaning into favorable SP matchups to pad our counting stats. **Colt Keith** (62.32) and **Kazuma Okamoto** (59.99) are solid anchors; **Colt Keith** benefits from a +7% SP skill boost against Elder, while **Kazuma Okamoto** remains a high-floor play despite the pending lineup confirmation. **Carson Benge** (59.55) narrowly secured a UTIL spot by exploiting a favorable matchup against Miles Mikolas, benefiting from a substantial +19% SP skill advantage that offset a weaker batting order position. We continue to monitor the status of **Junior Caminero**, **Pete Crow-Armstrong**, and **Caleb Durbin**, all of whom are sidelined by team off-days, forcing us to lean heavily on the current active core.\n\nThe most difficult roster decision involved **Jerar Encarnacion**, who finished just outside the starting rotation with a score of 39.79. While he holds a platoon edge against Cristopher S\u00e1nchez, his expected slot in the eighth spot of the order dragged his efficiency below our 40.0 \"Below Floor\" threshold, causing us to bench him to preserve game caps. Managers should remain alert to the weather and any late lineup shifts for **Kazuma Okamoto**, as our primary objective remains maximizing high-efficiency contact and speed contributions from the likes of **Trea Turner** and our primary bats while avoiding dead-end starts against elite arms like Webb.",
     "recommended_lineup": [
         {
             "Slot": "2B",
@@ -48,7 +48,7 @@
             "Slot": "SS",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Score": 54.9506684582595,
+            "Score": 52.837181209864895,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -74,11 +74,6 @@
                     "label": "Elite Catcher (1.86s)",
                     "value": "-2.0%",
                     "type": "negative"
-                },
-                {
-                    "label": "Slow SP Delivery (100% SB)",
-                    "value": "+4%",
-                    "type": "positive"
                 },
                 {
                     "label": "Order #1",
@@ -164,7 +159,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "BvP Elite (26 PA)",
+                    "label": "BvP Elite (29 PA)",
                     "value": "+8%",
                     "type": "positive"
                 },
@@ -506,11 +501,41 @@
             "Player": "Dillon Dingler",
             "POS": "C",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "04:15 PM",
+            "Opponent": "Elder (R)",
+            "SP_xERA": "4.29",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "47.33",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -518,7 +543,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-04-30T16:15:00Z"
         },
         {
             "Slot": "BN",
