@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-02",
-    "last_updated": "2026-05-02T20:32:55.890325+00:00",
+    "last_updated": "2026-05-02T21:32:44.828232+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 753.4,
-    "narrative": "The Zurich Zebras enter May 2nd with a focus on maximizing stolen base potential and leveraging platoon advantages against mid-rotation arms. **Pete Crow-Armstrong** headlines today\u2019s slate as our strongest play with a 75.89 efficiency score; he benefits from a 14% boost due to dynamic platoon positioning against R. Nelson, providing the highest ceiling in our outfield. **Colt Keith** (65.83) and **Junior Caminero** (64.04) follow closely, as both hitters are ideally positioned in the #3 spot to capitalize on favorable park factors and serviceable opposing xERAs. While **Trea Turner** carries a lower score (58.91) due to facing a tougher arm in Meyer and park penalties, his role as the leadoff hitter keeps him as a high-floor asset essential for our SB volume.\n\nThe bench decision for today was particularly tight, with **Chase Meidroth** (44.21) narrowly missing the cut behind our UTIL slot. While **Chase Meidroth** offered some utility, the optimizer prioritized the higher projected production of **Kazuma Okamoto** (51.48) against Prielipp, noting that the wind-out conditions at the park provide a necessary power buffer for his profile. Risks for the day remain concentrated in our corner outfield and catcher spots. **Yordan Alvarez** faces a difficult matchup against Early, whose 2.97 xERA significantly suppresses our star's score to 51.14. Additionally, **Luke Raley** remains a high-variance play; his status is contingent on a \"Lineup Pending\" designation, and while he draws a favorable xERA from Lugo, his score is tempered by an elite hold-pitcher penalty. We continue to monitor the statuses of **Christian Yelich** and **Zac Veen**, both of whom remain unavailable, leaving our depth charts reliant on the current active starters.",
+    "total_efficiency_score": 759.06,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Pete Crow-Armstrong** serving as our anchor, boasting the highest efficiency rating of the day at 75.88. His matchup against Ryne Nelson is the definition of an optimal setup; the combination of a favorable right-handed platoon advantage and a base projection bolstered by consistent high-end production makes him a must-start. Joining him in the elite tier is **Colt Keith** (65.83), who benefits significantly from an advantageous matchup against Jack Leiter and a productive spot in the #3 hole. Both players are expected to anchor our Roto categories today, with **Caleb Durbin** (65.14) also projecting as a high-floor play despite his #9 batting order slot, as he draws a exploitable matchup against Hunter Brown and benefits from favorable wind conditions that enhance his efficiency profile.\n\nWhile we are aggressive in seeking stolen bases, we must navigate a few high-risk matchups. **Yordan Alvarez** (53.69) faces a tough challenge against Early, where a stagnant SP skill rating and a stiff L/L platoon disadvantage suppress his ceiling compared to his standard output. We have relegated **Chase Meidroth** (44.21) to the bench; while he remained the closest candidate for inclusion, the lack of defensive premium and a neutral matchup against Michael King meant he could not crack our high-efficiency threshold. We are monitoring **Carson Benge** closely, as the \"Lineup Pending\" status and a negative L/L platoon split against Reid Detmers keep him sidelined for now. With **Zac Veen** still in the minors and **Christian Yelich** remaining on the IL, we will continue to rely on the depth of our outfield corps\u2014including the platoon-boosted **Josh Smith**\u2014to mitigate the sting of those absences.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -151,7 +151,7 @@
             "Slot": "2B",
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
-            "Score": 62.044495072449614,
+            "Score": 65.14671982607209,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -187,6 +187,11 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Arrighetti (R)",
@@ -384,11 +389,6 @@
             "Score": 52.07668009681424,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "48.39",
                     "type": "info"
@@ -423,14 +423,14 @@
             "SP_xERA": "4.41",
             "Warning": "",
             "GameTime": "2026-05-03T01:40:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "01:40 AM"
         },
         {
             "Slot": "OF3",
             "Player": "Yordan Alvarez",
             "POS": "OF",
-            "Score": 51.135785057349004,
+            "Score": 53.69257431021645,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -466,6 +466,11 @@
                     "label": "xwOBA Elite",
                     "value": "0.434",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Early (L)",
@@ -639,7 +644,7 @@
             "POS": "OF",
             "Order": "7*",
             "Start": "01:38 AM",
-            "Opponent": "Reid Detmers (L)",
+            "Opponent": "Detmers (L)",
             "SP_xERA": "3.19",
             "Score": 35.13293676224891,
             "Breakdown": [
@@ -758,17 +763,12 @@
             "Slot": "BN",
             "Player": "Chase Meidroth",
             "POS": "2B/SS",
-            "Order": "5*",
+            "Order": "5",
             "Start": "12:40 AM",
-            "Opponent": "Michael King (R)",
+            "Opponent": "King, M (R)",
             "SP_xERA": "4.01",
             "Score": 44.208992062021004,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.26",
@@ -795,7 +795,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }

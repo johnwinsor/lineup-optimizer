@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-02",
-    "last_updated": "2026-05-02T20:34:16.127268+00:00",
+    "last_updated": "2026-05-02T21:33:56.024676+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 783.23,
-    "narrative": "LawDog faces a critical slate today, anchored by the explosive potential of **Jos\u00e9 Ram\u00edrez**, who commands a massive 86.99 efficiency score against J. Lopez. His profile benefits significantly from a favorable park shift and a strong platoon edge, making him the clear priority start. Meanwhile, **Lawrence Butler** (70.08) has surged into the top-tier of our daily output. He draws a high-upside matchup against Cecconi, bolstered by a 13% dynamic platoon boost and park factors that reward his power-speed profile. We are also banking on **Geraldo Perdomo** (64.71) to exploit his spot in the two-hole against Imanaga, where his ability to reach base and generate stolen bases\u2014our scarcest category\u2014remains paramount even against a respectable lefty.\n\nThe optimizer\u2019s toughest choice centered on the final utility spots, ultimately leaving **Yainer Diaz** (47.40) on the bench. While **Yainer Diaz** typically offers a reliable floor, he was squeezed out today by a combination of a tough matchup against Early and the superior situational metrics of **Cal Raleigh** (61.24) and **Will Smith** (63.97). The decision to prioritize **Will Smith** over **Yainer Diaz** was driven by the specific platoon advantage against McGreevy, which offset the projected raw output. Furthermore, we continue to monitor **Gavin Sheets** and **Cal Raleigh** as their final lineup positioning remains pending; should they drop down the order, their efficiency scores\u2014which currently rely on top-of-the-order potential\u2014will be adjusted downward accordingly.\n\nRisks remain focused on the lower-ceiling plays like **Wenceel Perez** (46.58) and **Jeremiah Jackson** (46.94). While both benefit from the stolen base potential against a slow pitcher delivery, their scores are hampered by unfavorable batting order slots and platoon constraints. We are keeping a close watch on the weather and official lineups; should any of the marginal starters be removed from the batting order, we will pivot to the high-floor contact profile of **Luis Arraez** or **Jung Hoo Lee** from the bench to ensure we protect our game caps while maintaining our pursuit of stolen bases and batting average.",
+    "narrative": "The cornerstone of today's lineup is **Jos\u00e9 Ram\u00edrez**, who commands the slate with a massive 86.99 efficiency score. His matchup against Lopez is optimal, buoyed by a significant park factor (+10%) and superior SP skill dynamics, making him our primary engine for counting stats. **Lawrence Butler** also earns a high-ceiling designation (70.08) despite hitting in the eight-hole; his 13% platoon edge and favorable park environment make him the best \"value-to-efficiency\" play on the board. Meanwhile, **Geraldo Perdomo** and **Taylor Ward** are providing excellent stability, with **Geraldo Perdomo** capitalizing on the park factors against Imanaga and **Taylor Ward** benefiting from a premium lead-off spot against a favorable SP skill profile.\n\nThe most difficult exclusion today was **Yainer Diaz**, who pushed for a spot with a 49.77 rating but ultimately fell victim to Early\u2019s elite 2.97 xERA. While the wind-out conditions and platoon advantage were enticing, the optimizer favored the higher scoring-floor of **Cal Raleigh** and **Will Smith** in their respective matchups against softer starters. We are monitoring **Wenceel Perez** and **Jeremiah Jackson** closely; while both possess valuable sprint speed, their sub-50 scores leave little margin for error, and they are essentially \"hold\" starts specifically to chase stolen bases in the late-innings against Rocker. \n\nWe must remain wary of the volatility surrounding **Gleyber Torres** and **Jonathan Aranda**. **Gleyber Torres** struggles with a negative platoon adjustment (-13%), and **Jonathan Aranda** is being deployed primarily as a high-floor filler at 1B. We are banking on the high-probability spots in the order for **Will Smith** and **Cal Raleigh** to provide the necessary cushion to keep our daily efficiency target intact. With no major weather delays forecasted, the primary risk remains the high SP skill of the opposing arms, particularly in the later games, so we will be evaluating pinch-hit opportunities if our depth pieces underperform early.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -11,11 +11,6 @@
             "POS": "C",
             "Score": 61.241288656795966,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "57.79",
@@ -51,7 +46,7 @@
             "SP_xERA": "4.41",
             "Warning": "",
             "GameTime": "2026-05-03T01:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "01:40 AM"
         },
         {
@@ -335,11 +330,6 @@
             "Score": 55.10498223928785,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "48.14",
                     "type": "info"
@@ -365,11 +355,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Sean Burke (R)",
+            "Opponent": "Burke, S (R)",
             "SP_xERA": "4.35",
             "Warning": "",
             "GameTime": "2026-05-03T00:40:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "12:40 AM"
         },
         {
@@ -612,7 +602,7 @@
             "Start": "08:10 PM",
             "Opponent": "Early (L)",
             "SP_xERA": "2.97",
-            "Score": 47.40201118419574,
+            "Score": 49.77211174340553,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -637,6 +627,11 @@
                 {
                     "label": "Dynamic Platoon (L)",
                     "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 },
                 {

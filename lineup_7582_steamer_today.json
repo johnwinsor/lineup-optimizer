@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-02",
-    "last_updated": "2026-05-02T20:32:52.972259+00:00",
+    "last_updated": "2026-05-02T21:32:41.048722+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 761.19,
-    "narrative": "The Zurich Zebras are positioned for a high-ceiling output today, anchored by **Pete Crow-Armstrong** (76.96) and **Colt Keith** (66.91). **Pete Crow-Armstrong** is our premier play, benefiting from an elite combination of a favorable matchup against Ryan Nelson (4.23 xERA) and a massive 14% boost from our dynamic platoon modeling. Meanwhile, **Colt Keith** leverages a prime #3-hole spot against Rocker, whose slow delivery provides the exact stolen base environment our roster is built to exploit. **Junior Caminero** (65.85) and **Caleb Durbin** (63.88) also provide significant value, with **Caleb Durbin** acting as a high-upside play despite a bottom-of-the-order assignment, as he is uniquely positioned to capitalize on his elite sprint speed against Arrighetti.\n\nRegarding bench depth and risks, **Chase Meidroth** (47.06) was the most difficult exclusion, ultimately losing his spot due to the uncertainty surrounding his placement in the batting order and a marginal matchup against Michael King. We are also closely monitoring the lineup status of **Luke Raley**; while his 51.70 score makes him a viable start, he faces a stiff challenge against Seth Lugo, and his score reflects a cautious adjustment for the risk of facing an elite hold pitcher. We remain thin in the outfield with **Zac Veen** still in the minors and **Christian Yelich** sidelined on the IL, leaving us to lean heavily on the efficiency of our active starters to maintain our competitive edge in the SB and AVG categories.",
+    "total_efficiency_score": 767.08,
+    "narrative": "The Zurich Zebras enter May 2nd with a focus on maximizing speed and favorable platoon matchups. **Pete Crow-Armstrong** leads the charge with an elite 76.96 efficiency score, bolstered by a significant +14% boost from a favorable right-handed matchup against R. Nelson. Similarly, **Caleb Durbin** (67.08) and **Colt Keith** (66.91) are high-priority starts; **Caleb Durbin** benefits tremendously from a weak 4.76 xERA opponent and wind conditions, while **Colt Keith** enjoys a prime #3 spot in the order against a pitcher with a slow delivery, further enhancing his already high value in our pursuit of stolen bases. **Junior Caminero** remains a core play at 65.85, finding success in a right-on-right matchup that plays into his current power profile.\n\nRegarding our bench decisions, **Chase Meidroth** (47.06) was the most difficult exclusion, ultimately sitting behind **Dillon Dingler** due to a lower projected efficiency floor despite the favorable park factors. We are exercising caution with **Yordan Alvarez** (56.57); while his talent is undeniable, he faces an elite lefty in Early (2.97 xERA) and suffers from a harsh platoon penalty, making him a start based on pure upside rather than matchup comfort. We continue to monitor the status of **Christian Yelich** and **Zac Veen**, both of whom remain unavailable, leaving our active roster to bear the load of these high-efficiency matchups. Be advised that **Carson Benge** was excluded from contention due to pending lineup uncertainty and a poor matchup against the southpaw Detmers, which significantly suppressed his statistical output for today's slate.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -244,7 +244,7 @@
             "Slot": "MI",
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
-            "Score": 63.8835158386314,
+            "Score": 67.07769163056297,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -280,6 +280,11 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Arrighetti (R)",
@@ -516,11 +521,6 @@
             "Score": 51.69671902543722,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "48.04",
                     "type": "info"
@@ -555,14 +555,14 @@
             "SP_xERA": "4.41",
             "Warning": "",
             "GameTime": "2026-05-03T01:40:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "01:40 AM"
         },
         {
             "Slot": "UTIL",
             "Player": "Yordan Alvarez",
             "POS": "OF",
-            "Score": 53.88020159720357,
+            "Score": 56.57421167706375,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -598,6 +598,11 @@
                     "label": "xwOBA Elite",
                     "value": "0.434",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Early (L)",
@@ -685,17 +690,12 @@
             "Slot": "BN",
             "Player": "Chase Meidroth",
             "POS": "2B/SS",
-            "Order": "5*",
+            "Order": "5",
             "Start": "12:40 AM",
-            "Opponent": "Michael King (R)",
+            "Opponent": "King, M (R)",
             "SP_xERA": "4.01",
             "Score": 47.05990537795782,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.25",
@@ -722,7 +722,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -755,7 +755,7 @@
             "POS": "OF",
             "Order": "7*",
             "Start": "01:38 AM",
-            "Opponent": "Reid Detmers (L)",
+            "Opponent": "Detmers (L)",
             "SP_xERA": "3.19",
             "Score": 33.05724095284411,
             "Breakdown": [
