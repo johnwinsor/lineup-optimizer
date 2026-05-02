@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-01",
-    "last_updated": "2026-05-01T23:54:59.136699+00:00",
+    "last_updated": "2026-05-02T02:10:09.980224+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 723.68,
-    "narrative": "Our strongest plays today center around hitters facing potentially weaker or less efficient starting pitchers, amplified by favorable lineup slots and platoon advantages. **Gunnar Henderson** leads the charge with an elite 74.1 score, benefiting from a strong 60.7 base projection, a park boost, and a significant advantage against right-handed pitching, all while batting leadoff. **Drake Baldwin** also stands out with a 71.8 score, enjoying a high base projection and a significant boost from facing a starter with a 5.47 xERA. **Josh Lowe** (71.7) and **Kyle Tucker** (70.8) both possess strong scores, with **Josh Lowe** gaining considerably from a matchup against a 15.44 xERA pitcher and a significant platoon advantage, despite his lower lineup slot. **Jacob Wilson**, batting first, offers a solid 63.9, with his score boosted by a positive platoon matchup against a left-handed pitcher and a favorable park situation.\n\nSeveral players have notable edges contributing to their scores. **Miguel Vargas** sees his score rise to 61.2, aided by a favorable matchup against a right-handed pitcher with a 5.12 xERA, a boost from facing slower pitcher deliveries which positively impacts stolen base potential, and his third spot in the order. **Vladimir Guerrero Jr.**'s 72.4 score is anchored by a strong base projection and favorable matchup against a right-handed pitcher, though this is slightly tempered by a dynamic platoon disadvantage. **Luis Garc\u00eda Jr.**'s 57.7 score gets a boost from a dynamic platoon advantage against a right-handed pitcher, even with a tougher opponent starter.\n\nThe most interesting bench decision involves **Josh Jung**, who posted a 56.2 score, just shy of making the starting lineup. His score was positively impacted by a favorable matchup against a right-handed pitcher with a 4.21 xERA and a slight park boost. However, the optimizer ultimately favored other options due to projected lower overall efficiency for the day. In terms of warnings, while no weather issues are flagged, it's worth noting that **Luis Garc\u00eda Jr.** and **Brady House** are facing **Misiorowski**, a right-handed pitcher with a respectable 3.28 xERA, which somewhat suppresses their potential score. Additionally, **Heliot Ramos** and **Andy Pages** are facing left-handed starter **Liberatore**, whose 4.61 xERA is not an exceptionally easy matchup, though **Heliot Ramos**'s score is boosted by his leadoff spot and specific situation flags.",
+    "total_efficiency_score": 721.28,
+    "narrative": "Today\u2019s lineup for the Austin Waves is anchored by the explosive matchup potential of **Gunnar Henderson**, who earns our highest efficiency score of 74.06. Facing Warren, W, **Gunnar Henderson** benefits from a massive platoon advantage and the premium leadoff spot, providing the ideal catalyst for our core categories. Similarly, **Vladimir Guerrero Jr.** (72.39) and **Drake Baldwin** (71.82) are high-priority starts; **Drake Baldwin** in particular benefits from a favorable 5.47 xERA matchup against Quintana, making him a sneaky source of production in the catcher slot. We are also monitoring **Josh Lowe** (71.68) closely as he faces Scott, who carries a brutal 15.44 xERA\u2014a massive opportunity for **Josh Lowe** to provide value even while batting lower in the order.\n\nOur most difficult roster decision involved keeping **Josh Jung** (56.18) on the bench. While **Josh Jung** carries a respectable projection against Flaherty, the marginal efficiency edge held by **Nolan Schanuel** (60.11) and **Miguel Vargas** (58.79) kept him out of the starting nine. **Miguel Vargas** remains in the fold despite a slight park penalty, as his strong SP skill rating against the 5.12 xERA of M\u00e1rquez keeps his floor higher than the alternatives. Conversely, **Heliot Ramos** (59.03) is a tactical play today; while facing a tough arm in McClanahan, his elite sprint speed gives us the SB upside we desperately require, and the projection model rewards his aggressive base-running environment.\n\nRisks remain focused on the lower-tier matchups, specifically for **Luis Garc\u00eda Jr.** (57.72), who faces a stiff test against Misiorowski. While his platoon advantage is significant, his low SP skill score warns of a potential ceiling-capped performance. We are comfortable with **Kyle Tucker** (70.80) and **Andy Pages** (60.90) despite the left-on-left disadvantage against Liberatore, as their baseline hitting profiles remain resilient. We continue to hold **Marcell Ozuna**, **Brady House**, **Coby Mayo**, **Luis Robert Jr.**, **Jackson Merrill**, **Jordan Westburg**, **Jorge Polanco**, **Nasim Nunez**, **Dominic Smith**, and **Liam Hicks** in reserve, prepared to pivot if weather patterns shift or lineup volatility necessitates a late-afternoon adjustment to the bench strategy.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -234,7 +234,7 @@
             "Slot": "3B",
             "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Score": 61.19636152928669,
+            "Score": 58.79650421441271,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -262,9 +262,9 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Slow SP Delivery (86% SB)",
-                    "value": "+2%",
-                    "type": "positive"
+                    "label": "Elite Hold SP (40% SB)",
+                    "value": "-2%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #3",
@@ -597,11 +597,46 @@
             "Player": "Nasim Nunez",
             "POS": "2B/SS",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "10:45 PM",
+            "Opponent": "Misiorowski (R)",
+            "SP_xERA": "3.28",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "51.09",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-18%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -609,7 +644,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-01T22:45:00Z"
         },
         {
             "Slot": "BN",

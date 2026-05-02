@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-01",
-    "last_updated": "2026-05-01T23:47:44.161643+00:00",
+    "last_updated": "2026-05-02T02:07:53.954100+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 571.96,
-    "narrative": "The Zurich Zebras lineup for May 1st features several strong plays, led by **Pete Crow-Armstrong** who boasts the highest score at 69.58. His excellent efficiency is driven by a combination of a favorable opponent park, a positive matchup against the right-handed **Gallen** (SP_xERA 4.34), and a significant boost from a dynamic platoon advantage. **Carson Benge** also presents a strong option at 62.65, benefiting from a susceptible opposing starter in **Urena** (SP_xERA 5.16) and a good platoon split, with his order at #7 contributing positively. **Junior Caminero**, despite a slight park disadvantage, still lands in the \"Strong\" tier with a score of 60.63, largely due to a solid overall projection and his #2 batting order slot.\n\nSeveral players are seeing their scores elevated by specific factors. **Kazuma Okamoto** (63.91) benefits greatly from a matchup against **Woods Richardson** (SP_xERA 4.87), a highly favorable situation for his metrics. **Chase Meidroth** (52.93) and **Caleb Durbin** (49.84) are also facing **M\u00e1rquez** (SP_xERA 5.12) and **Burrows** (SP_xERA 3.90) respectively, with their scores showing a positive SP Skill adjustment. **Kyle Schwarber** (59.22) is nearly in the elite tier, with a good xwOBA and a 10% boost from his leadoff spot, narrowly missing out on the highest tier.\n\nThe most intriguing bench decision involves **Trea Turner**, who is currently out of the lineup due to being \"Not in MLB Starting Lineup (Benched/IL/Rest)\". While his projected score would typically be high enough to warrant a starting spot, his absence from the lineup today, for reasons yet to be fully clarified in this view, forces the optimizer to look elsewhere. **Christian Yelich** remains unavailable due to being on the Injured List.\n\nIt's worth noting **Yordan Alvarez**'s (51.14) score is somewhat depressed by facing a left-handed pitcher in **Bennett**, and his SP_xERA is an almost impossible 0.00 which, while appearing elite, is likely a data anomaly that the system is heavily penalizing. **Jerar Encarnacion** (48.52) also faces a tough left-handed pitcher in **McClanahan** (SP_xERA 4.36). Additionally, **Pete Crow-Armstrong**'s score had a slight Wind In deduction, which is worth monitoring as the game progresses.",
+    "total_efficiency_score": 575.63,
+    "narrative": "The Zurich Zebras enter May 1st with a lineup headlined by **Pete Crow-Armstrong**, who earns today\u2019s top mark of 73.24. Despite hitting 8th, his aggressive dynamic platoon advantage against Gallen provides a high-ceiling profile for stolen bases, a category we are prioritizing heavily today given our pursuit of efficiency. **Kazuma Okamoto** (63.91) and **Carson Benge** (62.65) follow closely as our most reliable bats, both benefiting significantly from weak opposing starters\u2014Woods Richardson and Urena, respectively\u2014whose xERAs north of 4.80 create prime environments for run production. Conversely, we are keeping a close eye on **Yordan Alvarez** (51.14); while his elite raw talent is undeniable, he faces a daunting matchup against Bennett (1.80 xERA), suppressing his daily efficiency score despite the favorable park factors.\n\nStrategic decisions for today centered on balancing daily caps against defensive mobility. **Junior Caminero** (60.63) remains a start despite facing a tough southpaw in Ray, as his role at the #2 spot provides enough volume to overcome the platoon disadvantage. On the fringe, **Caleb Durbin** (49.84) narrowly edged out our other utility options; while his spot in the 9-hole hurts his run-scoring potential, his elite sprint speed keeps him in the lineup over bench depth like **Josh Smith** or **Luke Raley** to ensure we maintain our competitive advantage in SB. We continue to monitor the status of **Christian Yelich**, who remains on the IL, and we are holding **Trea Turner**, **Hyeseong Kim**, and **Colt Keith** in reserve today as they are not currently featured in their respective MLB starting lineups, leaving us with minimal flexibility should late-inning defensive replacements or weather delays occur.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -322,7 +322,7 @@
                 }
             ],
             "Opponent": "Bennett (L)",
-            "SP_xERA": "0.00",
+            "SP_xERA": "1.80",
             "Warning": "",
             "GameTime": "2026-05-01T23:10:00Z",
             "Order": "2",
@@ -425,7 +425,7 @@
             "Slot": "UTIL",
             "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Score": 69.57522278540401,
+            "Score": 73.23707661621474,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -455,11 +455,6 @@
                 {
                     "label": "Order #8",
                     "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
                     "type": "negative"
                 }
             ],
@@ -558,11 +553,46 @@
             "Player": "Gary Sanchez",
             "POS": "C",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "10:45 PM",
+            "Opponent": "Irvin, J (R)",
+            "SP_xERA": "4.54",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.05",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -570,7 +600,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-01T22:45:00Z"
         },
         {
             "Slot": "BN",
@@ -644,11 +674,46 @@
             "Player": "Josh Smith",
             "POS": "1B/2B/SS/3B/OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "10:40 PM",
+            "Opponent": "Flaherty (R)",
+            "SP_xERA": "4.21",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "46.32",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -656,7 +721,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-01T22:40:00Z"
         },
         {
             "Slot": "BN",
