@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-02",
-    "last_updated": "2026-05-02T16:39:02.480147+00:00",
+    "last_updated": "2026-05-02T17:39:32.625806+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 784.41,
-    "narrative": "Today\u2019s slate is anchored by the elite 86.57 rating for **Jos\u00e9 Ram\u00edrez**, who benefits significantly from a favorable park factor and a matchup against a left-handed arm in Jacob Lopez. While most of our lineup faces right-handed starters, **Jos\u00e9 Ram\u00edrez** remains our most bankable asset, showing high offensive efficiency regardless of handedness. On the other end of the spectrum, **Lawrence Butler** (66.81) and **Will Smith** (66.36) offer excellent value despite lower lineup spots, with **Lawrence Butler** specifically thriving thanks to a 13% platoon boost against righty Slade Cecconi. While **Geraldo Perdomo** (63.70) is in a tough spot against the high-velocity Imanaga, his move to the #2 hole provides just enough projected volume to justify the start in our utility slot.\n\nThe most difficult decision for the team today was keeping **Matt Chapman** (46.03) on the bench. He hovered near the cut line, but his efficiency was dragged down by the matchup against Griffin Jax, whose 3.01 xERA serves as a significant hurdle. Although **Matt Chapman** has the benefit of the #2 spot, the optimizer favored the higher volatility/upside of **Gavin Sheets** and **Wenceel Perez**\u2014the latter being included specifically for his 100% stolen base profile. We must monitor the official lineups closely; should anyone like **Tyler Freeman** be shifted further down the order against Chris Sale, we may need to pivot to our bench depth to ensure we are maximizing our limited game caps. Risk remains elevated across the board due to \"Lineup Pending\" status for nearly every slot, so stay alert for any late-breaking changes that could impact the situational advantages currently favoring **Cal Raleigh** and **Jonathan Aranda**.",
+    "total_efficiency_score": 787.5,
+    "narrative": "For LawDog on this May 2nd, the offensive engine is anchored by **Jos\u00e9 Ram\u00edrez**, who boasts the day's peak efficiency at 86.34. Facing Lopez, **Jos\u00e9 Ram\u00edrez** benefits from a potent combination of a 10% park boost and a +13% SP skill advantage, making him our must-start cornerstone. **Lawrence Butler** (69.01) and **Will Smith** (66.36) round out the top tier; **Lawrence Butler** is particularly intriguing as he capitalizes on a 13% platoon edge against Cecconi, while **Will Smith** projects well assuming he occupies the heart of the order. Meanwhile, **Taylor Ward** (61.70) remains a strong play despite facing Weathers, as his 9% platoon boost and favorable batting order placement maintain his utility even against a sub-4.00 xERA arm.\n\nThe most difficult decision for the lineup optimizer involved **Matt Chapman**, whose 46.03 score narrowly kept him on the bench. While his BvP and potential for stolen bases against the slower delivery of Griffin Jax provided some upside, his score was suppressed by a poor 3.01 xERA matchup and park factors, ultimately falling short of the threshold set by the likes of **Gavin Sheets** and **Masyn Winn**. We are also keeping a close eye on the volatile matchup for **Tyler Freeman**, who must navigate a difficult 2.99 xERA outing against Sale; he holds a 49.81 score, largely inflated by a 14% park advantage, but he represents our highest risk of stagnation today. With several lineups still \"Pending,\" including **Will Smith**, **Cal Raleigh**, **Jonathan Aranda**, **Masyn Winn**, **Gleyber Torres**, **Tyler Freeman**, **Gavin Sheets**, and **Wenceel Perez**, we remain cautious about late-inning defensive substitutions or batting order drops that could drag these efficiency scores further down.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -166,13 +166,8 @@
             "Slot": "2B",
             "Player": "Bryson Stott",
             "POS": "2B/SS",
-            "Score": 55.521598102229596,
+            "Score": 56.63203006427419,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.67",
@@ -197,13 +192,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+13%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Meyer (R)",
             "SP_xERA": "3.75",
             "Warning": "",
             "GameTime": "2026-05-02T20:10:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "08:10 PM"
         },
         {
@@ -303,13 +303,8 @@
             "Slot": "3B",
             "Player": "Jos\u00e9 Ram\u00edrez",
             "POS": "3B",
-            "Score": 86.56907732701586,
+            "Score": 86.34313163632237,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "64.13",
@@ -336,16 +331,21 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jacob Lopez (L)",
+            "Opponent": "Lopez, J (L)",
             "SP_xERA": "4.54",
             "Warning": "",
             "GameTime": "2026-05-02T20:05:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "08:05 PM"
         },
         {
@@ -543,13 +543,8 @@
             "Slot": "OF5",
             "Player": "Lawrence Butler",
             "POS": "OF",
-            "Score": 66.80984394851997,
+            "Score": 69.01236627649315,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.42",
@@ -576,16 +571,16 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #9",
-                    "value": "-8%",
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Slade Cecconi (R)",
+            "Opponent": "Cecconi (R)",
             "SP_xERA": "4.33",
             "Warning": "",
             "GameTime": "2026-05-02T20:05:00Z",
-            "Order": "9*",
+            "Order": "8",
             "Start": "08:05 PM"
         },
         {
@@ -682,17 +677,12 @@
             "Slot": "BN",
             "Player": "Yainer Diaz",
             "POS": "C",
-            "Order": "6*",
+            "Order": "6",
             "Start": "08:10 PM",
             "Opponent": "Early (L)",
             "SP_xERA": "2.97",
             "Score": 45.7673104440454,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.32",
@@ -719,7 +709,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }

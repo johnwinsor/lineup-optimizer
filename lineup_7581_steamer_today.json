@@ -1,15 +1,15 @@
 {
     "target_date": "2026-05-02",
-    "last_updated": "2026-05-02T16:38:33.631280+00:00",
+    "last_updated": "2026-05-02T17:39:02.066432+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 774.82,
-    "narrative": "The Austin Waves lineup for May 2nd is anchored by **Jackson Merrill** (75.10) and **Kyle Tucker** (70.51), who headline today\u2019s starters due to favorable matchups against Michael McGreevy and Sean Burke. **Jackson Merrill** is a priority play; beyond his high efficiency score, the combination of his leadoff spot and a high stolen base probability against a pitcher with a slow delivery makes him our top source for elite speed production. Similarly, **Jacob Wilson** (68.37) earns a strong endorsement in his leadoff role; while Slade Cecconi presents a respectable challenge, **Jacob Wilson** benefits significantly from a park factor boost and the premium lineup positioning that maximizes his opportunity to contribute across all five categories.\n\nThe most difficult decision on today\u2019s board was keeping **Coby Mayo** (53.08) on the bench. While his score is respectable, he ultimately fell short of the starting criteria due to a lower projected floor compared to **Marcell Ozuna** and **Andy Pages**. The optimizer favored the higher raw projection of **Andy Pages** (60.24) against Michael McGreevy, banking on the pitcher\u2019s 4.48 xERA to provide enough volume to outweigh the platoon edge **Coby Mayo** would have enjoyed against Weathers. Additionally, **Gunnar Henderson** (56.12) remains in the lineup despite a challenging matchup against a left-handed pitcher; his inclusion is driven by his elite profile and a slight situational boost provided by Weathers' slow delivery, which keeps our stolen base potential elevated even when the platoon splits are not in his favor.\n\nRisk management remains a primary focus, as the majority of our lineup hinges on \"Lineup Pending\" designations. We are particularly cautious regarding the status of **Drake Baldwin** (66.86); while his park and order-adjusted score are elite, any lineup fluctuation could dampen his production. Furthermore, **Vladimir Guerrero Jr.** (60.85) faces the stiffest test of the day against Prielipp; while his 0.388 xwOBA suggests he is matchup-proof, his score is depressed by the SP's ability to limit production. We will monitor the weather and official lineups closely to ensure that our commitment to speed-heavy hitters like **Jackson Merrill** and **Jacob Wilson** is not compromised by late-breaking negative variables.",
+    "total_efficiency_score": 765.33,
+    "narrative": "The **Austin Waves** lineup for 2026-05-02 is headlined by **Jackson Merrill**, who secures our top efficiency score of 75.10. His placement in the lead-off spot against Sean Burke, paired with a favorable 4.35 xERA matchup, makes him the premier target for runs and stolen base potential. **Kyle Tucker** (70.51) and **Drake Baldwin** (68.14) follow closely as our most reliable anchors; **Kyle Tucker** benefits from a high-floor matchup against Michael McGreevy, while **Drake Baldwin**\u2019s projected #2 spot against the lefty Brennan Bernardino provides a significant boost, buoyed by a +14% park factor that elevates his overall efficiency.\n\nThe most difficult decision for today\u2019s roster was determining the final bench spot between **Coby Mayo** and **Jacob Wilson**. While **Coby Mayo** (53.08) offered an intriguing platoon advantage against the lefty Ryan Weathers, **Jacob Wilson** (62.15) ultimately locked down the starting SS slot. The optimizer prioritized **Jacob Wilson**\u2019s higher raw efficiency and the +10% park factor, which outweighed the secondary platoon metrics favoring **Coby Mayo**. We are monitoring the \"Lineup Pending\" status for **Drake Baldwin**, **Nasim Nunez**, **Josh Jung**, **Josh Lowe**, **Dominic Smith**, **Jackson Merrill**, **Andy Pages**, and **Kyle Tucker** closely; should any of these players be dropped from their assumed spots, their efficiency scores will likely compress, necessitating a quick pivot to our depth, including **Miguel Vargas** or **Luis Garc\u00eda Jr.** \n\nFinally, managers should be cautious regarding the 19% negative efficiency hit tied to **Josh Lowe** and **Nolan Schanuel** facing Nolan McLean. Despite the +14% dynamic platoon edge for **Josh Lowe**, the quality of the opposing arm significantly drags down his projected ceiling, landing him at a marginal 48.21. We are relying on the heavy hitting of **Vladimir Guerrero Jr.** (60.85) to provide stability at 1B, despite a challenging matchup against the lefty Prielipp, as his xwOBA remains high enough to warrant a start even in a non-optimal platoon environment.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Drake Baldwin",
             "POS": "C",
-            "Score": 66.86288919384027,
+            "Score": 68.13827921697616,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -32,13 +32,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Brennan Bernardino (L)",
+            "SP_xERA": "4.05",
             "Warning": "",
             "GameTime": "2026-05-03T00:10:00Z",
             "Order": "2*",
@@ -76,7 +86,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Andrew Painter (R)",
+            "Opponent": "Painter (R)",
             "SP_xERA": "4.01",
             "Warning": "",
             "GameTime": "2026-05-02T20:10:00Z",
@@ -174,7 +184,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Kyle Harrison (L)",
+            "Opponent": "Harrison (L)",
             "SP_xERA": "3.70",
             "Warning": "",
             "GameTime": "2026-05-02T20:05:00Z",
@@ -185,13 +195,8 @@
             "Slot": "SS",
             "Player": "Jacob Wilson",
             "POS": "SS",
-            "Score": 68.3673709088931,
+            "Score": 62.15215537172099,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.87",
@@ -216,18 +221,13 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "-4%",
                     "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Slade Cecconi (R)",
+            "Opponent": "Cecconi (R)",
             "SP_xERA": "4.33",
             "Warning": "",
             "GameTime": "2026-05-02T20:05:00Z",
-            "Order": "1*",
+            "Order": "6",
             "Start": "08:05 PM"
         },
         {
@@ -381,7 +381,7 @@
             "Slot": "OF2",
             "Player": "Dominic Smith",
             "POS": "1B/OF",
-            "Score": 51.486836796072076,
+            "Score": 46.933396536743736,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -404,13 +404,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Brennan Bernardino (L)",
+            "SP_xERA": "4.05",
             "Warning": "",
             "GameTime": "2026-05-03T00:10:00Z",
             "Order": "7*",
@@ -595,7 +605,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Rhett Lowder (R)",
+            "Opponent": "Lowder (R)",
             "SP_xERA": "4.45",
             "Warning": "",
             "GameTime": "2026-05-02T20:05:00Z",
@@ -658,7 +668,7 @@
             "POS": "1B/2B",
             "Order": "2*",
             "Start": "08:05 PM",
-            "Opponent": "Kyle Harrison (L)",
+            "Opponent": "Harrison (L)",
             "SP_xERA": "3.70",
             "Score": 48.72640379299516,
             "Breakdown": [
@@ -947,7 +957,7 @@
             "POS": "3B",
             "Order": "6*",
             "Start": "08:05 PM",
-            "Opponent": "Kyle Harrison (L)",
+            "Opponent": "Harrison (L)",
             "SP_xERA": "3.70",
             "Score": 40.981999993831096,
             "Breakdown": [

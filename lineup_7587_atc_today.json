@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-02",
-    "last_updated": "2026-05-02T16:38:05.540858+00:00",
+    "last_updated": "2026-05-02T17:38:36.022097+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 780.95,
-    "narrative": "For today\u2019s slate, our offensive core is headlined by **Trevor Story** (75.93) and **Tyler Soderstrom** (68.54), both of whom benefit from favorable matchups against pitchers with mediocre expected ERAs. **Trevor Story** is particularly intriguing; while his base projections are steady, his score is bolstered by a +19% boost from facing a pitcher with a soft delivery, maximizing his stolen base potential\u2014a key priority for our roster strategy. Similarly, **Vinnie Pasquantino** (67.83) offers a high floor, carrying a strong platoon advantage (+14%) against Emerson Hancock that cements his status as our primary utility option. **Josh Naylor** (66.05) rounds out the high-confidence tier, maintaining a strong offensive profile despite a slight park penalty in his contest against Seth Lugo.\n\nThe bench decision for this cycle was notably tight between **Travis Bazzana** (49.65) and **Jose Caballero** (41.62). While **Jose Caballero** represents a significant threat on the basepaths, his projected efficiency was heavily diluted by an unfavorable matchup against Bradish and a late-order slot, which relegated him to the bench in favor of the higher-upside **Travis Bazzana**. **Travis Bazzana** retains his spot despite a challenging L/L platoon because his elite xwOBA of 0.408 provides a level of quality contact that supersedes the platoon-weighted projections of our reserve options.\n\nRisks remain on the periphery, particularly with **Mickey Moniak** (47.53). Facing Chris Sale is a major hurdle; despite a positive park factor, the severe -19% SP skill penalty and -15% platoon disadvantage suggest a high-risk, low-reward profile. Owners should monitor the official lineup cards for **Luis Campusano** and **Dalton Rushing** closely, as the \"Lineup Pending\" status introduces volatility. Should **Luis Campusano** fall further down the order than our #9 assumption, his already marginal 43.74 score may dip below our efficiency floor, necessitating a potential late-game swap with the likes of **Alex Freeland** or **Kyle Karros** if they were to see unexpected starts.",
+    "total_efficiency_score": 784.61,
+    "narrative": "Our strongest play today is **Trevor Story** (75.93), who benefits from a favorable matchup against Arrighetti. Beyond the SP skill advantage, **Story** stands out due to a slow opposing delivery that significantly bolsters his stolen base potential\u2014a critical factor for our strategy. **Tyler Soderstrom** (72.65) and **Vinnie Pasquantino** (67.84) also anchor the daily output; **Pasquantino** enjoys a substantial platoon-driven boost against Emerson Hancock, while **Soderstrom** capitalizes on the combination of a high-ceiling order spot and a vulnerable pitcher. While **Corbin Carroll** (63.85) faces a daunting task against the elite Imanaga, his underlying power-speed profile keeps him in the \"Strong\" start tier, even with a penalty for the opponent\u2019s ability to neutralize base stealers.\n\nThe tightest bench decision involves **Jose Caballero**, who missed the cut with a 41.62 score. Despite his high stolen base upside (60%), his projected output was heavily suppressed by a difficult matchup against Bradish and a low-leverage batting position. **Alex Freeland** was similarly considered but ultimately left on the bench as the optimizer prioritized the higher-rated floor provided by **Travis Bazzana**. We are closely monitoring the \"Lineup Pending\" status for **Luis Campusano**, **Dalton Rushing**, **Josh Naylor**, **Austin Riley**, **Mickey Moniak**, **James Wood**, and **Vinnie Pasquantino**; specifically, **Mickey Moniak** faces significant risk today, as his projection suffers from a sharp downward adjustment against the elite Chris Sale. We expect volatility across these spots as official lineups are posted, but for now, the efficiency scores suggest we are well-positioned to chase counting stats without over-leveraging our game caps.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -154,11 +154,6 @@
             "Score": 59.48370531657909,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "55.60",
                     "type": "info"
@@ -188,7 +183,7 @@
             "SP_xERA": "3.96",
             "Warning": "",
             "GameTime": "2026-05-02T20:05:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "08:05 PM"
         },
         {
@@ -233,7 +228,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Spencer Arrighetti (R)",
+            "Opponent": "Arrighetti (R)",
             "SP_xERA": "4.76",
             "Warning": "",
             "GameTime": "2026-05-02T20:10:00Z",
@@ -246,11 +241,6 @@
             "POS": "2B",
             "Score": 49.654685296411664,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "45.52",
@@ -287,18 +277,18 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Jacob Lopez (L)",
+            "Opponent": "Lopez, J (L)",
             "SP_xERA": "4.54",
             "Warning": "",
             "GameTime": "2026-05-02T20:05:00Z",
-            "Order": "7*",
+            "Order": "7",
             "Start": "08:05 PM"
         },
         {
             "Slot": "3B",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Score": 62.768838643767566,
+            "Score": 62.309750704674904,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -319,10 +309,20 @@
                     "label": "Park",
                     "value": "+14%",
                     "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Brennan Bernardino (L)",
+            "SP_xERA": "4.05",
             "Warning": "",
             "GameTime": "2026-05-03T00:10:00Z",
             "Order": "6*",
@@ -381,13 +381,8 @@
             "Slot": "OF2",
             "Player": "Tyler Soderstrom",
             "POS": "1B/OF",
-            "Score": 68.5411769440722,
+            "Score": 72.65364756071655,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.86",
@@ -412,13 +407,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Slade Cecconi (R)",
+            "Opponent": "Cecconi (R)",
             "SP_xERA": "4.33",
             "Warning": "",
             "GameTime": "2026-05-02T20:05:00Z",
-            "Order": "6*",
+            "Order": "3",
             "Start": "08:05 PM"
         },
         {
@@ -566,7 +566,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Kyle Harrison (L)",
+            "Opponent": "Harrison (L)",
             "SP_xERA": "3.70",
             "Warning": "",
             "GameTime": "2026-05-02T20:05:00Z",
