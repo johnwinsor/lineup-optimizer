@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-05",
-    "last_updated": "2026-05-05T06:18:53.953392+00:00",
+    "last_updated": "2026-05-05T13:15:26.095632+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 784.19,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 786.04,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Trea Turner** (79.67) and **Kyle Schwarber** (76.09) anchoring the lineup, both benefiting from favorable wind conditions and a soft matchup against Luis Severino. **Turner** is the clear priority; his elite speed profile remains our primary engine for SB accumulation, and the added wind-out advantage combined with his spot at the top of the order creates a massive ceiling. **Schwarber** remains an elite play as well, with his strong xwOBA (0.396) providing the high-floor power production necessary to carry the team\u2019s HR and RBI totals. Further down the order, **Chase Meidroth** (66.48) and **Josh Smith** (64.61) emerge as sneaky high-efficiency starts due to favorable platoon advantages against weak SP_xERA matchups (5.50 and 7.06, respectively).\n\nWhile **Yordan Alvarez** (58.67) and **Junior Caminero** (59.91) are high-ceiling talents, their scores are suppressed today by difficult matchups against ace-caliber arms in Shohei Ohtani and Kevin Gausman. The most difficult bench decision involved **Caleb Durbin** (50.14), who boasts an elite 100% SB potential against the slow delivery of Framber Valdez. However, the optimizer opted for the higher base efficiency and lineup placement of **Carson Benge** (59.19) and **Pete Crow-Armstrong** (58.06). **Crow-Armstrong** remains a high-variance play; while he holds a +4% boost for his speed against a slow-working Andrew Abbott, his score takes a significant hit from his placement in the #8 spot. We must closely monitor the \"Lineup Pending\" status for **Dillon Dingler**, as any shift from his projected #3 spot will impact his current 63.75 score, especially as he represents our most reliable source of balanced production behind the plate.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -63,7 +63,7 @@
             "Slot": "C2",
             "Player": "Gary Sanchez",
             "POS": "C",
-            "Score": 53.28883198538142,
+            "Score": 50.624390386112346,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -99,6 +99,11 @@
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Andre Pallante (R)",
@@ -205,7 +210,7 @@
             "Slot": "SS",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Score": 75.87949285895097,
+            "Score": 79.67346750189851,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -240,6 +245,11 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -357,7 +367,7 @@
             "Slot": "OF1",
             "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Score": 60.96015406555906,
+            "Score": 58.057289586246725,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -398,11 +408,6 @@
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Andrew Abbott (L)",
@@ -465,7 +470,7 @@
             "Slot": "OF3",
             "Player": "Kyle Schwarber",
             "POS": "OF",
-            "Score": 72.47195583081295,
+            "Score": 76.0955536223536,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -506,6 +511,11 @@
                     "label": "xwOBA Good",
                     "value": "0.396",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Luis Severino (R)",
