@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-04",
-    "last_updated": "2026-05-04T23:44:44.504276+00:00",
+    "last_updated": "2026-05-05T02:10:37.357808+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 705.35,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with **Pete Crow-Armstrong** serving as our clear offensive anchor. His score of 82.13 is driven by a massive +19% SP Skill boost against Petty, who represents our softest opposing arm of the day (xERA 6.57). Given that stolen bases are at a premium for our squad, his elite sprint speed makes him an auto-start, especially with favorable wind conditions providing a slight ceiling boost. Similarly, **Junior Caminero** (65.79) and **Trea Turner** (65.20) are high-floor pivots against Lauer and Junk, respectively; **Trea Turner** remains locked into the leadoff spot, capitalizing on high-volume opportunities, while **Junior Caminero** benefits from a strong order placement and a favorable SP xERA of 4.38.\n\nConversely, our lineup composition reflects a cautious approach to platoon disadvantages and high-end pitching. **Colt Keith** (42.94) and **Hyeseong Kim** (41.69) are teetering near our bench threshold, as both face left-handed opposition, which severely crimps their efficiency scores. While **Hyeseong Kim** gets a marginal bump due to the opposing pitcher\u2019s slow delivery\u2014a tactical edge we are exploiting to hunt stolen bases\u2014the limited upside against a lefty like Okert makes him a bottom-tier start. We reviewed potential utility depth, but with **Christian Yelich** and **Lars Nootbaar** remaining on the IL and **Caleb Durbin** absent from the confirmed starting lineup, our depth is currently constrained. We are essentially riding our active high-xwOBA producers like **Yordan Alvarez** (63.86) despite his tough matchup against Yamamoto, relying on his elite discipline to outperform the SP skill deficit. Manage your game caps closely; the delta between our top play, **Pete Crow-Armstrong**, and our marginal starters is significant enough that we may look to pull the plug on **Hyeseong Kim** if the early innings suggest a suppressed run environment.",
+    "total_efficiency_score": 703.04,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Pete Crow-Armstrong** serving as our clear focal point. With a stellar score of 82.07, he faces a favorable matchup against Petty (6.57 xERA), and his elite speed\u2014our primary scarcity target\u2014positions him to capitalize on the weak opposing arm. **Junior Caminero** (65.79) and **Trea Turner** (65.20) round out our top-tier plays. **Trea Turner** is particularly vital today, as his leadoff spot against Junk provides a 10% efficiency bump, ensuring he remains our most reliable engine for Runs and SB production. We also expect strong offensive contributions from **Yordan Alvarez** (63.86) and **Carson Benge** (63.27), the latter of whom benefits significantly from a +14% park factor that elevates his utility despite a lower-middle-order assignment.\n\nThe most difficult bench decision involved **Caleb Durbin**; while his base projection is solid, his status as a non-starter in today's official lineup rendered him ineligible for the active roster. We are currently monitoring **Hyeseong Kim** (41.69) and **Colt Keith** (42.94), who sit near the threshold of our floor. **Hyeseong Kim** remains in the lineup primarily due to the \"Slow SP Delivery\" bonus, which increases his stolen base potential despite an unfavorable platoon disadvantage against Okert. Conversely, we are keeping a close watch on **Kazuma Okamoto** (58.18); while he performs well, his output is hampered by a -6% park factor. We continue to hold **Christian Yelich**, **Zac Veen**, and **Lars Nootbaar** in reserve due to their ongoing IL or minor league assignments, leaving our depth options like **Gary Sanchez**, **Josh Smith**, **Pedro Ramirez**, and **Luis Pena** as strictly situational depth should any of our starters be pulled mid-game.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -102,7 +102,7 @@
             "Slot": "2B",
             "Player": "Chase Meidroth",
             "POS": "2B/SS",
-            "Score": 47.23986369677955,
+            "Score": 44.99034637788528,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -132,11 +132,6 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -337,7 +332,7 @@
             "Slot": "OF2",
             "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Score": 82.12656281501984,
+            "Score": 82.07108175925146,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -368,11 +363,6 @@
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Petty (R)",
@@ -589,11 +579,41 @@
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "10:10 PM",
+            "Opponent": "Holton (L)",
+            "SP_xERA": "4.01",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "53.90",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -601,7 +621,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-04T22:10:00Z"
         },
         {
             "Slot": "BN",
@@ -656,11 +676,46 @@
             "Player": "Gary Sanchez",
             "POS": "C",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:45 PM",
+            "Opponent": "Leahy (R)",
+            "SP_xERA": "3.93",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "48.18",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -668,7 +723,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-04T23:45:00Z"
         },
         {
             "Slot": "BN",
