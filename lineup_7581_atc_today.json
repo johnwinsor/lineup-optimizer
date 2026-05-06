@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-06",
-    "last_updated": "2026-05-06T21:08:02.640104+00:00",
+    "last_updated": "2026-05-06T22:43:15.638688+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 801.32,
-    "narrative": "The Austin Waves lineup today is headlined by two elite plays: **Kyle Tucker** (77.96) and **Jackson Merrill** (75.27). **Tucker** benefits from a high-floor matchup against McCullers Jr., where his base projection is bolstered by an 18% boost due to the favorable SP matchup. Meanwhile, **Merrill** secures a top-tier score thanks to his leadoff spot and a strong platoon advantage, though we are tempering expectations slightly regarding his base-stealing potential given the 1.86s pop time of the opposing catcher. **Gunnar Henderson** (73.50) remains a cornerstone of our offensive strategy today; his ability to exploit a slow-delivering pitcher against P\u00e9rez, Eu, paired with his leadoff positioning, makes him a primary engine for our category production, particularly in R and SB.\n\nOn the bench, **Nolan Schanuel** (55.01) was the most difficult exclusion, narrowly missing the cut behind the dynamic speed threat of **Nasim Nunez** and the platoon-advantaged **Sam Antonacci**. While **Schanuel** possesses a solid matchup profile against the left-handed Schultz, our optimizer prioritized the higher efficiency ceiling provided by **Antonacci** (67.67), whose xwOBA of .407 and favorable placement against Ure\u00f1a make him a critical asset for our daily efficiency targets. We are also monitoring the status of **Marcell Ozuna**; despite a decent score of 49.52, the combination of his \"Lineup Pending\" status and lower raw projection relative to our starting outfielders kept him on the bench. \n\nInvestors should note the elevated risk profiles for both **Jacob Wilson** and **Josh Jung**. **Wilson** faces the elite arm of Wheeler, which severely hampers his projection despite the benefit of a favorable wind; we are starting him, but his 47.63 score reflects that difficulty. Conversely, **Josh Jung** is being held in reserve not just for performance reasons, but due to a 45% rain risk at his venue. We are confident in today's alignment to maximize our 5x5 output while maintaining our strict adherence to efficiency thresholds.",
+    "total_efficiency_score": 796.58,
+    "narrative": "The Austin Waves are primed for a high-ceiling outing today, headlined by **Kyle Tucker** (77.96) and **Gunnar Henderson** (73.50), who represent our strongest offensive pillars. **Kyle Tucker** faces a generous matchup against McCullers Jr. (4.75 xERA), benefiting from a significant boost in SP skill projection that elevates his output. Meanwhile, **Gunnar Henderson** capitalizes on the combination of a favorable platoon advantage and a slow opposing delivery from P\u00e9rez, which creates an ideal environment for his elite speed tool to manifest in the stolen base column. **Jackson Merrill** (70.52) and **Sam Antonacci** (67.67) follow closely behind; **Sam Antonacci** in particular is a high-conviction play against Ure\u00f1a (5.17 xERA), where his elite xwOBA (.407) aligns perfectly with the soft matchup to generate maximum efficiency.\n\nThe most difficult decision on the bench involved **Nolan Schanuel** (55.01), who hovered on the fringe of the starting rotation but was ultimately squeezed out by the superior power-speed profiles of our primary starters. While **Nolan Schanuel** boasts an impressive SP skill efficiency (+17%), he lacks the aggressive lineup placement afforded to players like **Liam Hicks** or **Drake Baldwin**. Tactical adjustments continue to be necessary, particularly regarding **Heliot Ramos** (44.75), whose score is suppressed by a tough matchup against Rodriguez; however, he remains in the lineup due to the lack of a higher-projected replacement among our bench depth. We are monitoring **Josh Jung** (48.57) closely, as the 45% rain risk serves as a primary deterrent alongside his relatively stagnant matchup against Warren, making him a clear fade in favor of our more stable, high-efficiency options.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -337,7 +337,7 @@
             "Slot": "OF1",
             "Player": "Jackson Merrill",
             "POS": "OF",
-            "Score": 75.26806529669553,
+            "Score": 70.52163340861698,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -363,6 +363,11 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+13%",
                     "type": "positive"
+                },
+                {
+                    "label": "BvP Poor (38 PA)",
+                    "value": "-7%",
+                    "type": "negative"
                 },
                 {
                     "label": "Elite Catcher (1.86s)",
@@ -935,11 +940,46 @@
             "Player": "Dominic Smith",
             "POS": "1B/OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Woo (R)",
+            "SP_xERA": "3.65",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "46.39",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-5%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -947,7 +987,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-06T20:10:00Z"
         }
     ]
 }
