@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-07",
-    "last_updated": "2026-05-07T19:43:31.925238+00:00",
+    "last_updated": "2026-05-07T21:03:02.736587+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 581.54,
-    "narrative": "Our strongest starting options today are led by **Jos\u00e9 Ram\u00edrez**, who checks in with an elite 76.1 score. The matchup against Seth Lugo (R) is neutral on the surface (SP_xERA 4.39), but **Jos\u00e9 Ram\u00edrez** benefits from a strong batter's park, a favorable batting order position at #3, and an impressive xwOBA. **Tyler Freeman** is also a strong play with a 72.5 score, buoyed by a significant park boost and solid SP skill against Chase Scott (R). **Bryson Stott** also presents a compelling option at 64.8, with his score getting a substantial lift from a dynamic platoon advantage against J.T. Ginn (R) and a positive impact from a slow opposing pitcher delivery for stolen bases.\n\nSeveral players are benefiting from situational factors beyond raw projection. **Geraldo Perdomo** is projected for a 63.2 score, with his leadoff spot providing a substantial boost to his overall outlook. **Lawrence Butler** lands at 61.3, with a dynamic platoon advantage against an opposing righty being a key driver of his score, even with his assumed #8 lineup spot. It's important to note that several players, including **Jonathan Aranda**, **Lawrence Butler**, **Gavin Sheets**, **Taylor Ward**, **Jeremiah Jackson**, and **Masyn Winn**, have \"Lineup Pending\" status, and their final scores are based on assumed batting orders. We'll need to monitor those lineups closely.\n\nThe most interesting bench decision is not a decision at all, but rather a consequence of injuries and scheduling. Both **Cal Raleigh** and **Will Smith** are unavailable due to team off-days, while **Yainer Diaz** remains on the IL. **Matt Chapman** also had a team off-day, preventing him from even being considered for a start. The optimizer had no real tough choices to make among the benched players today due to these external factors. One minor warning to flag is the presence of Max Meyer (R) with a 3.69 SP_xERA for **Taylor Ward** and **Jeremiah Jackson**, indicating a tougher pitching matchup that tempers their upside despite some lineup order advantages.",
+    "total_efficiency_score": 582.2,
+    "narrative": "The primary engine for LawDog\u2019s success today is **Jos\u00e9 Ram\u00edrez**, who commands an elite score of 76.01. Facing a favorable matchup against Seth Lugo, **Jos\u00e9 Ram\u00edrez** benefits from a strong wind-out projection and a prime batting order position, making him our safest bet for high-floor production. **Tyler Freeman** (72.53) also warrants heavy attention; his score is significantly elevated by a +14% park factor and a solid matchup against Scott, offering the best statistical value among our outfielders today. While **Bryson Stott** (63.53) faces a moderate arm in Ginn, his profile remains intriguing; despite the minor negative adjustment for Ginn\u2019s elite catcher, **Bryson Stott** should capitalize on the pitcher's slow delivery to potentially swipe a base, which remains our highest priority in this 5x5 format.\n\nThe most challenging decision today involves our outfield depth and the lower-tier utility spots. **Taylor Ward** (46.27) and **Jeremiah Jackson** (42.74) both cleared the floor, but their scores reflect the difficulty of the matchup against Meyer. **Taylor Ward** is buoyed by his #2 spot in the order, but the platoon penalty is suppressing his upside. **Masyn Winn** (50.23) was the closest to a benching; while his ability to contribute in stolen bases is vital, the \"Elite Hold\" capability of Michael King creates enough friction to make **Masyn Winn** a marginal play. We are monitoring the lineups for **Gavin Sheets** and **Masyn Winn** closely; should either be pushed further down the batting order than the assumed #4 and #6 positions, their efficiency scores would drop toward the sub-40 \"Below Floor\" threshold, likely triggering a defensive replacement to preserve our game caps.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -11,11 +11,6 @@
             "POS": "1B",
             "Score": 52.236904617228554,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.07",
@@ -56,7 +51,7 @@
             "SP_xERA": "4.20",
             "Warning": "",
             "GameTime": "2026-05-07T23:10:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "11:10 PM"
         },
         {
@@ -107,7 +102,7 @@
             "Slot": "MI",
             "Player": "Bryson Stott",
             "POS": "2B/SS",
-            "Score": 64.82847846018686,
+            "Score": 63.531908890983125,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -135,12 +130,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Slow SP Delivery (100% SB)",
                     "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "J.T. Ginn (R)",
+            "Opponent": "Ginn (R)",
             "SP_xERA": "3.92",
             "Warning": "",
             "GameTime": "2026-05-07T22:40:00Z",
@@ -249,13 +249,8 @@
             "Slot": "OF2",
             "Player": "Lawrence Butler",
             "POS": "OF",
-            "Score": 61.25032668571779,
+            "Score": 63.20512434590028,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.27",
@@ -277,8 +272,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
                 }
             ],
@@ -286,7 +281,7 @@
             "SP_xERA": "4.00",
             "Warning": "",
             "GameTime": "2026-05-07T22:40:00Z",
-            "Order": "8*",
+            "Order": "7",
             "Start": "10:40 PM"
         },
         {
@@ -345,11 +340,6 @@
             "Score": 46.272032436300584,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "52.73",
                     "type": "info"
@@ -380,11 +370,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Max Meyer (R)",
+            "Opponent": "Meyer (R)",
             "SP_xERA": "3.69",
             "Warning": "",
             "GameTime": "2026-05-07T22:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "10:40 PM"
         },
         {
@@ -393,11 +383,6 @@
             "POS": "2B/SS/3B/OF",
             "Score": 42.74921527268023,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.70",
@@ -429,11 +414,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Max Meyer (R)",
+            "Opponent": "Meyer (R)",
             "SP_xERA": "3.69",
             "Warning": "",
             "GameTime": "2026-05-07T22:40:00Z",
-            "Order": "9*",
+            "Order": "9",
             "Start": "10:40 PM"
         },
         {
