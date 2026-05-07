@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-07",
-    "last_updated": "2026-05-07T17:56:49.983385+00:00",
+    "last_updated": "2026-05-07T19:35:15.371834+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 583.11,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with **Corbin Carroll** (78.62) leading the charge. His matchup against Mitch Keller offers a pristine environment for production, bolstered by a strong platoon edge and a favorable slot in the three-hole, making him the premier play for speed and power. Right behind him, **James Wood** (76.28) is a must-start at leadoff against a vulnerable arm in Simeon Woods Richardson. **Wood**\u2019s elite xwOBA and the added cushion of a +10% order bonus position him as our most efficient source of volume. **Mickey Moniak** (75.98) also earns a high-confidence start, capitalizing on a significant +14% dynamic platoon advantage and a favorable park factor, rounding out an outfield trio that anchors our daily efficiency targets.\n\nAt the corners, **Vinnie Pasquantino** (72.92) is our strongest infield play, benefiting from a high-floor matchup against Cecconi and a beneficial wind forecast. The most difficult decision today centered on **Travis Bazzana** (56.70) and **Kyle Karros** (54.02); while both sit in the \"marginal\" tier, they narrowly edged out our deeper bench depth. **Trevor Story** (52.39) remains a high-risk, high-reward play despite the stiff competition from Griffin Jax, as his stolen base potential forces him into the lineup despite a sub-standard xERA matchup. We are strictly managing our game caps today, which keeps players like **Jose Caballero**, **Brice Turang**, and **Seiya Suzuki** on the bench due to scheduled days off or lack of confirmed lineup spots, prioritizing the active efficiency of **Luis Campusano** and **Tyler Soderstrom**\u2014though both require monitoring, as \"Lineup Pending\" status for **Campusano** and **Soderstrom** introduces variability to their projected order bonuses.",
+    "narrative": "Our strongest plays today center around elite talent facing favorable matchups. **Corbin Carroll** leads the charge with an exceptional 78.62 score. His base projection is bolstered by a strong dynamic platoon advantage against Matthew Keller (R), a solid park factor, and his usual speed threat. Following closely is **James Wood** at 76.28, who benefits from an extremely favorable matchup against Woods Richardson (R), whose 4.85 SP_xERA suggests he's highly hittable. Wood's position at the top of the order and a solid xwOBA further enhance his outlook. **Mickey Moniak** also presents a compelling case with a 75.98 score, thanks to a significant park boost and a strong dynamic platoon advantage against Scott (R), combined with his projected #2 lineup spot.\n\nSeveral players benefit from specific situational advantages. **Vinnie Pasquantino** slots in with a robust 72.92, largely driven by a powerful dynamic platoon edge against Cecconi (R) and a potent combination of a hitter-friendly park and a high order number. **Tyler Soderstrom**, despite a \"Lineup Pending\" status, is projected to hit third and scores a healthy 63.50, benefiting from a positive dynamic platoon and a favorable park. **Travis Bazzana** (56.70) and **Trevor Story** (52.39) also see score enhancements due to factors like wind assistance and Story's speed advantage against a slow-delivery pitcher.\n\nThe most interesting bench decision involves **Jose Caballero**. His projected score of 0.0 is entirely due to him being benched, but his underlying metrics were strong, achieving a 59.45 score in a projected #5 lineup spot. A dynamic platoon advantage against Gore (L) was particularly noteworthy. However, the \"Not Starting\" flag overrides all other factors, preventing him from even being considered for a starting spot. We have several lineup-pending situations to monitor, most notably with **Luis Campusano** and **Tyler Soderstrom**. While **Luis Campusano**'s 52.71 score is acceptable, his lineup position is critical for optimization. The presence of elite arms like Griffin Jax (R) with a 3.02 SP_xERA against **Trevor Story** is also a point of caution, though Story's speed element provides a slight offset.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -154,11 +154,6 @@
             "Score": 52.39067630936528,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "56.24",
                     "type": "info"
@@ -198,7 +193,7 @@
             "SP_xERA": "3.02",
             "Warning": "",
             "GameTime": "2026-05-07T23:10:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "11:10 PM"
         },
         {
@@ -282,7 +277,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Andrew Painter (R)",
+            "Opponent": "Painter (R)",
             "SP_xERA": "4.00",
             "Warning": "",
             "GameTime": "2026-05-07T22:40:00Z",
@@ -433,11 +428,56 @@
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "04:35 PM",
+            "Opponent": "Gore (L)",
+            "SP_xERA": "3.76",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "59.45",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-5%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (59% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -445,7 +485,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-07T16:35:00Z"
         },
         {
             "Slot": "BN",
