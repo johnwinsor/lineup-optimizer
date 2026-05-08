@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-08",
-    "last_updated": "2026-05-08T22:48:03.732627+00:00",
+    "last_updated": "2026-05-08T23:48:49.968388+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 672.57,
-    "narrative": "The **Austin Waves** offense is anchored today by **Jackson Merrill** (75.27) and **Gunnar Henderson** (71.25), who represent our strongest statistical plays. **Jackson Merrill** benefits from a highly favorable matchup against McGreevy, where his ability to capitalize on a RHP/LHH platoon edge is bolstered by a leadoff spot that maximizes his chances for R and SB production. Meanwhile, **Gunnar Henderson** remains an elite start despite facing a southpaw; his projection is heavily buoyed by an ideal hitter's park and a dynamic platoon profile that survives the SP skill penalty. **Coby Mayo** (65.57) also earns a high-confidence start, as the park factor and positive platoon dynamics against Lopez create an efficiency profile that far exceeds his base projections.\n\nThe most difficult bench decision involved **Heliot Ramos** (45.53), who sat on the cusp of the lineup. While **Heliot Ramos** offered some intrigue due to favorable wind conditions, he ultimately fell short behind **Andy Pages** and **Kyle Tucker** because his matchup against the RHP Mlodzinski yielded a lower total expected output. We are also closely monitoring the high-end risks associated with facing top-tier arms like Sale; despite the talent level of **Kyle Tucker** and **Andy Pages**, their daily efficiency scores have been compressed by Sale\u2019s elite sub-3.00 xERA. Owners should track lineup confirmations closely, as any shift in order for **Drake Baldwin** or **Nasim Nunez** could further pressure their marginal efficiency scores.",
+    "total_efficiency_score": 682.73,
+    "narrative": "The Austin Waves lineup is anchored by **Jackson Merrill**, who earns our highest efficiency score of 75.27 today. Facing a favorable matchup against McGreevy (4.51 xERA) while leading off, **Jackson Merrill** is perfectly positioned to capitalize on his elite sprint speed to chase stolen bases. Similarly, **Gunnar Henderson** (71.25) and **Coby Mayo** (65.57) present strong profiles despite facing Lopez, J (4.42 xERA); they benefit significantly from a favorable park factor (+16%) and dynamic platoon advantages. **Sam Antonacci** also warrants attention as a strong start (60.82), leveraging a leadoff spot and a robust xwOBA against Hancock.\n\nWe are exercising caution with several high-ceiling assets facing elite arms. **Kyle Tucker** (50.24) and **Andy Pages** (45.84) are suppressed by their matchup against Sale (2.94 xERA), a brutal draw that limits their overall scoring potential. The most difficult bench decision involved **Miguel Vargas**, who finished with a 51.54 score. While **Miguel Vargas** was a primary candidate for the utility spot, the optimizer opted for **Brady House** (52.10) due to a higher situational ceiling against Snelling, despite the high volatility associated with that matchup. \n\nRisk management remains a priority today, particularly regarding the lower-floor plays like **Drake Baldwin** (46.81) and **Jacob Wilson** (47.82), who are battling tough SP xERAs of 3.22 and 3.24, respectively. While **Nasim Nunez** (57.57) carries a high score driven by a massive mismatch against Snelling (13.50 xERA), his position at the bottom of the order acts as a performance ceiling. We will monitor lineup confirmation closely for any late-breaking weather or scratch risks that could further depress these efficiency scores, particularly for those players currently riding the line of our marginal start threshold.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -97,7 +97,7 @@
             "Slot": "2B",
             "Player": "Nasim Nunez",
             "POS": "2B/SS",
-            "Score": 47.97842994262674,
+            "Score": 57.57411593115209,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -115,6 +115,11 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
                     "label": "Switch",
                     "value": "+3%",
                     "type": "positive"
@@ -126,7 +131,7 @@
                 }
             ],
             "Opponent": "Snelling (L)",
-            "SP_xERA": "4.00",
+            "SP_xERA": "13.50",
             "Warning": "",
             "GameTime": "2026-05-08T23:10:00Z",
             "Order": "8",
@@ -481,13 +486,13 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Miguel Vargas",
-            "POS": "1B/3B",
-            "Score": 51.5398873359829,
+            "Player": "Brady House",
+            "POS": "3B",
+            "Score": 52.10074563644538,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "49.46",
+                    "value": "46.81",
                     "type": "info"
                 },
                 {
@@ -497,22 +502,17 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-1%",
+                    "value": "-3%",
                     "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+4%",
+                    "value": "+19%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Elite Hold SP (44% SB)",
-                    "value": "-2%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-9%",
                     "type": "negative"
                 },
                 {
@@ -521,12 +521,12 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Hancock (R)",
-            "SP_xERA": "4.17",
+            "Opponent": "Snelling (L)",
+            "SP_xERA": "13.50",
             "Warning": "",
-            "GameTime": "2026-05-08T23:40:00Z",
+            "GameTime": "2026-05-08T23:10:00Z",
             "Order": "3",
-            "Start": "11:40 PM"
+            "Start": "11:10 PM"
         }
     ],
     "players_sat": [
@@ -627,7 +627,7 @@
             "POS": "OF",
             "Order": "7",
             "Start": "02:15 AM",
-            "Opponent": "Carmen Mlodzinski (R)",
+            "Opponent": "Mlodzinski (R)",
             "SP_xERA": "3.66",
             "Score": 45.52552627013068,
             "Breakdown": [
@@ -674,6 +674,60 @@
             ],
             "Warning": "",
             "GameTime": "2026-05-09T02:15:00Z"
+        },
+        {
+            "Slot": "BN",
+            "Player": "Miguel Vargas",
+            "POS": "1B/3B",
+            "Order": "3",
+            "Start": "11:40 PM",
+            "Opponent": "Hancock (R)",
+            "SP_xERA": "4.17",
+            "Score": 51.5398873359829,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "49.46",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (44% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-05-08T23:40:00Z"
         },
         {
             "Slot": "BN",
@@ -767,50 +821,6 @@
             ],
             "Warning": "",
             "GameTime": "2026-05-08T23:07:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Brady House",
-            "POS": "3B",
-            "Order": "3",
-            "Start": "11:10 PM",
-            "Opponent": "Snelling (L)",
-            "SP_xERA": "4.00",
-            "Score": 43.41728803037115,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "46.81",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Benched - Lower projected efficiency than other options.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-05-08T23:10:00Z"
         },
         {
             "Slot": "BN",
