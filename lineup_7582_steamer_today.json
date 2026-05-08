@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-08",
-    "last_updated": "2026-05-08T15:14:50.546617+00:00",
+    "last_updated": "2026-05-08T17:04:05.904789+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 740.83,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with **Trea Turner** (79.69) leading the charge as the premier start. The combination of an advantageous matchup against Chase Dollander and favorable environmental factors\u2014specifically wind blowing out and a slow pitcher delivery that primes **Trea Turner** for a high-probability stolen base\u2014cements his status as our anchor. Joining him in the elite tier is **Kyle Schwarber** (73.18), who benefits from the same pitching vulnerability and park conditions, alongside **Pete Crow-Armstrong** (72.94). **Pete Crow-Armstrong** earns a significant boost today due to his elite sprint speed against a favorable pitcher, maximizing our scarcest category, SB, even while batting lower in the order.\n\nWhile the core is strong, we are managing significant platoon dynamics. **Dillon Dingler** (53.75) and **Luke Raley** (56.32) are prioritized due to their efficiency against right-handed pitching, while **Yordan Alvarez** (57.92) remains a start despite the negative platoon edge against Nick Lodolo, purely due to his elite 0.425 xwOBA. Our most difficult decision resulted in benching **Hyeseong Kim** (36.57). While he offers defensive versatility, the matchup against Chris Sale presents a daunting 2.94 xERA, which significantly degraded his projection; the optimizer ultimately favored the higher-upside matchups for **Caleb Durbin** and **Chase Meidroth** despite their lower baseline scores. \n\nWe must remain vigilant regarding the \"Lineup Pending\" status for all starters, particularly as **Gary Sanchez**, **Colt Keith**, and **Junior Caminero** are currently modeled based on historical batting orders. Should official lineups drop with these players shifted into lower-leverage spots, their efficiency scores\u2014already hovering in the marginal 47\u201354 range\u2014could dip below the playable threshold. We are also monitoring the IL status of **Christian Yelich** and **Lars Nootbaar**, as well as **Zac Veen**'s assignment to the minors, ensuring we maximize our active roster capacity without wasting daily game caps on non-contributors.",
+    "total_efficiency_score": 738.37,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Trea Turner** (75.89) and **Pete Crow-Armstrong** (72.94) serving as our primary offensive catalysts. **Trea Turner** benefits immensely from a favorable matchup against Chase Dollander, where a high-velocity environment and the opponent's slow delivery provide a significant green light for his elite sprint speed to impact the stolen base category. Similarly, **Pete Crow-Armstrong** carries an elite profile today; while his batting order spot (#8) drags his score down slightly, his dynamic platoon advantage against Kumar Rocker and the opportunity to exploit a high-probability stolen base scenario make him an essential start. **Kyle Schwarber** also rounds out our high-tier options (69.70) by providing top-of-the-order run production upside against the same vulnerable arm facing **Trea Turner**.\n\nRegarding bench decisions, **Hyeseong Kim** (36.57) was the last player excluded from the active lineup. Despite a base projection that suggests utility, the combination of a tough matchup against Chris Sale and a poor lineup position forced the optimizer to prioritize efficiency and game-cap management elsewhere. Our primary concerns for the day reside with **Yordan Alvarez** (57.92) and **Junior Caminero** (56.98), both of whom face elite-tier starting pitchers (Nick Lodolo and Connelly Early, respectively). While both players possess sufficient raw power to overcome these obstacles, their scores are depressed by significant SP skill penalties. We are monitoring all lineups closely, as the \"Lineup Pending\" status for **Gary Sanchez**, **Dillon Dingler**, **Colt Keith**, **Caleb Durbin**, **Chase Meidroth**, **Carson Benge**, **Luke Raley**, and **Kazuma Okamoto** introduces volatility; should any of these players drop to the bottom third of their respective orders, we may need to re-evaluate their start status to protect our daily efficiency targets.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -166,7 +166,7 @@
             "Slot": "2B",
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
-            "Score": 42.10402274270907,
+            "Score": 44.20922387984452,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -202,6 +202,11 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Jesse Scholtens (R)",
@@ -215,7 +220,7 @@
             "Slot": "SS",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Score": 79.68946922346088,
+            "Score": 75.89473259377225,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -255,11 +260,6 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -323,7 +323,7 @@
             "Slot": "3B",
             "Player": "Junior Caminero",
             "POS": "3B",
-            "Score": 54.271103536107866,
+            "Score": 56.98465871291326,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -358,6 +358,11 @@
                 {
                     "label": "Order #3",
                     "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -524,7 +529,7 @@
             "Slot": "OF4",
             "Player": "Kyle Schwarber",
             "POS": "OF",
-            "Score": 73.183496876054,
+            "Score": 69.69856845338475,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -565,11 +570,6 @@
                     "label": "xwOBA Good",
                     "value": "0.394",
                     "type": "info"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Chase Dollander (R)",
