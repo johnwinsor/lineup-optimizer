@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-08",
-    "last_updated": "2026-05-08T19:11:17.381566+00:00",
+    "last_updated": "2026-05-08T20:52:42.857509+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 661.1,
-    "narrative": "For today\u2019s slate, our offensive core is anchored by **Vinnie Pasquantino** (72.92) and **Josh Naylor** (66.42), both of whom benefit from favorable matchups against mediocre arms. **Vinnie Pasquantino** draws the highest score of the day, capitalizing on a 4.45 xERA matchup against Keider Montero and a projected promotion to the #3 hole, which provides the necessary leverage to maximize counting stats. **Josh Naylor** likewise gains value from the #4 spot against Sean Burke, with his efficiency bolstered by a solid platoon advantage. Meanwhile, **James Wood** (60.25) and **Seiya Suzuki** (60.05) break the 60-point barrier; **James Wood** is a primary start due to the high-value #1 batting order assignment, and **Seiya Suzuki** benefits from a rare green light for stolen base opportunities against a slow-working Kumar Rocker.\n\nConversely, we remain cautious regarding players facing elite arms. **Gabriel Moreno** (42.15) and **Austin Riley** (44.80) are forced into the lower tier of our starting rotation today, hampered by sub-3.00 xERA opposition. **Tyler Soderstrom** (57.81) acts as a high-upside outlier, surging toward a 60-score despite a tough matchup against Kyle Bradish, driven almost exclusively by a +16% park factor adjustment that inflates his scoring potential. Our most difficult bench decision involved **Jose Caballero**, who sat at 41.62. While he cleared the 40-point floor, the combination of a bottom-of-the-order assignment (#9) and a poor matchup against Jacob Misiorowski kept him on the bench in favor of safer, higher-order alternatives.\n\nWe must monitor the \"Lineup Pending\" status for all players, particularly **Gabriel Moreno**, **Brice Turang**, and **Corbin Carroll**, as their scores are highly sensitive to confirmed batting order movement. **Corbin Carroll** (59.08) remains a high-variance play; while his talent is undeniable, he faces a daunting 2.93 xERA from Nolan McLean. We are also tracking the risk profile of **Brice Turang** (50.02), whose score is suppressed by a difficult matchup against Max Fried and a negative park factor. Ensure game caps are managed closely, as any late-breaking lineup changes that drop these players into lower-order slots could necessitate further benching to preserve our seasonal efficiency metrics.",
+    "total_efficiency_score": 655.71,
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with **Josh Naylor** (66.42) and **James Wood** (60.25) leading the offensive charge. **Josh Naylor** benefits immensely from a favorable encounter with Burke, S, providing a high-floor profile as a cleanup hitter, while **James Wood**\u2019s leadoff spot provides the highest order-advantage boost (+10%) in our lineup. **Seiya Suzuki** (60.04) also registers as a strong start; despite a tough matchup against Rocker, his ability to exploit a slow delivery from the mound\u2014making him a prime candidate for a stolen base\u2014pushes him over the 60.0 threshold. **Vinnie Pasquantino** (72.92) remains our most statistically secure play, bolstered by an 11% skill-advantage boost against Montero, making him the anchor of our daily production.\n\nOur most difficult bench decision involved **Jose Caballero**, who finished just shy of the lineup at 41.62. While his raw metrics were competitive, the optimizer penalized his assumed #9 spot and a significant platoon disadvantage (-13%), prioritizing the safer floor provided by **Cole Young** in the middle infield. We are also closely monitoring **Gabriel Moreno**, **Brice Turang**, **Austin Riley**, **Corbin Carroll**, **Zach McKinstry**, and **Seiya Suzuki**, as their scores are contingent on pending lineup confirmation; should their spots shift lower in the order, their efficiency scores will inevitably fluctuate. **Tyler Soderstrom** offers a high-variance upside today, with a 16% park-factor adjustment masking the difficulty of facing a pitcher of Bradish\u2019s caliber. We are avoiding the sub-40 floor of **Travis Bazzana** and **Kyle Karros**, as the volatility of their respective matchups against Prielipp and Luzardo makes them inefficient use of our game caps for this rotation.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -47,7 +47,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Nolan McLean (R)",
+            "Opponent": "McLean (R)",
             "SP_xERA": "2.93",
             "Warning": "",
             "GameTime": "2026-05-09T01:40:00Z",
@@ -60,11 +60,6 @@
             "POS": "1B",
             "Score": 72.92240845059446,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.02",
@@ -100,7 +95,7 @@
             "SP_xERA": "4.45",
             "Warning": "",
             "GameTime": "2026-05-08T23:40:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:40 PM"
         },
         {
@@ -199,7 +194,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jesse Scholtens (R)",
+            "Opponent": "Scholtens (R)",
             "SP_xERA": "3.15",
             "Warning": "",
             "GameTime": "2026-05-08T23:10:00Z",
@@ -210,13 +205,8 @@
             "Slot": "MI",
             "Player": "Cole Young",
             "POS": "2B/SS",
-            "Score": 46.764365941148576,
+            "Score": 42.5555730064452,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.90",
@@ -246,13 +236,18 @@
                     "label": "Slow SP Delivery (87% SB)",
                     "value": "+2%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Sean Burke (R)",
+            "Opponent": "Burke, S (R)",
             "SP_xERA": "4.26",
             "Warning": "",
             "GameTime": "2026-05-08T23:40:00Z",
-            "Order": "6*",
+            "Order": "9",
             "Start": "11:40 PM"
         },
         {
@@ -298,7 +293,7 @@
             "Slot": "OF1",
             "Player": "Corbin Carroll",
             "POS": "OF",
-            "Score": 59.08058313526736,
+            "Score": 57.89897147256201,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -331,12 +326,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Nolan McLean (R)",
+            "Opponent": "McLean (R)",
             "SP_xERA": "2.93",
             "Warning": "",
             "GameTime": "2026-05-09T01:40:00Z",
@@ -390,7 +390,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Kris Bubic (L)",
+            "Opponent": "Bubic (L)",
             "SP_xERA": "3.92",
             "Warning": "",
             "GameTime": "2026-05-08T23:40:00Z",
@@ -439,7 +439,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kumar Rocker (R)",
+            "Opponent": "Rocker (R)",
             "SP_xERA": "4.27",
             "Warning": "",
             "GameTime": "2026-05-09T00:05:00Z",
@@ -452,11 +452,6 @@
             "POS": "1B/OF",
             "Score": 57.80928020022958,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.86",
@@ -488,11 +483,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kyle Bradish (R)",
+            "Opponent": "Bradish (R)",
             "SP_xERA": "3.24",
             "Warning": "",
             "GameTime": "2026-05-08T23:05:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:05 PM"
         },
         {
@@ -501,11 +496,6 @@
             "POS": "OF",
             "Score": 60.25161993970563,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.50",
@@ -537,11 +527,11 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Robby Snelling (L)",
+            "Opponent": "Snelling (L)",
             "SP_xERA": "4.00",
             "Warning": "",
             "GameTime": "2026-05-08T23:10:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:10 PM"
         },
         {
@@ -550,11 +540,6 @@
             "POS": "1B",
             "Score": 66.4228008261521,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "57.60",
@@ -586,11 +571,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Sean Burke (R)",
+            "Opponent": "Burke, S (R)",
             "SP_xERA": "4.26",
             "Warning": "",
             "GameTime": "2026-05-08T23:40:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "11:40 PM"
         }
     ],
@@ -927,7 +912,7 @@
             "POS": "2B",
             "Order": "6",
             "Start": "11:15 PM",
-            "Opponent": "Connor Prielipp (L)",
+            "Opponent": "Prielipp (L)",
             "SP_xERA": "3.90",
             "Score": 39.993279276934004,
             "Breakdown": [

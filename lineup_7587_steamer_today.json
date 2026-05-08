@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-08",
-    "last_updated": "2026-05-08T19:10:34.905632+00:00",
+    "last_updated": "2026-05-08T20:52:17.923551+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 669.11,
-    "narrative": "For Ghost Ride the WHIP, the priority today is capitalizing on favorable matchups against mid-tier arms, headlined by **Vinnie Pasquantino**, who sits atop our projections with a 76.21 efficiency score. Facing Keider Montero and his 4.45 xERA, **Vinnie Pasquantino** benefits from a massive 14% platoon bump and favorable lineup placement, making him our cornerstone play. **James Wood** (61.94) and **Tyler Soderstrom** (61.14) also emerge as core starts; **James Wood** secures his high score through leadoff duties and a strong xwOBA, while **Tyler Soderstrom** leverages a massive 16% park factor enhancement against Kyle Bradish. Meanwhile, we remain aggressive with **Seiya Suzuki** (59.13), whose matchup against Kumar Rocker is bolstered by a 100% stolen base opportunity window against the opposing battery, a critical factor for our roster\u2019s speed-first philosophy.\n\nThe benching process was particularly grueling at the MI slot, where **Kyle Karros** landed just shy of our 40.0 threshold with a 39.67 score. Despite favorable park conditions, his matchup against Jesus Luzardo\u2014a high-efficiency arm\u2014dragged his score down via an 19% SP skill penalty, compounded by an elite catcher pop time that neutralized his potential for stolen bases. Consequently, we are favoring **Brice Turang** and **Cole Young** in the middle infield despite their own matchup volatility. We are monitoring **Gabriel Moreno**, **Josh Naylor**, **Brice Turang**, **Cole Young**, **Austin Riley**, **Corbin Carroll**, **Tyler Soderstrom**, **Zach McKinstry**, **Seiya Suzuki**, and **James Wood** closely, as the \"Lineup Pending\" status for these starters introduces non-trivial risk; should confirmed lineups shift these players down the order, we may see further dips below the 40-point efficiency floor. Finally, while **Jose Caballero** and **Travis Bazzana** remain on the outside looking in, their proximity to the cut-line confirms that our bench depth remains prepared to rotate in if the matchup environment shifts mid-day.",
+    "total_efficiency_score": 663.52,
+    "narrative": "The outlook for Ghost Ride the WHIP on 2026-05-08 centers on maximizing efficiency against mid-tier arms. **Vinnie Pasquantino** (76.21) leads the charge today, benefiting from an advantageous matchup against Keider Montero. With a +14% platoon boost and a favorable SP xERA of 4.45, **Vinnie Pasquantino** is our clear anchor. **Josh Naylor** (67.01) and **James Wood** (61.94) round out our top-tier tier, with **James Wood** specifically providing high-floor value as the leadoff hitter. While **Corbin Carroll** (58.71) faces a tough challenge against McLean, his elite speed profile remains a strategic imperative, though he faces a slight suppression due to a high-efficiency catcher. We are also monitoring **Tyler Soderstrom** (61.14), who receives a significant +16% park factor bump that vaults him into our top-three start category despite the solid pedigree of the opposing starter.\n\nThe most difficult bench decision involved **Kyle Karros**, who narrowly missed the cutoff with a 39.67 score. Despite a positive park factor, the combination of a tough matchup against Luzardo and the strict 40.0 \"Zebras\" floor forced him to the pine. Similarly, while we value SB upside, the optimizer penalized **Cole Young** (44.40) and **Zach McKinstry** (48.14) due to lower lineup positions and unfavorable defensive matchups, though they remain active to protect our floor. Risks persist with several \"Lineup Pending\" tags, notably for **Gabriel Moreno**, **Brice Turang**, **Austin Riley**, **Seiya Suzuki**, and **Zach McKinstry**. If those players drop in the batting order or are pulled from the lineup, their efficiency scores will collapse immediately. We are also proceeding with caution regarding **Trevor Story** (50.44), whose score is buoyed by a +5% wind-out factor; should the weather shift, he will be the first candidate for mid-game adjustment.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -47,7 +47,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Nolan McLean (R)",
+            "Opponent": "McLean (R)",
             "SP_xERA": "2.93",
             "Warning": "",
             "GameTime": "2026-05-09T01:40:00Z",
@@ -60,11 +60,6 @@
             "POS": "1B",
             "Score": 67.01367112399998,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "58.12",
@@ -96,11 +91,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Sean Burke (R)",
+            "Opponent": "Burke, S (R)",
             "SP_xERA": "4.26",
             "Warning": "",
             "GameTime": "2026-05-08T23:40:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "11:40 PM"
         },
         {
@@ -159,6 +154,55 @@
         },
         {
             "Slot": "SS",
+            "Player": "Cole Young",
+            "POS": "2B/SS",
+            "Score": 44.40101363617108,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "46.85",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Slow SP Delivery (87% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Burke, S (R)",
+            "SP_xERA": "4.26",
+            "Warning": "",
+            "GameTime": "2026-05-08T23:40:00Z",
+            "Order": "9",
+            "Start": "11:40 PM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Trevor Story",
             "POS": "SS",
             "Score": 50.4368799736875,
@@ -199,61 +243,12 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jesse Scholtens (R)",
+            "Opponent": "Scholtens (R)",
             "SP_xERA": "3.15",
             "Warning": "",
             "GameTime": "2026-05-08T23:10:00Z",
             "Order": "5",
             "Start": "11:10 PM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Cole Young",
-            "POS": "2B/SS",
-            "Score": 48.79232267711107,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "46.85",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Slow SP Delivery (87% SB)",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Sean Burke (R)",
-            "SP_xERA": "4.26",
-            "Warning": "",
-            "GameTime": "2026-05-08T23:40:00Z",
-            "Order": "6*",
-            "Start": "11:40 PM"
         },
         {
             "Slot": "3B",
@@ -298,7 +293,7 @@
             "Slot": "OF1",
             "Player": "Corbin Carroll",
             "POS": "OF",
-            "Score": 59.90456609948944,
+            "Score": 58.70647477749965,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -331,12 +326,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Nolan McLean (R)",
+            "Opponent": "McLean (R)",
             "SP_xERA": "2.93",
             "Warning": "",
             "GameTime": "2026-05-09T01:40:00Z",
@@ -349,11 +349,6 @@
             "POS": "1B/OF",
             "Score": 61.14204393042962,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.97",
@@ -385,11 +380,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kyle Bradish (R)",
+            "Opponent": "Bradish (R)",
             "SP_xERA": "3.24",
             "Warning": "",
             "GameTime": "2026-05-08T23:05:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:05 PM"
         },
         {
@@ -439,7 +434,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Kris Bubic (L)",
+            "Opponent": "Bubic (L)",
             "SP_xERA": "3.92",
             "Warning": "",
             "GameTime": "2026-05-08T23:40:00Z",
@@ -488,7 +483,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kumar Rocker (R)",
+            "Opponent": "Rocker (R)",
             "SP_xERA": "4.27",
             "Warning": "",
             "GameTime": "2026-05-09T00:05:00Z",
@@ -501,11 +496,6 @@
             "POS": "OF",
             "Score": 61.94083282750096,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "58.09",
@@ -537,11 +527,11 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Robby Snelling (L)",
+            "Opponent": "Snelling (L)",
             "SP_xERA": "4.00",
             "Warning": "",
             "GameTime": "2026-05-08T23:10:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:10 PM"
         },
         {
@@ -550,11 +540,6 @@
             "POS": "1B",
             "Score": 76.20839229370331,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.45",
@@ -590,7 +575,7 @@
             "SP_xERA": "4.45",
             "Warning": "",
             "GameTime": "2026-05-08T23:40:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:40 PM"
         }
     ],
@@ -927,7 +912,7 @@
             "POS": "2B",
             "Order": "6",
             "Start": "11:15 PM",
-            "Opponent": "Connor Prielipp (L)",
+            "Opponent": "Prielipp (L)",
             "SP_xERA": "3.90",
             "Score": 37.45293642587969,
             "Breakdown": [
