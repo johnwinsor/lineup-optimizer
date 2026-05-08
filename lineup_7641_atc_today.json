@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-08",
-    "last_updated": "2026-05-08T17:10:08.556902+00:00",
+    "last_updated": "2026-05-08T19:18:37.232587+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 754.44,
-    "narrative": "Today\u2019s slate for LawDog presents two clear standouts for offensive output. **Bryson Stott** commands the highest confidence (72.46) primarily due to a favorable matchup against Chase Dollander; the combination of a high-ceiling platoon advantage (+13%) and, crucially, a slow pitcher delivery profile increases his stolen base equity, making him an essential start. **Taylor Ward** (71.46) also provides elite value, bolstered by a +16% park factor and a solid platoon edge against the left-handed Jacob Lopez. Meanwhile, **Jos\u00e9 Ram\u00edrez** remains a fixture at 68.14; despite a tougher matchup against the left-handed Connor Prielipp, his raw talent floor is simply too high to bench in a 5x5 format where every counting stat matters.\n\nSeveral tactical decisions were driven by peripheral environmental factors. We are looking for wind-aided production in the Pittsburgh game, which subtly boosted the profiles of **Luis Arraez**, **Matt Chapman**, and **Jung Hoo Lee**, though these players remain in the \"Strong\" rather than \"Elite\" tier due to the mid-range matchup against Carmen Mlodzinski. **Lawrence Butler** is another intriguing case; his score of 56.66 is heavily carried by a massive +16% park factor, which helps mitigate the risk of facing a quality arm in Kyle Bradish. \n\nThe most difficult bench decision involved **Geraldo Perdomo**. While his score of 46.73 kept him within reach, he ultimately fell short of displacing the likes of **Masyn Winn** or **Wenceel Perez**. The optimizer prioritized the latter two due to their specific dynamic platoon advantages and more favorable lineup positioning, whereas **Geraldo Perdomo** suffered from a negative SP skill adjustment against Nolan McLean. Regarding risk, managers must closely monitor the status of **Cal Raleigh**, **Will Smith**, and the rest of the crew, as all are currently listed as \"Lineup Pending.\" While the projections assume standard spots, any significant demotion in batting order for **Cal Raleigh** or **Will Smith**\u2014especially against tough arms like Chris Sale\u2014could shift their utility before first pitch.",
+    "total_efficiency_score": 752.68,
+    "narrative": "Today's slate presents a few standout plays for LawDog. Leading the charge is **Bryson Stott**, boasting an elite 70.7 score. His strong showing is fueled by a combination of factors, including a favorable park, an approachable starter in Dollander (R) with a 4.41 xERA, and a significant advantage against right-handed pitching. The \"Slow SP Delivery (94% SB)\" modifier also adds a small boost, which is always a welcome addition for us, given the scarcity of speed. Hot on his heels is **Taylor Ward** with a 71.5 score. Ward benefits from the same park boost as **Gavin Sheets** and **Lawrence Butler**, coupled with a positive platoon split against the left-handed Jacob Lopez (L) and an excellent batting order position at #2. **Jos\u00e9 Ram\u00edrez** also offers significant value with a 68.1 score, as he steps into a good lineup spot and benefits from a platoon advantage against the southpaw Connor Prielipp (L).\n\nSeveral other players are in strong starting positions due to favorable circumstances. **Gavin Sheets** checks in at 57.9, aided by a plus matchup against Michael McGreevy (R) and a solid platoon advantage. **Luis Arraez** and **Matt Chapman** are both projected for 52.6 and 54.4 respectively. While their raw scores are middling, they both benefit from the \"Wind Out\" factor, which is a nice, albeit small, boost in this hitter-friendly park. **Lawrence Butler** (56.7) also gets a considerable park boost, though it's somewhat offset by Kyle Bradish (R)'s decent 3.24 xERA. **Jung Hoo Lee** (53.9) is another player in a good lineup spot against a right-handed pitcher where a platoon advantage should help his production. It\u2019s worth noting that many of our starters have \"Lineup Pending\" status, meaning their final scores could fluctuate once their exact batting order is confirmed.\n\nThe most compelling bench decision today involves **Geraldo Perdomo**. He scored a 46.7, narrowly missing a starting spot. His primary disqualifier was the \"Lineup Pending (Not picked by Optimizer)\" tag, as the optimizer likely prioritized players with confirmed lineups and more advantageous starting positions. Despite facing an elite right-handed arm in Nolan McLean (R) with a 2.93 xERA, Perdomo's projected lineup spot at #1 and a decent park adjusted his base projection positively. The fact that he outscored other bench players like **Tyler Freeman** (46.3) and **Jonathan Aranda** (42.7) highlights his close call. We'll be keeping a close eye on the final confirmed lineups, as a shift in batting order could elevate players like **Perdomo** into a starting role. Be aware that **Will Smith** faces a tough lefty in Chris Sale (L) with a 2.94 xERA, which is a primary driver of his lower score.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -254,13 +254,8 @@
             "Slot": "MI",
             "Player": "Bryson Stott",
             "POS": "2B/SS",
-            "Score": 72.45808195164665,
+            "Score": 70.69575500801932,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.67",
@@ -290,13 +285,18 @@
                     "label": "Slow SP Delivery (94% SB)",
                     "value": "+4%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Chase Dollander (R)",
+            "Opponent": "Dollander (R)",
             "SP_xERA": "4.41",
             "Warning": "",
             "GameTime": "2026-05-08T22:40:00Z",
-            "Order": "6*",
+            "Order": "7",
             "Start": "10:40 PM"
         },
         {
@@ -610,11 +610,6 @@
             "Score": 68.13827239846779,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "64.13",
                     "type": "info"
@@ -644,7 +639,7 @@
             "SP_xERA": "3.90",
             "Warning": "",
             "GameTime": "2026-05-08T23:15:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:15 PM"
         }
     ],
@@ -761,17 +756,12 @@
             "Slot": "BN",
             "Player": "Tyler Freeman",
             "POS": "2B/OF",
-            "Order": "3*",
+            "Order": "2",
             "Start": "10:40 PM",
-            "Opponent": "Jes\u00fas Luzardo (L)",
+            "Opponent": "Luzardo (L)",
             "SP_xERA": "3.20",
-            "Score": 45.41374716794379,
+            "Score": 46.27061032205594,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.19",
@@ -808,12 +798,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -851,7 +841,7 @@
             "POS": "1B",
             "Order": "4*",
             "Start": "11:10 PM",
-            "Opponent": "Connelly Early (L)",
+            "Opponent": "Early (L)",
             "SP_xERA": "3.03",
             "Score": 42.70718030284901,
             "Breakdown": [
