@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-09",
-    "last_updated": "2026-05-09T16:45:22.430214+00:00",
+    "last_updated": "2026-05-09T17:46:08.179523+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 840.14,
-    "narrative": "For May 9, 2026, the LawDog lineup is anchored by **Lawrence Butler** (74.61) and **Cal Raleigh** (78.02), both of whom benefit from favorable matchup dynamics. **Lawrence Butler** is our strongest offensive play today; while his batting order spot is suboptimal, he gains a massive +16% park factor boost and a +13% dynamic platoon edge against Shane Baz, complemented by favorable wind conditions. Similarly, **Cal Raleigh** remains a premier play against Anthony Kay, leveraging an elite +19% SP skill advantage and a strong platoon split. **Will Smith** (71.42) and **Taylor Ward** (71.19) round out the top tier of the starting nine, with **Taylor Ward** benefiting from the same park and wind factors as **Lawrence Butler**, effectively mitigating a slightly negative platoon impact.\n\nThe most difficult decision for the lineup optimizer was omitting **Luis Arraez** (54.21), who narrowly missed the cut behind **Tyler Freeman** (55.71). While **Luis Arraez** provides high-floor batting average consistency, **Tyler Freeman** was granted the nod due to his superior position in the batting order and greater utility in our pursuit of counting stats. We are also keeping a close eye on **Brendan Donovan** (56.17); while he starts today against Anthony Kay, his score is currently depressed by a significant -15% dynamic platoon penalty, signaling he is a candidate for mid-game substitution if his initial at-bats suggest he is being overmatched by the southpaw.\n\nManagers should remain alert to the \"Lineup Pending\" status across the board, particularly for **Cal Raleigh**, **Will Smith**, and **Brendan Donovan**. While our projections account for these assumed spots, any downward shift in the batting order could necessitate a re-evaluation of the daily efficiency scores. Furthermore, while we are confident in the starts for **Daulton Varsho** (69.33) and **Jeremiah Jackson** (68.45), both face specific situational pressures\u2014**Daulton Varsho** must navigate the opposing catcher\u2019s elite steal-prevention metrics, and **Jeremiah Jackson** occupies the 8-hole, limiting his overall volume despite favorable park conditions in his matchup against Aaron Civale.",
+    "total_efficiency_score": 840.17,
+    "narrative": "Today\u2019s lineup is anchored by **Cal Raleigh** (78.02) and **Lawrence Butler** (74.61), our premier targets against favorable matchups. **Cal Raleigh** benefits from a distinct park factor boost and a weak opposing starter in Kay (xERA 5.28), while **Lawrence Butler** is our highest-upside play due to a substantial +13% dynamic platoon edge and a hitter-friendly environment bolstered by favorable wind. We are also leaning heavily into the high-score outings of **Will Smith** (71.42) and **Taylor Ward** (71.19); **Taylor Ward** specifically sees a massive +16% park adjustment, making him an essential start despite the moderate SP challenge posed by Civale.\n\nWe have prioritized speed and order position, which led to the difficult decision to bench **Luis Arraez** (54.21). While **Luis Arraez** remains a staple for batting average, he was edged out by **Geraldo Perdomo** (64.02), whose status as the leadoff hitter (+10% order bonus) and superior scoring profile against the RHP bridge forced him into the UTIL spot. Meanwhile, **Brendan Donovan** presents a tactical risk; while he is locked in at 58.97, his -15% platoon penalty against the LHP suggests his floor is volatile, though his leadoff duties keep him firmly in the mix.\n\nMonitor the status of **Cal Raleigh**, **Will Smith**, **Gavin Sheets**, **Tyler Freeman**, **Brendan Donovan**, **Masyn Winn**, **Jos\u00e9 Ram\u00edrez**, **Jung Hoo Lee**, and **Geraldo Perdomo** closely, as all remain \"Lineup Pending.\" Should any of these players drop in the batting order upon official announcement, their efficiency scores will regress significantly. Additionally, while **Daulton Varsho** (69.33) and **Jeremiah Jackson** (65.67) look strong, remain wary of the -2% penalty for **Daulton Varsho** when facing elite hold-threat catchers, a factor that could tighten the margin for stolen bases today.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -44,6 +44,11 @@
                 {
                     "label": "Order #2",
                     "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -215,7 +220,7 @@
             "Slot": "SS",
             "Player": "Brendan Donovan",
             "POS": "2B/SS/3B/OF",
-            "Score": 56.16601167219542,
+            "Score": 58.97431225580519,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -250,6 +255,11 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -409,11 +419,6 @@
             "Score": 71.18811740319575,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "52.73",
                     "type": "info"
@@ -439,8 +444,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -449,11 +454,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Aaron Civale (R)",
+            "Opponent": "Civale (R)",
             "SP_xERA": "4.52",
             "Warning": "",
             "GameTime": "2026-05-09T20:05:00Z",
-            "Order": "1*",
+            "Order": "2",
             "Start": "08:05 PM"
         },
         {
@@ -462,11 +467,6 @@
             "POS": "OF",
             "Score": 74.60805297402167,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.27",
@@ -503,11 +503,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Shane Baz (R)",
+            "Opponent": "Baz (R)",
             "SP_xERA": "4.14",
             "Warning": "",
             "GameTime": "2026-05-09T20:05:00Z",
-            "Order": "7*",
+            "Order": "7",
             "Start": "08:05 PM"
         },
         {
@@ -558,13 +558,8 @@
             "Slot": "OF5",
             "Player": "Jeremiah Jackson",
             "POS": "2B/SS/3B/OF",
-            "Score": 68.44706206328559,
+            "Score": 65.67030417563694,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.70",
@@ -591,8 +586,13 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
                     "type": "negative"
                 },
                 {
@@ -601,11 +601,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Aaron Civale (R)",
+            "Opponent": "Civale (R)",
             "SP_xERA": "4.52",
             "Warning": "",
             "GameTime": "2026-05-09T20:05:00Z",
-            "Order": "8*",
+            "Order": "9",
             "Start": "08:05 PM"
         },
         {
