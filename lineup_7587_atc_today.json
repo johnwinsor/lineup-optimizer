@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-10",
-    "last_updated": "2026-05-10T21:41:08.118521+00:00",
+    "last_updated": "2026-05-10T22:39:01.068201+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 694.7,
-    "narrative": "Ghost Ride the WHIP enters today with three clear pillars in our offense. **Trevor Story** leads the charge with a 73.92 efficiency score, bolstered significantly by a favorable matchup against Nick Martinez and a wind-out forecast that provides a massive ceiling for extra-base hits. Following closely are **Corbin Carroll** (68.74) and **James Wood** (68.43). **James Wood** is particularly well-positioned as the leadoff hitter against Sandy Alcantara; his combination of premium spot in the order (+10%) and the pitcher\u2019s slow delivery\u2014which creates an elite environment for his stolen base upside\u2014makes him an essential engine for our category balance. **Tyler Soderstrom** (63.88) rounds out our strongest quartet, leveraging an elite park factor that adds 16% to his base projection.\n\nThe most difficult decision on the sheet was keeping **Travis Bazzana** (44.91) on the bench. Despite a solid xwOBA of .382, he ultimately fell short of the starting threshold due to a lower overall efficiency projection compared to **Seiya Suzuki** and **Jose Caballero**, both of whom are pushed into the lineup despite tougher matchups against deGrom and Henderson, respectively, due to their higher raw output metrics. Owners should exercise caution with **Jose Caballero** and **Seiya Suzuki** today; both face daunting opposing starters, and their projected scores are tethered to the high volatility of facing elite arms. Furthermore, while **Corbin Carroll** remains a top play, he faces a significant risk factor today\u2014a highly efficient catcher with a 1.87s pop time\u2014which necessitates a slight downward adjustment to his stolen base success probability.",
+    "total_efficiency_score": 692.64,
+    "narrative": "For today\u2019s slate, **Trevor Story** (73.92) stands out as our premier option. His matchup against Nick Martinez is highly favorable, bolstered by a strong park factor and a wind-out advantage that provides a significant ceiling. We are also leaning heavily into **James Wood** (68.42) and **Josh Naylor** (67.77); **James Wood** benefits immensely from a leadoff assignment and a favorable xERA from Alcantara, while **Josh Naylor** capitalizes on the platoon edge against Martin. These three anchors provide the most reliable path to maximizing our R, HR, and RBI output, with **Tyler Soderstrom** (63.88) also serving as an elite start thanks to a massive park-factor boost that offsets the platoon disadvantage.\n\nWe are navigating several high-variance profiles today, most notably with **Corbin Carroll** (66.68). While his projection remains strong, we have applied a slight haircut due to an elite catcher\u2019s pop time and the opposing pitcher\u2019s tendency to hold runners, which complicates his primary value as a stolen base threat. Conversely, the bench decision was remarkably tight between **Travis Bazzana** (44.91) and **Alex Freeland** (45.34). While **Travis Bazzana** boasts a superior xwOBA (0.382), the projection algorithm favored **Alex Freeland** slightly due to the SP_xERA matchup and a marginal switch-hitting advantage that kept him above the floor. **Mickey Moniak** was excluded entirely today, as the combination of a difficult matchup against S\u00e1nchez and his poor dynamic platoon splits pushed his score of 39.40 below our 40-point efficiency threshold.\n\nRisk management remains a priority given the elite arms we are facing. **Seiya Suzuki** (44.97) faces the steepest challenge of the day against deGrom; while we are starting him to avoid a total cap waste, his score is severely depressed by the pitcher's elite skill and poor platoon match. Similarly, **Jose Caballero** (41.62) is barely holding onto a start; his projection has been cratered by a very low SP_xERA and a negative platoon split. We are effectively punting the efficiency of these two spots to ensure we maintain our game volume, but they represent the highest probability of underperforming their base projections if deGrom and Henderson dominate early.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -356,7 +356,7 @@
             "Slot": "OF3",
             "Player": "Corbin Carroll",
             "POS": "OF",
-            "Score": 68.7422426280403,
+            "Score": 66.6799753491991,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -382,6 +382,11 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "BvP Weak (37 PA)",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
                     "label": "Elite Catcher (1.87s)",
