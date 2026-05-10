@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-10",
-    "last_updated": "2026-05-10T16:44:11.081327+00:00",
+    "last_updated": "2026-05-10T17:46:03.371039+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 732.97,
-    "narrative": "For today\u2019s slate, **Bryson Stott** (72.46) and **Taylor Ward** (70.00) headline the LawDog lineup as our primary producers. **Bryson Stott** benefits significantly from a favorable matchup against Sugano, with an 18% boost driven by the SP's struggles and an aggressive platoon advantage. **Taylor Ward** is our strongest play in terms of park factors, leveraging a massive +16% park adjustment at home against a vulnerable Severino. **Brendan Donovan** (65.57) also earns a high-tier start, specifically because his leadoff role combined with a +14% dynamic platoon edge allows him to maximize volume against Martin. Meanwhile, **Masyn Winn** (59.99) remains a high-floor play; while the Buehler matchup is typically daunting, **Masyn Winn** is positioned to exploit the pitcher\u2019s slow delivery, keeping his stolen base projection relevant even in a tough contest.\n\nOur most difficult sit decision was **Matt Chapman** (50.67), who hovered just outside the cutoff. While **Matt Chapman** offers respectable power, the optimizer ultimately favored the efficiency of **Geraldo Perdomo** (54.66) due to the latter's superior positional utility and situational context. We are also monitoring several \"Lineup Pending\" statuses, specifically for **Luis Arraez**, **Masyn Winn**, **Geraldo Perdomo**, **Wenceel Perez**, and **Jung Hoo Lee**. Any unexpected drop in their batting order will necessitate an immediate reassessment, as the optimizer\u2019s heavy weighting on lineup positioning is crucial to these efficiency scores. Owners should remain wary of the risk inherent in starting **Lawrence Butler** (56.04) against the tough platoon disadvantage of an opposing lefty, though his +16% park factor keeps him just above the benching threshold for today.",
+    "total_efficiency_score": 732.42,
+    "narrative": "Our optimal lineup for today is anchored by **Bryson Stott** (72.46) and **Taylor Ward** (70.00), who represent our highest-ceiling plays against Sugano and Severino, respectively. **Bryson Stott** benefits immensely from a soft matchup against Sugano\u2019s xERA of 4.73, compounded by a strong platoon advantage that pushes his efficiency rating into the elite tier. Similarly, **Taylor Ward** is a high-conviction start; his +16% park adjustment coupled with a +15% SP skill advantage makes him a must-start, as he stands to exploit Severino's propensity for yielding hard contact. While **Brendan Donovan** (65.57) occupies the top of the order, his specific advantage stems from a +14% platoon boost against Martin, making him a high-floor catalyst for our run production today.\n\nThe most difficult bench decision involved **Matt Chapman**, who fell just shy of the threshold with a 50.16 score. While his platoon matchup against Chandler is favorable, the optimizer penalized his value due to a bottom-of-the-order assignment and the presence of a tough defensive catcher behind the plate, which suppresses his projected stolen base and run-scoring potential. We are monitoring the status of **Masyn Winn** and **Wenceel Perez** closely; while both are projected at 59.99 and 60.68 respectively, their scores are contingent on confirmed lineup placement. **Masyn Winn** specifically is a priority start if confirmed in the top six, as his 90% SB success rate against a slow-delivering pitcher offers critical scarcity value in our 5x5 format.\n\nWe must remain vigilant regarding the risks surrounding **Jung Hoo Lee** (54.26) and **Lawrence Butler** (56.04). **Jung Hoo Lee** faces an elite defensive catcher, which creates a slight headwind for his stolen base output, and **Lawrence Butler** faces a challenging platoon split that forced his score lower despite his favorable park environment. We are keeping **Tyler Freeman**, **Gavin Sheets**, and **Drew Gilbert** on standby, but given the current projection spread, our starters have the structural advantages required to out-perform these benchmarks. Maintain discipline regarding game caps; we are betting on the platoon-driven efficiency of **Brendan Donovan**, **Bryson Stott**, and **Taylor Ward** to drive our daily offensive output.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -56,11 +56,6 @@
             "Score": 53.49766780677417,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "49.46",
                     "type": "info"
@@ -91,11 +86,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Bubba Chandler (R)",
+            "Opponent": "Chandler (R)",
             "SP_xERA": "3.84",
             "Warning": "",
             "GameTime": "2026-05-10T20:05:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "08:05 PM"
         },
         {
@@ -184,7 +179,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Walker Buehler (R)",
+            "Opponent": "Buehler (R)",
             "SP_xERA": "4.84",
             "Warning": "",
             "GameTime": "2026-05-10T20:10:00Z",
@@ -197,11 +192,6 @@
             "POS": "SS",
             "Score": 54.66106115873957,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.83",
@@ -233,11 +223,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Huascar Brazob\u00e1n (R)",
+            "Opponent": "Brazob\u00e1n (R)",
             "SP_xERA": "3.88",
             "Warning": "",
             "GameTime": "2026-05-10T20:10:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "08:10 PM"
         },
         {
@@ -371,13 +361,8 @@
             "Slot": "OF3",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
-            "Score": 54.812549831799736,
+            "Score": 54.264424333481735,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.63",
@@ -404,16 +389,21 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Bubba Chandler (R)",
+            "Opponent": "Chandler (R)",
             "SP_xERA": "3.84",
             "Warning": "",
             "GameTime": "2026-05-10T20:05:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "08:05 PM"
         },
         {
@@ -670,17 +660,12 @@
             "Slot": "BN",
             "Player": "Matt Chapman",
             "POS": "3B",
-            "Order": "7*",
+            "Order": "7",
             "Start": "08:05 PM",
-            "Opponent": "Bubba Chandler (R)",
+            "Opponent": "Chandler (R)",
             "SP_xERA": "3.84",
-            "Score": 50.66935372690691,
+            "Score": 50.16266018963784,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.01",
@@ -707,12 +692,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -767,17 +757,12 @@
             "Slot": "BN",
             "Player": "Gavin Sheets",
             "POS": "1B/OF",
-            "Order": "4*",
+            "Order": "4",
             "Start": "08:10 PM",
             "Opponent": "Kyle Leahy (R)",
             "SP_xERA": "3.91",
             "Score": 50.16143457745683,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.94",
@@ -809,7 +794,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -821,17 +806,12 @@
             "Slot": "BN",
             "Player": "Drew Gilbert",
             "POS": "OF",
-            "Order": "8*",
+            "Order": "8",
             "Start": "08:05 PM",
-            "Opponent": "Bubba Chandler (R)",
+            "Opponent": "Chandler (R)",
             "SP_xERA": "3.84",
-            "Score": 41.874787841614136,
+            "Score": 41.456039963197995,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.76",
@@ -858,12 +838,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
