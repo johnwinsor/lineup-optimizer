@@ -1,15 +1,15 @@
 {
     "target_date": "2026-05-09",
-    "last_updated": "2026-05-09T23:38:43.820593+00:00",
+    "last_updated": "2026-05-10T02:26:18.061053+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 633.2,
-    "narrative": "The Zurich Zebras enter May 9th with **Trea Turner** serving as our clear focal point. With a score of 79.92, **Trea Turner** is a must-start against Freeland; the synergy between his elite speed and the pitcher\u2019s slow delivery offers a high probability of stolen bases, which remains our primary focus given their scarcity. Supporting him in that same matchup is **Kyle Schwarber**, who maintains a strong 72.30 rating bolstered by his impressive 0.396 xwOBA and platoon advantage against the left-handed starter. We are also capitalizing on **Pete Crow-Armstrong** (70.16) today; his dynamic platoon edge against Leiter and the favorable matchup against a pitcher with a slow delivery to the plate make him an underrated source of stolen base potential despite hitting in the bottom third of the order.\n\nThe most difficult decision for the rotation involved our bench depth versus the current starters. **Junior Caminero** and **Caleb Durbin** were immediate exclusions due to the rainout, keeping our focus strictly on active contests. Among available talent, **Chase Meidroth** (48.62) secured the final spot despite a marginal score, edging out other bench options because the wind blowing out at his venue provides a necessary ceiling-raising variable. Conversely, **Yordan Alvarez** (58.52) occupies a \"Strong\" start tier, though his score is slightly suppressed by a difficult assignment against the elite Burns; we continue to roster **Yordan Alvarez** for his elite 0.425 xwOBA, which consistently mitigates tough SP_xERA matchups. We are closely monitoring **Dillon Dingler** (47.24), whose score is being weighed down by a dynamic platoon disadvantage, but his role in the middle of the order keeps him marginally viable as we navigate a night where **Christian Yelich** remains on the IL and **Gary Sanchez** is out of the lineup entirely.",
+    "total_efficiency_score": 625.55,
+    "narrative": "The Zurich Zebras enter May 9th with a clear emphasis on exploiting speed and platoon advantages. Our strongest play is **Trea Turner** (76.84), who benefits from a prime leadoff spot against the southpaw Freeland, buoyed by a strong historical BvP and park factors that make him the pivot point of today\u2019s offensive strategy. Not far behind is **Kyle Schwarber** (72.30), whose platoon advantage against the same left-handed arm keeps his value high, and **Pete Crow-Armstrong** (70.16), whose aggressive jump-rate against the slow delivery of Leiter makes him a priority start in our pursuit of scarce stolen bases. Despite facing the high-velocity Strider, **Hyeseong Kim** (61.54) remains in the lineup; while his order placement hurts, his efficiency against right-handed pitching keeps him locked into our 2B slot.\n\nThe decision to bench **Gary Sanchez** was the most straightforward of the morning, as his lack of a confirmed lineup spot and unfavorable park/pitcher skill metrics relegated him to the pine, while the rainouts of **Junior Caminero** and **Caleb Durbin** simplified our roster construction significantly. We are keeping a close eye on **Yordan Alvarez** (58.52); although he is an elite talent, the matchup against the formidable Burns is our most significant risk of the day, forcing a score drop despite his high-end xwOBA. Elsewhere, **Colt Keith** (64.94), **Carson Benge** (64.10), and **Kazuma Okamoto** (64.54) provide reliable, high-floor output in their respective slots. We will monitor the status of **Christian Yelich** on the IL and ensure that depth pieces like **Zac Veen**, **Luke Raley**, **Lars Nootbaar**, **Josh Smith**, **Luis Pena**, and **Pedro Ramirez** remain ready should our dynamic lineup require late-game adjustments.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Dillon Dingler",
             "POS": "C",
-            "Score": 47.24021954180783,
+            "Score": 46.29541515097167,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -37,6 +37,11 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
@@ -53,7 +58,7 @@
             "Slot": "1B",
             "Player": "Colt Keith",
             "POS": "1B/2B/3B",
-            "Score": 66.26310821778385,
+            "Score": 64.93784605342817,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -79,6 +84,11 @@
                     "label": "Platoon",
                     "value": "+7%",
                     "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #3",
@@ -136,7 +146,7 @@
             "Slot": "SS",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Score": 79.91628086619771,
+            "Score": 76.84257775595934,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -169,11 +179,6 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Slow SP Delivery (100% SB)",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
@@ -190,7 +195,7 @@
             "Slot": "MI",
             "Player": "Chase Meidroth",
             "POS": "2B/SS",
-            "Score": 48.61709087118163,
+            "Score": 46.301991305887256,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -220,11 +225,6 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -544,11 +544,46 @@
             "Player": "Gary Sanchez",
             "POS": "C",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:10 PM",
+            "Opponent": "Schlittler (R)",
+            "SP_xERA": "3.52",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.05",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -556,7 +591,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-09T23:10:00Z"
         },
         {
             "Slot": "BN",

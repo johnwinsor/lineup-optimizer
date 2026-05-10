@@ -1,15 +1,15 @@
 {
     "target_date": "2026-05-09",
-    "last_updated": "2026-05-09T23:38:33.416155+00:00",
+    "last_updated": "2026-05-10T02:25:45.844874+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 635.98,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with **Trea Turner** (78.43) and **Kyle Schwarber** (71.37) anchoring the lineup, both benefiting from a highly favorable matchup against Kyle Freeland. **Trea Turner** is the premier play of the day; his ability to exploit Freeland\u2019s deliberate pace\u2014yielding a 100% success rate on stolen base attempts\u2014combined with a top-of-the-order boost, makes him our catalyst for the scarce SB category. Similarly, **Pete Crow-Armstrong** (71.15) earns a spot as a top-tier start despite hitting eighth; his matchup against Jack Leiter features a high-upside dynamic platoon advantage and a slow delivery, providing the speed floor we demand. **Colt Keith** (67.35) and **Kazuma Okamoto** (64.93) also present strong value, with **Kazuma Okamoto** benefiting from a soft matchup against the 5.14 xERA of Kochanowicz, effectively neutralizing the R/R platoon penalty.\n\nNavigating the bench required difficult decisions, as the optimizer heavily penalized any exposure to elite arms or rain-impacted contests. While **Junior Caminero** and **Caleb Durbin** were high-priority targets, both were scratched due to postponements, leaving them on the bench by necessity rather than choice. **Dillon Dingler** (47.13) was the closest to being squeezed out of the starting nine; while his SP skill matchup is favorable, the dynamic platoon disadvantage against Wacha kept his score suppressed compared to the rest of the infield. We remain vigilant regarding the status of **Christian Yelich**, who remains on the IL, and we continue to monitor the minors for **Zac Veen**, both of whom are unavailable for today\u2019s push. Owners should monitor the wind out at the park where **Chase Meidroth** is playing, as that gust factor is the primary reason his score remains elevated despite a tougher matchup against Luis Castillo.",
+    "total_efficiency_score": 628.21,
+    "narrative": "The Zurich Zebras enter May 9th with a tactical focus on speed and favorable handedness, headlined by **Trea Turner** (75.42) and **Kyle Schwarber** (71.37), our two strongest plays against Freeland. **Trea Turner** benefits from the prime leadoff spot and a positive BvP history, while **Kyle Schwarber** leverages his power profile against a pitcher with a 4.24 xERA in a hitter-friendly environment. We are also leaning heavily into the speed of **Pete Crow-Armstrong** (71.15); despite batting 8th, his matchup against Leiter features a favorable delivery profile for stolen base attempts, keeping him as a high-efficiency play despite the lower lineup placement.\n\nOur mid-tier starters offer steady production, with **Colt Keith** (66.01) and **Kazuma Okamoto** (64.93) both enjoying platoon advantages against right-handed starters. **Kazuma Okamoto** is particularly well-positioned against Kochanowicz, as the 5.14 xERA suggests a high ceiling for run production in the heart of our order. Meanwhile, **Hyeseong Kim** (61.87) remains a core play despite facing a high-velocity arm in Strider; his efficiency score holds up due to consistent contact trends. We are navigating a thin bench today, as **Junior Caminero** and **Caleb Durbin** are unavailable due to postponements, leaving us without the late-inning pinch-hit upside we typically rely on to mitigate risk.\n\nThe decision to bench our remaining depth, including **Lars Nootbaar**, **Gary Sanchez**, **Luke Raley**, **Josh Smith**, **Pedro Ramirez**, and **Luis Pena**, was straightforward given the lack of platoon variance and the rainout constraints. **Yordan Alvarez** (61.66) remains a mandatory start despite a tough draw against Burns; his elite .425 xwOBA provides enough raw talent to overcome a stiff pitching matchup. Aside from the weather-related zeroes from **Junior Caminero** and **Caleb Durbin**, the only remaining concern is **Dillon Dingler** (46.19), whose score is suppressed by Wacha\u2019s efficiency at controlling the running game; however, we are committed to the start to maintain our structural integrity in the catching slot.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Dillon Dingler",
             "POS": "C",
-            "Score": 47.133853749098336,
+            "Score": 46.19117667411636,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -37,6 +37,11 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
@@ -53,7 +58,7 @@
             "Slot": "1B",
             "Player": "Colt Keith",
             "POS": "1B/2B/3B",
-            "Score": 67.35272203334274,
+            "Score": 66.00566759267589,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -79,6 +84,11 @@
                     "label": "Platoon",
                     "value": "+7%",
                     "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #3",
@@ -136,7 +146,7 @@
             "Slot": "SS",
             "Player": "Chase Meidroth",
             "POS": "2B/SS",
-            "Score": 51.752270057178784,
+            "Score": 49.28787624493217,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -166,11 +176,6 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -415,7 +420,7 @@
             "Slot": "UTIL",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Score": 78.4339461100124,
+            "Score": 75.41725587501193,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -445,11 +450,6 @@
                 {
                     "label": "BvP Good (43 PA)",
                     "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Slow SP Delivery (100% SB)",
-                    "value": "+4%",
                     "type": "positive"
                 },
                 {
@@ -592,11 +592,46 @@
             "Player": "Gary Sanchez",
             "POS": "C",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:10 PM",
+            "Opponent": "Schlittler (R)",
+            "SP_xERA": "3.52",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "48.18",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -604,7 +639,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-09T23:10:00Z"
         },
         {
             "Slot": "BN",
