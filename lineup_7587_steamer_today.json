@@ -1,15 +1,15 @@
 {
     "target_date": "2026-05-11",
-    "last_updated": "2026-05-11T19:29:35.301069+00:00",
+    "last_updated": "2026-05-11T21:12:12.493311+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 275.29,
-    "narrative": "For today\u2019s slate, **Jose Caballero** (66.13) and **Josh Naylor** (66.07) anchor our offensive effort with the highest efficiency scores. **Jose Caballero** remains a high-priority start despite a dynamic platoon disadvantage because he benefits from a park-factor boost of 16% and a favorable matchup against Brandon Young (xERA 4.78). Meanwhile, **Josh Naylor** capitalizes on a high-value #3 order spot against Peter Lambert; his projections are bolstered by a 5% platoon edge, making him our safest bet for RBI production. **Corbin Carroll** (59.75) sits right on the cusp of the \"Strong\" threshold; while Nathan Eovaldi presents a difficult assignment, **Corbin Carroll**\u2019s elite sprint speed and favorable #2 lineup spot provide enough base-stealing potential to warrant a start despite the sub-par SP matchup.\n\nOur most difficult roster decision today was benching **Dalton Rushing** (39.48), who finished just shy of the 40.0 floor. While **Dalton Rushing** offers stability, the optimizer favored **Gabriel Moreno** (41.23) for the C1 slot due to a slightly more favorable run-creation environment, even though both catchers are hampered by the \"Lineup Pending\" status and the risk of late-afternoon scratching. Elsewhere, **Cole Young** (42.11) occupies a tenuous spot in the lineup; although his score qualifies for a start, his placement in the #9 hole against Peter Lambert severely limits his counting stat ceiling. We are keeping **Travis Bazzana** (35.64) on the bench due to a poor platoon matchup against Suter, while **James Wood** remains sidelined as his team is off the board today. Monitor the late-breaking lineups for **Gabriel Moreno**, **Josh Naylor**, **Cole Young**, **Jose Caballero**, and **Corbin Carroll** closely, as the \"Lineup Pending\" designation introduces the highest level of variance for our current configuration.",
+    "total_efficiency_score": 236.93,
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate focusing on high-leverage opportunities against middling pitching. **Corbin Carroll** stands as our premier play at a 74.91, buoyed by a favorable matchup against Junis. While his base projection is dampened by the high-stakes requirement to secure bags, **Corbin Carroll** benefits significantly from hitting second in the order, providing the best path to Runs and RBI in today's setup. Similarly, **Josh Naylor** is a strong start at 66.07; he faces Lambert with a clear platoon advantage and the benefit of hitting in the heart of the order, maximizing his plate appearance upside against a pitcher who lacks the dominant stuff to suppress his production.\n\nThe decision to bench **Dalton Rushing** at a 39.48 score was the tightest call on the board. While **Dalton Rushing** possesses the profile of a high-floor bat, he is facing Trevor McDonald, whose 2.60 xERA severely penalizes his output. The optimizer favored the offensive environment surrounding **Gabriel Moreno**\u2014who sits at a 53.84\u2014over the superior talent of **Dalton Rushing** simply due to the opposing pitcher\u2019s skill gap. **Cole Young** remains in the lineup despite a lower 42.11 score; while his spot at the bottom of the order is suboptimal, his inclusion is a calculated gamble on efficiency to keep our rostered options active. \n\nWe are monitoring the status of **Gabriel Moreno** and **Corbin Carroll** closely, as their scores are contingent on the assumption that they appear in the top-eight of their respective lineups. If late lineup shifts move them further down the order, their efficiency scores will deteriorate rapidly. Elsewhere, **Travis Bazzana** was held out at 35.64 due to a difficult L/L platoon matchup against Suter, and we are managing our game caps by avoiding the upside-capped bottom-order production of **Alex Freeland**. With **James Wood** inactive today, we are effectively leaning into our primary starters to bridge the gap until the next wave of high-speed, high-OBP opportunities presents itself.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Gabriel Moreno",
             "POS": "C",
-            "Score": 41.22743187166988,
+            "Score": 53.841546574501955,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -28,8 +28,8 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
@@ -42,8 +42,8 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Nathan Eovaldi (R)",
-            "SP_xERA": "3.23",
+            "Opponent": "Junis (R)",
+            "SP_xERA": "4.21",
             "Warning": "",
             "GameTime": "2026-05-12T00:05:00Z",
             "Order": "8*",
@@ -55,11 +55,6 @@
             "POS": "1B",
             "Score": 66.07441256433488,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "58.12",
@@ -91,24 +86,19 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Peter Lambert (R)",
+            "Opponent": "Lambert, P (R)",
             "SP_xERA": "4.16",
             "Warning": "",
             "GameTime": "2026-05-12T00:10:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "12:10 AM"
         },
         {
-            "Slot": "MI",
+            "Slot": "2B",
             "Player": "Cole Young",
             "POS": "2B/SS",
             "Score": 42.11046991613141,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.85",
@@ -140,67 +130,18 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Peter Lambert (R)",
+            "Opponent": "Lambert, P (R)",
             "SP_xERA": "4.16",
             "Warning": "",
             "GameTime": "2026-05-12T00:10:00Z",
-            "Order": "9*",
+            "Order": "9",
             "Start": "12:10 AM"
         },
         {
-            "Slot": "3B",
-            "Player": "Jose Caballero",
-            "POS": "2B/SS/3B/OF",
-            "Score": 66.1284655700596,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "56.17",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+16%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-13%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Brandon Young (R)",
-            "SP_xERA": "4.78",
-            "Warning": "",
-            "GameTime": "2026-05-11T22:35:00Z",
-            "Order": "7*",
-            "Start": "10:35 PM"
-        },
-        {
-            "Slot": "OF3",
+            "Slot": "OF1",
             "Player": "Corbin Carroll",
             "POS": "OF",
-            "Score": 59.7479586234744,
+            "Score": 74.90754230561386,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -219,8 +160,8 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
@@ -228,13 +169,18 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Hold SP (62% SB)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Nathan Eovaldi (R)",
-            "SP_xERA": "3.23",
+            "Opponent": "Junis (R)",
+            "SP_xERA": "4.21",
             "Warning": "",
             "GameTime": "2026-05-12T00:05:00Z",
             "Order": "2*",
@@ -292,6 +238,25 @@
             "Breakdown": [
                 {
                     "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Jose Caballero",
+            "POS": "2B/SS/3B/OF",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
