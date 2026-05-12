@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-12",
-    "last_updated": "2026-05-12T20:31:02.514578+00:00",
+    "last_updated": "2026-05-12T22:08:37.344333+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 793.58,
-    "narrative": "The offensive engine for LawDog today centers around **Jos\u00e9 Ram\u00edrez**, who commands the highest efficiency score of 79.37 against Ure\u00f1a. His elite floor is fortified by a favorable matchup against a starter with a 5.01 xERA, allowing **Jos\u00e9 Ram\u00edrez** to capitalize on high-leverage opportunities in the #3 hole. Similarly, **Lawrence Butler** emerges as a high-upside play (73.44) due to a potent combination of a 4.46 xERA opponent and a robust +13% dynamic platoon edge. While **Brendan Donovan** benefits significantly from a +19% SP skill boost and a +10% order bonus in the lead-off spot, his performance is tethered to the explosive 5.79 xERA of Imai, making him and **Cal Raleigh** (67.30) vital pillars in today's 5x5 stack.\n\nThe most difficult decision on the bench involved **Luis Arraez**, whose 48.85 score barely missed the cut. The optimizer favored the higher ceiling of **Jung Hoo Lee** in the outfield despite a daunting matchup against Yamamoto; while **Jung Hoo Lee** faces an elite arm, his projected volume at the top of the order and potential for stolen bases\u2014a premium category for our build\u2014outweighed the marginal consistency of **Luis Arraez**. Owners should monitor the status of **Will Smith**, **Masyn Winn**, **Gavin Sheets**, **Lawrence Butler**, and **Jung Hoo Lee**, as their inclusion remains dependent on final lineup confirmations. Risks remain inherent in facing high-skill pitchers like Yamamoto, which may suppress the counting stats of **Jung Hoo Lee** and **Matt Chapman** if their lineups shift downwards.",
+    "total_efficiency_score": 792.03,
+    "narrative": "Today\u2019s lineup is headlined by **Jos\u00e9 Ram\u00edrez**, who carries an elite 79.37 efficiency score into his matchup against Ure\u00f1a. With a generous 5.01 xERA opposing him and a favorable batting order position, **Jos\u00e9 Ram\u00edrez** is the anchor of our attack. **Lawrence Butler** provides our secondary ceiling at 73.44, buoyed by a 10% park factor boost and a significant 13% platoon edge against Pallante. In the catching slots, **Will Smith** (68.10) and **Cal Raleigh** (67.30) are both strong starts; **Cal Raleigh** in particular benefits from a massive 19% boost due to the soft matchup against Imai, which successfully offsets his inherent platoon disadvantage. **Brendan Donovan** also ranks highly at 66.36, primarily because his leadoff role and platoon advantage against Imai align perfectly to maximize his scoring potential.\n\nThe most difficult decision for the rotation today involved the benching of **Luis Arraez**, whose 48.85 score fell just shy of the cutoff. While **Luis Arraez** offers reliable contact, the optimizer prioritized the higher ceiling of **Gavin Sheets** and the specific positional needs of the infield, noting the daunting challenge of facing Yamamoto. We are also closely monitoring **Jung Hoo Lee**, whose 49.05 score is contingent on his assumed leadoff status; should the official lineup confirm a lower spot in the order, his utility will diminish further against Yamamoto\u2019s elite strikeout profile. Meanwhile, **Masyn Winn** (61.21) remains a recommended start despite his lower base, as his matchup against Springs features a slow delivery and high stolen base potential, fitting our organizational strategy to prioritize speed. We are cautiously proceeding with **Taylor Ward** and **Jeremiah Jackson** against Warren, noting that while the park factors are favorable, the risk of a high-skill opponent mandates close observation of their early-inning performance.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -56,11 +56,6 @@
             "Score": 68.10452030676183,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "55.52",
                     "type": "info"
@@ -95,7 +90,7 @@
             "SP_xERA": "4.58",
             "Warning": "",
             "GameTime": "2026-05-13T02:10:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "02:10 AM"
         },
         {
@@ -234,13 +229,8 @@
             "Slot": "MI",
             "Player": "Masyn Winn",
             "POS": "SS",
-            "Score": 60.61748280337515,
+            "Score": 61.211534134848236,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.46",
@@ -267,16 +257,26 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Slow SP Delivery (86% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jeffrey Springs (L)",
+            "Opponent": "Springs (L)",
             "SP_xERA": "4.42",
             "Warning": "",
             "GameTime": "2026-05-13T01:40:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "01:40 AM"
         },
         {
@@ -409,7 +409,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Yoshinobu Yamamoto (R)",
+            "Opponent": "Yamamoto (R)",
             "SP_xERA": "3.40",
             "Warning": "",
             "GameTime": "2026-05-13T02:10:00Z",
@@ -420,13 +420,8 @@
             "Slot": "OF3",
             "Player": "Gavin Sheets",
             "POS": "1B/OF",
-            "Score": 55.82035175708859,
+            "Score": 53.67341515104672,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.94",
@@ -451,18 +446,13 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+7%",
                     "type": "positive"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Brandon Sproat (R)",
+            "Opponent": "Sproat (R)",
             "SP_xERA": "4.30",
             "Warning": "",
             "GameTime": "2026-05-12T23:40:00Z",
-            "Order": "4*",
+            "Order": "6",
             "Start": "11:40 PM"
         },
         {
@@ -471,11 +461,6 @@
             "POS": "OF",
             "Score": 73.43988497694892,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.42",
@@ -507,11 +492,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Andre Pallante (R)",
+            "Opponent": "Pallante (R)",
             "SP_xERA": "4.46",
             "Warning": "",
             "GameTime": "2026-05-13T01:40:00Z",
-            "Order": "7*",
+            "Order": "7",
             "Start": "01:40 AM"
         },
         {
@@ -732,7 +717,7 @@
             "POS": "3B",
             "Order": "7*",
             "Start": "02:10 AM",
-            "Opponent": "Yoshinobu Yamamoto (R)",
+            "Opponent": "Yamamoto (R)",
             "SP_xERA": "3.40",
             "Score": 45.345405430226684,
             "Breakdown": [
@@ -859,7 +844,7 @@
             "POS": "1B/2B",
             "Order": "2*",
             "Start": "02:10 AM",
-            "Opponent": "Yoshinobu Yamamoto (R)",
+            "Opponent": "Yamamoto (R)",
             "SP_xERA": "3.40",
             "Score": 48.85361417395825,
             "Breakdown": [
@@ -908,7 +893,7 @@
             "POS": "OF",
             "Order": "8*",
             "Start": "02:10 AM",
-            "Opponent": "Yoshinobu Yamamoto (R)",
+            "Opponent": "Yamamoto (R)",
             "SP_xERA": "3.40",
             "Score": 37.47490528923771,
             "Breakdown": [
