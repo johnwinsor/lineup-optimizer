@@ -1,15 +1,15 @@
 {
     "target_date": "2026-05-12",
-    "last_updated": "2026-05-12T16:15:09.745934+00:00",
+    "last_updated": "2026-05-12T18:51:58.545258+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 730.26,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a high-ceiling core, anchored by **Pete Crow-Armstrong** (73.62) and **Junior Caminero** (71.85). **Pete Crow-Armstrong** presents the most compelling case for an offensive breakout, as his 73.62 score is bolstered by a massive +14% boost from a favorable dynamic platoon matchup against Grant Holmes, making him a priority play in our chase for stolen bases. Meanwhile, **Junior Caminero** faces a favorable environment against the soft-tossing Patrick Corbin, with an 11% boost tied to the opposing starter's xERA, solidifying his spot in the utility slot. **Trea Turner** and **Kyle Schwarber** remain locked in as elite daily starters, with **Trea Turner** providing the highest overall efficiency (70.85) thanks to a stellar batting order and park environment.\n\nWe are navigating a few tactical risks today, primarily the \"Lineup Pending\" status across the board which forces reliance on projected batting order slots. **Yordan Alvarez** (61.62) and **Luke Raley** (60.89) are strong plays despite facing formidable starters like Bryan Woo and Tatsuya Imai, respectively; **Luke Raley** in particular benefits from a substantial +19% boost due to Imai\u2019s projected struggles. The most difficult bench decision was omitting **Casey Schmitt** (46.68). While he offered a respectable score, his matchup against the elite arm of Yoshinobu Yamamoto created too much volatility compared to the steadier floors offered by **Chase Meidroth** and **Carson Benge**. We continue to monitor the status of **Christian Yelich**, who remains on the IL, while keeping **Caleb Durbin** and **Dillon Dingler** on high alert as potential pinch-hit depth should our projected lineups fail to materialize.",
+    "total_efficiency_score": 742.14,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with a potent offensive deployment, headlined by the dual-threat production of **Trea Turner** (81.27) and **Kyle Schwarber** (79.18). Both players benefit significantly from the matchup against Mor\u00e1n, capitalizing on a +7% park factor and +12% SP skill boost, which elevates them into our elite tier of daily performers. **Pete Crow-Armstrong** (73.62) and **Junior Caminero** (71.85) also provide high-upside stability, with **Pete Crow-Armstrong** specifically leveraging a massive +14% dynamic platoon advantage. While **Yordan Alvarez** (61.62) faces a tougher test against Bryan Woo, his elite xwOBA of 0.425 ensures he remains a vital centerpiece of the lineup despite the challenging pitcher matchup.\n\nOur most difficult bench decision involved **Casey Schmitt** (46.68) and **Caleb Durbin** (39.67). While **Casey Schmitt** offered a solid baseline, the optimizer favored starting depth elsewhere to avoid the negative SP skill regression (-15%) associated with facing Yoshinobu Yamamoto. **Caleb Durbin** fell just below our strict 40.0 floor, effectively squeezed out by the high-velocity matchup against Zack Wheeler and the accompanying risk of low stolen base opportunities against elite defensive catchers. We remain cautious regarding the \"Lineup Pending\" status of **Gary Sanchez**, **Colt Keith**, **Hyeseong Kim**, **Chase Meidroth**, **Kazuma Okamoto**, **Kyle Schwarber**, **Pete Crow-Armstrong**, **Yordan Alvarez**, **Luke Raley**, and **Junior Caminero**; should official lineups deviate from our projections, particularly regarding the batting order, we may see volatility in the scoring output. Finally, with **Christian Yelich** remaining on the IL, we continue to rely on our active depth to maintain our standing in the competitive landscape.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Gary Sanchez",
             "POS": "C",
-            "Score": 58.78798527673087,
+            "Score": 40.89801869968494,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #4)",
@@ -33,8 +33,8 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
+                    "value": "-16%",
+                    "type": "negative"
                 },
                 {
                     "label": "Platoon (R/R)",
@@ -47,8 +47,8 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Matt Waldron (R)",
-            "SP_xERA": "6.73",
+            "Opponent": "Bradgley Rodriguez (R)",
+            "SP_xERA": "3.34",
             "Warning": "",
             "GameTime": "2026-05-12T23:40:00Z",
             "Order": "4*",
@@ -101,7 +101,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Freddy Peralta (R)",
+            "Opponent": "Peralta, F (R)",
             "SP_xERA": "3.78",
             "Warning": "",
             "GameTime": "2026-05-12T23:10:00Z",
@@ -210,7 +210,7 @@
             "Slot": "MI",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Score": 70.8533165679834,
+            "Score": 81.26761033710923,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -233,13 +233,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+12%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Mor\u00e1n (L)",
+            "SP_xERA": "4.52",
             "Warning": "",
             "GameTime": "2026-05-12T22:45:00Z",
             "Order": "1*",
@@ -298,7 +308,7 @@
             "Slot": "OF1",
             "Player": "Kyle Schwarber",
             "POS": "OF",
-            "Score": 67.98464528535037,
+            "Score": 79.17769604692842,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -321,6 +331,16 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+12%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
@@ -331,8 +351,8 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Mor\u00e1n (L)",
+            "SP_xERA": "4.52",
             "Warning": "",
             "GameTime": "2026-05-12T22:45:00Z",
             "Order": "2*",
@@ -391,13 +411,8 @@
             "Slot": "OF3",
             "Player": "Carson Benge",
             "POS": "OF",
-            "Score": 47.95296761054473,
+            "Score": 56.11517486340342,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.81",
@@ -419,16 +434,16 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Jack Flaherty (R)",
             "SP_xERA": "3.99",
             "Warning": "",
             "GameTime": "2026-05-12T23:10:00Z",
-            "Order": "8*",
+            "Order": "1",
             "Start": "11:10 PM"
         },
         {
@@ -608,17 +623,12 @@
             "Slot": "BN",
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
-            "Order": "9*",
+            "Order": "9",
             "Start": "10:45 PM",
             "Opponent": "Zack Wheeler (R)",
             "SP_xERA": "2.95",
             "Score": 39.67338957378249,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.35",
@@ -660,7 +670,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -776,7 +786,7 @@
             "POS": "C",
             "Order": "4*",
             "Start": "11:10 PM",
-            "Opponent": "Freddy Peralta (R)",
+            "Opponent": "Peralta, F (R)",
             "SP_xERA": "3.78",
             "Score": 38.667184895689836,
             "Breakdown": [
