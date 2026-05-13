@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-13",
-    "last_updated": "2026-05-13T17:09:36.129831+00:00",
+    "last_updated": "2026-05-13T19:42:27.180837+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 727.44,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with **Yordan Alvarez** (81.46) and **Pete Crow-Armstrong** (76.09) anchoring the lineup as our most potent assets. **Yordan Alvarez** benefits from a massive 17% SP Skill bump against Bryce Miller, while **Pete Crow-Armstrong** finds himself in a high-leverage spot against JR Ritchie; despite his #9 slotting, his 14% platoon edge and the opponent's poor xERA of 5.68 make him an essential play for run production. Meanwhile, **Trea Turner** (69.69) remains a lock, as a 5% wind-out factor and favorable historical BvP against Sonny Gray solidify his role as our primary catalyst for stolen bases and runs. We are also monitoring **Christian Yelich** (65.42), whose 13% platoon edge against Michael King compensates for the defensive prowess behind the plate, keeping him in the \"Strong\" start tier.\n\nThe most difficult bench decision involved **Carson Benge** (45.13), who finished just shy of the threshold. While **Carson Benge** offers upside, the optimizer penalized his start against Framber Valdez due to a significant 9% negative platoon variance and a tough pitcher matchup. Consequently, the team opted for the reliable floors of **Luke Raley** (62.83) and **Kyle Schwarber** (62.32). **Luke Raley** is particularly interesting today; he faces a pitcher with a very slow delivery, which the model projects as an opportunistic environment for his base-stealing potential, providing a necessary boost to our scarcest category. \n\nRisk management remains a priority given the \"Lineup Pending\" status across our roster. Specifically, **Kazuma Okamoto** (43.02) carries substantial risk today; his base projection took a 19% hit due to the high skill level of Griffin Jax. If **Kazuma Okamoto** moves lower in the order, his utility diminishes rapidly. Similarly, while **Caleb Durbin** (56.14) has a solid score, his projection is sensitive to his #9 position\u2014if that shifts, his efficiency will fluctuate. We continue to hold **Hyeseong Kim**, **Casey Schmitt**, and **Dillon Dingler** on the bench, as their current platoon mismatches and suboptimal pitching matchups do not warrant a start over our projected starters, who provide a higher ceiling for both RBI and categorical consistency.",
+    "total_efficiency_score": 726.9,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Yordan Alvarez** (81.46) anchoring the lineup, benefiting from a favorable 4.68 xERA matchup against Bryce Miller and an elite 0.423 xwOBA. **Pete Crow-Armstrong** (76.09) is our premier sleeper, leveraging a massive 19% boost from a soft matchup against Ritchie and significant dynamic platoon advantages. **Trea Turner** (69.69) remains an essential start; despite the challenge of facing Sonny Gray, the combination of a 7% park factor, wind blowing out, and a premium #1 spot keeps his efficiency high. Similarly, **Christian Yelich** (65.42) sees his value elevated by a 13% platoon boost, making him a primary source of output despite Michael King\u2019s respectable 4.00 xERA.\n\nWe are navigating several \"Lineup Pending\" designations, adding volatility to the projections for **Gary Sanchez**, **Colt Keith**, and **Junior Caminero**. While **Caleb Durbin** (56.14) is currently positioned at the bottom of the order, he retains value due to favorable wind conditions. The most difficult personnel decision involved **Carson Benge** (45.13), who nearly cracked the starting nine. Ultimately, the optimizer prioritized the higher efficiency of our core OF group and the platoon advantages held by **Luke Raley**\u2014whose 62.83 score is bolstered by a favorable matchup against a slower-delivery pitcher, increasing his probability for a stolen base. **Kazuma Okamoto** (43.02) and **Gary Sanchez** (49.02) represent our most precarious starts today, as both face SPs with sub-4.00 xERAs, requiring strict monitoring of official lineup releases to ensure these projected order slots hold.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -56,11 +56,6 @@
             "Score": 43.0247596530008,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "51.76",
                     "type": "info"
@@ -95,7 +90,7 @@
             "SP_xERA": "2.95",
             "Warning": "",
             "GameTime": "2026-05-13T23:07:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "11:07 PM"
         },
         {
@@ -104,11 +99,6 @@
             "POS": "2B/SS",
             "Score": 49.19618919373696,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.26",
@@ -144,7 +134,7 @@
             "SP_xERA": "4.42",
             "Warning": "",
             "GameTime": "2026-05-13T23:40:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "11:40 PM"
         },
         {
@@ -199,7 +189,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Sonny Gray (R)",
+            "Opponent": "Gray, S (R)",
             "SP_xERA": "3.72",
             "Warning": "",
             "GameTime": "2026-05-13T22:45:00Z",
@@ -210,7 +200,7 @@
             "Slot": "MI",
             "Player": "Colt Keith",
             "POS": "1B/2B/3B",
-            "Score": 54.71701228581586,
+            "Score": 54.16984216295771,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -238,12 +228,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Christian Scott (R)",
+            "Opponent": "Scott (R)",
             "SP_xERA": "3.96",
             "Warning": "",
             "GameTime": "2026-05-13T23:10:00Z",
@@ -256,11 +251,6 @@
             "POS": "2B/3B",
             "Score": 56.1389939274262,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.35",
@@ -306,7 +296,7 @@
             "SP_xERA": "4.23",
             "Warning": "",
             "GameTime": "2026-05-13T22:45:00Z",
-            "Order": "9*",
+            "Order": "9",
             "Start": "10:45 PM"
         },
         {
@@ -469,7 +459,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Sonny Gray (R)",
+            "Opponent": "Gray, S (R)",
             "SP_xERA": "3.72",
             "Warning": "",
             "GameTime": "2026-05-13T22:45:00Z",
@@ -567,7 +557,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "JR Ritchie (R)",
+            "Opponent": "Ritchie (R)",
             "SP_xERA": "5.68",
             "Warning": "",
             "GameTime": "2026-05-13T23:15:00Z",
@@ -616,7 +606,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Dylan Cease (R)",
+            "Opponent": "Cease (R)",
             "SP_xERA": "3.34",
             "Warning": "",
             "GameTime": "2026-05-13T23:07:00Z",
@@ -683,17 +673,12 @@
             "Slot": "BN",
             "Player": "Carson Benge",
             "POS": "OF",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:10 PM",
             "Opponent": "Framber Valdez (L)",
             "SP_xERA": "3.81",
             "Score": 45.12957224028146,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.81",
@@ -725,7 +710,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -836,9 +821,9 @@
             "POS": "C",
             "Order": "5*",
             "Start": "11:10 PM",
-            "Opponent": "Christian Scott (R)",
+            "Opponent": "Scott (R)",
             "SP_xERA": "3.96",
-            "Score": 39.00878999756928,
+            "Score": 38.61870209759359,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -863,6 +848,11 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-1.0%",
                     "type": "negative"
                 },
                 {

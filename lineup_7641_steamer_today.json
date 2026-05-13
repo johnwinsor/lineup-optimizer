@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-13",
-    "last_updated": "2026-05-13T17:11:20.875513+00:00",
+    "last_updated": "2026-05-13T19:44:43.909793+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 764.84,
-    "narrative": "The LawDog offensive unit faces a challenging slate today, but two clear standouts anchored by favorable matchups are **Taylor Ward** (71.19) and **Brendan Donovan** (68.26). **Taylor Ward** sits at the top of our lineup efficiency, benefiting from a massive 16% park factor boost and wind conditions that favor his profile against the lefty Fried. Similarly, **Brendan Donovan** exploits a high-upside matchup against Lance McCullers Jr.; his 14% platoon advantage combined with the favorable park factor and a premium leadoff spot makes him a high-floor play. While **Cal Raleigh** (65.67) and **Tyler Freeman** (62.65) also grade out as strong starts, they rely heavily on their ability to capitalize on the high xERA of their respective opposing starters, McCullers and Mitch Keller.\n\nStrategic benching remains critical, particularly with **Daulton Varsho** (45.75) narrowly missing the cut. Despite his strong base profile, the optimizer relegated **Daulton Varsho** to the bench because he faces Griffin Jax\u2014an elite arm with an xERA of 2.95\u2014and is currently projected in the bottom third of his lineup, which significantly drags down his counting-stat ceiling compared to the middle-of-the-pack starts like **Bryson Stott** (62.00). **Bryson Stott** ultimately secured the final UTIL spot over the bench options because his high-end dynamic platoon advantage against Sonny Gray offsets the risk associated with his lower spot in the order.\n\nManagement must remain vigilant regarding the \"Lineup Pending\" status for over half our roster. While we are currently projecting **Jonathan Aranda** (53.28) and **Jung Hoo Lee** (48.85) based on historical slotting, any late-breaking news dropping them in the order or removing them entirely from the lineup could render these efficiency scores moot. We are notably concerned about the exposure of **Luis Arraez** and **Jung Hoo Lee** against Shohei Ohtani; facing an elite arm with an xERA of 2.75 creates a high risk of stagnant production. We are playing for volume and situational advantages today, prioritizing those with favorable park factors and platoon splits to hedge against the scarcity of stolen bases and RBI potential across the board.",
+    "total_efficiency_score": 765.56,
+    "narrative": "The strongest play for LawDog today is **Taylor Ward**, whose 71.19 efficiency score is fueled by a massive +16% park adjustment and a significant platoon edge against Fried. He anchors the outfield, followed closely by **Brendan Donovan** at 68.26; **Brendan Donovan** benefits from an elite matchup against the vulnerable McCullers Jr. and a projected lead-off spot that maximizes his run-scoring potential. Meanwhile, **Cal Raleigh** remains a high-floor start at 65.68, as his raw power profile is bolstered by the weak 4.76 xERA of the opposing starter. We are also leaning on **Tyler Freeman** (62.02) and **Bryson Stott** (62.00), both of whom benefit from favorable wind conditions, providing a much-needed boost to our efficiency metrics.\n\nThe most difficult bench decision involved **Luis Arraez**, who posted a 47.91 score, just missing the cut for our UTIL slot occupied by **Jos\u00e9 Ram\u00edrez**. While **Jos\u00e9 Ram\u00edrez** faces a tough 3.24 xERA arm in Detmers, his potential for stolen bases\u2014derived from the pitcher's slow delivery\u2014pushed him over the edge in our SB-scarcity framework, whereas **Luis Arraez** offers little in that category against an elite arm like Ohtani. We are actively monitoring the lineup status of **Cal Raleigh**, **Will Smith**, **Jonathan Aranda**, **Bryson Stott**, **Masyn Winn**, **Brendan Donovan**, **Lawrence Butler**, and **Jung Hoo Lee**; the \"Lineup Pending\" designation introduces inherent volatility. Finally, be wary of the 2.95 xERA assigned to Jax, which drags down the outlook for **Daulton Varsho**, though his platoon advantage keeps him marginally relevant for today's slate.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -150,7 +150,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Dylan Cease (R)",
+            "Opponent": "Cease (R)",
             "SP_xERA": "3.34",
             "Warning": "",
             "GameTime": "2026-05-13T23:07:00Z",
@@ -159,18 +159,18 @@
         },
         {
             "Slot": "2B",
-            "Player": "Luis Arraez",
-            "POS": "1B/2B",
-            "Score": 47.91309938781136,
+            "Player": "Bryson Stott",
+            "POS": "2B/SS",
+            "Score": 62.00074538969289,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
+                    "label": "Lineup Pending (Assumed #7)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "51.50",
+                    "value": "53.80",
                     "type": "info"
                 },
                 {
@@ -179,27 +179,37 @@
                     "type": "info"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
+                    "label": "Park",
                     "value": "+7%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "SP Skill",
+                    "value": "-7%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Shohei Ohtani (R)",
-            "SP_xERA": "2.75",
+            "Opponent": "Gray, S (R)",
+            "SP_xERA": "3.72",
             "Warning": "",
-            "GameTime": "2026-05-14T02:10:00Z",
-            "Order": "2*",
-            "Start": "02:10 AM"
+            "GameTime": "2026-05-13T22:45:00Z",
+            "Order": "7*",
+            "Start": "10:45 PM"
         },
         {
             "Slot": "SS",
@@ -207,11 +217,6 @@
             "POS": "SS",
             "Score": 59.870333119534976,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.68",
@@ -242,7 +247,7 @@
             "SP_xERA": "4.31",
             "Warning": "",
             "GameTime": "2026-05-14T00:05:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "12:05 AM"
         },
         {
@@ -301,13 +306,18 @@
         },
         {
             "Slot": "3B",
-            "Player": "Jos\u00e9 Ram\u00edrez",
-            "POS": "3B",
-            "Score": 58.066058453604604,
+            "Player": "Brendan Donovan",
+            "POS": "2B/SS/3B/OF",
+            "Score": 68.26204627150634,
             "Breakdown": [
                 {
+                    "label": "Lineup Pending (Assumed #1)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Base",
-                    "value": "64.61",
+                    "value": "50.56",
                     "type": "info"
                 },
                 {
@@ -316,33 +326,38 @@
                     "type": "info"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "-18%",
+                    "label": "Park",
+                    "value": "-2%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+2%",
+                    "label": "SP Skill",
+                    "value": "+19%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Detmers (L)",
-            "SP_xERA": "3.24",
+            "Opponent": "Lance McCullers Jr. (R)",
+            "SP_xERA": "4.76",
             "Warning": "",
-            "GameTime": "2026-05-13T17:10:00Z",
-            "Order": "2",
-            "Start": "05:10 PM"
+            "GameTime": "2026-05-14T00:10:00Z",
+            "Order": "1*",
+            "Start": "12:10 AM"
         },
         {
             "Slot": "OF1",
             "Player": "Tyler Freeman",
             "POS": "2B/OF",
-            "Score": 62.65131384337335,
+            "Score": 62.02480070493962,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -370,6 +385,11 @@
                     "type": "info"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
@@ -380,7 +400,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Mitch Keller (R)",
+            "Opponent": "Keller, M (R)",
             "SP_xERA": "4.25",
             "Warning": "",
             "GameTime": "2026-05-13T22:40:00Z",
@@ -438,50 +458,6 @@
         },
         {
             "Slot": "OF3",
-            "Player": "Jung Hoo Lee",
-            "POS": "OF",
-            "Score": 48.85184677985674,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "50.39",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Shohei Ohtani (R)",
-            "SP_xERA": "2.75",
-            "Warning": "",
-            "GameTime": "2026-05-14T02:10:00Z",
-            "Order": "1*",
-            "Start": "02:10 AM"
-        },
-        {
-            "Slot": "OF4",
             "Player": "Lawrence Butler",
             "POS": "OF",
             "Score": 58.00653955042785,
@@ -530,10 +506,54 @@
             "Start": "01:40 AM"
         },
         {
+            "Slot": "OF4",
+            "Player": "Daulton Varsho",
+            "POS": "OF",
+            "Score": 48.10333076273361,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "51.81",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Griffin Jax (R)",
+            "SP_xERA": "2.95",
+            "Warning": "",
+            "GameTime": "2026-05-13T23:07:00Z",
+            "Order": "5",
+            "Start": "11:07 PM"
+        },
+        {
             "Slot": "OF5",
-            "Player": "Brendan Donovan",
-            "POS": "2B/SS/3B/OF",
-            "Score": 68.26204627150634,
+            "Player": "Jung Hoo Lee",
+            "POS": "OF",
+            "Score": 48.85184677985674,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -542,7 +562,7 @@
                 },
                 {
                     "label": "Base",
-                    "value": "50.56",
+                    "value": "50.39",
                     "type": "info"
                 },
                 {
@@ -551,18 +571,13 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "-2%",
+                    "label": "SP Skill",
+                    "value": "-19%",
                     "type": "negative"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
+                    "value": "+10%",
                     "type": "positive"
                 },
                 {
@@ -571,27 +586,22 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Lance McCullers Jr. (R)",
-            "SP_xERA": "4.76",
+            "Opponent": "Shohei Ohtani (R)",
+            "SP_xERA": "2.75",
             "Warning": "",
-            "GameTime": "2026-05-14T00:10:00Z",
+            "GameTime": "2026-05-14T02:10:00Z",
             "Order": "1*",
-            "Start": "12:10 AM"
+            "Start": "02:10 AM"
         },
         {
             "Slot": "UTIL",
-            "Player": "Bryson Stott",
-            "POS": "2B/SS",
-            "Score": 62.00074538969289,
+            "Player": "Jos\u00e9 Ram\u00edrez",
+            "POS": "3B",
+            "Score": 59.22737962267671,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "53.80",
+                    "value": "64.61",
                     "type": "info"
                 },
                 {
@@ -600,37 +610,32 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
                     "label": "SP Skill",
-                    "value": "-7%",
+                    "value": "-18%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+13%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "Slow SP Delivery (88% SB)",
+                    "value": "+2%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Sonny Gray (R)",
-            "SP_xERA": "3.72",
+            "Opponent": "Detmers (L)",
+            "SP_xERA": "3.24",
             "Warning": "",
-            "GameTime": "2026-05-13T22:45:00Z",
-            "Order": "7*",
-            "Start": "10:45 PM"
+            "GameTime": "2026-05-13T17:10:00Z",
+            "Order": "2",
+            "Start": "05:10 PM"
         }
     ],
     "players_sat": [
@@ -709,22 +714,22 @@
         },
         {
             "Slot": "BN",
-            "Player": "Daulton Varsho",
-            "POS": "OF",
-            "Order": "7*",
-            "Start": "11:07 PM",
-            "Opponent": "Griffin Jax (R)",
-            "SP_xERA": "2.95",
-            "Score": 45.74532435279569,
+            "Player": "Luis Arraez",
+            "POS": "1B/2B",
+            "Order": "2*",
+            "Start": "02:10 AM",
+            "Opponent": "Shohei Ohtani (R)",
+            "SP_xERA": "2.75",
+            "Score": 47.91309938781136,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
+                    "label": "Lineup Pending (Assumed #2)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "51.81",
+                    "value": "51.50",
                     "type": "info"
                 },
                 {
@@ -733,24 +738,19 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
                     "label": "SP Skill",
                     "value": "-19%",
                     "type": "negative"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+10%",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
@@ -759,7 +759,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-05-13T23:07:00Z"
+            "GameTime": "2026-05-14T02:10:00Z"
         },
         {
             "Slot": "BN",
@@ -834,9 +834,9 @@
             "POS": "OF",
             "Order": "6*",
             "Start": "11:10 PM",
-            "Opponent": "Christian Scott (R)",
+            "Opponent": "Scott (R)",
             "SP_xERA": "3.96",
-            "Score": 41.19080467511208,
+            "Score": 40.77889662836097,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -861,6 +861,11 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-1.0%",
                     "type": "negative"
                 },
                 {
