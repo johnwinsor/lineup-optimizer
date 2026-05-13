@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-13",
-    "last_updated": "2026-05-13T06:51:08.823267+00:00",
+    "last_updated": "2026-05-13T14:18:03.951050+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 811.35,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 821.05,
+    "narrative": "Today, **Ghost Ride the WHIP** has several strong plays driven by favorable matchups and advantageous situational factors. Leading the charge is **Corbin Carroll**, who boasts an impressive 81.9 score against Kumar Rocker. This is bolstered by Rocker's higher SP_xERA of 4.31, a dynamic platoon advantage for **Corbin Carroll**, and a boost from the \"Slow SP Delivery (100% SB)\" modifier, which is critical for our SB-heavy strategy. **Mickey Moniak** also presents a robust option with a 75.9 score, benefiting from a significant dynamic platoon advantage (+14%) against Mitch Keller and a wind-out push. Similarly, **Josh Naylor** (74.9 score) and **James Wood** (69.3 score) are well-positioned due to strong SP_xERA matchups and lineup order advantages. **James Wood**'s score is particularly aided by his xwOBA of 0.380 and a wind-out factor.\n\nThe optimizer has made some clear choices regarding our bench. **Kyle Karros** is the most notable bench decision, falling just outside our starting lineup with a 48.1 score. While he benefits from a positive Park factor and a good matchup against Mitch Keller, the \"Lineup Pending (Not picked by Optimizer)\" flag suggests the optimizer prioritized players with more certainty or higher upside. The wind-out factor is a common theme today, positively impacting **Trevor Story**, **James Wood**, and **Mickey Moniak**. Additionally, **Brice Turang**\u2019s 60.3 score is significantly boosted by a high batting order placement (+10%), demonstrating the impact of lineup construction.\n\nWe have a few factors to monitor closely today. The \"Lineup Pending\" status for several players, including **Gabriel Moreno** and **Dalton Rushing**, introduces a degree of uncertainty, though their assumed lineup spots are factored into their current scores. **Dalton Rushing** faces a platoon disadvantage against Robbie Ray (L), which suppresses his score. While **Cole Young** has a strong underlying matchup against Lance McCullers Jr. (R), his score is tempered by his assumed batting order of 9 and the \"Slow SP Delivery (100% SB)\" factor, which is less impactful when the starting pitcher is not prone to allowing steals. Thankfully, there are no immediate weather warnings to report.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -205,7 +205,7 @@
             "Slot": "SS",
             "Player": "Trevor Story",
             "POS": "SS",
-            "Score": 63.94633650444276,
+            "Score": 67.1436533296649,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -245,6 +245,11 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -401,7 +406,7 @@
             "Slot": "OF2",
             "Player": "James Wood",
             "POS": "OF",
-            "Score": 66.0685588919584,
+            "Score": 69.37198683655632,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -442,6 +447,11 @@
                     "label": "xwOBA Good",
                     "value": "0.380",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Nick Lodolo (L)",
@@ -553,7 +563,7 @@
             "Slot": "OF5",
             "Player": "Mickey Moniak",
             "POS": "OF",
-            "Score": 72.77985469940498,
+            "Score": 75.97964860410815,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -588,6 +598,11 @@
                 {
                     "label": "Order #2",
                     "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -802,7 +817,7 @@
             "Start": "10:40 PM",
             "Opponent": "Mitch Keller (R)",
             "SP_xERA": "4.25",
-            "Score": 45.85975105217622,
+            "Score": 48.15273860478504,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -838,6 +853,11 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
@@ -900,17 +920,12 @@
             "Slot": "BN",
             "Player": "Travis Bazzana",
             "POS": "2B",
-            "Order": "5*",
+            "Order": "6",
             "Start": "05:10 PM",
             "Opponent": "Reid Detmers (L)",
             "SP_xERA": "3.24",
-            "Score": 33.86491851176547,
+            "Score": 33.20090050173085,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "45.52",
@@ -932,14 +947,63 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
                     "label": "xwOBA Good",
                     "value": "0.394",
                     "type": "info"
+                },
+                {
+                    "label": "Benched - Below Zebras Floor (40.0).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-05-13T17:10:00Z"
+        },
+        {
+            "Slot": "BN",
+            "Player": "Henry Bolte",
+            "POS": "OF",
+            "Order": "5*",
+            "Start": "01:40 AM",
+            "Opponent": "Matthew Liberatore (L)",
+            "SP_xERA": "4.54",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "0.00",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
@@ -948,7 +1012,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-05-13T17:10:00Z"
+            "GameTime": "2026-05-14T01:40:00Z"
         }
     ]
 }
