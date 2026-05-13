@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-13",
-    "last_updated": "2026-05-13T14:18:03.951050+00:00",
+    "last_updated": "2026-05-13T17:10:04.875251+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 821.05,
-    "narrative": "Today, **Ghost Ride the WHIP** has several strong plays driven by favorable matchups and advantageous situational factors. Leading the charge is **Corbin Carroll**, who boasts an impressive 81.9 score against Kumar Rocker. This is bolstered by Rocker's higher SP_xERA of 4.31, a dynamic platoon advantage for **Corbin Carroll**, and a boost from the \"Slow SP Delivery (100% SB)\" modifier, which is critical for our SB-heavy strategy. **Mickey Moniak** also presents a robust option with a 75.9 score, benefiting from a significant dynamic platoon advantage (+14%) against Mitch Keller and a wind-out push. Similarly, **Josh Naylor** (74.9 score) and **James Wood** (69.3 score) are well-positioned due to strong SP_xERA matchups and lineup order advantages. **James Wood**'s score is particularly aided by his xwOBA of 0.380 and a wind-out factor.\n\nThe optimizer has made some clear choices regarding our bench. **Kyle Karros** is the most notable bench decision, falling just outside our starting lineup with a 48.1 score. While he benefits from a positive Park factor and a good matchup against Mitch Keller, the \"Lineup Pending (Not picked by Optimizer)\" flag suggests the optimizer prioritized players with more certainty or higher upside. The wind-out factor is a common theme today, positively impacting **Trevor Story**, **James Wood**, and **Mickey Moniak**. Additionally, **Brice Turang**\u2019s 60.3 score is significantly boosted by a high batting order placement (+10%), demonstrating the impact of lineup construction.\n\nWe have a few factors to monitor closely today. The \"Lineup Pending\" status for several players, including **Gabriel Moreno** and **Dalton Rushing**, introduces a degree of uncertainty, though their assumed lineup spots are factored into their current scores. **Dalton Rushing** faces a platoon disadvantage against Robbie Ray (L), which suppresses his score. While **Cole Young** has a strong underlying matchup against Lance McCullers Jr. (R), his score is tempered by his assumed batting order of 9 and the \"Slow SP Delivery (100% SB)\" factor, which is less impactful when the starting pitcher is not prone to allowing steals. Thankfully, there are no immediate weather warnings to report.",
+    "narrative": "For Ghost Ride the WHIP\u2019s May 13th slate, our primary focus is capitalizing on speed and favorable matchups against soft pitching rotations. **Corbin Carroll** (81.94) and **Mickey Moniak** (75.98) headline our lineup today. **Corbin Carroll** benefits from a plus-matchup against Kumar Rocker, where his speed profile is further amplified by the pitcher's slow delivery, creating a high-ceiling environment for stolen bases. Meanwhile, **Mickey Moniak** is in a prime spot against Mitch Keller; the combination of a strong wind-out forecast and a massive +14% boost from a favorable platoon advantage makes him an elite play despite being lower in the batting order. **Josh Naylor** (74.98) also rounds out the top-tier, fueled by a high-skill matchup against a struggling Lance McCullers Jr.\n\nStrategic lineup construction heavily influenced our roster decisions, particularly regarding the fringe spots. **James Wood** (69.37) remains a mandatory start due to his high xwOBA and wind-aided park factors, effectively neutralizing the threat of Nick Lodolo. In contrast, **Kyle Karros** (49.64) was our most difficult benching decision. While his park factors and recent performance metrics were solid, he ultimately fell short of our efficiency floor due to a lack of platoon leverage compared to **Vinnie Pasquantino** or **Tyler Soderstrom**. Investors should remain cautious regarding the \"Lineup Pending\" designations for **Gabriel Moreno** and **Dalton Rushing**; should either fall out of their assumed spots, their efficiency scores will drift toward the marginal range. Furthermore, **Brice Turang** faces a tricky outing against Michael King; while he benefits from a leadoff position, we are factoring in a 4% efficiency penalty due to King's ability to control the running game, which slightly hampers **Brice Turang**'s primary value proposition.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -566,11 +566,6 @@
             "Score": 75.97964860410815,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "56.28",
                     "type": "info"
@@ -610,7 +605,7 @@
             "SP_xERA": "4.25",
             "Warning": "",
             "GameTime": "2026-05-13T22:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "10:40 PM"
         },
         {
@@ -813,17 +808,12 @@
             "Slot": "BN",
             "Player": "Kyle Karros",
             "POS": "3B",
-            "Order": "7*",
+            "Order": "6",
             "Start": "10:40 PM",
             "Opponent": "Mitch Keller (R)",
             "SP_xERA": "4.25",
-            "Score": 48.15273860478504,
+            "Score": 49.64199856163407,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.81",
@@ -850,47 +840,18 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
                     "label": "Wind Out",
                     "value": "+5%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
             "GameTime": "2026-05-13T22:40:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Luis Campusano",
-            "POS": "C",
-            "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 0.0,
-            "Breakdown": [
-                {
-                    "label": "IL (Injured)",
-                    "value": null,
-                    "type": "status"
-                },
-                {
-                    "label": "Injured (IL) - Not available.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "\ud83d\udea8 INJURED (IL)",
-            "GameTime": null
         },
         {
             "Slot": "BN",
@@ -922,7 +883,7 @@
             "POS": "2B",
             "Order": "6",
             "Start": "05:10 PM",
-            "Opponent": "Reid Detmers (L)",
+            "Opponent": "Detmers (L)",
             "SP_xERA": "3.24",
             "Score": 33.20090050173085,
             "Breakdown": [
