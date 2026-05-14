@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-13",
-    "last_updated": "2026-05-13T23:56:35.497665+00:00",
+    "last_updated": "2026-05-14T02:35:32.243738+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 633.53,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with **Yordan Alvarez** and **Pete Crow-Armstrong** serving as our clear offensive anchors. **Yordan Alvarez** commands the highest score of the day (81.46) as he faces a mid-tier arm in Miller, providing an elite xwOBA floor that makes him an essential start. Meanwhile, **Pete Crow-Armstrong** thrives in a prime-matchup scenario; his score is significantly buoyed by facing a high-ERA starter in Ritchie, with a substantial 14% boost from a favorable platoon split. The combination of **Kyle Schwarber** (63.47) and **Luke Raley** (62.83) rounds out a productive outfield, with **Kyle Schwarber** benefiting from wind conditions favorable for power and **Luke Raley** capitalizing on a slow delivery from the opposing pitcher, which maximizes his potential for a stolen base\u2014a critical priority for our roster construction.\n\nWhile our primary lineup is set, the decision to leave **Caleb Durbin** (56.14) in the MI slot despite his ninth-spot placement was a calculated move to capitalize on his elite sprint speed and favorable wind conditions, which outweighed a slight penalty for his batting order. The most difficult bench decision involved managing the marginal scores of **Dillon Dingler** (40.89) and **Kazuma Okamoto** (43.02). Both narrowly avoided being benched for under-performing projections, but were ultimately kept in to maintain game-cap efficiency, even though **Kazuma Okamoto** faces a tough challenge against an elite-tier opponent in Jax. We remain cautious regarding **Junior Caminero** (58.61) as he squares off against a high-skill arm in Cease; his score was suppressed by the SP skill factor, and he will require a strong, high-leverage plate appearance to justify his position. Keep a close eye on weather reports, as the wind boosts currently aiding **Caleb Durbin** and **Kyle Schwarber** are the primary variables preventing their scores from regressing toward the floor.",
+    "total_efficiency_score": 627.83,
+    "narrative": "For the May 13th slate, the Zurich Zebras\u2019 lineup is anchored by **Yordan Alvarez** (81.46) and **Pete Crow-Armstrong** (78.59), who represent our highest-upside plays. **Yordan Alvarez** remains a locked-in core piece, boasting an elite 0.423 xwOBA, while **Pete Crow-Armstrong** presents the day's premier opportunistic value; he benefits from a highly favorable matchup against Ritchie and his 5.68 xERA. Given that Stolen Bases are the scarcest commodity in our build, **Pete Crow-Armstrong** is prioritized heavily here, as his dynamic platoon edge and speed potential significantly outweigh his lower spot in the order. **Luke Raley** also warrants attention (62.83) due to a soft matchup against McCullers Jr., where his capacity to exploit a slow delivery profile\u2014boosting his stolen base probability\u2014adds a strategic layer to his power-heavy projection.\n\nThe most difficult roster decision today involves the exclusion of **Trea Turner**, who remains on the bench due to status uncertainty. Despite a strong base profile, his lack of confirmation in the official lineup rendered him a zero in today\u2019s efficiency model, effectively yielding his spot to **Caleb Durbin** (53.47). While **Caleb Durbin** sits in the nine-hole, his aggressive base-running upside in a park that favors his profile makes him a safer aggregate play than risking a zero from an unconfirmed **Trea Turner**. We are also closely monitoring **Dillon Dingler** (40.89); his score is suppressed by a difficult platoon split against Scott and a modest order position, forcing him toward the floor of our starting threshold. While the Zebras have a solid offensive baseline today, we must remain cautious of the volatility inherent in our middle-infield selections and the potential for late-game defensive substitutions to impact our cap usage.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -185,7 +185,7 @@
             "Slot": "MI",
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
-            "Score": 56.1389939274262,
+            "Score": 53.46570850231066,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -221,11 +221,6 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Painter (R)",
@@ -464,7 +459,7 @@
             "Slot": "OF5",
             "Player": "Kyle Schwarber",
             "POS": "OF",
-            "Score": 63.473251397079764,
+            "Score": 60.45071561626644,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -505,11 +500,6 @@
                     "label": "xwOBA Good",
                     "value": "0.399",
                     "type": "info"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Gray, S (R)",
@@ -526,11 +516,51 @@
             "Player": "Trea Turner",
             "POS": "SS",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "10:45 PM",
+            "Opponent": "Gray, S (R)",
+            "SP_xERA": "3.72",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "60.20",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-7%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "BvP Good (28 PA)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -538,7 +568,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-13T22:45:00Z"
         },
         {
             "Slot": "BN",
@@ -583,11 +613,41 @@
             "Player": "Gary Sanchez",
             "POS": "C",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:40 PM",
+            "Opponent": "King, M (R)",
+            "SP_xERA": "4.00",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.05",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -595,7 +655,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-13T23:40:00Z"
         },
         {
             "Slot": "BN",
