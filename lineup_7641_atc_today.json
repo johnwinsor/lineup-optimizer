@@ -1,21 +1,16 @@
 {
     "target_date": "2026-05-15",
-    "last_updated": "2026-05-15T20:54:54.315030+00:00",
+    "last_updated": "2026-05-15T21:53:49.379800+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 806.02,
-    "narrative": "The standout play for LawDog today is **Jos\u00e9 Ram\u00edrez**, who boasts the day\u2019s highest efficiency at 78.30. Facing A. Abbott in a matchup that favors his advanced plate discipline and ability to punish left-handed offerings, **Jos\u00e9 Ram\u00edrez** is an automatic start. Not far behind is **Will Smith** (74.95), who benefits from a favorable matchup against Jack Kochanowicz\u2019s bloated 5.19 xERA; the projected move to the leadoff spot adds significant weight to his scoring ceiling. **Lawrence Butler** (73.47) also presents an elite upside profile, as he draws a strong platoon advantage against Tyler Mahle, and despite the lower spot in the order, his combination of power and sprint speed makes him a critical engine for our 5x5 production today.\n\nThe most difficult bench decision involved **Jeremiah Jackson**, whose 54.41 score narrowly missed the cut. While he benefits from the weak matchup against Littell, the combination of a projected #9 batting order and the defensive suppression metrics\u2014specifically the opposing catcher\u2019s elite pop time\u2014tipped the optimizer toward higher-efficiency hitters in better lineup spots. We are also monitoring **Drew Gilbert** closely; his score of 55.41 is the lowest in the starting nine, largely suppressed by his assumed #8 spot in the order against Aaron Civale. While **Drew Gilbert** remains in the lineup due to the scarcity of high-speed outfielders, he remains the most vulnerable to late-game adjustments.\n\nAcross the roster, we are heavily reliant on the \"Lineup Pending\" assumptions for **Luis Arraez**, **Brendan Donovan**, and **Jung Hoo Lee**, all of whom project to gain significant points if they secure top-of-the-order spots against Aaron Civale. While these players are currently set to start, the lack of official confirmation introduces a volatility risk. We have opted to prioritize the high-floor, platoon-advantaged profiles of **Jonathan Aranda** and **Matt Chapman** to ensure we maintain our competitive edge in counting stats while keeping a close eye on weather and late-scratch news as the evening slate approaches.",
+    "total_efficiency_score": 803.52,
+    "narrative": "For today\u2019s slate, **Jos\u00e9 Ram\u00edrez** (78.30) stands as our premier offensive anchor, benefitting from a solid matchup against A. Abbott where his high base projection is elevated further by favorable order placement. **Will Smith** (74.85) and **Lawrence Butler** (73.47) also project as elite starts; **Will Smith** thrives against a vulnerable arm in Jack Kochanowicz, while **Lawrence Butler** benefits from a massive platoon advantage against Tyler Mahle, pushing his efficiency well into the top tier. **Geraldo Perdomo** remains a high-floor play at 72.67, specifically boosted by a park factor that heavily favors his profile against Freeland, providing a vital stability layer for our 5x5 build.\n\nStrategic deployment in the OF spots leans heavily on matchup leverage, particularly against Civale. While **Jung Hoo Lee** (65.65) and **Matt Chapman** (66.38) are locked into the lineup based on park-adjusted efficiency, **Drew Gilbert** (54.86) remains in the lineup despite a lower score, as we prioritize his potential for stolen bases in a target-rich environment. The most difficult bench decision involved **Jeremiah Jackson** (54.41), who fell just shy of the threshold. While **Jeremiah Jackson** possesses the elite sprint speed we covet, his projected #9 spot in the order coupled with the situational drag of an elite catcher (1.89s) ultimately pushed him behind the production consistency of our starters. **Masyn Winn** and **Bryson Stott** were similarly squeezed out, as their current SP skill projections and park factors could not justify displacing our high-efficiency middle infield block.\n\nWe are monitoring several \"Lineup Pending\" statuses closely, specifically for **Luis Arraez**, **Jung Hoo Lee**, **Drew Gilbert**, and **Matt Chapman**. All are assumed to start, but any significant downward shift in their batting order could necessitate a pivot, particularly since we are avoiding the downside of high-velocity catchers where possible. Be advised that **Taylor Ward** faces a tricky setup against Littell; while his SP skill score is excellent (+18%), his -9% platoon adjustment suggests he is one of our more volatile starts today. Ensure all cap management protocols are met, as the depth of our bench is intended to preserve flexibility for later in the week.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Will Smith",
             "POS": "C",
-            "Score": 74.9453199745861,
+            "Score": 74.84884308337101,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.52",
@@ -42,8 +37,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
@@ -56,7 +51,7 @@
             "SP_xERA": "5.19",
             "Warning": "",
             "GameTime": "2026-05-16T01:38:00Z",
-            "Order": "1*",
+            "Order": "3",
             "Start": "01:38 AM"
         },
         {
@@ -150,7 +145,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Aaron Civale (R)",
+            "Opponent": "Civale (R)",
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-05-16T01:40:00Z",
@@ -208,11 +203,6 @@
             "Score": 66.35782105980718,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "49.15",
                     "type": "info"
@@ -247,7 +237,7 @@
             "SP_xERA": "4.93",
             "Warning": "",
             "GameTime": "2026-05-16T01:40:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "01:40 AM"
         },
         {
@@ -326,12 +316,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Aaron Civale (R)",
+            "Opponent": "Civale (R)",
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-05-16T01:40:00Z",
@@ -386,7 +381,7 @@
             "Slot": "OF3",
             "Player": "Drew Gilbert",
             "POS": "OF",
-            "Score": 55.4149396886843,
+            "Score": 54.86079029179745,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -419,12 +414,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Aaron Civale (R)",
+            "Opponent": "Civale (R)",
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-05-16T01:40:00Z",
@@ -435,13 +435,8 @@
             "Slot": "OF4",
             "Player": "Taylor Ward",
             "POS": "OF",
-            "Score": 65.0368384548656,
+            "Score": 63.85435048295896,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.93",
@@ -468,8 +463,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 }
             ],
@@ -477,7 +472,7 @@
             "SP_xERA": "4.73",
             "Warning": "",
             "GameTime": "2026-05-15T22:45:00Z",
-            "Order": "1*",
+            "Order": "2",
             "Start": "10:45 PM"
         },
         {
@@ -486,11 +481,6 @@
             "POS": "OF",
             "Score": 73.46821084736321,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.42",
@@ -526,14 +516,14 @@
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-05-16T01:40:00Z",
-            "Order": "7*",
+            "Order": "7",
             "Start": "01:40 AM"
         },
         {
             "Slot": "UTIL",
             "Player": "Matt Chapman",
             "POS": "3B",
-            "Score": 67.05321568341884,
+            "Score": 66.38268352658464,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -566,12 +556,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Aaron Civale (R)",
+            "Opponent": "Civale (R)",
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-05-16T01:40:00Z",
@@ -816,17 +811,12 @@
             "Slot": "BN",
             "Player": "Jeremiah Jackson",
             "POS": "2B/SS/3B/OF",
-            "Order": "9*",
+            "Order": "9",
             "Start": "10:45 PM",
             "Opponent": "Littell (R)",
             "SP_xERA": "4.73",
             "Score": 54.411602035401486,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.39",
@@ -868,7 +858,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -882,7 +872,7 @@
             "POS": "1B/OF",
             "Order": "5*",
             "Start": "01:40 AM",
-            "Opponent": "Emerson Hancock (R)",
+            "Opponent": "Hancock (R)",
             "SP_xERA": "4.25",
             "Score": 51.90295638120861,
             "Breakdown": [
