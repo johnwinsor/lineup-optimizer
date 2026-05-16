@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-16",
-    "last_updated": "2026-05-16T14:25:13.736633+00:00",
+    "last_updated": "2026-05-16T15:53:21.475484+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 792.53,
-    "narrative": "The primary engine of our lineup today is **Jos\u00e9 Ram\u00edrez**, who boasts the day\u2019s highest efficiency score of 79.97. He faces Chris Paddack in a contest where the wind blowing out adds a critical five-point boost to his output, making him an absolute locked-in start. We are also capitalizing on a favorable environment for **Geraldo Perdomo** (72.67) and **Tyler Freeman** (71.80), both of whom benefit significantly from park factors and matchup-adjusted splits. **Matt Chapman** (69.78) remains a high-floor play despite a negative BvP historical trend; the 15% skill edge against Luis Severino outweighs the noise of a small 25-PA sample.\n\nThe most difficult decision on the bench was **Taylor Ward**, who finished with a respectable 54.87, narrowly missing the cut behind **Drew Gilbert**. While **Taylor Ward** offers solid contact metrics, the optimizer preferred the upside of **Drew Gilbert** due to the favorable 10% park boost and the pitching profile of Luis Severino, which creates a more hospitable environment for the latter. **Masyn Winn** and **Lawrence Butler** also sat despite respectable scores; **Lawrence Butler** specifically suffered from a daunting matchup against the 2.87 xERA of Trevor McDonald, which effectively neutralized his platoon advantage and pushed him into the \"marginal\" territory that we avoid to maximize our game-cap efficiency.\n\nRisk management is central to today\u2019s strategy, as nearly every slot relies on a pending lineup status. We are particularly monitoring **Will Smith**, whose score of 61.46 is tethered to his assumed spot in the three-hole. Should the official lineup move him down the order, his efficiency score will likely compress. Furthermore, **Daulton Varsho** carries a slight cautionary flag; while he sits near the 60-point threshold, his involvement in stolen base opportunities is currently hampered by an elite-level opposing holding strategy from the mound, slightly capping his ceiling in the scarcest category of our 5x5 format.",
+    "narrative": "The engine is running hot for today\u2019s slate, anchored by **Jos\u00e9 Ram\u00edrez**, who commands the highest score at 79.97. Facing Chris Paddack, **Jos\u00e9 Ram\u00edrez** is in an ideal position to exploit the favorable 4.52 xERA and a wind-out benefit, keeping him as our undisputed offensive focal point. Similarly, **Geraldo Perdomo** (72.67) and **Tyler Freeman** (71.80) are elite starts today; **Geraldo Perdomo** benefits significantly from a high SP-skill adjustment (18%) and park factors, while **Tyler Freeman** remains a locked-in asset due to his reliable slot in the order and a favorable matchup against the left-handed Eduardo Rodriguez. While **Matt Chapman** (69.78) carries a slight penalty for historical BvP struggles against Luis Severino, the park and platoon advantages keep him firmly in the strong start territory.\n\nThe lineup optimization process was most difficult regarding the bench, where **Masyn Winn** (56.59) was the odd man out despite a respectable projection. While **Masyn Winn** draws a lead-off spot against a mediocre left-handed pitcher, the optimizer favored the higher raw efficiency of our outfield trio and the positional versatility of **Daulton Varsho** (59.28). We are also monitoring a 32% rain risk for **Bryson Stott** (56.87); while his score suggests a start, his borderline efficiency makes him a candidate for a late-swap if the weather outlook in the Philadelphia area deteriorates further. Elsewhere, we are leaning into the high-upside matchup for **Brendan Donovan** (66.36) against Walker Buehler, banking on the +19% SP skill boost to keep his production above the 60-point threshold.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -206,7 +206,7 @@
             ],
             "Opponent": "Bubba Chandler (R)",
             "SP_xERA": "3.80",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (32%)",
             "GameTime": "2026-05-16T20:05:00Z",
             "Order": "6*",
             "Start": "08:05 PM"
@@ -517,11 +517,6 @@
             "Score": 59.27841856534786,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "53.57",
                     "type": "info"
@@ -561,7 +556,7 @@
             "SP_xERA": "3.82",
             "Warning": "",
             "GameTime": "2026-05-16T17:10:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "05:10 PM"
         },
         {
@@ -825,7 +820,7 @@
             "POS": "OF",
             "Order": "8",
             "Start": "05:10 PM",
-            "Opponent": "Mason Fluharty (L)",
+            "Opponent": "Fluharty (L)",
             "SP_xERA": "3.62",
             "Score": 49.29199907418917,
             "Breakdown": [
@@ -872,17 +867,12 @@
             "Slot": "BN",
             "Player": "Masyn Winn",
             "POS": "SS",
-            "Order": "6*",
+            "Order": "1",
             "Start": "06:15 PM",
-            "Opponent": "Noah Cameron (L)",
+            "Opponent": "Cameron (L)",
             "SP_xERA": "4.38",
-            "Score": 54.01566819914956,
+            "Score": 56.58784287529953,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.46",
@@ -909,12 +899,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }

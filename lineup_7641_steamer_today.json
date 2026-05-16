@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-16",
-    "last_updated": "2026-05-16T14:25:10.256883+00:00",
+    "last_updated": "2026-05-16T15:53:16.172513+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 798.89,
-    "narrative": "The offensive outlook for LawDog today centers on high-floor matchups against moderate starting pitching, with **Jos\u00e9 Ram\u00edrez** leading the charge at a score of 80.57. **Jos\u00e9 Ram\u00edrez** benefits from a favorable matchup against Chris Paddack and wind conditions blowing out, making him the clear priority play. Similarly, **Geraldo Perdomo** (73.81) and **Tyler Freeman** (72.83) capitalize on significant park and pitcher skill edges, serving as the high-output engines of today's lineup. The heavy concentration of our roster against Luis Severino\u2014specifically **Luis Arraez**, **Matt Chapman**, **Jung Hoo Lee**, and **Drew Gilbert**\u2014is a deliberate stack designed to exploit a 4.63 xERA starter in a favorable park environment, with **Luis Arraez** and **Matt Chapman** enjoying the most significant matchup-adjusted boosts.\n\nThe closest call on the bench was **Masyn Winn**, whose 55.94 score narrowly missed the cut behind the more stable projection of **Bryson Stott**. While **Masyn Winn** benefits from favorable wind, the optimizer favored **Bryson Stott** due to the specific platoon advantage and the need to protect daily game caps given the slightly higher variance in the bottom-of-the-order slots. We remain cautious of the \"Lineup Pending\" status for nearly every starter; should **Will Smith** or **Jonathan Aranda** be shifted out of their projected spots in the top third of the order, their efficiency scores will likely see a downward adjustment. Furthermore, while **Daulton Varsho** provides a necessary floor, his score is slightly suppressed by the elite ability of the opposing pitcher to limit stolen bases, reminding us that we must be clinical in our pursuit of SB efficiency.",
+    "total_efficiency_score": 800.5,
+    "narrative": "The offensive core is anchored by **Jos\u00e9 Ram\u00edrez**, who boasts an elite 80.57 score as he faces a favorable matchup against the hittable arms of the opposition. His ability to drive runs from the two-hole, combined with a positive wind factor, makes him the premier start of the day. We are also capitalizing on the high-floor potential of **Geraldo Perdomo** (73.81) and **Tyler Freeman** (72.83). Both players benefit significantly from positive park factors and vulnerable opposing starters, positioning them to capitalize on high-volume opportunities in the heart of the order. The strategy today relies heavily on the **Luis Severino** matchup; our exposure to **Luis Arraez**, **Matt Chapman**, **Drew Gilbert**, and **Jung Hoo Lee** against this specific starter provides a balanced attack, as the park and platoon dynamics project all four to outperform their season averages.\n\nOur most difficult roster decision involved keeping **Bryson Stott** on the bench despite his respectable 57.00 score. While **Bryson Stott** held a strong platoon advantage, the optimizer ultimately favored the higher-upside profiles of **Masyn Winn** and **Daulton Varsho** to ensure we don't bleed game caps on a day with elevated volatility. Specifically, **Bryson Stott** carries a 32% rain risk that further diminished his efficiency relative to the rest of the starting nine. We are also keeping a close watch on **Will Smith**; while his 59.24 projection remains solid, the \"Lineup Pending\" status necessitates caution, as a drop in the batting order could quickly evaporate his value. We have avoided exposure to **Lawrence Butler** today due to the difficult matchup against a sub-3.00 xERA starter, prioritizing lineup stability and park-adjusted scoring to maintain our lead in the competitive landscape of LawDog (7641).",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -169,50 +169,6 @@
         },
         {
             "Slot": "SS",
-            "Player": "Bryson Stott",
-            "POS": "2B/SS",
-            "Score": 57.001873966537765,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "53.80",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+13%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Bubba Chandler (R)",
-            "SP_xERA": "3.80",
-            "Warning": "",
-            "GameTime": "2026-05-16T20:05:00Z",
-            "Order": "6*",
-            "Start": "08:05 PM"
-        },
-        {
-            "Slot": "MI",
             "Player": "Geraldo Perdomo",
             "POS": "SS",
             "Score": 73.81201892556854,
@@ -259,6 +215,50 @@
             "GameTime": "2026-05-16T19:10:00Z",
             "Order": "3*",
             "Start": "07:10 PM"
+        },
+        {
+            "Slot": "MI",
+            "Player": "Masyn Winn",
+            "POS": "SS",
+            "Score": 58.60547240572832,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "51.22",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+9%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Cameron (L)",
+            "SP_xERA": "4.38",
+            "Warning": "",
+            "GameTime": "2026-05-16T18:15:00Z",
+            "Order": "1",
+            "Start": "06:15 PM"
         },
         {
             "Slot": "3B",
@@ -517,11 +517,6 @@
             "Score": 57.3318902936778,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "51.81",
                     "type": "info"
@@ -561,7 +556,7 @@
             "SP_xERA": "3.82",
             "Warning": "",
             "GameTime": "2026-05-16T17:10:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "05:10 PM"
         },
         {
@@ -719,6 +714,55 @@
         },
         {
             "Slot": "BN",
+            "Player": "Bryson Stott",
+            "POS": "2B/SS",
+            "Order": "6*",
+            "Start": "08:05 PM",
+            "Opponent": "Bubba Chandler (R)",
+            "SP_xERA": "3.80",
+            "Score": 57.001873966537765,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "53.80",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "\u26a0\ufe0f Rain Risk (32%)",
+            "GameTime": "2026-05-16T20:05:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Taylor Ward",
             "POS": "OF",
             "Order": "2*",
@@ -794,60 +838,6 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Masyn Winn",
-            "POS": "SS",
-            "Order": "6*",
-            "Start": "06:15 PM",
-            "Opponent": "Noah Cameron (L)",
-            "SP_xERA": "4.38",
-            "Score": 55.94158729637704,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "51.22",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+9%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-05-16T18:15:00Z"
         },
         {
             "Slot": "BN",
@@ -933,7 +923,7 @@
             "POS": "OF",
             "Order": "8",
             "Start": "05:10 PM",
-            "Opponent": "Mason Fluharty (L)",
+            "Opponent": "Fluharty (L)",
             "SP_xERA": "3.62",
             "Score": 48.62502796520402,
             "Breakdown": [
