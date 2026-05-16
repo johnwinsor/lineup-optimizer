@@ -1,15 +1,15 @@
 {
     "target_date": "2026-05-16",
-    "last_updated": "2026-05-16T13:02:38.253867+00:00",
+    "last_updated": "2026-05-16T14:25:10.256883+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 796.07,
-    "narrative": "The offensive focal point for LawDog today is **Jos\u00e9 Ram\u00edrez**, who boasts the day\u2019s premier projection (80.57). His matchup against Chris Paddack\u2014combined with favorable wind conditions providing a +5% lift\u2014makes him a locked-in must-start. Joining him in the top tier are **Geraldo Perdomo** (73.81) and **Tyler Freeman** (72.83). **Geraldo Perdomo** benefits significantly from a high SP skill adjustment (+18%) and park factors, while **Tyler Freeman** capitalizes on a high-ceiling plate appearance environment against Eduardo Rodriguez. Notably, the collective lineup is heavily banking on the vulnerability of Luis Severino; **Luis Arraez** (69.53), **Matt Chapman** (69.63), **Jung Hoo Lee** (68.02), and **Drew Gilbert** (59.48) all receive substantial boosts due to the projected SP skill, with **Luis Arraez** and **Jung Hoo Lee** providing necessary stability at the top of their respective orders.\n\nThe most difficult decision on the bench was **Taylor Ward** (54.66), who just missed the cut. While **Taylor Ward** has strong underlying numbers, the optimizer prioritized the platoon-neutral volume of **Tyler Freeman** and the higher projected lineup positioning of our active bats. Furthermore, we are exercising caution with **Masyn Winn** (53.27); despite a decent score, a 34% rain risk combined with a difficult matchup against Noah Cameron made him an easy exclusion to preserve game caps. While **Will Smith**, **Jonathan Aranda**, **Bryson Stott**, **Brendan Donovan**, and **Daulton Varsho** all sit in the mid-50s to high-60s range, they remain strong starts in this format. We are monitoring all \"Lineup Pending\" statuses, as any deviation from our assumed batting order for **Will Smith** or **Matt Chapman** could lead to a minor re-evaluation of their daily efficiency scores.",
+    "total_efficiency_score": 798.89,
+    "narrative": "The offensive outlook for LawDog today centers on high-floor matchups against moderate starting pitching, with **Jos\u00e9 Ram\u00edrez** leading the charge at a score of 80.57. **Jos\u00e9 Ram\u00edrez** benefits from a favorable matchup against Chris Paddack and wind conditions blowing out, making him the clear priority play. Similarly, **Geraldo Perdomo** (73.81) and **Tyler Freeman** (72.83) capitalize on significant park and pitcher skill edges, serving as the high-output engines of today's lineup. The heavy concentration of our roster against Luis Severino\u2014specifically **Luis Arraez**, **Matt Chapman**, **Jung Hoo Lee**, and **Drew Gilbert**\u2014is a deliberate stack designed to exploit a 4.63 xERA starter in a favorable park environment, with **Luis Arraez** and **Matt Chapman** enjoying the most significant matchup-adjusted boosts.\n\nThe closest call on the bench was **Masyn Winn**, whose 55.94 score narrowly missed the cut behind the more stable projection of **Bryson Stott**. While **Masyn Winn** benefits from favorable wind, the optimizer favored **Bryson Stott** due to the specific platoon advantage and the need to protect daily game caps given the slightly higher variance in the bottom-of-the-order slots. We remain cautious of the \"Lineup Pending\" status for nearly every starter; should **Will Smith** or **Jonathan Aranda** be shifted out of their projected spots in the top third of the order, their efficiency scores will likely see a downward adjustment. Furthermore, while **Daulton Varsho** provides a necessary floor, his score is slightly suppressed by the elite ability of the opposing pitcher to limit stolen bases, reminding us that we must be clinical in our pursuit of SB efficiency.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Will Smith",
             "POS": "C",
-            "Score": 56.425616885549324,
+            "Score": 59.24689772982679,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -50,6 +50,11 @@
                     "label": "xwOBA Good",
                     "value": "0.375",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Jos\u00e9 Soriano (R)",
@@ -552,7 +557,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Casey Mize (R)",
+            "Opponent": "Mize (R)",
             "SP_xERA": "3.82",
             "Warning": "",
             "GameTime": "2026-05-16T17:10:00Z",
@@ -798,7 +803,7 @@
             "Start": "06:15 PM",
             "Opponent": "Noah Cameron (L)",
             "SP_xERA": "4.38",
-            "Score": 53.277702187025746,
+            "Score": 55.94158729637704,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -831,12 +836,17 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
                     "label": "Lineup Pending (Not picked by Optimizer).",
                     "value": null,
                     "type": "info"
                 }
             ],
-            "Warning": "\u26a0\ufe0f Rain Risk (34%)",
+            "Warning": "",
             "GameTime": "2026-05-16T18:15:00Z"
         },
         {
@@ -921,17 +931,12 @@
             "Slot": "BN",
             "Player": "Wenceel Perez",
             "POS": "OF",
-            "Order": "8*",
+            "Order": "8",
             "Start": "05:10 PM",
             "Opponent": "Mason Fluharty (L)",
             "SP_xERA": "3.62",
             "Score": 48.62502796520402,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.91",
@@ -963,7 +968,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
