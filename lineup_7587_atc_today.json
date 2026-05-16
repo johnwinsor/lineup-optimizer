@@ -1,15 +1,15 @@
 {
     "target_date": "2026-05-16",
-    "last_updated": "2026-05-16T18:53:15.449313+00:00",
+    "last_updated": "2026-05-16T19:58:40.030596+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 735.25,
-    "narrative": "For today\u2019s slate, our lineup is anchored by the explosive potential of **Corbin Carroll** (85.94), who draws an incredibly favorable matchup against Sugano and his 4.74 xERA. With optimal hitting conditions and a premium spot in the #2 hole, he remains our premier ceiling play. He is flanked by **Josh Naylor** (73.26) and **James Wood** (67.02), both of whom benefit significantly from their respective park factors and the exploitable profiles of opposing starters Walker Buehler and Bassitt. We are also banking on **Mickey Moniak** (65.05) and **Kyle Karros** (62.77) to exploit the porous pitching environment against Eduardo Rodriguez; despite some platoon regression, the park and skill-based advantages make them high-floor plays that solidify our offensive core.\n\nThe primary optimization challenge involved **Austin Riley** (50.79), who narrowly missed the cut behind lower-projected starters due to the volatility of his current platoon matchup against a left-handed arm. While **Austin Riley** possesses the raw power to change a category, the current efficiency metrics favor the consistent deployment of **Vinnie Pasquantino** (62.29), who enjoys a +14% dynamic platoon boost today. Meanwhile, we remain cautious regarding **Travis Bazzana** (58.96), as he carries a 36% rain risk at his venue\u2014a factor that necessitates monitoring throughout the day. We are currently navigating these decisions without the services of **Trevor Story** and **Jose Caballero**, both of whom remain sidelined on the IL, placing additional pressure on **Brice Turang** and **Zach McKinstry** to maintain our efficiency targets in the middle infield slots.",
+    "total_efficiency_score": 732.99,
+    "narrative": "Our lineup is anchored today by **Corbin Carroll**, who stands as our clear top play with an elite score of 85.94. His matchup against Sugano is quintessential for our strategy; not only does he benefit from a favorable park factor and a soft SP_xERA, but the pitcher\u2019s notoriously slow delivery creates a high-probability environment for **Corbin Carroll** to exploit our scarcest category, stolen bases. Following him, **Josh Naylor** (73.26) and **James Wood** (67.02) provide significant upside. **Josh Naylor** capitalizes on a high SP_xERA for Walker Buehler, while **James Wood**\u2019s leadoff spot and favorable xwOBA projections make him a primary catalyst for our run production today, despite the risk associated with facing a pitcher who limits stolen base attempts.\n\nThe most difficult roster decision today was keeping **Austin Riley** on the bench. With a score of 51.79, he was the odd man out, ultimately squeezed by the high efficiency scores of **Mickey Moniak** (65.05) and **Kyle Karros** (62.77), both of whom are benefiting from a massive +14% park boost and a favorable matchup against Ed Rodriguez. While **Austin Riley** offers pedigree, the optimizer favored the platoon-neutral volume and park factors currently buoying our lower-tier starters. We are also monitoring the status of several players; with **Dalton Rushing**, **Brice Turang**, **Tyler Soderstrom**, and **Seiya Suzuki** all currently labeled \"Lineup Pending,\" we face a volatile floor. We remain cautious of **Dalton Rushing** in particular; his score of 45.27 is hindered by a projected #8 spot in the order, and if his official placement shifts further down or out of the lineup, he is the first candidate to be pivoted to protect our daily game caps.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Dalton Rushing",
             "POS": "C",
-            "Score": 47.53391343753748,
+            "Score": 45.270393750035694,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -50,11 +50,6 @@
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Jos\u00e9 Soriano (R)",
@@ -147,7 +142,7 @@
             ],
             "Opponent": "Paddack (R)",
             "SP_xERA": "4.52",
-            "Warning": "\u26a0\ufe0f Rain Risk (36%)",
+            "Warning": "",
             "GameTime": "2026-05-16T22:10:00Z",
             "Order": "5",
             "Start": "10:10 PM"
@@ -468,6 +463,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
@@ -527,7 +527,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Davis Martin (R)",
+            "Opponent": "Martin (R)",
             "SP_xERA": "4.21",
             "Warning": "",
             "GameTime": "2026-05-16T23:10:00Z",
@@ -540,11 +540,6 @@
             "POS": "1B",
             "Score": 73.2594596273772,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "57.60",
@@ -580,7 +575,7 @@
             "SP_xERA": "4.84",
             "Warning": "",
             "GameTime": "2026-05-16T23:15:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:15 PM"
         }
     ],
@@ -637,17 +632,12 @@
             "Slot": "BN",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Order": "5*",
+            "Order": "4",
             "Start": "11:15 PM",
             "Opponent": "Tolle (L)",
             "SP_xERA": "3.69",
-            "Score": 50.793114768684184,
+            "Score": 51.78905819552113,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.58",
@@ -674,12 +664,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -806,17 +796,12 @@
             "Slot": "BN",
             "Player": "Cole Young",
             "POS": "2B/SS",
-            "Order": "8*",
+            "Order": "9",
             "Start": "11:15 PM",
             "Opponent": "Walker Buehler (R)",
             "SP_xERA": "4.84",
-            "Score": 47.56822044008956,
+            "Score": 46.050085745193094,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.90",
@@ -848,12 +833,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #9",
+                    "value": "-8%",
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
