@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-17",
-    "last_updated": "2026-05-17T14:27:09.947227+00:00",
+    "last_updated": "2026-05-17T15:53:25.666392+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 825.81,
-    "narrative": "The Austin Waves are primed for a high-ceiling outing today, headlined by **Gunnar Henderson**, who earns our premier efficiency score of 81.88. His massive matchup against Miles Mikolas, coupled with a projected leadoff spot and dynamic platoon advantage, creates an ideal environment for elite production. **Luis Garc\u00eda Jr.** (73.66) and **Josh Lowe** (71.68) follow closely as primary catalysts; **Josh Lowe** is particularly well-positioned to capitalize on Roki Sasaki\u2019s high xERA of 5.23, while **Luis Garc\u00eda Jr.** benefits from the same favorable matchup against Brandon Young that elevates **Nasim Nunez** (65.25) and **Brady House** (63.19). We are banking on this collective exposure to Brandon Young to anchor our offensive floor, as the lineup's collective ability to exploit that specific pitching vulnerability is the primary driver of today's scoring projection.\n\nThe decision to exclude **Andy Pages** from the active roster was the day\u2019s most difficult call. His score of 56.26 barely missed the cut behind the more stable situational output of **Dominic Smith** and **Sam Antonacci**. While **Andy Pages** remains a high-upside asset, the optimizer prioritized the specific platoon advantages of **Dominic Smith** and the elite 0.400 xwOBA profile of **Sam Antonacci**, despite the minor wind-in risk affecting the latter. We are proceeding with caution regarding the \"Lineup Pending\" designations for **Nolan Schanuel**, **Nasim Nunez**, **Gunnar Henderson**, **Luis Garc\u00eda Jr.**, **Brady House**, **Kyle Tucker**, **Josh Lowe**, **Jackson Merrill**, **Sam Antonacci**, and **Vladimir Guerrero Jr.**; should any of these hitters shift down in their respective orders, we will reassess our game-cap exposure. While **Vladimir Guerrero Jr.** (62.75) faces a respectable test in Flaherty, his current scoring trajectory remains solid enough to warrant a start despite the slight dip from his base projection.",
+    "total_efficiency_score": 802.31,
+    "narrative": "The Austin Waves enter today\u2019s slate with a high-floor offensive core, anchored by **Luis Garc\u00eda Jr.**, who provides our strongest daily efficiency score of 73.66. His matchup against Brandon Young (xERA 4.77) combined with a favorable batting order spot makes him an elite play. **Josh Lowe** (71.68) also profiles as a standout; despite facing a high-upside arm in Roki Sasaki, **Josh Lowe** benefits from an optimized platoon edge that significantly raises his output potential. Both **Kyle Tucker** (67.71) and **Drake Baldwin** (66.59) remain essential starts, as their presence in the top third of their respective lineups ensures high plate appearance volume against mid-tier pitching, mitigating the risks associated with the daily volatility of our lineup pending status.\n\nOur bench decisions were narrowly contested, with **Andy Pages** (56.26) just missing the cut for the final outfield slot. While **Andy Pages** remains a high-value asset, his projection was slightly eclipsed by the combined platoon and efficiency metrics of **Dominic Smith** (56.82) and **Sam Antonacci** (58.32). While **Sam Antonacci** deals with a \"Wind In\" warning that caps his ceiling, his 0.400 xwOBA keeps him firmly ahead of the rest of the bench. We continue to monitor the status of **Gunnar Henderson**, **Nolan Schanuel**, **Kyle Tucker**, and **Jackson Merrill**, as their pending lineups introduce a minor risk; if any are dropped in the batting order or scratched, we are prepared to pivot to the high-floor utility profile of **Coby Mayo**, who stands ready as our primary reserve.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -146,13 +146,8 @@
             "Slot": "2B",
             "Player": "Nasim Nunez",
             "POS": "2B/SS",
-            "Score": 65.25224877950605,
+            "Score": 59.3795463893505,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.09",
@@ -177,20 +172,25 @@
                     "label": "Switch",
                     "value": "+3%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Brandon Young (R)",
             "SP_xERA": "4.77",
             "Warning": "",
             "GameTime": "2026-05-17T17:35:00Z",
-            "Order": "6*",
+            "Order": "9",
             "Start": "05:35 PM"
         },
         {
             "Slot": "SS",
             "Player": "Gunnar Henderson",
             "POS": "SS",
-            "Score": 81.87777959919882,
+            "Score": 63.0684437459019,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -214,13 +214,13 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+17%",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #1",
@@ -228,8 +228,8 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Miles Mikolas (R)",
-            "SP_xERA": "4.71",
+            "Opponent": "Lovelady (L)",
+            "SP_xERA": "4.28",
             "Warning": "",
             "GameTime": "2026-05-17T17:35:00Z",
             "Order": "1*",
@@ -241,11 +241,6 @@
             "POS": "1B/2B",
             "Score": 73.66290527612375,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.57",
@@ -281,7 +276,7 @@
             "SP_xERA": "4.77",
             "Warning": "",
             "GameTime": "2026-05-17T17:35:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "05:35 PM"
         },
         {
@@ -290,11 +285,6 @@
             "POS": "3B",
             "Score": 63.187125159327415,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.81",
@@ -319,13 +309,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+9%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Brandon Young (R)",
             "SP_xERA": "4.77",
             "Warning": "",
             "GameTime": "2026-05-17T17:35:00Z",
-            "Order": "6*",
+            "Order": "3",
             "Start": "05:35 PM"
         },
         {
@@ -516,11 +511,6 @@
             "Score": 58.32208080581436,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "50.13",
                     "type": "info"
@@ -561,24 +551,19 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Colin Rea (R)",
+            "Opponent": "Rea (R)",
             "SP_xERA": "4.20",
             "Warning": "",
             "GameTime": "2026-05-17T18:10:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "06:10 PM"
         },
         {
             "Slot": "UTIL",
             "Player": "Vladimir Guerrero Jr.",
             "POS": "1B",
-            "Score": 62.74907392558639,
+            "Score": 63.933018716635196,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "60.16",
@@ -605,8 +590,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -619,7 +604,7 @@
             "SP_xERA": "4.04",
             "Warning": "",
             "GameTime": "2026-05-17T17:40:00Z",
-            "Order": "3*",
+            "Order": "2",
             "Start": "05:40 PM"
         }
     ],
@@ -802,17 +787,12 @@
             "Slot": "BN",
             "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Order": "3*",
+            "Order": "3",
             "Start": "06:10 PM",
-            "Opponent": "Colin Rea (R)",
+            "Opponent": "Rea (R)",
             "SP_xERA": "4.20",
             "Score": 49.42074054592783,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.46",
@@ -854,7 +834,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -866,17 +846,12 @@
             "Slot": "BN",
             "Player": "Josh Jung",
             "POS": "3B",
-            "Order": "3*",
+            "Order": "3",
             "Start": "06:10 PM",
-            "Opponent": "Peter Lambert (R)",
+            "Opponent": "Lambert, P (R)",
             "SP_xERA": "3.92",
             "Score": 49.71481844228095,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.10",
@@ -908,7 +883,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -922,9 +897,9 @@
             "POS": "1B/3B",
             "Order": "8*",
             "Start": "05:35 PM",
-            "Opponent": "Miles Mikolas (R)",
-            "SP_xERA": "4.71",
-            "Score": 51.21150640782368,
+            "Opponent": "Lovelady (L)",
+            "SP_xERA": "4.28",
+            "Score": 55.046385237672716,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -948,13 +923,13 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+17%",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-8%",
-                    "type": "negative"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+8%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #8",
