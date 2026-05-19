@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-19",
-    "last_updated": "2026-05-19T14:39:54.029924+00:00",
+    "last_updated": "2026-05-19T17:35:20.106329+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 757.59,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate prioritizing stolen base upside and favorable platoon splits against vulnerable pitching. Our strongest plays are **Corbin Carroll** (75.83) and **Mickey Moniak** (75.74), both of whom benefit from ideal matchup conditions. **Corbin Carroll** faces Landen Roupp, where he retains significant efficiency despite a slightly elevated pop-time risk from the opposing catcher, while **Mickey Moniak** draws a premier spot against Kumar Rocker. **Mickey Moniak**\u2019s score is buoyed by an exceptional 14% park factor and a 14% platoon advantage, making him a cornerstone of today\u2019s offensive strategy. **Austin Riley** (65.57) and **Josh Naylor** (65.29) also stand out as high-floor anchors, with **Austin Riley** specifically positioned to feast on Braxton Garrett\u2019s abysmal 9.71 xERA.\n\nThe decision to bench **Vinnie Pasquantino** (44.97) was the most difficult call of the day. While **Vinnie Pasquantino** holds a solid base projection, he is penalized heavily by a 15% dynamic platoon disadvantage against Ranger Suarez and unfavorable wind conditions. He fell just short of the efficiency threshold required to displace **Kyle Karros**, whose ability to exploit Kumar Rocker\u2019s slow delivery keeps him in the UTIL slot. Managers should note that while many positions remain pending, the current optimizer configuration remains sensitive to the risk posed by high-tier arms like Nolan McLean, who presents a hurdle for **James Wood** (53.19) despite the leadoff spot advantage. We will keep a close watch on official lineup releases for **Gabriel Moreno**, **Dalton Rushing**, and **Brice Turang**; should any of these players move down the order, their efficiency scores will require immediate re-evaluation against the secondary options like **Tyler Soderstrom** or **Henry Bolte**.",
+    "total_efficiency_score": 740.92,
+    "narrative": "The lineup for Ghost Ride the WHIP today leans heavily on high-upside matchups, headlined by **Corbin Carroll** (75.83), who remains our most explosive play against Landen Roupp. While Roupp isn't a total pushover, **Corbin Carroll**\u2019s projected efficiency is boosted significantly by a favorable platoon split and his elite stolen base potential, which aligns perfectly with our need to harvest speed. **Josh Naylor** (65.29) and **Austin Riley** (64.31) serve as the anchors of our offensive core; **Austin Riley** in particular benefits from a massive matchup grade against Garrett, whose 9.71 xERA is the most exploitable figure on the board today. Meanwhile, **Mickey Moniak** (60.24) earns a start despite the weather concerns in his contest, as the park factor in his stadium is driving his value significantly higher than his base projection suggests.\n\nOur most difficult bench decision involved **Vinnie Pasquantino** (44.97), who narrowly missed the cut behind **Kyle Karros** and **Seiya Suzuki**. While **Vinnie Pasquantino** is a steady presence, his negative platoon split against Ranger Suarez\u2014coupled with a stiff wind blowing in\u2014effectively neutralized his raw power potential in the optimizer\u2019s eyes. We are exercising caution with several players today due to shifting lineup status and volatility; **Travis Bazzana**, **Zach McKinstry**, **Mickey Moniak**, and **Kyle Karros** are all tethered to rain risks ranging from 36% to 45%. We remain particularly attentive to the \"Lineup Pending\" statuses for **Gabriel Moreno**, **Dalton Rushing**, and **Cole Young**, as their final placement in the order could swing their daily efficiency scores if they are pushed down toward the bottom of the lineup. **Carson Williams** remains on the bench, as his current projection of 32.78 falls well below our floor for active roster consideration given the tough matchup against Kyle Bradish.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -289,7 +289,7 @@
             ],
             "Opponent": "Keider Montero (R)",
             "SP_xERA": "4.51",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (36%)",
             "GameTime": "2026-05-19T22:40:00Z",
             "Order": "6*",
             "Start": "10:40 PM"
@@ -298,13 +298,8 @@
             "Slot": "3B",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Score": 65.57034738923367,
+            "Score": 64.30937917020995,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.27",
@@ -331,16 +326,16 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Braxton Garrett (L)",
+            "Opponent": "Garrett, B (L)",
             "SP_xERA": "9.71",
             "Warning": "",
             "GameTime": "2026-05-19T20:10:00Z",
-            "Order": "4*",
+            "Order": "5",
             "Start": "08:10 PM"
         },
         {
@@ -495,7 +490,7 @@
             ],
             "Opponent": "Parker Messick (L)",
             "SP_xERA": "3.33",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (36%)",
             "GameTime": "2026-05-19T22:40:00Z",
             "Order": "6*",
             "Start": "10:40 PM"
@@ -553,7 +548,7 @@
             "Slot": "OF5",
             "Player": "Mickey Moniak",
             "POS": "OF",
-            "Score": 75.74570138373898,
+            "Score": 60.24007867637733,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -577,18 +572,13 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+9%",
+                    "value": "+1%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Slow SP Delivery (85% SB)",
-                    "value": "+2%",
-                    "type": "positive"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #2",
@@ -596,9 +586,9 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kumar Rocker (R)",
-            "SP_xERA": "4.39",
-            "Warning": "",
+            "Opponent": "Tyler Alexander (L)",
+            "SP_xERA": "4.07",
+            "Warning": "\u26a0\ufe0f Rain Risk (45%)",
             "GameTime": "2026-05-20T00:40:00Z",
             "Order": "2*",
             "Start": "12:40 AM"
@@ -607,7 +597,7 @@
             "Slot": "UTIL",
             "Player": "Kyle Karros",
             "POS": "3B",
-            "Score": 57.38568448529582,
+            "Score": 57.47936372963633,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -631,17 +621,12 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+9%",
+                    "value": "+1%",
                     "type": "positive"
                 },
                 {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Slow SP Delivery (85% SB)",
-                    "value": "+2%",
+                    "label": "Platoon",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
@@ -650,9 +635,9 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Kumar Rocker (R)",
-            "SP_xERA": "4.39",
-            "Warning": "",
+            "Opponent": "Tyler Alexander (L)",
+            "SP_xERA": "4.07",
+            "Warning": "\u26a0\ufe0f Rain Risk (45%)",
             "GameTime": "2026-05-20T00:40:00Z",
             "Order": "7*",
             "Start": "12:40 AM"
