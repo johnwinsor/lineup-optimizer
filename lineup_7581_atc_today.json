@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-19",
-    "last_updated": "2026-05-19T21:15:08.384967+00:00",
+    "last_updated": "2026-05-19T22:58:51.585876+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 594.56,
-    "narrative": "For May 19, the Austin Waves lineup centers on **Kyle Tucker**, who commands the highest efficiency score of the day at 74.01. Facing Canning, **Kyle Tucker** benefits from a generous matchup against a pitcher with an xERA of 4.51, and his elevated spot in the order maximizes his opportunity to drive in runs. Alongside him, **Sam Antonacci** and **Josh Jung** emerge as elite plays, both exceeding the 66-point threshold. **Sam Antonacci** is set to lead off against Miller, whose 4.74 xERA provides a significant boost, while **Josh Jung** is primed to capitalize on a favorable park factor and a soft matchup against Peralta. These three anchors provide the high-floor, high-ceiling production required to chase category leads in our 5x5 format.\n\nThe most difficult decision on the bench was **Nolan Schanuel**, who narrowly missed the cut with a 55.83 efficiency score. While **Nolan Schanuel** offers a solid profile, the optimizer favored **Miguel Vargas** and **Jackson Merrill** to fill the remaining utility and outfield slots, as their projected lineup positions provided a higher leverage multiplier for runs and RBI. We continue to monitor the risk associated with several lineup-pending statuses, most notably for **Sam Antonacci**, **Josh Jung**, **Josh Lowe**, **Andy Pages**, **Kyle Tucker**, and **Miguel Vargas**; should their confirmed batting orders shift downward, their efficiency scores will adjust accordingly. Investors should also be cautious regarding **Luis Garc\u00eda Jr.** and **Gunnar Henderson**, as both face elite arms in McLean and Jax (xERAs under 3.20), capping their expectations despite high-leverage lineup slots. **Nasim Nunez** and **Coby Mayo** remain on the bench, strictly adhering to our internal \"Zebras Floor\" mandate to protect our limited game caps while waiting for a more favorable tactical opening.",
+    "total_efficiency_score": 546.23,
+    "narrative": "The Austin Waves enter today\u2019s slate with **Kyle Tucker** leading the charge at a strong 74.01 rating; facing Canning, he holds the highest raw projection, bolstered by a favorable SP xERA of 4.51 and his prime cleanup spot. Close behind, **Sam Antonacci** (66.39) and **Josh Jung** (66.28) anchor the core. **Sam Antonacci** benefits immensely from his leadoff designation and a solid 0.400 xwOBA, while **Josh Jung** capitalizes on the highest SP xERA matchup of the day (5.12) against Peralta, making him a primary target for counting stats. While **Vladimir Guerrero Jr.** (61.16) remains a reliable anchor in the two-hole, the team is counting on these three to drive the offensive floor given the relatively daunting SP assignments for **Luis Garc\u00eda Jr.** and **Gunnar Henderson**, both of whom are facing arms with sub-3.20 xERAs.\n\nThe most difficult roster decision today was keeping **Nolan Schanuel** on the bench despite his respectable 51.09 score. While he presents a safer floor than **Jackson Merrill** (49.49), **Jackson Merrill** maintains a slight edge in high-upside opportunity, forcing **Nolan Schanuel** to the pine as the odd man out in a crowded middle-infield configuration. We are exercising caution with **Nasim Nunez** and **Coby Mayo**, both falling beneath the 40.0 efficiency floor; **Nasim Nunez** specifically faces a tough defensive environment against an elite catcher, and **Coby Mayo** is hampered by a bottom-third order placement against a sharp arm in Jax. With **Jorge Polanco** remaining on the IL, we are managing our remaining depth carefully to ensure we maximize game caps without sacrificing our scarcity-driven need for stolen base potential.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -148,16 +148,99 @@
             "Start": "10:40 PM"
         },
         {
-            "Slot": "MI",
+            "Slot": "3B",
+            "Player": "Josh Jung",
+            "POS": "3B",
+            "Score": 66.28467597334183,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "49.10",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Peralta, S (L)",
+            "SP_xERA": "5.12",
+            "Warning": "",
+            "GameTime": "2026-05-20T00:40:00Z",
+            "Order": "4",
+            "Start": "12:40 AM"
+        },
+        {
+            "Slot": "OF1",
+            "Player": "Andy Pages",
+            "POS": "OF",
+            "Score": 59.069977698197924,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "55.13",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+12%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Canning (R)",
+            "SP_xERA": "4.51",
+            "Warning": "",
+            "GameTime": "2026-05-20T01:40:00Z",
+            "Order": "7",
+            "Start": "01:40 AM"
+        },
+        {
+            "Slot": "OF2",
             "Player": "Sam Antonacci",
             "POS": "2B/3B/OF",
             "Score": 66.39006571588874,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.13",
@@ -198,154 +281,7 @@
             "SP_xERA": "4.74",
             "Warning": "",
             "GameTime": "2026-05-20T01:40:00Z",
-            "Order": "1*",
-            "Start": "01:40 AM"
-        },
-        {
-            "Slot": "3B",
-            "Player": "Josh Jung",
-            "POS": "3B",
-            "Score": 66.28467597334183,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.10",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Neutral Platoon (L)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Peralta, S (L)",
-            "SP_xERA": "5.12",
-            "Warning": "",
-            "GameTime": "2026-05-20T00:40:00Z",
-            "Order": "3*",
-            "Start": "12:40 AM"
-        },
-        {
-            "Slot": "OF1",
-            "Player": "Josh Lowe",
-            "POS": "OF",
-            "Score": 48.32552092326244,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "53.10",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+9%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-15%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Jacob Lopez (L)",
-            "SP_xERA": "4.37",
-            "Warning": "",
-            "GameTime": "2026-05-20T01:38:00Z",
-            "Order": "7*",
-            "Start": "01:38 AM"
-        },
-        {
-            "Slot": "OF2",
-            "Player": "Andy Pages",
-            "POS": "OF",
-            "Score": 59.069977698197924,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "55.13",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+12%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Neutral Platoon (R)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Canning (R)",
-            "SP_xERA": "4.51",
-            "Warning": "",
-            "GameTime": "2026-05-20T01:40:00Z",
-            "Order": "7*",
+            "Order": "1",
             "Start": "01:40 AM"
         },
         {
@@ -354,11 +290,6 @@
             "POS": "OF",
             "Score": 74.00959418380575,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "63.63",
@@ -394,11 +325,11 @@
             "SP_xERA": "4.51",
             "Warning": "",
             "GameTime": "2026-05-20T01:40:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "01:40 AM"
         },
         {
-            "Slot": "OF5",
+            "Slot": "OF4",
             "Player": "Jackson Merrill",
             "POS": "OF",
             "Score": 49.48662616147476,
@@ -429,7 +360,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Emmet Sheehan (R)",
+            "Opponent": "Sheehan (R)",
             "SP_xERA": "3.18",
             "Warning": "",
             "GameTime": "2026-05-20T01:40:00Z",
@@ -442,11 +373,6 @@
             "POS": "1B/3B",
             "Score": 57.405467930860326,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.46",
@@ -482,7 +408,7 @@
             "SP_xERA": "4.74",
             "Warning": "",
             "GameTime": "2026-05-20T01:40:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "01:40 AM"
         }
     ],
@@ -581,6 +507,25 @@
                 }
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Josh Lowe",
+            "POS": "OF",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
             "GameTime": null
         },
         {
@@ -738,17 +683,12 @@
             "Slot": "BN",
             "Player": "Nolan Schanuel",
             "POS": "1B",
-            "Order": "3*",
+            "Order": "7",
             "Start": "01:38 AM",
-            "Opponent": "Jacob Lopez (L)",
+            "Opponent": "Lopez, J (L)",
             "SP_xERA": "4.37",
-            "Score": 55.826984288508875,
+            "Score": 51.086957320616605,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.17",
@@ -775,12 +715,12 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -817,11 +757,46 @@
             "Player": "Dominic Smith",
             "POS": "1B/OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Garrett, B (L)",
+            "SP_xERA": "9.71",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "46.39",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -829,7 +804,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-19T20:10:00Z"
         },
         {
             "Slot": "BN",
