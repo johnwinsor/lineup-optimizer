@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-20",
-    "last_updated": "2026-05-20T07:50:11.964379+00:00",
+    "last_updated": "2026-05-20T14:39:21.666274+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 773.03,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 776.24,
+    "narrative": "Today\u2019s optimization highlights the offensive potential of **Lawrence Butler** (73.62) and **Jos\u00e9 Ram\u00edrez** (73.26) as our strongest plays. **Lawrence Butler** benefits from a high-ceiling matchup against Jack Kochanowicz, whose 5.20 xERA is the most exploitable on the board, allowing **Lawrence Butler** to capitalize on a massive +13% dynamic platoon advantage. Meanwhile, **Jos\u00e9 Ram\u00edrez** remains an auto-start despite the lack of a defined opponent, as his base efficiency remains superior to almost every other option in our utility slot. **Tyler Freeman** (71.19) also lands in the \"Strong\" category, buoyed by a favorable park factor (+14%) and the fact that Jack Leiter\u2019s slow delivery significantly boosts the stolen base probability for our speed-oriented roster architecture.\n\nThe most difficult bench decision involved **Bryson Stott** (50.45), who finished just shy of the active roster. While **Bryson Stott** typically brings high-floor utility, the optimizer penalized his score due to a negative platoon split against Andrew Abbott and a bottom-tier batting order assignment (#8), which severely limits his R and RBI potential compared to the high-order density provided by **Jung Hoo Lee** (68.02) and **Luis Arraez** (67.62). **Jung Hoo Lee** is particularly well-positioned today, as his favorable park and platoon profile, combined with the high-likelihood of running against the battery facing Merrill Kelly, makes him a priority start for stolen base accumulation. \n\nWe must remain vigilant regarding the \"Lineup Pending\" status for several key contributors. **Will Smith**, **Luis Arraez**, **Geraldo Perdomo**, **Tyler Freeman**, **Matt Chapman**, **Taylor Ward**, **Daulton Varsho**, **Jung Hoo Lee**, **Lawrence Butler**, **Drew Gilbert**, and **Jos\u00e9 Ram\u00edrez** are currently projected based on historical slotting; any mid-day shifts in batting order will require a reassessment of the R and RBI projections. Furthermore, while the current projections are stable, the absence of confirmed lineups for **Daulton Varsho** against Cam Schlittler introduces a minor risk, as his value is heavily contingent on his position in the heart of the order. Ensure all game caps are monitored closely, as we continue to prioritize the efficiency of **Lawrence Butler** and **Tyler Freeman** to drive our rotisserie gains.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -66,11 +66,6 @@
             "Score": 58.972721419918884,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "51.07",
                     "type": "info"
@@ -110,7 +105,7 @@
             "SP_xERA": "4.17",
             "Warning": "",
             "GameTime": "2026-05-20T17:10:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "05:10 PM"
         },
         {
@@ -318,7 +313,7 @@
             "Slot": "OF1",
             "Player": "Taylor Ward",
             "POS": "OF",
-            "Score": 53.94477340997722,
+            "Score": 57.14919326232678,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -341,13 +336,23 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+9%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Matz (L)",
+            "SP_xERA": "3.88",
             "Warning": "",
             "GameTime": "2026-05-20T17:10:00Z",
             "Order": "1*",
@@ -652,17 +657,12 @@
             "Slot": "BN",
             "Player": "Bryson Stott",
             "POS": "2B/SS",
-            "Order": "6*",
+            "Order": "8",
             "Start": "05:05 PM",
-            "Opponent": "Andrew Abbott (L)",
+            "Opponent": "Abbott, A (L)",
             "SP_xERA": "4.45",
-            "Score": 53.66986954784782,
+            "Score": 50.44967737497695,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.80",
@@ -689,7 +689,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -776,9 +781,9 @@
             "POS": "2B/SS/3B/OF",
             "Order": "7*",
             "Start": "05:10 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 45.73784791651105,
+            "Opponent": "Matz (L)",
+            "SP_xERA": "3.88",
+            "Score": 42.786887698198235,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -798,6 +803,16 @@
                 {
                     "label": "Park",
                     "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-3%",
                     "type": "negative"
                 },
                 {
