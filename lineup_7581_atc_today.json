@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-20",
-    "last_updated": "2026-05-20T20:04:46.008186+00:00",
+    "last_updated": "2026-05-20T22:22:39.704323+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 642.65,
-    "narrative": "The Austin Waves enter today\u2019s slate with a clear focal point in **Kyle Tucker**, whose elite efficiency score of 78.84 leads the team. Despite the lineup status being pending, **Kyle Tucker** is perfectly positioned to capitalize on a favorable matchup against Randy V\u00e1squez, benefiting from a massive 19% boost due to the pitcher\u2019s projected high xERA. Following closely is **Josh Lowe** (67.55), who draws a dynamic platoon advantage against Aaron Civale; his ability to translate that matchup into high-upside production is critical as we chase stolen bases to close the gap in our scarcest category. **Josh Jung** also presents a strong start (64.10) at Coors Field, where the park factor provides a 14% cushion, effectively neutralizing the challenge of facing a lefty.\n\nConversely, our bench strategy remains disciplined as we approach the mid-season game cap management phase. **Liam Hicks** was the most notable omission, failing to clear our 40.0 efficiency threshold; his matchup against a high-tier arm like Chris Sale triggered a significant \"SP Skill\" penalty (-19%), dropping his projection to a non-viable 29.95. Elsewhere, **Gunnar Henderson** remains in the starting nine despite a tough 50.28 score; while his raw talent is immense, his platoon split against left-handed pitching resulted in a 15% efficiency drag, forcing him to rely on his spot in the two-hole to provide value. We remain vigilant regarding the pending lineups for **Andy Pages**, **Jackson Merrill**, and **Nolan Schanuel**, as any late-breaking shifts in batting order could further compress these marginal scores. With **Luis Robert Jr.** and **Jordan Westburg** currently sidelined on the IL, the depth of the Waves is being tested, making it imperative that we avoid unnecessary starts for players falling below our established efficiency floor.",
+    "total_efficiency_score": 646.05,
+    "narrative": "Today\u2019s lineup for the Austin Waves is anchored by the elite matchup profile of **Kyle Tucker** (78.84), who benefits significantly from a favorable clash against V\u00e1squez and maintains a high floor despite park factors. He is joined in the top tier by **Josh Lowe** (66.88), who is a priority start despite the pending lineup status; his dynamic platoon advantage against Civale creates a massive upside for stolen bases, a critical necessity given our roster construction. **Josh Jung** (66.02) rounds out our premium plays, as his strong BvP history and park factors in today's environment push his efficiency well above the base projection, making him a primary source of power production against the lefty Freeland.\n\nStrategic efficiency mandates a careful approach to our fringe starters. **Sam Antonacci** (59.55) secures his spot as the leadoff man, buoyed by elite xwOBA metrics that allow him to weather a neutral matchup, while **Andy Pages** (64.85) remains a high-value play hitting behind **Kyle Tucker**. Conversely, **Liam Hicks** (29.95) represents our most difficult exclusion; he falls well below the 40-point threshold due to a brutal matchup against Sale and significant negative platoon regression. We are prioritizing the higher ceiling of **Nolan Schanuel** (53.80) in the UTIL slot to preserve our game caps while maintaining a safer floor.\n\nWe must remain vigilant regarding the lineup fluidity for **Josh Lowe** and **Nolan Schanuel**; should they shift down in the order or be held out, their value\u2014already throttled by the assumption of a #7 spot\u2014will diminish further. While **Jackson Merrill** (49.49) starts today, his matchup against Ohtani is a genuine warning flag, as the elite SP skill of his opponent severely caps his scoring potential. We continue to monitor the status of **Luis Robert Jr.** and **Jordan Westburg** on the IL, as their return remains essential for recapturing the stolen base and power volume currently missing from our active daily rotation.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -58,7 +58,7 @@
             "Slot": "2B",
             "Player": "Nasim Nunez",
             "POS": "2B/SS",
-            "Score": 51.44079086632146,
+            "Score": 50.411975048995025,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -81,12 +81,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Zach Thornton (L)",
+            "Opponent": "Thornton (L)",
             "SP_xERA": "4.00",
             "Warning": "",
             "GameTime": "2026-05-20T22:45:00Z",
@@ -190,7 +195,7 @@
             "Slot": "3B",
             "Player": "Josh Jung",
             "POS": "3B",
-            "Score": 64.09768285847032,
+            "Score": 66.02061334422444,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -218,6 +223,11 @@
                     "type": "info"
                 },
                 {
+                    "label": "BvP Good (35 PA)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #4",
                     "value": "+4%",
                     "type": "positive"
@@ -236,11 +246,6 @@
             "POS": "OF",
             "Score": 78.84483568763243,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "63.63",
@@ -272,24 +277,19 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Randy V\u00e1squez (R)",
+            "Opponent": "V\u00e1squez, R (R)",
             "SP_xERA": "4.94",
             "Warning": "",
             "GameTime": "2026-05-21T00:40:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "12:40 AM"
         },
         {
             "Slot": "OF2",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 61.67059125655233,
+            "Score": 64.84948771307565,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.13",
@@ -321,16 +321,16 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Randy V\u00e1squez (R)",
+            "Opponent": "V\u00e1squez, R (R)",
             "SP_xERA": "4.94",
             "Warning": "",
             "GameTime": "2026-05-21T00:40:00Z",
-            "Order": "7*",
+            "Order": "5",
             "Start": "12:40 AM"
         },
         {
@@ -339,11 +339,6 @@
             "POS": "OF",
             "Score": 49.48662616147476,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.75",
@@ -370,11 +365,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Shohei Ohtani (R)",
+            "Opponent": "Ohtani (R)",
             "SP_xERA": "2.75",
             "Warning": "",
             "GameTime": "2026-05-21T00:40:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "12:40 AM"
         },
         {
@@ -425,7 +420,7 @@
             "Slot": "OF5",
             "Player": "Josh Lowe",
             "POS": "OF",
-            "Score": 67.55497198296665,
+            "Score": 66.87942226313699,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -458,12 +453,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Aaron Civale (R)",
+            "Opponent": "Civale (R)",
             "SP_xERA": "4.52",
             "Warning": "",
             "GameTime": "2026-05-21T01:38:00Z",
@@ -512,7 +512,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Aaron Civale (R)",
+            "Opponent": "Civale (R)",
             "SP_xERA": "4.52",
             "Warning": "",
             "GameTime": "2026-05-21T01:38:00Z",
