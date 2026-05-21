@@ -1,21 +1,16 @@
 {
     "target_date": "2026-05-21",
-    "last_updated": "2026-05-21T07:57:57.476104+00:00",
+    "last_updated": "2026-05-21T14:42:47.402525+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 239.98,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 186.2,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with a constrained roster, as key contributors like **Yordan Alvarez**, **Junior Caminero**, **Trea Turner**, and **Pete Crow-Armstrong** are currently sidelined by scheduled team off-days. With our core power and speed threats inactive, we are relying on a lean three-man unit to carry the scoring load. **Kazuma Okamoto** leads the squad with a 64.92 score, benefiting from a favorable matchup against Carlos Rod\u00f3n. While his spot in the lineup is currently pending, the projection assumes a cleanup role; his platoon advantage against the left-handed Rod\u00f3n, combined with an expected +8% boost from the opposing pitcher\u2019s skill profile, positions him as our primary run-production engine for the evening.\n\n**Carson Benge** and **Dillon Dingler** round out our active starters, both clearing the 60-point threshold for \"Strong\" plays. **Carson Benge** is slated to leadoff against Cade Cavalli, a matchup where his speed profile and high-leverage position at #1 drive a 60.83 score, with the lineup order contributing a significant 10% boost to his floor. Meanwhile, **Dillon Dingler** (60.45) draws a favorable look against Cantillo. The dynamic platoon advantage against the southpaw provides the necessary lift to his base projection, offsetting the modest 4.03 xERA of the opposing starter. We are monitoring the official lineup announcements closely, as any shift from the projected #1 for **Carson Benge** or #4 for **Kazuma Okamoto** would necessitate a recalculation of their efficiency, though both remain cemented as our best options given the lack of depth on the bench.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Dillon Dingler",
             "POS": "C",
-            "Score": 61.06257978864801,
+            "Score": 60.45195399076153,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "47.33",
@@ -37,64 +32,25 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Joey Cantillo (L)",
+            "Opponent": "Cantillo (L)",
             "SP_xERA": "4.03",
             "Warning": "",
             "GameTime": "2026-05-21T17:10:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "05:10 PM"
         },
         {
-            "Slot": "2B",
-            "Player": "Colt Keith",
-            "POS": "1B/2B/3B",
-            "Score": 53.17359070739784,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "50.75",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Joey Cantillo (L)",
-            "SP_xERA": "4.03",
-            "Warning": "",
-            "GameTime": "2026-05-21T17:10:00Z",
-            "Order": "1*",
-            "Start": "05:10 PM"
-        },
-        {
-            "Slot": "3B",
+            "Slot": "1B",
             "Player": "Kazuma Okamoto",
             "POS": "1B/3B",
             "Score": 64.91805513997265,
@@ -333,6 +289,25 @@
             "Breakdown": [
                 {
                     "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Colt Keith",
+            "POS": "1B/2B/3B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
