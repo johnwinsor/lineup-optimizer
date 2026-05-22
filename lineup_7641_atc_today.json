@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-22",
-    "last_updated": "2026-05-22T17:04:39.315349+00:00",
+    "last_updated": "2026-05-22T19:25:12.091894+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 721.17,
-    "narrative": "For LawDog\u2019s May 22nd slate, our highest-ceiling plays are anchored by favorable matchups against pitchers with high expected ERAs, specifically **Geraldo Perdomo** (67.55) and **Lawrence Butler** (65.99). **Geraldo Perdomo** benefits immensely from the 4.80 xERA of Tomoyuki Sugano and the stability of a projected #3 slot, providing an excellent foundation for our 5x5 metrics. Meanwhile, **Lawrence Butler** is our most efficient play despite the #9 lineup slot; the 4.83 xERA of Walker Buehler and a strong platoon advantage (+13%) outweigh the lineup position drag. **Daulton Varsho** (62.39) also remains a core asset, maintaining a high floor as he squares off against Bubba Chandler, buoyed by a significant dynamic platoon boost.\n\nThe most difficult decision on today's docket involved **Masyn Winn**, who finished with a 58.35 score, narrowly missing the cut behind **Matt Chapman** (58.63) and **Jos\u00e9 Ram\u00edrez** (58.58). While **Masyn Winn** possesses the speed profile we prioritize, the optimizer favored **Matt Chapman** due to the favorable park factors and wind output at the venue, which effectively nudged his score into the \"Strong\" category. We are navigating significant risks today as all lineups remain pending; in particular, **Will Smith** (44.75) is currently our most vulnerable start. He faces a tough arm in Logan Henderson (3.08 xERA) and is further suppressed by a projected #7 spot. We will need to monitor the official lineups closely\u2014if **Will Smith** is pushed further down the order or benched, we have the flexibility to look toward our bench, though no current bench options present a statistically superior alternative given the constraints.",
+    "total_efficiency_score": 720.21,
+    "narrative": "Today\u2019s lineup is anchored by **Geraldo Perdomo** (67.55) and **Lawrence Butler** (65.99), both of whom benefit from favorable matchups against pitchers with elevated xERAs. **Geraldo Perdomo** takes full advantage of the 4.80 xERA of Sugano, while **Lawrence Butler** draws a high-upside matchup against Buehler. Despite hitting in the lower third of the order, **Lawrence Butler** possesses the high-ceiling potential required to drive our production. Meanwhile, **Taylor Ward** represents our most robust play against a non-elite arm (Flaherty), boosted significantly by a +16% park factor that makes him a primary offensive engine for LawDog today.\n\nOur biggest bench dilemma was **Gavin Sheets**, who posted a respectable 50.61. While he offers a decent floor against Springs, he ultimately fell short of the starting criteria because his score reflects a lack of the elite stolen base upside we prioritize; in a league where SB is our scarcest category, **Gavin Sheets** simply lacks the dynamic tools required to displace starters like **Jung Hoo Lee** or **Luis Arraez**, both of whom are projected to benefit from wind conditions and favorable spots in their respective orders. \n\nStrategic risks remain for today, particularly regarding the \"Lineup Pending\" status of **Will Smith**, **Jonathan Aranda**, **Luis Arraez**, **Geraldo Perdomo**, **Matt Chapman**, **Daulton Varsho**, **Tyler Freeman**, **Lawrence Butler**, and **Jung Hoo Lee**. Any sudden changes to these batting orders could crater our efficiency scores. Furthermore, we are keeping a close eye on **Jos\u00e9 Ram\u00edrez**; while his 58.58 score is respectable, he is facing a tough matchup against S\u00e1nchez (2.86 xERA). Finally, our depth remains tested by the continued absence of **Cal Raleigh** and **Yainer Diaz**, both of whom remain on the IL, leaving our catching position thinner than we would prefer. We will continue to monitor the weather and official lineups to ensure our efficiency remains in the \"Strong\" range.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -169,6 +169,45 @@
         },
         {
             "Slot": "SS",
+            "Player": "Bryson Stott",
+            "POS": "2B/SS",
+            "Score": 61.93477418756595,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "53.67",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Williams, G (R)",
+            "SP_xERA": "4.02",
+            "Warning": "",
+            "GameTime": "2026-05-22T22:40:00Z",
+            "Order": "7",
+            "Start": "10:40 PM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Geraldo Perdomo",
             "POS": "SS",
             "Score": 67.54692662572168,
@@ -215,50 +254,6 @@
             "GameTime": "2026-05-23T01:40:00Z",
             "Order": "3*",
             "Start": "01:40 AM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Bryson Stott",
-            "POS": "2B/SS",
-            "Score": 60.01926570753813,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "53.67",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+13%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Gavin Williams (R)",
-            "SP_xERA": "4.02",
-            "Warning": "",
-            "GameTime": "2026-05-22T22:40:00Z",
-            "Order": "8*",
-            "Start": "10:40 PM"
         },
         {
             "Slot": "3B",
@@ -316,94 +311,6 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Taylor Ward",
-            "POS": "OF",
-            "Score": 61.99273173122557,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "52.93",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+16%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Jack Flaherty (R)",
-            "SP_xERA": "4.00",
-            "Warning": "",
-            "GameTime": "2026-05-22T23:15:00Z",
-            "Order": "1*",
-            "Start": "11:15 PM"
-        },
-        {
-            "Slot": "OF2",
-            "Player": "Jeremiah Jackson",
-            "POS": "2B/SS/3B/OF",
-            "Score": 56.98255749847786,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "48.39",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+16%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Jack Flaherty (R)",
-            "SP_xERA": "4.00",
-            "Warning": "",
-            "GameTime": "2026-05-22T23:15:00Z",
-            "Order": "7*",
-            "Start": "11:15 PM"
-        },
-        {
-            "Slot": "OF3",
             "Player": "Daulton Varsho",
             "POS": "OF",
             "Score": 62.38590909404656,
@@ -452,7 +359,56 @@
             "Start": "11:07 PM"
         },
         {
-            "Slot": "OF4",
+            "Slot": "OF2",
+            "Player": "Tyler Freeman",
+            "POS": "2B/OF",
+            "Score": 54.107196759516086,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #2)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "53.19",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Michael Soroka (R)",
+            "SP_xERA": "3.65",
+            "Warning": "",
+            "GameTime": "2026-05-23T01:40:00Z",
+            "Order": "2*",
+            "Start": "01:40 AM"
+        },
+        {
+            "Slot": "OF3",
             "Player": "Lawrence Butler",
             "POS": "OF",
             "Score": 65.98951323780717,
@@ -501,7 +457,7 @@
             "Start": "01:40 AM"
         },
         {
-            "Slot": "OF5",
+            "Slot": "OF4",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
             "Score": 61.52471713912516,
@@ -560,16 +516,50 @@
             "Start": "02:15 AM"
         },
         {
+            "Slot": "OF5",
+            "Player": "Taylor Ward",
+            "POS": "OF",
+            "Score": 61.99273173122557,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "52.93",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Jack Flaherty (R)",
+            "SP_xERA": "4.00",
+            "Warning": "",
+            "GameTime": "2026-05-22T23:15:00Z",
+            "Order": "1",
+            "Start": "11:15 PM"
+        },
+        {
             "Slot": "UTIL",
             "Player": "Jos\u00e9 Ram\u00edrez",
             "POS": "3B",
             "Score": 58.58060743242996,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "64.13",
@@ -606,11 +596,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Cristopher S\u00e1nchez (L)",
+            "Opponent": "S\u00e1nchez, C (L)",
             "SP_xERA": "2.86",
             "Warning": "",
             "GameTime": "2026-05-22T22:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "10:40 PM"
         }
     ],
@@ -638,60 +628,6 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Tyler Freeman",
-            "POS": "2B/OF",
-            "Order": "2*",
-            "Start": "01:40 AM",
-            "Opponent": "Michael Soroka (R)",
-            "SP_xERA": "3.65",
-            "Score": 54.107196759516086,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "53.19",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Neutral Platoon (R)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-05-23T01:40:00Z"
         },
         {
             "Slot": "BN",
@@ -769,41 +705,16 @@
             "Slot": "BN",
             "Player": "Masyn Winn",
             "POS": "SS",
-            "Order": "6*",
+            "Order": "TBA",
             "Start": "10:40 PM",
-            "Opponent": "Chris Paddack (R)",
-            "SP_xERA": "4.53",
-            "Score": 58.35375817142099,
+            "Opponent": "Chris Paddack",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
+                    "label": "RAINOUT (Postponed)",
                     "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.46",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+13%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+1%",
-                    "type": "positive"
+                    "type": "status"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
@@ -811,7 +722,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "",
+            "Warning": "\ud83d\udea8 RAINOUT / POSTPONED",
             "GameTime": "2026-05-22T22:40:00Z"
         },
         {
@@ -836,6 +747,25 @@
                 }
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Jeremiah Jackson",
+            "POS": "2B/SS/3B/OF",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
             "GameTime": null
         },
         {
