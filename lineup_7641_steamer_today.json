@@ -1,15 +1,15 @@
 {
     "target_date": "2026-05-22",
-    "last_updated": "2026-05-22T22:53:31.422988+00:00",
+    "last_updated": "2026-05-23T00:02:16.643424+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 658.16,
-    "narrative": "For today\u2019s slate, **Geraldo Perdomo** (68.61) stands as our premier play. His high efficiency score is driven by a favorable matchup against Tomoyuki Sugano; the combination of a high-leverage #3 spot in the order and a targetable opponent SP_xERA of 4.80 makes him an elite start, assuming he cements that top-order slot. Close behind are **Luis Arraez** (63.80) and **Jung Hoo Lee** (63.75), both benefiting from favorable conditions in the Martin (R) matchup. While the wind blowing out adds a positive multiplier to their upside, **Jung Hoo Lee** remains a critical component of our strategy given the focus on stolen base scarcity, even with a slight drag from the opponent's 60% base-stealing hold rate. **Taylor Ward** also warrants attention; despite a dynamic platoon penalty, his park factor (+16%) and top-of-the-order usage keep him firmly in the \"Strong\" category at 61.76.\n\nConversely, we are exercising caution with **Jos\u00e9 Ram\u00edrez** (56.07). While his talent level is unimpeachable, he faces a tough southpaw in C. S\u00e1nchez with an elite SP_xERA of 2.86. The combination of wind blowing in and a negative SP skill adjustment pushes him to the bottom of our active recommendations. **Gavin Sheets** (51.91) is our most marginal start, narrowly edging out **Drew Gilbert** (47.19) for the final utility spot. **Drew Gilbert** fell just short of the lineup because his projected #9 spot triggers a significant order penalty, negating the positive impact of the wind and his potential as a speed asset. As we manage our game caps, we will continue to monitor **Cal Raleigh**, **Yainer Diaz**, and **Lawrence Butler**, who remain sidelined due to injury or non-active status, leaving us to rely on the depth provided by **Jonathan Aranda**, **Bryson Stott**, **Daulton Varsho**, **Tyler Freeman**, and **Matt Chapman** to carry the load across the 5x5 categories.",
+    "total_efficiency_score": 645.85,
+    "narrative": "For today\u2019s slate, our lineup construction is led by **Geraldo Perdomo** (68.61), **Bryson Stott** (62.08), and **Taylor Ward** (61.76). **Geraldo Perdomo** benefits significantly from the matchup against Tomoyuki Sugano; his high SP skill adjustment reflects a favorable encounter against a starter with a 4.80 xERA, and his assumed promotion to the #3 spot provides the offensive leverage required for a top-tier score. **Taylor Ward** stands out as a high-upside play due to a massive +16% park factor adjustment, effectively neutralizing any platoon concerns against Flaherty. While **Jung Hoo Lee** (60.71) and **Luis Arraez** (60.76) sit just inside the 60+ \"Strong\" threshold, both are heavily reliant on maintaining their projected spots at the top of the order to maximize their scoring potential against Martin.\n\nThe most difficult decision for the optimizer centered on **Drew Gilbert** (44.94), who remains our strongest bench option today. While he possesses some of that coveted speed profile we value, his projected #9 spot in the batting order acts as a significant drag, resulting in an 8% penalty that pushed him below our threshold for starting consideration. Conversely, we are mitigating risk with **Jonathan Aranda** (50.66); although he draws a daunting matchup against the elite Cole, his role in the #3 spot and a +12% dynamic platoon adjustment keep him in the lineup, albeit with a capped ceiling. We continue to monitor the \"Lineup Pending\" status for **Geraldo Perdomo**, **Luis Arraez**, **Tyler Freeman**, **Jung Hoo Lee**, and **Matt Chapman**; should any of these players slide down their respective team's batting order, their efficiency scores will adjust downward accordingly. We remain sidelined on **Cal Raleigh** and **Yainer Diaz** due to their active IL designations, forcing us to rely on our active roster depth to maintain our 5x5 categorical parity.",
     "recommended_lineup": [
         {
             "Slot": "1B",
             "Player": "Jonathan Aranda",
             "POS": "1B",
-            "Score": 60.15436641380833,
+            "Score": 50.65630855899651,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -27,6 +27,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
                     "label": "Dynamic Platoon (R)",
                     "value": "+12%",
                     "type": "positive"
@@ -40,15 +45,10 @@
                     "label": "xwOBA Good",
                     "value": "0.377",
                     "type": "info"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
                 }
             ],
             "Opponent": "Cole (R)",
-            "SP_xERA": "4.00",
+            "SP_xERA": "0.00",
             "Warning": "",
             "GameTime": "2026-05-22T23:05:00Z",
             "Order": "3",
@@ -58,7 +58,7 @@
             "Slot": "2B",
             "Player": "Bryson Stott",
             "POS": "2B/SS",
-            "Score": 58.973999720688276,
+            "Score": 62.077894442829766,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -83,11 +83,6 @@
                 {
                     "label": "Order #7",
                     "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
                     "type": "negative"
                 }
             ],
@@ -151,7 +146,7 @@
             "Slot": "MI",
             "Player": "Luis Arraez",
             "POS": "1B/2B",
-            "Score": 63.80106603488645,
+            "Score": 60.76292003322519,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -187,11 +182,6 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Martin (R)",
@@ -205,7 +195,7 @@
             "Slot": "3B",
             "Player": "Jos\u00e9 Ram\u00edrez",
             "POS": "3B",
-            "Score": 56.069665768183455,
+            "Score": 59.020700808614166,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -241,11 +231,6 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
                 }
             ],
             "Opponent": "S\u00e1nchez, C (L)",
@@ -401,7 +386,7 @@
             "Slot": "OF4",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
-            "Score": 63.75007969236626,
+            "Score": 60.714361611777385,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -441,11 +426,6 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -499,7 +479,7 @@
             "Slot": "UTIL",
             "Player": "Matt Chapman",
             "POS": "3B",
-            "Score": 58.511103266613276,
+            "Score": 55.7248602539174,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -535,11 +515,6 @@
                     "label": "Elite Hold SP (60% SB)",
                     "value": "-2%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Martin (R)",
@@ -760,7 +735,7 @@
             "Start": "02:15 AM",
             "Opponent": "Martin (R)",
             "SP_xERA": "4.18",
-            "Score": 47.18604621648189,
+            "Score": 44.93909163474466,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -801,11 +776,6 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
