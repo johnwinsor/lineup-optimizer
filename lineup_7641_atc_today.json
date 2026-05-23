@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-23",
-    "last_updated": "2026-05-23T16:54:37.633280+00:00",
+    "last_updated": "2026-05-23T17:58:54.811064+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 678.48,
-    "narrative": "Our offensive outlook for May 23rd is anchored by two high-efficiency plays in favorable matchups. **Bryson Stott** (66.97) stands as our top-rated start, buoyed by a strong platoon advantage against Slade Cecconi and the high probability of aggressive base running\u2014the slow delivery of the opposition provides a tangible +4% boost to his SB potential. Similarly, **Lawrence Butler** (65.98) is primed for a breakout despite the #9 lineup slot; the combination of a generous 5.01 xERA from Lucas Giolito and a significant dynamic platoon edge makes him an elite play for power and speed production today. **Tyler Freeman** (61.41) also offers excellent value, as his projected top-of-the-order role against Zac Gallen provides a consistent floor despite facing a challenging arm.\n\nWe face some structural friction at the top and bottom of the lineup. **Jos\u00e9 Ram\u00edrez** (51.67) and **Daulton Varsho** (52.13) remain in the lineup despite the brutal assignment of facing Zack Wheeler and Paul Skenes, respectively; while their raw talent forces a start, the elite SP skill and catcher pop-time metrics suppress their ceiling today. The tightest margin on the bench involved our utility decisions. **Drew Gilbert** (41.92) barely scraped into the active roster, surviving only because we prioritize the potential for stolen bases against the suspect arm of Bryan Hudson. He narrowly edged out our other bench depth, though several of our key assets like **Cal Raleigh**, **Yainer Diaz**, **Taylor Ward**, and **Jonathan Aranda** are sidelined today by injury or postponement, leaving us with a thinner margin for error. We will be monitoring the pending lineups for **Will Smith**, **Geraldo Perdomo**, and **Jos\u00e9 Ram\u00edrez** closely to ensure these projected order slots hold, as any downward shifts could trigger a re-evaluation of our efficiency thresholds.",
+    "total_efficiency_score": 677.14,
+    "narrative": "The LawDog starting lineup for 2026-05-23 features two standout plays that anchor our daily efficiency: **Lawrence Butler** (65.99) and **Bryson Stott** (65.64). **Lawrence Butler** benefits immensely from a favorable matchup against Lucas Giolito (5.01 xERA), and despite the penalty for his assumed #9 spot in the order, his power potential against a pitcher who struggles with consistency makes him our highest-scoring start. **Bryson Stott** is equally compelling; he draws a soft matchup against Cecconi and is a high-value asset today due to the slow delivery of the opposing pitcher, which creates a prime environment for him to swipe a base\u2014a critical factor given our emphasis on the scarcity of steals. Conversely, the lineup must navigate significant headwinds, most notably with **Jos\u00e9 Ram\u00edrez** (51.68) and **Daulton Varsho** (52.14). While usually locked in, both are currently staring down elite arms in Wheeler and Skenes, respectively. Their scores are depressed by these pitching matchups, yet their base profiles are too strong to bench in an Ottoneu format where game caps require consistent production.\n\nThe most difficult decision for the optimizer involved **Daulton Varsho**, who narrowly edged out our other fringe options. While his raw score is buoyed by his #2 spot in the order, the -19% SP skill penalty against Skenes is a significant risk that could result in a stagnant stat line. We are also monitoring the \"Lineup Pending\" status for **Will Smith**, **Geraldo Perdomo**, **Tyler Freeman**, **Gavin Sheets**, and **Lawrence Butler**. Should official lineups shift these players into lower-leverage spots or trigger late-inning pinch-hit threats, we may see further volatility in our final output. Meanwhile, our bench remains depleted by injuries to **Cal Raleigh** and **Yainer Diaz**, and the rainout of **Taylor Ward** and **Jonathan Aranda** has restricted our flexibility for daily adjustments. With our roster depth tested, we are relying on **Tyler Freeman** to maintain his momentum in the #4 slot, as he currently provides a high-floor, high-efficiency option against a tough but manageable Zac Gallen.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -101,7 +101,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Bryan Hudson (L)",
+            "Opponent": "Hudson, B (L)",
             "SP_xERA": "4.40",
             "Warning": "",
             "GameTime": "2026-05-23T20:05:00Z",
@@ -112,7 +112,7 @@
             "Slot": "2B",
             "Player": "Bryson Stott",
             "POS": "2B/SS",
-            "Score": 66.9762711281758,
+            "Score": 65.63674570561228,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -140,6 +140,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Slow SP Delivery (100% SB)",
                     "value": "+4%",
                     "type": "positive"
@@ -150,7 +155,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Slade Cecconi (R)",
+            "Opponent": "Cecconi (R)",
             "SP_xERA": "4.27",
             "Warning": "",
             "GameTime": "2026-05-23T20:05:00Z",
@@ -292,7 +297,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Bryan Hudson (L)",
+            "Opponent": "Hudson, B (L)",
             "SP_xERA": "4.40",
             "Warning": "",
             "GameTime": "2026-05-23T20:05:00Z",
@@ -444,7 +449,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Bryan Hudson (L)",
+            "Opponent": "Hudson, B (L)",
             "SP_xERA": "4.40",
             "Warning": "",
             "GameTime": "2026-05-23T20:05:00Z",
@@ -556,11 +561,6 @@
             "Score": 51.677706636310106,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "64.13",
                     "type": "info"
@@ -610,7 +610,7 @@
             "SP_xERA": "2.87",
             "Warning": "",
             "GameTime": "2026-05-23T20:05:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "08:05 PM"
         }
     ],
