@@ -1,21 +1,16 @@
 {
     "target_date": "2026-05-23",
-    "last_updated": "2026-05-23T18:57:36.559924+00:00",
+    "last_updated": "2026-05-23T20:04:45.577883+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 673.67,
-    "narrative": "The Zurich Zebras enter May 23rd with a lineup heavily leveraged toward high-leverage spots against right-handed pitching. Our strongest play of the day is **Yordan Alvarez** (76.31), whose elite xwOBA of 0.419 and a favorable matchup against Rea (R) make him the anchor of our offense. Right behind him, **Christian Yelich** (74.33) and **Pete Crow-Armstrong** (74.19) provide exceptional value; **Pete Crow-Armstrong** specifically gains significant ground due to his dynamic platoon advantage and leadoff spot, while **Christian Yelich** benefits from a massive 19% boost derived from the favorable SP_xERA of Roki Sasaki. Despite a \"wind in\" warning affecting the sluggers, the stolen base upside inherent in **Trea Turner** (68.35) remains essential to our 5x5 strategy, as his leadoff status and the slow delivery of Cecconi (R) provide the highest efficiency path for a multi-category boost today.\n\nManaging the bench remains a high-stakes balancing act, especially with the weather-induced exclusions of **Junior Caminero** and **Colt Keith** due to rainouts. Among those available, **Carson Benge** (48.91) barely held his spot in the lineup over our reserve depth, largely due to the optimization of his leadoff position despite a challenging matchup against Meyer. While **Hyeseong Kim** and **Casey Schmitt** sit at the bottom of our active rotation, they remain in the lineup over reserves like **Caleb Durbin** or **Kazuma Okamoto** because their confirmed role\u2014even at the bottom of the order\u2014provides more projected efficiency than the uncertainty of bench options. We are monitoring **Gary Sanchez** closely; his 55.52 score relies heavily on the poor xERA of his opponent, and we must confirm the lineup to ensure he isn't rested, which would trigger a pivot to the versatility provided by **Josh Smith** or **Dillon Dingler**. With **Zac Veen**, **Lars Nootbaar**, **Pedro Ramirez**, and **Luis Pena** waiting in the wings, the Zebras are well-positioned to shift if late-breaking lineup changes emerge.",
+    "total_efficiency_score": 631.87,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with a high-ceiling lineup led by **Yordan Alvarez** (80.32) and **Pete Crow-Armstrong** (78.09), who stand as our premier assets against favorable matchups. **Yordan Alvarez** benefits from an elite 0.419 xwOBA and a prime #3 slot against Rea, while **Pete Crow-Armstrong** earns a significant boost from a dynamic platoon advantage (+14%) and his leadoff placement, making him a critical engine for our SB production. **Christian Yelich** also commands attention with a 74.33 score; he is positioned well in the cleanup spot against a 5.11 xERA arm, and his platoon edge (+13%) makes him a near-automatic start for power and run production.\n\nOur most complex decision centered on the middle infield, where **Trea Turner** (68.34) remains an anchor. Despite wind resistance potentially curbing his home run upside, he is a primary target for stolen bases today; his sprint speed combined with a slow opposing delivery provides a +4% efficiency multiplier, easily outpacing our deeper bench options like **Josh Smith** or **Colt Keith**. Meanwhile, **Casey Schmitt** (50.08) barely holds his spot in the lineup. While he receives a boost from batting third, he is hampered by a significant -11% penalty against a left-handed starter, making him the most likely candidate for a late-game substitution if his first two at-bats underperform.\n\nRegarding the bench, the absence of **Junior Caminero** is a major blow to our roster depth, as his scheduled game was postponed, forcing a total reshuffle of our available utility profile. With **Caleb Durbin**, **Hyeseong Kim**, and **Kazuma Okamoto** all sidelined by rest or IL status, we are leaning heavily on the current active starters to mitigate the risk of dwindling game caps. We are keeping a close eye on **Gary Sanchez** (56.63); while his 5.11 xERA matchup is advantageous, his recent form remains volatile. If the bottom of our order fails to generate early run support, expect a tighter leash on **Gary Sanchez** and **Luke Raley** as we preserve our daily efficiency metrics.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Gary Sanchez",
             "POS": "C",
-            "Score": 55.52035271699051,
+            "Score": 56.63075977133031,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.18",
@@ -40,13 +35,18 @@
                     "label": "Platoon (R/R)",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Roki Sasaki (R)",
+            "Opponent": "Sasaki (R)",
             "SP_xERA": "5.11",
             "Warning": "",
             "GameTime": "2026-05-23T23:15:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "11:15 PM"
         },
         {
@@ -148,7 +148,7 @@
             "Start": "08:05 PM"
         },
         {
-            "Slot": "SS",
+            "Slot": "MI",
             "Player": "Trea Turner",
             "POS": "SS",
             "Score": 68.3497724183746,
@@ -207,55 +207,6 @@
             "Start": "08:05 PM"
         },
         {
-            "Slot": "MI",
-            "Player": "Hyeseong Kim",
-            "POS": "2B/SS/OF",
-            "Score": 50.830975969982354,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "52.24",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Robert Gasser (L)",
-            "SP_xERA": "5.63",
-            "Warning": "",
-            "GameTime": "2026-05-23T23:15:00Z",
-            "Order": "9*",
-            "Start": "11:15 PM"
-        },
-        {
             "Slot": "3B",
             "Player": "Casey Schmitt",
             "POS": "1B/2B/3B",
@@ -311,104 +262,6 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Christian Yelich",
-            "POS": "OF",
-            "Score": 74.32686345645021,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "55.06",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+13%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Roki Sasaki (R)",
-            "SP_xERA": "5.11",
-            "Warning": "",
-            "GameTime": "2026-05-23T23:15:00Z",
-            "Order": "4*",
-            "Start": "11:15 PM"
-        },
-        {
-            "Slot": "OF2",
-            "Player": "Pete Crow-Armstrong",
-            "POS": "OF",
-            "Score": 74.19301048692624,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "60.83",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Teng (R)",
-            "SP_xERA": "3.90",
-            "Warning": "",
-            "GameTime": "2026-05-23T18:20:00Z",
-            "Order": "1",
-            "Start": "06:20 PM"
-        },
-        {
-            "Slot": "OF4",
             "Player": "Carson Benge",
             "POS": "OF",
             "Score": 48.90807255834711,
@@ -452,7 +305,56 @@
             "Start": "08:10 PM"
         },
         {
-            "Slot": "OF5",
+            "Slot": "OF2",
+            "Player": "Yordan Alvarez",
+            "POS": "OF",
+            "Score": 80.32268862721654,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "64.76",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "xwOBA Elite",
+                    "value": "0.419",
+                    "type": "info"
+                }
+            ],
+            "Opponent": "Rea (R)",
+            "SP_xERA": "4.21",
+            "Warning": "",
+            "GameTime": "2026-05-23T18:20:00Z",
+            "Order": "3",
+            "Start": "06:20 PM"
+        },
+        {
+            "Slot": "OF3",
             "Player": "Kyle Schwarber",
             "POS": "OF",
             "Score": 64.05060262708257,
@@ -506,14 +408,58 @@
             "Start": "08:05 PM"
         },
         {
-            "Slot": "UTIL",
-            "Player": "Yordan Alvarez",
+            "Slot": "OF5",
+            "Player": "Christian Yelich",
             "POS": "OF",
-            "Score": 76.30655419585571,
+            "Score": 74.32686345645021,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "64.76",
+                    "value": "55.06",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Sasaki (R)",
+            "SP_xERA": "5.11",
+            "Warning": "",
+            "GameTime": "2026-05-23T23:15:00Z",
+            "Order": "4",
+            "Start": "11:15 PM"
+        },
+        {
+            "Slot": "UTIL",
+            "Player": "Pete Crow-Armstrong",
+            "POS": "OF",
+            "Score": 78.09790577571184,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "60.83",
                     "type": "info"
                 },
                 {
@@ -528,35 +474,25 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Elite",
-                    "value": "0.419",
-                    "type": "info"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
+                    "value": "-2%",
                     "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Rea (R)",
-            "SP_xERA": "4.21",
+            "Opponent": "Teng (R)",
+            "SP_xERA": "3.90",
             "Warning": "",
             "GameTime": "2026-05-23T18:20:00Z",
-            "Order": "3",
+            "Order": "1",
             "Start": "06:20 PM"
         }
     ],
@@ -589,6 +525,25 @@
             "Slot": "BN",
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Hyeseong Kim",
+            "POS": "2B/SS/OF",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
