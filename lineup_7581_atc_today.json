@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-24",
-    "last_updated": "2026-05-24T15:58:10.992509+00:00",
+    "last_updated": "2026-05-24T16:56:15.984878+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 696.53,
-    "narrative": "For today\u2019s slate, **Kyle Tucker** (70.48) headlines our attack as the clear anchor, benefiting from a favorable matchup against Brandon Sproat and solid protection in the order. He is joined by **Vladimir Guerrero Jr.** (65.00) and **Gunnar Henderson** (63.80) as our high-floor engines. **Henderson** is particularly interesting; despite facing a tough southpaw in Framber Valdez, he benefits from a significant park factor boost and the fact that Valdez\u2019s deliberate pace creates a high-leverage environment for stolen base attempts, a critical priority given our organizational focus on speed. **Coby Mayo** (60.33) also earns a strong start in the UTIL slot, as he capitalizes on that same ballpark advantage in the matchup against Valdez.\n\nThe most difficult decision on the morning was keeping **Nolan Schanuel** (49.36) on the bench. While his projection is respectable, he narrowly missed the cut due to a combination of an \"Order Pending\" status and lower ceiling potential compared to our dynamic platoon plays, such as **Jackson Merrill** (61.54), who receives a massive 13% boost from his platoon split against Luis Medina. We are also monitoring the volatility of the lower half of our lineup; **Dominic Smith** (41.03) sits near our floor threshold, with his matchup against Foster Griffin presenting a risky left-on-left scenario that significantly suppresses his value. \n\nWe must remain vigilant regarding our \"Lineup Pending\" designations for **Nasim Nunez**, **Luis Garc\u00eda Jr.**, **Miguel Vargas**, **Dominic Smith**, and **Sam Antonacci**. While the optimizer has projected these slots based on historical patterns, any shifts in batting order\u2014specifically for **Antonacci**\u2014will drastically alter their daily efficiency scores. **Antonacci** (53.52) remains a high-upside play due to his elite 0.400 xwOBA and favorable wind conditions, but his value is highly sensitive to his position at the top of the order. If the official lineups deviate significantly from these assumptions, we may need to pivot to the high-floor reliability of **Josh Jung** or **Nolan Schanuel** to protect our daily game caps.",
+    "total_efficiency_score": 689.61,
+    "narrative": "The Austin Waves are positioned for a high-ceiling outing today, led by **Kyle Tucker**, who commands an elite score of 70.48. He remains our primary offensive anchor against Sproat, benefiting from a favorable platoon advantage and a prime #4 spot in the order. Joining him at the top of the hierarchy is **Vladimir Guerrero Jr.** (65.00), who holds steady despite a slightly tougher matchup against Keller. While the scarcity of stolen bases remains our primary tactical objective, **Gunnar Henderson** (63.79) provides the best dual-threat profile of the day; despite a neutral matchup against Valdez and a platoon disadvantage, he is bolstered by a massive 16% park factor adjustment and a unique \"Slow SP Delivery\" indicator that significantly inflates his stolen base probability.\n\nOur most complex decision centered on the utility slot, where **Coby Mayo** (53.42) just barely outpaced **Nolan Schanuel** (49.36). **Nolan Schanuel** fell just shy of the cutoff because the optimizer weighed his neutral platoon against Gore too heavily compared to the high-upside park factors favoring **Coby Mayo**. We are monitoring several \"Lineup Pending\" statuses, specifically for **Sam Antonacci** and **Luis Garc\u00eda Jr.**; should **Sam Antonacci** shift from his projected #1 hole, his current 53.52 score could fluctuate, though his elite xwOBA and favorable wind conditions at the park provide a strong buffer against volatility. \n\nRisks today are concentrated in the bottom of our order. **Dominic Smith** is currently our most vulnerable start at 41.03; his score is dragged down by a detrimental L/L platoon matchup against Foster Griffin, leaving him strictly on the roster as a volume placeholder. Conversely, keep an eye on **Nasim Nunez** and **Luis Garc\u00eda Jr.**, both of whom carry high \"SP Skill\" bonuses due to the matchup against Mart\u00edn P\u00e9rez. Provided the confirmed lineups match our projections, we are well-positioned to maintain our efficiency targets while balancing the risk of over-exposure in unfavorable platoon splits.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -346,7 +346,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Brandon Sproat (R)",
+            "Opponent": "Sproat (R)",
             "SP_xERA": "4.25",
             "Warning": "",
             "GameTime": "2026-05-24T18:10:00Z",
@@ -359,11 +359,6 @@
             "POS": "OF",
             "Score": 61.539391880036106,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.75",
@@ -389,7 +384,7 @@
             "SP_xERA": "3.98",
             "Warning": "",
             "GameTime": "2026-05-24T20:10:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "08:10 PM"
         },
         {
@@ -429,7 +424,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Brandon Sproat (R)",
+            "Opponent": "Sproat (R)",
             "SP_xERA": "4.25",
             "Warning": "",
             "GameTime": "2026-05-24T18:10:00Z",
@@ -548,8 +543,13 @@
             "Slot": "UTIL",
             "Player": "Coby Mayo",
             "POS": "1B/3B",
-            "Score": 60.333510096400005,
+            "Score": 53.416758691862356,
             "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #8)",
+                    "value": null,
+                    "type": "info"
+                },
                 {
                     "label": "Base",
                     "value": "48.57",
@@ -566,27 +566,17 @@
                     "type": "positive"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "-3%",
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Slow SP Delivery (100% SB)",
-                    "value": "+2%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Valdez, F (L)",
-            "SP_xERA": "3.84",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
             "Warning": "",
-            "GameTime": "2026-05-24T16:35:00Z",
-            "Order": "6",
-            "Start": "04:35 PM"
+            "GameTime": "2026-05-24T22:05:00Z",
+            "Order": "8*",
+            "Start": "10:05 PM"
         }
     ],
     "players_sat": [
