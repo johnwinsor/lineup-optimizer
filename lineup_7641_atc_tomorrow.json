@@ -1,8 +1,8 @@
 {
     "target_date": "2026-05-24",
-    "last_updated": "2026-05-23T23:52:38.143087+00:00",
+    "last_updated": "2026-05-24T02:42:08.325422+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 733.49,
+    "total_efficiency_score": 735.53,
     "narrative": "AI Narrative generation skipped.",
     "recommended_lineup": [
         {
@@ -102,7 +102,7 @@
             "Slot": "2B",
             "Player": "Luis Arraez",
             "POS": "1B/2B",
-            "Score": 57.413450422963066,
+            "Score": 60.284122944111225,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -137,6 +137,11 @@
                 {
                     "label": "Order #2",
                     "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -244,7 +249,7 @@
             "Slot": "3B",
             "Player": "Matt Chapman",
             "POS": "3B",
-            "Score": 56.809128015338345,
+            "Score": 59.64958441610526,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -279,6 +284,11 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -330,18 +340,18 @@
         },
         {
             "Slot": "OF2",
-            "Player": "Taylor Ward",
-            "POS": "OF",
-            "Score": 68.12636035685713,
+            "Player": "Tyler Freeman",
+            "POS": "2B/OF",
+            "Score": 59.66661009608774,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
+                    "label": "Lineup Pending (Assumed #4)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "52.93",
+                    "value": "53.19",
                     "type": "info"
                 },
                 {
@@ -351,21 +361,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+16%",
+                    "value": "+3%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "SP Skill",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Ryne Nelson (R)",
+            "SP_xERA": "4.18",
             "Warning": "",
-            "GameTime": "2026-05-24T22:05:00Z",
-            "Order": "1*",
-            "Start": "10:05 PM"
+            "GameTime": "2026-05-24T20:10:00Z",
+            "Order": "4*",
+            "Start": "08:10 PM"
         },
         {
             "Slot": "OF3",
@@ -418,55 +438,6 @@
         },
         {
             "Slot": "OF4",
-            "Player": "Tyler Freeman",
-            "POS": "2B/OF",
-            "Score": 59.66661009608774,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "53.19",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Neutral Platoon (R)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Ryne Nelson (R)",
-            "SP_xERA": "4.18",
-            "Warning": "",
-            "GameTime": "2026-05-24T20:10:00Z",
-            "Order": "4*",
-            "Start": "08:10 PM"
-        },
-        {
-            "Slot": "OF5",
             "Player": "Lawrence Butler",
             "POS": "OF",
             "Score": 54.13752034851093,
@@ -515,10 +486,49 @@
             "Start": "08:10 PM"
         },
         {
+            "Slot": "OF5",
+            "Player": "Taylor Ward",
+            "POS": "OF",
+            "Score": 68.12636035685713,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #1)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "52.93",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Warning": "",
+            "GameTime": "2026-05-24T22:05:00Z",
+            "Order": "1*",
+            "Start": "10:05 PM"
+        },
+        {
             "Slot": "UTIL",
             "Player": "Jos\u00e9 Ram\u00edrez",
             "POS": "3B",
-            "Score": 73.33267164961283,
+            "Score": 69.66603806713219,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -559,6 +569,11 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Andrew Painter (R)",
@@ -602,7 +617,7 @@
             "Start": "05:35 PM",
             "Opponent": "Parker Messick (L)",
             "SP_xERA": "3.36",
-            "Score": 40.419063097581436,
+            "Score": 38.39810994270236,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -632,6 +647,11 @@
                 {
                     "label": "Dynamic Platoon (L)",
                     "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
                     "type": "negative"
                 },
                 {
@@ -830,7 +850,7 @@
             "Start": "08:05 PM",
             "Opponent": "Noah Schultz (L)",
             "SP_xERA": "4.96",
-            "Score": 42.6734502430168,
+            "Score": 44.80712275516764,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -866,6 +886,11 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
