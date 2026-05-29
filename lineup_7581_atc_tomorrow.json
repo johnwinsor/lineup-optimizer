@@ -1,8 +1,8 @@
 {
     "target_date": "2026-05-30",
-    "last_updated": "2026-05-29T18:03:09.801184+00:00",
+    "last_updated": "2026-05-29T20:33:03.456157+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 728.58,
+    "total_efficiency_score": 722.44,
     "narrative": "AI Narrative generation skipped.",
     "recommended_lineup": [
         {
@@ -389,18 +389,18 @@
         },
         {
             "Slot": "OF3",
-            "Player": "Miguel Andujar",
-            "POS": "3B/OF",
-            "Score": 55.44325071771989,
+            "Player": "Sam Antonacci",
+            "POS": "2B/3B/OF",
+            "Score": 47.2195296454279,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
+                    "label": "Lineup Pending (Assumed #1)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "49.36",
+                    "value": "50.13",
                     "type": "info"
                 },
                 {
@@ -410,21 +410,36 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
+                    "label": "xwOBA Good",
+                    "value": "0.386",
+                    "type": "info"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Framber Valdez (L)",
+            "SP_xERA": "3.84",
             "Warning": "",
-            "GameTime": "2026-05-30T20:05:00Z",
-            "Order": "2*",
-            "Start": "08:05 PM"
+            "GameTime": "2026-05-30T18:10:00Z",
+            "Order": "1*",
+            "Start": "06:10 PM"
         },
         {
             "Slot": "OF4",
@@ -462,18 +477,18 @@
         },
         {
             "Slot": "OF5",
-            "Player": "Jackson Merrill",
-            "POS": "OF",
-            "Score": 56.24475871948624,
+            "Player": "Miguel Andujar",
+            "POS": "3B/OF",
+            "Score": 58.32582373795439,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
+                    "label": "Lineup Pending (Assumed #2)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "55.75",
+                    "value": "49.36",
                     "type": "info"
                 },
                 {
@@ -487,16 +502,26 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "SP Skill",
+                    "value": "-6%",
                     "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+12%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Foster Griffin (L)",
+            "SP_xERA": "3.72",
             "Warning": "",
             "GameTime": "2026-05-30T20:05:00Z",
-            "Order": "7*",
+            "Order": "2*",
             "Start": "08:05 PM"
         },
         {
@@ -568,6 +593,60 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Jackson Merrill",
+            "POS": "OF",
+            "Order": "7*",
+            "Start": "08:05 PM",
+            "Opponent": "Foster Griffin (L)",
+            "SP_xERA": "3.72",
+            "Score": 45.446102431549775,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #7)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "55.75",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-05-30T20:05:00Z"
         },
         {
             "Slot": "BN",
@@ -712,65 +791,6 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Sam Antonacci",
-            "POS": "2B/3B/OF",
-            "Order": "1*",
-            "Start": "06:10 PM",
-            "Opponent": "Framber Valdez (L)",
-            "SP_xERA": "3.84",
-            "Score": 47.2195296454279,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "50.13",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.386",
-                    "type": "info"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-05-30T18:10:00Z"
         },
         {
             "Slot": "BN",
