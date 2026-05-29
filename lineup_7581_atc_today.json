@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-29",
-    "last_updated": "2026-05-29T14:42:14.269919+00:00",
+    "last_updated": "2026-05-29T18:03:04.665448+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 737.94,
-    "narrative": "The Austin Waves enter today\u2019s slate with **Vladimir Guerrero Jr.** (80.22) serving as our premier offensive anchor. Facing Trevor Rogers (4.01 xERA), **Vladimir Guerrero Jr.** benefits from a favorable 16% park factor boost and strong platoon dynamics, positioning him to lead the team in potential run production. Close behind, **Luis Garc\u00eda Jr.** (73.66) and **Sam Antonacci** (67.67) represent our most efficient leverage points. **Luis Garc\u00eda Jr.** is primed to exploit Lucas Giolito\u2019s 5.37 xERA, with a +14% platoon edge driving his high output, while **Sam Antonacci** serves as an elite table-setter in the leadoff spot; his 0.386 xwOBA and the +10% order bonus make him a high-floor selection despite a slight park penalty.\n\nOur lineup construction remains cautious of several elite arms, specifically Zack Wheeler, whose 2.86 xERA suppresses the scores of both **Kyle Tucker** (55.23) and **Andy Pages** (48.55). While both are talented, they are essentially playing for game cap preservation today. The most difficult bench decision involved **Josh Jung** (55.68), who finished just shy of the starting threshold. Despite a decent matchup against Stephen Kolek, **Josh Jung** was squeezed out by the optimizer\u2019s prioritization of the +19% SP skill bonus afforded to **Nasim Nunez** and **Luis Garc\u00eda Jr.** against Giolito. **Jorge Polanco** remains unavailable due to his IL designation, effectively narrowing our maneuverability in the infield.\n\nOwners should remain vigilant regarding weather and confirmed lineup status, as every player listed is currently pending official team announcements. We have heavily weighted **Sam Antonacci** and **Nasim Nunez** specifically to capture stolen base efficiency, as the scarcity of that category in our 5x5 format requires us to prioritize speed-capable players even when traditional batting metrics might suggest otherwise. Avoid over-exposure to the Wheeler start in the outfield, but trust that our middle-infield stack provides the highest probability of hitting our daily efficiency targets.",
+    "total_efficiency_score": 711.13,
+    "narrative": "The Austin Waves are positioned for a high-ceiling outing today, led by **Vladimir Guerrero Jr.**, whose projected 80.22 score marks him as our premier play. Facing a left-handed matchup against Trevor Rogers, **Vladimir Guerrero Jr.** benefits from a substantial +16% park factor adjustment and a positive platoon split, making him the anchor of our offense. Following closely is **Luis Garc\u00eda Jr.** (73.66) and **Sam Antonacci** (67.67). **Luis Garc\u00eda Jr.** carries the weight of a favorable matchup against Lucas Giolito, where an elite 19% SP skill adjustment pairs with a +14% platoon advantage. Meanwhile, **Sam Antonacci** is set to maximize his scoring potential from the leadoff spot; his .386 xwOBA and the +10% order bonus make him our most efficient engine for Runs today.\n\nThe most difficult decision on the bench involved **Coby Mayo**, who landed at a 50.27 score\u2014the highest of our reserves. While **Coby Mayo** benefits from a strong park factor against Adam Macko, his efficiency was ultimately stifled by the projected SP skill of the opponent and his lower placement in the projected lineup order compared to our starters. We are prioritizing players like **Nasim Nunez** (61.73), whose ability to exploit Giolito\u2019s 5.37 xERA provides a safer floor for our SB-starved categories. We remain cautious regarding **Gunnar Henderson** and **Kyle Tucker**, both of whom are facing elite arms in Adam Macko and Zack Wheeler, respectively. While their base talent keeps them in the lineup, their scores are suppressed by the high-caliber pitching they face today. All managers should monitor the \"Lineup Pending\" statuses, as any deviation from our assumed batting orders for **Liam Hicks**, **Miguel Vargas**, and others will trigger immediate re-evaluations of these daily efficiency scores.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -166,7 +166,7 @@
             "Slot": "SS",
             "Player": "Gunnar Henderson",
             "POS": "SS",
-            "Score": 76.6376017048501,
+            "Score": 52.113569159298066,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -189,13 +189,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Adam Macko (L)",
+            "SP_xERA": "2.80",
             "Warning": "",
             "GameTime": "2026-05-29T23:05:00Z",
             "Order": "2*",
@@ -252,18 +262,18 @@
         },
         {
             "Slot": "3B",
-            "Player": "Coby Mayo",
-            "POS": "1B/3B",
-            "Score": 57.96286581457405,
+            "Player": "Josh Jung",
+            "POS": "3B",
+            "Score": 55.67674508397036,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
+                    "label": "Lineup Pending (Assumed #4)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "48.57",
+                    "value": "49.10",
                     "type": "info"
                 },
                 {
@@ -272,22 +282,27 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "+16%",
+                    "label": "SP Skill",
+                    "value": "+9%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Stephen Kolek (R)",
+            "SP_xERA": "4.38",
             "Warning": "",
-            "GameTime": "2026-05-29T23:05:00Z",
-            "Order": "5*",
-            "Start": "11:05 PM"
+            "GameTime": "2026-05-30T00:05:00Z",
+            "Order": "4*",
+            "Start": "12:05 AM"
         },
         {
             "Slot": "OF1",
@@ -824,22 +839,22 @@
         },
         {
             "Slot": "BN",
-            "Player": "Josh Jung",
-            "POS": "3B",
-            "Order": "4*",
-            "Start": "12:05 AM",
-            "Opponent": "Stephen Kolek (R)",
-            "SP_xERA": "4.38",
-            "Score": 55.67674508397036,
+            "Player": "Coby Mayo",
+            "POS": "1B/3B",
+            "Order": "5*",
+            "Start": "11:05 PM",
+            "Opponent": "Adam Macko (L)",
+            "SP_xERA": "2.80",
+            "Score": 50.269985107876515,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
+                    "label": "Lineup Pending (Assumed #5)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "49.10",
+                    "value": "48.57",
                     "type": "info"
                 },
                 {
@@ -848,18 +863,23 @@
                     "type": "info"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "+9%",
+                    "label": "Park",
+                    "value": "+16%",
                     "type": "positive"
                 },
                 {
-                    "label": "Neutral Platoon (R)",
-                    "value": null,
-                    "type": "info"
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
@@ -869,7 +889,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-05-30T00:05:00Z"
+            "GameTime": "2026-05-29T23:05:00Z"
         },
         {
             "Slot": "BN",
