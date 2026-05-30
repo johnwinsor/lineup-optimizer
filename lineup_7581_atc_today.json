@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-30",
-    "last_updated": "2026-05-30T15:00:57.605564+00:00",
+    "last_updated": "2026-05-30T16:07:33.476661+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 698.82,
-    "narrative": "The Austin Waves enter today\u2019s slate with **Gunnar Henderson** and **Vladimir Guerrero Jr.** serving as our primary offensive engines. **Gunnar Henderson** leads the squad with an 81.88 efficiency score, buoyed by a favorable matchup against Trey Yesavage and a park-adjusted boost that maximizes his dynamic platoon advantage. Similarly, **Vladimir Guerrero Jr.** checks in at 81.21; while he faces a slight platoon disadvantage against Brandon Young, his high xwOBA of .378 and an significant park-factor bonus suggest he is poised for a multi-hit performance. **Luis Garc\u00eda Jr.** remains a high-floor play at 70.03, as his ability to leverage the platoon advantage against Michael King positions him well to contribute across our categories, specifically in Runs and RBI.\n\nWe faced a difficult optimization decision regarding our final outfield spots, ultimately landing on **Miguel Andujar** (53.97) and **Dominic Smith** (55.42) over **Sam Antonacci**. While **Sam Antonacci** projects as a strong candidate with a 47.21 score, the optimizer favored **Miguel Andujar** due to a +12% platoon edge against Foster Griffin. **Sam Antonacci** came closest to cracking the starting lineup, but his suboptimal L/L platoon matchup against Framber Valdez limited his upside compared to the higher-floor profiles of our starting outfielders. We are proceeding with caution regarding **Liam Hicks**, **Miguel Vargas**, and **Kyle Tucker**, as all three currently carry scores in the low 50s; **Kyle Tucker** in particular faces a tough test against a high-skill arm in Jes\u00fas Luzardo, necessitating close observation once the official lineups are posted.\n\nRisks remain elevated across the board as we await confirmation on several batting orders. We are effectively playing without **Jorge Polanco**, who remains sidelined on the IL, and we must keep a close watch on **Nasim Nunez**; despite his elite speed utility, his projection plummeted to 47.50 due to an expected spot at the bottom of the order and the difficulty of navigating Michael King. Given the scarcity of Stolen Bases in our 5x5 format, we are holding firm with **Nasim Nunez** in the SS slot for his potential impact, but his sub-50 score places him in our \"marginal\" tier, meaning he is barely preserving our daily game caps.",
+    "narrative": "For today\u2019s slate, **Gunnar Henderson** (81.88) and **Vladimir Guerrero Jr.** (81.21) emerge as the clear anchors of the Austin Waves lineup. Both benefit significantly from favorable park factors\u2014a 16% boost\u2014which, combined with their strong projected performance against Trey Yesavage and Brandon Young respectively, elevates them well above the field. **Luis Garc\u00eda Jr.** (70.03) also represents a high-ceiling play; his 14% dynamic platoon advantage against the right-handed Michael King makes him the most efficient target for middle-infield production outside of our primary anchors. These players are prioritized not just for their raw power, but for their ability to maximize the park environment to drive scoring in a tight 5x5 race.\n\nOur most difficult roster decision involved **Sam Antonacci** (39.06), who narrowly missed the starting cut as he fell just below the 40-point efficiency floor. While his underlying xwOBA of .383 remains encouraging, the optimizer penalized him heavily for a poor L/L platoon matchup against Framber Valdez and a suboptimal #9 spot in the projected order. Conversely, the inclusion of **Dominic Smith** (55.42) over the bench options is driven by a strong 7% platoon advantage and a favorable park bump, proving that our selection process remains strictly tethered to daily efficiency rather than name value.\n\nWe remain on high alert regarding the \"Lineup Pending\" status across the board; the efficiency scores for **Liam Hicks**, **Luis Garc\u00eda Jr.**, **Nasim Nunez**, **Gunnar Henderson**, **Josh Jung**, **Andy Pages**, **Miguel Andujar**, **Kyle Tucker**, **Dominic Smith**, and **Jackson Merrill** are all derived from historical batting order assumptions. Any mid-day shake-up, particularly if **Nasim Nunez** or **Andy Pages** are shifted lower in their respective lineups, could compress their scoring potential further. Additionally, the presence of Jes\u00fas Luzardo on the mound presents a significant hurdle for **Andy Pages** and **Kyle Tucker**, as his elite skill set creates a 18% drag on their production scores, necessitating careful monitoring throughout the afternoon.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -56,18 +56,13 @@
         },
         {
             "Slot": "1B",
-            "Player": "Vladimir Guerrero Jr.",
-            "POS": "1B",
-            "Score": 81.20953855095001,
+            "Player": "Miguel Vargas",
+            "POS": "1B/3B",
+            "Score": 52.23725738535851,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "60.16",
+                    "value": "49.46",
                     "type": "info"
                 },
                 {
@@ -77,36 +72,36 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+16%",
-                    "type": "positive"
+                    "value": "-1%",
+                    "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-7%",
-                    "type": "negative"
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+2%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.378",
-                    "type": "info"
                 }
             ],
-            "Opponent": "Brandon Young (R)",
-            "SP_xERA": "4.78",
+            "Opponent": "Valdez, F (L)",
+            "SP_xERA": "3.84",
             "Warning": "",
-            "GameTime": "2026-05-30T20:05:00Z",
-            "Order": "3*",
-            "Start": "08:05 PM"
+            "GameTime": "2026-05-30T18:10:00Z",
+            "Order": "3",
+            "Start": "06:10 PM"
         },
         {
             "Slot": "2B",
@@ -252,18 +247,18 @@
         },
         {
             "Slot": "3B",
-            "Player": "Miguel Vargas",
-            "POS": "1B/3B",
-            "Score": 52.23725738535851,
+            "Player": "Josh Jung",
+            "POS": "3B",
+            "Score": 58.96389589970529,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
+                    "label": "Lineup Pending (Assumed #2)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "49.46",
+                    "value": "49.10",
                     "type": "info"
                 },
                 {
@@ -272,133 +267,30 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
                     "label": "SP Skill",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+2%",
+                    "value": "+11%",
                     "type": "positive"
                 },
                 {
-                    "label": "Slow SP Delivery (100% SB)",
-                    "value": "+2%",
-                    "type": "positive"
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Framber Valdez (L)",
-            "SP_xERA": "3.84",
+            "Opponent": "Seth Lugo (R)",
+            "SP_xERA": "4.47",
             "Warning": "",
-            "GameTime": "2026-05-30T18:10:00Z",
-            "Order": "3*",
-            "Start": "06:10 PM"
+            "GameTime": "2026-05-30T20:05:00Z",
+            "Order": "2*",
+            "Start": "08:05 PM"
         },
         {
             "Slot": "OF1",
-            "Player": "Kyle Tucker",
-            "POS": "OF",
-            "Score": 52.46926572785638,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "63.63",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-18%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Jes\u00fas Luzardo (L)",
-            "SP_xERA": "3.28",
-            "Warning": "",
-            "GameTime": "2026-05-31T02:10:00Z",
-            "Order": "5*",
-            "Start": "02:10 AM"
-        },
-        {
-            "Slot": "OF2",
-            "Player": "Dominic Smith",
-            "POS": "1B/OF",
-            "Score": 55.418348144455216,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "46.39",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Brady Singer (R)",
-            "SP_xERA": "4.25",
-            "Warning": "",
-            "GameTime": "2026-05-30T23:15:00Z",
-            "Order": "5*",
-            "Start": "11:15 PM"
-        },
-        {
-            "Slot": "OF3",
             "Player": "Andy Pages",
             "POS": "OF",
             "Score": 47.291661006499275,
@@ -452,7 +344,144 @@
             "Start": "02:10 AM"
         },
         {
+            "Slot": "OF2",
+            "Player": "Miguel Andujar",
+            "POS": "3B/OF",
+            "Score": 53.96925437001356,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.36",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+12%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Foster Griffin (L)",
+            "SP_xERA": "3.72",
+            "Warning": "",
+            "GameTime": "2026-05-30T20:05:00Z",
+            "Order": "6*",
+            "Start": "08:05 PM"
+        },
+        {
+            "Slot": "OF3",
+            "Player": "Kyle Tucker",
+            "POS": "OF",
+            "Score": 52.46926572785638,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "63.63",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-18%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Jes\u00fas Luzardo (L)",
+            "SP_xERA": "3.28",
+            "Warning": "",
+            "GameTime": "2026-05-31T02:10:00Z",
+            "Order": "5*",
+            "Start": "02:10 AM"
+        },
+        {
             "Slot": "OF4",
+            "Player": "Dominic Smith",
+            "POS": "1B/OF",
+            "Score": 55.418348144455216,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "46.39",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Brady Singer (R)",
+            "SP_xERA": "4.25",
+            "Warning": "",
+            "GameTime": "2026-05-30T23:15:00Z",
+            "Order": "5*",
+            "Start": "11:15 PM"
+        },
+        {
+            "Slot": "OF5",
             "Player": "Jackson Merrill",
             "POS": "OF",
             "Score": 47.75670699214314,
@@ -501,19 +530,19 @@
             "Start": "08:05 PM"
         },
         {
-            "Slot": "OF5",
-            "Player": "Miguel Andujar",
-            "POS": "3B/OF",
-            "Score": 53.96925437001356,
+            "Slot": "UTIL",
+            "Player": "Vladimir Guerrero Jr.",
+            "POS": "1B",
+            "Score": 81.20953855095001,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
+                    "label": "Lineup Pending (Assumed #3)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "49.36",
+                    "value": "60.16",
                     "type": "info"
                 },
                 {
@@ -523,69 +552,35 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
+                    "value": "+16%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-6%",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-7%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+12%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.378",
+                    "type": "info"
                 }
             ],
-            "Opponent": "Foster Griffin (L)",
-            "SP_xERA": "3.72",
+            "Opponent": "Brandon Young (R)",
+            "SP_xERA": "4.78",
             "Warning": "",
             "GameTime": "2026-05-30T20:05:00Z",
-            "Order": "6*",
-            "Start": "08:05 PM"
-        },
-        {
-            "Slot": "UTIL",
-            "Player": "Josh Jung",
-            "POS": "3B",
-            "Score": 58.96389589970529,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.10",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "30%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+11%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Neutral Platoon (R)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Seth Lugo (R)",
-            "SP_xERA": "4.47",
-            "Warning": "",
-            "GameTime": "2026-05-30T20:05:00Z",
-            "Order": "2*",
+            "Order": "3*",
             "Start": "08:05 PM"
         }
     ],
@@ -762,17 +757,12 @@
             "Slot": "BN",
             "Player": "Sam Antonacci",
             "POS": "2B/3B/OF",
-            "Order": "1*",
+            "Order": "9",
             "Start": "06:10 PM",
-            "Opponent": "Framber Valdez (L)",
+            "Opponent": "Valdez, F (L)",
             "SP_xERA": "3.84",
-            "Score": 47.21034699978279,
+            "Score": 39.05583251800213,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.13",
@@ -799,9 +789,9 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
                 },
                 {
                     "label": "xwOBA Good",
@@ -809,7 +799,7 @@
                     "type": "info"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
