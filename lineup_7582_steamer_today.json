@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-30",
-    "last_updated": "2026-05-30T22:49:40.008002+00:00",
+    "last_updated": "2026-05-30T23:54:22.302469+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 773.13,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a potent offensive alignment, headlined by **Yordan Alvarez** (77.57) and **Trea Turner** (74.93). **Yordan Alvarez** remains our premier start, boasting an elite xwOBA of 0.424 against Sproat; while the matchup against a 4.23 xERA arm is standard, his power profile creates a high-floor environment for RBI accumulation. Similarly, **Trea Turner** benefits from a massive 19% SP skill adjustment against Sasaki, whose 5.11 xERA suggests a prime opportunity for **Trea Turner** to capitalize on the stolen base category, which remains our highest priority. **Kyle Schwarber** (74.24) is effectively tethered to the same favorable conditions as **Trea Turner**, and his xwOBA of 0.398 signals that he is poised to produce R and HR output in the leadoff spot.\n\nWe are leveraging strong park factors for **Kazuma Okamoto** (70.30) and **Casey Schmitt** (63.20) today. **Kazuma Okamoto** is locked into a favorable park environment that offsets his neutral platoon status, while **Casey Schmitt** receives a specific boost from Feltner\u2019s slow delivery, which the model projects as an opportunistic environment for aggressive baserunning. **Pete Crow-Armstrong** (72.82) also demands attention; his leadoff role combined with a dynamic platoon advantage gives him the highest ceiling for stolen base production among our outfielders.\n\nThe most difficult decision on the bench involved **Caleb Durbin** (41.16). While **Caleb Durbin** is a priority add for SB categories, he ultimately fell short of our efficiency threshold due to a difficult matchup against Messick, whose 3.37 xERA suppresses the base projection. With **Junior Caminero** (47.17) occupying our UTIL spot despite a tough outing against Detmers, the optimizer favored **Junior Caminero**\u2019s higher raw power potential over the marginal gains projected for **Caleb Durbin**. We are also actively monitoring the statuses of **Colt Keith**, **Lars Nootbaar**, **Gary Sanchez**, **Josh Smith**, **Pedro Ramirez**, and **Luis Pena** to ensure we remain under game caps while maximizing our late-game flexibility. No weather risks are currently flagged for the active roster, but we will continue to monitor lineups to confirm that **Dillon Dingler**, **Luke Raley**, **Chase Meidroth**, **Carson Benge**, and **Christian Yelich** remain in their projected slots. Note that **Hyeseong Kim** and **Zac Veen** remain in the minors and are not available for consideration.",
+    "narrative": "Today\u2019s lineup features a formidable offensive core, anchored by **Yordan Alvarez** (77.57) and **Trea Turner** (74.93). **Yordan Alvarez** leads the charge with an elite 0.424 xwOBA against Sproat, while **Trea Turner** is perfectly positioned to capitalize on a favorable matchup against Sasaki (5.11 xERA), providing high-upside speed and power potential. **Pete Crow-Armstrong** (72.82) and **Kyle Schwarber** (74.24) also offer strong returns, with **Kyle Schwarber** buoyed by a 0.398 xwOBA. We are aggressively targeting matchups against weaker arms; **Kazuma Okamoto** (70.30) earns a high score today primarily due to a 16% park boost that mitigates the slight platoon disadvantage against Young, while **Christian Yelich** (68.24) remains a priority play thanks to a strong 13% dynamic platoon edge.\n\nOur optimization logic for today leaned heavily into platoon advantages and park factors, which explains the high marks for **Dillon Dingler** (63.75) and **Casey Schmitt** (63.20). **Casey Schmitt** is particularly interesting, as his score was boosted by a 14% park factor and the potential for stolen bases against Feltner\u2019s slower delivery. Conversely, **Junior Caminero** (47.17) sits at the bottom of our starting rotation today; his raw talent is dampened by a difficult matchup against the 3.10 xERA of Detmers. **Caleb Durbin** (41.16) was our hardest bench decision. While he offers the speed profile we covet, the combination of a difficult matchup against Messick and a bottom-of-the-order projection made him the odd man out in favor of higher-floor production. \n\nWe must remain vigilant regarding the 33% rain risk impacting **Pete Crow-Armstrong**; if the game is delayed or postponed, we are prepared to pivot to the bench. While **Hyeseong Kim**, **Colt Keith**, and **Zac Veen** remain unavailable due to minor league assignments or rest, we are comfortable with our active depth. With other options like **Lars Nootbaar**, **Gary Sanchez**, **Josh Smith**, **Pedro Ramirez**, and **Luis Pena** waiting in the wings, we have the flexibility to adjust if the weather turns or if late lineup changes shift our efficiency calculations.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -308,7 +308,7 @@
             ],
             "Opponent": "Leahy (R)",
             "SP_xERA": "3.94",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (33%)",
             "GameTime": "2026-05-30T23:15:00Z",
             "Order": "1",
             "Start": "11:15 PM"
@@ -715,11 +715,46 @@
             "Player": "Gary Sanchez",
             "POS": "C",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Lambert, P (R)",
+            "SP_xERA": "4.06",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "48.18",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -727,7 +762,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-30T20:10:00Z"
         },
         {
             "Slot": "BN",

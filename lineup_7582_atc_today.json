@@ -1,9 +1,9 @@
 {
     "target_date": "2026-05-30",
-    "last_updated": "2026-05-30T22:49:51.960037+00:00",
+    "last_updated": "2026-05-30T23:54:27.066633+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 771.62,
-    "narrative": "The Zurich Zebras enter May 30th with a clear focus on exploiting high-ceiling matchups against questionable starting pitching. **Trea Turner** (76.35) and **Kyle Schwarber** (75.20) represent our premier starts today, both benefiting significantly from an elite +19% SP skill advantage against Sasaki, whose 5.11 xERA suggests a volatile outing. **Yordan Alvarez** (73.62) remains a cornerstone play, boasting an elite 0.424 xwOBA that necessitates a start regardless of typical platoon considerations, while **Pete Crow-Armstrong** (71.82) is our primary catalyst for stolen base production; his matchup against Leahy in an aggressive, speed-oriented lineup spot makes him a high-efficiency asset today.\n\nBeyond the headliners, **Kazuma Okamoto** (69.87) receives a massive 16% park adjustment boost, fueling his status as a top-tier play against Young. Conversely, **Junior Caminero** (45.87) sits on the razor's edge of our utility spot; his score was suppressed by a daunting -19% SP skill penalty against the southpaw Detmers, yet he remains in the lineup due to a lack of more favorable alternatives. The most difficult bench decision involved **Caleb Durbin**, who finished at 39.98. While his contact profile is valuable, the combination of a sub-40 score and a bottom-tier batting order spot (9th) against Messick ultimately forced the optimizer to keep him on the pine to preserve our limited game caps for more high-leverage opportunities. We are proceeding with full confidence in this configuration, though we will continue to monitor lineups for **Carson Benge** and the rest of the crew to ensure no late-scratch weather or injury risks disrupt our expected output.",
+    "narrative": "The Zurich Zebras enter today with a high-floor offensive outlook, anchored by elite matchups against weak opposing arms. **Trea Turner** and **Kyle Schwarber** headline our top-tier plays, both benefiting from an aggressive +19% boost due to a soft matchup against Sasaki (5.11 xERA). **Trea Turner** leads the team in efficiency with a 76.35 score, providing the ideal combination of order priority and pitchability. Meanwhile, **Yordan Alvarez** remains a cornerstone of the lineup; despite facing a neutral arm in Sproat, his elite 0.424 xwOBA ensures he maintains a stellar 73.62 score. **Kazuma Okamoto** is also a standout today; his 69.87 projection is buoyed significantly by a +16% park factor adjustment, making him a high-leverage start at 3B.\n\nThe decision-making process for the utility spot was razor-thin, as **Junior Caminero** ultimately earned the start despite a difficult matchup against Detmers (3.10 xERA). His score of 45.87 barely surpassed the threshold, narrowly edging out **Caleb Durbin**, whose projection of 39.98 fell just short of our 40-point \"Below Floor\" policy. **Caleb Durbin** was dinged primarily by a challenging SP skill rating and a suboptimal bottom-of-the-order placement, which outweighed his base skill profile. Elsewhere, we are closely monitoring the 33% rain risk surrounding **Pete Crow-Armstrong** in his leadoff role; while his 71.82 score is enticing, we must remain prepared to pivot if the game in his venue is delayed or postponed. Outside of that weather risk, we are capitalizing on the favorable SP profiles today to maximize our chances across all five roto categories.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -308,7 +308,7 @@
             ],
             "Opponent": "Leahy (R)",
             "SP_xERA": "3.94",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (33%)",
             "GameTime": "2026-05-30T23:15:00Z",
             "Order": "1",
             "Start": "11:15 PM"
@@ -667,11 +667,46 @@
             "Player": "Gary Sanchez",
             "POS": "C",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Lambert, P (R)",
+            "SP_xERA": "4.06",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.05",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "30%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -679,7 +714,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-05-30T20:10:00Z"
         },
         {
             "Slot": "BN",
