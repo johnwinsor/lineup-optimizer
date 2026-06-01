@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-01",
-    "last_updated": "2026-06-01T17:19:42.152668+00:00",
+    "last_updated": "2026-06-01T21:23:16.115721+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 206.99,
-    "narrative": "For LawDog\u2019s lineup today, **Will Smith** stands out as our premier play with a robust score of 61.54. His matchup against Eduardo Rodriguez is the most favorable on the board; the combination of a high xwOBA (0.380) and a pitcher with an xERA of 4.53 creates a clear path to production, even with the modest penalty for the platoon disadvantage. While **Tyler Freeman** (53.08) and **Jonathan Aranda** (47.17) draw tougher matchups against Jos\u00e9 Soriano and Ty Madden respectively, both occupy high-leverage spots in the batting order, which remains the primary catalyst for their inclusion. **Geraldo Perdomo** rounds out the starters at 45.20, though we must remain cautious; his score is suppressed by a 19% downgrade due to Emmet Sheehan\u2019s skill set, making him a marginal start that relies heavily on his ability to capitalize on his #3 slot.\n\nThe most difficult decision for the optimizer involved leaving **Luis Arraez** (38.34) on the bench. He fell just short of the starting threshold, as the model heavily penalized him for the platoon disadvantage against Shane Drohan and the lack of upside in our stolen base-weighted scoring system. Unlike **Will Smith**, whose park factors and raw power profile allow him to overcome pitching resistance, **Luis Arraez** relies on a high contact rate that is currently being squeezed by the model\u2019s insistence on maximizing efficiency against high-skill arms like Drohan. We are also monitoring the volatility surrounding **Matt Chapman**, **Masyn Winn**, and **Jung Hoo Lee**; all three were considered for the utility spots, but their projected scores failed to clear the 40-point floor due to the high probability of suppressed offensive output against today\u2019s slate of starters.\n\nRisk mitigation remains the theme for the day, as all of our active players are currently operating under \"Lineup Pending\" status, introducing variance to the projected batting orders. Furthermore, our rostered players must navigate a gauntlet of capable arms, notably the 2.31 xERA of Ty Madden facing **Jonathan Aranda**. Given that stolen bases are the scarcity anchor for LawDog, we are prioritizing hitters who maximize plate appearances; however, should the official lineups shift drastically, we will be forced to re-evaluate the utility of **Geraldo Perdomo** and **Tyler Freeman** to ensure we aren't chasing counting stats in unfavorable conditions.",
+    "narrative": "The lineup for LawDog today is headlined by **Will Smith**, who sits as our only \"Strong\" play with a score of 61.54. His matchup against Eduardo Rodriguez is the most favorable on the slate; despite the uncertainty of a pending lineup, the combination of his park environment and Rodriguez's 4.53 xERA provides the highest ceiling for production. While **Tyler Freeman** (53.08) and **Jonathan Aranda** (47.17) are locked into the middle of our active roster, they face tougher uphill battles against Jos\u00e9 Soriano and Madden, respectively. The optimizer is leaning heavily into the top-of-order spots for both **Tyler Freeman** and **Jonathan Aranda**, as their projected slots at #2 in their lineups are providing the necessary mathematical buffer to keep them in the 40\u201359 \"Marginal\" range despite facing statistically competent arms.\n\nOur most difficult roster decision involved **Luis Arraez**, who finished just outside the starting threshold with a score of 38.34. While **Luis Arraez** offers a high floor, the combination of facing Shane Drohan and a significant SP skill penalty tipped the scales, relegating him to the bench alongside **Matt Chapman** (37.90) and **Masyn Winn** (37.64). The primary concern for the day remains the \"Lineup Pending\" status for **Will Smith**, **Tyler Freeman**, and **Geraldo Perdomo**; if these players shift lower in their respective batting orders, their scores will likely dip further, potentially necessitating a mid-day pivot. With SB as our primary scarcity, we are keeping a close watch on **Geraldo Perdomo**\u2014his score of 45.20 is buoyed by his #3 spot, but his production is heavily dependent on his ability to navigate Emmet Sheehan\u2019s 3.21 xERA without sacrificing base-stealing opportunities against a high-efficiency defensive battery.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -61,11 +61,6 @@
             "Score": 47.17138233412499,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "52.20",
                     "type": "info"
@@ -101,11 +96,11 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Ty Madden (R)",
+            "Opponent": "Madden (R)",
             "SP_xERA": "2.31",
             "Warning": "",
             "GameTime": "2026-06-01T22:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "10:40 PM"
         },
         {
@@ -365,17 +360,12 @@
             "Slot": "BN",
             "Player": "Matt Chapman",
             "POS": "3B",
-            "Order": "6*",
+            "Order": "6",
             "Start": "11:40 PM",
             "Opponent": "Shane Drohan (L)",
             "SP_xERA": "3.18",
             "Score": 37.895719112718126,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.01",
@@ -402,7 +392,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -462,17 +452,12 @@
             "Slot": "BN",
             "Player": "Luis Arraez",
             "POS": "1B/2B",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:40 PM",
             "Opponent": "Shane Drohan (L)",
             "SP_xERA": "3.18",
             "Score": 38.3413993088058,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.46",
@@ -504,7 +489,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -516,17 +501,12 @@
             "Slot": "BN",
             "Player": "Masyn Winn",
             "POS": "SS",
-            "Order": "6*",
+            "Order": "6",
             "Start": "11:45 PM",
-            "Opponent": "Jacob deGrom (R)",
+            "Opponent": "deGrom (R)",
             "SP_xERA": "3.17",
             "Score": 37.640328953594924,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.46",
@@ -558,7 +538,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -594,17 +574,12 @@
             "Slot": "BN",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
-            "Order": "5*",
+            "Order": "5",
             "Start": "11:40 PM",
             "Opponent": "Shane Drohan (L)",
             "SP_xERA": "3.18",
             "Score": 35.284255624326306,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.63",
@@ -636,7 +611,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -686,55 +661,20 @@
             "Slot": "BN",
             "Player": "Drew Gilbert",
             "POS": "OF",
-            "Order": "9*",
-            "Start": "11:40 PM",
-            "Opponent": "Shane Drohan (L)",
-            "SP_xERA": "3.18",
-            "Score": 31.334221989468087,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "44.76",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-06-01T23:40:00Z"
+            "GameTime": null
         }
     ]
 }
