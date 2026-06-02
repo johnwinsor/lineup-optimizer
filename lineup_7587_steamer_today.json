@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-02",
-    "last_updated": "2026-06-02T16:02:52.385065+00:00",
+    "last_updated": "2026-06-02T20:01:01.639964+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 750.17,
-    "narrative": "For today\u2019s slate, **Corbin Carroll** (78.48) and **Jose Caballero** (73.22) anchor our lineup as the premier plays. **Corbin Carroll** benefits from a massive matchup grade against Eric Lauer, where his ability to exploit a lefty-on-lefty dynamic is bolstered by a premium #2 spot in the lineup. Similarly, **Jose Caballero** draws a favorable matchup against Joey Cantillo; his score is driven by a 13% platoon efficiency boost and sustained plate discipline. **Tyler Soderstrom** (68.85) also warrants attention as a high-upside play, utilizing a strong 10% SP skill advantage against Jameson Taillon to overcome the \"Wind In\" risk at the park.\n\nOur most difficult roster decision involved keeping **Kyle Karros** (49.13) on the bench despite a respectable projection. While **Kyle Karros** carries a solid 17% SP skill edge against Grayson Rodriguez, he was ultimately edged out by the superior categorical utility provided by **Austin Riley** and **Henry Bolte**. **Austin Riley** (49.21) remains in the lineup because of his unique ability to generate stolen base opportunities against slower pitcher deliveries, a critical factor for our team strategy. Conversely, **Dalton Rushing** (44.97) and **Zach McKinstry** (45.35) are on the lower end of our starts; they are largely tethered to the lineup due to the lack of better internal alternatives, despite **Dalton Rushing** facing a tougher matchup against Michael Soroka.\n\nManagement must remain cautious regarding the \"Lineup Pending\" status across the board, particularly with **Vinnie Pasquantino** (61.75). While his base projection is strong, the -15% dynamic platoon penalty against Andrew Abbott introduces non-trivial volatility. Additionally, the \"Wind In\" alerts across several venues\u2014most notably impacting **Austin Riley**, **Tyler Soderstrom**, **Seiya Suzuki**, and **Henry Bolte**\u2014suggest we should monitor these games closely, as any shift in conditions could compress the production ceiling for our power-dependent hitters. We are leaning heavily on **James Wood** (56.90) to maintain his elite 0.410 xwOBA lead-off duties, as his role as an offensive catalyst is vital to offsetting the lack of premium matchups for our bottom-tier starters like **Dalton Rushing**.",
+    "total_efficiency_score": 742.92,
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with **Corbin Carroll** serving as our primary offensive engine. Boasting a 78.48 efficiency score, **Corbin Carroll** is the clear top play, benefiting from a prime #2 lineup spot and a highly favorable matchup against the left-handed Eric Lauer. While Lauer\u2019s 4.66 xERA offers a soft landing, the matchup also elevates **Gabriel Moreno** (61.21), whose platoon disadvantage is mitigated by the poor opposing SP skill. Similarly, **Tyler Soderstrom** (68.85) and **Jose Caballero** (66.81) represent our strongest mid-tier targets; **Jose Caballero** continues to be a staple in our strategy, with his speed-to-stolen-base profile providing a vital cushion in our most scarce category despite the marginal impact of today\u2019s opposing catcher pop times.\n\nThe optimizer faced its toughest decision at the utility and bottom-end slots, where **Kyle Karros** (49.13) narrowly missed the final cut behind **Henry Bolte** (51.10). While **Kyle Karros** benefits from the favorable SP skill against Grayson Rodriguez, the structural necessity of keeping **Henry Bolte** active to capitalize on his potential against Jameson Taillon won out. Meanwhile, risk remains elevated due to the reliance on \"Lineup Pending\" projections for **Dalton Rushing**, **Brice Turang**, **Seiya Suzuki**, **Henry Bolte**, and **Josh Naylor**. Furthermore, while **Austin Riley** (49.21) remains in the lineup, managers should note that \"Wind In\" conditions at the park are suppressing his power profile, and facing a high-level arm like Kevin Gausman demands a cautious outlook despite his pedigree. We are opting to bench **Travis Bazzana** (41.75) today, as his projection failed to reach the efficiency threshold required to displace our current starters.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -102,13 +102,8 @@
             "Slot": "1B",
             "Player": "Vinnie Pasquantino",
             "POS": "1B",
-            "Score": 61.753874156158226,
+            "Score": 59.423539282340926,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.45",
@@ -135,20 +130,113 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Andrew Abbott (L)",
+            "Opponent": "Abbott, A (L)",
             "SP_xERA": "4.72",
             "Warning": "",
             "GameTime": "2026-06-02T23:10:00Z",
-            "Order": "3*",
+            "Order": "5",
             "Start": "11:10 PM"
         },
         {
             "Slot": "2B",
+            "Player": "Zach McKinstry",
+            "POS": "2B/SS/3B/OF",
+            "Score": 46.845632858190996,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "47.92",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Matz (L)",
+            "SP_xERA": "4.19",
+            "Warning": "",
+            "GameTime": "2026-06-02T22:40:00Z",
+            "Order": "8",
+            "Start": "10:40 PM"
+        },
+        {
+            "Slot": "SS",
+            "Player": "Jose Caballero",
+            "POS": "2B/SS/3B/OF",
+            "Score": 66.80973760434225,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "56.17",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Cantillo (L)",
+            "SP_xERA": "4.34",
+            "Warning": "",
+            "GameTime": "2026-06-02T23:05:00Z",
+            "Order": "8",
+            "Start": "11:05 PM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Brice Turang",
             "POS": "2B",
             "Score": 46.445479704340954,
@@ -202,114 +290,11 @@
             "Start": "11:40 PM"
         },
         {
-            "Slot": "SS",
-            "Player": "Jose Caballero",
-            "POS": "2B/SS/3B/OF",
-            "Score": 73.22795224202568,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "56.17",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+13%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Joey Cantillo (L)",
-            "SP_xERA": "4.34",
-            "Warning": "",
-            "GameTime": "2026-06-02T23:05:00Z",
-            "Order": "5*",
-            "Start": "11:05 PM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Zach McKinstry",
-            "POS": "2B/SS/3B/OF",
-            "Score": 45.35055946909979,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "47.92",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Steven Matz (L)",
-            "SP_xERA": "4.19",
-            "Warning": "",
-            "GameTime": "2026-06-02T22:40:00Z",
-            "Order": "9*",
-            "Start": "10:40 PM"
-        },
-        {
             "Slot": "3B",
             "Player": "Austin Riley",
             "POS": "3B",
             "Score": 49.213569511621166,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.27",
@@ -346,11 +331,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Kevin Gausman (R)",
+            "Opponent": "Gausman (R)",
             "SP_xERA": "3.57",
             "Warning": "",
             "GameTime": "2026-06-02T23:15:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "11:15 PM"
         },
         {
@@ -414,11 +399,6 @@
             "Score": 56.89958219367215,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "58.09",
                     "type": "info"
@@ -454,11 +434,11 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Lake Bachar (R)",
+            "Opponent": "Bachar (R)",
             "SP_xERA": "3.42",
             "Warning": "",
             "GameTime": "2026-06-02T22:45:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "10:45 PM"
         },
         {
@@ -930,17 +910,12 @@
             "Slot": "BN",
             "Player": "Travis Bazzana",
             "POS": "2B",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:05 PM",
-            "Opponent": "Cam Schlittler (R)",
+            "Opponent": "Schlittler (R)",
             "SP_xERA": "3.19",
             "Score": 41.74740590368941,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "42.63",
@@ -972,7 +947,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
