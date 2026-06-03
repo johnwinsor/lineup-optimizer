@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-02",
-    "last_updated": "2026-06-02T22:23:57.388749+00:00",
+    "last_updated": "2026-06-03T00:24:14.864174+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 725.16,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a potent core, anchored by **Yordan Alvarez** (78.25) and **Trea Turner** (77.18), both of whom are projected as our strongest plays. **Yordan Alvarez** benefits from an elite xwOBA profile and a highly favorable matchup against Chandler, while **Trea Turner**\u2014our primary engine for SB scarcity\u2014gets a significant boost from a generous 4.75 xERA opposing starter in V\u00e1squez. **Kyle Schwarber** (76.47) rounds out the tier of elite starts, leveraging his leadoff position and strong power profile in the same matchup against V\u00e1squez. Meanwhile, **Junior Caminero** (65.10) provides a sturdy floor despite a slight park penalty, as his batting order position remains a vital catalyst for run production.\n\nTactically, the benching of **Carson Benge** (42.20) was the most difficult decision, as he narrowly missed the cut due to the sheer difficulty of facing Logan Gilbert. The optimizer prioritized the consistency of **Jose Fernandez** (56.27) and **Caleb Durbin** (56.67), the latter of whom is a critical start today; despite hitting ninth, **Caleb Durbin** is a \"must-play\" due to his elite speed and the 90% steal-rate opportunity presented by the slow delivery of Baz. We are monitoring **Luke Raley** (46.55) closely, as his pending lineup status creates a minor volatility risk, and **Pete Crow-Armstrong** (50.71) faces a stiff defensive challenge against a high-velocity catcher and a difficult platoon matchup against Jump. Outside of those factors, the Zebras are well-positioned, provided **Christian Yelich** (54.28) can overcome the hurdle of a sub-3.00 xERA from McDonald to maintain his efficiency.",
+    "total_efficiency_score": 731.01,
+    "narrative": "Today\u2019s offensive engine is anchored by our high-upside cornerstones, led by **Yordan Alvarez** (78.25) and **Trea Turner** (77.18). **Yordan Alvarez** remains our premier play, boasting an elite 0.454 xwOBA against Chandler; his score is buoyed by a significant matchup advantage against a middling starter. Meanwhile, **Trea Turner** and **Kyle Schwarber** (76.47) benefit immensely from the favorable 4.75 xERA of V\u00e1squez, who serves as a primary catalyst for today\u2019s high efficiency scores. **Junior Caminero** (65.10) also secures a strong start despite a tougher park factor, as his ability to handle right-handed pitching provides the necessary stability to keep him in the #2 hole.\n\nWe are navigating several complex platoon and speed dynamics today. **Christian Yelich** (54.28) is riding a 13% dynamic platoon boost against McDonald, but his total is dampened by a daunting 2.97 xERA from the opposing arm. Conversely, our pursuit of stolen bases remains tempered by strategic risk: **Luke Raley** (47.18) and **Pete Crow-Armstrong** (53.38) face significant headwinds from an elite opposing catcher (1.89s pop time) and high-hold pitchers, making them high-risk, high-reward plays despite their speed profiles. The most difficult bench decision involved **Carson Benge** (42.20), who narrowly missed the starting cut; his elite batting order position was ultimately neutralized by the efficiency dip against a high-tier arm in Gilbert, causing him to fall behind the higher-scoring profiles of **Jose Fernandez** and **Dillon Dingler**. We continue to monitor the status of **Zac Veen**, who remains relegated to the minors, while players like **Kazuma Okamoto**, **Caleb Durbin**, and **Chase Meidroth** round out the roster, tasked with maintaining our categorical floor in a slate defined by volatile pitcher matchups.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -58,7 +58,7 @@
             "Slot": "1B",
             "Player": "Kazuma Okamoto",
             "POS": "1B/3B",
-            "Score": 48.457637742507515,
+            "Score": 51.00803972895528,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -88,11 +88,6 @@
                 {
                     "label": "Order #7",
                     "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
                     "type": "negative"
                 }
             ],
@@ -381,13 +376,8 @@
             "Slot": "OF3",
             "Player": "Luke Raley",
             "POS": "1B/OF",
-            "Score": 46.550660561305044,
+            "Score": 47.17939435632402,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.04",
@@ -404,23 +394,43 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "SP Skill",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Brazob\u00e1n (R)",
+            "SP_xERA": "3.95",
             "Warning": "",
             "GameTime": "2026-06-03T01:40:00Z",
-            "Order": "5*",
+            "Order": "4",
             "Start": "01:40 AM"
         },
         {
             "Slot": "OF4",
             "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Score": 50.7130968981737,
+            "Score": 53.38220726123548,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -456,11 +466,6 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
                 }
             ],
             "Opponent": "Jump (L)",
@@ -698,17 +703,12 @@
             "Slot": "BN",
             "Player": "Carson Benge",
             "POS": "OF",
-            "Order": "1*",
+            "Order": "1",
             "Start": "01:40 AM",
-            "Opponent": "Logan Gilbert (R)",
+            "Opponent": "Gilbert, L (R)",
             "SP_xERA": "3.22",
             "Score": 42.20269741884219,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.86",
@@ -740,7 +740,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
