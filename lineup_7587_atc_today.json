@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-05",
-    "last_updated": "2026-06-05T17:09:09.977830+00:00",
+    "last_updated": "2026-06-05T19:43:37.320868+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 784.11,
-    "narrative": "For today\u2019s slate, our offensive engine is anchored by **James Wood** (76.28) and **Brice Turang** (75.06), both of whom benefit from ideal matchup dynamics. **James Wood** is our must-start, leveraging an elite .401 xwOBA and a prime leadoff spot against Merrill Kelly, whose 4.74 xERA suggests plenty of opportunity for counting stats. Meanwhile, **Brice Turang** benefits from the favorable combination of a hitter-friendly park and a slow delivery from Ryan Feltner, creating a high-probability environment for a stolen base\u2014a critical multiplier for our scoring goals. **Seiya Suzuki** (72.03) also rounds out our top-tier options, as wind-out conditions and an advantageous platoon edge against Ray provide a solid floor for run production.\n\nThe most difficult decision on the bench involved **Kyle Karros**, whose score of 51.19 fell just outside the cut. While **Kyle Karros** benefits from a massive 14% park adjustment, his placement in the #8 spot of the lineup\u2014coupled with a sub-optimal platoon matchup against Brandon Sproat\u2014limited his ceiling compared to the more favorable lineup positions held by **Travis Bazzana** and **Tyler Soderstrom**. Elsewhere, we are monitoring the 31% rain risk surrounding **Vinnie Pasquantino** (59.39). While his platoon edge against Zebby Matthews is strong, his status remains \"Lineup Pending\" alongside most of the squad; we will rely on his high projected score to maintain his utility spot, but he is the primary candidate for a late-swap should the weather outlook deteriorate.",
+    "total_efficiency_score": 732.03,
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate prioritizing stolen base upside and high-leverage order positioning. Our strongest play is **James Wood** (76.27), who benefits from an elite 0.401 xwOBA and a prime leadoff spot against Merrill Kelly. The match-up is gold for our SB-weighted strategy, as the combination of his speed and a favorable opposing pitcher deliver significant efficiency. Close behind is **Brice Turang** (75.05), whose score is buoyed by a rare convergence of a hitter-friendly park and an opposing battery with a slow delivery, maximizing his base-stealing potential. **Seiya Suzuki** (72.03) also grades out as an elite start, with wind blowing out providing an extra boost to his raw projection against the southpaw, Ray.\n\nOur toughest bench decision involved **Kyle Karros** (51.18), who narrowly missed the cut. While **Kyle Karros** thrives in his home park and carries decent utility value, his projected spot in the bottom of the order and the presence of superior options like **Austin Riley** (58.59)\u2014who retains value despite a lower lineup position\u2014pushed him to the pine. We are monitoring **Vinnie Pasquantino** (59.39) closely, as the 33% rain risk introduces a volatility factor that could jeopardize his plate appearances, though his favorable platoon matchup against Zebby Matthews keeps him in the starting 1B slot for now. Finally, we remain cautious regarding **Dalton Rushing** (45.09) and **Gabriel Moreno** (53.09); both are currently pending official lineup confirmation, and should **Dalton Rushing** fall out of the lineup or slide further down the order, his score will dip dangerously close to our bench threshold.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -132,7 +132,7 @@
             ],
             "Opponent": "Zebby Matthews (R)",
             "SP_xERA": "3.54",
-            "Warning": "\u26a0\ufe0f Rain Risk (31%)",
+            "Warning": "\u26a0\ufe0f Rain Risk (33%)",
             "GameTime": "2026-06-06T00:15:00Z",
             "Order": "3*",
             "Start": "12:15 AM"
@@ -195,13 +195,8 @@
             "Slot": "SS",
             "Player": "Cole Young",
             "POS": "2B/SS",
-            "Score": 50.741511949499476,
+            "Score": 49.21926659101449,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.90",
@@ -231,13 +226,18 @@
                     "label": "Slow SP Delivery (100% SB)",
                     "value": "+2%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Framber Valdez (L)",
+            "Opponent": "Valdez, F (L)",
             "SP_xERA": "4.09",
             "Warning": "",
             "GameTime": "2026-06-05T22:40:00Z",
-            "Order": "6*",
+            "Order": "7",
             "Start": "10:40 PM"
         },
         {
@@ -291,11 +291,6 @@
             "Score": 58.59595553569695,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "54.58",
                     "type": "info"
@@ -330,23 +325,18 @@
             "SP_xERA": "4.30",
             "Warning": "",
             "GameTime": "2026-06-05T23:15:00Z",
-            "Order": "7*",
+            "Order": "7",
             "Start": "11:15 PM"
         },
         {
             "Slot": "OF1",
-            "Player": "Jose Caballero",
-            "POS": "2B/SS/3B/OF",
-            "Score": 49.38635714751909,
+            "Player": "Seiya Suzuki",
+            "POS": "OF",
+            "Score": 72.03262971196176,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "59.45",
+                    "value": "55.58",
                     "type": "info"
                 },
                 {
@@ -361,73 +351,34 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-7%",
-                    "type": "negative"
+                    "value": "+11%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-13%",
-                    "type": "negative"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Sonny Gray (R)",
-            "SP_xERA": "3.68",
+            "Opponent": "Ray (L)",
+            "SP_xERA": "4.45",
             "Warning": "",
-            "GameTime": "2026-06-05T23:05:00Z",
-            "Order": "6*",
-            "Start": "11:05 PM"
+            "GameTime": "2026-06-05T18:20:00Z",
+            "Order": "4",
+            "Start": "06:20 PM"
         },
         {
             "Slot": "OF2",
-            "Player": "Tyler Soderstrom",
-            "POS": "1B/OF",
-            "Score": 62.265410426048334,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "53.86",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Peter Lambert (R)",
-            "SP_xERA": "4.33",
-            "Warning": "",
-            "GameTime": "2026-06-06T00:10:00Z",
-            "Order": "5*",
-            "Start": "12:10 AM"
-        },
-        {
-            "Slot": "OF3",
             "Player": "James Wood",
             "POS": "OF",
             "Score": 76.27844751294977,
@@ -487,13 +438,18 @@
         },
         {
             "Slot": "OF4",
-            "Player": "Seiya Suzuki",
-            "POS": "OF",
-            "Score": 72.03262971196176,
+            "Player": "Tyler Soderstrom",
+            "POS": "1B/OF",
+            "Score": 62.265410426048334,
             "Breakdown": [
                 {
+                    "label": "Lineup Pending (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Base",
-                    "value": "55.58",
+                    "value": "53.86",
                     "type": "info"
                 },
                 {
@@ -503,36 +459,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
+                    "value": "-2%",
+                    "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+11%",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
                     "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Ray (L)",
-            "SP_xERA": "4.45",
+            "Opponent": "Peter Lambert (R)",
+            "SP_xERA": "4.33",
             "Warning": "",
-            "GameTime": "2026-06-05T18:20:00Z",
-            "Order": "4",
-            "Start": "06:20 PM"
+            "GameTime": "2026-06-06T00:10:00Z",
+            "Order": "5*",
+            "Start": "12:10 AM"
         },
         {
             "Slot": "OF5",
@@ -587,13 +538,8 @@
             "Slot": "UTIL",
             "Player": "Josh Naylor",
             "POS": "1B",
-            "Score": 62.180308290888796,
+            "Score": 61.00709492690976,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "57.60",
@@ -620,20 +566,39 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Framber Valdez (L)",
+            "Opponent": "Valdez, F (L)",
             "SP_xERA": "4.09",
             "Warning": "",
             "GameTime": "2026-06-05T22:40:00Z",
-            "Order": "3*",
+            "Order": "4",
             "Start": "10:40 PM"
         }
     ],
     "players_sat": [
+        {
+            "Slot": "BN",
+            "Player": "Jose Caballero",
+            "POS": "2B/SS/3B/OF",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
         {
             "Slot": "BN",
             "Player": "Mickey Moniak",
@@ -758,17 +723,12 @@
             "Slot": "BN",
             "Player": "Zach McKinstry",
             "POS": "2B/SS/3B/OF",
-            "Order": "8*",
+            "Order": "8",
             "Start": "10:40 PM",
-            "Opponent": "Bryan Woo (R)",
+            "Opponent": "Woo (R)",
             "SP_xERA": "3.45",
             "Score": 38.67455429367871,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.73",
@@ -800,7 +760,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
