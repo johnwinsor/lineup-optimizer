@@ -1,21 +1,16 @@
 {
     "target_date": "2026-06-05",
-    "last_updated": "2026-06-05T21:19:00.309914+00:00",
+    "last_updated": "2026-06-05T23:00:12.175664+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 728.06,
-    "narrative": "Our lineup construction for today is anchored by **Jos\u00e9 Ram\u00edrez**, who boasts the day's highest efficiency score at 77.52. His matchup against Kumar Rocker is statistically favorable, aided by an 11% boost from the pitcher\u2019s skill profile and an opportunistic bump due to Rocker\u2019s slow delivery, which significantly improves the probability of **Jos\u00e9 Ram\u00edrez** swiping a bag in our SB-starved 5x5 format. Following closely is **Tyler Freeman** (70.02) and **Daulton Varsho** (69.94). **Tyler Freeman** benefits from a massive 14% park factor, while **Daulton Varsho** is maximizing his elite platoon edge against the 4.75 xERA of Young, making him a high-floor play for power and stolen base upside. We are also leaning into the stack against E. Cabrera, with **Luis Arraez**, **Jung Hoo Lee**, and **Matt Chapman** all receiving favorable wind-aided bumps that push their scores into the \"Strong\" category (60+).\n\nThe most difficult decision on the bench involved **Jonathan Aranda** (47.25), who hovered near our utility cutoff all morning. Ultimately, the projection favored the cumulative efficiency of our starting infield, as **Jonathan Aranda** was downgraded heavily by a matchup against the elite 2.88 xERA of Gusto. We are also keeping a close eye on the volatile bottom-third of our lineup; **Drew Gilbert** and **Geraldo Perdomo** are currently tracking as marginal starts (sub-55). While **Geraldo Perdomo** provides stability, his score is suppressed by a unfavorable spot in the order, and we are forced to monitor the status of **Will Smith**, whose lineup position remains pending. If **Will Smith** is dropped lower than the #5 spot, we may see his efficiency score dip further, necessitating a potential shift toward **Yainer Diaz** or **Bryson Stott** if the opportunity arises to protect our game caps.",
+    "total_efficiency_score": 715.94,
+    "narrative": "Our strongest play today is **Jos\u00e9 Ram\u00edrez** (77.52), who benefits from a favorable matchup against Rocker and a critical situational edge; his ability to capitalize on a slow SP delivery provides a tangible boost to our stolen base efficiency. **Tyler Freeman** (70.02) and **Daulton Varsho** (69.94) round out our top-tier starts. **Tyler Freeman** is bolstered by an elite park factor and a favorable spot in the two-hole, while **Daulton Varsho** is perfectly positioned to exploit a weak outing from Young, supported by a significant 18% SP skill advantage and strong platoon splits. Additionally, the quartet of **Luis Arraez**, **Jung Hoo Lee**, **Matt Chapman**, and **Drew Gilbert** will enjoy wind-aided conditions against Cabrera, E, with the former three providing high-floor production that makes them essential starters in today\u2019s format.\n\nThe most difficult decision on the bench was leaving **Jonathan Aranda** (47.25) out of the UTIL spot. While he boasts a strong xwOBA, his score was suppressed by a tough matchup against Gusto (2.88 xERA), ultimately giving the nod to **Matt Chapman** (59.72) due to the higher projected efficiency and favorable stadium variables. We are monitoring **Will Smith** (40.79) closely today; while he is in the lineup, his low score is a direct result of Detmers\u2019 ability to suppress production, keeping him dangerously close to our benching threshold. With **Cal Raleigh** still on the IL and **Lawrence Butler** not in the starting rotation, we are relying on our depth players to maintain our standing in the stolen base category, where we continue to leverage the speed profiles of **Masyn Winn** and **Geraldo Perdomo** despite middling matchup projections.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Will Smith",
             "POS": "C",
-            "Score": 54.58737941605392,
+            "Score": 40.78844300465194,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.52",
@@ -27,9 +22,14 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-4%",
+                    "type": "negative"
                 },
                 {
                     "label": "xwOBA Good",
@@ -37,11 +37,11 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Detmers (L)",
+            "SP_xERA": "3.21",
             "Warning": "",
             "GameTime": "2026-06-06T02:10:00Z",
-            "Order": "5*",
+            "Order": "6",
             "Start": "02:10 AM"
         },
         {
@@ -130,7 +130,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Brandon Sproat (R)",
+            "Opponent": "Sproat (R)",
             "SP_xERA": "4.26",
             "Warning": "",
             "GameTime": "2026-06-06T00:40:00Z",
@@ -141,13 +141,8 @@
             "Slot": "SS",
             "Player": "Geraldo Perdomo",
             "POS": "SS",
-            "Score": 54.27617705268056,
+            "Score": 55.954821703794394,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.68",
@@ -172,18 +167,13 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "+4%",
                     "type": "positive"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
                 }
             ],
-            "Opponent": "Foster Griffin (L)",
+            "Opponent": "Griffin (L)",
             "SP_xERA": "3.81",
             "Warning": "",
             "GameTime": "2026-06-06T01:40:00Z",
-            "Order": "7*",
+            "Order": "6",
             "Start": "01:40 AM"
         },
         {
@@ -267,7 +257,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kumar Rocker (R)",
+            "Opponent": "Rocker (R)",
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-06-06T00:15:00Z",
@@ -394,7 +384,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Christian Scott (R)",
+            "Opponent": "Scott (R)",
             "SP_xERA": "3.86",
             "Warning": "",
             "GameTime": "2026-06-06T01:40:00Z",

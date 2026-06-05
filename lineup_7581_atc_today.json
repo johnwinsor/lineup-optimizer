@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-05",
-    "last_updated": "2026-06-05T21:18:41.634539+00:00",
+    "last_updated": "2026-06-05T22:59:59.420157+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 675.14,
-    "narrative": "The **Austin Waves** offense is anchored today by **Gunnar Henderson** (77.16) and **Vladimir Guerrero Jr.** (72.32), our two most formidable starts against right-handed pitching. **Gunnar Henderson** faces Yesavage with a high-efficiency floor driven by a strong platoon advantage and a premium #2 spot in the order, while **Vladimir Guerrero Jr.** benefits from a favorable 4.75 xERA matchup against Young and an elite xwOBA profile that overcomes the minor park drag. We are also capitalizing on the Merril Kelly start; the matchup against Arizona provides a significant boost for **Luis Garc\u00eda Jr.** (72.02) and **Curtis Mead** (62.15). **Luis Garc\u00eda Jr.**, in particular, thrives here due to a massive +14% platoon edge, while **Nasim Nunez** (60.80) remains a critical tactical start\u2014despite his #9 spot, his efficiency is propped up by a rare 87% stolen base success rate against Kelly\u2019s slow delivery, making him a high-leverage play in our scarcity-focused build.\n\nThe most difficult bench decision involved **Coby Mayo** (45.56), who narrowly missed the cut behind the more efficient profiles of **Brayan Rocchio** and **Liam Hicks**. While **Coby Mayo** projects well, his platoon disadvantage today capped his upside relative to the rest of the infield. Similarly, **Miguel Vargas** (43.76) was relegated to the bench; despite his raw talent, the combination of facing a high-skill arm in Luzardo and his specific platoon profile lowered his projection below the 40-point efficiency threshold for certain slots, and **Sam Antonacci** (36.66) fell entirely below our 40-point floor. Owners should monitor the \"Lineup Pending\" status for **Nasim Nunez**, **Luis Garc\u00eda Jr.**, **Curtis Mead**, **Kyle Tucker**, and **Andy Pages**; while the optimizer has factored in historical landing spots, any unexpected shifts to the bottom of the order could dampen the projected output for these key contributors.",
+    "total_efficiency_score": 634.99,
+    "narrative": "Our core engine today centers on the middle infield, where **Gunnar Henderson** (77.16) and **Luis Garc\u00eda Jr.** (73.66) offer the highest efficiency floors. **Gunnar Henderson** benefits significantly from a favorable matchup against Yesavage, carrying a +14% dynamic platoon boost that makes him our must-start anchor. Similarly, **Luis Garc\u00eda Jr.** is positioned for a breakout performance against Kelly; the combination of a high-leverage order spot and the favorable park factor elevates his expected production into the elite category. **Vladimir Guerrero Jr.** (72.32) remains a top-tier play as well, leveraging a +18% SP skill boost against Young, despite a slight platoon penalty.\n\nThe most difficult roster decision today involved the scarcity of our stolen base profile. **Nasim Nunez** (60.80) secures a spot in the UTIL slot over higher-base options like **Josh Jung** (44.49) because of the game-state variables: Kelly\u2019s slow delivery creates a high-upside environment for **Nasim Nunez** to hunt bags, which is prioritized given our 5x5 scarcity requirements. Conversely, **Josh Jung** was the odd man out; despite a decent projection, the matchup against the left-handed Messick coupled with the higher ceiling of our other infielders forced him to the bench. \n\nRisks remain on the periphery, particularly with our outfield deployment. **Andy Pages** (48.66) and **Kyle Tucker** (51.36) both face Detmers, an elite arm (3.21 xERA) that suppresses their overall output. While **Kyle Tucker** is too talented to bench, the negative SP skill adjustments highlight a lower-than-usual expected output for our power-speed anchors. We are cautiously optimistic that the +2% speed-related boost for **Andy Pages** against a slow-working Detmers will allow for at least one successful theft, maintaining our edge in the SB category while we navigate these tougher pitching matchups.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -100,18 +100,13 @@
         },
         {
             "Slot": "2B",
-            "Player": "Nasim Nunez",
-            "POS": "2B/SS",
-            "Score": 60.80386948257578,
+            "Player": "Luis Garc\u00eda Jr.",
+            "POS": "1B/2B",
+            "Score": 73.66290527612375,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "51.09",
+                    "value": "54.57",
                     "type": "info"
                 },
                 {
@@ -130,26 +125,21 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Switch",
-                    "value": "+3%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
                     "type": "positive"
                 },
                 {
-                    "label": "Slow SP Delivery (87% SB)",
-                    "value": "+4%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
                 }
             ],
-            "Opponent": "Merrill Kelly (R)",
+            "Opponent": "Kelly, Me (R)",
             "SP_xERA": "4.74",
             "Warning": "",
             "GameTime": "2026-06-06T01:40:00Z",
-            "Order": "9*",
+            "Order": "2",
             "Start": "01:40 AM"
         },
         {
@@ -184,7 +174,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Kumar Rocker (R)",
+            "Opponent": "Rocker (R)",
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-06-06T00:15:00Z",
@@ -193,18 +183,13 @@
         },
         {
             "Slot": "MI",
-            "Player": "Luis Garc\u00eda Jr.",
-            "POS": "1B/2B",
-            "Score": 72.01961765308253,
+            "Player": "Gunnar Henderson",
+            "POS": "SS",
+            "Score": 77.1560596603723,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "54.57",
+                    "value": "60.65",
                     "type": "info"
                 },
                 {
@@ -215,11 +200,6 @@
                 {
                     "label": "Park",
                     "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+18%",
                     "type": "positive"
                 },
                 {
@@ -228,32 +208,27 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Merrill Kelly (R)",
-            "SP_xERA": "4.74",
+            "Opponent": "Yesavage (R)",
+            "SP_xERA": "3.98",
             "Warning": "",
-            "GameTime": "2026-06-06T01:40:00Z",
-            "Order": "8*",
-            "Start": "01:40 AM"
+            "GameTime": "2026-06-05T23:07:00Z",
+            "Order": "2",
+            "Start": "11:07 PM"
         },
         {
             "Slot": "3B",
-            "Player": "Curtis Mead",
-            "POS": "1B/2B/3B",
-            "Score": 62.154670310804676,
+            "Player": "Coby Mayo",
+            "POS": "1B/3B",
+            "Score": 45.564701986228606,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "46.04",
+                    "value": "48.57",
                     "type": "info"
                 },
                 {
@@ -267,37 +242,27 @@
                     "type": "positive"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "+18%",
-                    "type": "positive"
-                },
-                {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
+                    "value": "-8%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Merrill Kelly (R)",
-            "SP_xERA": "4.74",
+            "Opponent": "Yesavage (R)",
+            "SP_xERA": "3.98",
             "Warning": "",
-            "GameTime": "2026-06-06T01:40:00Z",
-            "Order": "3*",
-            "Start": "01:40 AM"
+            "GameTime": "2026-06-05T23:07:00Z",
+            "Order": "6",
+            "Start": "11:07 PM"
         },
         {
             "Slot": "OF1",
-            "Player": "Jackson Merrill",
+            "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 60.92837764610334,
+            "Score": 48.66425297063392,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "55.75",
+                    "value": "55.13",
                     "type": "info"
                 },
                 {
@@ -306,32 +271,32 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
                     "label": "SP Skill",
-                    "value": "-3%",
+                    "value": "-19%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+13%",
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Slow SP Delivery (88% SB)",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Christian Scott (R)",
-            "SP_xERA": "3.86",
+            "Opponent": "Detmers (L)",
+            "SP_xERA": "3.21",
             "Warning": "",
-            "GameTime": "2026-06-06T01:40:00Z",
-            "Order": "5",
-            "Start": "01:40 AM"
+            "GameTime": "2026-06-06T02:10:00Z",
+            "Order": "2",
+            "Start": "02:10 AM"
         },
         {
             "Slot": "OF2",
@@ -376,13 +341,8 @@
             "Slot": "OF3",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 66.17524173580526,
+            "Score": 51.35604589724812,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "63.63",
@@ -394,32 +354,37 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Detmers (L)",
+            "SP_xERA": "3.21",
             "Warning": "",
             "GameTime": "2026-06-06T02:10:00Z",
-            "Order": "4*",
+            "Order": "5",
             "Start": "02:10 AM"
         },
         {
-            "Slot": "OF5",
-            "Player": "Andy Pages",
+            "Slot": "OF4",
+            "Player": "Jackson Merrill",
             "POS": "OF",
-            "Score": 58.438384704138144,
+            "Score": 60.3190938696423,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "55.13",
+                    "value": "55.75",
                     "type": "info"
                 },
                 {
@@ -428,27 +393,47 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Scott (R)",
+            "SP_xERA": "3.86",
             "Warning": "",
-            "GameTime": "2026-06-06T02:10:00Z",
-            "Order": "3*",
-            "Start": "02:10 AM"
+            "GameTime": "2026-06-06T01:40:00Z",
+            "Order": "5",
+            "Start": "01:40 AM"
         },
         {
             "Slot": "UTIL",
-            "Player": "Gunnar Henderson",
-            "POS": "SS",
-            "Score": 77.1560596603723,
+            "Player": "Nasim Nunez",
+            "POS": "2B/SS",
+            "Score": 60.80386948257578,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "60.65",
+                    "value": "51.09",
                     "type": "info"
                 },
                 {
@@ -462,22 +447,32 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
+                    "label": "SP Skill",
+                    "value": "+18%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Switch",
+                    "value": "+3%",
                     "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (87% SB)",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Yesavage (R)",
-            "SP_xERA": "3.98",
+            "Opponent": "Kelly, Me (R)",
+            "SP_xERA": "4.74",
             "Warning": "",
-            "GameTime": "2026-06-05T23:07:00Z",
-            "Order": "2",
-            "Start": "11:07 PM"
+            "GameTime": "2026-06-06T01:40:00Z",
+            "Order": "9",
+            "Start": "01:40 AM"
         }
     ],
     "players_sat": [
@@ -785,17 +780,12 @@
             "Slot": "BN",
             "Player": "Josh Jung",
             "POS": "3B",
-            "Order": "2*",
+            "Order": "3",
             "Start": "12:15 AM",
             "Opponent": "Messick (L)",
             "SP_xERA": "3.40",
-            "Score": 45.3297510180629,
+            "Score": 44.49031118439507,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.10",
@@ -817,48 +807,9 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-06-06T00:15:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Coby Mayo",
-            "POS": "1B/3B",
-            "Order": "6",
-            "Start": "11:07 PM",
-            "Opponent": "Yesavage (R)",
-            "SP_xERA": "3.98",
-            "Score": 45.564701986228606,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "48.57",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-8%",
-                    "type": "negative"
                 },
                 {
                     "label": "Benched - Lower projected efficiency than other options.",
@@ -867,7 +818,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-06-05T23:07:00Z"
+            "GameTime": "2026-06-06T00:15:00Z"
         },
         {
             "Slot": "BN",
@@ -891,6 +842,25 @@
                 }
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Curtis Mead",
+            "POS": "1B/2B/3B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
             "GameTime": null
         }
     ]
