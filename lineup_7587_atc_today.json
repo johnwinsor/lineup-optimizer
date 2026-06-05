@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-04",
-    "last_updated": "2026-06-04T23:02:31.065116+00:00",
+    "last_updated": "2026-06-05T02:47:48.249986+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 568.96,
-    "narrative": "For today\u2019s slate, **Vinnie Pasquantino** and **Brice Turang** emerge as our primary pillars, anchoring the lineup with scores of 69.53 and 70.49 respectively. **Vinnie Pasquantino** benefits significantly from a high-leverage dynamic platoon advantage against Morris, while **Brice Turang** finds himself in an ideal spot against Houser; his score is bolstered by a favorable SP skill matchup that offsets a minor park penalty. Similarly, **Corbin Carroll** remains a high-floor play at 67.04 despite facing a tough lefty in Wrobleski. His efficiency is significantly buoyed by the prospect of stolen bases, as the opposing pitcher's slow delivery provides a clear window for **Corbin Carroll** to exploit his elite speed, a critical component given our team's emphasis on SB scarcity.\n\nOur bench decisions were dictated by a combination of scheduling gaps and positional constraints, but **Jose Caballero** represents the most intriguing start, coming in at 58.29. While he faced a stiff penalty due to his dynamic platoon status against Cecconi, his aggressive base-running profile and the opportunity to exploit a pitcher with a slow delivery kept him in the lineup over marginal bench depth. We are closely monitoring the weather and confirmed lineups for **Tyler Soderstrom**, whose score of 54.66 is heavily reliant on a wind-out projection at his home park; should the wind shift, his value against a quality arm like Imanaga could diminish rapidly. Conversely, **Austin Riley** is currently our most risky start at 42.20; he is battling a significant SP skill deficit against Fluharty, and we are only running him out there to preserve our daily game caps while hoping for a rare BvP breakout. We remain cautious, noting that both **Mickey Moniak** and **Trevor Story** remain sidelined on the IL, while **Josh Naylor** and **James Wood** are unavailable due to team off-days, effectively forcing our hand with the current active roster.",
+    "total_efficiency_score": 566.36,
+    "narrative": "For today's matchup, our core offensive engine is driven by **Vinnie Pasquantino** (69.53) and **Brice Turang** (70.49), who represent our strongest plays. **Vinnie Pasquantino** benefits significantly from a dynamic platoon advantage against a right-handed arm, while **Brice Turang** earns top billing due to a high-leverage matchup against Houser; the 18% boost from the opposing SP\u2019s skill profile, combined with an elite placement in the three-hole, makes him our anchor. While **Corbin Carroll** (67.04) faces a tougher test against the southpaw Wrobleski, his elite sprint speed remains our primary weapon in the scarce SB category. The \"slow delivery\" metric of the opposing battery adds a 4% premium to his projection, ensuring he remains a start despite the left-on-left disadvantage.\n\nThe most difficult bench decision involved balancing the middle infield depth. While **Travis Bazzana** (48.79) draws a start, he is dangerously close to the floor, penalized heavily by the platoon disadvantage against a left-handed pitcher. We are keeping a close watch on **Austin Riley** (42.20), who remains in the lineup despite a sub-optimal 19% SP skill penalty against Fluharty. Given the current bench composition, our reserve options\u2014including **Seiya Suzuki**, **Giancarlo Stanton**, **Max Muncy**, **Carson Williams**, **Zach McKinstry**, **Kyle Karros**, **Cole Young**, and **Henry Bolte**\u2014did not present a higher ceiling today. **Dalton Rushing** (54.64) and **Gabriel Moreno** (54.08) are effectively holding the line; while neither is posting an elite efficiency score, their lineup stability and park factors keep them ahead of the fringe bench talent.\n\nWe are operating with heightened caution regarding the 3.22 xERA of the pitcher opposing **Austin Riley**, as his recent volatility makes that specific matchup a significant risk for a zero-for-four afternoon. Furthermore, while we monitor for late-breaking lineup changes, the status of **Josh Naylor** and **James Wood** remains N/A due to an off-day, and we continue to navigate the absence of **Mickey Moniak** and **Trevor Story** due to their placement on the IL. With SB being our primary scarcity constraint, we are prioritizing **Jose Caballero** (58.29) and his 100% SB-favorable delivery matchup over safer, high-average bats to ensure we maximize our category efficiency despite the marginal score.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -322,7 +322,7 @@
             "Slot": "OF3",
             "Player": "Tyler Soderstrom",
             "POS": "1B/OF",
-            "Score": 54.66337721439069,
+            "Score": 52.060359251800655,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -352,11 +352,6 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -553,11 +548,41 @@
             "Player": "Seiya Suzuki",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "12:05 AM",
+            "Opponent": "Ginn (R)",
+            "SP_xERA": "3.98",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "55.58",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -565,7 +590,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-05T00:05:00Z"
         },
         {
             "Slot": "BN",
@@ -734,11 +759,6 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 },
                 {
