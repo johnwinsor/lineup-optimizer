@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-06",
-    "last_updated": "2026-06-06T19:07:50.686057+00:00",
+    "last_updated": "2026-06-06T20:56:24.866794+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 846.56,
-    "narrative": "Ghost Ride the WHIP enters 2026-06-06 with a primary focus on exploiting high-ceiling matchups against soft pitching. The anchor of today\u2019s lineup is **Corbin Carroll**, who boasts a massive 85.94 score against Littell; his elite sprint speed remains our most vital asset in this Roto campaign, and the combination of a favorable SP_xERA (4.83) and a prime #2 lineup slot makes him a lock for a multi-category contribution. Following closely is **Josh Naylor** (77.77) and **James Wood** (73.03). **James Wood** is particularly attractive due to his elite 0.401 xwOBA and a prime leadoff spot, while **Josh Naylor** benefits significantly from wind conditions and a strong platoon advantage against Montero, K. Despite the variance inherent in \"Lineup Pending\" status, **Gabriel Moreno** (71.17) and **Brice Turang** (71.16) round out our top-tier plays, both positioned to capitalize on favorable park factors and high-leverage batting spots.\n\nOur most difficult roster management decision centered on the utility slot, where **Austin Riley** (45.23) ultimately yielded to higher-efficiency alternatives. While **Austin Riley** possesses high-end talent, his matchup against Ashcraft, B\u2014a pitcher with a respectable 3.32 xERA\u2014suppressed his efficiency score below our threshold, particularly when accounting for the negative modifiers from elite catcher framing. Elsewhere, we are proceeding with caution regarding **Dalton Rushing** and **Alex Freeland**, as their bottom-third lineup placements and the reliance on \"Lineup Pending\" projections for **Travis Bazzana** and **Brice Turang** introduce non-trivial variance. We continue to monitor the status of **Mickey Moniak** and **Giancarlo Stanton** on the IL; until their return, the depth provided by starters like **Tyler Soderstrom**\u2014who enjoys a significant +19% boost from the opposing pitcher\u2019s skill profile\u2014is essential for preserving our daily game caps while maintaining competitive floor projections across the 5x5 categories.",
+    "total_efficiency_score": 846.4,
+    "narrative": "For the June 6th slate, **Corbin Carroll** leads the charge with an elite 85.94 score, buoyed by a favorable matchup against Littell and a prime #2 spot in the order. His ability to anchor our stolen base production makes him a near-automatic start, even with a slight drag from opposing catcher efficiency. **Josh Naylor** (77.77) and **Brice Turang** (75.06) provide the secondary tier of high-floor production; **Brice Turang** in particular benefits significantly from a favorable wind forecast and a projected top-of-the-order assignment against Agnos, maximizing his opportunities to weaponize his sprint speed. **James Wood** rounds out the elite tier at 73.03, as his elite 0.401 xwOBA suggests he is primed to outperform his matchup against Rodriguez, despite the handedness disadvantage.\n\nThe bench decision process was tightest between **Seiya Suzuki** (54.54) and **Austin Riley** (45.23). While **Austin Riley** carries significant power upside, the optimizer favored **Seiya Suzuki** for his park-adjusted efficiency and slightly better matchup against Roupp. **Austin Riley** was penalized heavily by the sub-3.50 xERA of Ashcraft and a rigorous catcher defensive metric that limits his base-running upside, cementing his status as a high-value reserve for today. We remain cautious regarding **Dalton Rushing** and **Alex Freeland**; their scores of 56.17 and 52.19, respectively, are heavily contingent on unofficial lineup placements. Should either be bumped from their projected order, their efficiency floor will drop, and we may look toward the bench for more stable output. Finally, please note that **Mickey Moniak** and **Giancarlo Stanton** remain sidelined on the IL, leaving our active depth limited as we navigate these mid-range matchups.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -151,7 +151,7 @@
             "Slot": "2B",
             "Player": "Brice Turang",
             "POS": "2B",
-            "Score": 71.1633825027502,
+            "Score": 75.05806193891385,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -174,6 +174,16 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
@@ -184,8 +194,8 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Agnos (R)",
+            "SP_xERA": "4.90",
             "Warning": "",
             "GameTime": "2026-06-07T01:10:00Z",
             "Order": "3*",
@@ -247,11 +257,6 @@
             "Score": 54.38240946165933,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "45.52",
                     "type": "info"
@@ -277,11 +282,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jack Leiter (R)",
+            "Opponent": "Leiter (R)",
             "SP_xERA": "4.06",
             "Warning": "",
             "GameTime": "2026-06-06T23:35:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:35 PM"
         },
         {
@@ -332,13 +337,8 @@
             "Slot": "OF1",
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
-            "Score": 67.57431687011018,
+            "Score": 63.51985785790357,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "59.45",
@@ -370,16 +370,21 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
                     "label": "Wind Out",
                     "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Ranger Suarez (L)",
+            "Opponent": "Suarez (L)",
             "SP_xERA": "3.75",
             "Warning": "",
             "GameTime": "2026-06-06T23:35:00Z",
-            "Order": "6*",
+            "Order": "8",
             "Start": "11:35 PM"
         },
         {
@@ -816,17 +821,12 @@
             "Slot": "BN",
             "Player": "Kyle Karros",
             "POS": "3B",
-            "Order": "8*",
+            "Order": "8",
             "Start": "01:10 AM",
             "Opponent": "Jacob Misiorowski (R)",
             "SP_xERA": "2.70",
             "Score": 41.23242354914398,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.81",
@@ -863,7 +863,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }

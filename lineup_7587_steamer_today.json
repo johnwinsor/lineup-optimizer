@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-06",
-    "last_updated": "2026-06-06T19:07:45.513753+00:00",
+    "last_updated": "2026-06-06T20:56:20.600707+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 855.84,
-    "narrative": "Ghost Ride the WHIP enters 2026-06-06 with a heavy emphasis on exploiting favorable matchups against volatile arms. The crown jewel of the lineup is **Corbin Carroll** (87.14), who benefits from a prime slot at #2 and a significant SP skill advantage against Littell. He anchors an outfield unit that prioritizes high-upside plays, alongside **James Wood** (75.08), whose elite 0.401 xwOBA and leadoff position make him a must-start despite the tough matchup against Rodriguez. **Josh Naylor** (78.46) stands out as our most efficient infield play, bolstered by a 5% park factor boost and favorable winds at his back, allowing us to leverage his power profile against Montero.\n\nPlatoon edges remain a recurring theme in today\u2019s optimization, specifically for **Vinnie Pasquantino** (56.15) and **Jose Caballero** (63.85). While **Pasquantino** faces a formidable 3.19 xERA from Ryan, his massive 14% platoon advantage keeps him firmly in the UTIL spot. Meanwhile, **Caballero**\u2014a key target given our league-wide mandate to chase speed\u2014clings to a 63.85 score due to his platoon edge against Suarez. The most difficult benching decision involved **Travis Bazzana** (50.93); while he offers intriguing leadoff potential, his score fell just short of the efficiency threshold when compared to the reliable daily output of **Brice Turang** (69.59) and the rest of our starting core.\n\nWe must remain vigilant regarding the \u201cLineup Pending\u201d status for **Dalton Rushing** (56.25), **Jose Caballero** (63.85), **Brice Turang** (69.59), and **Alex Freeland** (53.77). Should these players move lower in the order or be rested, their daily efficiency scores will crater, potentially forcing an early swap to our bench assets like **Austin Riley** (45.79) or **Kyle Karros** (41.71). Finally, we are carefully monitoring the weather; the \"Wind Out\" factor is providing a modest boost to **Josh Naylor**, **Cole Young**, **Jose Caballero**, **Brice Turang**, and **Alex Freeland**, which is vital for maintaining our scoring floor in the power categories. Proceed with the current configuration, but keep the communication lines open for late-afternoon scratch reports.",
+    "total_efficiency_score": 855.81,
+    "narrative": "The offensive ceiling for Ghost Ride the WHIP centers on the matchup against the right-handed Jack Kochanowicz, but the day\u2019s standout is clearly **Corbin Carroll**. With a commanding 87.14 score, **Carroll** benefits from a high-leverage spot in the two-hole against Littell. Despite a slight efficiency penalty for facing an elite hold pitcher, his combination of speed and order utility makes him the engine of our attack. **Josh Naylor** also projects as an elite pillar (78.46) in a favorable spot against Montero; he is a primary beneficiary of today\u2019s wind patterns, which add a critical 5% boost to his power profile. **Brice Turang** rounds out our top-tier plays (73.40); his projected ascension to the three-hole, paired with a significant park-factor lift, solidifies his status as an essential start.\n\nDeciding between our depth pieces required surgical precision, with **Travis Bazzana** emerging as the most difficult omission. His 50.93 score was suppressed primarily by a neutral matchup against Leiter, falling just behind the higher-upside profiles of **Henry Bolte** and **Seiya Suzuki**. While **Bazzana** offers elite order placement at the top of the lineup, the optimizer favored the platoon advantages and raw SP matchup data supporting our starters. Meanwhile, keep a close watch on **Dalton Rushing** and **Alex Freeland**; as both carry \"Lineup Pending\" status, their projected scores are contingent on securing those assumed spots. Finally, monitor **Vinnie Pasquantino** (56.15); despite a strong 14% platoon edge, he faces a stiff test against Ryan\u2019s 3.19 xERA, marking him as a marginal start that requires active observation as the game approaches. **Mickey Moniak** remains sidelined on the IL, leaving no further ambiguity for our bench management strategy.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -205,13 +205,8 @@
             "Slot": "SS",
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
-            "Score": 63.84533918259055,
+            "Score": 60.01461883163511,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.17",
@@ -243,23 +238,28 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
                     "label": "Wind Out",
                     "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Ranger Suarez (L)",
+            "Opponent": "Suarez (L)",
             "SP_xERA": "3.75",
             "Warning": "",
             "GameTime": "2026-06-06T23:35:00Z",
-            "Order": "6*",
+            "Order": "8",
             "Start": "11:35 PM"
         },
         {
             "Slot": "MI",
             "Player": "Brice Turang",
             "POS": "2B",
-            "Score": 69.58731163585485,
+            "Score": 73.3957347618298,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -282,6 +282,16 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
@@ -292,8 +302,8 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Agnos (R)",
+            "SP_xERA": "4.90",
             "Warning": "",
             "GameTime": "2026-06-07T01:10:00Z",
             "Order": "3*",
@@ -787,17 +797,12 @@
             "Slot": "BN",
             "Player": "Kyle Karros",
             "POS": "3B",
-            "Order": "8*",
+            "Order": "8",
             "Start": "01:10 AM",
             "Opponent": "Jacob Misiorowski (R)",
             "SP_xERA": "2.70",
             "Score": 41.70753549463808,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "47.35",
@@ -834,7 +839,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -870,17 +875,12 @@
             "Slot": "BN",
             "Player": "Travis Bazzana",
             "POS": "2B",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:35 PM",
-            "Opponent": "Jack Leiter (R)",
+            "Opponent": "Leiter (R)",
             "SP_xERA": "4.06",
             "Score": 50.92807994438186,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "42.63",
@@ -907,7 +907,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
