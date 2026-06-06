@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-06",
-    "last_updated": "2026-06-06T21:59:31.872744+00:00",
+    "last_updated": "2026-06-06T23:01:33.411863+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 578.84,
-    "narrative": "The Austin Waves lineup for today features two standout options anchored by favorable matchups and high-upside environments. **Andy Pages** (69.36) remains the premier play, benefiting from a soft matchup against Jack Kochanowicz, whose high xERA (5.12) creates a high floor for production. While the presence of an elite defensive catcher and a high hold rate for stolen bases limits his upside slightly, his overall profile is bolstered by a strong order position. Similarly, **Sam Antonacci** (67.67) is a must-start at the top of the lineup. Facing a mid-tier arm in Painter, **Sam Antonacci** capitalizes on a 0.379 xwOBA and favorable winds blowing out, maximizing his potential for runs in the leadoff spot. **Gunnar Henderson** (63.31) and **Miguel Vargas** (61.96) round out our top-tier tier; notably, **Gunnar Henderson** remains a vital engine for our roster due to his aggressive base-running against Fisher, whose slow delivery (85% SB allowance) offers an elite opportunity to secure the category in which we are most aggressively chasing efficiency.\n\nThe most difficult decision on the bench involved **Brayan Rocchio** (41.35), who sat right on the edge of the marginal start threshold. While **Brayan Rocchio** presented a decent base projection, his deployment in the #9 hole proved to be the disqualifying factor, as the opportunity cost of batting at the bottom of the order lowered his run-scoring probability relative to the alternatives. Meanwhile, **Coby Mayo** (38.13) and **Miguel Andujar** (34.55) fell below our 40-point efficiency floor due to prohibitive matchups against Fisher and Nolan McLean, respectively. We continue to manage our game caps by avoiding these low-probability starts, even as we monitor the health of the roster\u2014specifically the absence of **Jordan Westburg**, whose IL status necessitates constant optimization of our middle-infield depth.\n\nManagers should exercise caution regarding the volatility inherent in today's matchups. Despite favorable scores for **Vladimir Guerrero Jr.** (55.19) and **Jackson Merrill** (54.33), both face SP_xERA figures near or below 3.60, indicating that their production may be limited by elite pitching rather than park factors. **Dominic Smith** (42.39) is our most precarious start; his score is buoyed by a platoon advantage against Ashcraft, but he occupies a low-upside #5 spot against a pitcher who remains stingy. We will monitor weather reports for shifts in wind speed that could further complicate the outlook for **Miguel Vargas** and **Sam Antonacci**, but for now, the lineup remains optimized to prioritize stolen base potential and high-order batting positions.",
+    "total_efficiency_score": 579.0,
+    "narrative": "The Austin Waves\u2019 offensive strategy today hinges on capitalizing on favorable velocity profiles and wind conditions, with **Andy Pages** (70.07) and **Sam Antonacci** (67.67) leading the charge as our premier starts. **Andy Pages** benefits from a high-upside matchup against Kochanowicz, whose 5.12 xERA offers the most favorable ceiling in the current rotation. Meanwhile, **Sam Antonacci**\u2019s matchup against Painter is significantly boosted by environmental factors; a 0.379 xwOBA combined with a strong wind-out projection and a leadoff spot makes him a high-efficiency engine for Runs and OBP. While **Gunnar Henderson** (63.31) faces a stiffer test against Fisher, his elite ability to exploit the pitcher\u2019s slow delivery tempo provides a critical edge for our stolen base-heavy mandate, mitigating the risk of a sub-3.20 xERA opponent.\n\nOur most difficult selection decision today involved **Brayan Rocchio**, who narrowly missed the starting cut with a score of 41.36. While **Brayan Rocchio** offers utility value, the optimizer prioritized the higher ceiling of **Miguel Vargas** (61.96) in the UTIL slot, whose exposure to the same favorable wind conditions and higher lineup placement outweighed **Brayan Rocchio**\u2019s lower-order constraints. We are closely monitoring the bottom of the lineup, as **Dominic Smith** (42.40) sits just above our sub-40 floor; he is a strict \"start-only\" necessity today due to his platoon edge against Ashcraft, but he remains the first candidate for pinch-hit substitution should the game script turn sour. \n\nWe maintain a conservative outlook on our core sluggers facing high-tier pitching; **Vladimir Guerrero Jr.** (55.19), **Josh Jung** (53.90), and **Jackson Merrill** (53.80) are all being deployed in \"marginal\" territory. **Jackson Merrill**, in particular, faces a significant drag from the opposing catcher\u2019s elite 1.87s pop time, which directly conflicts with our focus on SB efficiency. As always, we are continuing to manage the recovery of **Jordan Westburg** on the IL and will re-evaluate our infield depth once he moves closer to a rehab assignment. With the current lineup, the objective remains steady: prioritize high-floor speed production from **Nasim Nunez** and **Sam Antonacci** while waiting for the middle-order anchors to capitalize on any mistakes from the opposing arms.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -229,7 +229,7 @@
             "Slot": "OF1",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 69.36481819009653,
+            "Score": 70.06547291928942,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -252,11 +252,6 @@
                     "type": "info"
                 },
                 {
-                    "label": "Elite Catcher (1.89s)",
-                    "value": "-1.0%",
-                    "type": "negative"
-                },
-                {
                     "label": "Elite Hold SP (57% SB)",
                     "value": "-2%",
                     "type": "negative"
@@ -267,7 +262,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jack Kochanowicz (R)",
+            "Opponent": "Kochanowicz (R)",
             "SP_xERA": "5.12",
             "Warning": "",
             "GameTime": "2026-06-07T02:10:00Z",
@@ -278,7 +273,7 @@
             "Slot": "OF2",
             "Player": "Jackson Merrill",
             "POS": "OF",
-            "Score": 54.33838657795383,
+            "Score": 53.79500271217429,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -306,12 +301,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Nolan McLean (R)",
+            "Opponent": "McLean (R)",
             "SP_xERA": "3.25",
             "Warning": "",
             "GameTime": "2026-06-07T02:10:00Z",
@@ -544,11 +544,46 @@
             "Player": "Luis Garc\u00eda Jr.",
             "POS": "1B/2B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Rodriguez, Ed (L)",
+            "SP_xERA": "4.57",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "54.57",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -556,7 +591,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-06T20:10:00Z"
         },
         {
             "Slot": "BN",
@@ -684,7 +719,7 @@
             "POS": "3B/OF",
             "Order": "7",
             "Start": "02:10 AM",
-            "Opponent": "Nolan McLean (R)",
+            "Opponent": "McLean (R)",
             "SP_xERA": "3.25",
             "Score": 34.55330796154195,
             "Breakdown": [
