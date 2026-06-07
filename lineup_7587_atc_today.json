@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-07",
-    "last_updated": "2026-06-07T19:08:52.681758+00:00",
+    "last_updated": "2026-06-07T21:03:06.375222+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 738.13,
-    "narrative": "For today\u2019s slate, **Brice Turang** (75.04) and **Corbin Carroll** (71.43) emerge as our cornerstones, providing the highest floor/ceiling combinations. **Brice Turang** benefits from a potent mix of park factors and a \"Slow SP Delivery\" metric against Freeland, creating an ideal environment for his speed-oriented game. Meanwhile, **Corbin Carroll** remains an auto-start; despite a respectable 3.80 xERA from the opposition, his position in the #2 hole and dynamic platoon advantage make him essential for our offensive production. **Josh Naylor** (67.19) and **Jose Caballero** (63.66) also grade out as strong plays. **Jose Caballero** is particularly intriguing, as the combination of a favorable park and \"Wind Out\" conditions essentially weaponizes his platoon advantage against the opposing lefty, elevating his efficiency well above his raw base projection.\n\nOur most difficult bench decision involved **Austin Riley**, who posted a 42.79 efficiency score but ultimately couldn't crack the lineup. While his power upside is clear, the matchup against a 3.20 xERA arm, coupled with a slight penalty for an elite defensive catcher behind the plate, caused him to fall just behind our utility-heavy options. We are also monitoring the status of **Seiya Suzuki** closely; despite his strong offensive potential, his \"Lineup Pending\" status and unfavorable wind conditions led the optimizer to prioritize the confirmed, data-backed utility of **Vinnie Pasquantino** and **Tyler Soderstrom**.\n\nWe are proceeding with caution regarding **Travis Bazzana** (42.86) and **Cole Young** (50.05), both of whom face high-skill arms today. **Travis Bazzana** faces the stiffest test of the day against deGrom, where his score is heavily buoyed by his lead-off spot but remains constrained by the pitcher's elite skill. Similarly, **Cole Young** faces Flaherty; while he maintains a marginal score, his reliance on contact makes this a high-variance spot. We continue to track the IL status of **Mickey Moniak**, ensuring our roster depth remains optimized while keeping a close eye on the daily movement of **Dalton Rushing** and **James Wood**, who carry heavy expectations in their respective spots.",
+    "narrative": "For today\u2019s slate, **Brice Turang** (75.04) and **Corbin Carroll** (71.43) emerge as the clear anchors of our offensive production. **Brice Turang** is a priority start, buoyed by a significant park factor (+14%) and the opportunistic combination of a slow opposing delivery, which maximizes his elite sprint speed for stolen base potential. Similarly, **Corbin Carroll** benefits from a strong lineup position and a favorable platoon advantage against Cavalli. While **Jose Caballero** (63.66) finds himself in the bottom third of the order, his utility cannot be overlooked; a 13% boost from his dynamic platoon splits against Suarez, combined with favorable wind conditions, makes him a high-efficiency asset for our pursuit of SB and R.\n\nThe most difficult decision on the bench involved **Austin Riley**, who logged a respectable 42.79 efficiency score but fell just short of our threshold. Despite his pedigree, **Austin Riley** was sidelined in favor of **Kyle Karros**, who secured the 3B spot thanks to a massive park-factor boost that offset a challenging matchup against an elite arm. We remain cautious regarding **Travis Bazzana** (42.86), whose score is heavily suppressed by a brutal matchup against deGrom; he remains in the lineup only for his lead-off role and the necessity of maintaining our daily game caps. Finally, we continue to monitor **Mickey Moniak**, who remains unavailable on the IL, while the rest of our depth\u2014including **Vinnie Pasquantino** and **Dalton Rushing**\u2014is slated to contribute as marginal but necessary cogs in our 5x5 rotation.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -631,17 +631,12 @@
             "Slot": "BN",
             "Player": "Seiya Suzuki",
             "POS": "OF",
-            "Order": "6*",
+            "Order": "6",
             "Start": "12:30 AM",
-            "Opponent": "Trevor McDonald (R)",
+            "Opponent": "McDonald (R)",
             "SP_xERA": "3.14",
-            "Score": 42.342675177015145,
+            "Score": 42.77037896668197,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.58",
@@ -668,17 +663,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Elite Catcher (1.86s)",
-                    "value": "-1.0%",
-                    "type": "negative"
-                },
-                {
                     "label": "Wind In",
                     "value": "-5%",
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -856,11 +846,46 @@
             "Player": "Henry Bolte",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "06:10 PM",
+            "Opponent": "Burrows (R)",
+            "SP_xERA": "4.27",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "0.00",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -868,7 +893,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-07T18:10:00Z"
         }
     ]
 }
