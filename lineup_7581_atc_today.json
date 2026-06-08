@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-08",
-    "last_updated": "2026-06-08T21:11:17.212289+00:00",
+    "last_updated": "2026-06-08T23:09:51.111559+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 479.6,
-    "narrative": "The Austin Waves enter today\u2019s slate with **Gunnar Henderson** as our definitive anchor, boasting an elite 81.88 score. Facing Hancock, **Gunnar Henderson** benefits from a massive 16% park factor boost and an favorable dynamic platoon advantage. While the opposing battery has a moderate xERA, the combination of his #2 lineup spot and his ability to contribute across all five categories\u2014particularly the scarcity of speed\u2014makes him the mandatory cornerstone of today\u2019s offensive strategy. Similarly, **Miguel Andujar** and **Jackson Merrill** project as high-ceiling plays against Andrew Abbott; despite the uncertainty of the \"Lineup Pending\" tag, the weak SP_xERA of 4.76 for the opposition provides a favorable environment for them to exceed their base projections.\n\nThe optimization process was most contentious regarding our middle infield depth. **Luis Garc\u00eda Jr.** cleared the 60-point \"Strong\" threshold by a hair, aided by a projected wind-out scenario at his home park, securing his spot over **Nasim Nunez**. While **Nasim Nunez** offered value, his projected #8 spot in the order coupled with the elite pop-time of the opposing catcher penalized his utility score, ultimately pushing him to the bench. We are also wary of **Vladimir Guerrero Jr.**, who draws a difficult assignment against S\u00e1nchez. His score of 56.35 is dragged down by the opponent's 2.74 xERA, making him a marginal play; however, his #3 lineup position keeps him in the starting nine as we chase volume in our counting categories.\n\nRisk management remains a priority for the Waves as we navigate several pending lineups and the IL status of **Luis Robert Jr.** and the rest day for **Kyle Tucker**. While **Coby Mayo** sits on the lower end of our active spectrum at 48.28, he remains in the lineup due to the lack of viable alternatives currently available on the bench. We will monitor the confirmed lineups for **Curtis Mead**, **Luis Garc\u00eda Jr.**, **Miguel Andujar**, **Jackson Merrill**, and **Nolan Schanuel** closely; if these players shift significantly lower in their respective batting orders, we may see their efficiency scores dip, potentially triggering a reassessment of our strategy to preserve game caps for higher-leverage matchups later in the week.",
+    "total_efficiency_score": 395.69,
+    "narrative": "The Austin Waves enter today\u2019s slate with **Gunnar Henderson** as the undisputed centerpiece of the lineup. With a score of 81.88, he is the only player in the \"Strong\" category, buoyed by a significant +16% park factor and an 8% boost from his prime spot in the #2 hole. Despite facing a respectable arm in Hancock, **Gunnar Henderson**\u2019s aggressive approach against right-handed pitching provides the highest ceiling for stolen base production, a critical need for our 5x5 standing. Joining him as a priority start is **Jackson Merrill** (60.98), who capitalizes on the elevated xERA of Abbott to overcome a difficult platoon disadvantage, and **Luis Garc\u00eda Jr.** (59.62), whose output is bolstered by wind-aided power potential and a positive platoon split against Webb.\n\nWhile the depth of our roster remains a strength, **Brayan Rocchio** serves as the most illustrative bench decision. He sat on the threshold of our activation criteria with a 38.06 score, falling just short of the 40.0 \"Floor\" requirement. While he offers some utility, the combination of a bottom-of-the-order assignment (#9) and a stagnant recent performance profile made him the logical cut to protect our remaining games-played allowance. Meanwhile, the team remains shorthanded with **Kyle Tucker**, **Luis Robert Jr.**, and **Jordan Westburg** unavailable, forcing us to rely on high-efficiency matchups for role players like **Nasim Nunez** and **Coby Mayo** to bridge the gap.\n\nRisks today are concentrated in the matchup against Webb, who presents a high-floor challenge for **Curtis Mead**, **Nasim Nunez**, and **Luis Garc\u00eda Jr.** While the wind-out conditions at the stadium provide a marginal +5% boost to their scores, the elite efficiency of the opposing pitcher makes this a high-variance environment. Furthermore, we are proceeding with caution regarding **Vladimir Guerrero Jr.** (56.35); his matchup against the low xERA of S\u00e1nchez has suppressed his score significantly. We are counting on his raw talent to outperform the projected headwinds of an elite opposing arm, but he remains a high-risk candidate if the pitch-tracking data suggests early-inning struggles.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -56,11 +56,6 @@
             "Score": 47.28985915325194,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "46.04",
                     "type": "info"
@@ -96,11 +91,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Logan Webb (R)",
+            "Opponent": "Webb, L (R)",
             "SP_xERA": "3.46",
             "Warning": "",
             "GameTime": "2026-06-09T01:45:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "01:45 AM"
         },
         {
@@ -154,18 +149,13 @@
         },
         {
             "Slot": "MI",
-            "Player": "Luis Garc\u00eda Jr.",
-            "POS": "1B/2B",
-            "Score": 59.62414084195158,
+            "Player": "Nasim Nunez",
+            "POS": "2B/SS",
+            "Score": 41.28567365267697,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "54.57",
+                    "value": "51.09",
                     "type": "info"
                 },
                 {
@@ -184,14 +174,19 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
+                    "label": "Switch",
+                    "value": "+3%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
+                    "label": "Elite Catcher (1.88s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
                 },
                 {
                     "label": "Wind Out",
@@ -199,11 +194,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Logan Webb (R)",
+            "Opponent": "Webb, L (R)",
             "SP_xERA": "3.46",
             "Warning": "",
             "GameTime": "2026-06-09T01:45:00Z",
-            "Order": "2*",
+            "Order": "9",
             "Start": "01:45 AM"
         },
         {
@@ -257,59 +252,10 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Miguel Andujar",
-            "POS": "3B/OF",
-            "Score": 65.08876101336253,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.36",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+12%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Andrew Abbott (L)",
-            "SP_xERA": "4.76",
-            "Warning": "",
-            "GameTime": "2026-06-09T01:40:00Z",
-            "Order": "6*",
-            "Start": "01:40 AM"
-        },
-        {
-            "Slot": "OF4",
             "Player": "Jackson Merrill",
             "POS": "OF",
             "Score": 60.984229807343574,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.75",
@@ -341,27 +287,22 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Andrew Abbott (L)",
+            "Opponent": "Abbott, A (L)",
             "SP_xERA": "4.76",
             "Warning": "",
             "GameTime": "2026-06-09T01:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "01:40 AM"
         },
         {
             "Slot": "UTIL",
-            "Player": "Nolan Schanuel",
-            "POS": "1B",
-            "Score": 60.111962870100605,
+            "Player": "Luis Garc\u00eda Jr.",
+            "POS": "1B/2B",
+            "Score": 59.62414084195158,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "48.17",
+                    "value": "54.57",
                     "type": "info"
                 },
                 {
@@ -371,31 +312,36 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
                     "type": "positive"
                 },
                 {
-                    "label": "Neutral Platoon (R)",
-                    "value": null,
-                    "type": "info"
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Spencer Arrighetti (R)",
-            "SP_xERA": "4.88",
+            "Opponent": "Webb, L (R)",
+            "SP_xERA": "3.46",
             "Warning": "",
-            "GameTime": "2026-06-09T01:38:00Z",
-            "Order": "5*",
-            "Start": "01:38 AM"
+            "GameTime": "2026-06-09T01:45:00Z",
+            "Order": "2",
+            "Start": "01:45 AM"
         }
     ],
     "players_sat": [
@@ -607,70 +553,6 @@
         },
         {
             "Slot": "BN",
-            "Player": "Nasim Nunez",
-            "POS": "2B/SS",
-            "Order": "8*",
-            "Start": "01:45 AM",
-            "Opponent": "Logan Webb (R)",
-            "SP_xERA": "3.46",
-            "Score": 42.64673981705093,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "51.09",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-13%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Elite Catcher (1.86s)",
-                    "value": "-2.0%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-06-09T01:45:00Z"
-        },
-        {
-            "Slot": "BN",
             "Player": "Sam Antonacci",
             "POS": "2B/3B/OF",
             "Order": "-",
@@ -709,6 +591,25 @@
         },
         {
             "Slot": "BN",
+            "Player": "Miguel Andujar",
+            "POS": "3B/OF",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
             "Player": "Josh Jung",
             "POS": "3B",
             "Order": "-",
@@ -719,6 +620,25 @@
             "Breakdown": [
                 {
                     "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Nolan Schanuel",
+            "POS": "1B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
