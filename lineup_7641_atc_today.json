@@ -1,15 +1,15 @@
 {
     "target_date": "2026-06-09",
-    "last_updated": "2026-06-09T23:13:47.233716+00:00",
+    "last_updated": "2026-06-10T02:48:25.824188+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 411.19,
-    "narrative": "**Jos\u00e9 Ram\u00edrez** stands as our clear anchor today, boasting an elite 86.57 score despite facing a formidable arm in Cole. His projection is bolstered by significant BvP historical success\u2014an 8% bump over 33 plate appearances\u2014and a favorable wind blowing out that amplifies his power ceiling. While the rest of the lineup faces stiffer competition, **Gleyber Torres** remains a functional play at 48.26; although he faces a headwind in Tampa, his promotion to the leadoff spot provides a +10% efficiency boost that keeps him in the starting nine. **Taylor Ward** serves as a high-upside secondary option; while he faces a tough assignment against Gilbert, his home park provides a massive +16% environment adjustment, effectively insulating his floor against the opposing pitcher\u2019s skill.\n\nNavigating the scarcity of stolen bases remains our priority, which kept **Masyn Winn** in the mix despite a moderate 47.42 score. His value is tethered to his +2% efficiency boost derived from the opponent's slow delivery speed, a critical detail in our hunt for marginal steals. The toughest exclusion of the day was **Matt Chapman**, who fell just short of the 40.0 baseline at 40.23. While **Matt Chapman** profiles as a viable utility piece, the combination of a disadvantageous platoon against Alvarez and a suboptimal #7 spot in the order led the optimizer to prioritize the slightly more favorable situational matchups of **Geraldo Perdomo** and **Gavin Sheets**. We will continue to monitor **Jung Hoo Lee** and **Luis Arraez** closely, as the latter\u2019s 42.38 score remains highly sensitive to the weather conditions at the park, despite his current place in the starting lineup.",
+    "total_efficiency_score": 401.55,
+    "narrative": "The undisputed anchor of today\u2019s lineup is **Jos\u00e9 Ram\u00edrez**, who commands an elite score of 76.40. Despite facing a formidable arm in Gerrit Cole, **Jos\u00e9 Ram\u00edrez** benefits from a strong lineup placement in the #2 hole and a favorable matchup adjustment that recognizes his ability to thrive against high-tier pitching. While the rest of the board is somewhat compressed due to several challenging starting pitcher assignments, **Gleyber Torres** and **Bryson Stott** offer the most reliable floor among our middle infield options, with **Gleyber Torres** gaining significant value from his leadoff spot and a park factor that helps offset a neutral matchup against Taj Bradley. \n\nThe most difficult decision at the fringes involved **Matt Chapman**, who fell just shy of the 40.0 threshold at 38.31. His downgrade was driven by a combination of the platoon disadvantage against a left-handed starter and a defensive penalty related to an elite opposing catcher pop time, which effectively neuters his base-running and small-ball utility in this specific game state. Meanwhile, **Masyn Winn** narrowly earned a start over our bench depth, buoyed by the specific tactical advantage of facing a slower pitcher delivery that heightens his stolen base probability\u2014a crucial needle-mover for us in this league\u2019s scarcity-driven format. **Taylor Ward** remains in the lineup despite a tough draw against Logan Gilbert, as his massive +16% park factor adjustment provides the ceiling we need to chase potential HR production today. Managers should note that the remainder of our bench, including **Jung Hoo Lee**, failed to meet our efficiency floor, and we are holding firm to preserve our limited game caps for more favorable platoon splits later in the week.",
     "recommended_lineup": [
         {
             "Slot": "1B",
             "Player": "Luis Arraez",
             "POS": "1B/2B",
-            "Score": 42.38225437379092,
+            "Score": 40.364051784562776,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -40,11 +40,6 @@
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Alvarez (L)",
@@ -56,6 +51,50 @@
         },
         {
             "Slot": "2B",
+            "Player": "Gleyber Torres",
+            "POS": "2B",
+            "Score": 50.79563016238745,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "50.02",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Bradley, T (R)",
+            "SP_xERA": "4.05",
+            "Warning": "",
+            "GameTime": "2026-06-09T22:40:00Z",
+            "Order": "1",
+            "Start": "10:40 PM"
+        },
+        {
+            "Slot": "SS",
             "Player": "Bryson Stott",
             "POS": "2B/SS",
             "Score": 50.32644098158815,
@@ -94,7 +133,7 @@
             "Start": "11:07 PM"
         },
         {
-            "Slot": "SS",
+            "Slot": "MI",
             "Player": "Masyn Winn",
             "POS": "SS",
             "Score": 47.41579450166783,
@@ -138,59 +177,10 @@
             "Start": "11:10 PM"
         },
         {
-            "Slot": "MI",
-            "Player": "Gleyber Torres",
-            "POS": "2B",
-            "Score": 48.25584865426807,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "50.02",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-13%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Bradley, T (R)",
-            "SP_xERA": "4.05",
-            "Warning": "",
-            "GameTime": "2026-06-09T22:40:00Z",
-            "Order": "1",
-            "Start": "10:40 PM"
-        },
-        {
             "Slot": "3B",
             "Player": "Jos\u00e9 Ram\u00edrez",
             "POS": "3B",
-            "Score": 86.56907732701586,
+            "Score": 76.4037586245368,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -213,18 +203,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "BvP Elite (33 PA)",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
                     "label": "Order #2",
                     "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -234,6 +214,50 @@
             "GameTime": "2026-06-09T22:40:00Z",
             "Order": "2",
             "Start": "10:40 PM"
+        },
+        {
+            "Slot": "OF1",
+            "Player": "Gavin Sheets",
+            "POS": "1B/OF",
+            "Score": 41.100050047026045,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "46.94",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Burns, Ch (R)",
+            "SP_xERA": "3.01",
+            "Warning": "",
+            "GameTime": "2026-06-10T01:40:00Z",
+            "Order": "4",
+            "Start": "01:40 AM"
         },
         {
             "Slot": "OF2",
@@ -278,50 +302,6 @@
             "GameTime": "2026-06-09T22:35:00Z",
             "Order": "1",
             "Start": "10:35 PM"
-        },
-        {
-            "Slot": "OF3",
-            "Player": "Gavin Sheets",
-            "POS": "1B/OF",
-            "Score": 41.100050047026045,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "46.94",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Burns, Ch (R)",
-            "SP_xERA": "3.01",
-            "Warning": "",
-            "GameTime": "2026-06-10T01:40:00Z",
-            "Order": "4",
-            "Start": "01:40 AM"
         },
         {
             "Slot": "UTIL",
@@ -431,11 +411,56 @@
             "Player": "Daulton Varsho",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:07 PM",
+            "Opponent": "Wheeler (R)",
+            "SP_xERA": "3.16",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "53.57",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (50% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -443,7 +468,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-09T23:07:00Z"
         },
         {
             "Slot": "BN",
@@ -520,7 +545,7 @@
             "Start": "01:45 AM",
             "Opponent": "Alvarez (L)",
             "SP_xERA": "3.44",
-            "Score": 40.226586051499126,
+            "Score": 38.31103433476107,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -558,12 +583,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Benched - Lower projected efficiency than other options.",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -627,7 +647,7 @@
             "Start": "01:45 AM",
             "Opponent": "Alvarez (L)",
             "SP_xERA": "3.44",
-            "Score": 38.61288479232532,
+            "Score": 36.77417599269078,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -665,11 +685,6 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
                     "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
@@ -683,11 +698,46 @@
             "Player": "Jeremiah Jackson",
             "POS": "2B/SS/3B/OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "10:35 PM",
+            "Opponent": "Gilbert, L (R)",
+            "SP_xERA": "3.20",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "48.39",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -695,7 +745,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-09T22:35:00Z"
         },
         {
             "Slot": "BN",
