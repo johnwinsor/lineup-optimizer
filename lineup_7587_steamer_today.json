@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-10",
-    "last_updated": "2026-06-10T17:52:41.769824+00:00",
+    "last_updated": "2026-06-10T20:13:29.643517+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 776.78,
-    "narrative": "Our strongest offensive anchor today is **Josh Naylor**, who leads the board with an elite 78.46 score against Brandon Young. The combination of a favorable hitter\u2019s park and a weak 4.69 xERA matchup provides a massive lift to his base projection. Joining him in the elite tier are **James Wood** (70.46) and **Tyler Soderstrom** (68.73). **James Wood** is particularly compelling as he occupies the leadoff spot against Ray; his elite 0.403 xwOBA makes him a primary engine for our Runs category. Meanwhile, **Corbin Carroll** remains a critical start at 67.03, specifically because the matchup against Ryan Gusto provides a structural edge for stolen bases\u2014Gusto\u2019s slow delivery cadence gives **Corbin Carroll** an excellent opportunity to capitalize on our league\u2019s premium on speed.\n\nThe most difficult decision on the bench was excluding **Vinnie Pasquantino** (52.60). He was the closest to cracking the starting nine, but a significant 15% penalty for facing a lefty in MacKenzie Gore ultimately pushed his efficiency score just below the threshold of our current starters like **Gabriel Moreno** and **Brice Turang**. While **Vinnie Pasquantino** offers stability, our optimizer favored the platoon advantages currently held by **Seiya Suzuki**, who utilizes a strong 14% park factor and a solid matchup against Michael Lorenzen to vault his score to 67.36. \n\nWe are monitoring several \"Lineup Pending\" designations, as the assumed batting order significantly dictates the score\u2014specifically for **Dalton Rushing** and **Cole Young**, both of whom carry risk if they are dropped further down the order. Furthermore, while **Max Muncy** and **Kyle Karros** are in the lineup, they face stiff challenges from Brandon Sproat and Shota Imanaga, respectively. With SB being our scarcest category, we are comfortable with the volatility of **Jose Caballero** (55.09) in the outfield, as his dynamic platoon edge against Messick provides the necessary ceiling to justify his start despite the SP\u2019s 3.46 xERA.",
+    "total_efficiency_score": 785.97,
+    "narrative": "The standout start for Ghost Ride the WHIP today is **Josh Naylor**, who carries an elite 78.46 score into a prime matchup against Young. With favorable park factors and a projected spot in the cleanup role, **Naylor** benefits from a massive 33% combined boost from park and pitcher skill metrics. Similarly, **James Wood** provides high-upside production (70.46) as the leadoff man, leveraging an elite 0.403 xwOBA to maximize his efficiency against Ray. **Corbin Carroll** remains a critical anchor for our stolen base objectives; despite the standard park penalty, his matchup against Gusto combined with a generous 88% success rate against the starter\u2019s delivery tempo makes him a must-start at 67.03. **Tyler Soderstrom** and **Seiya Suzuki** also provide reliable \"Strong\" tier output, both benefiting from optimized batting order placement and favorable SP profiles.\n\nThe most difficult bench decision involved **Brice Turang**, who fell just short of the cut at 52.62. While **Turang** typically provides the speed profile we crave, the optimizer penalized him for a subpar matchup against a high-skill arm in Perkins and the uncertainty of a pending lineup. He narrowly missed the slot held by **Zach McKinstry**, who, despite a lower base projection, earned his spot due to the extreme 5.59 xERA of his opposing pitcher, Paredes. We are keeping a close watch on **Max Muncy**, **Cole Young**, **Seiya Suzuki**, and **Tyler Soderstrom**, as their spots remain contingent on official lineup confirmation. Any shift in their expected batting orders could trigger a volatility event that impacts their efficiency, particularly for **Cole Young**, whose value is sensitive to the bottom-of-the-order penalty. Ensure all defensive replacements are prepared if weather or late-scratches shift these projected lineups.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -42,7 +42,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Ryan Gusto (R)",
+            "Opponent": "Gusto (R)",
             "SP_xERA": "3.59",
             "Warning": "",
             "GameTime": "2026-06-10T22:40:00Z",
@@ -55,11 +55,6 @@
             "POS": "C",
             "Score": 48.50734548616329,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.03",
@@ -95,7 +90,7 @@
             "SP_xERA": "4.10",
             "Warning": "",
             "GameTime": "2026-06-10T22:40:00Z",
-            "Order": "8*",
+            "Order": "8",
             "Start": "10:40 PM"
         },
         {
@@ -140,7 +135,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Brandon Young (R)",
+            "Opponent": "Young (R)",
             "SP_xERA": "4.69",
             "Warning": "",
             "GameTime": "2026-06-10T22:35:00Z",
@@ -149,18 +144,13 @@
         },
         {
             "Slot": "2B",
-            "Player": "Brice Turang",
-            "POS": "2B",
-            "Score": 52.616956846921816,
+            "Player": "Jose Caballero",
+            "POS": "2B/SS/3B/OF",
+            "Score": 55.08519639616001,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "54.37",
+                    "value": "56.17",
                     "type": "info"
                 },
                 {
@@ -170,26 +160,21 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-12%",
+                    "value": "-13%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+13%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jack Perkins (R)",
-            "SP_xERA": "3.52",
+            "Opponent": "Messick (L)",
+            "SP_xERA": "3.46",
             "Warning": "",
-            "GameTime": "2026-06-11T01:05:00Z",
-            "Order": "3*",
-            "Start": "01:05 AM"
+            "GameTime": "2026-06-10T17:10:00Z",
+            "Order": "6",
+            "Start": "05:10 PM"
         },
         {
             "Slot": "SS",
@@ -282,7 +267,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Brandon Young (R)",
+            "Opponent": "Young (R)",
             "SP_xERA": "4.69",
             "Warning": "",
             "GameTime": "2026-06-10T22:35:00Z",
@@ -293,13 +278,8 @@
             "Slot": "3B",
             "Player": "Kyle Karros",
             "POS": "3B",
-            "Score": 52.95901433878925,
+            "Score": 60.846527112651486,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "47.35",
@@ -331,16 +311,16 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Shota Imanaga (L)",
             "SP_xERA": "3.95",
             "Warning": "",
             "GameTime": "2026-06-11T00:40:00Z",
-            "Order": "8*",
+            "Order": "2",
             "Start": "12:40 AM"
         },
         {
@@ -394,13 +374,18 @@
         },
         {
             "Slot": "OF2",
-            "Player": "Jose Caballero",
-            "POS": "2B/SS/3B/OF",
-            "Score": 55.08519639616001,
+            "Player": "Seiya Suzuki",
+            "POS": "OF",
+            "Score": 67.36316713757206,
             "Breakdown": [
                 {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Base",
-                    "value": "56.17",
+                    "value": "54.74",
                     "type": "info"
                 },
                 {
@@ -409,22 +394,27 @@
                     "type": "info"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "-13%",
-                    "type": "negative"
+                    "label": "Park",
+                    "value": "+14%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+13%",
+                    "label": "SP Skill",
+                    "value": "+9%",
                     "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-2%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Messick (L)",
-            "SP_xERA": "3.46",
+            "Opponent": "Lorenzen (R)",
+            "SP_xERA": "4.40",
             "Warning": "",
-            "GameTime": "2026-06-10T17:10:00Z",
-            "Order": "6",
-            "Start": "05:10 PM"
+            "GameTime": "2026-06-11T00:40:00Z",
+            "Order": "6*",
+            "Start": "12:40 AM"
         },
         {
             "Slot": "OF3",
@@ -472,18 +462,13 @@
         },
         {
             "Slot": "OF4",
-            "Player": "Seiya Suzuki",
-            "POS": "OF",
-            "Score": 67.36316713757206,
+            "Player": "Zach McKinstry",
+            "POS": "2B/SS/3B/OF",
+            "Score": 52.922261017449685,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "54.74",
+                    "value": "47.92",
                     "type": "info"
                 },
                 {
@@ -493,26 +478,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+14%",
+                    "value": "+5%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+9%",
+                    "value": "+19%",
                     "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "-2%",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Michael Lorenzen (R)",
-            "SP_xERA": "4.40",
+            "Opponent": "Paredes (R)",
+            "SP_xERA": "5.59",
             "Warning": "",
-            "GameTime": "2026-06-11T00:40:00Z",
-            "Order": "6*",
-            "Start": "12:40 AM"
+            "GameTime": "2026-06-10T22:40:00Z",
+            "Order": "8",
+            "Start": "10:40 PM"
         },
         {
             "Slot": "OF5",
@@ -556,7 +546,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Ryan Gusto (R)",
+            "Opponent": "Gusto (R)",
             "SP_xERA": "3.59",
             "Warning": "",
             "GameTime": "2026-06-10T22:40:00Z",
@@ -567,13 +557,8 @@
             "Slot": "UTIL",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Score": 53.07126482745071,
+            "Score": 54.07496076521707,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.27",
@@ -590,16 +575,21 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #7",
+                    "label": "SP Skill",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+1%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Martin (R)",
+            "SP_xERA": "3.88",
             "Warning": "",
             "GameTime": "2026-06-10T23:40:00Z",
-            "Order": "7*",
+            "Order": "6",
             "Start": "11:40 PM"
         }
     ],
@@ -608,17 +598,12 @@
             "Slot": "BN",
             "Player": "Vinnie Pasquantino",
             "POS": "1B",
-            "Order": "4*",
+            "Order": "5",
             "Start": "11:40 PM",
             "Opponent": "MacKenzie Gore (L)",
             "SP_xERA": "3.98",
-            "Score": 52.60361979541501,
+            "Score": 51.592011722426264,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.45",
@@ -640,8 +625,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
@@ -650,7 +635,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -732,6 +717,55 @@
         },
         {
             "Slot": "BN",
+            "Player": "Brice Turang",
+            "POS": "2B",
+            "Order": "3*",
+            "Start": "01:05 AM",
+            "Opponent": "Jack Perkins (R)",
+            "SP_xERA": "3.52",
+            "Score": 52.616956846921816,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "54.37",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-12%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-06-11T01:05:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Henry Bolte",
             "POS": "OF",
             "Order": "7*",
@@ -781,63 +815,14 @@
         },
         {
             "Slot": "BN",
-            "Player": "Zach McKinstry",
-            "POS": "2B/SS/3B/OF",
-            "Order": "9*",
-            "Start": "10:40 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 45.78485494826234,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "47.92",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-06-10T22:40:00Z"
-        },
-        {
-            "Slot": "BN",
             "Player": "Alex Freeland",
             "POS": "2B/SS/3B",
-            "Order": "9*",
+            "Order": "9",
             "Start": "10:40 PM",
             "Opponent": "Jared Jones (R)",
             "SP_xERA": "4.10",
             "Score": 44.991563771113924,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "47.81",
@@ -869,7 +854,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
