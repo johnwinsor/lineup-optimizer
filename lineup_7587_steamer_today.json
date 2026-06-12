@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-12",
-    "last_updated": "2026-06-12T21:26:06.857568+00:00",
+    "last_updated": "2026-06-12T23:09:34.009910+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 733.03,
-    "narrative": "The heart of our lineup today rests on **Josh Naylor** (78.46) and **Vinnie Pasquantino** (76.21), both of whom benefit immensely from exploitable matchups against soft-tossing righties. **Josh Naylor** enjoys a significant boost due to Littell\u2019s 4.78 xERA, creating an environment where his power profile should play up, while **Vinnie Pasquantino** remains a set-and-forget anchor against Tatsuya Imai, fueled by a massive +14% platoon edge that keeps his efficiency score comfortably in the elite tier. Meanwhile, **Corbin Carroll** (72.85) remains a must-start despite the tough matchup against Lodolo; his dynamic speed profile is the engine of our roster, and even against a decent lefty, his floor remains high due to his consistent presence in the #2 hole and potential for stolen bases.\n\nWe have opted to keep **Brice Turang** (48.67) on the bench today, making him our most difficult cut. While **Brice Turang** carries the requisite speed we covet, the combination of a sub-optimal matchup against Banks and the presence of superior efficiency scores from **Kyle Karros** (61.25) and **Tyler Soderstrom** (61.53) left him as the odd man out. The decision was primarily driven by our optimization model favoring the lineup order advantages for **Kyle Karros** and **Tyler Soderstrom**, who are projected to see higher-leverage plate appearances than the bottom-of-the-order potential for others. \n\nRisk management remains a priority given that we are monitoring lineup confirmations for **Max Muncy**, **Kyle Karros**, **Tyler Soderstrom**, and **Seiya Suzuki**. **Seiya Suzuki** (51.79) is particularly vulnerable today; his score is dragged down by a poor park factor and a concern regarding the opposing catcher\u2019s elite pop time, which limits his stolen base equity. If any of these \"Lineup Pending\" designations shift toward the bottom of the batting order, their efficiency scores will be reassessed, but for now, we are comfortable rolling with this roster as our most efficient path to category dominance.",
+    "total_efficiency_score": 725.86,
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with a high-ceiling core, led by the optimal synergy between **Josh Naylor** (78.46) and **Vinnie Pasquantino** (76.21). Both benefit significantly from favorable matchups against Littell and Imai, respectively; **Vinnie Pasquantino** in particular sees a massive 14% boost from a favorable platoon split, while **Josh Naylor** capitalizes on an elite 19% SP skill advantage. We are also leaning heavily on the elite sprint speed and top-of-the-order positioning of **Corbin Carroll** (72.85), who, despite the platoon disadvantage against Lodolo, remains a mandatory start due to his ability to single-handedly sustain our SB category dominance. **James Wood** remains a high-floor anchor at 59.85, bolstered by an elite 0.403 xwOBA that justifies his start despite a slightly lower SP skill rating.\n\nThe most difficult roster decision today was benching **Brice Turang** (48.67), who narrowly missed the cut behind the more efficient situational play of **Jose Caballero**. While **Brice Turang** offers high-end speed, the combination of a tough matchup against Banks and a defensive disadvantage behind the plate pushed his efficiency below our current starters. We are also keeping a close eye on **Seiya Suzuki**, whose score of 52.32 is tentative pending his official placement in the lineup; should he drop down the order, we are prepared to pivot to one of our reserves. We remain cautious with **Max Muncy** (51.37) and **Travis Bazzana** (49.16), both of whom are operating near our floor threshold, though their platoon advantages against Sullivan and Flaherty provide just enough leverage to keep them in the starting nine for today\u2019s volume.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -146,13 +146,8 @@
             "Slot": "SS",
             "Player": "Max Muncy",
             "POS": "2B/SS/3B",
-            "Score": 52.09822206084048,
+            "Score": 51.37293308705231,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.08",
@@ -164,16 +159,21 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Platoon",
+                    "value": "+7%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Sullivan, S (L)",
+            "SP_xERA": "4.00",
             "Warning": "",
             "GameTime": "2026-06-13T02:05:00Z",
-            "Order": "5*",
+            "Order": "8",
             "Start": "02:05 AM"
         },
         {
@@ -219,13 +219,8 @@
             "Slot": "3B",
             "Player": "Kyle Karros",
             "POS": "3B",
-            "Score": 61.250794244398456,
+            "Score": 60.638286301954466,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "47.35",
@@ -247,29 +242,29 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Gage Jump (L)",
+            "Opponent": "Jump (L)",
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-06-13T02:05:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "02:05 AM"
         },
         {
             "Slot": "OF1",
             "Player": "Tyler Soderstrom",
             "POS": "1B/OF",
-            "Score": 61.526287463929634,
+            "Score": 55.173099841471284,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.97",
@@ -281,16 +276,21 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Sullivan, S (L)",
+            "SP_xERA": "4.00",
             "Warning": "",
             "GameTime": "2026-06-13T02:05:00Z",
-            "Order": "2*",
+            "Order": "4",
             "Start": "02:05 AM"
         },
         {
@@ -429,7 +429,7 @@
             "Slot": "OF5",
             "Player": "Seiya Suzuki",
             "POS": "OF",
-            "Score": 51.79498436150588,
+            "Score": 52.318166021723115,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -457,17 +457,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Elite Catcher (1.86s)",
-                    "value": "-1.0%",
-                    "type": "negative"
-                },
-                {
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Landen Roupp (R)",
+            "Opponent": "Roupp (R)",
             "SP_xERA": "3.97",
             "Warning": "",
             "GameTime": "2026-06-13T02:15:00Z",
@@ -511,7 +506,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tatsuya Imai (R)",
+            "Opponent": "Imai (R)",
             "SP_xERA": "4.75",
             "Warning": "",
             "GameTime": "2026-06-13T00:10:00Z",
@@ -704,17 +699,12 @@
             "Slot": "BN",
             "Player": "Henry Bolte",
             "POS": "OF",
-            "Order": "7*",
+            "Order": "9",
             "Start": "02:05 AM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 46.98931413275196,
+            "Opponent": "Sullivan, S (L)",
+            "SP_xERA": "4.00",
+            "Score": 47.168551722742876,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.44",
@@ -726,12 +716,17 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
