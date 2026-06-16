@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-16",
-    "last_updated": "2026-06-16T09:30:29.483154+00:00",
+    "last_updated": "2026-06-16T16:26:34.423765+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 771.15,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 767.01,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with a potent offensive profile, anchored by **Pete Crow-Armstrong**, who earns our highest efficiency score of 80.98. His matchup against Ryan Feltner is prime for exploitation, as the combination of a favorable park factor and Feltner\u2019s high xERA allows **Pete Crow-Armstrong** to leverage his elite speed potential, a critical component given our organizational focus on the scarce SB category. **Christian Yelich** (74.67) and **Trea Turner** (71.44) also represent elite starts; both benefit significantly from being slotted at the top of their respective lineups, ensuring maximum plate appearances against hittable opposition in Slade Cecconi and Tyler Phillips. **Kyle Schwarber** rounds out our tier-one outfield options, maintaining a high floor due to his impressive 0.388 xwOBA, which suggests he is primed for a multi-hit or extra-base hit performance.\n\nStrategic roster optimization forced difficult decisions, specifically regarding the bench. **Lars Nootbaar** was the closest to cracking the starting lineup with a 54.90 score, narrowly missing out due to Michael King\u2019s respectable xERA of 4.16 and a park factor that marginally suppresses output. While **Lars Nootbaar** offers strong dynamic platoon upside, the optimizer favored the higher volume of **Luke Raley** and **Casey Schmitt**, both of whom benefit from significantly softer projected matchups. We are also closely monitoring the status of **Yordan Alvarez**; despite a difficult left-on-left dynamic against Framber Valdez, **Yordan Alvarez** remains a must-start due to his elite 0.452 xwOBA, which effectively mitigates the platoon disadvantage. \n\nManagers should remain alert to the \"Lineup Pending\" status across the board, as the projected order for **Gary Sanchez** and **Kazuma Okamoto** is crucial to maintaining their current scoring efficiency. While the matchups for **Josh Smith** and **Casey Schmitt** look favorable on paper, we are banking on these players to capitalize on slow deliveries from their respective opponents to pad our SB totals. Be advised that all current projections are contingent on these hitters maintaining their expected spots in the lineup; any late-breaking changes in batting order could necessitate a re-evaluation of the bench depth held by **Caleb Durbin** or **Nelson Velazquez**.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -105,18 +105,18 @@
         },
         {
             "Slot": "2B",
-            "Player": "Caleb Durbin",
-            "POS": "2B/3B",
-            "Score": 56.01469248963271,
+            "Player": "Josh Smith",
+            "POS": "1B/2B/SS/3B/OF",
+            "Score": 51.87326447687496,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
+                    "label": "Lineup Pending (Assumed #8)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "52.35",
+                    "value": "46.32",
                     "type": "info"
                 },
                 {
@@ -125,17 +125,32 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "+7%",
+                    "label": "SP Skill",
+                    "value": "+1%",
                     "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Zebby Matthews (R)",
+            "SP_xERA": "4.06",
             "Warning": "",
-            "GameTime": "2026-06-16T22:45:00Z",
-            "Order": "6*",
-            "Start": "10:45 PM"
+            "GameTime": "2026-06-17T00:05:00Z",
+            "Order": "8*",
+            "Start": "12:05 AM"
         },
         {
             "Slot": "SS",
@@ -587,6 +602,55 @@
     "players_sat": [
         {
             "Slot": "BN",
+            "Player": "Caleb Durbin",
+            "POS": "2B/3B",
+            "Order": "6*",
+            "Start": "10:45 PM",
+            "Opponent": "Dylan Cease (R)",
+            "SP_xERA": "3.07",
+            "Score": 44.93623108612758,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "52.35",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-06-16T22:45:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Hyeseong Kim",
             "POS": "2B/SS/OF",
             "Order": "-",
@@ -882,60 +946,6 @@
             ],
             "Warning": "",
             "GameTime": "2026-06-17T00:10:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Josh Smith",
-            "POS": "1B/2B/SS/3B/OF",
-            "Order": "8*",
-            "Start": "12:05 AM",
-            "Opponent": "Zebby Matthews (R)",
-            "SP_xERA": "4.06",
-            "Score": 51.87326447687496,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "46.32",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Slow SP Delivery (100% SB)",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-06-17T00:05:00Z"
         },
         {
             "Slot": "BN",
