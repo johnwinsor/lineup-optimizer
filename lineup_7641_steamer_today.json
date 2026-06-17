@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-17",
-    "last_updated": "2026-06-17T09:05:42.496908+00:00",
+    "last_updated": "2026-06-17T14:54:13.761696+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 793.01,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 786.3,
+    "narrative": "LawDog\u2019s daily lineup is spearheaded by a high-upside core led by **Geraldo Perdomo** (73.81) and **Tyler Freeman** (72.11). Both benefit from favorable matchups against soft-throwing rotations, with **Geraldo Perdomo** leveraging a significant +19% SP skill advantage against Sam Aldegheri and **Tyler Freeman** enjoying a strong +13% boost against Javier Assad. **Luis Arraez** (69.53) and **Matt Chapman** (69.14) are also high-efficiency starts; the latter specifically benefits from the wind blowing out, bolstering an already potent matchup against the vulnerable G. Holmes. **Bryson Stott** (66.79) remains a locked-in play, as his plate discipline and platoon advantage against Sandy Alcantara offset the modest BvP concerns.\n\nThe most difficult decision on the bench was **Masyn Winn**, who landed just shy of the starting threshold with a score of 47.16. While his projected performance was bolstered by a 10% wind-out factor, the optimizer favored **Gavin Sheets** (58.89) due to a superior platoon edge and more favorable matchup against Kyle Leahy. We are monitoring **Lawrence Butler** (57.15) closely; despite a tough matchup against Braxton Ashcraft, his speed remains a critical asset in our pursuit of SB volume. While the pending status of lineups for **Yainer Diaz**, **Cal Raleigh**, **Jonathan Aranda**, **Gleyber Torres**, **Lawrence Butler**, and **Tyler Freeman** introduces inherent risk, we are proceeding under the assumption of their expected batting orders. **Jos\u00e9 Ram\u00edrez** remains unavailable due to his IL stint, leaving the core to carry the load against an otherwise manageable slate of opposing starters.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -100,13 +100,18 @@
         },
         {
             "Slot": "1B",
-            "Player": "Luis Arraez",
-            "POS": "1B/2B",
-            "Score": 69.53101452854199,
+            "Player": "Jonathan Aranda",
+            "POS": "1B",
+            "Score": 48.7079889990351,
             "Breakdown": [
                 {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Base",
-                    "value": "51.50",
+                    "value": "51.07",
                     "type": "info"
                 },
                 {
@@ -115,37 +120,32 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
                     "label": "SP Skill",
-                    "value": "+9%",
-                    "type": "positive"
+                    "value": "-19%",
+                    "type": "negative"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+7%",
+                    "value": "+12%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
+                    "label": "xwOBA Good",
+                    "value": "0.379",
+                    "type": "info"
                 }
             ],
-            "Opponent": "Holmes, G (R)",
-            "SP_xERA": "4.39",
+            "Opponent": "Shohei Ohtani (R)",
+            "SP_xERA": "3.08",
             "Warning": "",
-            "GameTime": "2026-06-17T18:05:00Z",
-            "Order": "1",
-            "Start": "06:05 PM"
+            "GameTime": "2026-06-17T19:10:00Z",
+            "Order": "3*",
+            "Start": "07:10 PM"
         },
         {
             "Slot": "2B",
@@ -198,6 +198,50 @@
         },
         {
             "Slot": "SS",
+            "Player": "Bryson Stott",
+            "POS": "2B/SS",
+            "Score": 66.79598340816743,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "53.80",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "BvP Weak (33 PA)",
+                    "value": "-3%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Sandy Alcantara (R)",
+            "SP_xERA": "4.33",
+            "Warning": "",
+            "GameTime": "2026-06-17T17:05:00Z",
+            "Order": "6",
+            "Start": "05:05 PM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Geraldo Perdomo",
             "POS": "SS",
             "Score": 73.81201892556854,
@@ -246,45 +290,6 @@
             "Start": "07:40 PM"
         },
         {
-            "Slot": "MI",
-            "Player": "Masyn Winn",
-            "POS": "SS",
-            "Score": 54.08875404881385,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "51.22",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Warning": "",
-            "GameTime": "2026-06-17T18:15:00Z",
-            "Order": "6*",
-            "Start": "06:15 PM"
-        },
-        {
             "Slot": "3B",
             "Player": "Matt Chapman",
             "POS": "3B",
@@ -329,9 +334,9 @@
             "Opponent": "Holmes, G (R)",
             "SP_xERA": "4.39",
             "Warning": "",
-            "GameTime": "2026-06-17T18:05:00Z",
+            "GameTime": "2026-06-17T18:00:00Z",
             "Order": "3",
-            "Start": "06:05 PM"
+            "Start": "06:00 PM"
         },
         {
             "Slot": "OF1",
@@ -339,11 +344,6 @@
             "POS": "1B/OF",
             "Score": 58.89193073697688,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.14",
@@ -384,7 +384,7 @@
             "SP_xERA": "4.23",
             "Warning": "",
             "GameTime": "2026-06-17T18:15:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "06:15 PM"
         },
         {
@@ -481,9 +481,9 @@
             "Opponent": "Holmes, G (R)",
             "SP_xERA": "4.39",
             "Warning": "",
-            "GameTime": "2026-06-17T18:05:00Z",
+            "GameTime": "2026-06-17T18:00:00Z",
             "Order": "5",
-            "Start": "06:05 PM"
+            "Start": "06:00 PM"
         },
         {
             "Slot": "OF4",
@@ -584,24 +584,19 @@
             "Opponent": "Holmes, G (R)",
             "SP_xERA": "4.39",
             "Warning": "",
-            "GameTime": "2026-06-17T18:05:00Z",
+            "GameTime": "2026-06-17T18:00:00Z",
             "Order": "8",
-            "Start": "06:05 PM"
+            "Start": "06:00 PM"
         },
         {
             "Slot": "UTIL",
-            "Player": "Bryson Stott",
-            "POS": "2B/SS",
-            "Score": 68.13190307633077,
+            "Player": "Luis Arraez",
+            "POS": "1B/2B",
+            "Score": 69.53101452854199,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "53.80",
+                    "value": "51.50",
                     "type": "info"
                 },
                 {
@@ -611,36 +606,36 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
+                    "value": "+1%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+8%",
+                    "value": "+9%",
                     "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+13%",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
-                    "label": "BvP Weak (33 PA)",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Sandy Alcantara (R)",
-            "SP_xERA": "4.33",
-            "Warning": "\u26a0\ufe0f Rain Risk (30%)",
-            "GameTime": "2026-06-17T17:05:00Z",
-            "Order": "5*",
-            "Start": "05:05 PM"
+            "Opponent": "Holmes, G (R)",
+            "SP_xERA": "4.39",
+            "Warning": "",
+            "GameTime": "2026-06-17T18:00:00Z",
+            "Order": "1",
+            "Start": "06:00 PM"
         }
     ],
     "players_sat": [
@@ -796,22 +791,22 @@
         },
         {
             "Slot": "BN",
-            "Player": "Jonathan Aranda",
-            "POS": "1B",
-            "Order": "3*",
-            "Start": "07:10 PM",
-            "Opponent": "Shohei Ohtani (R)",
-            "SP_xERA": "3.08",
-            "Score": 48.7079889990351,
+            "Player": "Masyn Winn",
+            "POS": "SS",
+            "Order": "6*",
+            "Start": "06:15 PM",
+            "Opponent": "Rodriguez, B (R)",
+            "SP_xERA": "3.45",
+            "Score": 47.1576979674576,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
+                    "label": "Lineup Pending (Assumed #6)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "51.07",
+                    "value": "51.22",
                     "type": "info"
                 },
                 {
@@ -820,24 +815,24 @@
                     "type": "info"
                 },
                 {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
                     "label": "SP Skill",
-                    "value": "-19%",
+                    "value": "-13%",
                     "type": "negative"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+12%",
+                    "value": "+1%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Wind Out",
+                    "value": "+10%",
                     "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.379",
-                    "type": "info"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
@@ -846,7 +841,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-06-17T19:10:00Z"
+            "GameTime": "2026-06-17T18:15:00Z"
         },
         {
             "Slot": "BN",
