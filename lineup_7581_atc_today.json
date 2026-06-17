@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-16",
-    "last_updated": "2026-06-16T22:49:32.986884+00:00",
+    "last_updated": "2026-06-17T00:12:36.730083+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 772.82,
-    "narrative": "The Austin Waves look poised for a high-ceiling outing today, headlined by **Luis Garc\u00eda Jr.** (73.66) and **Jackson Merrill** (73.00), who anchor the offensive production against favorable matchups. **Luis Garc\u00eda Jr.** benefits from a soft 4.49 xERA matchup against Wacha and a premium slot in the #2 hole, while **Jackson Merrill** leverages a high-scoring profile fueled by a positive dynamic platoon split and the tactical advantage of facing a pitcher with a slow delivery, which increases his stolen base equity in our scarcity-focused build. **Vladimir Guerrero Jr.** (69.78) also projects as a strong anchor, with park factors boosting his base expectation against the southpaw Tolle.\n\nThe most difficult decision for the optimizer today was holding **Miguel Vargas** (59.66) and **Gunnar Henderson** (58.38) on the bench. **Miguel Vargas** was the closest to cracking the utility spot, but he ultimately ceded the position to **Nolan Schanuel** (63.71), whose #3 batting order position and a favorable matchup against Kelly offered higher run and RBI potential. While **Gunnar Henderson** remains one of our top talents, his lower efficiency score today is a direct result of the difficult matchup against Gilbert and the residual risk of a \"Lineup Pending\" status. We are keeping **Kyle Tucker** (54.20) in the lineup despite a tough draw against Rasmussen, trusting his talent floor to outweigh the SP skill penalty, though we remain wary of his lower-than-average projected output relative to the rest of the squad. \n\nRisks for today are largely concentrated on the bench, where **Nasim Nunez** (53.63) was pushed out of consideration despite his speed profile due to a bottom-of-the-order assignment that suppresses his counting stat ceiling. We are keeping a close eye on the weather and official lineups for **Gunnar Henderson**, as any late-game shifts could force a reallocation of our remaining game caps. Managers should monitor **Drake Baldwin** (69.17) in the #1 spot; his matchup against Houser is one of the highest-rated spots for on-base efficiency, and his ability to convert that into runs will be critical to keeping our offensive pace ahead of league averages.",
+    "narrative": "The Austin Waves front office has prioritized high-efficiency matchups for today\u2019s slate, anchored by **Luis Garc\u00eda Jr.** (73.66) and **Jackson Merrill** (73.00), our top-scoring options. **Luis Garc\u00eda Jr.** faces a favorable matchup against Wacha, benefiting from a significant 14% dynamic platoon boost and an optimal #2 spot in the order. Meanwhile, **Jackson Merrill** draws a standout profile; while the park factor is slightly suppressive, his ability to exploit Pallante\u2019s slow delivery\u2014driving a 100% stolen base expectation\u2014solidifies him as a cornerstone of our SB-focused strategy today. **Vladimir Guerrero Jr.** (69.78) also provides a high floor, as the LHP Tolle allows us to leverage **Vladimir Guerrero Jr.**\u2019s platoon edge, pushing him into the top tier of today\u2019s projected production.\n\nThe most difficult decision on the board was keeping **Miguel Vargas** (59.66) and **Gunnar Henderson** (58.38) on the bench. **Miguel Vargas** narrowly missed the final lineup spot; although he boasts a strong profile against Cole, he ultimately fell short of the threshold compared to the platoon-adjusted value offered by **Dominic Smith** and **Wade Meckler** in more favorable hitting environments. **Gunnar Henderson**, despite his pedigree, is facing the high-strikeout arm of Gilbert, which suppressed his SP skill score by 18%, forcing a cautious approach to maintain our game cap efficiency. We are closely monitoring weather reports for the **Kyle Tucker** matchup; his score is hampered by a significant SP skill penalty (15%) against Rasmussen, and while he remains in the lineup for his high base projection, his output is the most volatile among our starters should the weather in his park shift.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -223,7 +223,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Mitch Keller (R)",
+            "Opponent": "Keller, M (R)",
             "SP_xERA": "4.46",
             "Warning": "",
             "GameTime": "2026-06-17T01:40:00Z",
@@ -477,7 +477,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Drew Rasmussen (R)",
+            "Opponent": "Rasmussen (R)",
             "SP_xERA": "3.36",
             "Warning": "",
             "GameTime": "2026-06-17T02:10:00Z",
@@ -534,17 +534,12 @@
             "Slot": "BN",
             "Player": "Gunnar Henderson",
             "POS": "SS",
-            "Order": "2*",
+            "Order": "2",
             "Start": "01:40 AM",
             "Opponent": "Gilbert, L (R)",
             "SP_xERA": "3.26",
             "Score": 58.378161059986354,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "60.65",
@@ -576,7 +571,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -614,7 +609,7 @@
             "POS": "OF",
             "Order": "2",
             "Start": "02:10 AM",
-            "Opponent": "Drew Rasmussen (R)",
+            "Opponent": "Rasmussen (R)",
             "SP_xERA": "3.36",
             "Score": 50.0909820933642,
             "Breakdown": [
@@ -756,7 +751,7 @@
             "Start": "10:45 PM",
             "Opponent": "Wacha (R)",
             "SP_xERA": "4.49",
-            "Score": 53.63102389199151,
+            "Score": 55.865649887491166,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -782,11 +777,6 @@
                     "label": "Switch",
                     "value": "+3%",
                     "type": "positive"
-                },
-                {
-                    "label": "Elite Hold SP (60% SB)",
-                    "value": "-4%",
-                    "type": "negative"
                 },
                 {
                     "label": "Order #9",
@@ -899,50 +889,20 @@
             "Slot": "BN",
             "Player": "Coby Mayo",
             "POS": "1B/3B",
-            "Order": "6*",
-            "Start": "01:40 AM",
-            "Opponent": "Gilbert, L (R)",
-            "SP_xERA": "3.26",
-            "Score": 34.475367494285265,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "48.57",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-5%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-18%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-06-17T01:40:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
