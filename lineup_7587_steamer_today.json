@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-17",
-    "last_updated": "2026-06-17T17:46:18.683251+00:00",
+    "last_updated": "2026-06-17T20:01:42.998365+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 756.91,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with a heavy emphasis on speed and platoon exploitation, led by the high-upside trio of **Corbin Carroll** (77.69), **Jose Caballero** (75.83), and **Seiya Suzuki** (73.90). **Corbin Carroll** serves as our anchor despite facing a lefty, as the matchup against Sam Aldegheri\u2019s inflated 5.41 xERA creates an environment ripe for extra-base hits and stolen base opportunities. Similarly, **Jose Caballero** benefits from a massive +13% boost in his dynamic platoon split against Anthony Kay, while **Seiya Suzuki** is buoyed by favorable wind conditions and a strong spot in the four-hole, making him a prime candidate for run production against Sean Sullivan. **James Wood** rounds out the top tier with a 72.03 efficiency score, leveraging a high xwOBA and a generous matchup against the right-handed arms of the opposing squad.\n\nThe most difficult decision for the optimizer involved **Alex Freeland**, whose 42.49 score pushed him to the edge of the active roster. Ultimately, the high xERA of the opposing starter (McClanahan) wasn't enough to overcome his bottom-third spot in the batting order and lower base projection compared to **Kyle Karros**, whose ability to capitalize on the 4.52 xERA of Javier Assad and beneficial wind conditions provided a safer floor for our daily caps. While **Max Muncy** (45.22) remains in the lineup, we are monitoring his status closely; despite a positive park factor, his output is hampered by Braxton Ashcraft\u2019s solid 3.42 xERA. \n\nRisks for today center on the high volume of \"Lineup Pending\" designations, particularly for **Josh Naylor**, **Travis Bazzana**, and **Brice Turang**. We have assumed optimal hitting positions for these players, but any drop to the bottom of the order would necessitate an immediate re-evaluation of their scores, as their projected efficiency is heavily reliant on high-leverage spots. Furthermore, **Brice Turang** faces a significant test against Gavin Williams; while his role as a stolen base threat is invaluable, the \"Elite Hold\" capability of the pitcher (60% SB prevention) suppresses his efficiency score and warns us that his path to points today may be limited strictly to high-percentage opportunities.",
+    "total_efficiency_score": 756.69,
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with a heavy emphasis on exploiting favorable platoon splits and favorable wind conditions to capitalize on our stolen base profile. **Corbin Carroll** (79.27) and **Jose Caballero** (74.02) anchor our offensive ceiling, both benefiting from ideal matchups against left-handed starters. **Jose Caballero** is a prime start today, as his dynamic platoon advantage (+13%) against Kay provides an elite efficiency spike, while **Corbin Carroll** maintains strong output despite a slight platoon drag. **Seiya Suzuki** (73.90) and **James Wood** (72.03) round out our most potent threats; **Seiya Suzuki** benefits significantly from a 5% wind-out boost and a favorable matchup against Sean Sullivan, while **James Wood**\u2019s elite xwOBA of 0.407 makes him a locked-in high-floor play despite a slight penalty for the opponent's hold on stolen bases.\n\nOur most critical bench decision involved **Alex Freeland**, whose score of 42.49 narrowly missed the cut. While **Alex Freeland** presented a respectable case, the optimizer favored **Kyle Karros** (53.33) in the UTIL slot due to a superior park factor and a 5% wind-out advantage, which outweighed the risk of **Kyle Karros** batting eighth against Javier Assad. We are monitoring the \"Lineup Pending\" status for **Josh Naylor**, **Travis Bazzana**, **Max Muncy**, **Brice Turang**, **Tyler Soderstrom**, **Seiya Suzuki**, and **Kyle Karros**. Specifically, **Max Muncy** (45.22) and **Brice Turang** (53.00) are currently carrying elevated risk profiles due to the strength of the opposing arms (Braxton Ashcraft and Gavin Williams, respectively). Owners should note that **Brice Turang**\u2019s score is slightly suppressed by a 4% penalty for the opposing pitcher's elite hold on SB, making his speed upside a variable to watch closely if the game script shifts.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -42,7 +42,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Sam Aldegheri (L)",
+            "Opponent": "Aldegheri (L)",
             "SP_xERA": "5.41",
             "Warning": "",
             "GameTime": "2026-06-17T19:40:00Z",
@@ -460,13 +460,8 @@
             "Slot": "OF4",
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
-            "Score": 75.83162922805622,
+            "Score": 74.02804667652728,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.17",
@@ -491,20 +486,25 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "+13%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Anthony Kay (L)",
+            "Opponent": "Kay (L)",
             "SP_xERA": "4.61",
             "Warning": "",
             "GameTime": "2026-06-17T23:05:00Z",
-            "Order": "6*",
+            "Order": "7",
             "Start": "11:05 PM"
         },
         {
             "Slot": "OF5",
             "Player": "Corbin Carroll",
             "POS": "OF",
-            "Score": 77.6884483560478,
+            "Score": 79.27392689392633,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -532,11 +532,6 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Elite Catcher (1.89s)",
-                    "value": "-2.0%",
-                    "type": "negative"
-                },
-                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
@@ -547,7 +542,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Sam Aldegheri (L)",
+            "Opponent": "Aldegheri (L)",
             "SP_xERA": "5.41",
             "Warning": "",
             "GameTime": "2026-06-17T19:40:00Z",
