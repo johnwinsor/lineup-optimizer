@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-17",
-    "last_updated": "2026-06-17T22:29:56.034859+00:00",
+    "last_updated": "2026-06-18T00:08:33.399476+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 756.55,
-    "narrative": "The Zurich Zebras enter June 17th with a high-ceiling lineup led by **Pete Crow-Armstrong** (74.54) and **Trea Turner** (73.69). **Pete Crow-Armstrong** remains our premier play despite a 43% rain risk; his leadoff role combined with a +19% boost from the opposing SP skill provides the highest raw projection of the day. Meanwhile, **Trea Turner** leverages a strong BvP historical edge (42 PA) against Alcantara to maintain his status as an elite anchor. **Kazuma Okamoto** (70.30) and **Yordan Alvarez** (67.73) round out our top-tier threats, with **Yordan Alvarez** providing necessary elite power stability (0.452 xwOBA) even against a capable starter like Mize.\n\nOur lineup construction emphasizes speed and platoon optimization. **Casey Schmitt** (63.20) sees a significant boost from favorable wind conditions and a +19% SP skill advantage, making him a surprising yet mandatory start at 1B. Conversely, **Lars Nootbaar** (52.08) and **Dillon Dingler** (46.49) remain on the lower end of the efficiency scale, with **Dillon Dingler** hampered by a dynamic platoon disadvantage (-15%) that drags his score toward our daily floor. **Carson Benge** was the most difficult exclusion from the active roster; his 48.48 score hovered near the starting threshold, but the optimizer favored the higher platoon ceiling of our active MI/OF slots, particularly as **Carson Benge** faced a challenging left-on-left matchup against Lodolo. We continue to monitor the weather in the **Pete Crow-Armstrong** game; should the rain risk materialize, we will look to pivot to our bench depth to ensure we preserve game caps effectively.",
+    "total_efficiency_score": 746.31,
+    "narrative": "The Zurich Zebras face a high-variance slate today, with **Trea Turner** (73.69) and **Pete Crow-Armstrong** (70.99) serving as our offensive pillars. **Trea Turner** leverages an elite matchup against Alcantara, buoyed by a strong 42-PA BvP history and the prime #1 spot in the order. Despite a difficult L/L matchup against Sullivan, **Pete Crow-Armstrong** remains a \"Strong\" start because his elite speed profile is paramount in our league; we are prioritizing his stolen base potential over the platoon disadvantage. **Kazuma Okamoto** (70.30) also emerges as a high-floor play, benefiting from a soft 4.88 xERA from the opposing arm and the stability of the #3 hole.\n\nWhile our core is locked, the decision to bench **Lars Nootbaar** (47.35) remains the tightest margin on the report. **Lars Nootbaar** posted a respectable score fueled by a positive platoon advantage against Rodriguez, but he fell behind our utility options due to the superior base projections of **Junior Caminero** and the overall offensive output of the outfield. Elsewhere, we are keeping a close eye on **Carson Benge** (51.03), whose score is tethered to his leadoff spot despite a daunting L/L matchup against Lodolo; should official lineup adjustments shift him down the order, his efficiency may crater below our playable threshold.\n\nRisks today are concentrated in our premium talent facing top-tier arms. **Yordan Alvarez** (67.73) and **Junior Caminero** (54.07) are tasked with navigating Mize and Ohtani, respectively. While **Yordan Alvarez** boasts an elite 0.452 xwOBA that justifies his start regardless of the SP xERA, **Junior Caminero** is trending toward our marginal floor due to the severe SP skill penalty. We remain vigilant regarding our minor league depth\u2014**Caleb Durbin**, **Hyeseong Kim**, and **Rece Hinds**\u2014to ensure that any mid-game injuries are immediately backfilled by active personnel.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -58,7 +58,7 @@
             "Slot": "1B",
             "Player": "Casey Schmitt",
             "POS": "1B/2B/3B/OF",
-            "Score": 63.203574126492214,
+            "Score": 60.276197087108024,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -86,14 +86,14 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
                     "type": "negative"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Ritchie (R)",
@@ -283,7 +283,7 @@
             "Slot": "OF1",
             "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Score": 74.53587836923694,
+            "Score": 70.98655082784471,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -314,16 +314,11 @@
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Sullivan, S (L)",
             "SP_xERA": "4.99",
-            "Warning": "\u26a0\ufe0f Rain Risk (43%)",
+            "Warning": "",
             "GameTime": "2026-06-18T00:05:00Z",
             "Order": "1",
             "Start": "12:05 AM"
@@ -379,13 +374,13 @@
         },
         {
             "Slot": "OF3",
-            "Player": "Lars Nootbaar",
+            "Player": "Carson Benge",
             "POS": "OF",
-            "Score": 52.08277359443233,
+            "Score": 51.02869810446914,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "50.20",
+                    "value": "46.86",
                     "type": "info"
                 },
                 {
@@ -395,41 +390,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
+                    "value": "+3%",
+                    "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-13%",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+11%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.372",
-                    "type": "info"
-                },
-                {
-                    "label": "Wind Out",
+                    "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Rodriguez, B (R)",
-            "SP_xERA": "3.45",
+            "Opponent": "Lodolo (L)",
+            "SP_xERA": "4.27",
             "Warning": "",
-            "GameTime": "2026-06-17T18:15:00Z",
-            "Order": "5",
-            "Start": "06:15 PM"
+            "GameTime": "2026-06-17T16:40:00Z",
+            "Order": "1",
+            "Start": "04:40 PM"
         },
         {
             "Slot": "OF4",
@@ -538,7 +523,7 @@
             "Slot": "UTIL",
             "Player": "Junior Caminero",
             "POS": "3B",
-            "Score": 56.77553281072559,
+            "Score": 54.07193601021485,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -563,11 +548,6 @@
                 {
                     "label": "Order #4",
                     "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -673,6 +653,60 @@
         },
         {
             "Slot": "BN",
+            "Player": "Lars Nootbaar",
+            "POS": "OF",
+            "Order": "5",
+            "Start": "06:15 PM",
+            "Opponent": "Rodriguez, B (R)",
+            "SP_xERA": "3.45",
+            "Score": 47.34797599493848,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "50.20",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+11%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.372",
+                    "type": "info"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-06-17T18:15:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Nelson Velazquez",
             "POS": "OF",
             "Order": "-",
@@ -715,11 +749,6 @@
                     "label": "xwOBA Elite",
                     "value": "0.440",
                     "type": "info"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+10%",
-                    "type": "positive"
                 },
                 {
                     "label": "Not Starting",
@@ -791,60 +820,6 @@
             ],
             "Warning": "",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Carson Benge",
-            "POS": "OF",
-            "Order": "1",
-            "Start": "04:40 PM",
-            "Opponent": "Lodolo (L)",
-            "SP_xERA": "4.27",
-            "Score": 48.477263199245684,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "46.86",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Benched - Lower projected efficiency than other options.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-06-17T16:40:00Z"
         },
         {
             "Slot": "BN",
