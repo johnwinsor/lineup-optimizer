@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-18",
-    "last_updated": "2026-06-18T22:52:50.484200+00:00",
+    "last_updated": "2026-06-19T00:21:21.213999+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 304.95,
-    "narrative": "The spotlight today belongs to **Jose Caballero**, who paces the squad with a massive 80.26 efficiency score. While his slotting at #7 in the order historically tempers expectations, the intersection of a favorable matchup against Hudson and a significant boost from wind conditions makes him our primary weapon for chasing stolen bases and counting stats. **Tyler Soderstrom** also provides a high-floor start at 61.62, anchored by a positive park factor and a central spot in the order, while **Josh Naylor** remains a cornerstone at 1B with a 66.36 rating, benefiting from an advantageous platoon look against Baz.\n\nWhile we remain aggressive, we are exercising strict discipline regarding our bench threshold. **Travis Bazzana** serves as our most notable exclusion today; despite his lead-off role providing a +10 buffer to his profile, the combination of a tough matchup against Drohan and a significant platoon penalty dropped his efficiency to 37.03, falling safely below our 40.0 \"Zebras Floor.\" We are comfortable leaving **Travis Bazzana** on the pine to protect our game caps. Elsewhere, we continue to monitor the status of **Trevor Story**, who remains sidelined on the IL, and we are managing the roster absences of **Corbin Carroll** and **James Wood**, both of whom are unavailable due to the team off-day. \n\nWe are tracking the remaining lineup volatility closely, specifically for **Cole Young** and **Brice Turang**. **Cole Young** sits at a marginal 46.76; while his speed gives him a slight edge against a slower delivery, he requires a clean run-scoring environment to justify the cap hit. Meanwhile, **Brice Turang** faces a difficult task against the high-skill arm of Messick; his score of 49.95 keeps him just above the bench line, but he represents a high-risk asset in today\u2019s rotation. With no other major weather flags on the board, we are prioritizing the **Jose Caballero** and **Tyler Soderstrom** pairing to anchor our offensive output.",
+    "total_efficiency_score": 312.33,
+    "narrative": "Our lineup analysis for June 18th is anchored by the aggressive upside of **Jose Caballero**, who clocks in as our strongest play with a 76.54 efficiency score. While his #7 spot in the order carries a minor penalty, the matchup against Dakota Hudson is prime; the combination of a favorable SP_xERA (4.42) and a strong platoon advantage against the lefty yields a significant boost. We are also banking on **Tyler Soderstrom** (72.72) to capitalize on a soft matchup against Ryan Johnson. With a high SP_xERA of 5.29 and park factors tilting in his favor, **Tyler Soderstrom** is primed for a high-leverage outing that bolsters our counting stats. Despite facing the mid-rotation arm of Baz, **Josh Naylor** remains a reliable cornerstone at 66.36, benefiting from his premium #3 lineup position.\n\nThe most difficult decision on the bench was **Travis Bazzana**, who fell just short of our 40.0 floor with a 37.03 score. The decision to keep **Travis Bazzana** benched was driven by the significant SP_xERA disadvantage against Drohan (3.32) and a punishing left-on-left platoon penalty that outweighed the value of his leadoff spot. Elsewhere, the roster remains thinned by circumstances: **Corbin Carroll** and **James Wood** are unavailable due to an off-day, while **Trevor Story** continues to occupy an IL slot. We are keeping a close watch on **Cole Young**; while his 46.76 score technically earns him a start, his low margin above our floor necessitates a strong performance against Baz to justify his inclusion over our deeper bench reserves.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -146,7 +146,7 @@
             "Slot": "3B",
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
-            "Score": 80.2606832047448,
+            "Score": 76.5448477805351,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -182,11 +182,6 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+10%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Hudson, B (L)",
@@ -200,7 +195,7 @@
             "Slot": "OF1",
             "Player": "Tyler Soderstrom",
             "POS": "1B/OF",
-            "Score": 61.61984312988675,
+            "Score": 72.71572397320551,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -218,13 +213,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #4",
                     "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Ryan Johnson (R)",
+            "SP_xERA": "5.29",
             "Warning": "",
             "GameTime": "2026-06-19T01:40:00Z",
             "Order": "4",
@@ -602,8 +607,8 @@
             "POS": "OF",
             "Order": "8",
             "Start": "01:40 AM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Ryan Johnson (R)",
+            "SP_xERA": "5.29",
             "Score": 0.0,
             "Breakdown": [
                 {
@@ -620,6 +625,16 @@
                     "label": "Park",
                     "value": "+10%",
                     "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #8",
