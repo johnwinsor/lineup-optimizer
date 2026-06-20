@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-20",
-    "last_updated": "2026-06-20T19:11:17.693972+00:00",
+    "last_updated": "2026-06-20T21:05:31.577725+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 588.85,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a lineup anchored by elite speed and favorable situational matchups. **Pete Crow-Armstrong** (68.27) and **Trea Turner** (67.76) represent our strongest plays, as both benefit from favorable top-of-the-order positioning and high-ceiling matchups. While **Pete Crow-Armstrong** faces a shaky Patrick Corbin, the analytical advantage stems from his ability to exploit the basepaths, a priority in our 5x5 Roto strategy. Similarly, **Trea Turner** remains a mandatory start despite facing a formidable arm in Freddy Peralta; his elite sprint speed and the projected 92% steal probability against this specific pitcher\u2019s delivery cadence make him our primary engine for categories today. **Yordan Alvarez** (66.32) remains locked in as our most consistent power threat, with his xwOBA of 0.450 providing the high floor necessary to anchor the outfield, despite the nominal L/L platoon disadvantage against Joey Cantillo.\n\nOur most difficult bench decision involved **Gary Sanchez** (39.85), who narrowly missed the starting cut by falling just below our 40.0 efficiency threshold. While **Gary Sanchez** possesses the raw power to impact our HR and RBI totals, the combination of a daunting matchup against Chris Sale and poor BvP history (29 PA) suppressed his projection, leading the optimizer to prioritize the higher-upside efficiency of **Casey Schmitt** (44.51). Looking ahead, we continue to monitor the status of **Colt Keith**, who remains sidelined, and the bench depth provided by **Luke Raley** and **Carson Benge**. We must remain vigilant regarding **Caleb Durbin** and **Kyle Schwarber**, as their \"Lineup Pending\" designations carry inherent risk; should they shift lower in the batting order upon the final report, their efficiency scores will likely slide, potentially forcing a shuffle from our reserve corps of **Rece Hinds**, **Zac Veen**, or **Josh Smith** to maintain our strategic edge.",
+    "total_efficiency_score": 587.5,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with a clear directive: maximize stolen base upside against high-xERA matchups. **Pete Crow-Armstrong** headlines our lineup with an elite 68.27 score, buoyed by a prime leadoff spot and a favorable matchup against a vulnerable southpaw (xERA 4.62). Similarly, **Trea Turner** (66.41) remains a mandatory start; despite facing a formidable arm in Peralta, **Turner**\u2019s elite sprint speed and the \"Slow SP Delivery\" metric significantly outweigh the risk of his matchup, providing the necessary efficiency to anchor our SB goals. **Yordan Alvarez** (66.32) rounds out our top-tier plays, as his elite xwOBA remains largely matchup-proof, even in a suboptimal L/L platoon scenario.\n\nThe decision to bench **Gary Sanchez** (39.85) was the most difficult call of the morning, missing the Zebras\u2019 40.0 floor by the narrowest of margins. While his platoon advantage against a lefty typically warrants consideration, the oppressive SP skill profile of Sale (3.01 xERA) combined with poor historical BvP data effectively neutralized his offensive upside. Conversely, **Dillon Dingler** (52.11) retains his slot over bench options due to a favorable platoon alignment against Newcomb, proving that our roster depth is currently prioritized toward exploiting specific pitcher weaknesses rather than relying on pure base power.\n\nManagement remains wary of the \"Lineup Pending\" status for **Caleb Durbin** (51.03); while he is currently projected into the #6 spot, his SB contribution is threatened by an elite hold-runner opponent, necessitating a close watch as official lineups circulate. Furthermore, **Casey Schmitt** (44.51) occupies the lowest projected score in our active lineup. He remains a volatile asset today, as his marginal efficiency is squeezed by a combination of a stingy opposing pitcher and a bottom-order lineup placement. We are monitoring all weather reports for updates, but the current configuration represents our highest probability of hitting our 5x5 categorical targets without over-leveraging our daily game caps.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -146,13 +146,8 @@
             "Slot": "MI",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Score": 67.76430447368635,
+            "Score": 66.40901838421262,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "59.08",
@@ -179,6 +174,11 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Slow SP Delivery (92% SB)",
                     "value": "+4%",
                     "type": "positive"
@@ -189,11 +189,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Freddy Peralta (R)",
+            "Opponent": "Peralta, F (R)",
             "SP_xERA": "3.94",
             "Warning": "",
             "GameTime": "2026-06-20T23:15:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:15 PM"
         },
         {
@@ -247,11 +247,6 @@
             "Score": 62.23192114445633,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "58.08",
                     "type": "info"
@@ -287,11 +282,11 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Freddy Peralta (R)",
+            "Opponent": "Peralta, F (R)",
             "SP_xERA": "3.94",
             "Warning": "",
             "GameTime": "2026-06-20T23:15:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "11:15 PM"
         },
         {
@@ -336,7 +331,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Joey Cantillo (L)",
+            "Opponent": "Cantillo (L)",
             "SP_xERA": "4.30",
             "Warning": "",
             "GameTime": "2026-06-20T23:15:00Z",
@@ -375,7 +370,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Elite Hold SP (62% SB)",
+                    "label": "Elite Hold SP (55% SB)",
                     "value": "-2%",
                     "type": "negative"
                 },
@@ -820,17 +815,12 @@
             "Slot": "BN",
             "Player": "Carson Benge",
             "POS": "OF",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:15 PM",
-            "Opponent": "Cristopher S\u00e1nchez (L)",
+            "Opponent": "S\u00e1nchez, C (L)",
             "SP_xERA": "2.80",
             "Score": 38.60108568955157,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.86",
@@ -862,7 +852,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
