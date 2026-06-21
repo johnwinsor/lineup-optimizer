@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-21",
-    "last_updated": "2026-06-21T19:18:03.097513+00:00",
+    "last_updated": "2026-06-21T21:08:11.246815+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 660.89,
-    "narrative": "For LawDog today, we are leaning heavily into the favorable matchup against Gusto, who anchors the highest-value segment of our lineup. **Geraldo Perdomo** (68.82) is our strongest play, benefiting from a massive +19% efficiency boost against a middling starter and a premium spot in the two-hole. He is followed closely by **Luis Arraez** (64.64) and **Jung Hoo Lee** (61.50), both of whom capitalize on the +13% skill advantage over the opposing starter and favorable platoon splits. While **Tyler Freeman** (62.19) projects lower, his +14% park factor makes him an elite start, and we anticipate **Cal Raleigh** (61.41) providing steady power production despite a tougher look against Tolle.\n\nWe are forced to navigate several marginal starts today due to the scarcity of stolen base threats, a critical component of our 5x5 strategy. **Masyn Winn** (55.15) remains a \"Strong\" start despite a lower base projection, bolstered by a +5% wind-out factor and his ability to contribute in the SB category. The most difficult decision involved **Jeremiah Jackson** (38.07), who was the first player cut from the starting rotation; he fell just shy of our 40.0 \"Zebras\" floor due to a poor spot in the nine-hole and a challenging matchup against Sheehan. We are also monitoring the remaining lower-end starts like **Bryson Stott** (43.42) and **Taylor Ward** (44.15), who are active primarily for their positional utility and lineup placement rather than overwhelming individual projections.\n\nRisk remains elevated across the board today, particularly for **Gavin Sheets** (44.97) and **Taylor Ward**, who are both staring down elite arms with xERAs near or below 3.40. While we are currently carrying **Jos\u00e9 Ram\u00edrez**, **Will Smith**, and **Lawrence Butler** on the IL or bench, their absence necessitates these deeper, more volatile depth plays. We will keep a close watch on **Drew Gilbert** (50.67); though he projects as a safe start against Gusto, his efficiency is tethered to the slow delivery pace of the opposing starter, and any late-breaking weather patterns in the late-afternoon window could force a re-evaluation of his status.",
+    "total_efficiency_score": 662.23,
+    "narrative": "For LawDog today, we are leaning heavily into the favorable matchup against Gusto, who is driving significant value for several of our starters. **Geraldo Perdomo** (68.82) earns the top spot in our rankings today; his massive 19% bump from the favorable opposing starter profile, combined with a premium batting order position, makes him our anchor. Similarly, **Luis Arraez** (64.64) and **Jung Hoo Lee** (61.50) are high-efficiency plays, benefiting from the same matchup dynamic against Gusto. The most critical pivot today is **Tyler Freeman** (62.19), whose high score is sustained by a favorable park factor (+14%), proving that while we value raw talent, we are surgically applying our roster to optimize for park and pitcher inefficiencies.\n\nOur most difficult decision of the day involved **Jeremiah Jackson** (39.98), who missed our starting threshold by a fractional margin of 0.02. While the wind-out conditions at the park provided a slight boost, the combination of a tough matchup against Sheehan and a ninth-spot lineup projection effectively killed his utility for this slate. Meanwhile, we remain hampered by the absence of **Jos\u00e9 Ram\u00edrez** and **Will Smith**, both of whom remain on the IL, limiting our depth and forcing us to lean into the lower-scoring floor of **Gavin Sheets** (44.97) and **Jonathan Aranda** (42.65). \n\nWe must remain vigilant regarding the risk factors embedded in today's lineup. **Bryson Stott** (42.55) faces a brutal combination of a tough opposing pitcher and an elite catcher whose sub-2.0s pop time severely limits his stolen base potential; he is a fringe start only because our bench depth is currently depleted by the inactivity of players like **Lawrence Butler**. Furthermore, **Taylor Ward** faces a high-risk scenario against Sheehan; despite his lead-off spot, the -16% SP skill penalty and negative platoon edge make him a volatile play that we will be monitoring closely for potential pinch-hit substitution if the early innings go sideways.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -102,7 +102,7 @@
             "Slot": "2B",
             "Player": "Bryson Stott",
             "POS": "2B/SS",
-            "Score": 43.415535415054556,
+            "Score": 42.54722470675346,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -130,6 +130,11 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Elite Hold SP (40% SB)",
                     "value": "-4%",
                     "type": "negative"
@@ -140,7 +145,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "David Peterson (L)",
+            "Opponent": "Peterson, D (L)",
             "SP_xERA": "4.13",
             "Warning": "",
             "GameTime": "2026-06-21T23:20:00Z",
@@ -389,6 +394,50 @@
         },
         {
             "Slot": "OF3",
+            "Player": "Taylor Ward",
+            "POS": "OF",
+            "Score": 46.35799105650319,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "52.93",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-16%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Sheehan (R)",
+            "SP_xERA": "3.34",
+            "Warning": "",
+            "GameTime": "2026-06-21T20:10:00Z",
+            "Order": "1",
+            "Start": "08:10 PM"
+        },
+        {
+            "Slot": "OF4",
             "Player": "Gavin Sheets",
             "POS": "1B/OF",
             "Score": 44.970386602042836,
@@ -425,45 +474,6 @@
             "GameTime": "2026-06-21T18:35:00Z",
             "Order": "4",
             "Start": "06:35 PM"
-        },
-        {
-            "Slot": "OF4",
-            "Player": "Taylor Ward",
-            "POS": "OF",
-            "Score": 44.15046767286018,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "52.93",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-16%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Sheehan (R)",
-            "SP_xERA": "3.34",
-            "Warning": "",
-            "GameTime": "2026-06-21T20:10:00Z",
-            "Order": "1",
-            "Start": "08:10 PM"
         },
         {
             "Slot": "OF5",
@@ -774,7 +784,7 @@
             "Start": "08:10 PM",
             "Opponent": "Sheehan (R)",
             "SP_xERA": "3.34",
-            "Score": 38.07203838342471,
+            "Score": 39.97564030259595,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -800,6 +810,11 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Benched - Below Zebras Floor (40.0).",
