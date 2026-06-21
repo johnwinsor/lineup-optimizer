@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-21",
-    "last_updated": "2026-06-21T17:22:10.149448+00:00",
+    "last_updated": "2026-06-21T19:17:59.077517+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 674.94,
-    "narrative": "LawDog faces a favorable slate today, with **Geraldo Perdomo** (69.91) and **Luis Arraez** (67.31) leading our charge. **Geraldo Perdomo** is our strongest start, benefiting from a high-upside matchup against Paredes (4.94 xERA) and the efficiency of the #2 spot, while **Luis Arraez** capitalizes on the same vulnerable arm to provide a stable, high-floor anchor for our AVG category. We are also leaning heavily into the matchup against Gusto (4.55 xERA); both **Jung Hoo Lee** (63.73) and **Matt Chapman** (61.19) see their scores bolstered by the combination of a favorable pitcher and Gusto\u2019s slow delivery, which creates opportunistic environments for our baserunners to exploit. \n\nOur most challenging start/sit decision came down to **Masyn Winn** (57.11) versus **Jeremiah Jackson** (39.89). While **Masyn Winn** is positioned to take advantage of favorable wind conditions, the optimizer ultimately preferred him over **Jeremiah Jackson** due to a projected lineup spot in the middle of the order compared to the precarious #9 slot assigned to **Jeremiah Jackson**. Risk remains elevated for **Taylor Ward** (43.98) and **Gavin Sheets** (46.12); both are facing elite arms in Sheehan and Eovaldi, respectively, and are forced into the lineup today despite being near our minimum threshold. With **Jos\u00e9 Ram\u00edrez** remaining on the IL, we are navigating a thinner bench, making it imperative that **Cal Raleigh** (60.41) delivers in his #2 spot to mitigate the volatility introduced by our weaker outfield starts. We remain vigilant regarding the pending lineups for **Bryson Stott** and **Taylor Ward**, as any shift downward in their batting order could necessitate a late-bench pivot to preserve our daily game caps.",
+    "total_efficiency_score": 670.63,
+    "narrative": "For today\u2019s slate, **Geraldo Perdomo** (69.91) and **Luis Arraez** (67.31) emerge as our primary engines, benefiting significantly from the matchup against Gusto. The combination of an elevated 4.55 xERA and a generous park factor allows both to maximize their reach, with **Geraldo Perdomo** gaining a massive 19% efficiency boost due to the favorable SP matchup. Similarly, **Jung Hoo Lee** (63.73) and **Tyler Freeman** (63.09) serve as high-floor anchors; **Tyler Freeman** is particularly well-positioned given a +14% park factor, while **Jung Hoo Lee** capitalizes on the stolen base environment created by Gusto\u2019s deliberate pace and moderate hold capabilities. **Cal Raleigh** (60.41) rounds out our top-tier targets, as his spot in the two-hole and a beneficial platoon edge against Tolle outweigh the moderate SP skill.\n\nThe most difficult roster decision involved **Jeremiah Jackson** (39.89), who narrowly missed the starting cut as he fell just below our strict 40.0 \"Zebras\" floor. While his base projection remained competitive, the negative impact of facing Sheehan (3.34 xERA) and being relegated to the nine-hole ultimately pushed him to the bench in favor of higher-ceiling options. Meanwhile, we must remain cautious with **Jonathan Aranda** (41.72) and **Taylor Ward** (43.98), both of whom face dangerous arms in Alvarez and Sheehan, respectively. **Taylor Ward** specifically faces an uphill battle against Sheehan\u2019s elite suppression skills; if he were not leading off, he likely would have been a candidate for the pine. We are holding tight on our bench assets like **Jos\u00e9 Ram\u00edrez** and **Yainer Diaz** as we monitor health and rest status, ensuring we preserve our game caps for matchups that offer a higher probability of offensive output.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -146,13 +146,8 @@
             "Slot": "SS",
             "Player": "Bryson Stott",
             "POS": "2B/SS",
-            "Score": 47.81962747363083,
+            "Score": 43.51586100100406,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.80",
@@ -182,13 +177,18 @@
                     "label": "Elite Hold SP (40% SB)",
                     "value": "-4%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "David Peterson (L)",
             "SP_xERA": "4.13",
             "Warning": "",
             "GameTime": "2026-06-21T23:20:00Z",
-            "Order": "6*",
+            "Order": "9",
             "Start": "11:20 PM"
         },
         {
@@ -428,11 +428,6 @@
             "Score": 43.981740041910804,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "52.73",
                     "type": "info"
@@ -462,7 +457,7 @@
             "SP_xERA": "3.34",
             "Warning": "",
             "GameTime": "2026-06-21T20:10:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "08:10 PM"
         },
         {
@@ -703,17 +698,12 @@
             "Slot": "BN",
             "Player": "Jeremiah Jackson",
             "POS": "2B/SS/3B/OF",
-            "Order": "9*",
+            "Order": "9",
             "Start": "08:10 PM",
             "Opponent": "Sheehan (R)",
             "SP_xERA": "3.34",
             "Score": 39.894502065555734,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.70",
@@ -740,7 +730,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
