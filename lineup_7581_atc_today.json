@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-22",
-    "last_updated": "2026-06-22T22:07:21.855683+00:00",
+    "last_updated": "2026-06-23T00:01:23.572132+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 706.51,
-    "narrative": "The Austin Waves offensive engine is led today by **Jackson Merrill**, whose 74.59 score represents the ceiling play for this slate. Facing G. Holmes (xERA 4.47), **Jackson Merrill** benefits from a massive 13% dynamic platoon boost and a prime #2 slot in the order, positioning him to maximize both run production and RBI. Joining him at the top of our priority list is **Kyle Tucker** (66.62) and **Gunnar Henderson** (67.48). While **Gunnar Henderson**\u2019s score is technically contingent on a pending lineup confirmation at #2, his matchup against the soft-tossing Aldegheri (5.75 xERA) provides an elite 19% SP skill advantage. We are also monitoring **Andy Pages** (62.80); while his raw metrics are strong, the inclusion of a \"Slow SP Delivery\" variable\u2014which statistically boosts his stolen base potential against the opposing battery\u2014makes him a high-efficiency anchor in the outfield.\n\nOur most difficult roster decision involved the marginal utility spots, ultimately resulting in **Miguel Vargas** and **Nolan Schanuel** landing on the bench. **Miguel Vargas** (47.86) was the most difficult cut; despite his favorable #2 spot in the order, his efficiency was suppressed by a matchup against Williams, whose profile mitigates the stolen base threat\u2014a non-negotiable metric for our roster construction. Similarly, **Wade Meckler** (40.42) remains in the lineup over the bench depth solely due to his positional necessity and platoon advantage against Bradish, despite his score teetering near our 40.0 floor. \n\nRisks today are concentrated on our \"Lineup Pending\" designations, specifically **Gunnar Henderson** and **Coby Mayo**. While both are projected for heavy run-scoring opportunities against Aldegheri, any shuffling in the batting order\u2014specifically moving **Coby Mayo** out of the #5 spot\u2014could compress their efficiency scores toward our 40-point threshold. We are comfortable with **Drake Baldwin** (59.70) as our primary catcher, as his xwOBA of .380 against King suggests he is under-projected by raw models, provided he maintains his projected #2 spot in the batting order.",
+    "total_efficiency_score": 706.98,
+    "narrative": "The Austin Waves head into today\u2019s slate with a lineup anchored by the high-upside profiles of **Jackson Merrill** (74.60) and **Gunnar Henderson** (67.48). **Jackson Merrill** is our primary target against Holmes, benefiting from a massive 13% boost due to dynamic platoon positioning and a favorable matchup against a 4.47 xERA starter. Meanwhile, **Gunnar Henderson** and **Coby Mayo** (65.57) are poised to feast on Aldegheri\u2019s 5.75 xERA; despite a platoon penalty for **Gunnar Henderson**, his elite base projection and the soft matchup keep him as a top-tier play. We are also monitoring **Andy Pages**, who earns a 62.80 score thanks to a rare confluence of favorable park factors and the tendency of opposing pitcher Matthews to work at a pace that creates high-efficiency stolen base opportunities\u2014a critical edge given our internal weight on SB scarcity.\n\nOur most difficult lineup management decision centered on the bench, where **Miguel Vargas** (47.86) and **Nolan Schanuel** (47.80) both finished just shy of the starting threshold. **Miguel Vargas** remains the most intriguing \"next man up,\" but he was ultimately relegated to the bench because his projection is heavily hampered by a matchup against Williams, whose ability to limit baserunners directly devalues **Miguel Vargas**\u2019s specific utility profile. Similarly, **Nasim Nunez** and **Luis Garc\u00eda Jr.** were evaluated but kept below the 40-point floor due to the combination of sub-optimal batting orders and facing Mayza, whose profile as an elite situational pitcher makes him a difficult target for our speed-first specialists. We are proceeding with **Wade Meckler** in the final OF slot; although his 40.42 score is marginal, his current lineup placement and the projected game flow provide enough upside to maintain his roster spot over the available bench alternatives.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -198,11 +198,6 @@
             "Score": 67.4803908344757,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "60.65",
                     "type": "info"
@@ -237,7 +232,7 @@
             "SP_xERA": "5.75",
             "Warning": "",
             "GameTime": "2026-06-23T01:38:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "01:38 AM"
         },
         {
@@ -365,7 +360,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kyle Bradish (R)",
+            "Opponent": "Bradish (R)",
             "SP_xERA": "3.60",
             "Warning": "",
             "GameTime": "2026-06-23T01:38:00Z",
@@ -508,13 +503,8 @@
             "Slot": "UTIL",
             "Player": "Coby Mayo",
             "POS": "1B/3B",
-            "Score": 65.09318584481446,
+            "Score": 65.56885273141862,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.57",
@@ -541,8 +531,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 }
             ],
@@ -550,7 +540,7 @@
             "SP_xERA": "5.75",
             "Warning": "",
             "GameTime": "2026-06-23T01:38:00Z",
-            "Order": "5*",
+            "Order": "4",
             "Start": "01:38 AM"
         }
     ],
@@ -857,7 +847,7 @@
             "POS": "1B",
             "Order": "2",
             "Start": "01:38 AM",
-            "Opponent": "Kyle Bradish (R)",
+            "Opponent": "Bradish (R)",
             "SP_xERA": "3.60",
             "Score": 47.795000051679644,
             "Breakdown": [
@@ -1011,11 +1001,6 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 },
                 {
