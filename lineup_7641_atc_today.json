@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-23",
-    "last_updated": "2026-06-23T19:52:42.774523+00:00",
+    "last_updated": "2026-06-23T21:26:13.624460+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 798.07,
-    "narrative": "Today\u2019s slate for LawDog centers on exploiting a favorable cluster of matchups against middle-of-the-road pitching, with **Cal Raleigh** (68.07) leading the charge. **Cal Raleigh** benefits significantly from the wind blowing out and a prime #2 hole placement against Keller, making him our strongest play for power production. He is closely followed by **Luis Arraez** (66.78) and **Matt Chapman** (66.58), both of whom are projected to feast on Aaron Civale. While **Luis Arraez** and **Matt Chapman** await official lineup confirmation, the soft xERA of 4.86 against Civale creates a high-floor scenario, bolstered by positive wind conditions that lift their outlooks into our elite tier. Similarly, **Daulton Varsho** (65.84) and **Jung Hoo Lee** (65.65) command must-start status due to high dynamic platoon advantages and opportunistic matchups that play into their respective skill sets.\n\nThe most difficult decision on the bench involved **Geraldo Perdomo**, who hovered at a 55.34 score. He ultimately fell short of the starting rotation because the optimizer favored the higher raw efficiency of **Masyn Winn** (55.95) and **Tyler Freeman** (58.30). While **Geraldo Perdomo** offers strong positional flexibility, **Masyn Winn** benefits from an opportunistic edge against a slower-delivering pitcher, which we weight heavily given our league's desperate need for stolen bases. Meanwhile, **Yainer Diaz** (47.28) remains our most precarious start; while his raw talent keeps him in the lineup, his matchup against a high-caliber arm like Bieber drags his efficiency down, necessitating a close watch for late-game defensive substitutions. \n\nManagers should remain alert regarding the \"Lineup Pending\" status for **Luis Arraez**, **Matt Chapman**, **Gavin Sheets**, **Taylor Ward**, **Jung Hoo Lee**, and **Jeremiah Jackson**. While the projections assume historical batting order spots, any shift down the lineup\u2014particularly for **Jeremiah Jackson**, who is currently slotted in the #8 spot\u2014could further suppress their scoring potential. We are monitoring **Jeremiah Jackson** specifically, as his value is tethered to his elite catcher speed; if he drops out of the optimal portion of the order, he becomes a prime candidate for a mid-day pivot. Finally, ensure **Jos\u00e9 Ram\u00edrez** remains safely on the IL to avoid any unnecessary roster complications while he recovers.",
+    "narrative": "For June 23, 2026, **Cal Raleigh** headlines our starts with a 68.07 efficiency score, benefiting significantly from a favorable matchup against M. Keller and a +11% boost from the opposing pitcher\u2019s skill profile. He is closely chased by **Luis Arraez** (66.78) and **Matt Chapman** (66.58), both of whom capitalize on a soft matchup against Aaron Civale. While **Luis Arraez** carries some BvP risk, his role at the top of the order and positive wind conditions outweigh the noise. **Jonathan Aranda** is another high-floor play at 63.49; his dynamic platoon edge (+12%) against Avila and strong xwOBA of .376 make him a superior utility option compared to the more volatile profiles on our bench.\n\nThe optimizer\u2019s toughest exclusion today was **Geraldo Perdomo**, who finished with a 55.34 score, just missing the cut behind **Masyn Winn**. While **Geraldo Perdomo**\u2019s efficiency is solid, **Masyn Winn** edged him out due to the potential for stolen bases\u2014a critical priority for LawDog\u2014coupled with a favorable matchup against the left-handed E. Rodriguez. Note that several lineup slots, including **Luis Arraez**, **Matt Chapman**, **Gavin Sheets**, **Taylor Ward**, **Jung Hoo Lee**, and **Jeremiah Jackson**, are based on projected batting orders; any mid-day shuffling in these lineups could fluctuate these efficiency scores. We remain cautious with **Jeremiah Jackson** (56.58), whose efficiency is suppressed by a bottom-of-the-order assignment and a difficult opposing catcher, but his presence remains necessary to balance our overall team velocity requirements.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -135,6 +135,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "BvP Weak (27 PA)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
@@ -228,7 +233,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Eduardo Rodriguez (L)",
+            "Opponent": "Rodriguez, Ed (L)",
             "SP_xERA": "4.67",
             "Warning": "",
             "GameTime": "2026-06-23T23:45:00Z",
@@ -272,7 +277,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Sonny Gray (R)",
+            "Opponent": "Gray, S (R)",
             "SP_xERA": "3.73",
             "Warning": "",
             "GameTime": "2026-06-24T00:40:00Z",
@@ -735,17 +740,12 @@
             "Slot": "BN",
             "Player": "Geraldo Perdomo",
             "POS": "SS",
-            "Order": "2*",
+            "Order": "2",
             "Start": "11:45 PM",
             "Opponent": "Leahy (R)",
             "SP_xERA": "4.14",
             "Score": 55.338837749058214,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.83",
@@ -777,7 +777,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
