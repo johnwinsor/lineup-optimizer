@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-22",
-    "last_updated": "2026-06-23T00:00:54.213912+00:00",
+    "last_updated": "2026-06-23T02:39:08.634289+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 527.0,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with a clear focus on stolen base efficiency against exploitable batteries. **Corbin Carroll** (77.76) stands as our premier play, boasting the highest score on the board. His favorable platoon advantage against Pallante, combined with a slow delivery from the pitcher that signals green lights on the basepaths, makes him our anchor. Similarly, **Brice Turang** (68.62) and **Jose Caballero** (66.13) are locked in as high-leverage starts. **Jose Caballero** specifically benefits from an impressive 13% boost due to the platoon split against the southpaw Valdez, alongside a favorable delivery profile that rewards our emphasis on aggressive baserunning. \n\nThe most difficult decision on the periphery was the inclusion of **Kyle Karros** (58.66) over other bench alternatives. While **Kyle Karros** occupies the bottom of the order, his score was vaulted by a massive +14% park factor, outperforming the raw projections of other utility options. **James Wood** (52.59) remains a volatile but necessary inclusion; while his xwOBA of 0.402 is elite, his score is tempered by a negative 19% adjustment against Mayza\u2019s specific arm profile and a tough catcher pop-time matchup. We are closely monitoring **Dalton Rushing** (50.92) and **Travis Bazzana** (49.02); while their scores are marginal, they remain in the lineup to protect our daily game caps. **Zach McKinstry** (45.52) narrowly avoids the bench, though his production is dampened by the -8% penalty associated with the #9 spot in the order against Cole, who remains a respectable threat despite the projection variance. \n\nWe continue to navigate a depleted depth chart, with **Vinnie Pasquantino** confirmed on the IL and both **Josh Naylor** and **Tyler Soderstrom** sidelined by team off-days. We are avoiding any exposure to **Mickey Moniak**, who is currently benched, as well as the inactive **Giancarlo Stanton**, **Seiya Suzuki**, **Trevor Story**, **Gabriel Moreno**, **Max Muncy**, **Henry Bolte**, **Alex Freeland**, **Cole Young**, and **Carson Williams**. Aside from the lingering injury concerns, there are no immediate weather-related risks, though we advise close attention to **James Wood** to ensure his park-adjusted efficiency holds against the difficult lefty matchup.",
+    "total_efficiency_score": 528.93,
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate prioritizing stolen base upside and favorable platoon splits to compensate for a tight cap environment. **Corbin Carroll** is our clear headliner with an Elite score of 77.76; he benefits significantly from a soft matchup against Pallante and a slow opposing delivery that creates a high-probability environment for him to exploit the basepaths. Similarly, **Brice Turang** (68.63) and **Jose Caballero** (66.13) project as high-ceiling plays today. **Turang**\u2019s move to the #3 hole provides essential RBI protection, while **Caballero** is a critical leverage play against Valdez; despite hitting #8, his dynamic platoon advantage against the lefty and the favorable delivery metrics make him a more efficient start than many of our mid-tier options. **Kyle Karros** also cracks the 60 threshold, bolstered by an extreme park factor (+14%) that forces his inclusion despite the lower batting order position.\n\nOur most difficult decision revolved around the bottom of the outfield, where **James Wood** (52.60) was edged out of a more prominent role by the efficiency of our speed-first strategy. While **Wood** carries an elite xwOBA of .402, he faces a tough tactical hurdle in Mayza\u2019s elite 1.88s catcher pop time, which directly suppresses his stolen base projection. Consequently, the optimizer favored the stolen base environment surrounding **Caballero** and **Carroll**. Meanwhile, **Dalton Rushing**, **Travis Bazzana**, **Austin Riley**, and **Zach McKinstry** round out the active roster, though **Bazzana**\u2019s score is slightly dampened by the L/L matchup against Kay. We remain sidelined regarding **Vinnie Pasquantino**, who stays on the IL, while **Josh Naylor**, **Tyler Soderstrom**, and **Mickey Moniak** are excluded due to team off-days or confirmed benchings. We continue to monitor the status of **Giancarlo Stanton**, **Seiya Suzuki**, **Trevor Story**, **Gabriel Moreno**, **Max Muncy**, **Henry Bolte**, **Alex Freeland**, **Cole Young**, and **Carson Williams** for future spot starts, but for today, the focus remains on leveraging the speed of our active nine.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -386,7 +386,7 @@
             "Slot": "UTIL",
             "Player": "Kyle Karros",
             "POS": "3B",
-            "Score": 58.66228585139202,
+            "Score": 60.596207362976365,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -419,8 +419,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #9",
-                    "value": "-8%",
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
                 }
             ],
@@ -428,7 +428,7 @@
             "SP_xERA": "4.34",
             "Warning": "",
             "GameTime": "2026-06-23T00:40:00Z",
-            "Order": "9",
+            "Order": "8",
             "Start": "12:40 AM"
         }
     ],
@@ -500,11 +500,51 @@
             "Player": "Mickey Moniak",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "12:40 AM",
+            "Opponent": "Bennett (L)",
+            "SP_xERA": "4.34",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "56.11",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -512,7 +552,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-23T00:40:00Z"
         },
         {
             "Slot": "BN",
@@ -648,11 +688,46 @@
             "Player": "Alex Freeland",
             "POS": "2B/SS/3B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:40 PM",
+            "Opponent": "Matthews (R)",
+            "SP_xERA": "4.05",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "47.81",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -660,7 +735,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-22T23:40:00Z"
         },
         {
             "Slot": "BN",
