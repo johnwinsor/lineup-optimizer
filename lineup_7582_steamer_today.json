@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-24",
-    "last_updated": "2026-06-24T20:29:01.797932+00:00",
+    "last_updated": "2026-06-24T22:08:37.360865+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 748.05,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a potent offensive outlook, anchored by **Yordan Alvarez** (81.17) and **Trea Turner** (79.76). **Yordan Alvarez** remains the premier play against Yesavage, benefiting from a superb 0.448 xwOBA and a favorable platoon advantage that drives his efficiency toward the elite tier. Meanwhile, **Trea Turner** exploits the softest matchup of the day against Palmquist; with a 6.00 xERA opposing him and a 100% stolen base opportunity against the pitcher\u2019s delivery, **Trea Turner** is a lock for multi-category production. **Christian Yelich** also earns a strong recommendation (74.33) as he faces Lowder in a setup that maximizes his platoon edge, positioning him to lead the offensive effort alongside our top-tier performers.\n\nThe depth of the roster forces some difficult tactical calls, specifically regarding our bench. **Lars Nootbaar** (43.39) served as the primary bubble candidate, ultimately pushed out by the higher efficiency scores of **Pete Crow-Armstrong** (60.02) and **Carson Benge** (61.40). While **Lars Nootbaar** maintains a respectable floor, his negative platoon split against Bratt suppressed his ceiling compared to the speed-oriented profiles of **Pete Crow-Armstrong** and **Carson Benge**, both of whom are prioritized for their elite stolen base potential. We remain cautious regarding **Casey Schmitt**, whose 45.53 score is contingent on a pending lineup slot; if he drops out of the three-hole, his value will dip further. Additionally, keep an eye on **Pete Crow-Armstrong** against McLean; while his platoon advantage is strong, the threat of an elite catcher behind the plate (1.87s pop time) introduces a slight drag on his SB probability, requiring active monitoring throughout the game.",
+    "total_efficiency_score": 721.74,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Yordan Alvarez** (81.17) and **Trea Turner** (79.76) leading the charge as our clear-cut elite plays. **Yordan Alvarez** benefits from a high xwOBA and a favorable matchup against Yesavage, while **Trea Turner** remains our primary engine for the stolen base category; his matchup against Palmquist, who carries a high 6.00 xERA, is further augmented by a stolen base efficiency factor driven by the pitcher's slow delivery. **Christian Yelich** also earns a strong recommendation (74.33) due to a significant platoon advantage against Lowder, while **Caleb Durbin** (69.13) provides a high-upside play, bolstered by the soft matchup against Freeland and a 90% projected stolen base opportunity.\n\nThe most difficult decision on the bench involved **Jacob Gonzalez**, who posted a 42.74, narrowly missing the start over **Chase Meidroth** (48.36). While **Jacob Gonzalez** offers decent underlying metrics, his placement in the 9-hole resulted in a negative order adjustment that proved insurmountable against the optimization floor. Meanwhile, our lineup faces some volatility at the fringes; **Pete Crow-Armstrong** (48.55) and **Carson Benge** (46.56) are active despite facing difficult matchups against Manaea and Imanaga, respectively. While both are saved by their leadoff spots and projected wind conditions, their low scores reflect the high risk posed by these elite opposing arms. We will monitor for any late lineup shifts, particularly regarding the status of **Nelson Velazquez** (52.34) as he looks to capitalize on his platoon advantage against Bratt.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -66,11 +66,6 @@
             "Score": 45.531435285596174,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "46.82",
                     "type": "info"
@@ -110,7 +105,7 @@
             "SP_xERA": "4.08",
             "Warning": "",
             "GameTime": "2026-06-25T01:45:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "01:45 AM"
         },
         {
@@ -233,6 +228,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Slow SP Delivery (100% SB)",
                     "value": "+4%",
                     "type": "positive"
@@ -243,7 +243,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Carson Palmquist (L)",
+            "Opponent": "Palmquist (L)",
             "SP_xERA": "6.00",
             "Warning": "",
             "GameTime": "2026-06-24T22:45:00Z",
@@ -435,7 +435,7 @@
             "Slot": "OF4",
             "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Score": 60.02430480445401,
+            "Score": 48.5500504361392,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -454,37 +454,37 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-17%",
+                    "value": "-15%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Elite Catcher (1.87s)",
-                    "value": "-2.0%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
                     "type": "negative"
                 },
                 {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "McLean (R)",
-            "SP_xERA": "3.32",
+            "Opponent": "Manaea (L)",
+            "SP_xERA": "3.39",
             "Warning": "",
-            "GameTime": "2026-06-24T17:10:00Z",
+            "GameTime": "2026-06-24T23:10:00Z",
             "Order": "1",
-            "Start": "05:10 PM"
+            "Start": "11:10 PM"
         },
         {
             "Slot": "OF5",
             "Player": "Carson Benge",
             "POS": "OF",
-            "Score": 61.39870082470588,
+            "Score": 46.55710594205635,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -502,27 +502,27 @@
                     "type": "negative"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "+15%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Assad (R)",
-            "SP_xERA": "4.64",
+            "Opponent": "Imanaga (L)",
+            "SP_xERA": "3.98",
             "Warning": "",
-            "GameTime": "2026-06-24T17:10:00Z",
+            "GameTime": "2026-06-24T23:10:00Z",
             "Order": "1",
-            "Start": "05:10 PM"
+            "Start": "11:10 PM"
         },
         {
             "Slot": "UTIL",
@@ -684,11 +684,11 @@
             "Slot": "BN",
             "Player": "Lars Nootbaar",
             "POS": "OF",
-            "Order": "5",
+            "Order": "7",
             "Start": "11:45 PM",
             "Opponent": "Bratt (L)",
             "SP_xERA": "4.00",
-            "Score": 43.39361391270439,
+            "Score": 41.26647597580711,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -711,9 +711,9 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
                     "label": "Benched - Lower projected efficiency than other options.",
@@ -849,11 +849,11 @@
             "Slot": "BN",
             "Player": "Pedro Ramirez",
             "POS": "2B/3B",
-            "Order": "7",
-            "Start": "05:10 PM",
-            "Opponent": "McLean (R)",
-            "SP_xERA": "3.32",
-            "Score": 35.767477783069644,
+            "Order": "8",
+            "Start": "11:10 PM",
+            "Opponent": "Manaea (L)",
+            "SP_xERA": "3.39",
+            "Score": 37.1716613887552,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -872,7 +872,7 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-17%",
+                    "value": "-15%",
                     "type": "negative"
                 },
                 {
@@ -881,9 +881,14 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Benched - Below Zebras Floor (40.0).",
@@ -892,7 +897,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-06-24T17:10:00Z"
+            "GameTime": "2026-06-24T23:10:00Z"
         },
         {
             "Slot": "BN",
