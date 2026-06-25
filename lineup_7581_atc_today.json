@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-25",
-    "last_updated": "2026-06-25T19:47:45.089321+00:00",
+    "last_updated": "2026-06-25T21:24:20.183570+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 110.95,
-    "narrative": "For today\u2019s slate on 2026-06-25, the Austin Waves offense centers heavily on **Vladimir Guerrero Jr.**, who anchors our lineup with a 69.27 efficiency score. Facing Gore, **Vladimir Guerrero Jr.** benefits from a favorable park factor and a robust +7% boost from his dynamic platoon advantage against a lefty. While the matchup against a 3.93 xERA starter is moderate, **Vladimir Guerrero Jr.** remains our highest-ceiling asset, projected to maximize our runs and RBI potential in the heart of the order. Conversely, **Luis Garc\u00eda Jr.** presents a more volatile profile; despite his 41.68 score, his outlook is suppressed by the elite 2.84 xERA of S\u00e1nchez, C. The optimizer kept him in the starting nine largely due to his presumed #2 spot in the order, but the negative platoon adjustment against the lefty arm makes him a marginal start that we are monitoring closely.\n\nThe most difficult bench decision involved **Nasim Nunez**, who finished just outside the starting threshold with a 39.04 score. While **Nasim Nunez** possesses the elite sprint speed we covet for our stolen base-starved categories, the combination of a projected #9 batting order slot and the aforementioned difficulty of facing S\u00e1nchez, C forced him to the pine. **Curtis Mead** also hovered near the cutoff at 37.18, but the optimizer favored the higher lineup placement of our starters over the marginal gain provided by **Curtis Mead**'s situational utility. With **Kyle Tucker** and **Gunnar Henderson** enjoying scheduled off-days, our bench depth is intentionally thin, leaving us to rely on our active core to navigate these tough matchups without the ability to pivot if late-inning defensive substitutions arise.",
+    "total_efficiency_score": 110.89,
+    "narrative": "The Austin Waves enter today\u2019s slate with a concentrated offensive profile, anchored by the reliable output of **Vladimir Guerrero Jr.**, who headlines our lineup with a 69.27 score. He faces Gore, whose 3.93 xERA suggests a prime environment for **Vladimir Guerrero Jr.** to leverage his dynamic platoon advantage against the left-handed starter. While the rest of the roster faces a difficult hurdle today with several key bats idle, **Vladimir Guerrero Jr.** remains our primary engine for counting stats, benefiting from his favorable #3 spot in the order. \n\nOur most difficult roster decision involved **Nasim Nunez**, who narrowly cleared the 40-point threshold to remain in the lineup despite a challenging matchup against S\u00e1nchez, C. While **Nasim Nunez** carries a pedestrian 41.62 score, his inclusion is a tactical necessity to protect our stolen base metrics; his speed profiles as a ceiling-raiser even against an elite arm like S\u00e1nchez, C. Conversely, **Curtis Mead** came closest to disrupting this configuration, landing at 37.18. Ultimately, the optimizer sidelined **Curtis Mead** because the high xERA of the opposing pitcher suppressed his efficiency floor, rendering him too risky to start when compared to our baseline requirements. With **Kyle Tucker**, **Gunnar Henderson**, and **Luis Robert Jr.** all unavailable due to scheduling or injury, the margin for error is razor-thin today; we are banking on **Nasim Nunez** to provide the necessary spark on the basepaths while **Vladimir Guerrero Jr.** carries the heavy lifting in the middle of the order.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -50,19 +50,14 @@
             "Start": "11:07 PM"
         },
         {
-            "Slot": "2B",
-            "Player": "Luis Garc\u00eda Jr.",
-            "POS": "1B/2B",
-            "Score": 41.67552528901978,
+            "Slot": "SS",
+            "Player": "Nasim Nunez",
+            "POS": "2B/SS",
+            "Score": 41.6166942957661,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "54.57",
+                    "value": "51.09",
                     "type": "info"
                 },
                 {
@@ -81,21 +76,26 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-15%",
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-2.0%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "S\u00e1nchez, C (L)",
             "SP_xERA": "2.84",
             "Warning": "",
             "GameTime": "2026-06-25T22:45:00Z",
-            "Order": "2*",
+            "Order": "7",
             "Start": "10:45 PM"
         }
     ],
@@ -226,6 +226,25 @@
         },
         {
             "Slot": "BN",
+            "Player": "Luis Garc\u00eda Jr.",
+            "POS": "1B/2B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
             "Player": "Jorge Polanco",
             "POS": "2B/3B",
             "Order": "-",
@@ -328,65 +347,6 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Nasim Nunez",
-            "POS": "2B/SS",
-            "Order": "9*",
-            "Start": "10:45 PM",
-            "Opponent": "S\u00e1nchez, C (L)",
-            "SP_xERA": "2.84",
-            "Score": 39.04246578262594,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "51.09",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Elite Catcher (1.86s)",
-                    "value": "-2.0%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-06-25T22:45:00Z"
         },
         {
             "Slot": "BN",
@@ -525,17 +485,12 @@
             "Slot": "BN",
             "Player": "Curtis Mead",
             "POS": "1B/2B/3B",
-            "Order": "2*",
+            "Order": "2",
             "Start": "10:45 PM",
             "Opponent": "S\u00e1nchez, C (L)",
             "SP_xERA": "2.84",
             "Score": 37.176094568718355,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.04",
@@ -567,7 +522,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }

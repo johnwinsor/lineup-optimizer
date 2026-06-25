@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-25",
-    "last_updated": "2026-06-25T19:46:46.577056+00:00",
+    "last_updated": "2026-06-25T21:23:15.061364+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 733.07,
-    "narrative": "The Zurich Zebras face a high-upside slate today, anchored by **Yordan Alvarez**, who leads the team with an elite 82.97 score against Melton. His matchup is optimized by a favorable SP xERA of 4.62 and a projected #2 spot in the order, pairing perfectly with his 0.449 xwOBA. We are also leaning heavily into our speed-focused strategy today with **Pete Crow-Armstrong** (75.59), who remains a must-start despite the tough matchup against Freddy Peralta; his projected leadoff spot and a 92% stolen base success rate against the starter\u2019s slow delivery make him an essential engine for our SB category. **Junior Caminero** (70.81) and **Trea Turner** (66.52) also provide significant ceiling, with the latter benefiting from a +10% order bonus that keeps him in high-priority territory despite a respectable 3.95 xERA from the opposition.\n\nPlatoon advantages play a massive role in today\u2019s optimization, specifically for **Lars Nootbaar** (60.52) and **Colt Keith** (61.75). **Lars Nootbaar** is enjoying a +11% dynamic platoon bump against Zac Gallen, which pushes his value well above his base projection. Meanwhile, **Carson Benge** was our most difficult bench decision, falling just short at 39.99. While his projected leadoff spot provided a +10% boost, the optimizer favored the higher overall efficiency of our starting OF/Utility slots, ultimately capping **Carson Benge** due to a harsh -15% drag from Matthew Boyd\u2019s skill profile and a disadvantageous L/L platoon matchup. We will continue to monitor the \"Lineup Pending\" status for **Pete Crow-Armstrong** and **Yordan Alvarez** closely, as any shift away from their projected slots could necessitate a recalibration of our expected production.",
+    "total_efficiency_score": 735.48,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Yordan Alvarez** providing the clear anchor; despite a pending lineup, his projected score of 82.97 against a favorable 4.62 xERA arm makes him the premier play in the order. We are also leaning heavily into our speed-focused strategy, specifically with **Pete Crow-Armstrong**. His 75.59 score is elevated significantly by a 92% stolen base success probability against the opposing battery, capitalizing on a slow delivery profile to manufacture value in our scarcest category. **Junior Caminero** (70.81) and **Trea Turner** (66.52) round out our high-leverage core, as both benefit from favorable order positioning and positive SP xERA matchups that suggest high run-scoring potential.\n\nOur most difficult decision of the day involved the benching of **Carson Benge**. Despite a decent floor, his 39.99 score fell short due to a stiff matchup against a 3.38 xERA pitcher and a neutral-to-negative platoon split (L/L), causing the optimizer to favor the higher-ceiling profiles of **Colt Keith** and **Lars Nootbaar**. While **Nootbaar** offers a strong 60.52 score, we are monitoring a 42% rain risk that could compromise his plate appearances. Elsewhere, we continue to stash **Hyeseong Kim** and **Rece Hinds** in the minors, while **Christian Yelich** remains sidelined today due to a lack of a scheduled game. We remain confident that the aggressive deployment of **Pete Crow-Armstrong** and **Trea Turner** will provide the necessary buffer to maintain our efficiency targets across all five categories.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -58,7 +58,7 @@
             "Slot": "1B",
             "Player": "Casey Schmitt",
             "POS": "1B/2B/3B/OF",
-            "Score": 48.18645801050916,
+            "Score": 50.59578091103462,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -88,6 +88,11 @@
                 {
                     "label": "Order #3",
                     "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -135,7 +140,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Cam Schlittler (R)",
+            "Opponent": "Schlittler (R)",
             "SP_xERA": "3.30",
             "Warning": "",
             "GameTime": "2026-06-25T23:10:00Z",
@@ -179,7 +184,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Cade Cavalli (R)",
+            "Opponent": "Cavalli (R)",
             "SP_xERA": "3.95",
             "Warning": "",
             "GameTime": "2026-06-25T22:45:00Z",
@@ -316,7 +321,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Cade Cavalli (R)",
+            "Opponent": "Cavalli (R)",
             "SP_xERA": "3.95",
             "Warning": "",
             "GameTime": "2026-06-25T22:45:00Z",
@@ -329,11 +334,6 @@
             "POS": "OF",
             "Score": 75.58822446842969,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "59.99",
@@ -369,7 +369,7 @@
             "SP_xERA": "3.99",
             "Warning": "",
             "GameTime": "2026-06-25T23:10:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:10 PM"
         },
         {
@@ -453,9 +453,9 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Zac Gallen (R)",
+            "Opponent": "Gallen (R)",
             "SP_xERA": "4.58",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-06-25T23:45:00Z",
             "Order": "5",
             "Start": "11:45 PM"
@@ -633,7 +633,7 @@
             "POS": "OF",
             "Order": "1*",
             "Start": "11:10 PM",
-            "Opponent": "Matthew Boyd (L)",
+            "Opponent": "Boyd (L)",
             "SP_xERA": "3.38",
             "Score": 39.98987247626813,
             "Breakdown": [
@@ -857,17 +857,12 @@
             "Slot": "BN",
             "Player": "Pedro Ramirez",
             "POS": "2B/3B",
-            "Order": "8*",
+            "Order": "7",
             "Start": "11:10 PM",
             "Opponent": "Freddy Peralta (R)",
             "SP_xERA": "3.99",
             "Score": 0.0,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "0.00",
@@ -889,12 +884,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
