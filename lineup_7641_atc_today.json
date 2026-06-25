@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-24",
-    "last_updated": "2026-06-24T22:09:38.018994+00:00",
+    "last_updated": "2026-06-25T00:02:24.576190+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 717.33,
-    "narrative": "Today\u2019s slate for LawDog hinges on exploiting favorable platoon splits and high-probability stolen base environments. **Lawrence Butler** (68.54) and **Daulton Varsho** (67.02) headline our active roster, benefiting from high-upside matchups against right-handed pitching. **Lawrence Butler** remains the primary engine for offensive production today; his score is buoyed by a substantial +13% platoon adjustment and favorable winds, while **Daulton Varsho** offers a similar profile, utilizing strong park factors and the added leverage of hitting in the middle of the order. We are also looking for a significant contribution from **Geraldo Perdomo** (63.13) and **Tyler Freeman** (61.08). Both are premium plays today due to their high-leverage spots in the lineup, with **Tyler Freeman** specifically gaining a massive +14% boost from park factors that elevate him into elite start territory despite a neutral platoon outlook.\n\nThe most difficult decision of the day involved managing the bottom of our outfield and infield depth. **Bryson Stott** (60.03) narrowly cleared the \"Strong\" threshold by capitalizing on a soft matchup against a pitcher with a 6.00 xERA and a high-probability SB environment; his +19% SP skill boost was the deciding factor. **Matt Chapman** (54.72) sits on the cusp of our optimal lineup, as his value is highly sensitive to the leadoff spot and favorable wind conditions, though he remains a slightly lower-tier play compared to the high-efficiency potential of **Daulton Varsho**. While we continue to monitor the status of **Jos\u00e9 Ram\u00edrez**, **Will Smith**, **Dylan Beavers**, and **Ryan Waldschmidt** on the IL or in the minors, our current roster must maximize efficiency. We are closely tracking the lineup status for **Lawrence Butler**; as a \"Lineup Pending\" designation, any drop in his projected order would force an immediate re-evaluation of the bench depth, including our available reserves like **Gleyber Torres**, **Luis Arraez**, **Brendan Donovan**, **Gavin Sheets**, and **Drew Gilbert**.",
+    "total_efficiency_score": 706.38,
+    "narrative": "For today\u2019s slate, **Daulton Varsho** (67.02) and **Lawrence Butler** (63.32) headline our offensive output. **Daulton Varsho** benefits significantly from a favorable matchup against Burrows, where a combination of a hitter-friendly park and a +10% boost from a platoon advantage propels him into the upper echelon of our daily rankings. Similarly, **Lawrence Butler** is poised for a strong performance against Mahle; his elite platoon edge (+13%) and strong SP skill rating solidify his status as a must-start. **Geraldo Perdomo** (63.13) and **Tyler Freeman** (61.08) also provide substantial value, both earning high efficiency scores largely due to their premium spots in the batting order, which remains the primary catalyst for our run-scoring potential.\n\nThe most difficult roster decision today involved the marginal slot occupied by **Jung Hoo Lee** (42.81). While he makes the lineup, he sits precariously close to our \"below floor\" threshold. His score was dragged down by a combination of the opposing catcher\u2019s elite pop time and a disadvantageous platoon split against the lefty, Jump. The optimizer considered benching him for a safer defensive outlook, but his baseline projection remains just high enough to retain his spot. We continue to monitor the status of our injured core, specifically **Jos\u00e9 Ram\u00edrez**, **Will Smith**, **Dylan Beavers**, and **Ryan Waldschmidt**; their continued absence on the IL remains a significant drag on our ceiling, leaving players like **Jeremiah Jackson** and **Jonathan Aranda** to shoulder heavier loads despite lower individual efficiency scores. Be advised that while **Bryson Stott** (60.03) projects well, his matchup against Palmquist features a catcher with a 1.89s pop time, which slightly caps his upside in the stolen base department despite the favorable SP delivery metrics.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -273,7 +273,7 @@
             "Slot": "3B",
             "Player": "Matt Chapman",
             "POS": "3B",
-            "Score": 54.71770857964507,
+            "Score": 51.59098237509392,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -301,17 +301,17 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Gage Jump (L)",
+            "Opponent": "Jump (L)",
             "SP_xERA": "4.08",
             "Warning": "",
             "GameTime": "2026-06-25T01:45:00Z",
@@ -361,13 +361,8 @@
             "Slot": "OF2",
             "Player": "Lawrence Butler",
             "POS": "OF",
-            "Score": 68.54406314937587,
+            "Score": 63.32165833799484,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.42",
@@ -394,23 +389,23 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Mahle (R)",
             "SP_xERA": "4.37",
             "Warning": "",
             "GameTime": "2026-06-25T01:45:00Z",
-            "Order": "6*",
+            "Order": "7",
             "Start": "01:45 AM"
         },
         {
             "Slot": "OF3",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
-            "Score": 45.40731813979059,
+            "Score": 42.812614246088266,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -438,12 +433,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Gage Jump (L)",
+            "Opponent": "Jump (L)",
             "SP_xERA": "4.08",
             "Warning": "",
             "GameTime": "2026-06-25T01:45:00Z",
