@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-28",
-    "last_updated": "2026-06-28T20:07:40.545036+00:00",
+    "last_updated": "2026-06-28T21:56:52.364951+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 577.11,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate looking to leverage opportunistic matchups, led by **Max Muncy** (69.72) and **James Wood** (62.71). **Max Muncy** is our top play; while his order slot in the #7 hole is slightly suboptimal, he draws a favorable matchup against a struggling Aldegheri (5.54 xERA), and a helpful wind-out scenario boosts his power profile significantly. **James Wood** is our most volatile asset, facing a tough Bradish (3.52 xERA), but he earns the start due to a massive 16% park factor bump and his elite sprint speed\u2014a non-negotiable metric for our roster construction\u2014making him a lock for stolen base potential despite the pitcher's skill. Similarly, **Austin Riley** (60.39) provides a solid floor, benefiting from an exploitable Ray (4.48 xERA) and, like **Max Muncy**, seeing an efficiency lift from wind conditions favoring power hitters.\n\nOur most difficult roster decision involved **Alex Freeland** (48.72), who narrowly missed the cut behind the stability of **Travis Bazzana** (53.54) and **Kyle Karros** (54.48). While **Alex Freeland** offers switch-hitting versatility, his #8 spot in the lineup depressed his potential, whereas **Travis Bazzana** benefits from a high-leverage #2 spot that increases his exposure to run-producing opportunities. We have opted to bench **Zach McKinstry** (39.70) entirely, as his efficiency score failed to clear our 40.0 floor; his struggle against the high-skill Rasmussen (3.41 xERA) makes him a liability for our precious daily game caps. \n\nRisk management remains a priority today, specifically regarding **Jose Caballero** and **Corbin Carroll**. While **Jose Caballero** projects at 50.33, his status remains \"Lineup Pending,\" and he faces a difficult matchup against Gray; any change to his expected #6 position could further deteriorate his output. Meanwhile, **Corbin Carroll** (56.80) is dealing with a challenging park factor (-6%) and a difficult opponent in Rasmussen. We are relying on the dynamic platoon advantages for both **Josh Naylor** (60.22) and **Brice Turang** (60.08) to anchor our middle order, as both occupy the #3 spot and should provide the necessary volume to stabilize our scoring floor.",
+    "total_efficiency_score": 572.58,
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with **Max Muncy** (69.72) anchoring the lineup, representing our strongest play. **Max Muncy** benefits from a massive 19% SP skill boost against a favorable 5.54 xERA matchup, with wind blowing out providing the necessary volatility to elevate his ceiling well above the 60-point threshold. Meanwhile, **James Wood** (62.72) remains a high-leverage start; despite facing a tougher arm in Bradish, his immense park factor boost (+16%) and lead-off spot solidify his role as a primary engine for our category targets, particularly in stolen bases given his athletic profile. \n\nWe are leaning heavily into platoon advantages to navigate the middle of the order. **Brice Turang** (60.08) and **Austin Riley** (60.40) provide reliable output, with **Austin Riley** specifically benefiting from a wind-assisted park factor and a favorable matchup against Ray. The decision to prioritize **Max Muncy** and **Austin Riley** forced a tough call on **Alex Freeland**, who stands as our most significant bench casualty with a 48.73 score. **Alex Freeland** was nearly deployed to bolster our middle infield depth, but the optimizer ultimately favored the superior SP matchup and favorable wind conditions utilized by the active starters. \n\nRisks remain, particularly regarding our outfield efficiency. **Seiya Suzuki** (48.79) and **Jose Caballero** (45.81) occupy the lower end of our starting confidence interval. While **Seiya Suzuki** is in a decent spot due to the opposing pitcher\u2019s slow delivery\u2014offering potential for opportunistic bags\u2014**Jose Caballero** faces a steep 13% penalty due to platoon disadvantage, making him a candidate for mid-game substitution if the game script turns negative early. We are also noting the total absence of **Mickey Moniak** (0.00) from today's active lineup, ensuring we preserve our limited game caps by benching him entirely in favor of higher-floor contributors.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -322,13 +322,8 @@
             "Slot": "OF4",
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
-            "Score": 50.33740385763606,
+            "Score": 45.807037510448815,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "59.45",
@@ -353,13 +348,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "-13%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Gray, S (R)",
             "SP_xERA": "3.65",
             "Warning": "",
             "GameTime": "2026-06-28T23:20:00Z",
-            "Order": "6*",
+            "Order": "9",
             "Start": "11:20 PM"
         },
         {
@@ -462,11 +462,46 @@
             "Player": "Mickey Moniak",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "06:10 PM",
+            "Opponent": "Prielipp (L)",
+            "SP_xERA": "4.27",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "56.28",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -474,7 +509,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-28T18:10:00Z"
         },
         {
             "Slot": "BN",
