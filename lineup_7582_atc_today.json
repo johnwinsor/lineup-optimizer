@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-28",
-    "last_updated": "2026-06-28T18:06:40.599572+00:00",
+    "last_updated": "2026-06-28T20:07:18.000524+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 741.41,
-    "narrative": "The Zurich Zebras enter June 28th with a high-ceiling core, led by **Junior Caminero** (74.76) and **Yordan Alvarez** (74.67), who represent our strongest plays of the day. **Junior Caminero** benefits immensely from a favorable matchup against Me, Kelly, whose 4.85 xERA provides the most exploitable surface of the slate, while **Yordan Alvarez** continues to operate in an elite tier, sporting a 0.444 xwOBA that remains impervious to Flaherty\u2019s rotation. **Trea Turner** (69.55) and **Kyle Schwarber** (68.77) are also cleared for significant volume; while both face a minor park penalty, their high-leverage order positions and favorable platoon dynamics against P\u00e9rez, C keep them firmly in the \"Strong\" start category. Notably, **Pete Crow-Armstrong** (67.08) offers unique value today; despite a lower base projection, the combination of his top-tier sprint speed and a high-efficiency matchup against Woodruff makes him a priority for our critical SB accumulation goal.\n\nThe optimizer\u2019s most difficult bench decision involved **Carson Benge** (39.35), who fell just shy of our 40.0 floor. While **Carson Benge** brings consistent contact skills, his matchup against Luzardo\u2019s 3.33 xERA, compounded by a restrictive L/L platoon disadvantage, forced him to the bench in favor of higher-floor contributors. We are monitoring **Caleb Durbin** (57.10) closely, as his status remains pending; should he be scratched from the lineup, we may look toward the bench, though the drop-off in production from **Dillon Dingler** (37.30) and **Casey Schmitt** (36.09) suggests we should exercise caution with any mid-day swaps. Risk remains elevated for **Christian Yelich** (56.89), whose score was dragged down by a -13% dynamic platoon penalty against Rolison, and **Gary Sanchez** (55.65), who remains a marginal start as he contends with the same pitcher. Managers should be aware that **Hyeseong Kim** remains unavailable due to his current status with the Oklahoma City Comets.",
+    "total_efficiency_score": 740.36,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with a potent offensive outlook, anchored by **Junior Caminero** and **Yordan Alvarez**, who post the day's highest efficiency scores at 74.76 and 74.67, respectively. **Junior Caminero** benefits significantly from a favorable matchup against a 4.85 xERA starter and the structural advantage of the #3 spot, while **Yordan Alvarez** remains a locked-in asset due to his elite 0.444 xwOBA and platoon advantage. Meanwhile, we are aggressively leveraging our speed profile, prioritizing **Trea Turner** (69.55) and **Pete Crow-Armstrong** (67.08). **Pete Crow-Armstrong** is particularly well-positioned; despite a tough opponent, his matchup against a slow-delivery pitcher creates an optimal environment for stolen bases, a crucial scarcity multiplier for our roster construction.\n\nStrategic platoon management remains a volatile lever today. **Lars Nootbaar** (59.47) earns a spot start thanks to a strong 11% boost from a favorable dynamic platoon, while **Christian Yelich** (56.89) is forced to navigate a difficult 13% penalty against his own handedness. The most difficult personnel decision involved **Carson Benge**, who finished just shy of our 40.0 floor at 39.35. While **Carson Benge** shows promise, a 16% deduction for facing a sub-3.40 xERA arm and a severe 9% platoon penalty rendered him too risky compared to our active options. Similarly, **Dillon Dingler** was squeezed out, as the optimizer prioritized stability over his 36.56 output against a high-tier opponent.\n\nAs we look toward first pitch, the primary risk involves the high efficiency of the opposing arms facing **Colt Keith** and **Pete Crow-Armstrong**; both face sub-3.50 xERA hurlers, which suppresses their respective ceilings despite their favorable situational attributes. We are monitoring lineup adjustments closely, as any shift away from the top of the order for **Trea Turner**, **Pete Crow-Armstrong**, or **Christian Yelich** would immediately necessitate a reassessment of their daily efficiency scores. With the scarcity of stolen bases in our current 5x5 context, we are comfortable accepting these risks to keep **Trea Turner** and **Pete Crow-Armstrong** in the fold, relying on their volume and speed profiles to carry the day.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -92,7 +92,7 @@
             "Slot": "2B",
             "Player": "Colt Keith",
             "POS": "1B/2B/3B",
-            "Score": 52.287179392095986,
+            "Score": 51.24143580425407,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -118,6 +118,11 @@
                     "label": "Platoon",
                     "value": "+7%",
                     "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #2",
@@ -178,11 +183,6 @@
             "Score": 57.10050870058473,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "52.35",
                     "type": "info"
@@ -212,7 +212,7 @@
             "SP_xERA": "4.09",
             "Warning": "",
             "GameTime": "2026-06-28T23:20:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "11:20 PM"
         },
         {
@@ -703,55 +703,20 @@
             "Slot": "BN",
             "Player": "Casey Schmitt",
             "POS": "1B/2B/3B/OF",
-            "Order": "3",
-            "Start": "08:05 PM",
-            "Opponent": "Sale (L)",
-            "SP_xERA": "3.01",
-            "Score": 36.09100165479632,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Base",
-                    "value": "47.35",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "60%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-11%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Benched - Below Zebras Floor (40.0).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-06-28T20:05:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
@@ -761,7 +726,7 @@
             "Start": "05:40 PM",
             "Opponent": "Brown, H (R)",
             "SP_xERA": "3.40",
-            "Score": 37.30358711998573,
+            "Score": 36.557515377586014,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -786,6 +751,11 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
                     "type": "negative"
                 },
                 {
@@ -933,11 +903,46 @@
             "Player": "Pedro Ramirez",
             "POS": "2B/3B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "06:10 PM",
+            "Opponent": "Woodruff (R)",
+            "SP_xERA": "3.43",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "0.00",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-14%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -945,7 +950,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-28T18:10:00Z"
         }
     ]
 }

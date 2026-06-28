@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-28",
-    "last_updated": "2026-06-28T18:07:31.287196+00:00",
+    "last_updated": "2026-06-28T20:07:37.066516+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 636.54,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with a clear mandate: exploit high-upside matchups against Aldegheri and capitalize on prime lineup positioning. **Max Muncy** (67.46) and **Henry Bolte** (65.40) stand as our elite plays, both benefiting from a massive +19% SP skill boost against the favorable Aldegheri. **Henry Bolte** is particularly dangerous, as his leadoff status provides a 10% order bonus and immense potential for counting stats in what projects to be a high-scoring affair. **James Wood** (64.47) remains a top-tier start despite a 30% rain risk; his 16% park factor enhancement and leadoff duties against Bradish make him a high-ceiling anchor, provided he stays on the field.\n\nPlatoon edges are heavy contributors to today\u2019s board, with **Max Muncy** and **Kyle Karros** receiving significant boosts (+7% each) to solidify their roles. **Austin Riley** (61.15) overcomes a sub-optimal park factor with an 11% skill advantage against Ray, while **Josh Naylor** (60.76) holds the floor at 1B by maximizing his #3 hole opportunities. The most difficult benching decision was **Travis Bazzana** (50.14), who narrowly missed the cut behind **Alex Freeland** (50.21). While **Travis Bazzana** carries a solid 8% order bonus, the optimizer favored **Alex Freeland** due to the favorable wind conditions, which added 5% to his efficiency score and ultimately broke the tie.\n\nWe are keeping a close eye on **Jose Caballero** (47.56); his lineup status remains pending, and his score is depressed by a 13% platoon disadvantage against Sonny Gray. We are opting to roll with him for the potential speed infusion, but we have **Zach McKinstry** on standby should the lineup shuffle force a move. While **Corbin Carroll** (57.59) sits slightly below the \"Strong\" threshold due to a difficult park and opposing pitcher matchup, his elite sprint speed remains essential to our 5x5 strategy, necessitating his inclusion despite the marginal efficiency rating. We remain cautious with **James Wood** given the storm clouds, but his underlying xwOBA of .394 suggests he is too explosive to bench regardless of the weather volatility.",
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with a clear objective: capitalize on favorable LHP matchups to bolster our production. The headlining plays of the day are **Max Muncy** (67.46) and **Henry Bolte** (65.40), both of whom benefit immensely from facing Aldegheri\u2019s 5.54 xERA. **Henry Bolte** is particularly intriguing; his combination of an elite batting order spot (#1) and favorable wind conditions creates a high ceiling for both Runs and potential SB opportunities. Similarly, **James Wood** (64.47) offers a premium start against Bradish. While the SP skill here is moderate, the 16% park factor boost and **James Wood**\u2019s strong xwOBA profile suggest he is the premier outfielder for our roster today, offering a rare combination of power and high-leverage lineup placement.\n\nThe most difficult decision on the card involved **Travis Bazzana**, who fell just shy of the starting lineup with a 50.14 score. While his #2 order spot is attractive, the optimizer prioritized the higher efficiency projections of **Alex Freeland** and **Kyle Karros**, the latter of whom benefits significantly from a platoon advantage against Prielipp. We are keeping a close eye on **Jose Caballero** (47.56); while he remains a starter for now, his score is tempered by a difficult matchup against Gray and a pending lineup status. If the confirmed lineup pushes **Jose Caballero** lower in the order, his utility as an SB threat may not justify the risk to our game caps.\n\nRisks remain, particularly with our marquee speedster **Corbin Carroll** (57.59), who faces a tough Rasmussen and is suffering from a significant park-factor drag today. Despite the suppressed score, **Corbin Carroll** remains in the lineup due to our strategic weighting of SB scarcity. We have benched **Zach McKinstry** (39.04) as he falls below our 40.0 efficiency floor, opting to preserve our caps rather than chase marginal production against a tough arm in Brown. All eyes remain on the official status of **Jose Caballero** to ensure we aren't burning a cap on a sub-optimal offensive slot.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -321,7 +321,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Sonny Gray (R)",
+            "Opponent": "Gray, S (R)",
             "SP_xERA": "3.65",
             "Warning": "",
             "GameTime": "2026-06-28T23:20:00Z",
@@ -377,7 +377,7 @@
             ],
             "Opponent": "Bradish (R)",
             "SP_xERA": "3.52",
-            "Warning": "\u26a0\ufe0f Rain Risk (30%)",
+            "Warning": "",
             "GameTime": "2026-06-28T17:35:00Z",
             "Order": "1",
             "Start": "05:35 PM"
@@ -631,11 +631,46 @@
             "Player": "Gabriel Moreno",
             "POS": "C",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "05:40 PM",
+            "Opponent": "Rasmussen (R)",
+            "SP_xERA": "3.41",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "52.67",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-14%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -643,7 +678,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-28T17:40:00Z"
         },
         {
             "Slot": "BN",
@@ -672,7 +707,7 @@
             "Start": "05:40 PM",
             "Opponent": "Brown, H (R)",
             "SP_xERA": "3.40",
-            "Score": 39.83639578551921,
+            "Score": 39.03966786980883,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -697,6 +732,11 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
                     "type": "negative"
                 },
                 {
