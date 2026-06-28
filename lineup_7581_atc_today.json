@@ -1,15 +1,15 @@
 {
     "target_date": "2026-06-27",
-    "last_updated": "2026-06-27T23:57:10.780350+00:00",
+    "last_updated": "2026-06-28T02:50:11.543615+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 731.14,
-    "narrative": "The Austin Waves are positioned for high-upside production today, headlined by the middle-infield tandem of **Vladimir Guerrero Jr.** (74.48) and **Luis Garc\u00eda Jr.** (73.66). Both benefit from excellent matchups against Quantrill and Young, respectively; **Luis Garc\u00eda Jr.** is particularly attractive with a +14% boost from a favorable platoon split and an aggressive batting order position. Meanwhile, **Nasim Nunez** (68.81) serves as our primary speed anchor in a high-efficiency spot, as the park factors and SP matchup significantly inflate his projected value, keeping him locked in despite a lower batting order rank. **Sam Antonacci** (65.51) also profiles as a must-start, as he leads off against Wacha, providing an immediate opportunity for runs and stolen base potential in a favorable configuration.\n\nWhile **Gunnar Henderson** (58.93) and **Coby Mayo** (57.96) face a sterner test against Griffin, they remain essential staples of our lineup due to the significant park factors in their favor, which offset the SP skill risk. The most difficult personnel decision today involved **Nolan Schanuel** (48.11), who was the final omission from the starting nine. Although **Nolan Schanuel** offers a high-floor profile, the aggressive upside offered by **Josh Lowe** (51.87) against Perkins\u2014boosted by a +14% platoon advantage\u2014ultimately won the day. We are monitoring **Jackson Merrill** (53.56) closely; while his matchup against Yamamoto carries the highest SP skill risk of the day (-16%), his elite speed profile necessitates his inclusion to maintain our edge in the scarce stolen base category. Managers should note that while **Drake Baldwin** (49.05) is our lowest-rated starter, the wind conditions at his park provide just enough of a lift to justify his presence over the bench depth.",
+    "total_efficiency_score": 726.05,
+    "narrative": "For today\u2019s slate, **Vladimir Guerrero Jr.** (74.48) and **Luis Garc\u00eda Jr.** (73.66) anchor the lineup as our most efficient assets. Both benefit immensely from a favorable matchup against Quantrill and Young respectively, where the xERA of the opposing starters creates a high-ceiling environment. **Luis Garc\u00eda Jr.** specifically capitalizes on a dynamic platoon advantage (+14%) to pair with his spot in the two-hole, while **Vladimir Guerrero Jr.** finds himself in an ideal rhythm against a pitcher with an elevated xERA of 4.81. Meanwhile, **Nasim Nunez** (66.06) and **Sam Antonacci** (65.51) continue to be vital in our pursuit of SB efficiency; despite the negative modifiers related to opposing catcher pop times and held-runner tendencies, their high-order placement and park factors maintain their status as strong, recommended starts.\n\nThe most difficult decision on the bench today involves **Nolan Schanuel** (48.11), who remains the odd man out despite a stable projection. While **Nolan Schanuel** provided a solid floor against Perkins, he lacked the explosive platoon or park upside required to displace **Josh Lowe** or the lower-slot utility options. We are closely monitoring the risk profile of **Gunnar Henderson** (58.94) and **Coby Mayo** (57.97); although they draw favorable park factors, they are contending with the elite 1.89s pop-time of the opposing catcher, which creates a slight drag on their overall efficiency scores. **Jackson Merrill** (53.56) also faces a stern test against Yamamoto; while his inclusion is necessary for lineup depth, the 3.33 xERA of the opponent suppresses his ceiling significantly compared to his peers. We will continue to track the final lineup postings to ensure no late-scratch weather issues disrupt our current projected output.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Drake Baldwin",
             "POS": "C",
-            "Score": 49.04832961270635,
+            "Score": 46.71269486924414,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -39,11 +39,6 @@
                 {
                     "label": "Order #4",
                     "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -102,7 +97,7 @@
             "Slot": "2B",
             "Player": "Nasim Nunez",
             "POS": "2B/SS",
-            "Score": 68.81270467086728,
+            "Score": 66.06019648403259,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -128,6 +123,11 @@
                     "label": "Switch",
                     "value": "+3%",
                     "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-4%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #8",
@@ -786,7 +786,7 @@
             "Start": "01:05 AM",
             "Opponent": "Webb, L (R)",
             "SP_xERA": "3.50",
-            "Score": 45.15630398658082,
+            "Score": 43.006003796743634,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -816,11 +816,6 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 },
                 {
@@ -881,11 +876,46 @@
             "Player": "Curtis Mead",
             "POS": "1B/2B/3B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:05 PM",
+            "Opponent": "Young (R)",
+            "SP_xERA": "4.76",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "46.04",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+18%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -893,7 +923,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-27T23:05:00Z"
         },
         {
             "Slot": "BN",
@@ -1022,11 +1052,46 @@
             "Player": "Cole Carrigg",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:10 PM",
+            "Opponent": "Paredes (R)",
+            "SP_xERA": "5.42",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "0.00",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -1034,7 +1099,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-27T23:10:00Z"
         }
     ]
 }

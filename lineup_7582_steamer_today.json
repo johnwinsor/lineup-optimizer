@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-27",
-    "last_updated": "2026-06-27T23:55:55.770316+00:00",
+    "last_updated": "2026-06-28T02:49:24.941987+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 711.41,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a lineup anchored by the high-upside profile of **Junior Caminero** (69.89), whose matchup against a middle-of-the-road arm like Cabrera provides the optimal mix of talent and opportunity. While **Kazuma Okamoto** (64.93) boasts the highest raw score against Quantrill, the real value lies in **Casey Schmitt** (62.40). Despite a more modest base projection, **Schmitt** is a priority start today due to a rare confluence of a favorable 2-hole spot, a helpful wind blowing out, and a specific scouting edge against a slow-delivering pitcher that primes him for a crucial stolen base. **Colt Keith** (62.89) rounds out our elite tier, taking advantage of a weak matchup against Teng to solidify the heart of our production.\n\nWhile we remain aggressive in chasing volume, the decision to bench **Jacob Gonzalez** (47.60) was a tight call. He sits just outside our \"Strong\" tier; while he benefits from a generous matchup against Wacha, the bottom-of-the-order placement (8th) suppresses his run-scoring probability compared to the high-OBP roles occupied by **Trea Turner** and **Kyle Schwarber**. We must also monitor **Pete Crow-Armstrong** (48.29) closely; while his speed is vital to our stolen base strategy, his score is severely hampered by a rough platoon matchup against Harrison, putting him near our efficiency floor. We are proceeding with this configuration to balance our pursuit of speed with the hard efficiency metrics required to maintain our position in the standings.",
+    "total_efficiency_score": 708.44,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Junior Caminero** leading the charge at a 69.89 score; his elite placement in the three-hole against a favorable 4.36 xERA arm provides the highest ceiling in the lineup. Close behind, **Kazuma Okamoto** (64.93) is a primary target due to a significant SP skill advantage, benefiting from a soft 4.81 xERA matchup that allows him to capitalize on his power potential. We are also leaning into the speed-first profile of **Caleb Durbin** (61.28) and **Casey Schmitt** (59.43), both of whom benefit from positive SP delivery metrics, ensuring they remain locked into the roster given our mandate to prioritize SB scarcity despite the tactical risks involved in today\u2019s matchups.\n\nThe most difficult lineup decision today involved **Jacob Gonzalez**, who hovered near our 50-point threshold but was ultimately relegated to the bench with a 47.60 score. While **Jacob Gonzalez** offers decent matchup utility against Wacha, he lacks the aggressive lineup position\u2014sitting in the #8 hole\u2014that forced him behind more optimal contributors like **Chase Meidroth**. We have also kept **Pete Crow-Armstrong** in the starting lineup despite a worrisome 48.29 score; his heavy -15% penalty due to a challenging left-on-left dynamic is partially offset by his top-of-the-order designation, though he remains the most volatile component of today\u2019s offensive attack. Risk management remains critical, as **Gary Sanchez** continues to operate near our marginal floor; his 53.66 score is buoyed by a platoon advantage against Peterson, but any shifts in the confirmed order will necessitate a close watch on his daily game-cap consumption.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -439,7 +439,7 @@
             "Slot": "OF5",
             "Player": "Casey Schmitt",
             "POS": "1B/2B/3B/OF",
-            "Score": 62.40278348618525,
+            "Score": 59.43122236779546,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -467,18 +467,13 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Slow SP Delivery (100% SB)",
+                    "label": "Slow SP Delivery (87% SB)",
                     "value": "+2%",
                     "type": "positive"
                 },
                 {
                     "label": "Order #2",
                     "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -559,11 +554,51 @@
             "Player": "Christian Yelich",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:10 PM",
+            "Opponent": "Peterson, D (L)",
+            "SP_xERA": "4.12",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "55.06",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "60%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (42% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -571,7 +606,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-06-27T23:10:00Z"
         },
         {
             "Slot": "BN",
