@@ -1,9 +1,9 @@
 {
     "target_date": "2026-06-30",
-    "last_updated": "2026-06-30T18:30:49.803112+00:00",
+    "last_updated": "2026-06-30T20:53:22.271573+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 761.21,
-    "narrative": "For today\u2019s slate, **Taylor Ward** (71.18) and **Bryson Stott** (70.43) headline our offensive output, both benefiting from highly favorable park factors and exploitable matchups. **Taylor Ward** is our strongest play; he faces Erick Fedde, whose 5.20 xERA is the softest landing spot on our board, and he enjoys a critical boost from a +8% efficiency bump for batting in the #2 hole and +16% park factor. Similarly, **Bryson Stott** is in an ideal position against Bubba Chandler (4.21 xERA). **Stott** thrives here due to a +13% dynamic platoon advantage and a +5% wind-out factor, which elevates his floor significantly. **Tyler Freeman** (70.09) and **Dylan Beavers** (69.51) also clear the 60-point \"Strong\" threshold, with **Freeman** being specifically monitored for his sprint speed and the high-SB potential provided by a slow-delivering pitcher, a crucial variable given our team-wide focus on the scarcity of stolen bases.\n\nThe most difficult roster decision today was leaving **Daulton Varsho** (49.36) on the bench. While **Varsho** offers a +10% platoon advantage against Nolan McLean, his efficiency was capped by a tough matchup against a 3.28 xERA pitcher, which ultimately saw the optimizer favor the higher situational floor of **Jonathan Aranda** and our other starters. We are currently navigating a high-risk environment with almost every slot relying on \"Lineup Pending\" status; should any of these players move down the order or get scratched, our efficiency scores will plummet. We remain particularly wary of **Yainer Diaz** (41.62), whose matchup against Joe Ryan (3.21 xERA) is our most perilous; if **Diaz** slips further down the order, his marginal score could drop below our sub-40 replacement floor, forcing us to preserve our remaining game caps.",
+    "total_efficiency_score": 757.42,
+    "narrative": "The core of LawDog\u2019s offensive strategy today centers on capitalizing against soft matchups, specifically the favorable tilt for **Taylor Ward** (71.19) and **Dylan Beavers** (69.52) against Fedde. Both benefit from a high-run-environment projection, bolstered by a 16% park boost, a 19% SP skill advantage, and helpful wind conditions. Meanwhile, **Tyler Freeman** (70.10) earns top-tier status as the day\u2019s premier dual-threat candidate; his matchup against Eury P\u00e9rez is mitigated by a 14% park bump, and his potential for stolen bases\u2014given the slow delivery of the opposing pitcher\u2014makes him a strategic lock in our quest to dominate the scarcest category in our 5x5 format.\n\nThe most difficult decision on the card involved **Daulton Varsho**, who sits on the bench with a 47.91 efficiency score despite a solid platoon edge against the opposing arm. Ultimately, the optimizer favored the higher output of **Jonathan Aranda** and the order-derived floor of **Matt Chapman**, keeping **Daulton Varsho** in reserve to preserve game caps. We are proceeding with caution regarding several lineup-dependent slots; specifically, **Cal Raleigh**, **Luis Arraez**, **Geraldo Perdomo**, **Matt Chapman**, **Tyler Freeman**, **Lawrence Butler**, and **Jung Hoo Lee** are currently projected based on assumed batting positions. Should these lineups shift downward in the order, our efficiency scores will retract accordingly. With **Jos\u00e9 Ram\u00edrez** remaining sidelined on the IL, the burden of production rests heavily on our lead-off and secondary-order hitters to anchor the daily scoring.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -48,13 +48,8 @@
             "Slot": "C2",
             "Player": "Yainer Diaz",
             "POS": "C",
-            "Score": 41.62796314818176,
+            "Score": 40.3791242537363,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.19",
@@ -79,13 +74,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "-2%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Joe Ryan (R)",
+            "Opponent": "Ryan (R)",
             "SP_xERA": "3.21",
             "Warning": "",
             "GameTime": "2026-07-01T00:10:00Z",
-            "Order": "6*",
+            "Order": "7",
             "Start": "12:10 AM"
         },
         {
@@ -131,13 +131,8 @@
             "Slot": "2B",
             "Player": "Bryson Stott",
             "POS": "2B/SS",
-            "Score": 70.43002731077777,
+            "Score": 69.02142676456222,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.80",
@@ -164,16 +159,21 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-2.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Wind Out",
                     "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Bubba Chandler (R)",
+            "Opponent": "Chandler (R)",
             "SP_xERA": "4.21",
             "Warning": "",
             "GameTime": "2026-06-30T22:40:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "10:40 PM"
         },
         {
@@ -229,13 +229,8 @@
             "Slot": "MI",
             "Player": "Masyn Winn",
             "POS": "SS",
-            "Score": 58.12455298387218,
+            "Score": 56.98485586654135,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.22",
@@ -260,18 +255,13 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "-1%",
                     "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Mart\u00edn P\u00e9rez (L)",
+            "Opponent": "P\u00e9rez, M (L)",
             "SP_xERA": "4.46",
             "Warning": "",
             "GameTime": "2026-06-30T23:15:00Z",
-            "Order": "5*",
+            "Order": "6",
             "Start": "11:15 PM"
         },
         {
@@ -423,11 +413,6 @@
             "Score": 69.51799200975319,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "51.49",
                     "type": "info"
@@ -453,16 +438,21 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
                     "label": "Wind Out",
                     "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Erick Fedde (R)",
+            "Opponent": "Fedde (R)",
             "SP_xERA": "5.20",
             "Warning": "",
             "GameTime": "2026-06-30T22:35:00Z",
-            "Order": "6*",
+            "Order": "3",
             "Start": "10:35 PM"
         },
         {
@@ -511,11 +501,6 @@
             "Score": 71.18811740319575,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "52.73",
                     "type": "info"
@@ -551,11 +536,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Erick Fedde (R)",
+            "Opponent": "Fedde (R)",
             "SP_xERA": "5.20",
             "Warning": "",
             "GameTime": "2026-06-30T22:35:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "10:35 PM"
         },
         {
@@ -564,11 +549,6 @@
             "POS": "1B",
             "Score": 52.99619698810027,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.07",
@@ -610,11 +590,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Noah Cameron (L)",
+            "Opponent": "Cameron (L)",
             "SP_xERA": "4.14",
             "Warning": "",
             "GameTime": "2026-06-30T23:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "11:40 PM"
         }
     ],
@@ -671,17 +651,12 @@
             "Slot": "BN",
             "Player": "Daulton Varsho",
             "POS": "OF",
-            "Order": "5*",
+            "Order": "6",
             "Start": "11:07 PM",
-            "Opponent": "Nolan McLean (R)",
+            "Opponent": "McLean (R)",
             "SP_xERA": "3.28",
-            "Score": 49.36028284531736,
+            "Score": 47.90850982045509,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.81",
@@ -708,12 +683,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-1.0%",
+                    "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
