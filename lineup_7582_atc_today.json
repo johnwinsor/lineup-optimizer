@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-01",
-    "last_updated": "2026-07-01T08:17:09.372384+00:00",
+    "last_updated": "2026-07-01T14:10:01.421908+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 812.15,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 806.89,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Junior Caminero** (81.84) and **Pete Crow-Armstrong** (80.98) headlining our lineup. **Junior Caminero** benefits from a prime matchup against Seth Lugo, where an favorable wind forecast and a solid platoon advantage propel him into the elite tier. Simultaneously, **Pete Crow-Armstrong** is our premier high-upside play; while Walker Buehler is a formidable arm, **Pete Crow-Armstrong**\u2019s dynamic platoon edge and the benefit of wind blowing out provide a massive boost to his floor, making him an essential start given our organization's high premium on elite sprint speed and stolen base potential. **Yordan Alvarez** remains a cornerstone of our offense, despite facing Taj Bradley, as his elite xwOBA of .478 ensures he remains a must-start regardless of marginal park factor adjustments.\n\nOur decision-making process for the utility slots was particularly tight, with **Nelson Velazquez** (55.60) serving as the most notable bench casualty. **Nelson Velazquez** graded out well against Reynaldo L\u00f3pez, but he ultimately lost the spot to **Lars Nootbaar** (60.07), whose combination of park factors and dynamic platoon alignment edged him out in our efficiency model. We are monitoring the status of **Dillon Dingler**, **Gary Sanchez**, and **Colt Keith** closely, as their scores are anchored to projected lineup spots; should these players fall in the batting order, their efficiency scores will require re-evaluation. Additionally, we are tracking a 30% rain risk for **Caleb Durbin**, whose marginal score (46.08) meant he was an easy exclusion today given the environmental volatility. Managers should also note that **Trea Turner** and **Kyle Schwarber** face a difficult test against Paul Skenes, an elite arm whose 2.89 xERA exerts significant downward pressure on their projections, requiring us to weigh their established talent against the raw matchup risk.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -205,7 +205,7 @@
             "Slot": "SS",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Score": 56.611265581998104,
+            "Score": 53.91549103047438,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -240,11 +240,6 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -568,7 +563,7 @@
             "Slot": "OF5",
             "Player": "Kyle Schwarber",
             "POS": "OF",
-            "Score": 53.75377351050869,
+            "Score": 51.194070010008275,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -609,11 +604,6 @@
                     "label": "xwOBA Good",
                     "value": "0.387",
                     "type": "info"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Paul Skenes (R)",
@@ -730,7 +720,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (30%)",
             "GameTime": "2026-07-01T17:35:00Z"
         },
         {
@@ -911,17 +901,12 @@
             "Slot": "BN",
             "Player": "Chase Meidroth",
             "POS": "2B/SS",
-            "Order": "6*",
+            "Order": "6",
             "Start": "04:35 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 54.12633833467092,
+            "Opponent": "Dean Kremer (R)",
+            "SP_xERA": "2.22",
+            "Score": 41.30155112895404,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.26",
@@ -938,7 +923,17 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -950,17 +945,12 @@
             "Slot": "BN",
             "Player": "Jacob Gonzalez",
             "POS": "1B/2B/SS",
-            "Order": "8*",
+            "Order": "5",
             "Start": "04:35 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Dean Kremer (R)",
+            "SP_xERA": "2.22",
             "Score": 0.0,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "0.00",
@@ -977,12 +967,22 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "SP Skill",
+                    "value": "-19%",
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
