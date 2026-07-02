@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-02",
-    "last_updated": "2026-07-02T13:32:15.971799+00:00",
+    "last_updated": "2026-07-02T16:01:04.305737+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 457.0,
-    "narrative": "The standout play for Ghost Ride the WHIP today is undeniably **Mickey Moniak**, who boasts our highest daily efficiency score at 75.98. His matchup against Ryan Gusto is the perfect storm of favorable conditions: a notable park factor boost (+14%) and a defensive environment ripe for stolen base attempts, as the slow delivery profile of Gusto enhances the upside for our speed-oriented strategy. Similarly, **Josh Naylor** provides a strong floor (67.18) hitting out of the three-hole against Walbert Ure\u00f1a. While **Naylor** faces a slight park penalty, his strong platoon advantage against the right-handed Ure\u00f1a keeps him in the upper echelon of today\u2019s starters.\n\nRegarding roster management, **Cole Young** was the closest call for the starting nine, finishing with a score of 45.04. He narrowly missed the cut due to a combination of an unfavorable park factor and a low-ceiling slot in the lineup, which the optimizer deemed less efficient than the upside provided by **Kyle Karros** and **Alex Freeland**. While **Young** remains a viable depth option, our priority remains maximizing the daily efficiency scores against the projected starters. We are also monitoring the status of **Trevor Story**, who remains sidelined on the IL, leaving us to rely on our active rotation to navigate the day.\n\nWe must remain cautious, as all current scores are predicated on \"Lineup Pending\" status; if **Dalton Rushing** or **Brice Turang** are shuffled down in their respective orders, their value will shift significantly due to the sensitivity of our scoring model to batting position. Furthermore, while **Austin Riley** carries a respectable score of 51.27 against the formidable Dustin May, he faces a slight penalty due to May's ability to hold runners, a critical factor for our SB-weighted roster. We will keep a close eye on final lineup cards, particularly to ensure **Travis Bazzana** retains his lead-off spot against Davis Martin, as that is the primary driver of his projected efficiency.",
+    "total_efficiency_score": 457.82,
+    "narrative": "The offensive outlook for Ghost Ride the WHIP centers squarely on **Mickey Moniak**, who earns the day's highest rating at 75.98. His start against Ryan Gusto is primed for production, bolstered by a significant +14% park boost and favorable delivery metrics from the mound that elevate his stolen base probability. While **Josh Naylor** (67.18) serves as the anchor of our lineup, securing a strong rating despite a slight park penalty, the platoon advantage afforded to **Mickey Moniak** makes him the engine of our daily efficiency. We are also tracking **Alex Freeland** (55.18) and **Kyle Karros** (56.13); both benefit from the exploitable xERA of Randy V\u00e1squez and Ryan Gusto, respectively, keeping them safely above our marginal threshold despite lower-order batting assignments.\n\nThe bench decision process was heavily influenced by our prioritization of speed and efficiency, leading to the exclusion of **Cole Young** (45.04). While **Cole Young** technically cleared the floor threshold, he was ultimately bypassed due to the optimization of catcher-based defensive metrics that neutralized his potential value. Meanwhile, **Zach McKinstry** (36.89) and **Edwin Arroyo** (35.57) were benched as they fell below the 40.0 efficiency floor, the latter facing a brutal matchup against the elite arm of Misiorowski. We continue to monitor the status of **Trevor Story**, who remains unavailable on the IL, while the uncertainty surrounding **Dalton Rushing**'s lineup placement remains a risk; should he be shifted further down the order, his utility score will be strictly monitored against our remaining reserves. **Austin Riley** (51.27) and **Brice Turang** (48.50) remain in the lineup as steady contributors, though their scores are tempered by tough matchups against Dustin May and Ch Burns.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -195,13 +195,8 @@
             "Slot": "MI",
             "Player": "Brice Turang",
             "POS": "2B",
-            "Score": 49.416696649223134,
+            "Score": 48.50157263720048,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.60",
@@ -228,16 +223,16 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Chase Burns (R)",
+            "Opponent": "Burns, Ch (R)",
             "SP_xERA": "3.20",
             "Warning": "",
             "GameTime": "2026-07-02T18:10:00Z",
-            "Order": "2*",
+            "Order": "3",
             "Start": "06:10 PM"
         },
         {
@@ -301,11 +296,6 @@
             "Score": 75.97964860410815,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "56.28",
                     "type": "info"
@@ -345,20 +335,15 @@
             "SP_xERA": "4.35",
             "Warning": "",
             "GameTime": "2026-07-02T19:10:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "07:10 PM"
         },
         {
             "Slot": "UTIL",
             "Player": "Kyle Karros",
             "POS": "3B",
-            "Score": 54.39559898915413,
+            "Score": 56.13162874412713,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.81",
@@ -390,8 +375,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
                 }
             ],
@@ -399,7 +384,7 @@
             "SP_xERA": "4.35",
             "Warning": "",
             "GameTime": "2026-07-02T19:10:00Z",
-            "Order": "8*",
+            "Order": "7",
             "Start": "07:10 PM"
         }
     ],
@@ -691,17 +676,12 @@
             "Slot": "BN",
             "Player": "Edwin Arroyo",
             "POS": "2B/SS",
-            "Order": "9*",
+            "Order": "7",
             "Start": "06:10 PM",
-            "Opponent": "Jacob Misiorowski (R)",
+            "Opponent": "Misiorowski (R)",
             "SP_xERA": "2.29",
-            "Score": 33.372610497997556,
+            "Score": 35.57300239896442,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.96",
@@ -728,12 +708,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #9",
-                    "value": "-8%",
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
