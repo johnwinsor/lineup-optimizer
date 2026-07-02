@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-02",
-    "last_updated": "2026-07-02T20:55:52.690479+00:00",
+    "last_updated": "2026-07-02T22:02:05.891311+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 646.11,
-    "narrative": "The **Austin Waves** face a balanced schedule today, with **Kyle Tucker** leading the charge as our strongest play at a 78.26 efficiency score. While his exact lineup slot remains pending, his matchup against Randy V\u00e1squez provides a massive 19% boost in SP skill, and he remains our most reliable anchor for HR and RBI production. **Andy Pages** (69.49) and **Jackson Merrill** (68.58) follow closely; **Jackson Merrill** is a particularly high-upside play, as his dynamic platoon advantage against Roki Sasaki and his elite sprint speed\u2014critical for our scarcity-driven strategy\u2014provide a significant ceiling despite Sasaki\u2019s pedigree. **Sam Antonacci** (65.19) rounds out the top tier, benefiting immensely from a prime leadoff spot and a favorable platoon matchup against Cecconi.\n\nThe most difficult decision for the lineup optimizer involved **Nolan Schanuel**, who sits on the bench with a 39.17 score. Despite a solid base projection, he is penalized heavily by the matchup against Bryce Miller, whose 2.42 xERA acts as a significant deterrent for our hitters today. **Nolan Schanuel** fell just short of the cut because the optimizer prioritized the higher efficiency and stolen base potential of **Jackson Merrill** and **Josh Lowe**. We must remain cautious with **Josh Lowe** (45.01); while he offers strong platoon utility, the matchup against the elite arm of Bryce Miller carries inherent risk, lowering his threshold for daily production. We are closely monitoring the final lineup cards for **Kyle Tucker**, **Andy Pages**, **Jackson Merrill**, and **Josh Lowe** to confirm their spots; any shifts in the batting order could necessitate a re-evaluation of our efficiency rankings before first pitch.",
+    "total_efficiency_score": 655.53,
+    "narrative": "The Austin Waves look for high-volume production tonight, headlined by **Kyle Tucker** (82.17) and **Andy Pages** (72.96), who both benefit immensely from a favorable encounter with Randy V\u00e1squez. Both outfielders carry the \"Wind Out\" bonus, boosting their power profiles, and their scoring is further bolstered by the soft SP_xERA of 4.76. Joining them in the high-ceiling tier is **Jackson Merrill** (72.01), whose dynamic platoon advantage against Roki Sasaki makes him a mandatory start despite the opponent's pedigree. **Sam Antonacci** (65.19) remains a foundational piece of our lineup today; his leadoff duties combined with a plus matchup against Cecconi make him our most efficient MI option, providing a vital bridge to our power hitters.\n\nConversely, we are exercising caution with **Josh Lowe** (43.62), who survives the lineup cut only by the skin of his teeth due to his elite speed profile and a dynamic platoon boost. He faces a daunting challenge against Miller, whose 2.42 xERA is the most restrictive on the slate, forcing us to prioritize his contribution to the scarce SB category over his lower raw output. On the bench, **Nolan Schanuel** (39.91) was the clear odd man out; he fell just short of our 40-point threshold for active duty, largely due to the severe SP Skill penalty associated with the Miller matchup. While **Schanuel** represents a consistent floor, the lack of a platoon edge and the unfavorable park factors rendered him a liability compared to the upside offered by **Liam Hicks** (57.76), who leverages a significant park factor adjustment to maintain his UTIL spot.\n\nWe are operating with \"Lineup Pending\" status for **Tucker**, **Pages**, and **Merrill**, meaning their projected slotting is subject to change; should any of these core pieces move down in the order, their efficiency scores will require immediate re-evaluation. While **Jordan Westburg** remains on the IL, our current configuration balances the necessity of elite sprint speed with the reality of today's difficult pitching matchups. We will lean on the offensive synergy between **Miguel Vargas** and **Antonacci** at the top of the order to catalyze runs, while relying on the wind-aided profiles of our primary outfielders to clear the fences.",
     "recommended_lineup": [
         {
             "Slot": "C2",
@@ -47,7 +47,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Dustin May (R)",
+            "Opponent": "May (R)",
             "SP_xERA": "3.84",
             "Warning": "",
             "GameTime": "2026-07-02T23:15:00Z",
@@ -234,7 +234,7 @@
             "Slot": "OF1",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 78.26233445181833,
+            "Score": 82.17545117440925,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -264,6 +264,11 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -306,7 +311,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Dustin May (R)",
+            "Opponent": "May (R)",
             "SP_xERA": "3.84",
             "Warning": "",
             "GameTime": "2026-07-02T23:15:00Z",
@@ -317,7 +322,7 @@
             "Slot": "OF3",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 69.49328580442982,
+            "Score": 72.96795009465131,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -353,6 +358,11 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Randy V\u00e1squez (R)",
@@ -366,7 +376,7 @@
             "Slot": "OF4",
             "Player": "Jackson Merrill",
             "POS": "OF",
-            "Score": 68.58625288677403,
+            "Score": 72.01556553111274,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -402,6 +412,11 @@
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Roki Sasaki (R)",
@@ -415,13 +430,8 @@
             "Slot": "OF5",
             "Player": "Josh Lowe",
             "POS": "OF",
-            "Score": 45.01424497138058,
+            "Score": 43.62205182793582,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.10",
@@ -448,8 +458,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
                 }
             ],
@@ -457,7 +467,7 @@
             "SP_xERA": "2.42",
             "Warning": "",
             "GameTime": "2026-07-03T01:40:00Z",
-            "Order": "7*",
+            "Order": "8",
             "Start": "01:40 AM"
         },
         {
@@ -720,17 +730,12 @@
             "Slot": "BN",
             "Player": "Nolan Schanuel",
             "POS": "1B",
-            "Order": "3*",
+            "Order": "2",
             "Start": "01:40 AM",
             "Opponent": "Miller, B (R)",
             "SP_xERA": "2.42",
-            "Score": 39.17216502309669,
+            "Score": 39.911262476362666,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.17",
@@ -757,12 +762,12 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -793,17 +798,12 @@
             "Slot": "BN",
             "Player": "Denzer Guzman",
             "POS": "SS/3B",
-            "Order": "2*",
+            "Order": "3",
             "Start": "01:40 AM",
             "Opponent": "Miller, B (R)",
             "SP_xERA": "2.42",
-            "Score": 33.46782271331534,
+            "Score": 32.84804821862432,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "42.04",
@@ -830,12 +830,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -847,17 +847,12 @@
             "Slot": "BN",
             "Player": "Wade Meckler",
             "POS": "OF",
-            "Order": "5*",
+            "Order": "5",
             "Start": "01:40 AM",
             "Opponent": "Miller, B (R)",
             "SP_xERA": "2.42",
             "Score": 33.751723412241915,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "40.69",
@@ -889,7 +884,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }

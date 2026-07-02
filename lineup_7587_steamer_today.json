@@ -1,15 +1,15 @@
 {
     "target_date": "2026-07-02",
-    "last_updated": "2026-07-02T20:55:24.251461+00:00",
+    "last_updated": "2026-07-02T22:01:17.174123+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 454.47,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate leaning heavily on **Mickey Moniak**, our primary offensive engine with a 75.75 efficiency score. He draws a high-upside matchup against Gusto, bolstered by a significant park factor (+14%) and a favorable platoon dynamic (+14%) that positions him for a productive afternoon. Complementing him is **Josh Naylor**, whose 65.22 score highlights his reliability against Walbert Ure\u00f1a. While the SP skill here is manageable, **Josh Naylor**\u2019s ability to drive runs from the #5 spot makes him an essential core play. Our middle-tier, including **Alex Freeland** (56.85) and **Kyle Karros** (56.78), remain viable starts primarily due to their exploitation of slower pitching deliveries, which creates high-probability opportunities for stolen bases\u2014a critical focus as we combat the league's scarcity in that category.\n\nThe most difficult decision on the bench was **Cole Young**, who fell just short of the 45.0 threshold with a 44.17 score. Despite the SP matchup against Walbert Ure\u00f1a, **Cole Young** was squeezed out of the lineup due to a combination of park regression (-5%) and a suboptimal #8 spot in the order, which further depressed his projected production relative to **Travis Bazzana**. Meanwhile, we are maintaining a strict adherence to our efficiency floor; both **Zach McKinstry** and **Edwin Arroyo** were comfortably benched for failing to clear the 40.0 mark against their respective tough assignments. We remain cautious regarding **Dalton Rushing** and **Alex Freeland**, as their spots in the lineup are still pending; should their real-world batting positions drop significantly lower than projected, we risk a further erosion of their efficiency scores. Finally, we continue to monitor **Vinnie Pasquantino**, who remains on the IL and provides no value until his health status changes.",
+    "total_efficiency_score": 460.04,
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate prioritizing stolen base upside and soft-tossing matchups, with **Mickey Moniak** standing out as our clear anchor. His 75.75 efficiency score is driven by a prime #2 hole placement against a vulnerable pitcher, compounded by a park factor boost and the fact that he faces an opponent with a slow delivery, significantly increasing his stolen base floor. **Josh Naylor** similarly profiles as a strong start (65.22) thanks to a favorable matchup against Ure\u00f1a. While **Alex Freeland** (59.69) and **Dalton Rushing** (57.28) remain in the lineup despite pending official orders, they benefit immensely from a plus-matchup against Randy V\u00e1squez, with wind conditions adding a slight boost to their power potential.\n\nWe faced a tight decision at the bottom of the order, ultimately opting to keep **Cole Young** (44.62) on the bench. He was the closest to making the cut, but his inefficiency in the #8 spot compared to the platoon-advantaged **Kyle Karros** (56.78) forced our hand; **Kyle Karros** specifically benefits from the same slow-delivery pitcher that boosts **Mickey Moniak**, creating an efficient stack for SB opportunities. While we are running **Brice Turang** (47.43) despite a daunting assignment against Corbin Burnes, the high-leverage context of the #3 spot and his inherent speed profile outweigh the risk of the elite opposing arm. We continue to monitor the status of **Vinnie Pasquantino**, who remains on the IL, while the rest of our bench\u2014including **Zach McKinstry** and **Edwin Arroyo**\u2014fell below our 40-point efficiency floor, signaling a disciplined approach to preserving our limited game caps for more optimal hitting environments.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Dalton Rushing",
             "POS": "C",
-            "Score": 54.551933976413984,
+            "Score": 57.27953067523469,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -45,6 +45,11 @@
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Randy V\u00e1squez (R)",
@@ -91,7 +96,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Walbert Ure\u00f1a (R)",
+            "Opponent": "Ure\u00f1a (R)",
             "SP_xERA": "4.40",
             "Warning": "",
             "GameTime": "2026-07-03T01:40:00Z",
@@ -141,7 +146,7 @@
             "Slot": "SS",
             "Player": "Alex Freeland",
             "POS": "2B/SS/3B",
-            "Score": 56.8492132261672,
+            "Score": 59.69167388747557,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -172,6 +177,11 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Randy V\u00e1squez (R)",
@@ -365,7 +375,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Dustin May (R)",
+            "Opponent": "May (R)",
             "SP_xERA": "3.84",
             "Warning": "",
             "GameTime": "2026-07-02T23:15:00Z",
@@ -677,9 +687,9 @@
             "POS": "2B/SS",
             "Order": "8",
             "Start": "01:40 AM",
-            "Opponent": "Walbert Ure\u00f1a (R)",
+            "Opponent": "Ure\u00f1a (R)",
             "SP_xERA": "4.40",
-            "Score": 44.17454001028175,
+            "Score": 44.620747485133094,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -704,11 +714,6 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Elite Catcher (1.89s)",
-                    "value": "-1.0%",
                     "type": "negative"
                 },
                 {
