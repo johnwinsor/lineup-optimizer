@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-03",
-    "last_updated": "2026-07-03T22:00:26.404117+00:00",
+    "last_updated": "2026-07-03T23:00:09.269992+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 714.02,
-    "narrative": "LawDog enters today\u2019s slate with a strong core led by **Lawrence Butler**, who commands the highest score (73.47) on the roster. **Butler**\u2019s premier status against Tyler Phillips is fueled by a massive +17% SP skill boost and an advantageous +10% park factor, cementing his role as our primary offensive engine. He is closely followed by **Jonathan Aranda** (68.46) and **Luis Arraez** (66.78); **Aranda** benefits from a high-efficiency #2 spot in the order against Arighetti, while **Arraez** leverages a favorable Coors-adjacent environment against Feltner. **Jung Hoo Lee** (65.65) also maximizes this matchup, providing the elite floor we require to chase the scarcest category: Stolen Bases.\n\nThe most difficult decision for the lineup optimizer involved **Gavin Sheets**, who was the final omission from the starting nine with a score of 44.21. While **Sheets** remains a viable depth piece, his projected encounter with Ohtani\u2014who stifles opposing output despite a sub-elite xERA\u2014and his lower batting order placement kept him firmly on the bench. Conversely, we are monitoring the \"Lineup Pending\" status for **Cal Raleigh** and **Daulton Varsho**. **Raleigh** faces a stern test against Dylan Cease, resulting in a marginal score of 41.82, and represents our most significant downside risk today. Should official lineups shift these players out of the mid-order, we may look to shuffle the utility slot to protect our daily efficiency targets. \n\nWith **Jos\u00e9 Ram\u00edrez**, **Will Smith**, and **Bryson Stott** remaining unavailable due to IL stints or off-days, our bench depth is being tested. We are leaning heavily into the platoon advantages of **Dylan Beavers** and **Lawrence Butler** to stabilize our AVG and HR output. Managers should keep a close watch on **Geraldo Perdomo**, whose start against Kyle Harrison carries a low SP-skill penalty; however, his presence in the #2 spot provides the necessary plate appearances to justify the start despite the difficult southpaw matchup. All other rostered players, including **Yainer Diaz**, **Masyn Winn**, **Taylor Ward**, **Tyler Freeman**, **Matt Chapman**, **Ryan Waldschmidt**, **Gleyber Torres**, **Brendan Donovan**, **Jeremiah Jackson**, and **Drew Gilbert**, remain on standby for potential late-game pinch-hitting duties or cap-preservation rotations.",
+    "total_efficiency_score": 715.69,
+    "narrative": "LawDog\u2019s lineup for July 3rd is anchored by two high-ceiling plays against favorable matchups: **Lawrence Butler** (73.47) and **Jonathan Aranda** (68.46). **Lawrence Butler** benefits from a potent combination of a 4.70 xERA opponent and significant park factors, with a +13% dynamic platoon boost elevating his potential to provide the power we desperately need. Similarly, **Jonathan Aranda** is a primary start today; his xwOBA of 0.378 combined with a soft matchup against Arrighetti makes him our most reliable cornerstone. **Luis Arraez** and **Jung Hoo Lee** also draw strong ratings (66.78 and 65.65, respectively) as they feast on the generous projections for the Feltner matchup, where park and SP skill factors are heavily tilted in our favor.\n\nThe most difficult bench decision today involved **Gavin Sheets**, whose 44.21 score left him on the outside looking in. While his platoon splits against Ohtani provided a marginal lift, the optimizer ultimately pivoted to **Tyler Freeman** (57.44) and **Yainer Diaz** (57.47) due to the higher reliability of their park environments and order placement. While we are currently dealing with the absence of **Jos\u00e9 Ram\u00edrez** and **Will Smith** due to IL stints, we remain cautious regarding **Cal Raleigh** (43.49). Despite his power, he faces the elite arm of Cease, whose 3.01 xERA acts as a significant drag on **Cal Raleigh**\u2019s efficiency score today. We will monitor the status of **Brendan Donovan**, **Gleyber Torres**, and **Matt Chapman** for potential pinch-hit opportunities, though for now, the focus remains on leveraging the stolen base potential of **Masyn Winn** and the steady output of **Daulton Varsho** to maintain our competitive edge in the standings.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -53,13 +53,8 @@
             "Slot": "C2",
             "Player": "Cal Raleigh",
             "POS": "C",
-            "Score": 41.82003650494535,
+            "Score": 43.49283796514317,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "58.75",
@@ -84,13 +79,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "-6%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Dylan Cease (R)",
+            "Opponent": "Cease (R)",
             "SP_xERA": "3.01",
             "Warning": "",
             "GameTime": "2026-07-04T02:10:00Z",
-            "Order": "6*",
+            "Order": "4",
             "Start": "02:10 AM"
         },
         {
@@ -281,11 +281,6 @@
             "Score": 60.75032941233503,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "53.57",
                     "type": "info"
@@ -316,11 +311,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Luis Castillo (R)",
+            "Opponent": "Castillo, L (R)",
             "SP_xERA": "4.16",
             "Warning": "",
             "GameTime": "2026-07-04T02:10:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "02:10 AM"
         },
         {
@@ -487,7 +482,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tyler Phillips (R)",
+            "Opponent": "Phillips (R)",
             "SP_xERA": "4.70",
             "Warning": "",
             "GameTime": "2026-07-04T01:40:00Z",
@@ -723,7 +718,7 @@
             "POS": "1B/OF",
             "Order": "4*",
             "Start": "02:10 AM",
-            "Opponent": "Shohei Ohtani (R)",
+            "Opponent": "Ohtani (R)",
             "SP_xERA": "3.37",
             "Score": 44.21498412868563,
             "Breakdown": [
