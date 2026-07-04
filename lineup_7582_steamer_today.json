@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-04",
-    "last_updated": "2026-07-04T17:10:29.681269+00:00",
+    "last_updated": "2026-07-04T18:57:52.935577+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 815.53,
-    "narrative": "The Zurich Zebras enter the July 4th slate with a clear focus on exploiting favorable pitching matchups, headlined by **Pete Crow-Armstrong** (82.12) and **Christian Yelich** (74.33). **Pete Crow-Armstrong** earns the day's highest rating, leveraging a plus-matchup against Kyle Leahy, where elite sprint speed and a high-efficiency environment create a massive ceiling for stolen base production. Similarly, **Christian Yelich** benefits from a high-yield matchup against Merrill Kelly; despite a cautionary BvP flag, his dynamic platoon advantage and current order projection make him a foundational piece for today\u2019s scoring potential. **Trea Turner** (67.05) and **Kyle Schwarber** (66.71) remain high-floor staples, as both maintain strong situational utility despite facing Michael Wacha, whose moderate xERA doesn't quite dampen their superior offensive profiles.\n\nMid-tier offensive output will rely heavily on the platoon advantages held by **Caleb Durbin** (65.78) and **Colt Keith** (64.81). **Caleb Durbin** is a priority play against the lefty Sam Aldegheri, while **Colt Keith** benefits from the slow delivery of Quantrill, a factor we\u2019ve weighted heavily to hunt for stolen base opportunities. Our most difficult bench decision involved **Luke Raley** (58.59), who fell just shy of the cutoff despite a favorable park factor and platoon edge against Shane Bieber. The optimizer ultimately favored the higher-volume plate appearance projections of **Yordan Alvarez** (58.66)\u2014whose elite xwOBA remains too valuable to bench\u2014and the situational stability of **Junior Caminero** (62.88).\n\nManagement must remain vigilant regarding the current lineup uncertainty; nearly every position remains in \"Lineup Pending\" status. While our scoring model assumes standard batting order placement, a shift in the lineup for **Gary Sanchez** (56.03) or **Kazuma Okamoto** (42.89) could necessitate an immediate re-evaluation of their efficiency scores. **Kazuma Okamoto** is particularly susceptible to a downward adjustment if he drops lower in the order against Logan Gilbert\u2019s 3.37 xERA, which already stands as one of the tougher tests for our lineup today. Outside of the lineup risk, all systems are go for a high-intensity offensive push.",
+    "narrative": "For today\u2019s Independence Day slate, the Zurich Zebras lean heavily on speed and favorable matchups to navigate a high-volume day. **Pete Crow-Armstrong** (82.13) stands as the premier start, benefiting from an elite combination of a porous Kyle Leahy matchup and a massive boost from his projected leadoff spot. Close behind him, **Christian Yelich** (74.33) is a core pillar; while a poor historical BvP against Merrill Kelly is a slight concern, the combination of a high-leverage leadoff opportunity and the pitcher's elevated 5.47 xERA makes him an essential play. **Trea Turner** (67.06) and **Kyle Schwarber** (66.71) remain high-floor staples against Michael Wacha, with **Trea Turner** providing the essential stolen base ceiling we prioritize, even against a pitcher who manages the running game reasonably well.\n\nWe have strategically capitalized on platoon splits and weak pitching, notably with **Caleb Durbin** (65.79) and **Colt Keith** (64.81), both of whom benefit from SP skill advantages exceeding 15% and ideal order positioning. **Junior Caminero** (62.88) rounds out our UTIL spot, maintaining a strong profile despite facing a sharper arm in Hunter Brown. The most difficult personnel decision today involved **Luke Raley**, who produced a respectable 58.60 score but ultimately sits on the bench. While **Luke Raley** offers significant power against an hittable Bieber, he fell just short of the efficiency thresholds maintained by the rest of our outfield and utility cluster; the optimizer prioritized the higher cumulative point projections of our starting core over his raw power upside. \n\nRisks remain, as several of our starters\u2014most notably **Gary Sanchez**, **Trea Turner**, and **Yordan Alvarez**\u2014are operating under \"Lineup Pending\" status, which adds a layer of volatility to our daily efficiency scores. **Yordan Alvarez** (58.67) represents our most notable risk-adjusted play, as his raw power is being suppressed by a tough draw against Drew Rasmussen. We are monitoring all lineups closely; should any of the projected leadoff or high-order hitters be shuffled downward, we will re-evaluate our bench depth to ensure we are not sacrificing potential stolen bases or run-scoring opportunities for pure base-projection.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -115,11 +115,6 @@
             "Score": 42.89943463561884,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "52.07",
                     "type": "info"
@@ -150,11 +145,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Logan Gilbert (R)",
+            "Opponent": "Gilbert, L (R)",
             "SP_xERA": "3.37",
             "Warning": "",
             "GameTime": "2026-07-04T20:10:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "08:10 PM"
         },
         {
@@ -902,17 +897,12 @@
             "Slot": "BN",
             "Player": "Luke Raley",
             "POS": "1B/OF",
-            "Order": "6*",
+            "Order": "6",
             "Start": "08:10 PM",
-            "Opponent": "Shane Bieber (R)",
+            "Opponent": "Bieber (R)",
             "SP_xERA": "5.52",
             "Score": 58.59906682423106,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.04",
@@ -939,7 +929,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
