@@ -1,15 +1,15 @@
 {
     "target_date": "2026-07-04",
-    "last_updated": "2026-07-04T14:59:16.528992+00:00",
+    "last_updated": "2026-07-04T16:01:24.256853+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 796.56,
-    "narrative": "For July 4th, Ghost Ride the WHIP leans heavily into matchup exploitation, led by **Brice Turang** and **Corbin Carroll**. **Brice Turang** earns the day's highest efficiency score (75.05) by drawing a favorable matchup against Merrill Kelly; with an xERA of 5.47, Kelly provides the optimal environment for **Brice Turang** to capitalize on his top-of-the-order production. **Corbin Carroll** remains a priority start (73.47) not just for his expected output, but because his matchup against Brandon Woodruff\u2014who has a notably slow delivery\u2014offers high-upside potential for stolen bases, the scarcest currency in our 5x5 build. Similarly, **Mickey Moniak** (69.93) and **Kyle Karros** (63.19) benefit significantly from park factors and a favorable draw against Robbie Ray, whose vulnerability to high-impact contact pairs perfectly with their current hitting profiles.\n\nWhile our starting nine remains aggressive, the benching of **Austin Riley** (49.37) was the most difficult decision of the day. Despite his pedigree, **Austin Riley** narrowly missed the cut due to a challenging clash with Sean Manaea; the optimizer favored the platoon advantages of players like **Max Muncy** (61.13), whose park-adjusted upside against Sandy Alcantara outweighed the historical consistency of **Austin Riley**. Managers should note that **Travis Bazzana** (52.20) carries a weather-related risk, with a 37% chance of rain that could shorten his day despite his prime leadoff spot. We are also monitoring the \"Lineup Pending\" status for all players, particularly **Dalton Rushing**, whose efficiency score of 57.65 relies heavily on our projected #8 spot; any movement higher or lower in the order will alter his contribution threshold significantly. With the rotation depth currently available, we are prepared to pivot if late-breaking reports suggest unfavorable weather or lineup shifts for **Travis Bazzana** or **Alex Freeland**.",
+    "total_efficiency_score": 784.67,
+    "narrative": "The strongest plays for today\u2019s slate center on **Brice Turang** (75.06) and **Corbin Carroll** (73.47). **Brice Turang** benefits from a massive matchup grade against Merrill Kelly, where the combination of high SP vulnerability (+19% skill boost) and a prime #3 hole spot yields the highest efficiency score in our lineup. Simultaneously, **Corbin Carroll** remains a critical anchor; even against the formidable Brandon Woodruff, **Corbin Carroll** gains significant utility from a favorable dynamic platoon split and, crucially, a slow-delivery opposing pitcher that keeps his stolen base upside at a premium. **Josh Naylor** also warrants attention, as he faces the soft Shane Bieber (5.52 xERA), utilizing a strong SP skill bonus to reach a robust 70.49 score.\n\nThe most difficult roster decision today was excluding **Austin Riley**, who logged a 49.38 score\u2014narrowly missing the cut due to a tough matchup against Sean Manaea. While **Austin Riley** offers pedigree, the optimizer favored the platoon-advantaged **Kyle Karros** (63.20) and **Mickey Moniak** (69.94), who both leverage favorable park factors against Robbie Ray to outpace the bench. Elsewhere, we must monitor the status of **Travis Bazzana**, whose strong 52.20 projection is tethered to a 37% rain risk, and **Edwin Arroyo**, who is currently staring down a 42% precipitation chance while batting in the #9 spot. We are banking on **James Wood** to overcome the hurdle of Ashcraft\u2019s 3.19 xERA, relying on his elite xwOBA (0.418) to provide value even when the matchup suggests a neutral environment for a hitter of his caliber.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Dalton Rushing",
             "POS": "C",
-            "Score": 57.6566662251651,
+            "Score": 46.97099322740521,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -28,12 +28,17 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "+13%",
                     "type": "positive"
                 },
                 {
-                    "label": "Platoon",
-                    "value": "+7%",
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Slow SP Delivery (85% SB)",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
@@ -42,8 +47,8 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Griffin Canning (R)",
-            "SP_xERA": "4.78",
+            "Opponent": "Wandy Peralta (L)",
+            "SP_xERA": "4.54",
             "Warning": "",
             "GameTime": "2026-07-05T02:10:00Z",
             "Order": "8*",
@@ -247,18 +252,18 @@
         },
         {
             "Slot": "MI",
-            "Player": "Alex Freeland",
-            "POS": "2B/SS/3B",
-            "Score": 51.973330135197166,
+            "Player": "Brice Turang",
+            "POS": "2B",
+            "Score": 75.05806193891385,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #9)",
+                    "label": "Lineup Pending (Assumed #3)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "46.40",
+                    "value": "55.60",
                     "type": "info"
                 },
                 {
@@ -267,27 +272,32 @@
                     "type": "info"
                 },
                 {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
                     "label": "SP Skill",
                     "value": "+19%",
                     "type": "positive"
                 },
                 {
-                    "label": "Switch",
+                    "label": "Dynamic Platoon (R)",
                     "value": "+3%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Griffin Canning (R)",
-            "SP_xERA": "4.78",
+            "Opponent": "Merrill Kelly (R)",
+            "SP_xERA": "5.47",
             "Warning": "",
-            "GameTime": "2026-07-05T02:10:00Z",
-            "Order": "9*",
-            "Start": "02:10 AM"
+            "GameTime": "2026-07-05T01:40:00Z",
+            "Order": "3*",
+            "Start": "01:40 AM"
         },
         {
             "Slot": "3B",
@@ -605,18 +615,18 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Brice Turang",
-            "POS": "2B",
-            "Score": 75.05806193891385,
+            "Player": "Edwin Arroyo",
+            "POS": "2B/SS",
+            "Score": 50.76921864304902,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
+                    "label": "Lineup Pending (Assumed #9)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "55.60",
+                    "value": "44.96",
                     "type": "info"
                 },
                 {
@@ -631,26 +641,26 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "+16%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
+                    "label": "Switch",
                     "value": "+3%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Merrill Kelly (R)",
-            "SP_xERA": "5.47",
-            "Warning": "",
-            "GameTime": "2026-07-05T01:40:00Z",
-            "Order": "3*",
-            "Start": "01:40 AM"
+            "Opponent": "Brandon Young (R)",
+            "SP_xERA": "4.68",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
+            "GameTime": "2026-07-04T23:10:00Z",
+            "Order": "9*",
+            "Start": "11:10 PM"
         }
     ],
     "players_sat": [
@@ -879,13 +889,13 @@
         },
         {
             "Slot": "BN",
-            "Player": "Edwin Arroyo",
-            "POS": "2B/SS",
+            "Player": "Alex Freeland",
+            "POS": "2B/SS/3B",
             "Order": "9*",
-            "Start": "11:10 PM",
-            "Opponent": "Brandon Young (R)",
-            "SP_xERA": "4.68",
-            "Score": 50.76921864304902,
+            "Start": "02:10 AM",
+            "Opponent": "Wandy Peralta (L)",
+            "SP_xERA": "4.54",
+            "Score": 49.351670478072606,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -894,7 +904,7 @@
                 },
                 {
                     "label": "Base",
-                    "value": "44.96",
+                    "value": "46.40",
                     "type": "info"
                 },
                 {
@@ -903,13 +913,8 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
                     "label": "SP Skill",
-                    "value": "+16%",
+                    "value": "+13%",
                     "type": "positive"
                 },
                 {
@@ -929,7 +934,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-07-04T23:10:00Z"
+            "GameTime": "2026-07-05T02:10:00Z"
         },
         {
             "Slot": "BN",

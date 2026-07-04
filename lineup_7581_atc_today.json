@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-04",
-    "last_updated": "2026-07-04T14:59:51.000894+00:00",
+    "last_updated": "2026-07-04T16:02:01.927435+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 756.72,
-    "narrative": "For today\u2019s Independence Day slate, the **Austin Waves** lineup is anchored by **Kyle Tucker** (77.04) and **Andy Pages** (71.20), both of whom benefit significantly from a favorable matchup against Griffin Canning. **Kyle Tucker** is our primary offensive engine, buoyed by an excellent 4.78 xERA opponent and a solid platoon advantage. Meanwhile, **Heliot Ramos** (69.03) offers immense upside at the top of the order against Tomoyuki Sugano; his score is driven by a 14% park adjustment and the weak 5.15 xERA of the opposing starter, making him an elite play despite the neutral platoon. We are also monitoring **Gunnar Henderson** (63.22) closely; while he faces a difficult arm in Hunter Greene, his elite sprint speed and elevated batting order position ensure he remains a locked-in high-floor contributor.\n\nThe most difficult decision on the bench involved **Miguel Vargas** (48.09), who fell just shy of replacing **Curtis Mead** (44.72) or **Nolan Schanuel** (50.14) in the starting nine. While **Miguel Vargas** possesses an elite 0.402 xwOBA, the optimizer ultimately pivoted away due to a significant 37% rain risk and the lack of a confirmed batting order, which introduced too much volatility compared to our starters. We are proceeding with caution across the board, as several players\u2014including **Drake Baldwin**, **Liam Hicks**, **Vladimir Guerrero Jr.**, **Gunnar Henderson**, **Josh Jung**, **Andy Pages**, **Heliot Ramos**, **Jackson Merrill**, **Josh Lowe**, **Kyle Tucker**, and **Nolan Schanuel**\u2014are currently subject to \"Lineup Pending\" status. Should lineups shift, we will look to capitalize on the speed profiles of **Sam Antonacci** or **Wade Meckler** if the weather in their respective venues holds, but for now, the roster remains set to maximize efficiency while managing our remaining game caps.",
+    "total_efficiency_score": 748.6,
+    "narrative": "The Austin Waves enter today\u2019s slate with **Kyle Tucker** leading our projected output (71.26), buoyed by a significant talent baseline and a favorable matchup against Wandy Peralta. He is joined at the top of the board by **Heliot Ramos** (69.03) and **Andy Pages** (68.87); **Heliot Ramos** benefits from a high-run-environment park factor and a soft matchup against Sean Sullivan (6.43 xERA), while **Andy Pages** draws a valuable boost from Peralta\u2019s slow delivery, which increases our stolen base probability\u2014a critical factor for our roster construction. **Gunnar Henderson** remains a must-start at 63.22 despite the challenge of Hunter Greene, though we are tracking a 42% rain risk in that contest that could jeopardize his status.\n\nOn the bench, **Miguel Vargas** was the closest exclusion with a 48.09 score. While his elite 0.402 xwOBA is enticing, he was ultimately pushed out by the positional depth of **Vladimir Guerrero Jr.** and **Nolan Schanuel**, whose order security in the lineup carries more weight in our daily optimization. We are intentionally avoiding **Sam Antonacci** and **Brayan Rocchio** today, not just due to their lower projected floor, but because they are caught in the same 37% rain risk corridor as other potential targets. With **Drake Baldwin** and **Liam Hicks** locking down our catcher spots in favorable order positions, our focus remains on maximizing volume and speed; we will monitor the \"Lineup Pending\" status for all starters, specifically looking for confirmation that **Gunnar Henderson** maintains his leadoff spot to capitalize on his elite sprint speed potential.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -245,7 +245,7 @@
             ],
             "Opponent": "Hunter Greene (R)",
             "SP_xERA": "3.06",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-07-04T23:10:00Z",
             "Order": "1*",
             "Start": "11:10 PM"
@@ -342,7 +342,7 @@
             "Slot": "OF1",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 71.19995276632908,
+            "Score": 68.87152877095798,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -361,13 +361,18 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "+13%",
                     "type": "positive"
                 },
                 {
-                    "label": "Neutral Platoon (R)",
+                    "label": "Neutral Platoon (L)",
                     "value": null,
                     "type": "info"
+                },
+                {
+                    "label": "Slow SP Delivery (85% SB)",
+                    "value": "+2%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #2",
@@ -375,8 +380,8 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Griffin Canning (R)",
-            "SP_xERA": "4.78",
+            "Opponent": "Wandy Peralta (L)",
+            "SP_xERA": "4.54",
             "Warning": "",
             "GameTime": "2026-07-05T02:10:00Z",
             "Order": "2*",
@@ -414,9 +419,9 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-1%",
-                    "type": "negative"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+1%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #3",
@@ -424,8 +429,8 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tomoyuki Sugano (R)",
-            "SP_xERA": "5.15",
+            "Opponent": "Sean Sullivan (L)",
+            "SP_xERA": "6.43",
             "Warning": "",
             "GameTime": "2026-07-05T00:10:00Z",
             "Order": "3*",
@@ -528,7 +533,7 @@
             "Slot": "OF5",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 77.03987349439922,
+            "Score": 71.25593921346308,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -547,17 +552,17 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "+13%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+1%",
-                    "type": "positive"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Griffin Canning (R)",
-            "SP_xERA": "4.78",
+            "Opponent": "Wandy Peralta (L)",
+            "SP_xERA": "4.54",
             "Warning": "",
             "GameTime": "2026-07-05T02:10:00Z",
             "Order": "6*",
@@ -923,7 +928,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-07-04T23:10:00Z"
         },
         {

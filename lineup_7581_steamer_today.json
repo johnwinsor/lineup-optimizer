@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-04",
-    "last_updated": "2026-07-04T14:59:48.297204+00:00",
+    "last_updated": "2026-07-04T16:01:59.076867+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 793.97,
-    "narrative": "For today\u2019s slate, **Kyle Tucker** (76.88) headlines the lineup, carrying the highest efficiency score as he faces Griffin Canning. The matchup against a pitcher with a 4.78 xERA provides a massive boost, making **Kyle Tucker** the anchor of our offense. He is joined in the elite tier by **Andy Pages** (72.36) and **Heliot Ramos** (70.57); both benefit significantly from park factors and favorable pitcher skill matchups, with **Heliot Ramos** capitalizing on a high-ceiling 3-hole spot against Tomoyuki Sugano. **Cole Carrigg** (71.23) remains a high-floor play, as his versatility and the 4.76 xERA of Robbie Ray allow him to exploit the park and pitcher variables effectively.\n\nThe most difficult roster decision today involves **Vladimir Guerrero Jr.**, who missed the cut with a score of 50.46. While he projects as a strong asset, the optimizer prioritized the higher efficiency of players like **Josh Jung** (56.68) and **Luis Garc\u00eda Jr.** (57.07), who benefit more from specific platoon advantages against right-handed starters. **Vladimir Guerrero Jr.** was penalized by a tougher matchup against Logan Gilbert\u2019s 3.37 xERA and a park factor drag. Meanwhile, we are monitoring **Brayan Rocchio** (45.94), who is currently our most volatile start; not only is he at the low end of our efficiency threshold, but he carries a 37% rain risk that could compromise his impact. We will be watching the weather closely to see if a late scratch necessitates a pivot to **Curtis Mead** or **Wade Meckler** from the bench.",
+    "total_efficiency_score": 785.83,
+    "narrative": "The Austin Waves enter July 4th with a clear emphasis on exploiting favorable pitching matchups to maximize our 5x5 Roto upside. Our top-tier play today is **Cole Carrigg** (71.23), who benefits from a high-ceiling matchup against Robbie Ray. The combination of a favorable hitter\u2019s park and Ray\u2019s vulnerability to elite hitters gives **Cole Carrigg** the slight edge over **Kyle Tucker** (71.11), who also rates as an elite start against Wandy Peralta. **Heliot Ramos** (70.57) rounds out our top-three plays; he is in a prime position to capitalize on a massive SP_xERA gap against Sean Sullivan (6.43), making him a core piece of our daily offensive strategy.\n\nThe most difficult roster decision involved leaving **Vladimir Guerrero Jr.** (50.46) on the bench. While his raw power profile is undeniable, a tough draw against Logan Gilbert combined with negative park factors forced the optimizer to favor the higher-efficiency projections of **Josh Jung** and **Luis Garc\u00eda Jr.**, both of whom carry more favorable platoon dynamics for today\u2019s slate. We are keeping a close eye on the weather, specifically the rain risks hovering over the matchups involving **Gunnar Henderson** (42%) and **Brayan Rocchio** (37%). If these games face delays or cancellations, we have sufficient bench depth to pivot, though we are currently comfortable with **Gunnar Henderson**\u2019s elite base projection despite the threat of precipitation. **Andy Pages** (69.99) also remains a high-conviction start, as we are projecting he can exploit Wandy Peralta\u2019s slow delivery to potentially generate stolen base value\u2014a critical, scarce category for our team's daily pursuit.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -240,7 +240,7 @@
             ],
             "Opponent": "Hunter Greene (R)",
             "SP_xERA": "3.06",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-07-04T23:10:00Z",
             "Order": "1*",
             "Start": "11:10 PM"
@@ -386,7 +386,7 @@
             "Slot": "OF2",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 72.35811905188795,
+            "Score": 69.99182000091429,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -405,13 +405,18 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "+13%",
                     "type": "positive"
                 },
                 {
-                    "label": "Neutral Platoon (R)",
+                    "label": "Neutral Platoon (L)",
                     "value": null,
                     "type": "info"
+                },
+                {
+                    "label": "Slow SP Delivery (85% SB)",
+                    "value": "+2%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #2",
@@ -419,8 +424,8 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Griffin Canning (R)",
-            "SP_xERA": "4.78",
+            "Opponent": "Wandy Peralta (L)",
+            "SP_xERA": "4.54",
             "Warning": "",
             "GameTime": "2026-07-05T02:10:00Z",
             "Order": "2*",
@@ -551,9 +556,9 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-1%",
-                    "type": "negative"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+1%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #3",
@@ -561,8 +566,8 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tomoyuki Sugano (R)",
-            "SP_xERA": "5.15",
+            "Opponent": "Sean Sullivan (L)",
+            "SP_xERA": "6.43",
             "Warning": "",
             "GameTime": "2026-07-05T00:10:00Z",
             "Order": "3*",
@@ -572,7 +577,7 @@
             "Slot": "UTIL",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 76.87997784815681,
+            "Score": 71.10804807693395,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -591,17 +596,17 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "+13%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+1%",
-                    "type": "positive"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Griffin Canning (R)",
-            "SP_xERA": "4.78",
+            "Opponent": "Wandy Peralta (L)",
+            "SP_xERA": "4.54",
             "Warning": "",
             "GameTime": "2026-07-05T02:10:00Z",
             "Order": "6*",
@@ -864,7 +869,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-07-04T23:10:00Z"
         },
         {
