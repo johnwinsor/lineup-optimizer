@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-05",
-    "last_updated": "2026-07-05T19:12:44.099687+00:00",
+    "last_updated": "2026-07-05T20:49:36.712012+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 752.59,
-    "narrative": "The primary focus for LawDog today centers on the elite scoring output of **Lawrence Butler** (71.26), **Bryson Stott** (71.23), and **Taylor Ward** (71.19). **Lawrence Butler** holds the highest efficiency rating on the board, benefiting from a high-upside matchup against P\u00e9rez and a clean middle-of-the-order opportunity that maximizes his run production potential. Meanwhile, **Bryson Stott** and **Taylor Ward** are clear-cut starters due to massive SP skill advantages; **Bryson Stott** faces a struggling Avila, and while he faces a slight penalty for the catcher's elite hold rate, his volume in the 5x5 categories remains too high to bench. **Taylor Ward** thrives in his platoon advantage against Lodolo, with the favorable park factors bolstering a strong base projection that solidifies his role as a cornerstone of today\u2019s lineup.\n\nStrategic decisions in the outfield and middle infield emphasize the scarcity of stolen bases. **Jung Hoo Lee** (61.69) is prioritized over **Daulton Varsho** (52.12) due to a superior matchup against Gordon, where the slow delivery of the opposing pitcher provides a critical green light for the base paths. **Geraldo Perdomo** (59.18) occupies the UTIL spot, narrowly edging out **Gavin Sheets** (48.63). **Gavin Sheets** was the most difficult exclusion; despite a decent projection, the lingering uncertainty of his lineup spot\u2014officially listed as \"Lineup Pending\"\u2014rendered him a riskier play compared to the confirmed floor of **Geraldo Perdomo**. \n\nWe continue to monitor the status of **Jos\u00e9 Ram\u00edrez**, who remains sidelined on the IL, leaving a significant void in our power-speed production that we are currently compensating for with the collective volume of **Jonathan Aranda** and **Masyn Winn**. While **Cal Raleigh** (63.15) faces a tough matchup against Yesavage, his role in the #3 spot ensures we aren't sacrificing valuable run-scoring opportunities despite the SP skill headwind. Managers should note that **Luis Arraez** (65.15) remains a high-floor play, relying on his elite batting average profile and a +14% park boost to offset the presence of Gordon on the mound.",
+    "narrative": "The top of our rotation for LawDog today is anchored by **Lawrence Butler** (71.26) and **Bryson Stott** (71.23), both of whom benefit from highly favorable matchups against back-end starters. **Lawrence Butler** projects as our elite offensive engine, capitalizing on a 3.98 xERA matchup against P\u00e9rez and a clean middle-of-the-order spot. Meanwhile, **Bryson Stott** remains a must-start; while we typically penalize him for an \"Elite Hold SP\" risk\u2014where an opposing pitcher\u2019s skill set might stifle our stolen base potential\u2014the projection reflects a significant platoon advantage against Avila that makes his 71.23 score too high to fade. **Taylor Ward** also deserves recognition as a tier-one play (71.19), as he avoids the \"lefty-lefty\" disadvantage against Lodolo to provide significant power upside.\n\nThe lineup construction strategy prioritizes the scarcity of stolen bases. We have strategically positioned **Jung Hoo Lee** (61.69) and **Drew Gilbert** (50.86) to exploit Gordon\u2019s slow delivery, which provides a tangible boost to our stolen base probability. While **Daulton Varsho** (52.12) is currently operating near our marginal floor, his inclusion remains necessary to hedge against the volatility of the bottom-third of the order. Our most difficult bench decision involved **Gavin Sheets**, who posted a respectable 48.63 score against Sheehan. Ultimately, the optimizer favored **Geraldo Perdomo** (59.18) due to his superior position in the batting order and his higher baseline efficiency, keeping **Gavin Sheets** on the pine to preserve our game caps.\n\nWe are monitoring several situational risks as the day progresses. The primary concern remains the health of **Jos\u00e9 Ram\u00edrez**, who remains on the IL, leaving a significant void in our power production. Additionally, we are tracking the weather closely for any games that might suppress output, though the current projections do not indicate any major disruptions. We are proceeding with **Cal Raleigh** (63.15) and **Jonathan Aranda** (67.67) as reliable staples; however, we will be watching their early at-bats closely against Yesavage and Lambert to ensure their dynamic platoon adjustments align with the game-flow. Other rostered assets like **Matt Chapman**, **Dylan Beavers**, **Brendan Donovan**, **Gleyber Torres**, **Ryan Waldschmidt**, **Will Smith**, **Yainer Diaz**, and **Tyler Freeman** are currently held in reserve, ready to be deployed as matchups shift throughout the week.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -660,11 +660,46 @@
             "Player": "Dylan Beavers",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "05:05 PM",
+            "Opponent": "Lodolo (L)",
+            "SP_xERA": "4.75",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "51.49",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+18%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -672,7 +707,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-07-05T17:05:00Z"
         },
         {
             "Slot": "BN",
@@ -750,17 +785,12 @@
             "Slot": "BN",
             "Player": "Gavin Sheets",
             "POS": "1B/OF",
-            "Order": "4*",
+            "Order": "4",
             "Start": "11:20 PM",
             "Opponent": "Sheehan (R)",
             "SP_xERA": "3.62",
             "Score": 48.62715955891222,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.14",
@@ -787,7 +817,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
