@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-04",
-    "last_updated": "2026-07-04T23:54:22.716808+00:00",
+    "last_updated": "2026-07-05T02:29:35.652126+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 753.51,
-    "narrative": "The Zurich Zebras enter the July 4th slate with a clear focal point in **Pete Crow-Armstrong**, who earns today\u2019s highest efficiency mark at 80.98. His favorable matchup against Leahy and a prime spot at the top of the order provide a significant boost, though **Christian Yelich** follows closely with a 75.84 score. **Christian Yelich** benefits immensely from the matchup against Kelly and his park-adjusted metrics, easily offsetting a minor BvP penalty. While **Yordan Alvarez** maintains his status as our primary power threat, his relatively lower score of 55.68 reflects the difficulty of his matchup against a high-skill arm like Rasmussen, emphasizing our commitment to maximizing efficiency in the categories of SB and AVG over raw power alone.\n\nRegarding our bench strategy, **Luke Raley** was the most difficult exclusion of the day, missing the cut with a 59.03 score. Despite a favorable xERA from the opposing pitcher, **Luke Raley** was relegated to the bench because the cumulative efficiency of our outfield and utility starters\u2014specifically the high-upside plays of **Pete Crow-Armstrong** and **Christian Yelich**\u2014simply offered a higher statistical floor for our 5x5 objectives. We are also monitoring a 40% rain risk affecting **Trea Turner** and **Kyle Schwarber**; both players are locked into their spots due to high projected value, but managers should keep an eye on potential in-game delays in their respective contests. **Kazuma Okamoto** rounds out our lineup, though his 42.64 score against a tough arm in Gilbert suggests he remains a volatile piece today, requiring immediate replacement if any late-scratch news arises regarding our higher-priority options.",
+    "narrative": "The Zurich Zebras enter this July 4th slate with **Pete Crow-Armstrong** serving as our clear focal point. With an elite efficiency score of 80.98, **Pete Crow-Armstrong** benefits from a highly favorable matchup against Leahy (4.52 xERA) and occupies the leadoff spot, where his elite speed remains our primary weapon to address the scarcity of stolen bases in our 5x5 rotation. Similarly, **Christian Yelich** offers immense upside at 75.84; despite a slight BvP penalty, his performance against Kelly is bolstered by a significant 19% boost from the SP skill profile and a favorable park factor, making him a cornerstone of today's offensive strategy.\n\nOur lineup construction emphasizes the leverage gained against weaker pitching, though we must navigate a few high-risk profiles. **Yordan Alvarez** (55.68) and **Kazuma Okamoto** (42.63) are facing tougher arms in Rasmussen and Gilbert, respectively, limiting their scoring potential today. The most difficult decision rested on the bench, where **Luke Raley** (59.03) fell just shy of the cutoff. While **Luke Raley** carries a strong SP skill advantage against Bieber, the optimizer favored the multi-category upside and order stability of **Casey Schmitt** (61.13) and his favorable park environment. Managers should keep a close eye on **Dillon Dingler**, whose score of 51.02 remains volatile; while he is currently active, he sits precariously close to the sub-50 threshold. Ensure all status updates are monitored as we push to maximize our efficiency-to-cap ratio across this holiday slate.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -220,7 +220,7 @@
             ],
             "Opponent": "Wacha (R)",
             "SP_xERA": "4.35",
-            "Warning": "\u26a0\ufe0f Rain Risk (40%)",
+            "Warning": "",
             "GameTime": "2026-07-05T00:10:00Z",
             "Order": "1",
             "Start": "12:10 AM"
@@ -318,7 +318,7 @@
             ],
             "Opponent": "Wacha (R)",
             "SP_xERA": "4.35",
-            "Warning": "\u26a0\ufe0f Rain Risk (40%)",
+            "Warning": "",
             "GameTime": "2026-07-05T00:10:00Z",
             "Order": "2",
             "Start": "12:10 AM"
@@ -402,6 +402,11 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+14%",
                     "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (63% SB)",
+                    "value": "-4%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #1",
