@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-05",
-    "last_updated": "2026-07-05T13:10:47.103750+00:00",
+    "last_updated": "2026-07-05T15:07:29.915276+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 814.81,
-    "narrative": "For today\u2019s slate, **James Wood** (78.42) and **Mickey Moniak** (75.75) anchor our offensive attack, leveraging elite matchups against pitchers with high-xERA profiles. **James Wood** benefits significantly from batting leadoff against Bubba Chandler (4.92 xERA), with his league-leading 0.420 xwOBA serving as the primary engine for his score. Meanwhile, **Mickey Moniak** receives a substantial boost from an advantageous park factor (+14%) and platoon advantage (+14%) against Tyler Mahle, mitigating the slight risk posed by an elite-tier catcher arm. **Brice Turang** (73.40) and **Corbin Carroll** (73.03) round out the top tier, with **Brice Turang** specifically positioned to exploit Eduardo Rodriguez\u2019s slow delivery for stolen base opportunities, a critical factor given our aggressive pursuit of the scarcest category in this 5x5 format.\n\nThe most difficult decision on the bench involved **Austin Riley** (50.45), who narrowly missed the cut behind the stability of **Isaac Paredes** and **Max Muncy**. While **Austin Riley** offers pedigree, the optimizer prioritized the SP skill differential, penalizing him for a matchup against Nolan McLean. Ultimately, we elected to keep **Max Muncy** in the lineup to capture the 10% park boost, despite the neutral platoon environment. We are monitoring **Dalton Rushing** and **Alex Freeland** closely, as their scores are somewhat suppressed by unfavorable L/L matchups against JP Sears and lingering uncertainty regarding their final batting order positions. While **Seiya Suzuki** projects well at 62.82, we must caution that his upside is partially offset by a \"Wind In\" advisory, which could dampen his power output despite the favorable matchup against Matthew Liberatore.",
+    "narrative": "Today\u2019s lineup for Ghost Ride the WHIP leans heavily into favorable matchups against middle-of-the-road pitching, with **James Wood** (78.42) and **Mickey Moniak** (75.75) anchoring the offense as our highest-projected starters. **James Wood** benefits from a massive 19% boost from an favorable matchup against Chandler and a +10% bump for his spot atop the order; his elite 0.420 xwOBA makes him our primary anchor. **Mickey Moniak** is equally well-positioned, utilizing a +14% park factor and a +14% platoon edge against Tyler Mahle to secure his high efficiency score. Meanwhile, **Brice Turang** (73.40) provides the necessary juice for our stolen base target, leveraging a 4% efficiency boost against a pitcher with slow delivery to maximize his aggressive base-running profile.\n\nThe most difficult bench decision involved **Cole Young**, whose 48.48 score narrowly missed the cut behind the stronger efficiency floor of **Max Muncy** (53.64). While **Cole Young** possesses upside, the optimizer favored **Max Muncy** due to a significant +10% park factor and a favorable matchup against Eury P\u00e9rez, whereas **Cole Young** faced a slightly tougher path against Trey Yesavage. We are also keeping a close eye on **Seiya Suzuki** (62.82); while his platoon and park data are solid, the \"Wind In\" warning at the stadium represents a tangible risk to his home run potential that could depress his actual output. Across the board, we are monitoring lineup confirmations for **Dalton Rushing**, **Gabriel Moreno**, **Josh Naylor**, **Alex Freeland**, **Isaac Paredes**, **Henry Bolte**, **Corbin Carroll**, and **Kyle Karros**, as any shift in batting order could necessitate immediate adjustments to our category-chasing strategy. **Tyler Soderstrom**, **Vinnie Pasquantino**, **Jose Caballero**, **Austin Riley**, **Giancarlo Stanton**, **Trevor Story**, **Zach McKinstry**, **Edwin Arroyo**, and **Travis Bazzana** remain on high alert should injury replacements or late-breaking weather shifts force a reshuffle.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -522,6 +522,11 @@
                     "type": "info"
                 },
                 {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
@@ -532,7 +537,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Bubba Chandler (R)",
+            "Opponent": "Chandler (R)",
             "SP_xERA": "4.92",
             "Warning": "",
             "GameTime": "2026-07-05T17:00:00Z",
@@ -701,17 +706,12 @@
             "Slot": "BN",
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
-            "Order": "8*",
+            "Order": "9",
             "Start": "05:35 PM",
-            "Opponent": "Joe Ryan (R)",
+            "Opponent": "Ryan (R)",
             "SP_xERA": "3.23",
             "Score": 39.32010404417729,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.17",
@@ -738,12 +738,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #9",
+                    "value": "-8%",
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -755,17 +755,12 @@
             "Slot": "BN",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Order": "5*",
+            "Order": "7",
             "Start": "04:30 PM",
-            "Opponent": "Nolan McLean (R)",
+            "Opponent": "McLean (R)",
             "SP_xERA": "3.47",
-            "Score": 50.445152176346824,
+            "Score": 47.49262709308417,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.27",
@@ -792,12 +787,17 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-1.0%",
+                    "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -965,17 +965,12 @@
             "Slot": "BN",
             "Player": "Edwin Arroyo",
             "POS": "2B/SS",
-            "Order": "9*",
+            "Order": "9",
             "Start": "05:05 PM",
             "Opponent": "Kyle Bradish (R)",
             "SP_xERA": "4.32",
             "Score": 46.65311962711387,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.75",
@@ -1007,7 +1002,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -1019,17 +1014,12 @@
             "Slot": "BN",
             "Player": "Travis Bazzana",
             "POS": "2B",
-            "Order": "1*",
+            "Order": "1",
             "Start": "06:00 PM",
-            "Opponent": "Chris Murphy (L)",
+            "Opponent": "Murphy, C (L)",
             "SP_xERA": "4.50",
             "Score": 47.493240514849866,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "42.63",
@@ -1056,7 +1046,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
