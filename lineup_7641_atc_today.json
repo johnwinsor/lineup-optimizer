@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-08",
-    "last_updated": "2026-07-08T21:00:01.958026+00:00",
+    "last_updated": "2026-07-08T22:03:32.972035+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 779.49,
-    "narrative": "Today\u2019s slate for LawDog centers on leveraging high-ceiling matchups against soft pitching rotations, with **Taylor Ward** (70.17) and **Lawrence Butler** (69.28) emerging as our premier plays. **Taylor Ward** benefits from a massive park factor boost (+16%) and a favorable matchup against Rea, while **Lawrence Butler** is poised to capitalize on his elite dynamic platoon advantage (+13%) against Melton. We are also looking for a breakout performance from **Dylan Beavers** (68.38); despite the caution surrounding his matchup against an elite defensive catcher, the combination of favorable park factors and platoon splits keeps his efficiency high. **Cal Raleigh** (66.37) rounds out our top-tier targets, as his #4 spot in the order and the ability to leverage Phillips' xERA of 4.78 provide significant value in the power categories.\n\nOur bench strategy was dictated by efficiency thresholds, with **Jung Hoo Lee** (42.41) serving as the most difficult exclusion of the day. While **Jung Hoo Lee** saw a bump from his dynamic platoon edge, he ultimately could not overcome the negative drag of facing an elite arm like Cease. Similar logic applied to **Masyn Winn**, who, despite the prime #1 lineup spot, suffered from a -19% SP skill penalty that suppressed his score to 41.31. We are closely monitoring the lineup status for **Tyler Freeman**, **Geraldo Perdomo**, and **Gavin Sheets**; while their projected scores are solid, these \"Lineup Pending\" designations introduce variance. Furthermore, **Bryce Harper** (56.59) remains a mandatory start for his high-end xwOBA, even though he faces a stiff test in Burns, and **Luis Arraez** (44.64) is currently our riskiest active asset given his poor matchup against Cease. Be wary of **Zack Gelof** (58.18); while his #1 spot is encouraging, the potential for a low-SB game against an elite defensive backstop creates a narrow margin for error.",
+    "total_efficiency_score": 765.04,
+    "narrative": "Today\u2019s lineup features a strong core of outfielders capitalizing on favorable matchups, with **Taylor Ward** (70.17) and **Lawrence Butler** (69.28) leading the charge against Rea. Both players benefit significantly from a generous park factor (+16% and +5%, respectively) and a favorable SP xERA of 4.70, which allows them to clear the 60+ \"Strong\" threshold with ease. **Cal Raleigh** (66.37) also stands out as a high-floor play; despite a slight dynamic platoon disadvantage, his promotion to the #4 spot and a soft matchup against Phillips (4.78 xERA) make him our most efficient catcher play today.\n\nThe most difficult roster decision involved our bench, where **Jung Hoo Lee** (44.53) narrowly missed the final cut. While **Jung Hoo Lee** presents a respectable floor, his projections were hampered by a difficult matchup against Cease (2.97 xERA) and a neutral lineup position. He ultimately fell behind the utility ceiling of **Bryce Harper** (56.59), whose elite 0.404 xwOBA keeps him locked in despite facing a formidable arm in Burns. We are also monitoring the lineup status of **Tyler Freeman** and **Gavin Sheets**; both are currently penciled in as #5 hitters, but should their actual lineup positions shift lower, their efficiency scores will require re-evaluation against the speed profiles of bench options like **JJ Bleday** or **Drew Gilbert**.\n\nFinally, risk management is paramount given the scarcity of stolen bases in our 5x5 format. We are closely watching **Zack Gelof** (58.18) and **Dylan Beavers** (68.38); while their offensive profiles remain attractive, both face elite holding pitchers who could suppress their stolen base potential. **Masyn Winn** (41.31) remains in the lineup for his table-setting role at #1, but the matchup against Harrison (3.03 xERA) is tight, and we will be watching his early-game at-bats to see if he can overcome the SP-skill suppression affecting his overall efficiency score today.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -134,6 +134,99 @@
         },
         {
             "Slot": "2B",
+            "Player": "Luis Arraez",
+            "POS": "1B/2B",
+            "Score": 46.86684920396224,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "49.46",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Cease (R)",
+            "SP_xERA": "2.97",
+            "Warning": "",
+            "GameTime": "2026-07-08T19:45:00Z",
+            "Order": "2",
+            "Start": "07:45 PM"
+        },
+        {
+            "Slot": "SS",
+            "Player": "Masyn Winn",
+            "POS": "SS",
+            "Score": 41.31324803907972,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "49.46",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Harrison (L)",
+            "SP_xERA": "3.03",
+            "Warning": "",
+            "GameTime": "2026-07-08T23:45:00Z",
+            "Order": "1",
+            "Start": "11:45 PM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Tyler Freeman",
             "POS": "2B/OF",
             "Score": 59.19357992521927,
@@ -180,99 +273,6 @@
             "GameTime": "2026-07-09T02:10:00Z",
             "Order": "5*",
             "Start": "02:10 AM"
-        },
-        {
-            "Slot": "SS",
-            "Player": "Geraldo Perdomo",
-            "POS": "SS",
-            "Score": 60.79032595144673,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "53.83",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+11%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Michael King (R)",
-            "SP_xERA": "4.46",
-            "Warning": "",
-            "GameTime": "2026-07-09T02:10:00Z",
-            "Order": "2*",
-            "Start": "02:10 AM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Luis Arraez",
-            "POS": "1B/2B",
-            "Score": 44.63509447996404,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "49.46",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Cease (R)",
-            "SP_xERA": "2.97",
-            "Warning": "",
-            "GameTime": "2026-07-08T19:45:00Z",
-            "Order": "2",
-            "Start": "07:45 PM"
         },
         {
             "Slot": "3B",
@@ -325,13 +325,13 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Daulton Varsho",
+            "Player": "Lawrence Butler",
             "POS": "OF",
-            "Score": 55.929550167385635,
+            "Score": 69.27663408550738,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "53.57",
+                    "value": "54.42",
                     "type": "info"
                 },
                 {
@@ -341,83 +341,29 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-3%",
-                    "type": "negative"
+                    "value": "+6%",
+                    "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Elite Catcher (1.88s)",
-                    "value": "-1.0%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "value": "+13%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Webb, L (R)",
-            "SP_xERA": "3.86",
+            "Opponent": "Melton (R)",
+            "SP_xERA": "4.28",
             "Warning": "",
-            "GameTime": "2026-07-08T19:45:00Z",
-            "Order": "5",
-            "Start": "07:45 PM"
+            "GameTime": "2026-07-08T22:40:00Z",
+            "Order": "6",
+            "Start": "10:40 PM"
         },
         {
             "Slot": "OF2",
-            "Player": "Taylor Ward",
-            "POS": "OF",
-            "Score": 70.1708218196288,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "52.93",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+16%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+17%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Rea (R)",
-            "SP_xERA": "4.70",
-            "Warning": "",
-            "GameTime": "2026-07-08T22:35:00Z",
-            "Order": "3",
-            "Start": "10:35 PM"
-        },
-        {
-            "Slot": "OF3",
             "Player": "Dylan Beavers",
             "POS": "OF",
             "Score": 68.38229610455717,
@@ -461,14 +407,14 @@
             "Start": "10:35 PM"
         },
         {
-            "Slot": "OF4",
-            "Player": "Lawrence Butler",
+            "Slot": "OF3",
+            "Player": "Daulton Varsho",
             "POS": "OF",
-            "Score": 69.27663408550738,
+            "Score": 58.72602767575492,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "54.42",
+                    "value": "53.57",
                     "type": "info"
                 },
                 {
@@ -478,26 +424,85 @@
                 },
                 {
                     "label": "Park",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Catcher (1.88s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
                     "value": "+5%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Webb, L (R)",
+            "SP_xERA": "3.86",
+            "Warning": "",
+            "GameTime": "2026-07-08T19:45:00Z",
+            "Order": "5",
+            "Start": "07:45 PM"
+        },
+        {
+            "Slot": "OF4",
+            "Player": "Taylor Ward",
+            "POS": "OF",
+            "Score": 70.1708218196288,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "52.93",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+6%",
+                    "value": "+17%",
                     "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+13%",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Melton (R)",
-            "SP_xERA": "4.28",
+            "Opponent": "Rea (R)",
+            "SP_xERA": "4.70",
             "Warning": "",
-            "GameTime": "2026-07-08T22:40:00Z",
-            "Order": "6",
-            "Start": "10:40 PM"
+            "GameTime": "2026-07-08T22:35:00Z",
+            "Order": "3",
+            "Start": "10:35 PM"
         },
         {
             "Slot": "OF5",
@@ -541,7 +546,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jose Cabrera (R)",
+            "Opponent": "Cabrera, J (R)",
             "SP_xERA": "5.01",
             "Warning": "",
             "GameTime": "2026-07-09T02:10:00Z",
@@ -649,6 +654,25 @@
         },
         {
             "Slot": "BN",
+            "Player": "Geraldo Perdomo",
+            "POS": "SS",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
             "Player": "Ryan Waldschmidt",
             "POS": "OF",
             "Order": "-",
@@ -694,55 +718,6 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Masyn Winn",
-            "POS": "SS",
-            "Order": "1",
-            "Start": "11:45 PM",
-            "Opponent": "Harrison (L)",
-            "SP_xERA": "3.03",
-            "Score": 41.31324803907972,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "49.46",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Benched - Lower projected efficiency than other options.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-07-08T23:45:00Z"
         },
         {
             "Slot": "BN",
@@ -825,7 +800,7 @@
             "Start": "07:45 PM",
             "Opponent": "Cease (R)",
             "SP_xERA": "2.97",
-            "Score": 42.40617496299237,
+            "Score": 44.52648371114199,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -855,6 +830,11 @@
                 {
                     "label": "Order #5",
                     "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 },
                 {
@@ -893,7 +873,7 @@
             "Start": "07:45 PM",
             "Opponent": "Cease (R)",
             "SP_xERA": "2.97",
-            "Score": 34.937693328796335,
+            "Score": 36.684577995236154,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -924,6 +904,11 @@
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Benched - Below Zebras Floor (40.0).",
