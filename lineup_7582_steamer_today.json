@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-09",
-    "last_updated": "2026-07-09T17:12:43.653462+00:00",
+    "last_updated": "2026-07-09T19:23:31.776912+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 753.42,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a high-ceiling lineup led by **Pete Crow-Armstrong**, who earns our top efficiency score of 82.13. His matchup against the left-handed Triston Rogers is mathematically favorable, amplified by an elite 18% park adjustment and a 4% bonus for a slow delivery from the opposing pitcher, which provides an ideal environment for him to exploit the league\u2019s scarcest category: stolen bases. Following him closely are **Christian Yelich** (70.78) and **Kyle Schwarber** (70.57); both benefit significantly from a favorable dynamic platoon split against Andre Pallante and Brady Singer, respectively. While **Trea Turner** remains a high-end anchor at 73.89, the lineup\u2019s overall efficiency hinges on the speed-oriented upside provided by **Pete Crow-Armstrong** and **Christian Yelich** to maintain our competitive edge in the 5x5 categories.\n\nThe most difficult roster decision today involved **Lars Nootbaar**, who fell just short of the active roster with a score of 40.49. While he offers strong dynamic platoon upside against Logan Henderson, his projected low position in the batting order (-6% adjustment) and the opposing pitcher's respectable 3.03 xERA ultimately pushed him to the bench in favor of higher-floor plays like **Luke Raley** and **Carson Benge**. Managers should keep a close watch on **Caleb Durbin** and **Chase Meidroth**, both of whom currently hold strong scores but carry a 33% rain risk. If the weather conditions deteriorate, their availability may shift, forcing a pivot to the bench. Despite their high xwOBA metrics, the bench remains deep today, as **Nelson Velazquez** and **Dillon Dingler** were excluded to prioritize lineup stability and matchup-specific platoon advantages.",
+    "total_efficiency_score": 744.9,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with a clear focus on exploiting high-ceiling matchups, headlined by **Pete Crow-Armstrong** (82.13), who stands as our premier start. Facing Triston Rogers, **Crow-Armstrong** benefits from an elite park factor and a favorable matchup against a slower-delivery pitcher, creating an ideal environment for his elite sprint speed to impact the stolen base category. **Trea Turner** (73.89) and **Christian Yelich** (70.78) follow closely behind; both leverage advantageous platoon splits against right-handed pitching and favorable spot-in-the-order boosts. We are also expecting significant production from **Kyle Schwarber** (70.57), whose strong xwOBA profile and high-leverage spot at #2 in the order against Singer provide a formidable anchor for our counting stats.\n\nOur optimization model was most challenged by the final utility spot, where **Lars Nootbaar** (43.93) narrowly missed the cut. While **Nootbaar** posted a respectable score bolstered by a platoon edge, he was ultimately benched because his matchup against the superior arm of Logan Henderson (3.03 xERA) failed to match the efficiency of our starting OF/UTIL core. Meanwhile, we remain wary of the volatility surrounding **Gary Sanchez** (47.32) and **Colt Keith** (53.22); both rely on projected lineup placements that have yet to be confirmed, and **Keith** faces a high-skill arm in Jack Perkins that threatens his base projection. Despite these risks, the sheer offensive upside of **Junior Caminero** (63.19) and **Caleb Durbin** (63.65) against lower-tier pitching provides enough cushion to keep the Zebras competitive across all five roto categories.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -47,7 +47,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Andre Pallante (R)",
+            "Opponent": "Pallante (R)",
             "SP_xERA": "4.22",
             "Warning": "",
             "GameTime": "2026-07-09T23:45:00Z",
@@ -105,13 +105,13 @@
         },
         {
             "Slot": "2B",
-            "Player": "Caleb Durbin",
-            "POS": "2B/3B",
-            "Score": 63.65324385111097,
+            "Player": "Chase Meidroth",
+            "POS": "2B/SS",
+            "Score": 44.88345854528956,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "53.90",
+                    "value": "49.25",
                     "type": "info"
                 },
                 {
@@ -126,25 +126,25 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+17%",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+4%",
                     "type": "positive"
                 },
                 {
-                    "label": "Neutral Platoon (L)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kay (L)",
-            "SP_xERA": "4.69",
-            "Warning": "\u26a0\ufe0f Rain Risk (33%)",
+            "Opponent": "Sandoval (L)",
+            "SP_xERA": "0.00",
+            "Warning": "",
             "GameTime": "2026-07-09T18:10:00Z",
-            "Order": "5",
+            "Order": "1",
             "Start": "06:10 PM"
         },
         {
@@ -189,7 +189,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Brady Singer (R)",
+            "Opponent": "Singer (R)",
             "SP_xERA": "4.51",
             "Warning": "",
             "GameTime": "2026-07-09T23:10:00Z",
@@ -198,13 +198,13 @@
         },
         {
             "Slot": "MI",
-            "Player": "Chase Meidroth",
-            "POS": "2B/SS",
-            "Score": 56.104323181611946,
+            "Player": "Caleb Durbin",
+            "POS": "2B/3B",
+            "Score": 63.65324385111097,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "49.25",
+                    "value": "53.90",
                     "type": "info"
                 },
                 {
@@ -218,21 +218,26 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+4%",
+                    "label": "SP Skill",
+                    "value": "+17%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Sandoval (L)",
-            "SP_xERA": "4.00",
-            "Warning": "\u26a0\ufe0f Rain Risk (33%)",
+            "Opponent": "Kay (L)",
+            "SP_xERA": "4.69",
+            "Warning": "",
             "GameTime": "2026-07-09T18:10:00Z",
-            "Order": "1",
+            "Order": "5",
             "Start": "06:10 PM"
         },
         {
@@ -316,7 +321,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Slow SP Delivery (90% SB)",
+                    "label": "Slow SP Delivery (91% SB)",
                     "value": "+4%",
                     "type": "positive"
                 },
@@ -394,11 +399,6 @@
             "Score": 55.33099811772584,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "48.04",
                     "type": "info"
@@ -424,18 +424,18 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Janson Junk (R)",
+            "Opponent": "Junk (R)",
             "SP_xERA": "4.44",
             "Warning": "",
             "GameTime": "2026-07-09T22:40:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "10:40 PM"
         },
         {
             "Slot": "OF4",
             "Player": "Carson Benge",
             "POS": "OF",
-            "Score": 54.01957265107854,
+            "Score": 56.720551283632474,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -465,6 +465,11 @@
                 {
                     "label": "Order #4",
                     "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -522,7 +527,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Andre Pallante (R)",
+            "Opponent": "Pallante (R)",
             "SP_xERA": "4.22",
             "Warning": "",
             "GameTime": "2026-07-09T23:45:00Z",
@@ -576,7 +581,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Brady Singer (R)",
+            "Opponent": "Singer (R)",
             "SP_xERA": "4.51",
             "Warning": "",
             "GameTime": "2026-07-09T23:10:00Z",
@@ -651,17 +656,12 @@
             "Slot": "BN",
             "Player": "Lars Nootbaar",
             "POS": "OF",
-            "Order": "8*",
+            "Order": "5",
             "Start": "11:45 PM",
             "Opponent": "Logan Henderson (R)",
             "SP_xERA": "3.03",
-            "Score": 40.486623198390156,
+            "Score": 43.93229325782762,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.20",
@@ -688,12 +688,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -705,60 +705,20 @@
             "Slot": "BN",
             "Player": "Nelson Velazquez",
             "POS": "OF",
-            "Order": "4*",
-            "Start": "11:45 PM",
-            "Opponent": "Logan Henderson (R)",
-            "SP_xERA": "3.03",
-            "Score": 37.9620367125447,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.00",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Elite",
-                    "value": "0.423",
-                    "type": "info"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-07-09T23:45:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
