@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-08",
-    "last_updated": "2026-07-09T00:00:35.048104+00:00",
+    "last_updated": "2026-07-09T02:22:17.929092+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 696.9,
-    "narrative": "The Zurich Zebras enter tonight\u2019s slate with **Christian Yelich** (75.84) and **Pete Crow-Armstrong** (71.03) anchoring the outfield as our clear priority starts. **Christian Yelich** benefits from a massive 13% platoon boost against McGreevy, while **Pete Crow-Armstrong** thrives in a high-efficiency park environment, overcoming a sub-3.00 xERA matchup against Kremer. Both hitters are prioritized for their high-upside roles at the top of the order, where their elite sprint speed and base-stealing potential\u2014critical for our 5x5 Roto needs\u2014are maximized by high-volume plate appearances. Conversely, **Dillon Dingler** (63.90) and **Josh Smith** (62.54) also provide strong value, with both players seeing significant bumps from their #2 spots in the order and favorable platoon alignments against left- and right-handed arms, respectively.\n\nThe most difficult bench decision involved **Casey Schmitt** (43.52) and **Nelson Velazquez** (41.01). While both players cleared the Zebras\u2019 40.0 baseline, they were ultimately squeezed out by the depth of our middle infield and outfield rotations. **Casey Schmitt** suffered primarily from an elite-tier matchup against Cease, whose high-strikeout profile suppressed his efficiency score below the utility-grade floor required to displace **Kyle Schwarber** or **Caleb Durbin**. Meanwhile, **Nelson Velazquez** remains a high-variance play; his elite 0.420 xwOBA suggests he could easily outperform the projected total, but his matchup against Harrison (L) and a lower projected lineup slot forced the optimizer to favor the more stable floor of **Carson Benge**.\n\nRisk management remains a theme today, particularly with **Yordan Alvarez** (57.36) and **Kazuma Okamoto** (46.99). **Yordan Alvarez** is battling a significant platoon disadvantage against Griffin (L), which dampens his base projection, though his elite xwOBA keeps him in the starting lineup regardless. We are also monitoring the status of **Trea Turner**, who remains unavailable today; his absence continues to put pressure on our remaining roster to maintain speed volume. With no major weather concerns currently flagged, our focus remains on leveraging the platoon-heavy profiles of **Luke Raley** and **Junior Caminero** to stabilize the lineup against their respective right-handed opponents.",
+    "narrative": "The Zurich Zebras roster enters today with **Christian Yelich** leading the charge as our premier offensive anchor. With a score of 75.84, **Christian Yelich** benefits from a high-leverage leadoff spot and a favorable matchup against McGreevy, whose 4.54 xERA provides ample opportunity for production. Similarly, **Pete Crow-Armstrong** demands attention at 71.03; while he faces a tougher arm in Kremer, the 16% park factor boost and his elite speed profile\u2014which we weigh heavily for SB accumulation\u2014make him a cornerstone of today's efficiency strategy. **Dillon Dingler** (63.90) and **Josh Smith** (62.54) also project as strong starts, with **Josh Smith** specifically gaining a hidden-gem edge due to Ure\u00f1a\u2019s slow delivery, which significantly improves our probability of stealing bases in this 5x5 format.\n\nNavigating the remainder of the lineup, **Junior Caminero** remains a must-start at 61.45 despite a difficult matchup against Cole, as his ability to consistently maintain an xwOBA above .370 provides the necessary floor. The most difficult bench decision involved **Casey Schmitt**, whose 43.52 efficiency fell just short of our rotation threshold; he was ultimately pushed out by the higher-upside profiles of **Luke Raley** and **Carson Benge**, whose platoon advantages against their respective right-handed opponents provide a clearer path to counting stats. We continue to monitor the status of **Trea Turner**, who remains sidelined, ensuring our depth pieces are properly positioned to mitigate any volatility. No major weather concerns have been flagged, but we are keeping a close eye on the confirmed lineups for **Yordan Alvarez**, whose L/L platoon disadvantage against Griffin slightly tempers his raw talent projection.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -122,6 +122,11 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (85% SB)",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
@@ -588,11 +593,51 @@
             "Player": "Colt Keith",
             "POS": "1B/2B/3B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "10:40 PM",
+            "Opponent": "Springs (L)",
+            "SP_xERA": "4.58",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "50.75",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -600,7 +645,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-07-08T22:40:00Z"
         },
         {
             "Slot": "BN",
