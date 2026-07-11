@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-11",
-    "last_updated": "2026-07-11T14:21:13.788953+00:00",
+    "last_updated": "2026-07-11T15:47:26.208091+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 720.73,
-    "narrative": "The clear centerpiece of today\u2019s lineup is **Taylor Ward**, who demands attention with a 71.46 efficiency score. Benefitting significantly from a hitter-friendly environment against Noah Cameron, **Taylor Ward** holds a distinct platoon advantage that pushes his output well above the rest of the roster. Meanwhile, **Bryce Harper** and **Daulton Varsho** serve as our secondary pillars, both hovering near the 60-point threshold. **Bryce Harper** continues to provide high-floor value despite facing a respectable arm in Casey Mize, while **Daulton Varsho** earns his spot through a favorable 10% dynamic platoon boost against Walker Buehler, mitigating the risk of a tougher pitching matchup.\n\nThe most difficult roster decision today involved the marginal gap between our starters and the bench, specifically regarding **Jonathan Aranda**. His 49.33 score was the highest of our non-starters, but he fell just short of the cut primarily due to the prohibitive 3.35 xERA of Logan Gilbert. While **Jonathan Aranda** benefits from a strong platoon edge, the optimizer prioritized the higher overall efficiency of players like **Yainer Diaz** and **Cal Raleigh**, even while acknowledging the volatility of their pending lineup statuses. We are monitoring **Lawrence Butler** closely; while his 49.86 score is bolstered by a leadoff spot, he faces a significant 13% drag due to a same-handed platoon disadvantage against Bryan Hudson. \n\nFinally, remain alert to the \"Lineup Pending\" status across the board, which introduces non-trivial risk to these projections. Specifically, **Jeremiah Jackson** and **Dylan Beavers** are both playing in a park environment providing a 16% lift, but they are tethered to a matchup against Noah Cameron that could see their value shift drastically depending on the finalized order. While **Dylan Beavers** faces a 9% penalty for an L/L platoon matchup, his underlying speed remains an asset we are watching closely for potential stolen base opportunities. Ensure your lineups are adjusted if any of these assumed batting positions deviate once official cards are exchanged.",
+    "total_efficiency_score": 720.2,
+    "narrative": "For LawDog\u2019s 2026-07-11 slate, **Taylor Ward** stands out as the clear offensive anchor with a 71.46 efficiency score. Facing Noah Cameron, **Taylor Ward** benefits from a massive 16% park factor boost and a highly favorable L/L platoon alignment that elevates his projected ceiling. Similarly, **Bryce Harper** (59.98) and **Daulton Varsho** (59.91) provide high-floor production. **Bryce Harper** maintains a strong xwOBA of 0.396 against Casey Mize, while **Daulton Varsho** continues to capitalize on his dynamic platoon advantage against right-handed pitching, providing the necessary versatility to anchor our outfield output. \n\nThe optimizer\u2019s toughest decision centered on **Geraldo Perdomo**, who finished as the top bench option with a 47.09 score. While **Geraldo Perdomo**\u2019s spot in the #2 hole provides inherent value, the difficulty of the matchup against Yoshinobu Yamamoto\u2014coupled with a significant 15% SP skill penalty\u2014forced him to the bench in favor of higher-efficiency starters like **Masyn Winn** and **Tyler Freeman**, who face more forgiving arms. We are operating under \"Lineup Pending\" status for nearly every slot; while we have projected **Yainer Diaz**, **Cal Raleigh**, **Jonathan Aranda**, **Luis Arraez**, **Masyn Winn**, **Tyler Freeman**, **Jeremiah Jackson**, **Daulton Varsho**, **Taylor Ward**, **Dylan Beavers**, **JJ Bleday**, **Gavin Sheets**, and **Bryce Harper** based on historical trends, any late shifts in batting order will require immediate re-evaluation. Managers should keep a close eye on **Jeremiah Jackson**, whose park-boosted value could evaporate if he is dropped to the bottom of the order, and ensure **Dylan Beavers** remains shielded from any late-inning defensive substitutions.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -100,18 +100,18 @@
         },
         {
             "Slot": "1B",
-            "Player": "Bryce Harper",
+            "Player": "Jonathan Aranda",
             "POS": "1B",
-            "Score": 59.97877487779551,
+            "Score": 49.334739554375865,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
+                    "label": "Lineup Pending (Assumed #2)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "58.33",
+                    "value": "52.20",
                     "type": "info"
                 },
                 {
@@ -121,36 +121,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+5%",
-                    "type": "positive"
+                    "value": "-6%",
+                    "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-10%",
+                    "value": "-16%",
                     "type": "negative"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+2%",
+                    "value": "+12%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.396",
-                    "type": "info"
                 }
             ],
-            "Opponent": "Casey Mize (R)",
-            "SP_xERA": "3.59",
+            "Opponent": "Logan Gilbert (R)",
+            "SP_xERA": "3.35",
             "Warning": "",
-            "GameTime": "2026-07-11T22:10:00Z",
-            "Order": "3*",
-            "Start": "10:10 PM"
+            "GameTime": "2026-07-11T20:10:00Z",
+            "Order": "2*",
+            "Start": "08:10 PM"
         },
         {
             "Slot": "2B",
@@ -394,6 +389,55 @@
         },
         {
             "Slot": "OF2",
+            "Player": "Taylor Ward",
+            "POS": "OF",
+            "Score": 71.46121715754246,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "52.93",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+9%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Noah Cameron (L)",
+            "SP_xERA": "4.30",
+            "Warning": "",
+            "GameTime": "2026-07-11T23:05:00Z",
+            "Order": "3*",
+            "Start": "11:05 PM"
+        },
+        {
+            "Slot": "OF3",
             "Player": "Dylan Beavers",
             "POS": "OF",
             "Score": 55.04798309674072,
@@ -440,55 +484,6 @@
             "GameTime": "2026-07-11T23:05:00Z",
             "Order": "6*",
             "Start": "11:05 PM"
-        },
-        {
-            "Slot": "OF3",
-            "Player": "Lawrence Butler",
-            "POS": "OF",
-            "Score": 49.86620685448572,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "54.42",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-13%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Bryan Hudson (L)",
-            "SP_xERA": "3.88",
-            "Warning": "",
-            "GameTime": "2026-07-11T18:10:00Z",
-            "Order": "1*",
-            "Start": "06:10 PM"
         },
         {
             "Slot": "OF4",
@@ -590,9 +585,9 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Taylor Ward",
-            "POS": "OF",
-            "Score": 71.46121715754246,
+            "Player": "Bryce Harper",
+            "POS": "1B",
+            "Score": 59.97877487779551,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -601,7 +596,7 @@
                 },
                 {
                     "label": "Base",
-                    "value": "52.93",
+                    "value": "58.33",
                     "type": "info"
                 },
                 {
@@ -611,31 +606,36 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+16%",
+                    "value": "+5%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+7%",
-                    "type": "positive"
+                    "value": "-10%",
+                    "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+9%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.396",
+                    "type": "info"
                 }
             ],
-            "Opponent": "Noah Cameron (L)",
-            "SP_xERA": "4.30",
+            "Opponent": "Casey Mize (R)",
+            "SP_xERA": "3.59",
             "Warning": "",
-            "GameTime": "2026-07-11T23:05:00Z",
+            "GameTime": "2026-07-11T22:10:00Z",
             "Order": "3*",
-            "Start": "11:05 PM"
+            "Start": "10:10 PM"
         }
     ],
     "players_sat": [
@@ -689,6 +689,50 @@
         },
         {
             "Slot": "BN",
+            "Player": "Lawrence Butler",
+            "POS": "OF",
+            "Order": "6",
+            "Start": "06:10 PM",
+            "Opponent": "Hudson, B (L)",
+            "SP_xERA": "3.88",
+            "Score": 45.332915322259744,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "54.42",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-07-11T18:10:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Geraldo Perdomo",
             "POS": "SS",
             "Order": "2*",
@@ -735,60 +779,6 @@
             ],
             "Warning": "",
             "GameTime": "2026-07-12T01:10:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Jonathan Aranda",
-            "POS": "1B",
-            "Order": "2*",
-            "Start": "08:10 PM",
-            "Opponent": "Logan Gilbert (R)",
-            "SP_xERA": "3.35",
-            "Score": 49.334739554375865,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "52.20",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-16%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+12%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-07-11T20:10:00Z"
         },
         {
             "Slot": "BN",
