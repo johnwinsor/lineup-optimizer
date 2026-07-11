@@ -1,61 +1,12 @@
 {
     "target_date": "2026-07-11",
-    "last_updated": "2026-07-11T12:58:34.531010+00:00",
+    "last_updated": "2026-07-11T14:20:46.133856+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 817.87,
-    "narrative": "The Austin Waves are primed for a high-ceiling performance today, anchored by **Jackson Merrill** (75.10) and **Gunnar Henderson** (71.11). **Jackson Merrill** is our premier play, capitalizing on a favorable matchup against Trey Yesavage; the combination of a high batting order slot and a significant platoon advantage against the right-hander creates an elite environment for both R and RBI production. While **Gunnar Henderson** faces a tough lefty in Noah Cameron, his projected park factors provide a massive +16% boost, helping him overcome a negative platoon split to remain our second-highest projected scorer. **Kyle Tucker** (69.61) and **Andy Pages** (66.83) also grade out as strong starts, with **Andy Pages** specifically benefiting from a high SB opportunity score due to the opposing pitcher\u2019s slow delivery.\n\nThe most difficult decision for the lineup optimizer today centered on **Luis Lara** (53.48), who narrowly missed the cut behind **Josh Jung** (58.72). While **Luis Lara** benefits from a strong +19% SP skill adjustment against Bubba Chandler, his score is depressed by a 32% rain risk and the inherent uncertainty of a \"Lineup Pending\" status. Conversely, **Josh Jung** offers a more stable floor against Peter Lambert. We are monitoring **Jorge Polanco** (52.62) closely; while he is currently active, his 45% rain risk is the most significant environmental threat to our daily production. Should the weather turn, we are prepared to pivot to the depth of our bench, though we must navigate these risks carefully to preserve our game caps while maximizing our exposure to today\u2019s favorable matchups.",
+    "narrative": "Today's optimal lineup is anchored by **Jackson Merrill**, who boasts the day\u2019s highest projection at 75.10. His matchup against Trey Yesavage is our prime target, bolstered by a 13% boost from favorable platoon dynamics and a strong batting order placement. **Gunnar Henderson** (71.11) and **Kyle Tucker** (69.61) also stand as top-tier starts; while **Gunnar Henderson** faces a slight hurdle against an elite hold pitcher, the substantial park factor lift and his leadoff role keep him in the elite tier. Similarly, **Coby Mayo** (66.04) benefits from that same park advantage, turning his start into a high-upside play despite the looming presence of Noah Cameron.\n\nThe most difficult decision for the optimizer today was bypassing **Miguel Vargas**, who sits on the bench with a respectable 52.35 score. While his xwOBA of 0.398 is impressive, the combination of a tough matchup against Gage Jump and his assignment to the middle of the order left him just shy of the active roster threshold compared to the platoon-advantaged **Josh Jung** (58.72) and **Cole Carrigg** (59.76). We are also monitoring a 45% rain risk for **Jorge Polanco**, which adds volatility to his 52.62 score; should the weather shift, we are prepared to pivot to the bench. \n\nBeyond those pivots, we are tracking **Liam Hicks** (57.56) and **Drake Baldwin** (60.06), both of whom are projected for high efficiency despite the uncertainty of official lineups. **Andy Pages** (66.83) remains a high-confidence play against Brandon Pfaadt, specifically due to his ability to exploit the pitcher\u2019s slow delivery to potentially generate value in our scarcest category, stolen bases. We continue to hold **Josh Lowe**, **Luis Garc\u00eda Jr.**, and **Brayan Rocchio** in reserve, keeping them ready should any late-scratch lineup announcements shift our strategy before the first pitch.",
     "recommended_lineup": [
         {
             "Slot": "C1",
-            "Player": "Liam Hicks",
-            "POS": "C/1B",
-            "Score": 57.564235687791616,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "44.39",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+11%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Tanner Bibee (R)",
-            "SP_xERA": "4.36",
-            "Warning": "",
-            "GameTime": "2026-07-11T20:10:00Z",
-            "Order": "1*",
-            "Start": "08:10 PM"
-        },
-        {
-            "Slot": "C2",
             "Player": "Drake Baldwin",
             "POS": "C",
             "Score": 60.056888754966444,
@@ -107,6 +58,55 @@
             "GameTime": "2026-07-11T23:15:00Z",
             "Order": "4*",
             "Start": "11:15 PM"
+        },
+        {
+            "Slot": "C2",
+            "Player": "Liam Hicks",
+            "POS": "C/1B",
+            "Score": 57.564235687791616,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #1)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "44.39",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+11%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Tanner Bibee (R)",
+            "SP_xERA": "4.36",
+            "Warning": "",
+            "GameTime": "2026-07-11T20:10:00Z",
+            "Order": "1*",
+            "Start": "08:10 PM"
         },
         {
             "Slot": "1B",
@@ -350,6 +350,45 @@
         },
         {
             "Slot": "OF1",
+            "Player": "Kyle Tucker",
+            "POS": "OF",
+            "Score": 69.6142841659399,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "63.50",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+1%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Brandon Pfaadt (R)",
+            "SP_xERA": "4.33",
+            "Warning": "",
+            "GameTime": "2026-07-12T01:10:00Z",
+            "Order": "6*",
+            "Start": "01:10 AM"
+        },
+        {
+            "Slot": "OF2",
             "Player": "Andy Pages",
             "POS": "OF",
             "Score": 66.83016798946751,
@@ -396,55 +435,6 @@
             "GameTime": "2026-07-12T01:10:00Z",
             "Order": "2*",
             "Start": "01:10 AM"
-        },
-        {
-            "Slot": "OF2",
-            "Player": "Cole Carrigg",
-            "POS": "OF",
-            "Score": 59.7577739912512,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "52.76",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Tyler Mahle (R)",
-            "SP_xERA": "4.28",
-            "Warning": "",
-            "GameTime": "2026-07-11T20:05:00Z",
-            "Order": "3*",
-            "Start": "08:05 PM"
         },
         {
             "Slot": "OF3",
@@ -546,18 +536,18 @@
         },
         {
             "Slot": "OF5",
-            "Player": "Kyle Tucker",
+            "Player": "Cole Carrigg",
             "POS": "OF",
-            "Score": 69.6142841659399,
+            "Score": 59.7577739912512,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
+                    "label": "Lineup Pending (Assumed #3)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "63.50",
+                    "value": "52.76",
                     "type": "info"
                 },
                 {
@@ -566,22 +556,32 @@
                     "type": "info"
                 },
                 {
+                    "label": "Park",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
                     "label": "SP Skill",
-                    "value": "+8%",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+1%",
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Brandon Pfaadt (R)",
-            "SP_xERA": "4.33",
+            "Opponent": "Tyler Mahle (R)",
+            "SP_xERA": "4.28",
             "Warning": "",
-            "GameTime": "2026-07-12T01:10:00Z",
-            "Order": "6*",
-            "Start": "01:10 AM"
+            "GameTime": "2026-07-11T20:05:00Z",
+            "Order": "3*",
+            "Start": "08:05 PM"
         },
         {
             "Slot": "UTIL",
@@ -1167,17 +1167,12 @@
             "Slot": "BN",
             "Player": "Luis Lara",
             "POS": "OF",
-            "Order": "6*",
-            "Start": "08:05 PM",
-            "Opponent": "Bubba Chandler (R)",
-            "SP_xERA": "5.12",
-            "Score": 53.47644218111999,
+            "Order": "6",
+            "Start": "04:05 PM",
+            "Opponent": "Ashcraft, B (R)",
+            "SP_xERA": "3.22",
+            "Score": 35.897067000435854,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.15",
@@ -1195,8 +1190,8 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
+                    "value": "-19%",
+                    "type": "negative"
                 },
                 {
                     "label": "Switch",
@@ -1204,13 +1199,13 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "\u26a0\ufe0f Rain Risk (32%)",
-            "GameTime": "2026-07-11T20:05:00Z"
+            "GameTime": "2026-07-11T16:05:00Z"
         },
         {
             "Slot": "BN",
