@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-12",
-    "last_updated": "2026-07-12T21:41:09.471099+00:00",
+    "last_updated": "2026-07-12T22:38:56.129691+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 691.87,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate prioritizing efficiency against favorable matchups, headlined by our strongest play: **Seiya Suzuki** (75.03). Facing the lefty Abbott, **Seiya Suzuki** receives a massive +19% boost from the pitcher\u2019s skill profile, effectively weaponizing his platoon advantage to anchor our outfield. Similarly, **Vinnie Pasquantino** (72.92) is set to exploit a premium matchup against Baz, bolstered by a +16% park factor and +15% SP skill advantage. Our aggressive approach to stolen base potential is on full display with **Mickey Moniak** (69.68), who is an elite start today; he benefits from a +14% platoon boost and, crucially, faces a pitcher with a slow delivery, further inflating his upside in a category that remains our primary focus.\n\nWhile we remain confident in our starting nine, the decision to bench **Austin Riley** (44.70) was razor-thin. **Austin Riley** narrowly missed the cut behind **Kyle Karros** and **Isaac Paredes** primarily due to a combination of an unfavorable wind forecast and a poor historical BvP profile against May. We opted to stay within our \"Zebras Floor\" threshold, favoring the specific situational advantages of our starters over the raw baseline projection of our bench. We are tracking a few risks: **Brice Turang** faces a significant test against Skenes, and while his +6% order boost helps, his efficiency is hampered by the catcher\u2019s elite pop time. Additionally, **Edwin Arroyo** sits right on our 40.0 floor, making him a potential candidate for a late-inning sub if the game script turns negative against Boyd.",
+    "narrative": "For today\u2019s slate, **Seiya Suzuki** (75.03) and **Vinnie Pasquantino** (72.92) anchor our offensive production. **Seiya Suzuki** draws a favorable matchup against Abbott, who carries a shaky 4.89 xERA, allowing **Seiya Suzuki** to leverage a 19% boost in SP skill efficiency and a batting order prime for counting stats. Meanwhile, **Vinnie Pasquantino** benefits from a confluence of positive factors, including a 16% park adjustment and a 14% platoon edge against Baz. We are also leaning heavily into the speed-first profile of **Mickey Moniak** (69.68), who is an auto-start today due to the 88% stolen base success rate allowed by the opposing battery, which significantly mitigates his raw park penalty.\n\nThe most difficult decision on the bench was **Austin Riley**, who narrowly missed the cut with a 46.08 efficiency rating. While his talent profile is undeniable, his performance today is hampered by a double-whammy of a pitcher's park and a significant wind-in factor, ultimately causing him to fall behind **Kyle Karros** (46.17) in our model. We are playing it cautious with **Brice Turang** (47.02) despite his high batting order position; he faces a formidable arm in Skenes, and his score is depressed by a 19% SP skill penalty and a league-best catcher pop-time that makes his aggressive base-running approach a high-risk proposition.\n\nBeyond the baseline projections, we are keeping a close eye on **Edwin Arroyo** (40.01), who sits right on the edge of our efficiency floor. His value is buoyed by his switch-hitting ability, but his spot at the bottom of the order forces him into the \"marginal\" start category. We have successfully bypassed the risks associated with starting **Zach McKinstry** (35.92) or **Cole Young** (37.13), as both failed to clear the 40-point threshold against their respective tough matchups today. With the team sitting at a competitive inflection point, our lineup focuses on maximizing favorable platoon splits and exploiting the exploitable mechanics of opposing pitchers.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -601,7 +601,7 @@
             "Start": "06:15 PM",
             "Opponent": "May (R)",
             "SP_xERA": "3.82",
-            "Score": 44.70182852504457,
+            "Score": 46.08435930416966,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -627,11 +627,6 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+1%",
                     "type": "positive"
-                },
-                {
-                    "label": "BvP Weak (30 PA)",
-                    "value": "-3%",
-                    "type": "negative"
                 },
                 {
                     "label": "Elite Hold SP (55% SB)",
@@ -788,11 +783,41 @@
             "Player": "Dalton Rushing",
             "POS": "C",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Bratt (L)",
+            "SP_xERA": "4.87",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "47.97",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -800,7 +825,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-07-12T20:10:00Z"
         },
         {
             "Slot": "BN",
