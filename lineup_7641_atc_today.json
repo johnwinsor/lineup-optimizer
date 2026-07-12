@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-12",
-    "last_updated": "2026-07-12T18:53:43.279166+00:00",
+    "last_updated": "2026-07-12T20:04:10.482173+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 652.23,
-    "narrative": "Our offensive outlook for today is headlined by **Daulton Varsho** (69.56) and **Taylor Ward** (68.88), who stand as our most reliable assets against favorable pitching matchups. **Daulton Varsho** benefits significantly from a soft matchup against M\u00e1rquez (5.58 xERA), and despite a slight drag from M\u00e1rquez\u2019s efficiency at holding runners, the pure upside of this platoon advantage puts him at the top of our daily projections. Similarly, **Taylor Ward** gains substantial value from a +16% park factor bump against Lugo, and his spot in the #2 hole ensures maximum plate appearance exposure. **Dylan Beavers** (68.38) and **Luis Arraez** (65.86) also provide high-floor production, with **Luis Arraez** in particular seeing his efficiency score bolstered by an +18% boost due to the matchup against Lorenzen.\n\nThe most difficult decision on the card was keeping **Bryce Harper** (50.42) on the bench. While his individual xwOBA remains elite at .394, the daunting prospect of facing Skubal\u2014who commands an elite 2.69 xERA\u2014effectively neutered his base projection, pushing him behind the higher-upside, favorable-matchup plays like **Jung Hoo Lee** (62.57) and **Jonathan Aranda** (55.23). Elsewhere, we are keeping a close eye on **Tyler Freeman** (49.94); while his scoring is marginal, the 88% stolen base allowance of his opposing pitcher, McDonald, makes him a sneaky leverage play in our quest to close the gap in the scarce SB category. **Cal Raleigh** (52.07) and **JJ Bleday** (53.63) round out the lineup, though both face risk from tougher left-handed starters, leaving them closer to our floor than our ceiling for today\u2019s slate.",
+    "narrative": "Our offense looks primed for a productive day against a slate of vulnerable arms, headlined by **Daulton Varsho** (69.56) and **Taylor Ward** (68.88). **Daulton Varsho** earns the top spot in the lineup due to a high-upside matchup against M\u00e1rquez, whose 5.58 xERA provides the most favorable environment of the day. Meanwhile, **Taylor Ward** and **Dylan Beavers** (68.38) benefit significantly from park factors and a plus-matchup against Lugo. While **Dylan Beavers** faces a slight efficiency drag due to the opposing pitcher\u2019s elite hold on the running game, his overall projection remains high enough to warrant a start. **Luis Arraez** (65.86) and **Jung Hoo Lee** (62.57) are also strong plays, as both capitalize on the favorable 4.72 xERA of Lorenzen, with **Luis Arraez** getting a massive 18% boost in his projection from the favorable SP skill matchup.\n\nThe most difficult roster decision today was benching **Bryce Harper**, who remains a high-floor talent but struggles to crack the starting nine due to a brutal draw against an elite arm in Skubal (2.69 xERA). The optimizer favored the cumulative efficiency of the other spots, particularly with players like **Jung Hoo Lee** and **Daulton Varsho** seeing massive platoon and matchup-based score surges that **Bryce Harper** could not overcome given the -19% SP skill penalty. Similarly, **Drew Gilbert** (51.55) looked tempting, but his bottom-of-the-order assignment (8th) created a drag on his run-production potential that kept him on the pine in favor of the higher-scoring options currently in play.\n\nRisk management remains a priority given the scarcity of stolen bases. We are carefully monitoring **Tyler Freeman** (49.94); while he resides in the bottom of the order, he is a primary \"green light\" candidate today against McDonald, whose slow delivery allows us to chase those critical SB points despite a mediocre overall efficiency score. Conversely, we are keeping a close eye on **Cal Raleigh** (52.07), whose projection is weighed down by a tough matchup against Seymour. Should the weather or last-minute lineup shifts prove volatile, we have sufficient depth on the bench\u2014including **Gavin Sheets** and **Ryan Waldschmidt**\u2014to pivot, though we are currently comfortable with the calculated risks taken in this rotation.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -722,7 +722,7 @@
             "Start": "06:15 PM",
             "Opponent": "Young, D (L)",
             "SP_xERA": "3.26",
-            "Score": 38.23527833135671,
+            "Score": 36.323514414788875,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -747,6 +747,11 @@
                 {
                     "label": "Dynamic Platoon (L)",
                     "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
                     "type": "negative"
                 },
                 {
@@ -787,11 +792,51 @@
             "Player": "Jeremiah Jackson",
             "POS": "2B/SS/3B/OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "05:35 PM",
+            "Opponent": "Lugo, S (R)",
+            "SP_xERA": "4.53",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "48.39",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (50% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -799,7 +844,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-07-12T17:35:00Z"
         },
         {
             "Slot": "BN",
