@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-17",
-    "last_updated": "2026-07-17T15:07:55.541187+00:00",
+    "last_updated": "2026-07-17T17:02:35.092608+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 681.8,
-    "narrative": "Our strongest plays today center on **Tyler Freeman** (64.38) and **Masyn Winn** (61.81), both of whom benefit from favorable matchups against pitchers with xERAs north of 4.40. **Tyler Freeman** is our clear efficiency leader; despite the assumed #8 spot in the order dragging his score down, his high park factor (+14%) and the favorable SP skill rating (+11%) make him a primary contributor for this slate. Similarly, **Masyn Winn** faces Merrill Kelly, and with the pitching matchup tilting the scale by +19%, he remains an essential start despite the uncertainty surrounding the finalized lineup. **Dylan Beavers** (60.18) rounds out our top trio, as his platoon advantage and favorable park environment offset his mid-order positioning to provide the best value in our outfield.\n\nThe most difficult bench decision involved **Ryan Waldschmidt**, who narrowly missed the cut with a 47.57 score. While his base projection was solid, the assumption of him batting #9 in the lineup resulted in a significant penalty, ultimately keeping him out of the starting nine in favor of higher-order hitters like **Gavin Sheets** and **Daulton Varsho**. Elsewhere, we are cautious about the start for **Jonathan Aranda** (51.26); while his xwOBA remains attractive, the -12% platoon penalty against a left-handed pitcher makes him a marginal play. We also see risk with **Cal Raleigh** (54.81), whose score is suppressed by a negative park factor and an adverse platoon split; however, his necessity as a foundational piece of our lineup mandates his inclusion. \n\nAll starters are currently under \"Lineup Pending\" status, which introduces non-trivial risk regarding our projected batting order assumptions. Owners should monitor weather reports and official cards, as any unexpected benching for **Taylor Ward** or **Lawrence Butler** would necessitate an immediate shift to our bench depth. While **Yainer Diaz** (39.26) and **Luis Arraez** (43.71) remain available on the bench, both are currently suppressed by elite pitching matchups against Dean Kremer and Bryce Miller, respectively, further validating our decision to lean into the matchups presented by **Tyler Freeman** and **Masyn Winn**.",
+    "total_efficiency_score": 687.03,
+    "narrative": "For LawDog\u2019s July 17th slate, the focus remains on leveraging matchup volatility against mid-tier arms. **Tyler Freeman** leads the charge with a 64.38 efficiency score, buoyed significantly by a +14% park factor and an 11% boost from facing Brady Singer. Similarly, **Geraldo Perdomo** sits at 63.78, capitalizing on a favorable spot in the order and a clear path to production against Michael McGreevy. **Masyn Winn** is our most intriguing high-upside play; despite a moderate base, his 19% SP skill advantage against Merrill Kelly suggests he is primed for a breakout performance. The optimizer is leaning heavily into these secondary order slots, where favorable matchups against starters with xERAs exceeding 4.00 provide the most reliable path to 5x5 category accumulation.\n\nThe most difficult bench decision involved **JJ Bleday**, who narrowly missed the cut at 49.98. While his 14% park advantage is elite, the optimizer opted for the higher efficiency of **Dylan Beavers** (60.18) and **Lawrence Butler** (58.87) due to their superior platoon dynamics against right-handed pitching today. **Yainer Diaz** also fell below the threshold at 39.26, primarily due to a harsh 19% penalty against the pitcher's skill profile, effectively relegating him to the pine to conserve our daily game caps. \n\nManagers should remain vigilant regarding the \"Lineup Pending\" status across the board. While **Cal Raleigh**, **Jonathan Aranda**, and **Taylor Ward** carry respectable scores, their values are tethered to assumed batting positions; a drop in the lineup order could dampen their run-scoring potential. **Daulton Varsho** remains a viable utility start at 58.79, though his effectiveness will be tested against Anthony Kay. We are carefully monitoring the weather and confirmed lineups to ensure **Ryan Waldschmidt** and **Gavin Sheets** maintain their current projected roles, as any late-breaking adjustments could necessitate a shift in our strategy to maximize SB and RBI efficiency.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -200,7 +200,7 @@
             "Slot": "MI",
             "Player": "Geraldo Perdomo",
             "POS": "SS",
-            "Score": 59.87627568462332,
+            "Score": 63.77730405701745,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -223,13 +223,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+11%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Michael McGreevy (R)",
+            "SP_xERA": "4.45",
             "Warning": "",
             "GameTime": "2026-07-18T01:40:00Z",
             "Order": "2*",
@@ -335,18 +345,18 @@
         },
         {
             "Slot": "OF2",
-            "Player": "JJ Bleday",
+            "Player": "Ryan Waldschmidt",
             "POS": "OF",
-            "Score": 49.982815051363815,
+            "Score": 51.31689888480568,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
+                    "label": "Lineup Pending (Assumed #9)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "49.01",
+                    "value": "50.76",
                     "type": "info"
                 },
                 {
@@ -356,26 +366,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+14%",
+                    "value": "+3%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-14%",
+                    "label": "SP Skill",
+                    "value": "+11%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Gabriel Hughes (R)",
-            "SP_xERA": "3.99",
+            "Opponent": "Michael McGreevy (R)",
+            "SP_xERA": "4.45",
             "Warning": "",
-            "GameTime": "2026-07-18T00:40:00Z",
-            "Order": "4*",
-            "Start": "12:40 AM"
+            "GameTime": "2026-07-18T01:40:00Z",
+            "Order": "9*",
+            "Start": "01:40 AM"
         },
         {
             "Slot": "OF3",
@@ -722,50 +737,6 @@
         },
         {
             "Slot": "BN",
-            "Player": "Ryan Waldschmidt",
-            "POS": "OF",
-            "Order": "9*",
-            "Start": "01:40 AM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 47.573461246531664,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "50.76",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-07-18T01:40:00Z"
-        },
-        {
-            "Slot": "BN",
             "Player": "Gleyber Torres",
             "POS": "2B",
             "Order": "-",
@@ -889,6 +860,55 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "JJ Bleday",
+            "POS": "OF",
+            "Order": "4*",
+            "Start": "12:40 AM",
+            "Opponent": "Gabriel Hughes (R)",
+            "SP_xERA": "3.99",
+            "Score": 49.982815051363815,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #4)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.01",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-14%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-07-18T00:40:00Z"
         },
         {
             "Slot": "BN",

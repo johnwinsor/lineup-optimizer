@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-17",
-    "last_updated": "2026-07-17T15:07:52.082836+00:00",
+    "last_updated": "2026-07-17T17:02:31.630898+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 729.92,
-    "narrative": "LawDog enters the July 17 slate with a focus on maximizing offensive volume against mid-tier pitching. **Tyler Freeman** (65.30) and **Masyn Winn** (64.02) emerge as our top daily plays, benefiting from favorable park factors and exploitable matchups against Brady Singer and Merrill Kelly, respectively. **Dylan Beavers** (61.18) also commands attention in the #3 hole; he thrives in high-leverage lineup positions, and his platoon advantage against Peter Lambert makes him a priority start to chase RBI and run production. **Geraldo Perdomo** remains a core anchor of our daily strategy, providing steady efficiency (60.82) while helping us guard against the scarcity of stolen bases that dictates our roster construction.\n\nStrategic benching was critical today, as several high-floor options were edged out by the optimizer. **Ryan Waldschmidt** (46.06) sits on the bench primarily due to a projected #9 lineup slot, which limits his counting stat upside compared to the core group. Similarly, while **Luis Arraez** (45.52) provides batting average stability, the significant SP skill of Bryce Miller acted as a hard cap on his output, pushing him out of the starting nine in favor of higher-ceiling plays like **Lawrence Butler** (59.79), whose strong platoon advantage against Cade Cavalli elevates his profile. \n\nWe must remain vigilant regarding the \"Lineup Pending\" status for all starters, particularly **Cal Raleigh** (53.91) and **Yainer Diaz** (40.67); should official lineups shuffle these hitters into lower-leverage spots, their efficiency scores will adjust downward. **Yainer Diaz** is currently our lowest-projected starter and remains a high-risk play against the disciplined arm of Dean Kremer. We are playing these matchups to maintain our 5x5 pace, prioritizing sprint speed and platoon leverage over pure raw power when the pitching matchups are tight.",
+    "total_efficiency_score": 733.88,
+    "narrative": "The slate is highlighted by **Tyler Freeman** (65.30), **Geraldo Perdomo** (64.78), and **Masyn Winn** (64.02), who serve as our engines today. **Tyler Freeman** benefits from a substantial 14% park factor boost and a favorable matchup against Brady Singer, while **Geraldo Perdomo**\u2019s spot in the #2 hole coupled with Michael McGreevy\u2019s mediocre 4.45 xERA keeps his efficiency high. **Masyn Winn** is our most efficient play against a struggling arm, as the 5.29 xERA of Merrill Kelly provides a massive +19% skill boost. In the outfield, **Dylan Beavers** (61.18) is a standout target; while he is currently projected in the #3 slot against Peter Lambert, his +7% platoon advantage and the general weakness of the opposing starter make him a high-upside play for stolen base volume, a critical need given our aggressive roster strategy.\n\nThe most difficult decision on the bench was leaving **Ryan Waldschmidt** (49.69) out of the starting five. He narrowly missed the cut behind the collective upside of the outfield group; while his metrics are solid, the projection model dinged him heavily for his assumed #9 spot in the batting order, which suppresses run-scoring potential. We are proceeding with caution as every starter\u2019s order is currently \"Lineup Pending.\" Specifically, **Yainer Diaz** (40.67) and **Cal Raleigh** (53.92) are operating near the bottom of our efficiency thresholds. If their official lineup placements drop further down the order than our current assumptions, we may need to pivot to bench options like **Luis Arraez**, whose elite contact profile provides a safer floor if we decide to sacrifice the power-speed upside of the current utility slots. Ensure game caps are monitored closely, as the gap between our top plays and the bench remains narrow.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -205,7 +205,7 @@
             "Slot": "SS",
             "Player": "Geraldo Perdomo",
             "POS": "SS",
-            "Score": 60.82110359466848,
+            "Score": 64.78368890997484,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -228,13 +228,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+11%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Michael McGreevy (R)",
+            "SP_xERA": "4.45",
             "Warning": "",
             "GameTime": "2026-07-18T01:40:00Z",
             "Order": "2*",
@@ -901,9 +911,9 @@
             "POS": "OF",
             "Order": "9*",
             "Start": "01:40 AM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 46.064920779203234,
+            "Opponent": "Michael McGreevy (R)",
+            "SP_xERA": "4.45",
+            "Score": 49.68965511071148,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -924,6 +934,16 @@
                     "label": "Park",
                     "value": "+3%",
                     "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+11%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #9",
