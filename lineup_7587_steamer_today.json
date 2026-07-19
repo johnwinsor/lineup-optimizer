@@ -1,15 +1,15 @@
 {
     "target_date": "2026-07-19",
-    "last_updated": "2026-07-19T18:52:57.381876+00:00",
+    "last_updated": "2026-07-19T20:03:44.520907+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 801.62,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with a clear mandate: exploit speed and maximize high-leverage spots against vulnerable arms. **Corbin Carroll** leads the charge with an elite 82.69 efficiency score; his matchup against Pallante, combined with a 100% stolen base expectation against a slow-working battery, makes him our anchor. Joining him in the \"must-start\" tier is **James Wood** (78.42). While his lineup position is technically pending, the projection for a leadoff spot against a weak 5.64 xERA arm like Lopez makes him an offensive centerpiece today. Similarly, **Isaac Paredes** (70.71) is a priority play; despite being away from his preferred hitter's park, the +16% SP skill adjustment against Young and a strong dynamic platoon edge provide significant upside for power production.\n\nWe are paying close attention to our secondary options, where **Mickey Moniak** (64.11) and **Seiya Suzuki** (62.45) highlight the depth of today's outfield. **Mickey Moniak** is punching above his weight thanks to a massive +14% park factor and platoon advantage, though he faces a stiff test against Greene. Conversely, **Seiya Suzuki** has the speed profile to contribute, but managers should note a \"Wind In\" warning that slightly dampens his ceiling. The most difficult bench decision was **Alex Freeland** (46.74), who just missed the cut. While he offers some stability, the optimizer favored the higher volatility and potential for multi-category impact from **Tyler Soderstrom** (56.46) and **Brice Turang** (58.91), both of whom benefit from favorable lineup placement and specific defensive vulnerabilities in their respective matchups. \n\nFinally, remain alert for the \"Lineup Pending\" designations for **Jose Caballero** and **James Wood**. Should **Jose Caballero** be bumped down the order, his efficiency score\u2014already sitting at a marginal 56.67\u2014could dip toward the sub-50 range, necessitating a late swap with someone like **Austin Riley**, who sits on the bench at 44.86. We are avoiding **Travis Bazzana** (39.41) entirely today; the combination of a daunting matchup against Skenes and our strict 40-point efficiency floor makes him an easy bench to preserve game caps. Trust the data, watch the lineups, and ride the stolen base upside where it presents itself.",
+    "total_efficiency_score": 792.9,
+    "narrative": "Today\u2019s roster for Ghost Ride the WHIP leans heavily into high-xwOBA assets and favorable matchups against soft-tossing rotations. **Corbin Carroll** (82.69) and **James Wood** (78.42) anchor our offensive ceiling, both benefiting from ideal leadoff or high-order positioning and matchups against vulnerable pitching. **Corbin Carroll** specifically carries a boosted efficiency score due to a slow opposing battery, creating a prime environment for his elite stolen base potential. Similarly, **Isaac Paredes** (70.71) serves as our most reliable infield anchor, with his platoon advantage against Young fueling a high projection that transcends the league's standard efficiency floors. We are also capitalizing on **Mickey Moniak** (64.11), whose elevated score is bolstered by a massive +14% park factor, offsetting the challenging xERA of Greene.\n\nOur most difficult roster decision involved keeping **Austin Riley** (44.86) on the bench in favor of **Dalton Rushing** (41.40). While **Austin Riley** offers higher raw power, his matchup against Eovaldi presents a significant hurdle that drags his efficiency below the optimizer\u2019s threshold; **Dalton Rushing**, despite the low batting order, maintains a stronger platoon advantage and BvP profile that kept him narrowly in the starting nine. Meanwhile, **Henry Bolte** (48.02) and **Alex Freeland** (46.74) occupy the bottom tier of our starters; both are essentially \"start-to-fill\" choices. We are monitoring **Alex Freeland** closely, as the \"Lineup Pending\" status necessitates a quick pivot if his position changes, while **Seiya Suzuki** (62.45) carries a notable warning\u2014his score is dampened by a negative wind factor, though his stolen base upside against a slower pitcher keeps him firmly in the green.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Dalton Rushing",
             "POS": "C",
-            "Score": 40.19516619921202,
+            "Score": 41.401021185188384,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -34,6 +34,11 @@
                 {
                     "label": "Platoon",
                     "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "BvP Good (33 PA)",
+                    "value": "+3%",
                     "type": "positive"
                 },
                 {
@@ -139,6 +144,45 @@
         },
         {
             "Slot": "2B",
+            "Player": "Alex Freeland",
+            "POS": "2B/SS/3B",
+            "Score": 46.736550759833946,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #8)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "47.81",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Warning": "",
+            "GameTime": "2026-07-19T23:20:00Z",
+            "Order": "8*",
+            "Start": "11:20 PM"
+        },
+        {
+            "Slot": "SS",
             "Player": "Cole Young",
             "POS": "2B/SS",
             "Score": 58.36205569424031,
@@ -182,45 +226,6 @@
             "Start": "08:10 PM"
         },
         {
-            "Slot": "SS",
-            "Player": "Jose Caballero",
-            "POS": "2B/SS/3B/OF",
-            "Score": 56.66588708538008,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "56.17",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Warning": "",
-            "GameTime": "2026-07-19T23:20:00Z",
-            "Order": "7*",
-            "Start": "11:20 PM"
-        },
-        {
             "Slot": "MI",
             "Player": "Brice Turang",
             "POS": "2B",
@@ -252,7 +257,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Slow SP Delivery (87% SB)",
+                    "label": "Slow SP Delivery (88% SB)",
                     "value": "+4%",
                     "type": "positive"
                 },
@@ -350,7 +355,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Foster Griffin (L)",
+            "Opponent": "Griffin (L)",
             "SP_xERA": "3.58",
             "Warning": "",
             "GameTime": "2026-07-19T20:05:00Z",
@@ -541,7 +546,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Foster Griffin (L)",
+            "Opponent": "Griffin (L)",
             "SP_xERA": "3.58",
             "Warning": "",
             "GameTime": "2026-07-19T20:05:00Z",
@@ -554,11 +559,6 @@
             "POS": "OF",
             "Score": 78.4169881319213,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "58.09",
@@ -599,7 +599,7 @@
             "SP_xERA": "5.64",
             "Warning": "",
             "GameTime": "2026-07-19T20:05:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "08:05 PM"
         }
     ],
@@ -622,6 +622,60 @@
             ],
             "Warning": "",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Jose Caballero",
+            "POS": "2B/SS/3B/OF",
+            "Order": "7*",
+            "Start": "11:20 PM",
+            "Opponent": "Will Klein (R)",
+            "SP_xERA": "3.29",
+            "Score": 40.40187913279983,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #7)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "56.17",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-17%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-07-19T23:20:00Z"
         },
         {
             "Slot": "BN",
@@ -767,50 +821,6 @@
             ],
             "Warning": "",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Alex Freeland",
-            "POS": "2B/SS/3B",
-            "Order": "8*",
-            "Start": "11:20 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 46.736550759833946,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "47.81",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-07-19T23:20:00Z"
         },
         {
             "Slot": "BN",

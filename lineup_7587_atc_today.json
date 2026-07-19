@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-19",
-    "last_updated": "2026-07-19T18:53:00.021377+00:00",
+    "last_updated": "2026-07-19T20:03:47.623959+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 791.59,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with **Corbin Carroll** serving as our clear focal point. With a dominant 81.55 efficiency score, **Corbin Carroll** benefits from a high-upside matchup against Pallante, and his elite sprint speed\u2014our primary target for stolen base production\u2014is bolstered by a \"Slow SP Delivery\" profile that significantly increases his steal equity. **James Wood** follows closely with a 76.28 rating, driven by an elite 0.433 xwOBA and a favorable matchup against the struggling Lopez. We are also capitalizing on high-ceiling platoon advantages, specifically with **Mickey Moniak**, whose score is inflated by a massive +14% boost from a hitter-friendly park and a favorable right-handed matchup, and **Isaac Paredes**, who maintains a strong 66.87 score thanks to his platoon edge against Young.\n\nOur bench strategy was defined by a difficult cut involving **Austin Riley**, who yielded the highest efficiency of our non-starters at 44.30. While **Austin Riley** offers pedigree, the optimizer prioritized the aggressive base-running profiles of **Jose Caballero** and **Brice Turang**\u2014the latter of whom is positioned to exploit an 87% steal-rate opportunity against P\u00e9rez. We are currently navigating several \"Lineup Pending\" designations for **Alex Freeland**, **James Wood**, and **Jose Caballero**; should these players shift down in their respective batting orders, we may see a slight correction in their daily projections. We are also monitoring **Seiya Suzuki** closely, as the projected \"Wind In\" is currently suppressing his potential power output despite his otherwise strong underlying metrics.",
+    "total_efficiency_score": 777.12,
+    "narrative": "The Ghost Ride the WHIP lineup is anchored by **Corbin Carroll** (81.55) and **James Wood** (76.28) today, both of whom profile as elite starts given their dynamic platoon edges and immense stolen base upside against relatively vulnerable pitching. **Corbin Carroll** benefits from a favorable matchup against Pallante, and with the optimizer identifying a slow delivery from the opposition, his potential for a multi-steal game is maximized. **James Wood** is similarly positioned to exploit a weak 5.64 xERA matchup in a high-scoring park, with his elite xwOBA of 0.433 making him the primary catalyst for our run production. **Mickey Moniak** (64.31) also demands attention; despite a challenging matchup against Greene, his park factor (+14%) and platoon advantage (+14%) create an ideal environment to overperform his base projection.\n\nOur most difficult roster decision involved keeping **Jose Caballero** (42.76) on the bench. While his underlying speed metrics are typically valued heavily in our 5x5 framework, the optimizer favored the higher reliability of **Austin Riley** (44.30) and the specific lineup placement of our middle infielders. **Jose Caballero** remains the first man up, but the lower projected efficiency compared to our starters kept him off the active roster today. Meanwhile, we are monitoring the \"Lineup Pending\" status for **Alex Freeland**, as any shift out of the bottom third of the order would force a re-evaluation of his 45.36 efficiency score. We continue to manage our daily game caps carefully, noting that **Seiya Suzuki** (63.40) must navigate a \"Wind In\" warning, which threatens to dampen his power profile despite a strong batting order advantage.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -58,7 +58,7 @@
             "Slot": "C2",
             "Player": "Dalton Rushing",
             "POS": "C",
-            "Score": 40.14115681224976,
+            "Score": 41.345391516617255,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -83,6 +83,11 @@
                 {
                     "label": "Platoon",
                     "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "BvP Good (33 PA)",
+                    "value": "+3%",
                     "type": "positive"
                 },
                 {
@@ -252,7 +257,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Slow SP Delivery (87% SB)",
+                    "label": "Slow SP Delivery (88% SB)",
                     "value": "+4%",
                     "type": "positive"
                 },
@@ -320,11 +325,6 @@
             "Score": 76.27844751294977,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "56.50",
                     "type": "info"
@@ -364,11 +364,60 @@
             "SP_xERA": "5.64",
             "Warning": "",
             "GameTime": "2026-07-19T20:05:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "08:05 PM"
         },
         {
             "Slot": "OF2",
+            "Player": "Corbin Carroll",
+            "POS": "OF",
+            "Score": 81.54970402358637,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "63.66",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Pallante (R)",
+            "SP_xERA": "4.25",
+            "Warning": "",
+            "GameTime": "2026-07-19T20:10:00Z",
+            "Order": "3",
+            "Start": "08:10 PM"
+        },
+        {
+            "Slot": "OF3",
             "Player": "Seiya Suzuki",
             "POS": "OF",
             "Score": 63.404746064679834,
@@ -422,45 +471,6 @@
             "Start": "06:20 PM"
         },
         {
-            "Slot": "OF3",
-            "Player": "Jose Caballero",
-            "POS": "2B/SS/3B/OF",
-            "Score": 59.97553867921965,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "59.45",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Warning": "",
-            "GameTime": "2026-07-19T23:20:00Z",
-            "Order": "7*",
-            "Start": "11:20 PM"
-        },
-        {
             "Slot": "OF4",
             "Player": "Tyler Soderstrom",
             "POS": "1B/OF",
@@ -497,7 +507,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Foster Griffin (L)",
+            "Opponent": "Griffin (L)",
             "SP_xERA": "3.58",
             "Warning": "",
             "GameTime": "2026-07-19T20:05:00Z",
@@ -506,55 +516,6 @@
         },
         {
             "Slot": "OF5",
-            "Player": "Corbin Carroll",
-            "POS": "OF",
-            "Score": 81.54970402358637,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "63.66",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Slow SP Delivery (100% SB)",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Pallante (R)",
-            "SP_xERA": "4.25",
-            "Warning": "",
-            "GameTime": "2026-07-19T20:10:00Z",
-            "Order": "3",
-            "Start": "08:10 PM"
-        },
-        {
-            "Slot": "UTIL",
             "Player": "Mickey Moniak",
             "POS": "OF",
             "Score": 64.30917457851712,
@@ -596,41 +557,11 @@
             "GameTime": "2026-07-19T19:10:00Z",
             "Order": "2",
             "Start": "07:10 PM"
-        }
-    ],
-    "players_sat": [
-        {
-            "Slot": "BN",
-            "Player": "Trevor Story",
-            "POS": "SS",
-            "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 0.0,
-            "Breakdown": [
-                {
-                    "label": "IL (Injured)",
-                    "value": null,
-                    "type": "status"
-                },
-                {
-                    "label": "Injured (IL) - Not available.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "\ud83d\udea8 INJURED (IL)",
-            "GameTime": null
         },
         {
-            "Slot": "BN",
+            "Slot": "UTIL",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Order": "7",
-            "Start": "05:35 PM",
-            "Opponent": "Eovaldi (R)",
-            "SP_xERA": "3.32",
             "Score": 44.302294141425904,
             "Breakdown": [
                 {
@@ -667,15 +598,94 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
+                }
+            ],
+            "Opponent": "Eovaldi (R)",
+            "SP_xERA": "3.32",
+            "Warning": "",
+            "GameTime": "2026-07-19T17:35:00Z",
+            "Order": "7",
+            "Start": "05:35 PM"
+        }
+    ],
+    "players_sat": [
+        {
+            "Slot": "BN",
+            "Player": "Jose Caballero",
+            "POS": "2B/SS/3B/OF",
+            "Order": "7*",
+            "Start": "11:20 PM",
+            "Opponent": "Will Klein (R)",
+            "SP_xERA": "3.29",
+            "Score": 42.76160824927004,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #7)",
+                    "value": null,
+                    "type": "info"
                 },
                 {
-                    "label": "Benched - Lower projected efficiency than other options.",
+                    "label": "Base",
+                    "value": "59.45",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-17%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-07-19T17:35:00Z"
+            "GameTime": "2026-07-19T23:20:00Z"
+        },
+        {
+            "Slot": "BN",
+            "Player": "Trevor Story",
+            "POS": "SS",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "IL (Injured)",
+                    "value": null,
+                    "type": "status"
+                },
+                {
+                    "label": "Injured (IL) - Not available.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "\ud83d\udea8 INJURED (IL)",
+            "GameTime": null
         },
         {
             "Slot": "BN",
@@ -876,7 +886,7 @@
             "POS": "OF",
             "Order": "8",
             "Start": "08:05 PM",
-            "Opponent": "Foster Griffin (L)",
+            "Opponent": "Griffin (L)",
             "SP_xERA": "3.58",
             "Score": 0.0,
             "Breakdown": [
