@@ -1,21 +1,16 @@
 {
     "target_date": "2026-07-19",
-    "last_updated": "2026-07-19T15:49:34.063621+00:00",
+    "last_updated": "2026-07-19T16:46:46.256156+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 760.48,
-    "narrative": "Today\u2019s lineup centers around **Cal Raleigh** and **Jonathan Aranda**, our strongest offensive anchors. **Cal Raleigh** earns a 71.22 score facing Robbie Ray; while Ray\u2019s xERA is mid-tier, the dynamic platoon advantage (L) provides the ceiling we need for power production. Similarly, **Jonathan Aranda** (64.60) is a high-value play against Gray. Despite facing a respectable pitcher, **Jonathan Aranda** benefits from a massive 12% platoon boost and an optimal #2 spot in the order, making him our most efficient UTIL option for today\u2019s slate. **Masyn Winn** (61.65) and **JJ Bleday** (61.04) also crack the 60+ threshold, with **Masyn Winn** specifically highlighted for his stolen base upside against a pitcher with a slow delivery, a crucial metric given the scarcity of speed in our league.\n\nThe most difficult decision on the bench involved **Tyler Freeman**. He finished with a 46.09 score, narrowly missing the cut behind **Ryan Waldschmidt**. While **Tyler Freeman** benefits from a strong park factor, his projected #8 spot in the order coupled with a -19% SP skill penalty against Greene dampened his outlook, leading the optimizer to prioritize the slightly higher-upside profiles of our active outfielders. We are managing significant risk today as several of our hitters\u2014specifically **Yainer Diaz**, **Luis Arraez**, **Masyn Winn**, **Geraldo Perdomo**, **Jeremiah Jackson**, **Ryan Waldschmidt**, **Taylor Ward**, and **Dylan Beavers**\u2014remain in \"Lineup Pending\" status. These are strictly based on historical batting order assumptions; if any of these players are shuffled down the order once official lineups are posted, their efficiency scores will drop immediately, potentially forcing last-minute adjustments. **Bryce Harper** faces the toughest task today, squaring off against McLean\u2019s elite 3.49 xERA, though his favorable #3 spot keeps him safely in the start column despite the difficult matchup.",
+    "total_efficiency_score": 710.62,
+    "narrative": "The LawDog starting lineup for 2026-07-19 is anchored by **Cal Raleigh** (71.22) and **Jonathan Aranda** (64.60), who present our most compelling value today. **Cal Raleigh** benefits significantly from a favorable matchup against Ray (xERA 4.95), where his power profile aligns perfectly with the projected platoon edge. Meanwhile, **Jonathan Aranda** remains a high-floor play despite a moderate matchup; his 64.60 score is driven by a 12% platoon bump and a critical spot in the #2 hole. **Dylan Beavers** (63.81) and **Masyn Winn** (61.65) also project as strong starts, with **Masyn Winn** particularly interesting due to his 85% stolen base efficiency against a slow delivery, providing a rare boost in our scarcest category.\n\nThe most difficult decision on the bench today involved **Tyler Freeman**, who flirted with a starting spot (46.09) but ultimately lost out due to the high-end efficiency of our infield starters. While **Tyler Freeman** offers legitimate park factors in his favor, he cannot overcome the negative SP skill impact posed by Greene, H. Similarly, while **Jung Hoo Lee** (43.66) and **Lawrence Butler** (43.70) remain part of our depth rotation, they are relegated to the bench as we prioritize the superior daily efficiency scores of **JJ Bleday** and **Geraldo Perdomo**. We are monitoring the status of **Cal Raleigh**, **Masyn Winn**, **Geraldo Perdomo**, and **Ryan Waldschmidt** closely, as all four currently rely on assumed batting orders; should any of these players drop to the bottom third of their respective lineups, their daily efficiency scores will be subject to downward revision. **Will Smith** remains unavailable on the IL, leaving the catching duties to **Yainer Diaz** and **Cal Raleigh** as we look to maximize volume while navigating the league's game cap constraints.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Yainer Diaz",
             "POS": "C",
-            "Score": 58.49087326885,
+            "Score": 59.660690734227,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.32",
@@ -40,13 +35,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "-2%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Brandon Young (R)",
+            "Opponent": "Young (R)",
             "SP_xERA": "4.66",
             "Warning": "",
             "GameTime": "2026-07-19T18:10:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "06:10 PM"
         },
         {
@@ -86,7 +86,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Robbie Ray (L)",
+            "Opponent": "Ray (L)",
             "SP_xERA": "4.95",
             "Warning": "",
             "GameTime": "2026-07-19T20:10:00Z",
@@ -149,11 +149,6 @@
             "Score": 47.734502771119445,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "49.46",
                     "type": "info"
@@ -188,7 +183,7 @@
             "SP_xERA": "3.43",
             "Warning": "",
             "GameTime": "2026-07-19T20:10:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "08:10 PM"
         },
         {
@@ -290,50 +285,6 @@
             "Start": "08:10 PM"
         },
         {
-            "Slot": "3B",
-            "Player": "Jeremiah Jackson",
-            "POS": "2B/SS/3B/OF",
-            "Score": 55.7137398080769,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "48.39",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+13%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+3%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Hunter Brown (R)",
-            "SP_xERA": "4.53",
-            "Warning": "",
-            "GameTime": "2026-07-19T18:10:00Z",
-            "Order": "6*",
-            "Start": "06:10 PM"
-        },
-        {
             "Slot": "OF1",
             "Player": "Ryan Waldschmidt",
             "POS": "OF",
@@ -430,13 +381,8 @@
             "Slot": "OF3",
             "Player": "Taylor Ward",
             "POS": "OF",
-            "Score": 56.65601999929445,
+            "Score": 57.7250015087151,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.93",
@@ -463,29 +409,24 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Hunter Brown (R)",
+            "Opponent": "Brown, H (R)",
             "SP_xERA": "4.53",
             "Warning": "",
             "GameTime": "2026-07-19T18:10:00Z",
-            "Order": "3*",
+            "Order": "2",
             "Start": "06:10 PM"
         },
         {
             "Slot": "OF4",
             "Player": "Dylan Beavers",
             "POS": "OF",
-            "Score": 60.19909058283215,
+            "Score": 63.811036017802074,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.65",
@@ -510,13 +451,18 @@
                     "label": "Platoon",
                     "value": "+7%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Hunter Brown (R)",
+            "Opponent": "Brown, H (R)",
             "SP_xERA": "4.53",
             "Warning": "",
             "GameTime": "2026-07-19T18:10:00Z",
-            "Order": "6*",
+            "Order": "3",
             "Start": "06:10 PM"
         },
         {
@@ -556,7 +502,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Ryan Feltner (R)",
+            "Opponent": "Feltner (R)",
             "SP_xERA": "4.78",
             "Warning": "",
             "GameTime": "2026-07-19T19:10:00Z",
@@ -715,17 +661,12 @@
             "Slot": "BN",
             "Player": "Tyler Freeman",
             "POS": "2B/OF",
-            "Order": "8*",
+            "Order": "8",
             "Start": "07:10 PM",
             "Opponent": "Greene, H (R)",
             "SP_xERA": "2.51",
             "Score": 46.09311397477005,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.19",
@@ -757,7 +698,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -865,17 +806,12 @@
             "Slot": "BN",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
-            "Order": "6*",
+            "Order": "6",
             "Start": "08:10 PM",
             "Opponent": "Logan Gilbert (R)",
             "SP_xERA": "3.43",
             "Score": 43.65318582001961,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.63",
@@ -902,13 +838,32 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
             "GameTime": "2026-07-19T20:10:00Z"
+        },
+        {
+            "Slot": "BN",
+            "Player": "Jeremiah Jackson",
+            "POS": "2B/SS/3B/OF",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
         },
         {
             "Slot": "BN",
@@ -933,55 +888,20 @@
             "Slot": "BN",
             "Player": "Drew Gilbert",
             "POS": "OF",
-            "Order": "8*",
-            "Start": "08:10 PM",
-            "Opponent": "Logan Gilbert (R)",
-            "SP_xERA": "3.43",
-            "Score": 36.684385062847674,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "44.76",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-5%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-14%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-07-19T20:10:00Z"
+            "GameTime": null
         }
     ]
 }
