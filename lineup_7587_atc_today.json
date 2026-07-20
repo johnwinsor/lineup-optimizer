@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-20",
-    "last_updated": "2026-07-20T17:25:18.534840+00:00",
+    "last_updated": "2026-07-20T19:27:14.274387+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 767.46,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with a high-floor offensive projection, anchored by **Corbin Carroll** (75.97) and **James Wood** (72.71). **Corbin Carroll** is our premier play, leveraging a strong matchup against the pedestrian Jeffrey Springs; despite a slight platoon penalty, his base power-speed profile remains elite. **James Wood** is similarly positioned for a massive output in a favorable park environment, supported by a superior 0.430 xwOBA that maximizes the ceiling against Kyle Freeland. Meanwhile, **Brice Turang** earns a high score of 67.59; beyond his solid matchup against Freddy Peralta, he is a primary target today due to the \"Slow SP Delivery\" metric, which creates a prime green light for his elite sprint speed to secure a stolen base.\n\nThe most difficult roster decision today was excluding **Austin Riley** (58.84) from the starting lineup. He narrowly missed the cut behind **Zach McKinstry**, whose 54.12 projection was bolstered significantly by a +5% wind-out factor and a favorable matchup against the hittable Jameson Taillon. While **Austin Riley** shows better raw talent, the optimization model prioritized **Zach McKinstry**'s park and atmospheric advantages for this specific daily slice. We are also keeping a close eye on **Mickey Moniak**, whose score of 53.67 is teetering on the edge of the marginal threshold. While his park factor is a stellar +14%, he faces a stiff -15% dynamic platoon penalty against Andrew Alvarez, making him our highest-risk starter.\n\nManagerial caution is advised regarding the \"Lineup Pending\" status across our squad, particularly for **Gabriel Moreno** and **Vinnie Pasquantino**. While their projections remain robust, we are monitoring confirmed lineups to ensure they aren't hit with unexpected rest days. Furthermore, while we feel comfortable with our start, we are consciously monitoring the game caps for our bench assets like **Jose Caballero** and **Travis Bazzana**. We are playing for efficiency today, and should any of our primary starters like **Josh Naylor** or **Tyler Soderstrom** see their lineup position shifted downward, we will aggressively reassess to protect our daily efficiency targets.",
+    "total_efficiency_score": 768.31,
+    "narrative": "For today\u2019s slate, our lineup leans heavily on high-upside speed and favorable lefty-righty splits. **Corbin Carroll** (75.97) headlines the squad, offering the premier combination of elite sprint speed and a high-floor matchup against Jeffrey Springs. He is joined at the top of our efficiency rankings by **James Wood** (72.71), whose elite 0.430 xwOBA and prime leadoff spot against Kyle Freeland make him a foundational play. **Brice Turang** (67.59) also demands attention; while he faces a solid arm in Freddy Peralta, the combination of his dynamic platoon edge and a slow pitcher delivery window creates a high-probability environment for a stolen base, which remains our primary objective in this 5x5 format.\n\nWe are navigating several \"Lineup Pending\" designations, but the data suggests **Tyler Soderstrom** (66.95) and **Seiya Suzuki** (65.62) are high-value starts despite some minor platoon volatility. **Suzuki** specifically benefits from favorable park conditions and a prime #2 slot, while **Soderstrom** capitalizes on a soft matchup against Mitch Bratt. The most difficult decision this morning involved **Josh Naylor** (62.22), who sat just outside the starting threshold. While **Naylor** showed strong efficiency, the optimizer ultimately pivoted to **Vinnie Pasquantino** (64.42) and **Isaac Paredes** (64.50), as their specific platoon advantages against Trevor McDonald and Janson Junk offered a slightly more advantageous path to our daily category targets.\n\nRisk management remains a priority given the volatility of today\u2019s matchups. While **Mickey Moniak** (53.67) and **Zach McKinstry** (54.11) are currently penciled in, their efficiency scores are tethered to the assumption that they avoid late-inning pinch-hit scenarios common with their platoon disadvantages. We are also monitoring **Austin Riley** (63.08); while his score remains \"Strong,\" the threat of an elite hold pitcher in JP Sears limits his stolen base upside, forcing us to rely on him purely for R/HR/RBI production. Ensure all starting lineups are confirmed before the first pitch, as any shuffle in the batting order for **Cole Young** or **Gabriel Moreno** could necessitate a recalibration of our defensive stance in the later games.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -262,18 +262,13 @@
         },
         {
             "Slot": "3B",
-            "Player": "Isaac Paredes",
-            "POS": "1B/3B",
-            "Score": 64.5049883526255,
+            "Player": "Austin Riley",
+            "POS": "3B",
+            "Score": 63.08395857344184,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "50.53",
+                    "value": "54.58",
                     "type": "info"
                 },
                 {
@@ -283,31 +278,36 @@
                 },
                 {
                     "label": "Park",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (50% SB)",
                     "value": "-2%",
                     "type": "negative"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "+12%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+9%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Janson Junk (R)",
-            "SP_xERA": "4.50",
+            "Opponent": "JP Sears (L)",
+            "SP_xERA": "4.58",
             "Warning": "",
-            "GameTime": "2026-07-21T00:10:00Z",
-            "Order": "3*",
-            "Start": "12:10 AM"
+            "GameTime": "2026-07-20T23:15:00Z",
+            "Order": "4",
+            "Start": "11:15 PM"
         },
         {
             "Slot": "OF1",
@@ -566,18 +566,18 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Josh Naylor",
-            "POS": "1B",
-            "Score": 62.2260232516163,
+            "Player": "Isaac Paredes",
+            "POS": "1B/3B",
+            "Score": 64.5049883526255,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
+                    "label": "Lineup Pending (Assumed #3)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "57.60",
+                    "value": "50.53",
                     "type": "info"
                 },
                 {
@@ -587,26 +587,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-5%",
+                    "value": "-2%",
                     "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "+12%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-5%",
-                    "type": "negative"
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+9%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Andrew Abbott (L)",
-            "SP_xERA": "4.93",
+            "Opponent": "Janson Junk (R)",
+            "SP_xERA": "4.50",
             "Warning": "",
-            "GameTime": "2026-07-21T01:40:00Z",
-            "Order": "6*",
-            "Start": "01:40 AM"
+            "GameTime": "2026-07-21T00:10:00Z",
+            "Order": "3*",
+            "Start": "12:10 AM"
         }
     ],
     "players_sat": [
@@ -614,17 +619,12 @@
             "Slot": "BN",
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
-            "Order": "9*",
+            "Order": "9",
             "Start": "11:05 PM",
             "Opponent": "Braxton Ashcraft (R)",
             "SP_xERA": "3.26",
             "Score": 41.616650550608405,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "59.45",
@@ -656,13 +656,62 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
             "GameTime": "2026-07-20T23:05:00Z"
+        },
+        {
+            "Slot": "BN",
+            "Player": "Josh Naylor",
+            "POS": "1B",
+            "Order": "6*",
+            "Start": "01:40 AM",
+            "Opponent": "Andrew Abbott (L)",
+            "SP_xERA": "4.93",
+            "Score": 62.2260232516163,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "57.60",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-5%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-5%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-07-21T01:40:00Z"
         },
         {
             "Slot": "BN",
@@ -687,65 +736,6 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Austin Riley",
-            "POS": "3B",
-            "Order": "7*",
-            "Start": "11:15 PM",
-            "Opponent": "JP Sears (L)",
-            "SP_xERA": "4.58",
-            "Score": 58.8379229002294,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "54.58",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Elite Hold SP (50% SB)",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-07-20T23:15:00Z"
         },
         {
             "Slot": "BN",
@@ -966,17 +956,12 @@
             "Slot": "BN",
             "Player": "Travis Bazzana",
             "POS": "2B",
-            "Order": "2*",
+            "Order": "2",
             "Start": "10:40 PM",
-            "Opponent": "Joe Ryan (R)",
+            "Opponent": "Ryan (R)",
             "SP_xERA": "3.24",
             "Score": 42.65279330263733,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "45.52",
@@ -1003,7 +988,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
