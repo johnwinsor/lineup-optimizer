@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-21",
-    "last_updated": "2026-07-21T06:32:58.300939+00:00",
+    "last_updated": "2026-07-21T13:19:47.113149+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 788.52,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 781.67,
+    "narrative": "LawDog faces a critical slate on 2026-07-21, anchored by high-efficiency upside in matchups against favorable starting pitching. **Tyler Freeman** (71.80) emerges as the top play of the day, buoyed by a 14% park factor boost and a matchup against a high-xERA opponent in Miles Mikolas. Similarly, **Bryce Harper** (70.17) remains a core engine for the lineup; he benefits from wind-out conditions and an advantageous lefty-lefty matchup against Justin Wrobleski. **Luis Arraez** (66.77) also warrants attention as a primary table-setter, leveraging his lead-off spot against Luinder Avila to maximize value in the AVG category, which remains essential given the scarcity of our stolen base targets like **Masyn Winn** (58.97) and **Jung Hoo Lee** (63.63).\n\nThe decision-making process was pushed to the limit at the utility and outfield spots, specifically regarding **Daulton Varsho** (50.95). **Daulton Varsho** was the primary exclusion, falling just short of the cut because the optimizer prioritized the higher efficiency of **Jonathan Aranda** (61.33) against Kevin Gausman and the specific platoon benefits granted to **Taylor Ward** (60.72) and **Jung Hoo Lee**. While **Daulton Varsho** offers intriguing upside, the SP skill variance against Drew Rasmussen provided a net negative that kept him on the bench. We must also monitor the status of **Gleyber Torres** (64.55), who carries a volatile 41% rain risk in his contest against David Peterson; if that game is postponed, we will need to pivot to our bench reserves. **Cal Raleigh** (48.74) and **Jeremiah Jackson** (44.08) represent the lowest-scoring starters today, but their inclusion remains necessary to manage our aggregate team efficiency and positional balance across the 5x5 categories.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -102,7 +102,7 @@
             "Slot": "1B",
             "Player": "Bryce Harper",
             "POS": "1B",
-            "Score": 66.82654416435648,
+            "Score": 70.16787137257431,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -143,6 +143,11 @@
                     "label": "xwOBA Good",
                     "value": "0.386",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Justin Wrobleski (L)",
@@ -191,11 +196,6 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -264,7 +264,7 @@
             "Slot": "MI",
             "Player": "Gleyber Torres",
             "POS": "2B",
-            "Score": 67.52156409866255,
+            "Score": 64.54616911610634,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -302,14 +302,14 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
+                    "label": "Wind In",
+                    "value": "-9%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "David Peterson (L)",
             "SP_xERA": "4.52",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (41%)",
             "GameTime": "2026-07-22T00:05:00Z",
             "Order": "2*",
             "Start": "12:05 AM"
@@ -318,7 +318,7 @@
             "Slot": "3B",
             "Player": "Jeremiah Jackson",
             "POS": "2B/SS/3B/OF",
-            "Score": 46.284665214820926,
+            "Score": 44.08063353792469,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -359,11 +359,6 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Ranger Suarez (L)",
@@ -426,7 +421,7 @@
             "Slot": "OF2",
             "Player": "Tyler Freeman",
             "POS": "2B/OF",
-            "Score": 69.08882665118296,
+            "Score": 71.80312529427451,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -467,11 +462,16 @@
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Miles Mikolas (R)",
             "SP_xERA": "4.70",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (33%)",
             "GameTime": "2026-07-22T00:40:00Z",
             "Order": "8*",
             "Start": "12:40 AM"
@@ -480,7 +480,7 @@
             "Slot": "OF3",
             "Player": "Drew Gilbert",
             "POS": "OF",
-            "Score": 56.150095824254755,
+            "Score": 53.47628173738548,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -521,11 +521,6 @@
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Luinder Avila (R)",
@@ -539,7 +534,7 @@
             "Slot": "OF4",
             "Player": "Taylor Ward",
             "POS": "OF",
-            "Score": 63.75381562870852,
+            "Score": 60.71791964638907,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -575,11 +570,6 @@
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Ranger Suarez (L)",
@@ -593,7 +583,7 @@
             "Slot": "OF5",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
-            "Score": 65.64570914962147,
+            "Score": 63.634978742222316,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -629,11 +619,6 @@
                     "label": "Elite Hold SP (44% SB)",
                     "value": "-2%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Luinder Avila (R)",
@@ -980,7 +965,7 @@
             "Start": "11:10 PM",
             "Opponent": "Ranger Suarez (L)",
             "SP_xERA": "3.57",
-            "Score": 50.44056241215674,
+            "Score": 48.038630868720695,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -1020,11 +1005,6 @@
                 {
                     "label": "Order #3",
                     "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 },
                 {

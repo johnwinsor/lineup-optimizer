@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-21",
-    "last_updated": "2026-07-21T06:31:19.323979+00:00",
+    "last_updated": "2026-07-21T13:18:35.106811+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 837.01,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 822.47,
+    "narrative": "The Zurich Zebras enter tonight\u2019s slate with **Yordan Alvarez** (87.42) and **Trea Turner** (79.76) anchoring the lineup, both benefiting from highly favorable conditions. **Yordan Alvarez** draws a weak matchup against Tyler Phillips, with an elite xwOBA profile and strong platoon advantage pushing his efficiency score near the 90-point elite threshold. Meanwhile, **Trea Turner** is a priority start tonight not only for his high score but for his stolen base potential; he faces a starter in Justin Wrobleski who is slow to the plate, and the favorable wind conditions further elevate his upside. Similarly, **Kyle Schwarber** gets a significant boost from that same wind, keeping him in the high-70s range, while **Junior Caminero** remains a solid core play at 66.65 despite facing a tough arm in Kevin Gausman, as his dynamic platoon advantage helps him maintain value.\n\nWe are navigating several complex platoon and environmental variables today. **Casey Schmitt** (63.20) and **Lars Nootbaar** (66.80) are both strong starts thanks to excellent platoon edges that mitigate the mid-range quality of their opposing pitchers. On the riskier side, **Dillon Dingler** (57.38) and **Pete Crow-Armstrong** (59.25) are impacted by a 41% rain risk and unfavorable wind-in conditions, which capped their otherwise high-ceiling projections. Among our bench options, **Carson Benge** (53.01) was the closest to cracking the starting lineup. While **Carson Benge** possesses a respectable projection, the optimizer prioritized the higher-leverage platoon matchups and superior spot-in-order afforded to **Nelson Velazquez** and **Christian Yelich**, leaving **Carson Benge** on the outside to preserve game caps.\n\nManagers should closely monitor official lineups, as our projections for **Gary Sanchez** and **Dillon Dingler** are currently based on historical order assumptions. **Christian Yelich** (53.05) remains in the utility spot, though his score has been compressed by a difficult platoon matchup. We are closely monitoring the 41% rain risk for the games involving **Dillon Dingler**, **Pete Crow-Armstrong**, and our benched player **Colt Keith**, as any mid-game cancellation could have cascading effects on our weekly innings and games-played thresholds.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -63,7 +63,7 @@
             "Slot": "C2",
             "Player": "Dillon Dingler",
             "POS": "C",
-            "Score": 63.75483042542716,
+            "Score": 57.37631683801102,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -111,14 +111,14 @@
                     "type": "info"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
+                    "label": "Wind In",
+                    "value": "-9%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "David Peterson (L)",
             "SP_xERA": "4.52",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (41%)",
             "GameTime": "2026-07-22T00:05:00Z",
             "Order": "5*",
             "Start": "12:05 AM"
@@ -174,18 +174,18 @@
         },
         {
             "Slot": "2B",
-            "Player": "Colt Keith",
-            "POS": "1B/2B/3B",
-            "Score": 59.46774564407801,
+            "Player": "Caleb Durbin",
+            "POS": "2B/3B",
+            "Score": 60.797329024904315,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
+                    "label": "Lineup Pending (Assumed #6)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "51.59",
+                    "value": "53.90",
                     "type": "info"
                 },
                 {
@@ -195,47 +195,37 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+12%",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
                 },
                 {
-                    "label": "Elite Hold SP (42% SB)",
+                    "label": "Elite Hold SP (50% SB)",
                     "value": "-2%",
                     "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "David Peterson (L)",
-            "SP_xERA": "4.52",
+            "Opponent": "Kyle Bradish (R)",
+            "SP_xERA": "4.29",
             "Warning": "",
-            "GameTime": "2026-07-22T00:05:00Z",
-            "Order": "3*",
-            "Start": "12:05 AM"
+            "GameTime": "2026-07-21T23:10:00Z",
+            "Order": "6*",
+            "Start": "11:10 PM"
         },
         {
             "Slot": "SS",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Score": 76.8557936267825,
+            "Score": 79.76021031737464,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -275,6 +265,11 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -330,11 +325,6 @@
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Luinder Avila (R)",
@@ -346,18 +336,18 @@
         },
         {
             "Slot": "3B",
-            "Player": "Caleb Durbin",
-            "POS": "2B/3B",
-            "Score": 63.83719547614953,
+            "Player": "Junior Caminero",
+            "POS": "3B",
+            "Score": 66.64617338539381,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
+                    "label": "Lineup Pending (Assumed #3)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "53.90",
+                    "value": "62.40",
                     "type": "info"
                 },
                 {
@@ -367,42 +357,42 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+7%",
+                    "value": "+3%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Neutral Platoon (R)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Elite Hold SP (50% SB)",
-                    "value": "-2%",
+                    "value": "-6%",
                     "type": "negative"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+4%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.374",
+                    "type": "info"
                 }
             ],
-            "Opponent": "Kyle Bradish (R)",
-            "SP_xERA": "4.29",
+            "Opponent": "Kevin Gausman (R)",
+            "SP_xERA": "3.76",
             "Warning": "",
-            "GameTime": "2026-07-21T23:10:00Z",
-            "Order": "6*",
-            "Start": "11:10 PM"
+            "GameTime": "2026-07-21T23:07:00Z",
+            "Order": "3*",
+            "Start": "11:07 PM"
         },
         {
             "Slot": "OF1",
             "Player": "Kyle Schwarber",
             "POS": "OF",
-            "Score": 72.03499459422187,
+            "Score": 75.63674432393296,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -443,6 +433,11 @@
                     "label": "xwOBA Good",
                     "value": "0.376",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Justin Wrobleski (L)",
@@ -557,6 +552,119 @@
         },
         {
             "Slot": "OF4",
+            "Player": "Pete Crow-Armstrong",
+            "POS": "OF",
+            "Score": 59.25477254284291,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #1)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "60.83",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-9%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Framber Valdez (L)",
+            "SP_xERA": "4.28",
+            "Warning": "\u26a0\ufe0f Rain Risk (41%)",
+            "GameTime": "2026-07-22T00:05:00Z",
+            "Order": "1*",
+            "Start": "12:05 AM"
+        },
+        {
+            "Slot": "OF5",
+            "Player": "Nelson Velazquez",
+            "POS": "OF",
+            "Score": 57.72017697959898,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #4)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.00",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+15%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.377",
+                    "type": "info"
+                }
+            ],
+            "Opponent": "Walbert Ure\u00f1a (R)",
+            "SP_xERA": "4.62",
+            "Warning": "",
+            "GameTime": "2026-07-22T01:38:00Z",
+            "Order": "4*",
+            "Start": "01:38 AM"
+        },
+        {
+            "Slot": "UTIL",
             "Player": "Christian Yelich",
             "POS": "OF",
             "Score": 53.05367314261435,
@@ -603,119 +711,6 @@
             "GameTime": "2026-07-21T23:40:00Z",
             "Order": "1*",
             "Start": "11:40 PM"
-        },
-        {
-            "Slot": "OF5",
-            "Player": "Pete Crow-Armstrong",
-            "POS": "OF",
-            "Score": 69.13056796665006,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "60.83",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-15%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Slow SP Delivery (100% SB)",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Framber Valdez (L)",
-            "SP_xERA": "4.28",
-            "Warning": "",
-            "GameTime": "2026-07-22T00:05:00Z",
-            "Order": "1*",
-            "Start": "12:05 AM"
-        },
-        {
-            "Slot": "UTIL",
-            "Player": "Junior Caminero",
-            "POS": "3B",
-            "Score": 66.64617338539381,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "62.40",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.374",
-                    "type": "info"
-                }
-            ],
-            "Opponent": "Kevin Gausman (R)",
-            "SP_xERA": "3.76",
-            "Warning": "",
-            "GameTime": "2026-07-21T23:07:00Z",
-            "Order": "3*",
-            "Start": "11:07 PM"
         }
     ],
     "players_sat": [
@@ -742,6 +737,70 @@
             ],
             "Warning": "\ud83d\udea8 MINORS",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Colt Keith",
+            "POS": "1B/2B/3B",
+            "Order": "3*",
+            "Start": "12:05 AM",
+            "Opponent": "David Peterson (L)",
+            "SP_xERA": "4.52",
+            "Score": 50.97235340920972,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "51.59",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+12%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (42% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "\u26a0\ufe0f Rain Risk (41%)",
+            "GameTime": "2026-07-22T00:05:00Z"
         },
         {
             "Slot": "BN",
@@ -791,65 +850,6 @@
             ],
             "Warning": "",
             "GameTime": "2026-07-22T00:05:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Nelson Velazquez",
-            "POS": "OF",
-            "Order": "4*",
-            "Start": "01:38 AM",
-            "Opponent": "Walbert Ure\u00f1a (R)",
-            "SP_xERA": "4.62",
-            "Score": 57.72017697959898,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.00",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+15%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.377",
-                    "type": "info"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-07-22T01:38:00Z"
         },
         {
             "Slot": "BN",
@@ -937,7 +937,7 @@
             "Start": "12:05 AM",
             "Opponent": "Framber Valdez (L)",
             "SP_xERA": "4.28",
-            "Score": 52.5173680917183,
+            "Score": 45.01488693575853,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -975,9 +975,9 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
+                    "label": "Wind In",
+                    "value": "-9%",
+                    "type": "negative"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
@@ -985,7 +985,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (41%)",
             "GameTime": "2026-07-22T00:05:00Z"
         },
         {
