@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-23",
-    "last_updated": "2026-07-23T13:27:10.104939+00:00",
+    "last_updated": "2026-07-23T15:50:02.125216+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 399.58,
-    "narrative": "For today\u2019s matchup, **Jonathan Aranda** stands as our highest-scoring asset (70.47), fueled by a favorable pairing against Shane Bieber. With Bieber carrying a high 5.10 xERA, **Jonathan Aranda** benefits from a strong platoon advantage and an assumed #2 spot in the order, amplifying his run-production potential. Following closely is **Jos\u00e9 Ram\u00edrez** (65.73), who remains an auto-start despite a tougher matchup against Taj Bradley. While Bradley\u2019s xERA of 3.82 presents a challenge, **Jos\u00e9 Ram\u00edrez** gains a critical efficiency edge from a slow pitcher delivery, which elevates his stolen base expectation\u2014a vital consideration given our emphasis on the scarcest category in this 5x5 format.\n\nOur lineup construction favors aggressive movement on the basepaths, as evidenced by **Masyn Winn** and **Daulton Varsho** holding down spots despite mixed efficiency metrics. **Masyn Winn** (52.56) is a high-upside play against Brandon Pfaadt, specifically due to the 86% stolen base probability provided by the pitcher's tempo. Conversely, **Gleyber Torres** (60.27) makes the cut against Randy Dobnak, though his score is slightly suppressed by a platoon disadvantage. The most difficult bench decision involved **Gavin Sheets** (34.07); despite his potential, the daunting assignment against Chris Sale made him an easy exclusion for the optimizer, effectively keeping him below our roster's floor to protect our daily cap.\n\nWe are currently navigating a thin bench with **Bryce Harper** and **Cal Raleigh** sidelined due to off-days, and **Will Smith** remaining unavailable on the IL. As we await final confirmations for **Jonathan Aranda**, **Gleyber Torres**, **Geraldo Perdomo**, **Jos\u00e9 Ram\u00edrez**, **Ryan Waldschmidt**, **Daulton Varsho**, and **Masyn Winn**, maintain a close watch on weather reports. Any official lineup shifts, particularly for those currently projected in the #9 hole like **Ryan Waldschmidt**, could necessitate a pivot to deeper bench options like **Lawrence Butler**, **Tyler Freeman**, or **Taylor Ward** if the efficiency scores flip post-confirmation. For now, the roster remains focused on maximizing our speed-reliant profile against the current slate of arms.",
+    "total_efficiency_score": 419.73,
+    "narrative": "Today\u2019s slate for LawDog centers on the favorable matchup for **Jonathan Aranda**, our top-ranked starter with a 70.47 score. Facing Shane Bieber\u2019s bloated 5.10 xERA, **Jonathan Aranda** benefits from a massive 19% SP skill boost and a favorable platoon advantage, making him our primary engine for counting stats. **Jos\u00e9 Ram\u00edrez** (65.73) follows close behind; despite facing a tougher arm in Bradley, he remains a high-floor play, with his speed profile receiving a marginal boost from the pitcher\u2019s slow delivery, keeping him in the green for stolen base potential. **Daulton Varsho** (63.93) also remains an essential start, as his platoon edge against Casey Legumina more than compensates for a lower spot in the batting order.\n\nOur most difficult decision of the day involved **Gavin Sheets**, who was benched with a 35.12 efficiency score. While he has provided decent production, the combination of a difficult matchup against Chris Sale (3.14 xERA) and his negative platoon split against left-handed pitching pushed his projected output well below our 40.0 floor, effectively grounding him to preserve our game caps. Meanwhile, **Gleyber Torres** (60.27) and **Geraldo Perdomo** (59.17) remain in the lineup based on volume, though their scores are tighter than we\u2019d prefer; **Gleyber Torres** in particular faces a volatility risk where his platoon disadvantage against Randy Dobnak narrows his margin for error.\n\nWe are operating under \"Lineup Pending\" status for most of our roster, which introduces significant fragility to our 5x5 projections. Should **Ryan Waldschmidt** be moved further down from his assumed #9 spot, his marginal 47.61 score could plummet, potentially rendering him a liability. Additionally, we continue to monitor the status of **Will Smith**, who remains sidelined on the IL, while **Bryce Harper** and **Cal Raleigh** are effectively dead spots in our roster today due to team off-days. We are relying on the secondary production of **Masyn Winn** (52.56) to bridge the gap in our infield, banking on his opportunistic speed profile against Brandon Pfaadt to maintain our edge in the stolen base category despite the mediocre 52-point efficiency rating.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -153,16 +153,60 @@
             "Start": "09:15 PM"
         },
         {
+            "Slot": "MI",
+            "Player": "Masyn Winn",
+            "POS": "SS",
+            "Score": 52.56300028475232,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.46",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (86% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Brandon Pfaadt (R)",
+            "SP_xERA": "4.29",
+            "Warning": "",
+            "GameTime": "2026-07-23T21:15:00Z",
+            "Order": "6*",
+            "Start": "09:15 PM"
+        },
+        {
             "Slot": "3B",
             "Player": "Jos\u00e9 Ram\u00edrez",
             "POS": "3B",
             "Score": 65.72875108806821,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "64.13",
@@ -194,11 +238,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Taj Bradley (R)",
+            "Opponent": "Bradley, T (R)",
             "SP_xERA": "3.82",
             "Warning": "",
             "GameTime": "2026-07-23T17:10:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "05:10 PM"
         },
         {
@@ -251,10 +295,10 @@
             "Start": "09:15 PM"
         },
         {
-            "Slot": "OF3",
+            "Slot": "UTIL",
             "Player": "Daulton Varsho",
             "POS": "OF",
-            "Score": 43.777983604572455,
+            "Score": 63.92527809417444,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -278,17 +322,12 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-10%",
-                    "type": "negative"
+                    "value": "+8%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-10%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Slow SP Delivery (100% SB)",
-                    "value": "+2%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+10%",
                     "type": "positive"
                 },
                 {
@@ -297,61 +336,12 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Ian Seymour (L)",
-            "SP_xERA": "3.58",
+            "Opponent": "Casey Legumina (R)",
+            "SP_xERA": "4.32",
             "Warning": "",
             "GameTime": "2026-07-23T19:07:00Z",
             "Order": "7*",
             "Start": "07:07 PM"
-        },
-        {
-            "Slot": "UTIL",
-            "Player": "Masyn Winn",
-            "POS": "SS",
-            "Score": 52.56300028475232,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.46",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Slow SP Delivery (86% SB)",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Brandon Pfaadt (R)",
-            "SP_xERA": "4.29",
-            "Warning": "",
-            "GameTime": "2026-07-23T21:15:00Z",
-            "Order": "6*",
-            "Start": "09:15 PM"
         }
     ],
     "players_sat": [
@@ -664,17 +654,12 @@
             "Slot": "BN",
             "Player": "Gavin Sheets",
             "POS": "1B/OF",
-            "Order": "7*",
+            "Order": "6",
             "Start": "04:15 PM",
-            "Opponent": "Chris Sale (L)",
+            "Opponent": "Sale (L)",
             "SP_xERA": "3.14",
-            "Score": 34.06668130304568,
+            "Score": 35.12029000313987,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.94",
@@ -701,12 +686,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
