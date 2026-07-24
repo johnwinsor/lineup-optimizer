@@ -1,8 +1,8 @@
 {
     "target_date": "2026-07-25",
-    "last_updated": "2026-07-24T19:16:33.576370+00:00",
+    "last_updated": "2026-07-24T20:57:04.354469+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 782.94,
+    "total_efficiency_score": 785.47,
     "narrative": "AI Narrative generation skipped.",
     "recommended_lineup": [
         {
@@ -95,18 +95,18 @@
         },
         {
             "Slot": "1B",
-            "Player": "Bryce Harper",
+            "Player": "Jonathan Aranda",
             "POS": "1B",
-            "Score": 54.05213121180863,
+            "Score": 65.77735454658271,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
+                    "label": "Lineup Pending (Assumed #2)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "58.33",
+                    "value": "52.20",
                     "type": "info"
                 },
                 {
@@ -116,36 +116,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
+                    "value": "-6%",
+                    "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-13%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "value": "+11%",
                     "type": "positive"
                 },
                 {
-                    "label": "xwOBA Good",
-                    "value": "0.384",
-                    "type": "info"
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+12%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Ryan Weathers (L)",
-            "SP_xERA": "3.46",
+            "Opponent": "Tanner Bibee (R)",
+            "SP_xERA": "4.46",
             "Warning": "",
-            "GameTime": "2026-07-25T22:05:00Z",
-            "Order": "3*",
-            "Start": "10:05 PM"
+            "GameTime": "2026-07-25T22:10:00Z",
+            "Order": "2*",
+            "Start": "10:10 PM"
         },
         {
             "Slot": "2B",
@@ -590,9 +585,9 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Jonathan Aranda",
-            "POS": "1B",
-            "Score": 65.77735454658271,
+            "Player": "Kyle Karros",
+            "POS": "3B",
+            "Score": 56.57786899301539,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -601,7 +596,7 @@
                 },
                 {
                     "label": "Base",
-                    "value": "52.20",
+                    "value": "46.81",
                     "type": "info"
                 },
                 {
@@ -611,17 +606,17 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-6%",
+                    "value": "-1%",
                     "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+11%",
+                    "value": "+5%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+12%",
+                    "label": "Platoon",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
@@ -630,15 +625,74 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tanner Bibee (R)",
-            "SP_xERA": "4.46",
+            "Opponent": "Robert Gasser (L)",
+            "SP_xERA": "4.23",
             "Warning": "",
-            "GameTime": "2026-07-25T22:10:00Z",
+            "GameTime": "2026-07-25T23:10:00Z",
             "Order": "2*",
-            "Start": "10:10 PM"
+            "Start": "11:10 PM"
         }
     ],
     "players_sat": [
+        {
+            "Slot": "BN",
+            "Player": "Bryce Harper",
+            "POS": "1B",
+            "Order": "3*",
+            "Start": "10:05 PM",
+            "Opponent": "Ryan Weathers (L)",
+            "SP_xERA": "3.46",
+            "Score": 54.05213121180863,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "58.33",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.384",
+                    "type": "info"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-07-25T22:05:00Z"
+        },
         {
             "Slot": "BN",
             "Player": "Will Smith",
@@ -1048,55 +1102,6 @@
             ],
             "Warning": "",
             "GameTime": "2026-07-25T20:10:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Kyle Karros",
-            "POS": "3B",
-            "Order": "6*",
-            "Start": "11:10 PM",
-            "Opponent": "Robert Gasser (L)",
-            "SP_xERA": "4.23",
-            "Score": 52.38691573427351,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "46.81",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-07-25T23:10:00Z"
         },
         {
             "Slot": "BN",
