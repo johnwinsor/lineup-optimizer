@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-24",
-    "last_updated": "2026-07-24T15:22:14.541732+00:00",
+    "last_updated": "2026-07-24T17:21:53.795319+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 726.1,
-    "narrative": "For today\u2019s slate, **James Wood** (78.42) and **Tyler Soderstrom** (73.70) anchor our production targets. **James Wood** benefits significantly from a favorable matchup against Eduardo Rodriguez, bolstered by his elite xwOBA and an 85% stolen base propensity against a pitcher with a slow delivery. Meanwhile, **Tyler Soderstrom** finds himself in an ideal spot hitting second against Zebby Matthews; the combination of a favorable SP_xERA (4.40) and an aggressive lineup position provides the highest ROI for our middle-of-the-order power. **Brice Turang** (71.09) also warrants elite consideration, as the projection algorithm rewards his matchup against Tomoyuki Sugano with a substantial +19% SP skill boost, making him a high-efficiency play for stolen bases.\n\nThe most difficult decision on today\u2019s bench was keeping **Seiya Suzuki** (45.87) out of the starting nine. While his projected score is respectable, he ultimately fell short due to a suboptimal matchup against Jared Jones, whose SP_xERA of 3.25 significantly dampens the base expectation. When compared to the ceiling of **Corbin Carroll** (62.05), who carries a massive +10% boost for hitting lead-off and an added speed advantage, **Seiya Suzuki** simply lacks the necessary offensive leverage to warrant a start. We must also exercise caution with **Gabriel Moreno** (48.43) and **Jose Caballero** (50.81); both are facing tough southpaws\u2014Carson Palmquist and Jes\u00fas Luzardo, respectively\u2014meaning their production is heavily reliant on their specific platoon splits rather than raw volume. With no severe weather alerts, our primary focus remains on capitalizing on the speed differentials against the high-xERA starters; monitor the official lineups closely to ensure our assumed slots for **Cole Young**, **Max Muncy**, and **Austin Riley** hold, as any drop in order could trigger a rapid decline in their daily efficiency scores.",
+    "total_efficiency_score": 735.55,
+    "narrative": "The offensive core for Ghost Ride the WHIP centers on three high-ceiling plays today: **James Wood** (78.42), **Austin Riley** (74.11), and **Tyler Soderstrom** (73.70). **James Wood** is our premier play, benefiting from an elite xwOBA of 0.426 and a significant stolen base opportunity against Eduardo Rodriguez, who struggles with a slow delivery to the plate. Similarly, **Austin Riley** exploits a favorable park environment and a soft matchup against Trevor Rogers, while **Tyler Soderstrom** is primed for a breakout performance batting second against Zebby Matthews, where the combination of high-value lineup placement and a strong platoon split maximizes his daily efficiency score. **Brice Turang** also warrants attention as a top-tier start (71.09); his ability to leverage a high-volume SB environment against the vulnerable arm of Sugano makes him an essential component of our speed-weighted strategy.\n\nOur most difficult decision of the morning involved keeping **Seiya Suzuki** (45.87) on the bench. While his historical output remains relevant, the optimizer penalized him heavily due to a daunting matchup against Jared Jones and a unfavorable park factor that cratered his base projection. He narrowly missed the cut over **Jose Caballero**, who\u2014despite a lower base score\u2014retains more utility in our speed-centric model due to his superior stolen base potential and a favorable dynamic platoon advantage against the lefty Jes\u00fas Luzardo. We are also closely monitoring **Gabriel Moreno** and **Cole Young**, as both remain heavily reliant on the \"Lineup Pending\" assumption; should their actual batting orders shift downward, their efficiency scores will likely regress toward the marginal threshold. With no major weather concerns outside of a minor risk for **Edwin Arroyo**, the primary risk remains the high-strikeout potential of the opposing pitchers facing our lower-tier starters like **Henry Bolte** and **Josh Naylor**.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -150,7 +150,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tomoyuki Sugano (R)",
+            "Opponent": "Sugano (R)",
             "SP_xERA": "5.12",
             "Warning": "",
             "GameTime": "2026-07-24T20:10:00Z",
@@ -259,7 +259,7 @@
             "Slot": "3B",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Score": 64.66039763419488,
+            "Score": 74.10712967374657,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -280,10 +280,25 @@
                     "label": "Park",
                     "value": "+16%",
                     "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Slow SP Delivery (91% SB)",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Trevor Rogers (L)",
+            "SP_xERA": "4.59",
             "Warning": "",
             "GameTime": "2026-07-24T23:05:00Z",
             "Order": "6*",
@@ -658,17 +673,12 @@
             "Slot": "BN",
             "Player": "Mickey Moniak",
             "POS": "OF",
-            "Order": "2*",
+            "Order": "7",
             "Start": "08:10 PM",
             "Opponent": "Shane Drohan (L)",
             "SP_xERA": "3.66",
-            "Score": 45.719018529005055,
+            "Score": 41.06245182697676,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.11",
@@ -700,12 +710,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -969,7 +979,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (42%)",
             "GameTime": "2026-07-25T00:15:00Z"
         },
         {
