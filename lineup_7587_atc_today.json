@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-25",
-    "last_updated": "2026-07-25T20:08:03.900605+00:00",
+    "last_updated": "2026-07-25T21:45:43.682932+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 729.65,
-    "narrative": "For today\u2019s slate, **James Wood** (76.28) stands as our premier offensive anchor. Facing a weak arm in Bratt (xERA 5.90), **Wood** benefits from an elite xwOBA profile and a high-leverage spot in the lineup, making him the highest-projected efficiency play on the board. **Brice Turang** (72.70) and **Tyler Soderstrom** (72.71) are also locked in as strong starts; both profit significantly from plus-matchups against right-handed pitchers, with **Turang**\u2019s speed profile and favorable SP skill differential providing the necessary juice to secure his slot. **Austin Riley** (72.42) rounds out our elite tier, boosted by a massive +16% park factor that compensates for his lower spot in the order.\n\nThe most difficult decision for the optimizer involved **Isaac Paredes**, who landed at 52.31\u2014just outside the optimal lineup. While his dynamic platoon edge against a righty is notable, he ultimately failed to displace **Gabriel Moreno** or **Zach McKinstry** due to the lineup ambiguity surrounding his #3 spot. We are also keeping a close eye on **Seiya Suzuki** (45.82); despite his low score, he remains in the lineup, though he faces a significant hurdle today against the elite Paul Skenes. His inclusion is a strategic gamble that his high batting position will generate counting stats, but his score is suppressed heavily by Skenes' dominant skill profile.\n\nWe are consciously navigating risks elsewhere in the roster. **Jose Caballero** (51.18) remains active despite a tough matchup against a lefty; we are banking on his stolen base potential despite the presence of an elite catcher who threatens his success rate. Conversely, we have benched **Dalton Rushing** (38.41) and **Cole Young** (40.15) entirely, as both fell below our 40-point efficiency floor. With the scarcity of steals as our primary focus, we are willing to stomach the volatility of players like **Corbin Carroll** (65.34)\u2014whose 100% SB probability keeps him in the starting nine\u2014rather than chasing the marginal floor of non-base-stealing bench pieces.",
+    "total_efficiency_score": 728.88,
+    "narrative": "Ghost Ride the WHIP enters July 25 with a clear hierarchy of efficiency, led by **James Wood** (75.97) and **Brice Turang** (72.70). **James Wood** presents the highest ceiling on the board today, benefiting from a soft matchup against Bratt (5.90 xERA) and an elite xwOBA profile that overcomes the minor friction of a tough hold pitcher. Meanwhile, **Brice Turang** is our anchor for category scarcity; he enjoys a massive 19% SP skill boost against Feltner, making him an essential start to secure speed and contact metrics. Similarly, **Tyler Soderstrom** (72.72) and **Austin Riley** (72.42) round out our top-tier plays, with **Austin Riley** capitalizing on a massive 16% park factor adjustment that pushes his scoring well above his baseline. \n\nOur most difficult roster decision was leaving **Isaac Paredes** (52.31) on the bench. While his dynamic platoon edge and batting order placement provided a solid foundation, he ultimately fell short of the threshold required to displace starters like **Josh Naylor** (52.93) or **Gabriel Moreno** (51.75). The optimizer prioritized the SP matchups and volume of the current starters, leaving **Isaac Paredes** as the primary pivot should any late-inning injury news emerge. We are also monitoring the risks associated with **Seiya Suzuki** (45.36) and **Jose Caballero** (51.18); both face significant headwinds due to elite opposing pitch velocity and high-efficiency catchers, which threaten to stifle our stolen base opportunities despite their respective order advantages. \n\nWith **Corbin Carroll** (65.34) continuing to weaponize his sprint speed despite a tough draw against Griffin, we are banking on his ability to manufacture runs on the basepaths where others might struggle against high-caliber pitching. We have opted to keep depth pieces like **Dalton Rushing** (38.41), **Edwin Arroyo** (44.91), and **Cole Young** (40.15) benched today, as their projections fail to clear the efficiency bar set by our daily specialists. As the day unfolds, look for **Corbin Carroll** and **Brice Turang** to be the primary drivers of our 5x5 output, provided our lineup navigates the risks posed by the high-skill arms of Griffin and Skenes.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -327,7 +327,7 @@
             "Slot": "OF2",
             "Player": "James Wood",
             "POS": "OF",
-            "Score": 76.27844751294977,
+            "Score": 75.96921778459543,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -353,6 +353,11 @@
                     "label": "Neutral Platoon (L)",
                     "value": null,
                     "type": "info"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #1",
@@ -474,13 +479,8 @@
             "Slot": "OF5",
             "Player": "Seiya Suzuki",
             "POS": "OF",
-            "Score": 45.81798491734432,
+            "Score": 45.35980506817088,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.58",
@@ -507,16 +507,21 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Paul Skenes (R)",
+            "Opponent": "Skenes (R)",
             "SP_xERA": "3.07",
             "Warning": "",
             "GameTime": "2026-07-25T22:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "10:40 PM"
         },
         {
@@ -551,7 +556,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Nathan Eovaldi (R)",
+            "Opponent": "Eovaldi (R)",
             "SP_xERA": "3.42",
             "Warning": "",
             "GameTime": "2026-07-25T23:15:00Z",
@@ -655,17 +660,12 @@
             "Slot": "BN",
             "Player": "Isaac Paredes",
             "POS": "1B/3B",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:10 PM",
             "Opponent": "Burke, S (R)",
             "SP_xERA": "3.61",
             "Score": 52.31245623301559,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.53",
@@ -697,7 +697,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -760,7 +760,7 @@
             "POS": "2B/SS",
             "Order": "8",
             "Start": "11:15 PM",
-            "Opponent": "Andre Pallante (R)",
+            "Opponent": "Pallante (R)",
             "SP_xERA": "4.30",
             "Score": 44.91001229855082,
             "Breakdown": [
@@ -809,7 +809,7 @@
             "POS": "2B/SS",
             "Order": "1",
             "Start": "11:15 PM",
-            "Opponent": "Nathan Eovaldi (R)",
+            "Opponent": "Eovaldi (R)",
             "SP_xERA": "3.42",
             "Score": 40.15251551412167,
             "Breakdown": [
