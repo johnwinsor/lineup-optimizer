@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-24",
-    "last_updated": "2026-07-24T23:59:08.780887+00:00",
+    "last_updated": "2026-07-25T02:04:34.192412+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 730.91,
-    "narrative": "For LawDog\u2019s July 24th slate, our offensive ceiling is anchored by a trio of high-efficiency starts facing favorable pitching matchups. **Luis Arraez** (69.53) and **Dylan Beavers** (69.51) share the top spot on our board, with **Arraez** benefiting from a soft matchup against Grayson Rodriguez and a beneficial wind forecast, while **Beavers** exploits a massive park factor boost and a plus matchup against Gavin Holmes. **Taylor Ward** (69.25) rounds out this elite tier; while his dynamic platoon score dipped due to the matchup, the combined park and skill advantages against Holmes make him a must-start in the utility slot to capitalize on what should be a high-scoring affair.\n\nThe path to these rankings relied on heavy situational weighting, particularly regarding park factors and handedness. **Jung Hoo Lee** (67.84) and **Lawrence Butler** (65.97) are high-leverage plays today, with **Butler** receiving a significant +13% bump due to his platoon edge against Matthews. Conversely, the closest call on our bench involved **Jonathan Aranda** (48.26). Despite his strong historical baseline, he narrowly missed the cut behind **Gavin Sheets** because the optimizer favored **Sheets**\u2019 specific platoon profile and recent performance metrics. We are proceeding with caution regarding **Masyn Winn** (59.66) and his 41% rain risk; if the game is delayed or postponed, we will be forced to pivot to our bench depth. We are otherwise positioned for a high-volume day, banking on our speed-heavy lineup to close the gap in the SB category while leveraging these optimal matchups against the likes of Rodriguez and Holmes.",
+    "total_efficiency_score": 726.16,
+    "narrative": "LawDog\u2019s strongest plays today center on the advantageous matchup against Grayson Rodriguez, who carries an elevated 5.27 xERA. **Luis Arraez** (69.53) and **Dylan Beavers** (69.52) headline the card, with both benefitting from top-of-the-order deployment. **Dylan Beavers** is particularly enticing; his 69.52 score is driven by a massive +16% park adjustment and +18% SP skill edge, making him a primary target to bolster our R/SB/AVG categories. **Taylor Ward** (69.25) mirrors this potential, as his matchup against Gavin Holmes exploits a similar favorable park environment and SP weakness. While **Jung Hoo Lee** (64.62) and **Lawrence Butler** (65.97) fall slightly behind the top tier, their dynamic platoon advantages against Rodriguez and Matthews, respectively, solidify their positions as high-floor contributors.\n\nThe most difficult bench decision involved **Jonathan Aranda** (48.26), who narrowly missed the cut. While **Jonathan Aranda** benefits from a high batting order position, his efficiency was capped by a negative park factor and a dynamic platoon disadvantage against Cantillo, rendering him less valuable than **Gavin Sheets** (52.31). We also continue to monitor **Bryce Harper** (53.93), who faces a stern test against Schlittler; despite the lower score compared to our hot-hitting leadoff types, his pedigree remains essential for RBI production. Risk management remains the priority: while we are leaning into high-efficiency matchups, we must remain vigilant for any late-breaking weather patterns, especially in parks where our hitters are relying on heavy park factor boosts. We are currently navigating these lineups with no specific weather warnings, but should conditions shift, we will prioritize substituting for our fringe players like **Gavin Sheets** to preserve our season-long game caps.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -128,11 +128,6 @@
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Rodriguez, G (R)",
@@ -190,7 +185,7 @@
             "Slot": "MI",
             "Player": "Masyn Winn",
             "POS": "SS",
-            "Score": 59.666920753963424,
+            "Score": 60.86025916904269,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -216,11 +211,16 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+1%",
                     "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Lowder (R)",
             "SP_xERA": "4.89",
-            "Warning": "\u26a0\ufe0f Rain Risk (41%)",
+            "Warning": "",
             "GameTime": "2026-07-25T00:15:00Z",
             "Order": "6",
             "Start": "12:15 AM"
@@ -271,9 +271,48 @@
         },
         {
             "Slot": "OF1",
+            "Player": "Jung Hoo Lee",
+            "POS": "OF",
+            "Score": 64.61767005881049,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "50.39",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Rodriguez, G (R)",
+            "SP_xERA": "5.27",
+            "Warning": "",
+            "GameTime": "2026-07-25T02:15:00Z",
+            "Order": "6",
+            "Start": "02:15 AM"
+        },
+        {
+            "Slot": "OF2",
             "Player": "Drew Gilbert",
             "POS": "OF",
-            "Score": 57.06273674384749,
+            "Score": 54.345463565569034,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -304,11 +343,6 @@
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Rodriguez, G (R)",
@@ -319,7 +353,7 @@
             "Start": "02:15 AM"
         },
         {
-            "Slot": "OF2",
+            "Slot": "OF3",
             "Player": "Dylan Beavers",
             "POS": "OF",
             "Score": 69.51799200975319,
@@ -361,50 +395,6 @@
             "GameTime": "2026-07-24T23:05:00Z",
             "Order": "1",
             "Start": "11:05 PM"
-        },
-        {
-            "Slot": "OF3",
-            "Player": "Jung Hoo Lee",
-            "POS": "OF",
-            "Score": 67.84855356175102,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "50.39",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Rodriguez, G (R)",
-            "SP_xERA": "5.27",
-            "Warning": "",
-            "GameTime": "2026-07-25T02:15:00Z",
-            "Order": "6",
-            "Start": "02:15 AM"
         },
         {
             "Slot": "OF4",
@@ -814,7 +804,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "\u26a0\ufe0f Rain Risk (41%)",
+            "Warning": "",
             "GameTime": "2026-07-25T00:15:00Z"
         },
         {
