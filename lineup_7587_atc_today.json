@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-25",
-    "last_updated": "2026-07-25T23:53:54.593937+00:00",
+    "last_updated": "2026-07-26T02:07:54.637504+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 721.24,
-    "narrative": "The offensive engine for Ghost Ride the WHIP relies heavily on **James Wood** and **Brice Turang** today, who lead our roster with scores of 75.97 and 72.70, respectively. **James Wood** draws an exceptional matchup against a vulnerable lefty in Bratt, whose 5.90 xERA suggests a massive ceiling for production; his elite 0.426 xwOBA makes him an auto-start despite the minor SB-suppression warning. Similarly, **Brice Turang** benefits from a high-efficiency environment against Feltner, where his 19% boost from the opposing pitcher\u2019s skill level makes him our most reliable anchor. **Austin Riley** also warrants mention with a 72.42 score, buoyed by an aggressive +16% park factor adjustment that pushes him well into the \u201cStrong\u201d tier despite a suboptimal spot in the batting order.\n\nThe most difficult roster decision today involved **Isaac Paredes**, who landed on the bench with a 52.31 efficiency rating. While his 9% platoon advantage against Burke was attractive, he ultimately failed to clear the threshold for playing time compared to the likes of **Gabriel Moreno** and **Zach McKinstry**, whose positional flexibility and matchup profiles slightly outweighed the projected utility of **Isaac Paredes**. We remain cautious regarding **Seiya Suzuki**, who is staring down a brutal matchup against Skenes; his score of 45.36 reflects the severe penalty for facing such an elite arm. While we are currently fielding **Jose Caballero** for his speed upside, investors should monitor the catch-and-throw metrics, as the 1.86s pop time behind the plate for the opposition poses a tangible risk to our stolen base strategy.",
+    "total_efficiency_score": 720.79,
+    "narrative": "For today\u2019s slate, **James Wood** (75.97) stands as our premier offensive anchor. Facing a soft matchup against the left-handed Bratt (5.90 xERA), **James Wood** benefits from an elite xwOBA profile and a prime leadoff spot, making him our strongest play despite the lack of a platoon advantage. **Brice Turang** (72.70) and **Austin Riley** (72.41) follow close behind; **Brice Turang** exploits a massive +19% SP skill edge against Feltner, while **Austin Riley** is buoyed by a +16% park factor boost, suggesting that even in the bottom half of the order, he is positioned to capitalize on a favorable environment.\n\nOur most difficult roster decision today involved **Isaac Paredes** (52.31), who narrowly missed the starting cut. While **Isaac Paredes** offers a solid floor, the optimizer prioritized the specific situational utility of **Josh Naylor** (52.93) and **Gabriel Moreno** (51.75). The latter was chosen for his higher frequency in a #3 spot, a leverage point that narrowly eclipsed the upside **Isaac Paredes** would have provided against the tougher Burke. We are also monitoring the risk associated with **Corbin Carroll** (65.34); while his speed remains vital, he faces a daunting task against Griffin. However, a \"Slow SP Delivery\" tag at the mound gives **Corbin Carroll** a calculated 100% success probability for stolen base attempts, forcing us to start him despite the defensive-minded matchup. We remain cautious with **Edwin Arroyo** (44.91) and **Jose Caballero** (51.18) today, as both are anchored by bottom-of-the-order assignments and tough opposing xERAs, requiring them to rely heavily on their speed profiles to avoid the sub-40 \"Below Floor\" threshold.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -144,13 +144,13 @@
         },
         {
             "Slot": "SS",
-            "Player": "Zach McKinstry",
-            "POS": "2B/SS/3B/OF",
-            "Score": 50.605963339274524,
+            "Player": "Edwin Arroyo",
+            "POS": "2B/SS",
+            "Score": 44.91001229855082,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "48.73",
+                    "value": "44.96",
                     "type": "info"
                 },
                 {
@@ -160,31 +160,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+5%",
-                    "type": "positive"
+                    "value": "-4%",
+                    "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+9%",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-6%",
-                    "type": "negative"
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Wacha (R)",
-            "SP_xERA": "4.37",
+            "Opponent": "Pallante (R)",
+            "SP_xERA": "4.30",
             "Warning": "",
-            "GameTime": "2026-07-25T17:10:00Z",
-            "Order": "7",
-            "Start": "05:10 PM"
+            "GameTime": "2026-07-25T23:15:00Z",
+            "Order": "8",
+            "Start": "11:15 PM"
         },
         {
             "Slot": "MI",
@@ -477,13 +477,13 @@
         },
         {
             "Slot": "OF5",
-            "Player": "Seiya Suzuki",
-            "POS": "OF",
-            "Score": 45.35980506817088,
+            "Player": "Zach McKinstry",
+            "POS": "2B/SS/3B/OF",
+            "Score": 50.605963339274524,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "55.58",
+                    "value": "48.73",
                     "type": "info"
                 },
                 {
@@ -493,36 +493,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
+                    "value": "+9%",
+                    "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "-2%",
+                    "value": "-6%",
                     "type": "negative"
                 },
                 {
-                    "label": "Elite Catcher (1.89s)",
-                    "value": "-1.0%",
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Skenes (R)",
-            "SP_xERA": "3.07",
+            "Opponent": "Wacha (R)",
+            "SP_xERA": "4.37",
             "Warning": "",
-            "GameTime": "2026-07-25T22:40:00Z",
-            "Order": "2",
-            "Start": "10:40 PM"
+            "GameTime": "2026-07-25T17:10:00Z",
+            "Order": "7",
+            "Start": "05:10 PM"
         },
         {
             "Slot": "UTIL",
@@ -607,6 +602,65 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Seiya Suzuki",
+            "POS": "OF",
+            "Order": "2",
+            "Start": "10:40 PM",
+            "Opponent": "Skenes (R)",
+            "SP_xERA": "3.07",
+            "Score": 43.99901091612575,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "55.58",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "BvP Weak (29 PA)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-07-25T22:40:00Z"
         },
         {
             "Slot": "BN",
@@ -747,55 +801,6 @@
                 },
                 {
                     "label": "Benched - Below Zebras Floor (40.0).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-07-25T23:15:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Edwin Arroyo",
-            "POS": "2B/SS",
-            "Order": "8",
-            "Start": "11:15 PM",
-            "Opponent": "Pallante (R)",
-            "SP_xERA": "4.30",
-            "Score": 44.91001229855082,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "44.96",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
