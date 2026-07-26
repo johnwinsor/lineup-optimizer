@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-26",
-    "last_updated": "2026-07-26T18:59:49.454204+00:00",
+    "last_updated": "2026-07-26T20:07:51.463229+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 804.34,
-    "narrative": "The Austin Waves enter today\u2019s slate with **Gunnar Henderson** leading the charge, posting an elite 81.88 efficiency score. His favorable matchup against Reynaldo L\u00f3pez\u2014coupled with a 16% park factor boost and a prime three-hole placement\u2014makes him our anchor. **Jackson Merrill** (71.56) and **Drake Baldwin** (71.83) round out our top-tier plays. **Drake Baldwin** benefits significantly from the leadoff spot and a generous 4.37 xERA matchup, while **Jackson Merrill** provides stability in the middle of the order, leveraging a 14% SP skill advantage against Junk to sustain high-floor production in the absence of elite stolen base opportunities.\n\nRegarding our tactical adjustments, we are leaning into specific environmental and order-based edges. **Denzer Guzman** (53.32) remains a start primarily due to a 19% SP skill advantage and a wind-out benefit that mitigates his lower batting order placement. Meanwhile, the decision to bench **Luis Garc\u00eda Jr.** (47.58) was the most difficult; despite a decent profile, the negative dynamic platoon adjustment against Drake and a sub-optimal eighth-place assignment pushed him just below the threshold required to displace the higher-ceiling utility of **Andy Pages** (60.70). **Andy Pages** maintains his spot due to the high-leverage leadoff/two-hole proximity and favorable overall projection, even with a minor efficiency tax due to elite catcher framing.\n\nWe remain cautious of several variables that could compress our ceiling. **Sam Antonacci** (48.70) presents the highest risk of the active starters; his efficiency is hampered by a significant -16% SP skill penalty against Blanco. Additionally, while we are tracking the daily lineup potential, keep an eye on **Heliot Ramos** (55.10); while he benefits from a wind-out scenario, his value is throttled by a -2% SB risk associated with the opposing catcher\u2019s holding capability. We will monitor these slots closely as the games progress to preserve our remaining game caps, ensuring that we only deploy marginal assets when the projected efficiency comfortably clears the 40.0 floor.",
+    "total_efficiency_score": 801.0,
+    "narrative": "The Austin Waves are primed for a high-ceiling performance today, headlined by **Gunnar Henderson**, who earns our highest efficiency score of 81.88. **Gunnar Henderson** occupies the #3 hole against a favorable matchup with a 4.41 xERA arm; the combination of a +16% park factor and a substantial +14% platoon edge makes him our anchor. Joining him in the elite tier is **Drake Baldwin**, whose score of 71.83 is buoyed by a prime leadoff spot and a +16% park adjustment against a vulnerable pitcher. Similarly, **Jackson Merrill** is a high-conviction start at 71.56, benefiting from a +14% SP skill advantage and a strong +13% platoon boost, giving him the statistical profile to contribute meaningfully across R/RBI/AVG.\n\nOur roster construction leans into situational advantages today, specifically prioritizing hitters with strong platoon splits. **Denzer Guzman** (53.32) remains a viable play despite a lower base, as he exploits a soft 6.03 xERA matchup paired with a rare \"Wind Out\" factor adding +5% to his potential. Conversely, the toughest bench decision involved **Luis Garc\u00eda Jr.** (47.58). While he sits within our starting threshold, the optimizer pushed him to the bench in favor of higher-floor options, as a severe -15% penalty against the opposing lefty and an unfavorable #8 lineup spot created too much volatility. We are monitoring **Heliot Ramos** closely; while he is currently active, his score of 55.10 is tempered by a -2% penalty for being an \"Elite Hold\" candidate whose high stolen base profile makes him indispensable despite the moderate matchup efficiency. \n\nRisk management remains a priority for the Waves. While **Dominic Smith** offers a solid 62.63 score, the entire lineup faces the inherent unpredictability of the daily variance against the mid-tier rotation scheduled for this slate. We are keeping **Andy Pages** active at 60.70, though he carries a minor -1.0% penalty for a difficult opposing catcher framing profile. The team is positioned to maximize cap efficiency while keeping the most potent bats in the lineup, avoiding the <40 \"Below Floor\" trap that rendered **Brayan Rocchio** (36.60) a clear scratch for today's contest.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -102,7 +102,7 @@
             "Slot": "1B",
             "Player": "Vladimir Guerrero Jr.",
             "POS": "1B",
-            "Score": 66.72590432340068,
+            "Score": 63.38960910723065,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -133,6 +133,11 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Suarez (L)",
@@ -599,11 +604,46 @@
             "Player": "Luis Robert Jr.",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "05:40 PM",
+            "Opponent": "Sheehan (R)",
+            "SP_xERA": "3.67",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "57.33",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -611,7 +651,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-07-26T17:40:00Z"
         },
         {
             "Slot": "BN",
