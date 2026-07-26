@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-26",
-    "last_updated": "2026-07-26T20:07:48.194275+00:00",
+    "last_updated": "2026-07-26T21:51:46.887139+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 813.18,
-    "narrative": "The Austin Waves enter today\u2019s slate with **Gunnar Henderson** pacing the lineup at an elite 83.29 score. His matchup against Reynaldo L\u00f3pez is highly favorable, bolstered by a 16% park factor boost and a significant 14% efficiency bump from the dynamic platoon advantage. Alongside him, **Drake Baldwin** (72.68) and **Jackson Merrill** (71.41) serve as our primary offensive engines. **Drake Baldwin** benefits immensely from a 16% park factor and high-quality contact metrics, while **Jackson Merrill** draws a favorable matchup against Junk, where his 13% platoon efficiency advantage puts him in a prime position to anchor our production in the middle of the order.\n\nWhile several bench pieces were considered, **Jorge Polanco** (45.79) was the closest to cracking the starting nine but ultimately fell short due to the efficiency profile of **Denzer Guzman** (53.14). Although **Denzer Guzman** has a lower base projection, the high 6.03 xERA of his opposing pitcher and a wind-out advantage provided the necessary ceiling to justify his start over **Jorge Polanco**, who faces a stiffer test against a 3.67 xERA arm. We are proceeding with caution regarding **Heliot Ramos** (56.33), as his matchup is tempered by a 55% stolen base prevention rate from the opposing catcher, limiting his upside in our scarcest category. Meanwhile, **Vladimir Guerrero Jr.** (66.26) remains a high-value play despite a \"Wind In\" penalty, as his park-factor adjustment and platoon edge provide enough stability to warrant his place in the utility spot over our bench alternatives.",
+    "total_efficiency_score": 803.11,
+    "narrative": "The **Gunnar Henderson** and **Jackson Merrill** tandem headlines today\u2019s rotation as our strongest plays, posting elite efficiency scores of 83.29 and 71.41 respectively. **Gunnar Henderson** benefits from a high-upside matchup against L\u00f3pez, carrying a significant platoon advantage and prime placement in the three-hole, while **Jackson Merrill** faces Junk in a contest where his dynamic platoon edge and favorable spot in the order are primary drivers. **Drake Baldwin** also emerges as a key contributor at 72.68; his score is buoyed by an ideal park factor (+16%) and a high xwOBA against Baz, cementing his role as a must-start catcher despite the volatility of the position.\n\nTactical adjustments across the board leverage specific environmental and situational variables. **Denzer Guzman** (53.14) receives a notable boost from wind blowing out, helping mitigate a difficult matchup against Whisenhunt, while **Vladimir Guerrero Jr.** (66.25) remains a high-floor start despite a stiff test against the 3.58 xERA of Suarez, as his ability to handle left-handed pitching compensates for the wind blowing in. Conversely, **Kyle Tucker** (59.07) and **Andy Pages** (56.75) are both suppressed by poor BvP histories against Peralta, but their high base projections keep them safely in the starting outfield. The most difficult decision on the bench involved **Jorge Polanco**, who missed the cut at 45.79; while he provides reliable utility, the superior efficiency and platoon-adjusted upside of **Dominic Smith** (62.31) against Baz ultimately locked him into the OF3 spot.\n\nManagement must remain vigilant regarding risk factors today, particularly regarding **Heliot Ramos** (56.33). While he benefits from favorable wind, his efficiency is capped by the presence of an elite catcher for the opposition, which historically suppresses stolen base attempts\u2014a category we are prioritizing heavily today. We will be monitoring the lineup status of **Luis Garc\u00eda Jr.** and **Nasim Nunez** closely; both are currently projected for the bottom third of the order against Drake, and any further demotion in the lineup could result in a significant drop in their already marginal 5x5 utility.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -322,7 +322,7 @@
             "Slot": "OF1",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 64.2154935744134,
+            "Score": 59.07825408846032,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -350,6 +350,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "BvP Poor (41 PA)",
+                    "value": "-7%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
@@ -366,7 +371,7 @@
             "Slot": "OF2",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 61.684678373838224,
+            "Score": 56.74990410393117,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -392,6 +397,11 @@
                     "label": "Neutral Platoon (R)",
                     "value": null,
                     "type": "info"
+                },
+                {
+                    "label": "BvP Poor (41 PA)",
+                    "value": "-7%",
+                    "type": "negative"
                 },
                 {
                     "label": "Elite Catcher (1.87s)",
@@ -799,11 +809,46 @@
             "Player": "Coby Mayo",
             "POS": "1B/3B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "05:35 PM",
+            "Opponent": "L\u00f3pez, R (R)",
+            "SP_xERA": "4.41",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.42",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -811,7 +856,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-07-26T17:35:00Z"
         },
         {
             "Slot": "BN",
