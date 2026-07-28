@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-28",
-    "last_updated": "2026-07-28T06:30:19.396907+00:00",
+    "last_updated": "2026-07-28T16:01:17.873467+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 786.1,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 792.48,
+    "narrative": "The Austin Waves enter today\u2019s slate with a lineup built to exploit favorable matchups against mid-tier rotations, headlined by **Gunnar Henderson**, whose 80.05 efficiency score is the clear ceiling play of the day. Facing Troy Melton, **Gunnar Henderson** benefits from an ideal combination of a wind-out park factor and a strong platoon advantage, making him our primary candidate for both power and efficiency. Similarly, **Jackson Merrill** (75.27) and **Luis Garc\u00eda Jr.** (73.66) offer high-floor production against favorable opposition; **Luis Garc\u00eda Jr.** specifically capitalizes on a generous SP_xERA from Shane Bieber, while **Jackson Merrill** leverages a significant platoon edge against Michael Lorenzen to stay in the elite tier. While **Kyle Tucker** carries a lower raw base, his 67.39 score remains a lock for the starting outfield as we continue to prioritize his rare 5x5 contributions.\n\nNavigating the remainder of the roster, the optimizer leaned heavily into matchup-specific upside over raw talent. **Nasim Nunez** (59.76) serves as a vital anchor for our stolen base targets; despite hitting ninth, his score was bolstered significantly by the 19% SP skill boost provided by Shane Bieber\u2019s matchup. The most difficult bench decision involved **Wade Meckler**, who fell just short of the cut at 46.88. While **Wade Meckler** provides solid plate discipline, the optimizer favored the platoon-advantaged **Liam Hicks** and the positional versatility offered by the current starters. We are monitoring the \"Lineup Pending\" status across the board, as the projected order for **Drake Baldwin** and **Vladimir Guerrero Jr.** remains fluid; should they drop lower in the lineup, we will need to re-evaluate the corresponding order bonuses that currently keep them in the 50-point range. \n\nRisk remains concentrated in our exposure to elite arms. **Luis Robert Jr.** (52.66) and **Sam Antonacci** (51.32) are starting despite challenging matchups against Chris Sale and Gerrit Cole, respectively. These selections are defensive in nature, balancing our need for daily production against the risk of the \"Below floor\" tier (<40). We are keeping a close watch on **Vladimir Guerrero Jr.** (52.96), as the high-skill matchup against Cade Cavalli creates a volatility risk that could force a late-game pivot to bench options like **Miguel Vargas** if the projected lineup shifts negatively before first pitch.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -205,7 +205,7 @@
             "Slot": "SS",
             "Player": "Gunnar Henderson",
             "POS": "SS",
-            "Score": 76.23795472817292,
+            "Score": 80.04985246458158,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -240,6 +240,11 @@
                 {
                     "label": "Order #3",
                     "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -538,7 +543,7 @@
             "Slot": "OF5",
             "Player": "Sam Antonacci",
             "POS": "2B/3B/OF",
-            "Score": 48.756164004044884,
+            "Score": 51.32227789899462,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -574,11 +579,6 @@
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
                 }
             ],
             "Opponent": "Gerrit Cole (R)",
@@ -784,7 +784,7 @@
             "Start": "11:40 PM",
             "Opponent": "Gerrit Cole (R)",
             "SP_xERA": "3.51",
-            "Score": 42.15797015691353,
+            "Score": 44.376810691487925,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -827,11 +827,6 @@
                     "type": "info"
                 },
                 {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
-                },
-                {
                     "label": "Lineup Pending (Not picked by Optimizer).",
                     "value": null,
                     "type": "info"
@@ -872,7 +867,7 @@
             "Start": "10:40 PM",
             "Opponent": "Troy Melton (R)",
             "SP_xERA": "4.01",
-            "Score": 44.495834394133,
+            "Score": 46.72062611383964,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -908,6 +903,11 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
@@ -971,17 +971,12 @@
             "Slot": "BN",
             "Player": "Brayan Rocchio",
             "POS": "2B/SS",
-            "Order": "4*",
-            "Start": "11:10 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 49.440170376850965,
+            "Order": "5",
+            "Start": "05:40 PM",
+            "Opponent": "Burns, Ch (R)",
+            "SP_xERA": "3.59",
+            "Score": 42.223701913999754,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.15",
@@ -998,18 +993,28 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "SP Skill",
+                    "value": "-10%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-07-28T23:10:00Z"
+            "GameTime": "2026-07-28T17:40:00Z"
         },
         {
             "Slot": "BN",
