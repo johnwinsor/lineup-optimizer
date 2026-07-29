@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-29",
-    "last_updated": "2026-07-29T20:12:40.869111+00:00",
+    "last_updated": "2026-07-29T21:51:08.464869+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 761.93,
-    "narrative": "Our offensive outlook for 2026-07-29 hinges on maximizing high-leverage opportunities against favorable opposing arms, with **James Wood** (72.26) and **Isaac Paredes** (68.21) standing as our premier plays. **James Wood** benefits from a potent combination of an elite xwOBA (0.425) and a favorable matchup against Yesavage, while **Isaac Paredes** earns a massive boost from a projected favorable platoon split against Grayson Rodriguez. **Josh Naylor** (65.50) also profiles as a \"Strong\" play; despite the uncertainty of a pending lineup, the matchup against the vulnerable Eric Lauer (5.30 xERA) gives him significant ceiling potential. We are also monitoring the speed-based upside of **Corbin Carroll** (62.33), whose base projection is bolstered by wind blowing out at the park and a prime leadoff spot, though he must navigate a tougher matchup against Jones.\n\nThe most difficult bench decision today involved **Austin Riley** (48.57), who nearly displaced **Gabriel Moreno** (49.31) for the catcher spot. While **Austin Riley** possesses high-upside potential, a 45% rain risk and a suboptimal matchup against Manaea tempered his score, pushing him to the bench in favor of keeping **Gabriel Moreno** active, whose utility is elevated today by a favorable wind forecast and a #3 order placement. We are also wary of the risks surrounding **Dalton Rushing** and **Jose Caballero**; both are currently \"Lineup Pending,\" and **Jose Caballero** specifically suffers from a severe negative dynamic platoon shift (-13%) that limits his daily efficiency. We are navigating these start/sit decisions cautiously to preserve our game caps, ensuring that only those with strong statistical backing enter the lineup for this slate.",
+    "total_efficiency_score": 756.07,
+    "narrative": "Our lineup today is anchored by **James Wood**, who commands the highest score of the day at 72.259. With a favorable matchup against a 4.47 xERA arm and a prime leadoff spot, his elite 0.425 xwOBA makes him a must-start staple. Close behind, **Isaac Paredes** (68.21) and **Josh Naylor** (65.50) provide massive upside, both benefiting from the \"SP Skill\" boost derived from facing high-xERA pitchers like Rodriguez and Lauer. **Brice Turang** and **Corbin Carroll** are locked in as our primary engines for stolen bases; while **Corbin Carroll** faces a tougher matchup against Jones, his leadoff placement and favorable wind conditions keep his floor high at 62.32, essential for maintaining our advantage in a scarce SB environment.\n\nThe most difficult bench decision involved **Austin Riley**, whose 47.16 score kept him on the pine. While his power profile is always tempting, he fell victim to a combination of a lower-tier batting order position and a 45% rain risk, which ultimately tipped the optimizer toward the higher-ceiling efficiency of **Tyler Soderstrom** and **Cole Young**. We are monitoring **Dalton Rushing**, **Josh Naylor**, **Isaac Paredes**, and **Cole Young** closely; all are currently listed as \"Lineup Pending.\" If any of these assumed spots shift down the order, we may see a significant compression in their daily efficiency scores, though **Cole Young**\u2019s leadoff projection against a vulnerable Lauer remains a high-leverage pivot point for our total offensive output today.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -151,7 +151,7 @@
             "Slot": "2B",
             "Player": "Brice Turang",
             "POS": "2B",
-            "Score": 61.90363273491094,
+            "Score": 64.9988143716565,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -177,6 +177,11 @@
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Webb, L (R)",
@@ -188,18 +193,13 @@
         },
         {
             "Slot": "SS",
-            "Player": "Cole Young",
+            "Player": "Edwin Arroyo",
             "POS": "2B/SS",
-            "Score": 60.62115090780458,
+            "Score": 47.873837521793675,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "44.90",
+                    "value": "44.96",
                     "type": "info"
                 },
                 {
@@ -208,27 +208,32 @@
                     "type": "info"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
+                    "label": "Park",
                     "value": "+3%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "SP Skill",
+                    "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Eric Lauer (L)",
-            "SP_xERA": "5.30",
+            "Opponent": "Cantillo (L)",
+            "SP_xERA": "4.27",
             "Warning": "",
-            "GameTime": "2026-07-30T02:10:00Z",
-            "Order": "1*",
-            "Start": "02:10 AM"
+            "GameTime": "2026-07-29T23:10:00Z",
+            "Order": "8",
+            "Start": "11:10 PM"
         },
         {
             "Slot": "MI",
@@ -316,7 +321,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Grayson Rodriguez (R)",
+            "Opponent": "Rodriguez, G (R)",
             "SP_xERA": "5.28",
             "Warning": "",
             "GameTime": "2026-07-30T01:38:00Z",
@@ -325,15 +330,54 @@
         },
         {
             "Slot": "OF1",
+            "Player": "Jose Caballero",
+            "POS": "2B/SS/3B/OF",
+            "Score": 48.61672902604679,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "59.45",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Martin (R)",
+            "SP_xERA": "4.05",
+            "Warning": "",
+            "GameTime": "2026-07-29T23:40:00Z",
+            "Order": "8",
+            "Start": "11:40 PM"
+        },
+        {
+            "Slot": "OF2",
             "Player": "Seiya Suzuki",
             "POS": "OF",
             "Score": 53.898860320964445,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.58",
@@ -370,61 +414,12 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Dustin May (R)",
+            "Opponent": "May (R)",
             "SP_xERA": "3.92",
             "Warning": "",
             "GameTime": "2026-07-29T23:45:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "11:45 PM"
-        },
-        {
-            "Slot": "OF2",
-            "Player": "Tyler Soderstrom",
-            "POS": "1B/OF",
-            "Score": 60.555035141120634,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "53.86",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Patrick Sandoval (L)",
-            "SP_xERA": "4.22",
-            "Warning": "",
-            "GameTime": "2026-07-30T01:40:00Z",
-            "Order": "4*",
-            "Start": "01:40 AM"
         },
         {
             "Slot": "OF3",
@@ -531,18 +526,13 @@
         },
         {
             "Slot": "OF5",
-            "Player": "Jose Caballero",
-            "POS": "2B/SS/3B/OF",
-            "Score": 50.16832676092063,
+            "Player": "Tyler Soderstrom",
+            "POS": "1B/OF",
+            "Score": 60.555035141120634,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "59.45",
+                    "value": "53.86",
                     "type": "info"
                 },
                 {
@@ -552,46 +542,46 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+1%",
+                    "value": "+10%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-13%",
+                    "label": "SP Skill",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-6%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "Order #4",
+                    "value": "+4%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Martin (R)",
-            "SP_xERA": "4.05",
+            "Opponent": "Patrick Sandoval (L)",
+            "SP_xERA": "4.22",
             "Warning": "",
-            "GameTime": "2026-07-29T23:40:00Z",
-            "Order": "7*",
-            "Start": "11:40 PM"
+            "GameTime": "2026-07-30T01:40:00Z",
+            "Order": "4",
+            "Start": "01:40 AM"
         },
         {
             "Slot": "UTIL",
-            "Player": "Vinnie Pasquantino",
-            "POS": "1B",
-            "Score": 55.279548415897956,
+            "Player": "Cole Young",
+            "POS": "2B/SS",
+            "Score": 60.62115090780458,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
+                    "label": "Lineup Pending (Assumed #1)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "54.02",
+                    "value": "44.90",
                     "type": "info"
                 },
                 {
@@ -600,37 +590,27 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
                     "label": "SP Skill",
-                    "value": "-16%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
+                    "value": "+19%",
                     "type": "positive"
                 },
                 {
-                    "label": "BvP Good (26 PA)",
+                    "label": "Dynamic Platoon (L)",
                     "value": "+3%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Joe Ryan (R)",
-            "SP_xERA": "3.32",
+            "Opponent": "Eric Lauer (L)",
+            "SP_xERA": "5.30",
             "Warning": "",
-            "GameTime": "2026-07-29T23:40:00Z",
-            "Order": "5*",
-            "Start": "11:40 PM"
+            "GameTime": "2026-07-30T02:10:00Z",
+            "Order": "1*",
+            "Start": "02:10 AM"
         }
     ],
     "players_sat": [
@@ -711,11 +691,11 @@
             "Slot": "BN",
             "Player": "Austin Riley",
             "POS": "3B",
-            "Order": "7",
-            "Start": "05:10 PM",
-            "Opponent": "Manaea (L)",
-            "SP_xERA": "3.90",
-            "Score": 48.57242725590552,
+            "Order": "8",
+            "Start": "11:10 PM",
+            "Opponent": "Scott (R)",
+            "SP_xERA": "3.79",
+            "Score": 47.161688166654834,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -734,17 +714,22 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-2%",
+                    "value": "-5%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-1%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Catcher (1.87s)",
+                    "value": "-1.0%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
                 },
                 {
@@ -754,12 +739,36 @@
                 }
             ],
             "Warning": "\u26a0\ufe0f Rain Risk (45%)",
-            "GameTime": "2026-07-29T17:10:00Z"
+            "GameTime": "2026-07-29T23:10:00Z"
         },
         {
             "Slot": "BN",
             "Player": "Giancarlo Stanton",
             "POS": "OF",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "IL (Injured)",
+                    "value": null,
+                    "type": "status"
+                },
+                {
+                    "label": "Injured (IL) - Not available.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "\ud83d\udea8 INJURED (IL)",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Vinnie Pasquantino",
+            "POS": "1B",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
@@ -865,68 +874,14 @@
         },
         {
             "Slot": "BN",
-            "Player": "Edwin Arroyo",
-            "POS": "2B/SS",
-            "Order": "8",
-            "Start": "11:10 PM",
-            "Opponent": "Cantillo (L)",
-            "SP_xERA": "4.27",
-            "Score": 47.873837521793675,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "44.96",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Benched - Lower projected efficiency than other options.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-07-29T23:10:00Z"
-        },
-        {
-            "Slot": "BN",
             "Player": "Henry Bolte",
             "POS": "OF",
-            "Order": "7*",
+            "Order": "7",
             "Start": "01:40 AM",
             "Opponent": "Patrick Sandoval (L)",
             "SP_xERA": "4.22",
             "Score": 0.0,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "0.00",
@@ -958,7 +913,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
