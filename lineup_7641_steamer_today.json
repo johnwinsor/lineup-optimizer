@@ -1,21 +1,16 @@
 {
     "target_date": "2026-07-30",
-    "last_updated": "2026-07-30T22:03:03.316028+00:00",
+    "last_updated": "2026-07-30T23:55:20.940509+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 426.48,
-    "narrative": "For LawDog today, **Lawrence Butler** stands out as the highest-rated option with a 62.96 score, serving as our most robust utility play despite a lower spot in the lineup. His value is driven by a strong platoon advantage against the right-handed Sonny Gray and a significant park factor boost, which offsets the inherent production hit of batting 8th. **Cal Raleigh** remains the next most viable starter at 59.62, where the wind conditions at his venue provide a necessary lift to navigate a tricky matchup against Roki Sasaki. While **Masyn Winn** (56.37) and **Luis Arraez** (55.83) are solid mid-tier contributors, our daily efficiency relies heavily on these high-ceiling matchups to stay competitive, particularly since we lack elite speed threats in this specific configuration.\n\nThe decision to bench **Braden Montgomery** (36.49) was the most difficult call of the morning; he fell just short of the 40.0-point \"Zebras\" floor required to justify using a daily game cap. While his switch-hitting profile was appealing, the combination of a tough matchup against Ryan Weathers and an unfavorable lineup spot necessitated his exclusion. We remain cautious regarding our \"Lineup Pending\" status for **Cal Raleigh**, **Luis Arraez**, **Jung Hoo Lee**, **Drew Gilbert**, and **Lawrence Butler**; if these players shift lower in their respective batting orders or are held out entirely, we may see a significant swing in our projected run totals. We are monitoring these lineups closely, as the scarcity of stolen bases among the active group means any drop in volume from players like **Jung Hoo Lee** or **Drew Gilbert** against Sears could be catastrophic for our daily standings.",
+    "total_efficiency_score": 385.63,
+    "narrative": "Our lineup today is anchored by **Lawrence Butler**, whose score of 66.98 makes him our only truly \"Strong\" play. **Lawrence Butler** benefits from a massive 13% boost against a right-handed matchup and a park factor that clearly favors his profile, positioning him as the centerpiece of our production today. While **Cal Raleigh** (58.45), **Masyn Winn** (56.37), and **Luis Arraez** (55.83) fall into the high-end of our \"Marginal\" bucket, they remain viable starts. **Luis Arraez** in particular is buoyed by a 10% boost for hitting at the top of the order, offsetting a slight negative platoon edge against a lefty, while **Masyn Winn** benefits from the highest SP skill advantage in our lineup (+13%), mitigating the risk associated with a mid-range score.\n\nWe were forced to keep **Braden Montgomery** on the bench, though he was the closest to cracking the starting nine. His score of 36.49 fell just short of our 40-point \"Below Floor\" threshold, largely due to a tough matchup against a 3.41 xERA arm in Weathers, which erased his potential platoon and park advantages. Elsewhere, we are navigating the landscape without **Bryce Harper**, **Geraldo Perdomo**, and **Yainer Diaz** due to team off-days, and we continue to monitor the status of **Jonathan Aranda** and **JJ Bleday**. **Jonathan Aranda** is being started despite a difficult park and opposing pitcher because his 12% dynamic platoon edge and promotion to the #2 spot provide enough upside to squeeze past the competition. Conversely, **JJ Bleday**\u2019s 14% platoon penalty against a right-handed arm is a concern, but we are running him out there to chase his 47.92 projection in hopes that his spot in the #3 hole provides enough RBI opportunities to justify his roster slot over the remainder of the bench.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Cal Raleigh",
             "POS": "C",
-            "Score": 59.62206164845389,
+            "Score": 58.45300161613125,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "57.79",
@@ -37,21 +32,16 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
                     "label": "Wind Out",
                     "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Roki Sasaki (R)",
+            "Opponent": "Sasaki (R)",
             "SP_xERA": "4.11",
             "Warning": "",
             "GameTime": "2026-07-31T02:10:00Z",
-            "Order": "5*",
+            "Order": "6",
             "Start": "02:10 AM"
         },
         {
@@ -105,11 +95,6 @@
             "Score": 55.83433382262013,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "51.50",
                     "type": "info"
@@ -144,7 +129,7 @@
             "SP_xERA": "4.36",
             "Warning": "",
             "GameTime": "2026-07-31T01:40:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "01:40 AM"
         },
         {
@@ -188,6 +173,45 @@
         },
         {
             "Slot": "OF1",
+            "Player": "Lawrence Butler",
+            "POS": "OF",
+            "Score": 66.97551308237266,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "55.27",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+13%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Gray, S (R)",
+            "SP_xERA": "3.89",
+            "Warning": "",
+            "GameTime": "2026-07-31T01:40:00Z",
+            "Order": "6",
+            "Start": "01:40 AM"
+        },
+        {
+            "Slot": "OF4",
             "Player": "JJ Bleday",
             "POS": "OF",
             "Score": 47.92260284718682,
@@ -231,16 +255,11 @@
             "Start": "11:10 PM"
         },
         {
-            "Slot": "OF3",
+            "Slot": "UTIL",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
             "Score": 48.287548866118826,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.39",
@@ -281,105 +300,7 @@
             "SP_xERA": "4.36",
             "Warning": "",
             "GameTime": "2026-07-31T01:40:00Z",
-            "Order": "5*",
-            "Start": "01:40 AM"
-        },
-        {
-            "Slot": "OF5",
-            "Player": "Drew Gilbert",
-            "POS": "OF",
-            "Score": 43.70080848075376,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "46.42",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Elite Hold SP (50% SB)",
-                    "value": "-2%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Sears (L)",
-            "SP_xERA": "4.36",
-            "Warning": "",
-            "GameTime": "2026-07-31T01:40:00Z",
-            "Order": "6*",
-            "Start": "01:40 AM"
-        },
-        {
-            "Slot": "UTIL",
-            "Player": "Lawrence Butler",
-            "POS": "OF",
-            "Score": 62.95698229743029,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "55.27",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+13%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Gray, S (R)",
-            "SP_xERA": "3.89",
-            "Warning": "",
-            "GameTime": "2026-07-31T01:40:00Z",
-            "Order": "8*",
+            "Order": "5",
             "Start": "01:40 AM"
         }
     ],
@@ -768,6 +689,25 @@
             "Breakdown": [
                 {
                     "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Drew Gilbert",
+            "POS": "OF",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
