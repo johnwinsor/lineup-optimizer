@@ -1,9 +1,9 @@
 {
     "target_date": "2026-07-30",
-    "last_updated": "2026-07-30T13:30:18.196586+00:00",
+    "last_updated": "2026-07-30T15:47:10.500676+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 473.37,
-    "narrative": "For today\u2019s slate, **Lawrence Butler** stands out as the premier play with a 62.96 score, buoyed by a substantial +10% park factor and a favorable platoon advantage against the right-handed Sonny Gray. While his batting order slot is suboptimal, the raw offensive environment dictates he stays in the lineup. Conversely, **Cal Raleigh** sits right on the edge of the \"Strong\" threshold (59.62) despite the challenge posed by the elite Roki Sasaki; the combination of a favorable wind direction and a +2% SP skill variance keeps him as our primary backstop. We are also looking for a steady floor from **Masyn Winn**, whose 57.50 score is bolstered by a significant +13% SP skill bump against Javier Assad, reinforcing the importance of matchup-specific efficiency as we manage our game caps.\n\nThe bench decision for **Braden Montgomery** (37.62) was the most difficult, as he ultimately failed to clear our \"marginal\" bar against Ryan Weathers. While **Braden Montgomery** carries a high upside, his negative park and SP skill adjustments relative to our starters made him an easy exclusion for today's roster. We are proceeding with caution given the number of players like **Jonathan Aranda**, **Luis Arraez**, **Masyn Winn**, **Gavin Sheets**, **Jung Hoo Lee**, **Drew Gilbert**, and **JJ Bleday** who are currently in \"Lineup Pending\" status. Should these lineups shift, specifically for **Jonathan Aranda** or **JJ Bleday**, we may need to pivot to ensure our SB-heavy strategy remains intact. Notably, our superstars **Jos\u00e9 Ram\u00edrez**, **Bryce Harper**, and **Geraldo Perdomo** are unavailable today due to team off-days, placing a premium on the output of our fringe starters to keep our 5x5 totals competitive.",
+    "total_efficiency_score": 472.24,
+    "narrative": "The primary anchor for LawDog today is **Lawrence Butler**, who leads our starting nine with a 62.96 efficiency score despite an assumed #8 spot in the order. His value is driven by a favorable park factor and a significant +13% bump from a platoon advantage against Sonny Gray. While **Cal Raleigh** (59.62) and **Masyn Winn** (56.37) also provide solid floor output, **Lawrence Butler** is our standout play because he maximizes his opportunity against a high-xERA matchup. Conversely, we are navigating a difficult slate for our left-handed bats against JP Sears; **Luis Arraez**, **Jung Hoo Lee**, and **Drew Gilbert** are all suppressed by the platoon disadvantage, with **Drew Gilbert** barely clearing our starting threshold at 43.70.\n\nThe most difficult roster decision today involves **Braden Montgomery**, who narrowly missed the starting cut with a score of 36.49. His exclusion was primarily driven by the matchup against an elite pitcher in Ryan Weathers (xERA 3.41), which triggered a significant -14% skill penalty, pushing him below our internal 40.0 \"Zebras\" floor. We are opting to bench him to preserve our game caps rather than force a start against a high-skill arm. Meanwhile, we remain without the services of **Bryce Harper**, **Jos\u00e9 Ram\u00edrez**, and **Geraldo Perdomo** due to scheduled off-days, forcing the remainder of our roster\u2014including **Jonathan Aranda** and **JJ Bleday**\u2014to carry the load. Owners should monitor official lineups closely, as our projections for **Cal Raleigh**, **Luis Arraez**, **Gavin Sheets**, **Jung Hoo Lee**, **Lawrence Butler**, **Drew Gilbert**, and **JJ Bleday** currently rely on historical batting order assumptions; any shift to the bottom of the order for these players could further depress their efficiency scores.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -61,11 +61,6 @@
             "Score": 51.787463507341286,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "51.07",
                     "type": "info"
@@ -96,11 +91,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Cole Winn (R)",
+            "Opponent": "Winn, C (R)",
             "SP_xERA": "3.59",
             "Warning": "",
             "GameTime": "2026-07-30T16:10:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "04:10 PM"
         },
         {
@@ -156,13 +151,8 @@
             "Slot": "SS",
             "Player": "Masyn Winn",
             "POS": "SS",
-            "Score": 57.49880660475008,
+            "Score": 56.37137902426479,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.22",
@@ -187,18 +177,13 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+1%",
                     "type": "positive"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Javier Assad (R)",
+            "Opponent": "Assad (R)",
             "SP_xERA": "4.53",
             "Warning": "",
             "GameTime": "2026-07-30T18:15:00Z",
-            "Order": "5*",
+            "Order": "6",
             "Start": "06:15 PM"
         },
         {
@@ -819,17 +804,12 @@
             "Slot": "BN",
             "Player": "Braden Montgomery",
             "POS": "OF",
-            "Order": "6*",
+            "Order": "7",
             "Start": "06:10 PM",
-            "Opponent": "Ryan Weathers (L)",
+            "Opponent": "Weathers (L)",
             "SP_xERA": "3.41",
-            "Score": 37.62103887084126,
+            "Score": 36.49240770471602,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "43.27",
@@ -856,7 +836,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
