@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-01",
-    "last_updated": "2026-08-01T21:46:02.610590+00:00",
+    "last_updated": "2026-08-01T22:46:18.334737+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 789.31,
-    "narrative": "The analytical focus today centers on **Jos\u00e9 Ram\u00edrez**, who boasts an elite 85.99 score, bolstered by a highly favorable matchup against Drake. His high ranking is driven by a massive 19% SP skill advantage and a premium spot in the two-hole, making him our primary offensive anchor. **Bryce Harper** follows closely at 80.21, where his projection is amplified by a 16% park factor boost and favorable winds, effectively neutralizing the threat posed by Baz. While **Tyler Freeman** (68.73) and **Luis Arraez** (65.56) don\u2019t match the raw output of the top tier, they are essential starters today; **Luis Arraez** benefits from a massive 10% order bonus as the projected leadoff man, while **Tyler Freeman** thrives in an advantageous hitting environment against Avila, despite the minor hold-up risk associated with the pitcher's delivery.\n\nOur most difficult bench decision involved **Gleyber Torres**, who finished with a 47.59 score. While his potential order position and park factors were appealing, the optimizer ultimately relegated him to the bench due to a significant 13% drag caused by his platoon matchup against Perkins and the sheer depth of our optimized infield. We are monitoring the lineups for **Luis Arraez**, **Drew Gilbert**, **Lawrence Butler**, and **Jung Hoo Lee** closely; their status as \"Lineup Pending\" introduces variance, though their projected scores remain safely above our 40-point floor. Conversely, **Yainer Diaz** and **Daulton Varsho** are our most precarious starts, each hovering near the 42-point mark; they remain in the lineup for now, but any downward adjustment to their expected batting order or a late-breaking weather report could force us to pivot toward our deeper bench options like **JJ Bleday** or **Braden Montgomery** if they were to regain value.",
+    "total_efficiency_score": 787.25,
+    "narrative": "For today\u2019s slate, our lineup efficiency is anchored by **Jos\u00e9 Ram\u00edrez**, who boasts an elite 85.99 score. He faces a highly favorable matchup against the struggling Drake (6.26 xERA), providing the highest ceiling for R-RBI production. Similarly, **Bryce Harper** (80.21) is a primary start, benefiting from both a positive wind variance and a favorable matchup against Baz (4.40 xERA). Meanwhile, **Tyler Freeman** (68.73) and **Kyle Karros** (63.93) are high-value plays despite their lower base projections, as the combination of an exploitable park and the porous 4.92 xERA of Avila significantly elevates their expected output. While **Luis Arraez** (65.56) remains a pillar for AVG, the real key to our strategy today is leveraging the high-velocity matchups against Buehler, where **Jung Hoo Lee** (60.86) and **Luis Arraez** see meaningful boosts from dynamic platoon advantages.\n\nOur bench strategy was dictated by the strict 40-point floor required for game-cap conservation. The most difficult exclusion was **Gleyber Torres** (47.59), who narrowly missed the starting cut; while his secondary metrics were acceptable, his negative platoon adjustment against Perkins made him the odd man out in favor of players with higher situational upside. We are monitoring **Yainer Diaz** (42.39) and **Daulton Varsho** (43.00) closely, as both are hovering near our bench threshold; **Yainer Diaz** faces a brutal matchup against the elite deGrom (3.08 xERA), while **Daulton Varsho** struggles against the southpaw Mathews. We have successfully avoided the basement, with **JJ Bleday** and **Braden Montgomery** correctly benched due to poor underlying metrics. Aside from **Will Smith**, who remains sidelined on the IL, our roster is healthy, and we are positioned to capitalize on the weak back-end of today\u2019s opposing rotations.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -154,11 +154,6 @@
             "Score": 65.56017760044912,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "51.50",
                     "type": "info"
@@ -193,7 +188,7 @@
             "SP_xERA": "4.39",
             "Warning": "",
             "GameTime": "2026-08-02T00:40:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "12:40 AM"
         },
         {
@@ -332,13 +327,8 @@
             "Slot": "OF1",
             "Player": "Drew Gilbert",
             "POS": "OF",
-            "Score": 53.38132841238093,
+            "Score": 50.17844870763807,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.42",
@@ -363,26 +353,26 @@
                     "label": "Platoon",
                     "value": "+7%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Buehler (R)",
             "SP_xERA": "4.39",
             "Warning": "",
             "GameTime": "2026-08-02T00:40:00Z",
-            "Order": "6*",
+            "Order": "8",
             "Start": "12:40 AM"
         },
         {
             "Slot": "OF2",
             "Player": "Lawrence Butler",
             "POS": "OF",
-            "Score": 57.259179382062854,
+            "Score": 58.40436296970411,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.27",
@@ -407,13 +397,18 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "-13%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Framber Valdez (L)",
+            "Opponent": "Valdez, F (L)",
             "SP_xERA": "4.35",
             "Warning": "",
             "GameTime": "2026-08-02T01:40:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "01:40 AM"
         },
         {
@@ -511,11 +506,6 @@
             "Score": 60.85627970614101,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "50.39",
                     "type": "info"
@@ -550,7 +540,7 @@
             "SP_xERA": "4.39",
             "Warning": "",
             "GameTime": "2026-08-02T00:40:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "12:40 AM"
         },
         {
@@ -805,17 +795,12 @@
             "Slot": "BN",
             "Player": "Gleyber Torres",
             "POS": "2B",
-            "Order": "2*",
+            "Order": "2",
             "Start": "01:40 AM",
-            "Opponent": "Jack Perkins (R)",
+            "Opponent": "Perkins (R)",
             "SP_xERA": "3.69",
             "Score": 47.591315737152044,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.97",
@@ -847,7 +832,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
