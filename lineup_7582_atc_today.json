@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-01",
-    "last_updated": "2026-08-01T23:49:24.585815+00:00",
+    "last_updated": "2026-08-02T02:06:27.273749+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 696.61,
-    "narrative": "The Zurich Zebras enter August 1st with a clear top-tier offensive tandem as **Trea Turner** (81.27) and **Kyle Schwarber** (79.42) spearhead the lineup against Baz. Both benefit from a 16% park factor boost and favorable wind conditions, but **Trea Turner** remains the primary engine; his synergy with a slow delivery from the mound keeps his stolen base probability in elite territory, justifying his position as our strongest play. **Junior Caminero** (67.53) and **Carson Benge** (63.81) also offer strong returns, with **Carson Benge** specifically benefiting from a generous 19% SP skill advantage against Phillips, effectively neutralizing his moderate base projection to make him a high-efficiency start.\n\nPlatoon advantages and environmental variables are heavily influencing today's configuration. While **Yordan Alvarez** (55.68) faces a daunting challenge against deGrom, his xwOBA profile keeps him in the lineup despite the tough SP matchup, though his score remains lower than our top speed threats. Conversely, **Pete Crow-Armstrong** (50.02) barely cleared our threshold for the UTIL slot; while his leadoff position provides immense value, the headwind significantly suppresses his efficiency, bringing him dangerously close to our \"Marginal\" cutoff. **Chase Meidroth** (32.38) served as the most notable bench decision, failing to make the cut due to a combination of a lower-order lineup placement and a lack of elite speed compared to our active roster. We are monitoring the status of **Casey Schmitt**, who remains sidelined on the IL, while **Hyeseong Kim** continues to develop with Oklahoma City. Managers should keep a close eye on **Dillon Dingler** (43.26) and **Christian Yelich** (43.66), as both are hovering near our bench floor; should their specific situational variables shift, we are prepared to adjust to preserve game caps for higher-leverage matchups later in the week.",
+    "total_efficiency_score": 701.92,
+    "narrative": "The Zurich Zebras enter August 1st with a lineup headlined by two premier plays facing favorable conditions: **Trea Turner** (81.27) and **Kyle Schwarber** (79.17). Both benefit immensely from a high-upside matchup against Baz, whose 4.40 xERA provides the ideal environment for these sluggers to capitalize. **Trea Turner** remains our primary catalyst for the scarcity category of stolen bases; his score is elevated by an aggressive +4% bump due to the pitcher\u2019s slow delivery, maximizing his elite speed profile. Meanwhile, **Junior Caminero** (67.53) also warrants strong consideration as a primary starter, utilizing a positive SP skill matchup and favorable batting order placement to anchor the middle of the diamond.\n\nThe most difficult decision on today\u2019s card was the final OF/UTIL slotting, where **Lars Nootbaar** (54.30) narrowly edged out **Chase Meidroth** (32.38) for inclusion. While **Chase Meidroth** has shown flashes, his profile suffered today from a daunting matchup against Rasmussen and a poor spot in the batting order, ultimately falling well below our 40-point efficiency floor. Conversely, **Lars Nootbaar** maintains a higher utility value, benefiting from a +11% dynamic platoon edge against Gausman. We continue to monitor the status of **Casey Schmitt**, who remains sidelined on the IL, while **Hyeseong Kim** and **Gary Sanchez** remain unavailable as they cycle through minor league assignments and bench rotations. \n\nA note of caution regarding today\u2019s slate: **Yordan Alvarez** (55.68) draws an elite opponent in deGrom, which severely suppresses his ceiling despite his own world-class xwOBA of .475. Additionally, both **Dillon Dingler** (43.26) and **Christian Yelich** (43.66) are hovering just above our \"Below Floor\" threshold. We are monitoring **Dillon Dingler** closely; while his recency bias is strong, the -15% dynamic platoon hit against Perkins makes him a volatile asset for today\u2019s points. Managers should remain vigilant regarding these situational risks as we attempt to balance our cap management with the pursuit of stolen base volume from the likes of **Pete Crow-Armstrong** (55.58) and **Caleb Durbin** (47.06).",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -181,11 +181,6 @@
                 {
                     "label": "Order #1",
                     "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -425,7 +420,7 @@
             "Slot": "OF4",
             "Player": "Kyle Schwarber",
             "POS": "OF",
-            "Score": 79.42131458568967,
+            "Score": 79.17137185363046,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -456,11 +451,6 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Baz (R)",
@@ -472,6 +462,50 @@
         },
         {
             "Slot": "OF5",
+            "Player": "Pete Crow-Armstrong",
+            "POS": "OF",
+            "Score": 55.57816638752939,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "59.99",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (54% SB)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Fried (L)",
+            "SP_xERA": "3.97",
+            "Warning": "",
+            "GameTime": "2026-08-01T23:15:00Z",
+            "Order": "1",
+            "Start": "11:15 PM"
+        },
+        {
+            "Slot": "UTIL",
             "Player": "Lars Nootbaar",
             "POS": "OF",
             "Score": 54.2975359735862,
@@ -513,55 +547,6 @@
             "GameTime": "2026-08-01T19:07:00Z",
             "Order": "5",
             "Start": "07:07 PM"
-        },
-        {
-            "Slot": "UTIL",
-            "Player": "Pete Crow-Armstrong",
-            "POS": "OF",
-            "Score": 50.020349748776454,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "59.99",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-15%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Elite Hold SP (54% SB)",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-9%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Fried (L)",
-            "SP_xERA": "3.97",
-            "Warning": "",
-            "GameTime": "2026-08-01T23:15:00Z",
-            "Order": "1",
-            "Start": "11:15 PM"
         }
     ],
     "players_sat": [
@@ -772,11 +757,41 @@
             "Player": "Pedro Ramirez",
             "POS": "2B/3B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:15 PM",
+            "Opponent": "Fried (L)",
+            "SP_xERA": "3.97",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "0.00",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -784,7 +799,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-08-01T23:15:00Z"
         }
     ]
 }
