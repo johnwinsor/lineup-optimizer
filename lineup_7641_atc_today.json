@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-03",
-    "last_updated": "2026-08-03T14:18:30.172402+00:00",
+    "last_updated": "2026-08-03T17:10:04.639636+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 675.73,
-    "narrative": "For LawDog, the offensive core is headlined by **Jonathan Aranda** (70.47) and **Bryce Harper** (64.31), who represent the highest upside in today\u2019s lineup. **Jonathan Aranda** benefits from a stellar matchup against the hittable Michael Lorenzen, with a significant +14% park factor boost that cements him as our primary anchor. Meanwhile, **Bryce Harper** maintains a high floor due to his elite xwOBA of 0.386, providing the power profile necessary to pace the team even without specific matchup context available today. **Daulton Varsho** (64.11) and **Geraldo Perdomo** (63.81) are also strong starts; **Daulton Varsho** is particularly intriguing as his score is bolstered by a favorable platoon advantage against Cristian Javier, though he carries minor risk regarding the base-stealing potential against an elite hold pitcher.\n\nThe most challenging decision today involves balancing the middle infield and outfield, specifically keeping **Masyn Winn** (42.44) in the lineup despite a sub-50 score. His low efficiency is driven by a tough draw against Cam Schlittler (2.85 xERA), but his utility remains necessary for game-cap management. **Kyle Karros** (55.40) narrowly beat out **Jung Hoo Lee** (49.60) and **Drew Gilbert** (42.08) for the final active spots. The decision to favor **Kyle Karros** was tipped by his matchup against Ian Seymour; despite Seymour\u2019s decent 3.49 xERA, the slow delivery speed offers a +2% bump to his SB efficiency, which is critical for LawDog\u2019s strategy. \n\nWe must remain vigilant regarding the \"Lineup Pending\" status across the board, as aggressive order-based projections for **Yainer Diaz** (61.40) and **Geraldo Perdomo** could fluctuate if they are bumped down in their respective batting orders. Risk is further concentrated in the OF3 slot with **Tyler Freeman** (51.10); while he benefits from the same slow-delivery advantage as **Kyle Karros**, his neutral platoon status keeps him firmly in the \"marginal\" category. We are actively protecting our caps today by sitting inactive assets like **Jos\u00e9 Ram\u00edrez**, **Cal Raleigh**, and **Lawrence Butler**, while continuing to monitor the IL status of **Will Smith**.",
+    "total_efficiency_score": 669.71,
+    "narrative": "Today\u2019s optimal lineup for LawDog hinges on exploiting favorable matchups against high-xERA arms, headlined by **Jonathan Aranda** and **Daulton Varsho**. **Jonathan Aranda** (70.47) is our premier play, benefiting from a prime #2 hole spot and a soft matchup against Michael Lorenzen. His power-park profile combined with the platoon advantage makes him a lock. Similarly, **Daulton Varsho** (64.11) projects as a strong start despite the lower lineup placement; his ability to capitalize on Cristian Javier's high xERA (5.27) keeps his efficiency score well above the baseline. We are also banking on **Bryce Harper** (62.23) to anchor the middle of the order; while he faces a decent arm in Andrew Alvarez, his elite xwOBA floor keeps him as a mandatory start in the UTIL slot.\n\nThe most difficult decision today involved the marginal range, specifically opting for **Kyle Karros** (55.40) over **Drew Gilbert** (42.08) and **Jung Hoo Lee** (49.60). **Kyle Karros** earned the start primarily due to his speed profile; facing a slow-delivering lefty in Ian Seymour presents a genuine stolen base opportunity, which is weighted heavily in our scarcity-driven model. Conversely, **Masyn Winn** (42.44) remains a marginal play that barely survived the cut\u2014the matchup against Cam Schlittler\u2019s sub-3.00 xERA is brutal, and he only stays in the lineup because of the lack of depth on an off-day for the likes of **Jos\u00e9 Ram\u00edrez** and **Lawrence Butler**.\n\nWe are proceeding with caution regarding the \"Lineup Pending\" status for all starters, particularly **Yainer Diaz** (61.40). If **Yainer Diaz** is moved down in the order, his efficiency score could dip below our 60-point threshold for strong starts. Additionally, while we like the speed potential of **Tyler Freeman** (51.10), his proximity to the bottom of the order and the platoon volatility against Ian Seymour leave him as a high-risk/high-reward play. Monitor the official lineups closely; should any of our projected leadoff or #2 hitters get pushed down, we may need to pivot to bench options if any become available via late-breaking news, though the current roster is locked for the daily cap.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -107,10 +107,10 @@
             "Slot": "2B",
             "Player": "Luis Arraez",
             "POS": "1B/2B",
-            "Score": 54.41115460624285,
+            "Score": 50.45397972578883,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
+                    "label": "Lineup Pending (Assumed #5)",
                     "value": null,
                     "type": "info"
                 },
@@ -125,8 +125,8 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
@@ -134,7 +134,7 @@
             "SP_xERA": "-",
             "Warning": "",
             "GameTime": "2026-08-04T00:05:00Z",
-            "Order": "1*",
+            "Order": "5*",
             "Start": "12:05 AM"
         },
         {
@@ -518,7 +518,7 @@
             "Slot": "UTIL",
             "Player": "Bryce Harper",
             "POS": "1B",
-            "Score": 64.3058573480753,
+            "Score": 62.23586874321136,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -541,6 +541,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
@@ -551,8 +556,8 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Andrew Alvarez (L)",
+            "SP_xERA": "3.99",
             "Warning": "",
             "GameTime": "2026-08-03T22:40:00Z",
             "Order": "3*",
