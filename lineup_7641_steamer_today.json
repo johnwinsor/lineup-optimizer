@@ -1,15 +1,15 @@
 {
     "target_date": "2026-08-04",
-    "last_updated": "2026-08-04T16:10:45.450218+00:00",
+    "last_updated": "2026-08-04T18:25:43.309100+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 863.22,
-    "narrative": "For today's slate, **Bryce Harper** headlines our attack with an elite 80.21 score. His matchup against Zack Littell is the most favorable on the board, bolstered by a 0.387 xwOBA and a prime #3 lineup slot that maximizes his run-production potential. Following closely are **Lawrence Butler** (72.38) and **Jos\u00e9 Ram\u00edrez** (70.43). **Lawrence Butler** benefits immensely from a favorable matchup against Brady Singer and a massive +13% boost from his dynamic platoon advantage, while **Jos\u00e9 Ram\u00edrez** remains a core anchor despite facing a lefty, as his sheer talent and elevated batting order position consistently override peripheral matchup concerns.\n\nOur decision-making was particularly aggressive toward favorable park factors and SP vulnerabilities. **Jonathan Aranda** (68.94), **Dylan Beavers** (69.52), and **Jeremiah Jackson** (68.45) all see their scores significantly inflated today\u2014largely due to hitting in hitter-friendly environments and capitalizing on favorable platoon splits against Grayson Rodriguez and Gabriel Hughes. The most difficult personnel decision involved **Kyle Karros**, who sat at 61.33. While **Kyle Karros** cleared the 60-point threshold for a \"Strong\" play, he was ultimately edged out by the superior SP-specific upside of **Tyler Freeman**, whose +14% park factor and the current offensive environment pushed him into the starting 2B slot.\n\nManagers should remain cautious regarding the \"Lineup Pending\" status across the board; the current efficiency scores rely on projected slots that, if shifted downward, could compress the value of players like **Cal Raleigh** and **Yainer Diaz**. Both catchers are currently hovering near the 55-point mark, making them marginal starts if their real-world lineup position falls out of the top six. We are tracking weather and defensive metrics closely, particularly the impact of the opposing catcher's pop time on **Dylan Beavers** and **Jeremiah Jackson**, which currently provides a slight drag on their stolen base efficiency projections.",
+    "total_efficiency_score": 842.4,
+    "narrative": "For today\u2019s slate, **Lawrence Butler** (72.38) and **Bryce Harper** (71.31) headline our lineup as the most efficient plays. **Lawrence Butler** benefits from an aggressive matchup against Brady Singer, where a significant +13% dynamic platoon boost and a +3% park factor elevate him well above his base projection. Similarly, **Bryce Harper** anchors our heart of the order; despite a minor platoon disadvantage against Carson Palmquist, his elite 0.387 xwOBA and top-tier order placement make him a near-must-start. We are also capitalizing on the favorable park conditions and porous matchups for **Geraldo Perdomo** (69.91) and **Dylan Beavers** (69.52), both of whom are projected to thrive against Grayson Rodriguez, aided by a substantial +19% SP skill advantage.\n\nThe most difficult decision on the bench was undoubtedly **Kyle Karros**. With a score of 61.33, he trailed the bottom of our active roster\u2014primarily **Gavin Sheets** and **Cal Raleigh**\u2014only by a thin margin. While **Kyle Karros** offers a solid park and order boost, the optimizer favored the higher volatility and specific defensive/platoon configurations of the active starters. Meanwhile, owners should remain cautious regarding the \"Lineup Pending\" status for all players; specifically, **Jeremiah Jackson** and **Dylan Beavers** face the risk of a high-velocity threat in Grayson Rodriguez, and any shift in batting order could negatively impact their efficiency scores, particularly for those currently slotted lower in the lineup.\n\nFinally, while **Jung Hoo Lee** remains a name to watch due to his elite stolen base potential, his 46.99 score keeps him on the bench today against MacKenzie Gore. Even with a +2% boost for his speed against a slow-delivery pitcher, the combination of a tough opponent SP and a significant platoon disadvantage against the lefty keeps him outside the starting rotation. We are operating with a firm focus on efficiency metrics, banking on the high-upside matchups for **Jonathan Aranda** and **Jos\u00e9 Ram\u00edrez** to carry the offensive load while keeping our rostered depth ready to rotate as confirmed lineups crystallize.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Cal Raleigh",
             "POS": "C",
-            "Score": 54.899694482833475,
+            "Score": 51.48261863772275,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -30,10 +30,15 @@
                     "label": "Park",
                     "value": "-5%",
                     "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-6%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Troy Melton (R)",
+            "SP_xERA": "4.00",
             "Warning": "",
             "GameTime": "2026-08-05T01:40:00Z",
             "Order": "6*",
@@ -139,18 +144,18 @@
         },
         {
             "Slot": "2B",
-            "Player": "Tyler Freeman",
-            "POS": "2B/OF",
-            "Score": 64.839744821646,
+            "Player": "Luis Arraez",
+            "POS": "1B/2B",
+            "Score": 61.01529612722435,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
+                    "label": "Lineup Pending (Assumed #1)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "53.95",
+                    "value": "51.50",
                     "type": "info"
                 },
                 {
@@ -160,34 +165,88 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+14%",
+                    "value": "+4%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+7%",
+                    "value": "+12%",
                     "type": "positive"
                 },
                 {
-                    "label": "Neutral Platoon (R)",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-7%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Carson Palmquist (L)",
+            "SP_xERA": "4.49",
+            "Warning": "",
+            "GameTime": "2026-08-04T22:40:00Z",
+            "Order": "1*",
+            "Start": "10:40 PM"
+        },
+        {
+            "Slot": "SS",
+            "Player": "Jeremiah Jackson",
+            "POS": "2B/SS/3B/OF",
+            "Score": 68.44706206328559,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #8)",
                     "value": null,
                     "type": "info"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "Base",
+                    "value": "50.70",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Catcher (1.89s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Freddy Peralta (R)",
-            "SP_xERA": "4.30",
+            "Opponent": "Grayson Rodriguez (R)",
+            "SP_xERA": "5.10",
             "Warning": "",
-            "GameTime": "2026-08-05T00:40:00Z",
-            "Order": "7*",
-            "Start": "12:40 AM"
+            "GameTime": "2026-08-04T22:35:00Z",
+            "Order": "8*",
+            "Start": "10:35 PM"
         },
         {
-            "Slot": "SS",
+            "Slot": "MI",
             "Player": "Geraldo Perdomo",
             "POS": "SS",
             "Score": 69.90737591678361,
@@ -234,55 +293,6 @@
             "GameTime": "2026-08-05T01:40:00Z",
             "Order": "2*",
             "Start": "01:40 AM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Luis Arraez",
-            "POS": "1B/2B",
-            "Score": 69.53101452854199,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "51.50",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Zack Littell (R)",
-            "SP_xERA": "4.98",
-            "Warning": "",
-            "GameTime": "2026-08-04T22:40:00Z",
-            "Order": "1*",
-            "Start": "10:40 PM"
         },
         {
             "Slot": "3B",
@@ -531,18 +541,18 @@
         },
         {
             "Slot": "OF5",
-            "Player": "Jeremiah Jackson",
-            "POS": "2B/SS/3B/OF",
-            "Score": 68.44706206328559,
+            "Player": "Tyler Freeman",
+            "POS": "2B/OF",
+            "Score": 64.839744821646,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #8)",
+                    "label": "Lineup Pending (Assumed #7)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "50.70",
+                    "value": "53.95",
                     "type": "info"
                 },
                 {
@@ -552,42 +562,37 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+16%",
+                    "value": "+14%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+3%",
-                    "type": "positive"
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
                 },
                 {
-                    "label": "Elite Catcher (1.89s)",
-                    "value": "-1.0%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Grayson Rodriguez (R)",
-            "SP_xERA": "5.10",
+            "Opponent": "Freddy Peralta (R)",
+            "SP_xERA": "4.30",
             "Warning": "",
-            "GameTime": "2026-08-04T22:35:00Z",
-            "Order": "8*",
-            "Start": "10:35 PM"
+            "GameTime": "2026-08-05T00:40:00Z",
+            "Order": "7*",
+            "Start": "12:40 AM"
         },
         {
             "Slot": "UTIL",
             "Player": "Bryce Harper",
             "POS": "1B",
-            "Score": 80.21400422583044,
+            "Score": 71.3186668455524,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -611,13 +616,13 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "+12%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+2%",
-                    "type": "positive"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-2%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #3",
@@ -630,8 +635,8 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Zack Littell (R)",
-            "SP_xERA": "4.98",
+            "Opponent": "Carson Palmquist (L)",
+            "SP_xERA": "4.49",
             "Warning": "",
             "GameTime": "2026-08-04T22:40:00Z",
             "Order": "3*",
