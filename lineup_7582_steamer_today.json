@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-05",
-    "last_updated": "2026-08-05T22:10:07.974939+00:00",
+    "last_updated": "2026-08-05T23:50:41.460397+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 705.31,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with significant firepower at the top of the order, headlined by **Junior Caminero** (84.24) and **Yordan Alvarez** (82.60). **Junior Caminero** is our premier play, benefiting from a soft matchup against Sugano (5.02 xERA) and an advantageous park factor that boosts his elite xwOBA metrics. Similarly, **Yordan Alvarez** remains a must-start despite a neutral matchup, as his raw power profile combined with an optimal #2 slot provides the highest floor in our lineup. We are also heavily leaning into stolen base upside today; **Trea Turner** (70.50) and **Pete Crow-Armstrong** (70.98) provide elite speed profiles, with **Trea Turner** specifically highlighted by a slow opposing pitcher delivery that should facilitate successful theft attempts.\n\nThe most difficult roster decision today involved the marginal slot occupied by **Caleb Durbin** (49.29). While **Colt Keith** (48.79) was the primary candidate to displace him from the bench, the optimizer ultimately favored **Caleb Durbin** due to a more favorable park factor, despite facing a tougher arm in Burke. We are exercising caution with **Christian Yelich** (49.82); while his platoon edge is strong, he is facing the elite velocity of Skenes, and the presence of a top-tier defensive catcher limits his upside for stolen bases. Meanwhile, **Lars Nootbaar** remains a tentative start pending official lineup confirmation; should he drop out of the #6 hole, we have depth in **Chase Meidroth** and **Dillon Dingler** ready to rotate, though neither currently offers the same efficiency ceiling. Managers should keep a close watch on weather reports, as any volatility could quickly turn these marginal starts into sub-40 bench candidates to protect our league games-played caps.",
+    "total_efficiency_score": 710.63,
+    "narrative": "For the Zurich Zebras on August 5, 2026, the engine of our offense will be powered by the high-upside matchup for **Junior Caminero** (84.24) and the elite power profile of **Yordan Alvarez** (82.60). **Junior Caminero** benefits immensely from a favorable encounter with Sugano (5.02 xERA), whose poor peripheral metrics combined with a park factor boost and a prime #3 lineup spot elevate him to our must-start anchor. Similarly, **Yordan Alvarez** remains an auto-start despite facing Taillon; his elite .476 xwOBA makes him a constant threat for multi-hit and multi-RBI production. For speed-dependent upside, **Trea Turner** (70.50) is our most significant play; his favorable matchup against Irvin\u2014a pitcher with a slow delivery that yields a 87% stolen base success rate\u2014provides the perfect runway for him to capitalize on his elite sprint speed in a 5x5 Roto context.\n\nThe benching of **Colt Keith** (48.79) was our most difficult decision of the morning. While he holds a respectable floor, he ultimately fell short of our active threshold due to the combination of a negative park factor and an unfavorable matchup against Woo (3.58 xERA), which suppressed his efficiency score compared to the aggressive platoon-heavy profiles of **Josh Smith** and **Lars Nootbaar**. Meanwhile, we are proceeding with caution regarding **Christian Yelich** (49.82); while his dynamic platoon advantage remains high, he faces Skenes, an elite arm whose 3.03 xERA and presence behind the plate threaten to neutralize the scoring potential we typically expect. **Dillon Dingler** (36.87) fell well below our Zebras floor and remains glued to the pine, while **Nelson Velazquez** is currently out of the mix, leaving the heavy lifting for our core of **Pete Crow-Armstrong**, **Carson Benge**, and **Kyle Schwarber** to carry the day.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -120,7 +120,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Slow SP Delivery (85% SB)",
+                    "label": "Slow SP Delivery (87% SB)",
                     "value": "+4%",
                     "type": "positive"
                 },
@@ -410,13 +410,8 @@
             "Slot": "OF5",
             "Player": "Lars Nootbaar",
             "POS": "OF",
-            "Score": 53.124765540506516,
+            "Score": 58.43724209455718,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.20",
@@ -441,13 +436,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+11%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Casey Mize (R)",
+            "Opponent": "Mize (R)",
             "SP_xERA": "3.68",
             "Warning": "",
             "GameTime": "2026-08-06T01:40:00Z",
-            "Order": "6*",
+            "Order": "1",
             "Start": "01:40 AM"
         },
         {
@@ -500,17 +500,12 @@
             "Slot": "BN",
             "Player": "Colt Keith",
             "POS": "1B/2B/3B",
-            "Order": "5*",
+            "Order": "5",
             "Start": "01:40 AM",
             "Opponent": "Woo (R)",
             "SP_xERA": "3.58",
             "Score": 48.791408988652115,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.59",
@@ -547,7 +542,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -646,17 +641,12 @@
             "Slot": "BN",
             "Player": "Dillon Dingler",
             "POS": "C",
-            "Order": "3*",
+            "Order": "3",
             "Start": "01:40 AM",
             "Opponent": "Woo (R)",
             "SP_xERA": "3.58",
             "Score": 36.87504376531428,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "47.23",
@@ -693,7 +683,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
