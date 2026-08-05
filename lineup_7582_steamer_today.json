@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-05",
-    "last_updated": "2026-08-05T20:58:28.007652+00:00",
+    "last_updated": "2026-08-05T22:10:07.974939+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 705.82,
-    "narrative": "The Zurich Zebras face a high-upside slate today, anchored by **Junior Caminero** (84.24) and **Yordan Alvarez** (82.60). **Junior Caminero** benefits from a prime matchup against Sugano, leveraging a significant 19% boost from the opposing pitcher\u2019s xERA and a favorable park factor, while **Yordan Alvarez** remains a locked-in core play due to his elite 0.476 xwOBA. We are also leaning heavily into speed and opportunistic base-running today; **Trea Turner** (70.50) is a high-conviction start, as the matchup against Irvin\u2014combined with the pitcher's slow delivery\u2014creates a perfect environment for him to exploit the stolen base category, which remains our primary focus for closing the gap in the standings. **Pete Crow-Armstrong** (70.99) similarly benefits from a 19% SP skill boost, making him an efficient play despite the platoon challenge against a lefty starter.\n\nThe most difficult decision on the bench was **Colt Keith** (48.79), who finished just shy of the threshold to replace **Caleb Durbin** (49.30). While **Colt Keith** offers a secondary stolen base threat against a slow-moving pitcher, the optimizer favored **Caleb Durbin**'s situational park factors and projected lineup efficiency. We are closely monitoring the status of **Christian Yelich** and **Lars Nootbaar**; both are currently carrying \"Lineup Pending\" status, and their scores are heavily influenced by assumed spots in the order. We must exercise caution with **Christian Yelich**, who faces the formidable Paul Skenes; his 19% penalty for facing an elite arm makes him a marginal play today. Should official lineups shift these players further down the order, their efficiency scores will likely drop below our 40-point threshold, forcing a late-minute pivot to bench options like **Chase Meidroth** or **Gary Sanchez** to preserve our game caps.",
+    "total_efficiency_score": 705.31,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with significant firepower at the top of the order, headlined by **Junior Caminero** (84.24) and **Yordan Alvarez** (82.60). **Junior Caminero** is our premier play, benefiting from a soft matchup against Sugano (5.02 xERA) and an advantageous park factor that boosts his elite xwOBA metrics. Similarly, **Yordan Alvarez** remains a must-start despite a neutral matchup, as his raw power profile combined with an optimal #2 slot provides the highest floor in our lineup. We are also heavily leaning into stolen base upside today; **Trea Turner** (70.50) and **Pete Crow-Armstrong** (70.98) provide elite speed profiles, with **Trea Turner** specifically highlighted by a slow opposing pitcher delivery that should facilitate successful theft attempts.\n\nThe most difficult roster decision today involved the marginal slot occupied by **Caleb Durbin** (49.29). While **Colt Keith** (48.79) was the primary candidate to displace him from the bench, the optimizer ultimately favored **Caleb Durbin** due to a more favorable park factor, despite facing a tougher arm in Burke. We are exercising caution with **Christian Yelich** (49.82); while his platoon edge is strong, he is facing the elite velocity of Skenes, and the presence of a top-tier defensive catcher limits his upside for stolen bases. Meanwhile, **Lars Nootbaar** remains a tentative start pending official lineup confirmation; should he drop out of the #6 hole, we have depth in **Chase Meidroth** and **Dillon Dingler** ready to rotate, though neither currently offers the same efficiency ceiling. Managers should keep a close watch on weather reports, as any volatility could quickly turn these marginal starts into sub-40 bench candidates to protect our league games-played caps.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -229,13 +229,8 @@
             "Slot": "OF1",
             "Player": "Christian Yelich",
             "POS": "OF",
-            "Score": 50.329457604489775,
+            "Score": 49.82616302844488,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.06",
@@ -262,16 +257,21 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Paul Skenes (R)",
+            "Opponent": "Skenes (R)",
             "SP_xERA": "3.03",
             "Warning": "",
             "GameTime": "2026-08-05T23:40:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "11:40 PM"
         },
         {
@@ -502,7 +502,7 @@
             "POS": "1B/2B/3B",
             "Order": "5*",
             "Start": "01:40 AM",
-            "Opponent": "Bryan Woo (R)",
+            "Opponent": "Woo (R)",
             "SP_xERA": "3.58",
             "Score": 48.791408988652115,
             "Breakdown": [
@@ -627,55 +627,20 @@
             "Slot": "BN",
             "Player": "Gary Sanchez",
             "POS": "C",
-            "Order": "5*",
-            "Start": "11:40 PM",
-            "Opponent": "Paul Skenes (R)",
-            "SP_xERA": "3.03",
-            "Score": 37.75383984755356,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "48.18",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-08-05T23:40:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
@@ -683,7 +648,7 @@
             "POS": "C",
             "Order": "3*",
             "Start": "01:40 AM",
-            "Opponent": "Bryan Woo (R)",
+            "Opponent": "Woo (R)",
             "SP_xERA": "3.58",
             "Score": 36.87504376531428,
             "Breakdown": [
@@ -807,55 +772,20 @@
             "Slot": "BN",
             "Player": "Jacob Gonzalez",
             "POS": "1B/2B/SS",
-            "Order": "8*",
-            "Start": "11:40 PM",
-            "Opponent": "Kyle Harrison (L)",
-            "SP_xERA": "3.09",
-            "Score": 29.8395363,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "42.63",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-08-05T23:40:00Z"
+            "GameTime": null
         }
     ]
 }
