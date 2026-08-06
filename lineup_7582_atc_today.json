@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-05",
-    "last_updated": "2026-08-05T23:50:44.500040+00:00",
+    "last_updated": "2026-08-06T01:56:44.646377+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 704.13,
-    "narrative": "The Zurich Zebras enter tonight\u2019s slate with a potent offensive outlook, anchored by the elite 81.92 efficiency score of **Junior Caminero**. Facing Sugano and his high 5.02 xERA, **Junior Caminero** benefits from a rare alignment of a favorable park factor and a massive 19% boost from the opposing pitcher\u2019s skill profile; his 0.373 xwOBA suggests he is primed to exploit this matchup for significant counting stats. He is joined in the top tier by **Yordan Alvarez** (78.39), who remains a must-start despite a modest park penalty, as his elite 0.476 xwOBA remains the highest ceiling in our lineup against Taillon. Meanwhile, **Trea Turner** (71.83) and **Pete Crow-Armstrong** (69.99) are essential for our stolen base aggression; **Trea Turner** specifically benefits from Irvin\u2019s slow delivery, while **Pete Crow-Armstrong** earns his high ranking by pairing a top-of-the-order spot with an optimal 5.20 xERA matchup against Lauer.\n\nWhile the lineup is robust, we faced a difficult choice regarding the bench, specifically with **Caleb Durbin**. With a score of 47.88, **Caleb Durbin** was the primary candidate to displace **Colt Keith** or **Josh Smith**, but he was ultimately relegated due to the SP skill profile of Burke, which suppresses his projected output compared to the high-leverage spots held by our middle infielders. Our biggest risk today is the matchup for **Christian Yelich** (50.84); facing the dominant arm of Skenes, **Christian Yelich** sees his projection cratered by a 19% penalty to SP skill and the presence of an elite catcher behind the plate, which severely limits his stolen base equity. We are also monitoring the performance of **Kazuma Okamoto** (58.94) and **Josh Smith** (57.91), who hold steady despite neutral platoon adjustments, provided they can capitalize on Brown\u2019s 4.44 xERA. **Dillon Dingler** remains benched below our 40.0 efficiency floor, joining **Gary Sanchez**, **Casey Schmitt**, **Nelson Velazquez**, **Jacob Gonzalez**, **Luis Pena**, and **Pedro Ramirez** as we protect our precious game caps for higher-yield opportunities.",
+    "total_efficiency_score": 703.11,
+    "narrative": "The Zurich Zebras are locked and loaded for a high-ceiling offensive outing today, headlined by **Junior Caminero** (81.92) and **Yordan Alvarez** (78.39). **Junior Caminero** benefits immensely from a favorable encounter with Sugano, boasting an elite xwOBA of 0.373 and significant park factors that elevate his base projection by 14%. Similarly, **Yordan Alvarez** remains a must-start despite a modest park impact; his elite 0.476 xwOBA combined with a strong order position against Taillon makes him a core pillar of today\u2019s production. We also see high-efficiency plays from **Trea Turner** (71.83) and **Pete Crow-Armstrong** (70.00), with **Pete Crow-Armstrong** specifically leveraging his leadoff status against a soft 5.20 xERA from Lauer to maximize his scoring potential.\n\nOur most difficult roster decision today involved **Caleb Durbin** (47.88), who narrowly missed the starting cut. While **Caleb Durbin** offers high-value stolen base potential, the decision to bench him was purely mathematical; his efficiency score, hampered by a tough matchup against a 3.41 xERA pitcher, failed to eclipse the output projected for **Colt Keith** (48.00) and **Lars Nootbaar** (56.19). We opted for **Lars Nootbaar** due to his leadoff duties and a favorable platoon advantage against Mize, which offsets his lower raw base projection. Meanwhile, **Christian Yelich** remains a start despite facing the formidable Skenes (3.03 xERA); his 49.83 score is heavily subsidized by a strong dynamic platoon edge, though he carries a minor risk factor due to Skenes' elite catch-and-throw metrics limiting his baserunning upside.\n\nA final note of caution surrounds the performance of **Kazuma Okamoto** (58.94) and **Josh Smith** (57.91). Both are facing Brown, H, who sits in the mid-range of SP difficulty (4.44 xERA). While their scores are respectable, they are anchored by high-volume lineup spots, and any early-inning efficiency drain from a sharp pitching performance could move these players toward their floor. We are avoiding **Dillon Dingler** (36.96) entirely today, as his platoon disadvantage and poor matchup against Woo keep him well below the Zebras' 40.0 baseline, ensuring we protect our precious game caps for higher-leverage situations.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -239,7 +239,7 @@
             "Slot": "OF1",
             "Player": "Christian Yelich",
             "POS": "OF",
-            "Score": 50.843347569432,
+            "Score": 49.82648061804336,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -269,6 +269,11 @@
                 {
                     "label": "Elite Catcher (1.86s)",
                     "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (40% SB)",
+                    "value": "-2%",
                     "type": "negative"
                 },
                 {
@@ -720,11 +725,46 @@
             "Player": "Jacob Gonzalez",
             "POS": "1B/2B/SS",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:40 PM",
+            "Opponent": "Harrison (L)",
+            "SP_xERA": "3.09",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "0.00",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -732,7 +772,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-08-05T23:40:00Z"
         },
         {
             "Slot": "BN",
