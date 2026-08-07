@@ -1,15 +1,15 @@
 {
     "target_date": "2026-08-07",
-    "last_updated": "2026-08-07T15:45:08.317671+00:00",
+    "last_updated": "2026-08-07T16:50:12.843501+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 740.99,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a lineup anchored by the high-efficiency trio of **Christian Yelich** (70.50), **Yordan Alvarez** (69.65), and **Kyle Schwarber** (66.09). **Christian Yelich** earns the highest projection today, largely due to a favorable dynamic platoon advantage against Zebby Matthews and the added benefit of a slow-working pitcher, which historically elevates his stolen base potential. **Yordan Alvarez** remains a locked-in start despite a neutral matchup against Robbie Ray, as his elite xwOBA effectively renders the platoon disadvantage negligible. Meanwhile, **Kyle Schwarber** occupies the leadoff spot against Jos\u00e9 Soriano; while we are monitoring a 33% rain risk, his favorable park factors and the premium placed on his leadoff position provide him with a substantial efficiency floor.\n\nIn our middle infield, **Trea Turner** (64.41) continues to be a focal point for our stolen base strategy, though we must keep a close eye on the 33% rain risk at his venue. Our most difficult decision on the bench involved **Pete Crow-Armstrong** (54.25). While he nearly cracked the starting lineup due to a projected leadoff role, he was ultimately edged out by **Carson Benge** and **Nelson Velazquez**; the deciding factor was a significant platoon disadvantage against the opposing left-handed starter, which caused the optimizer to prioritize the matchup-proof consistency of our current outfield mix. \n\nFinally, managers should note that while **Kazuma Okamoto** (45.11) is starting, he faces a rigorous challenge against the elite arm of Zack Wheeler (2.85 xERA). While his raw score is lower than preferred, his order position and park factors justify the start. We are also managing the absence of **Casey Schmitt** due to injury, ensuring that our depth\u2014represented by options like **Lars Nootbaar** (57.75) and **Junior Caminero** (53.55)\u2014remains optimized to maximize our 5x5 category output. Stay alert to the official lineup postings, as any drastic shifts in the batting orders for **Dillon Dingler** or **Colt Keith** could necessitate immediate adjustments to our daily game cap strategy.",
+    "total_efficiency_score": 753.79,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Christian Yelich** (70.50) and **Yordan Alvarez** (69.65) leading the offensive charge. **Yelich** projects as our strongest play due to a favorable matchup against Zebby Matthews, where a combination of a significant platoon advantage (+13%) and Matthews's slow delivery to the plate\u2014which bolsters **Yelich**'s stolen base potential\u2014provides a massive ceiling. Meanwhile, **Yordan Alvarez** overcomes a challenging left-on-left dynamic against Robbie Ray because his elite xwOBA (0.473) simply overrides standard platoon suppression, cementing his status as an anchor for our R&D category production. **Kyle Schwarber** (66.09) and **Trea Turner** (64.41) also rate as high-priority starts, though both must navigate a lingering 33% rain risk in their respective games, necessitating close monitoring as first pitch approaches.\n\nOn the bench, **Pete Crow-Armstrong** (54.25) represents the most difficult omission. His projection was bolstered significantly by a projected lead-off spot, but the optimizer ultimately favored the high-floor production of **Nelson Velazquez** (55.77) and the situational reliability of our core utility spots. While **Pete Crow-Armstrong** remains a high-upside asset, particularly in our quest for stolen bases, the marginal gap between him and **Nelson Velazquez** against Ryan Feltner favored the latter\u2019s favorable park context and SP skill factors. We continue to monitor the status of **Casey Schmitt**, who remains sidelined on the IL, while keeping **Josh Smith** and **Chase Meidroth** in reserve as high-leverage pinch-hit options should the weather turn or lineups shift significantly. Given the heavy reliance on **Trea Turner** and **Christian Yelich** for the speed category today, maintaining the integrity of the starting nine against these specific SP_xERA profiles remains our primary tactical objective.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Dillon Dingler",
             "POS": "C",
-            "Score": 48.66714653692253,
+            "Score": 48.58096759048337,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -32,6 +32,21 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+18%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
@@ -42,8 +57,8 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "JT Brubaker (R)",
+            "SP_xERA": "4.74",
             "Warning": "",
             "GameTime": "2026-08-08T02:15:00Z",
             "Order": "3*",
@@ -254,7 +269,7 @@
             "Slot": "MI",
             "Player": "Colt Keith",
             "POS": "1B/2B/3B",
-            "Score": 50.21338979964878,
+            "Score": 63.09786575020865,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -277,13 +292,28 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+18%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "JT Brubaker (R)",
+            "SP_xERA": "4.74",
             "Warning": "",
             "GameTime": "2026-08-08T02:15:00Z",
             "Order": "5*",
