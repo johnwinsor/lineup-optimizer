@@ -1,21 +1,16 @@
 {
     "target_date": "2026-08-07",
-    "last_updated": "2026-08-07T19:47:07.695588+00:00",
+    "last_updated": "2026-08-07T20:32:16.600084+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 754.77,
-    "narrative": "The **Austin Waves** offense is primed for a high-scoring Thursday, headlined by **Kyle Tucker**, who commands the day\u2019s highest efficiency score of 81.27. Facing a struggling Merrill Kelly (5.13 xERA), **Kyle Tucker** benefits from a massive 19% boost in SP skill projection and a park factor that favors his power profile. He is joined at the top of our lineup by **Andy Pages** (73.64), whose matchup against Kelly is bolstered by an ideal #2 batting order position, providing elite run-scoring potential. Meanwhile, **Luis Garc\u00eda Jr.** (72.22) serves as our anchor at 1B; despite a 38% rain risk, his dynamic platoon edge against Tyler Mahle makes him a high-floor start.\n\nWe are carefully monitoring the weather in three separate game sites, specifically the 40% rain risk impacting **Jorge Polanco** and **Luis Robert Jr.** in their contest against Mlodzinski. While **Luis Robert Jr.** possesses significant talent, his score is suppressed to 54.12 due to a -15% platoon penalty against a right-handed arm. The most difficult decision for the optimizer was the exclusion of **Miguel Vargas**, who finished just outside the starting nine with a 49.07 score. Ultimately, the projection favored **Wade Meckler** (54.75) for the final outfield slot, as **Wade Meckler**\u2019s projected #1 spot in the order offers superior volume opportunities against Tyler Phillips compared to the more volatile situational floor for **Miguel Vargas** against Parker Messick.\n\nElsewhere, we are navigating a high-leverage matchup for **Gunnar Henderson** (60.90), who must contend with the elite arm of Nathan Eovaldi. While Eovaldi\u2019s 3.36 xERA presents a challenge, **Gunnar Henderson** maintains a strong score via his consistent #3 spot and a positive platoon adjustment. We continue to prioritize our speed-focused options like **Nasim Nunez** (63.69), whose matchup against the vulnerable Chase Petty (5.17 xERA) allows him to leverage his sprint speed advantage. While **Drake Baldwin** is currently flagged with a 38% rain risk, we are proceeding with him in the C1 slot, provided his expected leadoff status remains confirmed, as his current xwOBA of 0.382 remains a critical component of our offensive output today.",
+    "total_efficiency_score": 748.64,
+    "narrative": "The Austin Waves enter today\u2019s slate with **Kyle Tucker** (81.27) headlining the lineup, as he draws a highly favorable matchup against Merrill Kelly. With a 5.13 xERA opposing him, **Kyle Tucker** is positioned to capitalize on elite SP skill metrics that boost his projection significantly above the baseline. Similarly, **Andy Pages** (73.64) benefits from the same soft matchup, with his #2 spot in the order providing a substantial multiplier to his scoring potential. We are also leaning heavily into **Luis Garc\u00eda Jr.** (72.22), whose 14% boost from a dynamic platoon advantage against Mahle makes him a high-floor asset despite the slight rain risk lingering in his park.\n\nOur bench strategy was razor-thin today, with **Liam Hicks** (39.67) serving as the most difficult omission. While **Liam Hicks** offered a decent platoon edge, the combination of a daunting matchup against Logan Gilbert and a stagnant base projection kept him just below our 40-point efficiency floor. We are forced to navigate several \"Lineup Pending\" designations for **Gunnar Henderson**, **Kyle Tucker**, **Jackson Merrill**, and **Andy Pages**; while their assumed spots in the order bolster their scores, any defensive shifts in the batting order will necessitate immediate recalibration. \n\nRisk management is the theme of the day, particularly regarding the 38-40% rain probability impacting **Drake Baldwin**, **Luis Garc\u00eda Jr.**, **Jorge Polanco**, and **Heliot Ramos**. While **Gunnar Henderson** holds an elite status, his score of 60.90 is tempered by a significant 15% penalty due to the high skill level of Eovaldi. We are opting to bench **Coby Mayo** (37.37) entirely, as the defensive efficiency of the opposing battery and his current projection make him a liability compared to our active starters like **Nasim Nunez**, who at 63.69 remains a surprisingly efficient play thanks to a massive 19% boost against Petty.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Drake Baldwin",
             "POS": "C",
-            "Score": 59.19081912775688,
+            "Score": 58.11462241634311,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.21",
@@ -42,8 +37,8 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -56,11 +51,60 @@
             "SP_xERA": "3.87",
             "Warning": "\u26a0\ufe0f Rain Risk (38%)",
             "GameTime": "2026-08-07T23:05:00Z",
-            "Order": "1*",
+            "Order": "2",
             "Start": "11:05 PM"
         },
         {
             "Slot": "1B",
+            "Player": "Miguel Vargas",
+            "POS": "1B/3B",
+            "Score": 49.07500310354631,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "49.46",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-7%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.388",
+                    "type": "info"
+                }
+            ],
+            "Opponent": "Messick (L)",
+            "SP_xERA": "3.68",
+            "Warning": "",
+            "GameTime": "2026-08-07T23:40:00Z",
+            "Order": "3",
+            "Start": "11:40 PM"
+        },
+        {
+            "Slot": "2B",
             "Player": "Luis Garc\u00eda Jr.",
             "POS": "1B/2B",
             "Score": 72.22824220397672,
@@ -96,56 +140,12 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tyler Mahle (R)",
+            "Opponent": "Mahle (R)",
             "SP_xERA": "4.26",
             "Warning": "\u26a0\ufe0f Rain Risk (38%)",
             "GameTime": "2026-08-07T23:05:00Z",
             "Order": "4",
             "Start": "11:05 PM"
-        },
-        {
-            "Slot": "2B",
-            "Player": "Nasim Nunez",
-            "POS": "2B/SS",
-            "Score": 63.69902188127466,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "51.09",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Chase Petty (R)",
-            "SP_xERA": "5.17",
-            "Warning": "",
-            "GameTime": "2026-08-07T22:45:00Z",
-            "Order": "7",
-            "Start": "10:45 PM"
         },
         {
             "Slot": "SS",
@@ -189,7 +189,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Nathan Eovaldi (R)",
+            "Opponent": "Eovaldi (R)",
             "SP_xERA": "3.36",
             "Warning": "",
             "GameTime": "2026-08-08T00:15:00Z",
@@ -198,13 +198,13 @@
         },
         {
             "Slot": "MI",
-            "Player": "Jacob Wilson",
-            "POS": "SS",
-            "Score": 57.74146852731659,
+            "Player": "Nasim Nunez",
+            "POS": "2B/SS",
+            "Score": 63.69902188127466,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "53.06",
+                    "value": "51.09",
                     "type": "info"
                 },
                 {
@@ -214,31 +214,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-10%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
                     "value": "+4%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "SP Skill",
+                    "value": "+19%",
                     "type": "positive"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Payton Tolle (L)",
-            "SP_xERA": "3.59",
+            "Opponent": "Petty (R)",
+            "SP_xERA": "5.17",
             "Warning": "",
-            "GameTime": "2026-08-07T23:10:00Z",
-            "Order": "2",
-            "Start": "11:10 PM"
+            "GameTime": "2026-08-07T22:45:00Z",
+            "Order": "7",
+            "Start": "10:45 PM"
         },
         {
             "Slot": "3B",
@@ -246,11 +246,6 @@
             "POS": "2B/3B",
             "Score": 49.78854167730113,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.26",
@@ -286,23 +281,23 @@
             "SP_xERA": "4.28",
             "Warning": "\u26a0\ufe0f Rain Risk (40%)",
             "GameTime": "2026-08-07T22:40:00Z",
-            "Order": "8*",
+            "Order": "8",
             "Start": "10:40 PM"
         },
         {
             "Slot": "OF1",
-            "Player": "Andy Pages",
+            "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 73.64024194578379,
+            "Score": 81.27392501317368,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
+                    "label": "Lineup Pending (Assumed #5)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "55.13",
+                    "value": "63.63",
                     "type": "info"
                 },
                 {
@@ -321,13 +316,13 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Neutral Platoon (R)",
-                    "value": null,
-                    "type": "info"
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+1%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
@@ -335,104 +330,11 @@
             "SP_xERA": "5.13",
             "Warning": "",
             "GameTime": "2026-08-08T01:40:00Z",
-            "Order": "2*",
+            "Order": "5*",
             "Start": "01:40 AM"
         },
         {
             "Slot": "OF2",
-            "Player": "Heliot Ramos",
-            "POS": "OF",
-            "Score": 59.1257441620641,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "51.13",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Tyler Mahle (R)",
-            "SP_xERA": "4.26",
-            "Warning": "\u26a0\ufe0f Rain Risk (38%)",
-            "GameTime": "2026-08-07T23:05:00Z",
-            "Order": "3",
-            "Start": "11:05 PM"
-        },
-        {
-            "Slot": "OF3",
-            "Player": "Luis Robert Jr.",
-            "POS": "OF",
-            "Score": 54.1280880397607,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "57.33",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-15%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Mlodzinski (R)",
-            "SP_xERA": "4.28",
-            "Warning": "\u26a0\ufe0f Rain Risk (40%)",
-            "GameTime": "2026-08-07T22:40:00Z",
-            "Order": "3*",
-            "Start": "10:40 PM"
-        },
-        {
-            "Slot": "OF4",
             "Player": "Jackson Merrill",
             "POS": "OF",
             "Score": 68.30308480429932,
@@ -481,6 +383,99 @@
             "Start": "01:40 AM"
         },
         {
+            "Slot": "OF3",
+            "Player": "Heliot Ramos",
+            "POS": "OF",
+            "Score": 59.1257441620641,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "51.13",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Mahle (R)",
+            "SP_xERA": "4.26",
+            "Warning": "\u26a0\ufe0f Rain Risk (38%)",
+            "GameTime": "2026-08-07T23:05:00Z",
+            "Order": "3",
+            "Start": "11:05 PM"
+        },
+        {
+            "Slot": "OF4",
+            "Player": "Andy Pages",
+            "POS": "OF",
+            "Score": 73.64024194578379,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #2)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "55.13",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Merrill Kelly (R)",
+            "SP_xERA": "5.13",
+            "Warning": "",
+            "GameTime": "2026-08-08T01:40:00Z",
+            "Order": "2*",
+            "Start": "01:40 AM"
+        },
+        {
             "Slot": "OF5",
             "Player": "Wade Meckler",
             "POS": "OF",
@@ -517,7 +512,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tyler Phillips (R)",
+            "Opponent": "Phillips (R)",
             "SP_xERA": "4.71",
             "Warning": "",
             "GameTime": "2026-08-07T23:10:00Z",
@@ -526,18 +521,13 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Kyle Tucker",
-            "POS": "OF",
-            "Score": 81.27392501317368,
+            "Player": "Jacob Wilson",
+            "POS": "SS",
+            "Score": 57.74146852731659,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "63.63",
+                    "value": "53.06",
                     "type": "info"
                 },
                 {
@@ -547,31 +537,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+3%",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
+                    "value": "-10%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+4%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Merrill Kelly (R)",
-            "SP_xERA": "5.13",
+            "Opponent": "Tolle (L)",
+            "SP_xERA": "3.59",
             "Warning": "",
-            "GameTime": "2026-08-08T01:40:00Z",
-            "Order": "5*",
-            "Start": "01:40 AM"
+            "GameTime": "2026-08-07T23:10:00Z",
+            "Order": "2",
+            "Start": "11:10 PM"
         }
     ],
     "players_sat": [
@@ -579,6 +569,25 @@
             "Slot": "BN",
             "Player": "Vladimir Guerrero Jr.",
             "POS": "1B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Luis Robert Jr.",
+            "POS": "OF",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
@@ -622,114 +631,20 @@
             "Slot": "BN",
             "Player": "Sam Antonacci",
             "POS": "2B/3B/OF",
-            "Order": "1*",
-            "Start": "11:40 PM",
-            "Opponent": "Parker Messick (L)",
-            "SP_xERA": "3.68",
-            "Score": 45.23945173099552,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "50.13",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-7%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-08-07T23:40:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Miguel Vargas",
-            "POS": "1B/3B",
-            "Order": "3*",
-            "Start": "11:40 PM",
-            "Opponent": "Parker Messick (L)",
-            "SP_xERA": "3.68",
-            "Score": 49.07500310354631,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.46",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-7%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.388",
-                    "type": "info"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-08-07T23:40:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
@@ -761,7 +676,7 @@
             "POS": "1B/3B",
             "Order": "5*",
             "Start": "12:15 AM",
-            "Opponent": "Nathan Eovaldi (R)",
+            "Opponent": "Eovaldi (R)",
             "SP_xERA": "3.36",
             "Score": 37.376795375183455,
             "Breakdown": [
@@ -813,55 +728,20 @@
             "Slot": "BN",
             "Player": "Dominic Smith",
             "POS": "1B/OF",
-            "Order": "7*",
-            "Start": "11:05 PM",
-            "Opponent": "Fried (L)",
-            "SP_xERA": "3.87",
-            "Score": 40.7077896720423,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "46.39",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
-            "Warning": "\u26a0\ufe0f Rain Risk (38%)",
-            "GameTime": "2026-08-07T23:05:00Z"
+            "Warning": "",
+            "GameTime": null
         },
         {
             "Slot": "BN",
