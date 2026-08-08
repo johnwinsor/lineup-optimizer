@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-08",
-    "last_updated": "2026-08-08T05:00:33.164363+00:00",
+    "last_updated": "2026-08-08T12:28:53.383041+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 763.72,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 770.81,
+    "narrative": "The Austin Waves look to capitalize on several favorable matchups today, with **Kyle Tucker** (75.29) and **Andy Pages** (70.97) leading the charge as our most potent assets. **Kyle Tucker** benefits from a high-upside matchup against Pfaadt, while **Andy Pages** is bolstered by a 13% boost in SP Skill analysis and a significant speed-adjusted opportunity (86% SB threat) against a pitcher with slow delivery mechanics. Furthermore, **Jackson Merrill** (66.07) and **Jacob Wilson** (66.47) provide high-floor stability; **Jackson Merrill** is a critical engine for our SB-weighted strategy today, as he maintains an 88% stolen base potential against Lambert, effectively weaponizing his sprint speed in a favorable park environment.\n\nWe must remain cautious of elite opposing arms, specifically the showdown between **Gunnar Henderson** (60.75) and deGrom. Despite the challenging SP Skill delta (-19%), **Gunnar Henderson** remains a must-start due to his massive platoon advantage (+14%) and leadoff order placement. Conversely, **Heliot Ramos** (48.03) sits at the low end of our starting threshold; while wind out at the park provides a slight boost, he faces a daunting matchup against the perennial elite arm of Chris Sale, limiting his ceiling for today. \n\nThe closest decision on our bench involved **Dominic Smith** (46.94), whose score narrowly missed the cut behind **Liam Hicks**. While **Dominic Smith** offers positive park factors and platoon splits against Cole, the optimizer prioritized **Liam Hicks** for his positional utility and slightly higher projected plate appearance efficiency. We are also monitoring **Sam Antonacci** (46.73) and **Luis Garc\u00eda Jr.** (42.14) closely; both offer potential utility, but their matchups against Gavin Williams and Sale respectively suppressed their scores just enough to keep them on the bench as we prioritize the higher base projections of our current starters. All lineups remain pending, and we will adjust accordingly should any of our starters\u2014such as **Vladimir Guerrero Jr.** or **Drake Baldwin**\u2014be shuffled out of their projected spots.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -58,7 +58,7 @@
             "Slot": "C2",
             "Player": "Drake Baldwin",
             "POS": "C",
-            "Score": 53.019229066302664,
+            "Score": 55.670190519617805,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -99,6 +99,11 @@
                     "label": "xwOBA Good",
                     "value": "0.380",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Gerrit Cole (R)",
@@ -112,7 +117,7 @@
             "Slot": "1B",
             "Player": "Vladimir Guerrero Jr.",
             "POS": "1B",
-            "Score": 62.83243156194508,
+            "Score": 65.97405314004233,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -142,6 +147,11 @@
                 {
                     "label": "Order #2",
                     "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -561,18 +571,18 @@
         },
         {
             "Slot": "OF5",
-            "Player": "Sam Antonacci",
-            "POS": "2B/3B/OF",
-            "Score": 46.729714416605,
+            "Player": "Heliot Ramos",
+            "POS": "OF",
+            "Score": 48.02640405603695,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
+                    "label": "Lineup Pending (Assumed #3)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "50.13",
+                    "value": "51.13",
                     "type": "info"
                 },
                 {
@@ -582,8 +592,8 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
+                    "value": "+4%",
+                    "type": "positive"
                 },
                 {
                     "label": "SP Skill",
@@ -591,22 +601,27 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Platoon",
-                    "value": "+7%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+1%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Gavin Williams (R)",
-            "SP_xERA": "2.91",
+            "Opponent": "Chris Sale (L)",
+            "SP_xERA": "2.92",
             "Warning": "",
-            "GameTime": "2026-08-08T23:15:00Z",
-            "Order": "1*",
-            "Start": "11:15 PM"
+            "GameTime": "2026-08-08T19:05:00Z",
+            "Order": "3*",
+            "Start": "07:05 PM"
         },
         {
             "Slot": "UTIL",
@@ -686,7 +701,7 @@
             "Start": "07:05 PM",
             "Opponent": "Chris Sale (L)",
             "SP_xERA": "2.92",
-            "Score": 40.131987315352376,
+            "Score": 42.138586681119996,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #4)",
@@ -724,6 +739,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                },
+                {
                     "label": "Lineup Pending (Not picked by Optimizer).",
                     "value": null,
                     "type": "info"
@@ -734,22 +754,22 @@
         },
         {
             "Slot": "BN",
-            "Player": "Heliot Ramos",
-            "POS": "OF",
-            "Order": "3*",
-            "Start": "07:05 PM",
-            "Opponent": "Chris Sale (L)",
-            "SP_xERA": "2.92",
-            "Score": 45.739432434320904,
+            "Player": "Sam Antonacci",
+            "POS": "2B/3B/OF",
+            "Order": "1*",
+            "Start": "11:15 PM",
+            "Opponent": "Gavin Williams (R)",
+            "SP_xERA": "2.91",
+            "Score": 46.729714416605,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
+                    "label": "Lineup Pending (Assumed #1)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "51.13",
+                    "value": "50.13",
                     "type": "info"
                 },
                 {
@@ -759,8 +779,8 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
+                    "value": "-1%",
+                    "type": "negative"
                 },
                 {
                     "label": "SP Skill",
@@ -768,13 +788,13 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+1%",
+                    "label": "Platoon",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 },
                 {
@@ -784,7 +804,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-08-08T19:05:00Z"
+            "GameTime": "2026-08-08T23:15:00Z"
         },
         {
             "Slot": "BN",
@@ -931,7 +951,7 @@
             "Start": "07:05 PM",
             "Opponent": "Gerrit Cole (R)",
             "SP_xERA": "3.57",
-            "Score": 44.70012330923443,
+            "Score": 46.93512947469616,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -967,6 +987,11 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 },
                 {
                     "label": "Lineup Pending (Not picked by Optimizer).",
