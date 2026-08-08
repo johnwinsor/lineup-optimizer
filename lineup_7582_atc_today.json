@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-08",
-    "last_updated": "2026-08-08T22:19:24.004799+00:00",
+    "last_updated": "2026-08-08T23:19:47.382395+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 708.98,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a high-ceiling core, anchored by **Trea Turner** (81.27) and **Pete Crow-Armstrong** (80.98), both of whom benefit from favorable matchups against pitchers with high xERA marks. **Trea Turner** is a primary focal point; despite a looming 30% rain risk, his speed profile against Scherzer\u2019s slow delivery creates an elite environment for stolen base production, a category we continue to prioritize above all else. Similarly, **Pete Crow-Armstrong** earns his high score through a top-of-the-order slot and a favorable dynamic platoon advantage against Lugo, maximizing his efficiency score despite facing an arm that can occasionally limit base paths. **Yordan Alvarez** (78.00) and **Kyle Schwarber** (78.21) also remain essential starts, as both leverage the high-scoring potential of their respective lineups to offset the risks posed by their opposing starters.\n\nOur most difficult roster decision today involved the marginal territory of our utility spot and the bench. **Caleb Durbin** (63.67) earns the start over **Chase Meidroth** (32.85) primarily due to a superior park factor and a more advantageous batting order position. While **Chase Meidroth** offered some baseline viability, his score plummeted to 32.85\u2014well below our 40-point floor\u2014largely due to a difficult matchup against Williams (2.91 xERA) and an unfavorable bottom-of-the-order placement. We are also closely monitoring the pending status of **Junior Caminero**; while his projected score of 61.29 remains strong assuming the #3 hole, any shift down in the order could force a re-evaluation of his output relative to the Zebras' strict 40-point threshold.\n\nRisk management remains a priority for the 2026-08-08 rotation. The 30% rain risk hovering over the matchup featuring **Trea Turner**, **Josh Smith**, and **Kyle Schwarber** necessitates a watchful eye throughout the day, as these players represent a significant portion of our projected run production. While **Josh Smith** (52.22) sits in the marginal-to-strong transition zone, he retains his spot due to the need for lineup depth, though his utility is capped by his #8 spot in the order. We are maintaining our bench discipline with **Kazuma Okamoto**, **Carson Benge**, and **Gary Sanchez**, all of whom are unavailable today, leaving our reserves depleted but our starting lineup optimized for the scarcest categories.",
+    "total_efficiency_score": 711.7,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with a potent offensive profile, anchored by **Trea Turner** (81.27) and **Pete Crow-Armstrong** (80.98), who both benefit from ideal matchups against a fading Scherzer and an average-to-hittable Lugo. **Trea Turner** is a priority start, as the combination of an 8th-order spot boost and the favorable slow delivery profile of the opposing pitcher creates a green light for his elite stolen base potential. Similarly, **Pete Crow-Armstrong** earns his high ranking by capitalizing on top-of-the-order usage and a significant platoon edge. While **Kyle Schwarber** (79.42) and **Yordan Alvarez** (78.00) also project as strong starts, the ceiling today is undeniably tied to our speed-first hitters who can capitalize on the favorable wind conditions currently forecasted.\n\nRegarding bench decisions, **Chase Meidroth** (32.85) was the closest candidate to cracking the lineup but was ultimately held out due to the oppressive matchup against Williams, whose sub-3.00 xERA effectively suppressed **Chase Meidroth**'s projection well below our 40.0 floor. We continue to monitor the status of **Kazuma Okamoto**, **Carson Benge**, and **Gary Sanchez**, who remain inactive, while defensive specialists like **Casey Schmitt** and **Jacob Gonzalez** are held in reserve. Notably, **Dillon Dingler** (44.11) occupies a marginal spot today; while his park factor and order placement provide some floor, his negative dynamic platoon split against the right-handed Roupp makes him a candidate we will be watching closely to ensure he doesn't stall our counting stats.\n\nThe Zebras must remain wary of the difficult pitching environment surrounding **Lars Nootbaar** (50.88), who faces an elite arm in Yamamoto. While **Lars Nootbaar** retains a platoon advantage, his projection is heavily hampered by the SP\u2019s high skill level. Conversely, keep a close eye on **Caleb Durbin** (63.66), whose matchup against a lefty is offset by a strong park factor and wind-out conditions, making him a sneaky play for stolen bases. We are running with a high-upside strategy today, leaning into our speed merchants to provide the necessary separation in the SB category while leveraging the power profiles of **Yordan Alvarez** and **Junior Caminero** to stabilize our HR and RBI output.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -63,7 +63,7 @@
             "Slot": "1B",
             "Player": "Josh Smith",
             "POS": "1B/2B/SS/3B/OF",
-            "Score": 52.21512618807516,
+            "Score": 53.72936484752933,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -86,14 +86,24 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Hold SP (61% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Nola, A (R)",
             "SP_xERA": "4.01",
-            "Warning": "\u26a0\ufe0f Rain Risk (30%)",
+            "Warning": "",
             "GameTime": "2026-08-08T22:05:00Z",
             "Order": "8",
             "Start": "10:05 PM"
@@ -187,11 +197,16 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Scherzer (R)",
             "SP_xERA": "5.31",
-            "Warning": "\u26a0\ufe0f Rain Risk (30%)",
+            "Warning": "",
             "GameTime": "2026-08-08T22:05:00Z",
             "Order": "2",
             "Start": "10:05 PM"
@@ -202,11 +217,6 @@
             "POS": "3B",
             "Score": 61.29219462921903,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "60.68",
@@ -247,7 +257,7 @@
             "SP_xERA": "3.85",
             "Warning": "",
             "GameTime": "2026-08-09T01:50:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "01:50 AM"
         },
         {
@@ -396,7 +406,7 @@
             "Slot": "OF4",
             "Player": "Kyle Schwarber",
             "POS": "OF",
-            "Score": 78.2131625152904,
+            "Score": 79.42131458568967,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -427,11 +437,16 @@
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Scherzer (R)",
             "SP_xERA": "5.31",
-            "Warning": "\u26a0\ufe0f Rain Risk (30%)",
+            "Warning": "",
             "GameTime": "2026-08-08T22:05:00Z",
             "Order": "1",
             "Start": "10:05 PM"
