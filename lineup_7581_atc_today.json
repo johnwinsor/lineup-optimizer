@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-09",
-    "last_updated": "2026-08-09T15:23:13.787784+00:00",
+    "last_updated": "2026-08-09T16:23:59.927458+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 813.73,
-    "narrative": "The Austin Waves\u2019 lineup today is headlined by **Gunnar Henderson** (81.21), whose matchup against Kumar Rocker is the cornerstone of our offensive strategy. With a favorable platoon edge and a projected leadoff spot, **Gunnar Henderson** holds our highest efficiency score, capitalizing on a SP skill profile that plays perfectly into his strengths. Following closely, **Kyle Tucker** (75.28) and **Andy Pages** (74.43) are poised for high-impact performances against Eduardo Rodriguez. Both benefit significantly from Rodriguez\u2019s high xERA and favorable park factors; notably, **Andy Pages** receives a marginal boost from the pitcher\u2019s slow delivery, which may provide the extra half-step needed to generate stolen base opportunities\u2014a critical priority given our organizational focus on elite speed.\n\nThe depth of our roster necessitated a difficult choice at the utility spot, where **Nasim Nunez** (58.06) narrowly edged out **Coby Mayo** (45.68). While **Coby Mayo** offers clear power potential, his projected spot in the bottom third of the order, combined with a negative platoon variance against Rocker, dropped him well below our efficiency threshold. Conversely, **Nasim Nunez** maintains a higher floor due to his versatility and the favorable matchup against Singer, despite a slight drag from his batting position. We remain vigilant regarding the 39% rain risk hanging over **Miguel Vargas**; while he is currently slated to start, should the weather turn, we are prepared to pivot to more stable options. We have elected to keep **Luis Robert Jr.** on the bench today, as he faces a challenging matchup against Jones; the combination of a tough opponent and a negative platoon split makes him a candidate to preserve game caps rather than force a low-efficiency start.",
+    "total_efficiency_score": 813.18,
+    "narrative": "The **Austin Waves** offense is headlined today by **Gunnar Henderson** (81.21), who stands as our most productive asset against Rocker. With a favorable platoon advantage and a projected leadoff spot, **Gunnar Henderson** occupies the highest efficiency ceiling on the roster. He is closely followed by **Kyle Tucker** (75.28), **Andy Pages** (74.43), and **Jackson Merrill** (74.20), all of whom benefit significantly from facing weak SP_xERA matchups above 4.80. Specifically, **Andy Pages** and **Jackson Merrill** are primed to exploit high-variance pitching, with the former aided by a slow opposing delivery that enhances his stolen base potential\u2014a critical factor for our internal scarcity model. **Luis Garc\u00eda Jr.** (73.66) also warrants attention; he offers the best SP_xERA leverage of the group, with his projection buoyed by a 15% skill boost against Holmes and a strong dynamic platoon edge.\n\nThe most difficult bench decision involved **Coby Mayo**, whose 45.68 efficiency score fell just outside the starting rotation. While **Coby Mayo** possesses latent power, the optimizer penalized his projected #7 spot in the lineup and a negative platoon split against Rocker, ultimately preferring the higher-floor utility of **Nasim Nunez** (58.06). Meanwhile, we are tracking a 39% rain risk for **Miguel Vargas** (54.52) in his matchup against Cantillo. While **Miguel Vargas** remains a viable start, his value is slightly depressed by the presence of an elite defensive catcher and the weather threat; should the rain risk materialize, we will look to pivot to our bench assets. Finally, users should monitor the status of **Liam Hicks**, **Gunnar Henderson**, **Andy Pages**, **Jackson Merrill**, and **Kyle Tucker**, as their high-end projections are currently contingent on unconfirmed lineups. Should these players shift lower in their respective batting orders, their efficiency scores will require immediate re-evaluation.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -277,7 +277,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kumar Rocker (R)",
+            "Opponent": "Rocker (R)",
             "SP_xERA": "4.23",
             "Warning": "",
             "GameTime": "2026-08-09T18:35:00Z",
@@ -288,7 +288,7 @@
             "Slot": "3B",
             "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Score": 55.06897079323492,
+            "Score": 54.51828108530256,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -316,6 +316,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
@@ -326,7 +331,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Joey Cantillo (L)",
+            "Opponent": "Cantillo (L)",
             "SP_xERA": "4.13",
             "Warning": "\u26a0\ufe0f Rain Risk (39%)",
             "GameTime": "2026-08-09T18:10:00Z",
@@ -633,17 +638,12 @@
             "Slot": "BN",
             "Player": "Luis Robert Jr.",
             "POS": "OF",
-            "Order": "5*",
+            "Order": "5",
             "Start": "05:35 PM",
             "Opponent": "Jones (R)",
             "SP_xERA": "3.50",
             "Score": 41.743675616817875,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "57.33",
@@ -680,7 +680,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -718,7 +718,7 @@
             "POS": "2B/3B/OF",
             "Order": "8",
             "Start": "06:10 PM",
-            "Opponent": "Joey Cantillo (L)",
+            "Opponent": "Cantillo (L)",
             "SP_xERA": "4.13",
             "Score": 43.380956702881385,
             "Breakdown": [
@@ -791,7 +791,7 @@
             "POS": "1B/3B",
             "Order": "7*",
             "Start": "06:35 PM",
-            "Opponent": "Kumar Rocker (R)",
+            "Opponent": "Rocker (R)",
             "SP_xERA": "4.23",
             "Score": 45.67631541219526,
             "Breakdown": [
