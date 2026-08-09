@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-09",
-    "last_updated": "2026-08-09T13:43:06.101265+00:00",
+    "last_updated": "2026-08-09T14:27:24.323403+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 836.59,
-    "narrative": "The Austin Waves field a high-upside lineup today, headlined by **Gunnar Henderson** (82.62), who earns the top spot thanks to a favorable matchup against Kumar Rocker. His performance is buoyed by a significant dynamic platoon advantage and a leadoff spot that maximizes his run-scoring potential. Supporting him are **Andy Pages** (75.64) and **Kyle Tucker** (75.13), both of whom capitalize on excellent matchups against Eduardo Rodriguez. **Andy Pages** in particular benefits from a high-efficiency environment where the opposing pitcher\u2019s slow delivery significantly boosts his stolen base probability\u2014a critical factor given our league's focus on speed. **Luis Garc\u00eda Jr.** (74.56) also projects as a tier-one play, as his matchup against Grant Holmes allows him to lean into a strong 15% skill-based projection boost.\n\nWhile the core is strong, we are managing several \"Lineup Pending\" designations that introduce volatility; we must monitor whether **Drake Baldwin** and **Liam Hicks** secure their projected batting orders, as their efficiency scores rely heavily on those top-of-the-order opportunities. The most difficult bench decision involved **Sam Antonacci**, who posted a 47.36 score. While his leadoff projection and positional flexibility were appealing, he ultimately fell short due to a unfavorable left-on-left platoon disadvantage against Joey Cantillo, pushing him behind the higher-upside profiles of **Nasim Nunez** and **Miguel Vargas**. We are also exercising caution with **Luis Robert Jr.** on the bench today; despite his raw talent, a difficult matchup against Jared Jones and a negative platoon split drop his score to 41.93, falling safely below our start threshold as we prioritize efficiency over reputation to preserve our game caps.",
+    "total_efficiency_score": 831.64,
+    "narrative": "The Austin Waves head into today\u2019s slate with a potent lineup anchored by **Gunnar Henderson**, who leads the team with a robust 82.62 efficiency score against Kumar Rocker. **Gunnar Henderson** benefits significantly from the #1 spot in the lineup and a solid platoon advantage, making him our primary engine for runs and power. Behind him, we see elite upside in the outfield: **Andy Pages** (75.64) and **Kyle Tucker** (75.13) both exploit the 4.82 xERA of Eduardo Rodriguez. **Andy Pages** is particularly intriguing as his score is boosted by the opponent's slow delivery, creating a high-probability environment for stolen bases, a vital component for our 5x5 strategy. **Luis Garc\u00eda Jr.** (74.56) also earns a strong recommendation, as he faces a soft matchup against Grant Holmes, with his score elevated by both a favorable park shift and a high-upside platoon split.\n\nThe decision to bench **Sam Antonacci** was the most difficult of the morning. While his projected score of 47.36 is respectable, he ultimately fell short due to a suboptimal L/L platoon matchup against Joey Cantillo, which acted as a drag on his efficiency. Conversely, the optimizer favored **Nasim Nunez** (60.32) and **Jacob Wilson** (61.63) for their ability to provide more reliable production in the middle infield. We are keeping a close eye on the official lineups; while the team is currently modeled on projected positions, any shift for **Drake Baldwin** or **Miguel Vargas** out of their premium batting order spots could force a downward adjustment in their output expectations. **Luis Robert Jr.** remains on the bench for today's contest, as his matchup against the elite Jared Jones (3.50 xERA) and a poor platoon outlook render him a liability when we have superior high-efficiency options available.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -208,9 +208,53 @@
         },
         {
             "Slot": "SS",
+            "Player": "Nasim Nunez",
+            "POS": "2B/SS",
+            "Score": 60.324737222924114,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "53.08",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+9%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Singer (R)",
+            "SP_xERA": "4.37",
+            "Warning": "",
+            "GameTime": "2026-08-09T16:15:00Z",
+            "Order": "7",
+            "Start": "04:15 PM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Jacob Wilson",
             "POS": "SS",
-            "Score": 66.58022164919457,
+            "Score": 61.631023026237635,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -233,6 +277,16 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
@@ -243,56 +297,12 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Miller, E (L)",
+            "SP_xERA": "3.53",
             "Warning": "",
             "GameTime": "2026-08-09T17:35:00Z",
             "Order": "2*",
             "Start": "05:35 PM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Gunnar Henderson",
-            "POS": "SS",
-            "Score": 82.61852061713786,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "61.70",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Kumar Rocker (R)",
-            "SP_xERA": "4.23",
-            "Warning": "",
-            "GameTime": "2026-08-09T18:35:00Z",
-            "Order": "1*",
-            "Start": "06:35 PM"
         },
         {
             "Slot": "3B",
@@ -610,18 +620,18 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Nasim Nunez",
-            "POS": "2B/SS",
-            "Score": 60.324737222924114,
+            "Player": "Gunnar Henderson",
+            "POS": "SS",
+            "Score": 82.61852061713786,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
+                    "label": "Lineup Pending (Assumed #1)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "53.08",
+                    "value": "61.70",
                     "type": "info"
                 },
                 {
@@ -630,32 +640,27 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
                     "label": "SP Skill",
-                    "value": "+9%",
+                    "value": "+5%",
                     "type": "positive"
                 },
                 {
-                    "label": "Switch",
-                    "value": "+3%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Brady Singer (R)",
-            "SP_xERA": "4.37",
+            "Opponent": "Kumar Rocker (R)",
+            "SP_xERA": "4.23",
             "Warning": "",
-            "GameTime": "2026-08-09T16:15:00Z",
-            "Order": "7*",
-            "Start": "04:15 PM"
+            "GameTime": "2026-08-09T18:35:00Z",
+            "Order": "1*",
+            "Start": "06:35 PM"
         }
     ],
     "players_sat": [

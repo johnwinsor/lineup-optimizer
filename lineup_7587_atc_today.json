@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-09",
-    "last_updated": "2026-08-09T13:42:39.022557+00:00",
+    "last_updated": "2026-08-09T14:26:42.698763+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 715.89,
-    "narrative": "For our August 9th slate, we are leaning heavily into the platoon advantage to drive our upside. **Mickey Moniak** leads the charge with a 75.98 efficiency score, benefiting from a massive 14% boost due to a favorable matchup against Michael McGreevy, further augmented by an order promotion to the #3 spot and favorable wind conditions. **Seiya Suzuki** is our next strongest play at 74.37, as he exploits a soft matchup against Randy Dobnak (5.16 xERA). Meanwhile, **Corbin Carroll** remains a core piece with a 71.87 score; while he faces a tougher arm in Justin Wrobleski, the 85% stolen base efficiency against that specific battery setup makes him a must-start in our ongoing pursuit of league-leading speed production. \n\nOur most difficult decision of the morning involved leaving **Austin Riley** on the bench. Despite a respectable 43.54 projection, the heavy negative impact of facing a high-caliber arm like Cam Schlittler (2.91 xERA) effectively neutralized his upside compared to the rest of the lineup. It was a close call, but the optimizer prioritized the higher floor provided by **Tyler Soderstrom**\u2014who sits at a 62.94 score\u2014thanks to the hitter-friendly park factors and a strong #4 spot in the order. As we navigate the \"Lineup Pending\" status across the board, keep a close watch on **Gabriel Moreno** and **Brice Turang**; both are currently projected in the high-50s, but any further drop in the batting order could potentially force a pivot if late-breaking news shifts their projected plate appearances. With **James Wood** and **Giancarlo Stanton** still occupying IL slots, our depth is thin, so we must rely on these efficiency margins to maintain our current standing.",
+    "total_efficiency_score": 689.08,
+    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with **Mickey Moniak** (75.98) and **Seiya Suzuki** (74.37) anchoring our outfield as the clear priority starts. **Mickey Moniak** benefits from a massive 14% platoon boost against the right-handed Michael McGreevy, while **Seiya Suzuki** exploits a vulnerable 5.16 xERA matchup against Randy Dobnak, bolstered further by favorable wind conditions. Similarly, **Corbin Carroll** (71.87) remains a lock; his elite speed metrics, combined with an 85% probability of successful stolen base attempts against Justin Wrobleski\u2019s slow delivery, make him a tier-one play despite the unfavorable platoon split.\n\nThe decision to bench **Cole Young** (40.82) was the most difficult call of the morning. While **Cole Young** earns an impressive 8% boost for his presumed #2 spot in the order and a speed-based uptick for stealing opportunities, he ultimately fell short of the threshold compared to the balanced production expected from **Travis Bazzana** (48.20) and **Tyler Soderstrom** (51.73). We are monitoring the lineup for **Josh Naylor** and **Austin Riley** closely; both are currently sitting at marginal scores (43.69 and 43.54, respectively) due to tough pitching matchups against Ian Seymour and Cam Schlittler. If **Josh Naylor** slides further down the order or weather conditions shift, we may look to shuffle, but for now, we are comfortable rolling with the current projection. We remain sidelined on **James Wood** and **Giancarlo Stanton**, who both remain unavailable on the IL.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -63,7 +63,7 @@
             "Slot": "1B",
             "Player": "Josh Naylor",
             "POS": "1B",
-            "Score": 54.72446708887204,
+            "Score": 43.69076215929952,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -84,10 +84,20 @@
                     "label": "Park",
                     "value": "-5%",
                     "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-5%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Ian Seymour (L)",
+            "SP_xERA": "3.37",
             "Warning": "",
             "GameTime": "2026-08-09T20:10:00Z",
             "Order": "6*",
@@ -141,7 +151,7 @@
             "Slot": "SS",
             "Player": "Max Muncy",
             "POS": "2B/SS/3B",
-            "Score": 55.74881990708261,
+            "Score": 53.70791834221577,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -164,6 +174,21 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (100% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
@@ -174,8 +199,8 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Miller, E (L)",
+            "SP_xERA": "3.53",
             "Warning": "",
             "GameTime": "2026-08-09T17:35:00Z",
             "Order": "8*",
@@ -325,18 +350,18 @@
         },
         {
             "Slot": "OF2",
-            "Player": "Tyler Soderstrom",
-            "POS": "1B/OF",
-            "Score": 62.93626705129797,
+            "Player": "Seiya Suzuki",
+            "POS": "OF",
+            "Score": 74.37240766047496,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
+                    "label": "Lineup Pending (Assumed #2)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "53.86",
+                    "value": "55.58",
                     "type": "info"
                 },
                 {
@@ -346,12 +371,22 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+7%",
+                    "value": "+1%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -360,12 +395,12 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Randy Dobnak (R)",
+            "SP_xERA": "5.16",
             "Warning": "",
-            "GameTime": "2026-08-09T17:35:00Z",
-            "Order": "4*",
-            "Start": "05:35 PM"
+            "GameTime": "2026-08-09T18:10:00Z",
+            "Order": "2*",
+            "Start": "06:10 PM"
         },
         {
             "Slot": "OF3",
@@ -423,18 +458,18 @@
         },
         {
             "Slot": "OF4",
-            "Player": "Seiya Suzuki",
-            "POS": "OF",
-            "Score": 74.37240766047496,
+            "Player": "Tyler Soderstrom",
+            "POS": "1B/OF",
+            "Score": 51.7340838607568,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
+                    "label": "Lineup Pending (Assumed #4)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "55.58",
+                    "value": "53.86",
                     "type": "info"
                 },
                 {
@@ -444,22 +479,22 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+1%",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-2%",
+                    "value": "-11%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 },
                 {
@@ -468,12 +503,12 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Randy Dobnak (R)",
-            "SP_xERA": "5.16",
+            "Opponent": "Miller, E (L)",
+            "SP_xERA": "3.53",
             "Warning": "",
-            "GameTime": "2026-08-09T18:10:00Z",
-            "Order": "2*",
-            "Start": "06:10 PM"
+            "GameTime": "2026-08-09T17:35:00Z",
+            "Order": "4*",
+            "Start": "05:35 PM"
         },
         {
             "Slot": "OF5",
@@ -531,18 +566,18 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Cole Young",
-            "POS": "2B/SS",
-            "Score": 46.072074689931476,
+            "Player": "Austin Riley",
+            "POS": "3B",
+            "Score": 43.53681862266441,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
+                    "label": "Lineup Pending (Assumed #8)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "44.90",
+                    "value": "54.58",
                     "type": "info"
                 },
                 {
@@ -552,21 +587,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-5%",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+1%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Cam Schlittler (R)",
+            "SP_xERA": "2.91",
             "Warning": "",
-            "GameTime": "2026-08-09T20:10:00Z",
-            "Order": "2*",
-            "Start": "08:10 PM"
+            "GameTime": "2026-08-09T17:35:00Z",
+            "Order": "8*",
+            "Start": "05:35 PM"
         }
     ],
     "players_sat": [
@@ -617,60 +662,6 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Austin Riley",
-            "POS": "3B",
-            "Order": "8*",
-            "Start": "05:35 PM",
-            "Opponent": "Cam Schlittler (R)",
-            "SP_xERA": "2.91",
-            "Score": 43.53681862266441,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "54.58",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-08-09T17:35:00Z"
         },
         {
             "Slot": "BN",
@@ -829,12 +820,71 @@
         },
         {
             "Slot": "BN",
+            "Player": "Cole Young",
+            "POS": "2B/SS",
+            "Order": "2*",
+            "Start": "08:10 PM",
+            "Opponent": "Ian Seymour (L)",
+            "SP_xERA": "3.37",
+            "Score": 40.81593732419725,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #2)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "44.90",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-5%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (85% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-08-09T20:10:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Henry Bolte",
             "POS": "OF",
             "Order": "1*",
             "Start": "05:35 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Miller, E (L)",
+            "SP_xERA": "3.53",
             "Score": 0.0,
             "Breakdown": [
                 {
@@ -854,6 +904,16 @@
                 },
                 {
                     "label": "Park",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon",
                     "value": "+7%",
                     "type": "positive"
                 },
