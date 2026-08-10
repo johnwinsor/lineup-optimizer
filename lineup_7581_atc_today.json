@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-09",
-    "last_updated": "2026-08-09T23:23:07.674999+00:00",
+    "last_updated": "2026-08-10T01:13:10.397822+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 814.65,
-    "narrative": "The Austin Waves enter today\u2019s slate with **Gunnar Henderson** leading the charge, earning an elite 81.21 rating. He is our strongest play, bolstered by a prime leadoff spot and a 14% boost from a favorable platoon matchup against Rocker. Following closely, **Kyle Tucker** (77.61) and **Andy Pages** (74.43) provide high-end production in the outfield; **Andy Pages** is particularly intriguing as he faces a pitcher with a slow delivery, which historically translates into enhanced stolen base opportunities\u2014a critical edge given our focus on league-leading speed. Similarly, **Jackson Merrill** (74.20) benefits from a high-upside matchup against the struggling Javier, providing a significant boost to our cumulative power and speed profile.\n\nThe most difficult roster decision today involved **Nasim Nunez**, whose 58.06 efficiency rating kept him in the lineup, just narrowly edging out **Coby Mayo** (45.68). While **Coby Mayo** offers superior raw power, the optimizer prioritized **Nasim Nunez** for his dynamic utility and higher projected floor against Singer. Meanwhile, **Luis Robert Jr.** remains on the bench despite his pedigree, as his projected efficiency plummeted to 41.74 due to a brutal platoon disadvantage and an elite opposing catcher capable of suppressing his stolen base potential. We remain cautious regarding **Drake Baldwin**, who draws a tough start against a high-skill pitcher in Schlittler; his sub-50 score suggests he is essentially a roster filler today, held in check by his 2.91 xERA opponent. Monitor all lineups closely for late-day scratches, but as it stands, our focus on platoon advantages and favorable pitching matchups positions us well to gain ground in our chase for stolen base volume.",
+    "total_efficiency_score": 809.48,
+    "narrative": "The Austin Waves\u2019 lineup today is headlined by **Gunnar Henderson**, whose 81.21 efficiency score makes him the undisputed cornerstone of the offense against Rocker. With a favorable matchup and a premium batting order position, **Gunnar Henderson** stands out as the primary engine for our category targets. He is supported by a trio of high-upside plays in **Kyle Tucker** (75.28), **Andy Pages** (74.43), and **Jackson Merrill** (74.20). Both **Andy Pages** and **Jackson Merrill** benefit significantly from facing Eduardo Rodriguez and Javier, respectively, as both pitchers have exploitable xERAs above 4.80. **Andy Pages** specifically gains an edge from Rodriguez\u2019s slow delivery, which projects to maximize our stolen base efficiency\u2014the scarcest category we are chasing.\n\nThe most difficult decision on the bench was **Coby Mayo**, whose 45.68 score narrowly missed the cut. While **Coby Mayo** maintains a solid baseline, the optimizer favored **Liam Hicks** and **Drake Baldwin** for their platoon advantages and superior order positioning, effectively squeezing **Coby Mayo** out of the starting slots. We are closely monitoring the matchup for **Nasim Nunez**, whose score of 58.06 is bolstered by a +9% SP skill adjustment against Singer, though his low order position tempers his ceiling. Meanwhile, **Luis Robert Jr.** remains benched with a 41.74 score, held back by a poor platoon dynamic against Jones and a difficult 3.50 xERA opponent matchup. Caution is advised regarding **Drake Baldwin**, who faces an elite arm in Schlittler (2.91 xERA); his utility today is heavily reliant on his leadoff spot rather than an easy matchup profile.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -188,9 +188,53 @@
         },
         {
             "Slot": "SS",
+            "Player": "Nasim Nunez",
+            "POS": "2B/SS",
+            "Score": 58.05770596135272,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "51.09",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+9%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Singer (R)",
+            "SP_xERA": "4.37",
+            "Warning": "",
+            "GameTime": "2026-08-09T16:15:00Z",
+            "Order": "7",
+            "Start": "04:15 PM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Jacob Wilson",
             "POS": "SS",
-            "Score": 59.59938728175592,
+            "Score": 56.76132122071992,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -221,11 +265,6 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Miller, E (L)",
@@ -234,45 +273,6 @@
             "GameTime": "2026-08-09T17:35:00Z",
             "Order": "2",
             "Start": "05:35 PM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Gunnar Henderson",
-            "POS": "SS",
-            "Score": 81.21378749431008,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "60.65",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Rocker (R)",
-            "SP_xERA": "4.23",
-            "Warning": "",
-            "GameTime": "2026-08-09T18:35:00Z",
-            "Order": "1",
-            "Start": "06:35 PM"
         },
         {
             "Slot": "3B",
@@ -523,7 +523,7 @@
             "Slot": "OF5",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 77.6131405624323,
+            "Score": 75.28474634555934,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -549,6 +549,11 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "-1%",
                     "type": "negative"
+                },
+                {
+                    "label": "BvP Weak (27 PA)",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Rodriguez, Ed (L)",
@@ -560,13 +565,13 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Nasim Nunez",
-            "POS": "2B/SS",
-            "Score": 58.05770596135272,
+            "Player": "Gunnar Henderson",
+            "POS": "SS",
+            "Score": 81.21378749431008,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "51.09",
+                    "value": "60.65",
                     "type": "info"
                 },
                 {
@@ -575,32 +580,27 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
                     "label": "SP Skill",
-                    "value": "+9%",
+                    "value": "+5%",
                     "type": "positive"
                 },
                 {
-                    "label": "Switch",
-                    "value": "+3%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Singer (R)",
-            "SP_xERA": "4.37",
+            "Opponent": "Rocker (R)",
+            "SP_xERA": "4.23",
             "Warning": "",
-            "GameTime": "2026-08-09T16:15:00Z",
-            "Order": "7",
-            "Start": "04:15 PM"
+            "GameTime": "2026-08-09T18:35:00Z",
+            "Order": "1",
+            "Start": "06:35 PM"
         }
     ],
     "players_sat": [
