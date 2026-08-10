@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-10",
-    "last_updated": "2026-08-10T20:32:56.973535+00:00",
+    "last_updated": "2026-08-10T21:37:02.572645+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 523.82,
-    "narrative": "The Austin Waves face a balanced slate today, led by the undeniable offensive engine **Gunnar Henderson**. With a robust 78.38 projection, **Gunnar Henderson** holds the highest score of the day by a significant margin, fueled by a favorable +14% platoon edge against Kremer and his position atop the order. Following him, **Jacob Wilson** (64.36) and **Kyle Tucker** (64.04) represent the core of our daily production. Despite a suboptimal matchup against an elite arm, **Kyle Tucker** remains a start-priority due to his unparalleled floor, while **Jacob Wilson** benefits significantly from a projected move to the #2 hole, maximizing his opportunities to contribute to our stolen base targets.\n\nOur most critical bench decision involved **Wade Meckler**, who finished just outside the starting threshold with a 38.79 score. While **Wade Meckler** provides the speed we covet, the optimization model correctly faded him due to a poor platoon setup against Gore and the risk inherent in a \"Lineup Pending\" status that limits his reliability. Elsewhere, we continue to monitor the status of **Luis Robert Jr.** and **Jordan Westburg**; the former remains out of the lineup while the latter is still working through his IL designation. Meanwhile, **Drake Baldwin** offers a solid 53.73 start, though owners should exercise caution regarding the 31% rain risk at his venue. **Liam Hicks**, **Vladimir Guerrero Jr.**, **Coby Mayo**, **Andy Pages**, and **Jackson Merrill** round out the active roster, with **Vladimir Guerrero Jr.** (58.32) remaining a reliable anchor despite a slight negative adjustment for platoon dynamics. We remain vigilant regarding the confirmed lineups for **Liam Hicks**, **Jacob Wilson**, **Andy Pages**, **Jackson Merrill**, and **Kyle Tucker** to ensure no late-scratches derail our efficiency targets.",
+    "total_efficiency_score": 528.81,
+    "narrative": "The Austin Waves lean heavily into **Gunnar Henderson** (78.38) today, as his favorable matchup against Kremer and the premier lead-off spot make him our undeniable anchor. Alongside him, **Kyle Tucker** (67.24) serves as a primary source of high-floor production, benefiting from favorable wind conditions against Cameron. We are also prioritizing **Jacob Wilson** (63.17) and **Andy Pages** (62.44); **Jacob Wilson** leverages a strong park factor and a solid order position to overcome the threat posed by Peralta, while **Andy Pages** enjoys an additional boost from projected winds blowing out, maximizing his scoring potential despite Cameron\u2019s mid-tier xERA.\n\nTactical adjustments remain fluid, particularly with several lineups still pending. **Drake Baldwin** (53.73) carries the highest risk/reward profile today, as his strong lead-off assignment is clouded by a 37% rain risk. He remains in the starting lineup despite the weather because his xwOBA profile is too strong to ignore. Meanwhile, the most difficult decision on the bench involved **Wade Meckler** (38.79). While **Wade Meckler** offered potential utility, the optimizer ultimately favored the superior baseline projections and order placement of our starters. We continue to monitor the status of **Luis Robert Jr.**, **Jordan Westburg**, and **Luis Garc\u00eda Jr.**, all of whom are unavailable today due to injury or scheduling, and we remain ready to pivot if the final lineups for **Liam Hicks**, **Andy Pages**, or **Kyle Tucker** shift unfavorably. Our bench depth, including **Heliot Ramos**, **Nasim Nunez**, **Sam Antonacci**, **Miguel Vargas**, **Josh Jung**, **Dominic Smith**, **Curtis Mead**, and **Luis Lara**, is currently set aside to preserve our game caps as we wait for more advantageous matchups.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -47,7 +47,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jacob Lopez (L)",
+            "Opponent": "Lopez, J (L)",
             "SP_xERA": "5.06",
             "Warning": "",
             "GameTime": "2026-08-11T01:40:00Z",
@@ -98,7 +98,7 @@
             ],
             "Opponent": "Scott (R)",
             "SP_xERA": "3.66",
-            "Warning": "\u26a0\ufe0f Rain Risk (31%)",
+            "Warning": "\u26a0\ufe0f Rain Risk (37%)",
             "GameTime": "2026-08-10T23:15:00Z",
             "Order": "1",
             "Start": "11:15 PM"
@@ -151,13 +151,8 @@
             "Slot": "SS",
             "Player": "Jacob Wilson",
             "POS": "SS",
-            "Score": 64.35812888792536,
+            "Score": 63.166311686297114,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.06",
@@ -184,8 +179,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 }
             ],
@@ -193,7 +188,7 @@
             "SP_xERA": "4.29",
             "Warning": "",
             "GameTime": "2026-08-11T01:40:00Z",
-            "Order": "2*",
+            "Order": "3",
             "Start": "01:40 AM"
         },
         {
@@ -239,7 +234,7 @@
             "Slot": "OF2",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 59.46979954733981,
+            "Score": 62.443289524706806,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -275,6 +270,11 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Noah Cameron (L)",
@@ -290,11 +290,6 @@
             "POS": "OF",
             "Score": 50.47635868470425,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.75",
@@ -330,14 +325,14 @@
             "SP_xERA": "2.82",
             "Warning": "",
             "GameTime": "2026-08-11T01:40:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "01:40 AM"
         },
         {
             "Slot": "OF4",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 64.04008743833272,
+            "Score": 67.24209181024936,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -363,6 +358,11 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "-1%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Noah Cameron (L)",
@@ -678,7 +678,7 @@
             "POS": "OF",
             "Order": "6*",
             "Start": "01:40 AM",
-            "Opponent": "Casey Mize (R)",
+            "Opponent": "Mize (R)",
             "SP_xERA": "3.86",
             "Score": 0.0,
             "Breakdown": [
