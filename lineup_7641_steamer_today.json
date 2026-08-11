@@ -1,15 +1,15 @@
 {
     "target_date": "2026-08-11",
-    "last_updated": "2026-08-11T16:49:57.955913+00:00",
+    "last_updated": "2026-08-11T17:55:22.475730+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 804.02,
-    "narrative": "For our August 11th matchup, the optimizer highlights **Lawrence Butler** (74.61) and **Dylan Beavers** (69.52) as our primary offensive engines. Both benefit from a high-leverage matchup against Bailey Ober, whose 4.78 xERA pairs perfectly with a slow delivery that significantly bolsters our pursuit of stolen bases\u2014a critical scarcity point for LawDog. **Jonathan Aranda** (68.94) also ranks among our strongest plays, buoyed by a favorable hitting environment and a massive 12% boost from a platoon advantage against Mason Barnett. Meanwhile, **Jung Hoo Lee** (65.47) and **Bryce Harper** (65.00) anchor the top of our lineup, with **Jung Hoo Lee** seeing added value from a 10% order bonus and favorable wind conditions that could turn fly balls into crucial run-scoring opportunities.\n\nThe most difficult roster decision today involves the thin margin separating **Justin Crawford** (56.15) from our top bench candidate, **Braden Montgomery** (53.85). While **Justin Crawford** remains in the starting lineup to capitalize on the stolen base potential against Andre Pallante, his floor is lower than anticipated due to a park penalty. **Braden Montgomery** nearly forced his way in on the strength of the 19% boost provided by Nick Lodolo\u2019s high xERA, but the optimizer ultimately prioritized the speed utility of **Justin Crawford** and **Jeremiah Jackson** (63.43) to maintain our edge in the SB category. \n\nWe must remain vigilant regarding our sub-60 performers, specifically **Yainer Diaz** (51.88) and **Cal Raleigh** (52.83). Both occupy the bottom tier of our starting group, partially due to the uncertainty surrounding their batting order; should official lineups push them lower than the assumed #8 and #7 spots, their efficiency will plummet further. **Jos\u00e9 Ram\u00edrez** (57.41) also bears watching; while his raw talent is elite, his score is currently dampened by a tough matchup against Drew Anderson, whose skill profile necessitates a cautious expectation for his production today.",
+    "total_efficiency_score": 815.76,
+    "narrative": "The LawDog offense is primed for a high-ceiling outing, anchored by **Lawrence Butler** (74.61) and **Dylan Beavers** (69.52). **Lawrence Butler** benefits from a massive situational advantage against Nick Martinez; his +13% platoon edge and the favorable park factor elevate his projection, while **Dylan Beavers** receives a specialized boost from facing Bailey Ober, whose slow delivery cadence creates an ideal environment for **Dylan Beavers** to exploit his elite sprint speed in the stolen base category. **Jonathan Aranda** also projects as a tier-one play (68.94) today, as his premium spot in the order combined with a soft matchup against Mason Barnett makes him the centerpiece of our infield production.\n\nThe most difficult decision on today\u2019s board was excluding **Daulton Varsho** (54.44) from the starting C2 slot. Despite a high projection driven by a favorable matchup against Carson Whisenhunt, the optimizer preferred the raw output of **Cal Raleigh** (52.83). While **Cal Raleigh** carries a lower raw score, the volatility of catcher playing time and the specific dynamic platoon adjustments pushed him into the lineup over **Daulton Varsho**, whose value was dampened by a negative platoon coefficient. We also remain cautious regarding the \"Lineup Pending\" status for **Yainer Diaz**, **Jonathan Aranda**, and **Jos\u00e9 Ram\u00edrez**; while our projections rely on historical slotting, any late-scratch or order drop for **Jos\u00e9 Ram\u00edrez**\u2014currently facing the deceptive arm of Drew Anderson\u2014could necessitate an immediate pivot to our bench depth.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Yainer Diaz",
             "POS": "C",
-            "Score": 51.884705050665204,
+            "Score": 63.61992264622031,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #8)",
@@ -32,6 +32,16 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #8",
                     "value": "-6%",
                     "type": "negative"
@@ -42,8 +52,8 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Carson Whisenhunt (L)",
+            "SP_xERA": "5.37",
             "Warning": "",
             "GameTime": "2026-08-12T01:45:00Z",
             "Order": "8*",
@@ -732,9 +742,9 @@
             "POS": "OF",
             "Order": "7*",
             "Start": "01:45 AM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 51.1830530110436,
+            "Opponent": "Carson Whisenhunt (L)",
+            "SP_xERA": "5.37",
+            "Score": 54.437589209401,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -754,6 +764,21 @@
                 {
                     "label": "Park",
                     "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-10%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
                     "type": "negative"
                 },
                 {
