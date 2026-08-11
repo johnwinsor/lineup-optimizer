@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-11",
-    "last_updated": "2026-08-11T19:56:14.243452+00:00",
+    "last_updated": "2026-08-11T20:35:49.207990+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 825.47,
-    "narrative": "The Austin Waves enter today\u2019s slate with **Gunnar Henderson** headlining the roster as the premier start, carrying a strong 81.87 efficiency score. His matchup against Ober is highly favorable; not only does the opposing pitcher\u2019s 4.78 xERA suggest vulnerability, but the slow delivery time provides a distinct tactical advantage for **Gunnar Henderson** to exploit on the basepaths. Similarly, **Luis Robert Jr.** (76.86) and **Vladimir Guerrero Jr.** (74.45) offer elite output potential. **Luis Robert Jr.** benefits significantly from a platoon edge against lefty P\u00e9rez, while **Vladimir Guerrero Jr.** capitalizes on a favorable park adjustment and his high-volume role in the three-hole to anchor the lineup\u2019s middle-order production.\n\nThe decision-making process for the utility slots was particularly rigorous, with **Jacob Wilson** (70.33) and **Kyle Tucker** (71.17) securing starts due to their strong synergy with today's pitching matchups. The most difficult bench decision involved **Nasim Nunez**, who narrowly missed the cut at 46.30. While **Nasim Nunez** possesses high-end sprint speed, the optimizer ultimately pivoted to starters with more stable lineup positioning and better raw efficiency against their respective pitchers. **Jackson Merrill** also flirted with inclusion, but his matchup against the low-xERA arm of Kyle Harrison (2.92) suppressed his score below our competitive threshold.\n\nWe must remain vigilant regarding external variables today. **Miguel Vargas** and **Sam Antonacci** are currently flagged with a 33% rain risk in their matchup against Lodolo; should the forecast worsen, we may need to reconsider these slots. Additionally, nearly all of our hitters, including **Liam Hicks**, **Coby Mayo**, **Andy Pages**, and **Heliot Ramos**, are operating under pending lineup confirmations. While we have projected their efficiency based on historical averages, any late-breaking shifts in the batting order could necessitate adjustments to our daily game cap management. As always, the health of our bench remains a priority, with **Jordan Westburg** currently sidelined on the IL.",
+    "total_efficiency_score": 827.13,
+    "narrative": "The Austin Waves\u2019 lineup today is headlined by **Gunnar Henderson**, who earns our highest efficiency score (81.88) against Ober. **Gunnar Henderson** benefits immensely from the 92% SB potential against a notoriously slow-moving pitcher, combined with a premium leadoff spot that maximizes his counting stats. Alongside him, **Luis Robert Jr.** (76.87) and **Vladimir Guerrero Jr.** (74.45) are elite starts; **Luis Robert Jr.** exploits a strong platoon advantage against P\u00e9rez, while **Vladimir Guerrero Jr.** finds a favorable park and solid SP matchup against Sandoval. **Jacob Wilson** (70.33) also jumps into the top tier, as his projected #3 spot and a soft matchup against Martinez make him a high-floor asset for today\u2019s 5x5 categories.\n\nStrategic benching remains critical, with **Nasim Nunez** (46.31) being the most difficult omission. While **Nasim Nunez** offers intrigue due to his switch-hitting profile and speed, the optimizer favored **Drake Baldwin** and **Coby Mayo** for their superior projected production. **Jackson Merrill** (39.02) stayed on the bench as well, largely due to a difficult matchup against Harrison and the negative impact of an L/L platoon disadvantage, which keeps his efficiency below our 40-point threshold for active play.\n\nManagers must exercise caution regarding the 33% rain risk affecting **Miguel Vargas** and **Sam Antonacci**. While **Miguel Vargas** is a strong play (63.77) if the weather holds, the potential for a shortened game or delay presents a tangible risk to his counting stat accumulation. Furthermore, while we feel confident in our current projections, the \"Lineup Pending\" status for **Liam Hicks**, **Jacob Wilson**, **Luis Robert Jr.**, **Kyle Tucker**, and **Andy Pages** means we must monitor official lineups closely; any shift out of their projected high-leverage spots\u2014particularly for **Andy Pages**\u2014could trigger a mid-day efficiency drop.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -105,18 +105,13 @@
         },
         {
             "Slot": "1B",
-            "Player": "Miguel Vargas",
+            "Player": "Coby Mayo",
             "POS": "1B/3B",
-            "Score": 63.76848556710652,
+            "Score": 55.34643791338084,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "49.46",
+                    "value": "48.57",
                     "type": "info"
                 },
                 {
@@ -126,8 +121,8 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
+                    "value": "+2%",
+                    "type": "positive"
                 },
                 {
                     "label": "SP Skill",
@@ -135,26 +130,21 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Slow SP Delivery (92% SB)",
                     "value": "+2%",
                     "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.379",
-                    "type": "info"
                 }
             ],
-            "Opponent": "Nick Lodolo (L)",
-            "SP_xERA": "4.79",
-            "Warning": "\u26a0\ufe0f Rain Risk (33%)",
+            "Opponent": "Ober (R)",
+            "SP_xERA": "4.78",
+            "Warning": "",
             "GameTime": "2026-08-11T23:40:00Z",
-            "Order": "3*",
+            "Order": "6",
             "Start": "11:40 PM"
         },
         {
@@ -257,11 +247,6 @@
             "Score": 81.87777959919882,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "60.65",
                     "type": "info"
@@ -301,23 +286,18 @@
             "SP_xERA": "4.78",
             "Warning": "",
             "GameTime": "2026-08-11T23:40:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "11:40 PM"
         },
         {
             "Slot": "3B",
-            "Player": "Coby Mayo",
+            "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Score": 53.68604477597941,
+            "Score": 63.76848556710652,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "48.57",
+                    "value": "49.46",
                     "type": "info"
                 },
                 {
@@ -327,8 +307,8 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+2%",
-                    "type": "positive"
+                    "value": "-1%",
+                    "type": "negative"
                 },
                 {
                     "label": "SP Skill",
@@ -336,26 +316,26 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Slow SP Delivery (92% SB)",
+                    "label": "Dynamic Platoon (L)",
                     "value": "+2%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.379",
+                    "type": "info"
                 }
             ],
-            "Opponent": "Ober (R)",
-            "SP_xERA": "4.78",
-            "Warning": "",
+            "Opponent": "Lodolo (L)",
+            "SP_xERA": "4.79",
+            "Warning": "\u26a0\ufe0f Rain Risk (33%)",
             "GameTime": "2026-08-11T23:40:00Z",
-            "Order": "7*",
+            "Order": "3",
             "Start": "11:40 PM"
         },
         {
@@ -497,11 +477,6 @@
             "Score": 50.23405870034532,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "50.13",
                     "type": "info"
@@ -532,11 +507,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Nick Lodolo (L)",
+            "Opponent": "Lodolo (L)",
             "SP_xERA": "4.79",
             "Warning": "\u26a0\ufe0f Rain Risk (33%)",
             "GameTime": "2026-08-11T23:40:00Z",
-            "Order": "8*",
+            "Order": "8",
             "Start": "11:40 PM"
         },
         {
