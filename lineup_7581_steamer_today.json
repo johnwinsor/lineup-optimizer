@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-12",
-    "last_updated": "2026-08-12T21:38:23.038419+00:00",
+    "last_updated": "2026-08-12T22:33:43.241231+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 785.98,
-    "narrative": "The **Austin Waves** lineup for August 12 is headlined by **Gunnar Henderson**, who earns our highest daily efficiency score of 83.29. Facing Matthews, **Henderson** benefits from a massive 14% boost due to a dynamic platoon advantage and a rare matchup against a slow-delivery pitcher that significantly elevates his stolen base potential\u2014a critical factor given our aggressive pursuit of the scarce SB category. **Drake Baldwin** (68.18) and **Kyle Tucker** (67.14) round out our top-tier starts. **Baldwin** leverages a favorable 4.62 xERA matchup against Thornton, while **Tucker** is poised to exploit wind-aided conditions against Daniel Lynch IV, provided his assumed #4 spot in the lineup holds.\n\nWe are navigating several tactical edges today, specifically with **Sam Antonacci** (63.14), who benefits from an elite 19% boost due to Lowder\u2019s weak underlying peripherals. Conversely, we are keeping a close eye on **Luis Robert Jr.** (51.27); despite his raw talent, his score is suppressed by a 15% penalty due to a poor dynamic platoon matchup against Mahle. The most difficult decision involved **Wade Meckler** (52.96), who hovered near the \"Marginal\" threshold. While **Meckler** gains 17% efficiency from Quantrill\u2019s poor SP profile, he is ultimately relegated to the lower half of our starters due to the significant drag of an #8 batting position, which limits his counting stat accumulation.\n\nRegarding our bench, **Coby Mayo** represents the most notable exclusion from today\u2019s active roster. While **Mayo** possesses an interesting profile against Matthews, he is officially not in the starting lineup, triggering an automatic -100% adjustment that removes him from consideration regardless of his raw projections. We continue to monitor the IL status of **Jordan Westburg** and **Josh Jung**, hoping for positive news that might reintegrate them into our daily utility rotation. Currently, our priority remains the preservation of game caps while maximizing the high-ceiling opportunities presented by **Henderson**, **Tucker**, and **Vladimir Guerrero Jr.** in favorable spots.",
+    "total_efficiency_score": 794.15,
+    "narrative": "The Austin Waves enter today\u2019s slate with **Gunnar Henderson** as the clear engine of the offense. With an elite score of 83.29, **Gunnar Henderson** draws a favorable matchup against a right-handed arm with a 4.32 xERA; his leadoff positioning combined with a high likelihood of stolen base success against a slow-delivering pitcher makes him our most bankable asset. **Drake Baldwin** (68.17) and **Kyle Tucker** (67.14) also profile as high-floor, high-upside starters. **Kyle Tucker** specifically benefits from an atmospheric edge, as projected wind blowing out adds a 5% boost to his already strong profile, effectively neutralizing the challenge presented by a left-handed opposing starter.\n\nStrategic lineup construction today heavily weights platoon efficiency and situational leverage to bridge our gaps in counting stats. While **Luis Robert Jr.** struggles against right-handed pitching (-15% dynamic platoon adjustment), the team is forced to roll him out due to depth constraints; conversely, **Sam Antonacci** and **Wade Meckler** provide essential upside at the top of the order, leveraging positive SP skill matchups and prime batting spots to hover near the 60-point threshold. **Coby Mayo** represents the most difficult bench decision, effectively left on the pine due to today's starting lineup configuration; his potential is high, but without a confirmed spot in the order, his utility is strictly capped by our efficiency model. We continue to monitor the status of **Jordan Westburg** and **Josh Jung**, who remain sidelined on the IL, while keeping an eye on **Miguel Vargas**, **Curtis Mead**, **Dominic Smith**, and **Luis Lara** to ensure we aren't missing late-breaking value from our bench depth.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -467,11 +467,6 @@
             "Score": 67.14461540207427,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "63.50",
                     "type": "info"
@@ -502,24 +497,19 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Daniel Lynch IV (L)",
+            "Opponent": "Lynch IV (L)",
             "SP_xERA": "3.92",
             "Warning": "",
             "GameTime": "2026-08-13T02:10:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "02:10 AM"
         },
         {
             "Slot": "OF5",
             "Player": "Wade Meckler",
             "POS": "OF",
-            "Score": 52.95275703084628,
+            "Score": 59.97160755,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.42",
@@ -546,29 +536,24 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Cal Quantrill (R)",
             "SP_xERA": "4.69",
             "Warning": "",
             "GameTime": "2026-08-13T02:10:00Z",
-            "Order": "8*",
+            "Order": "1",
             "Start": "02:10 AM"
         },
         {
             "Slot": "UTIL",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 61.14885347699464,
+            "Score": 62.30260542939076,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.03",
@@ -590,8 +575,8 @@
                     "type": "info"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -600,11 +585,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Daniel Lynch IV (L)",
+            "Opponent": "Lynch IV (L)",
             "SP_xERA": "3.92",
             "Warning": "",
             "GameTime": "2026-08-13T02:10:00Z",
-            "Order": "3*",
+            "Order": "2",
             "Start": "02:10 AM"
         }
     ],
@@ -802,11 +787,46 @@
             "Player": "Luis Lara",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Ray (L)",
+            "SP_xERA": "4.87",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "44.15",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -814,7 +834,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-08-12T20:10:00Z"
         }
     ]
 }
