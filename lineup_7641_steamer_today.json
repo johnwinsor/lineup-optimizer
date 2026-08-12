@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-12",
-    "last_updated": "2026-08-12T15:55:10.802358+00:00",
+    "last_updated": "2026-08-12T16:49:54.954448+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 790.78,
-    "narrative": "Today\u2019s offensive engine is anchored by **Jos\u00e9 Ram\u00edrez**, who commands the highest score of the day (80.06). Facing a favorable 4.25 xERA matchup against Framber Valdez, **Jos\u00e9 Ram\u00edrez** benefits from the rare combination of a high-ceiling order spot and a slow-delivery pitcher that boosts his stolen base expectation. Similarly, **Dylan Beavers** (64.33) and **Daulton Varsho** (64.29) are high-efficiency pivots, both capitalizing on aggressive baserunning opportunities against pitchers with weak pick-off or delivery-time profiles. While **Bryce Harper** (63.56) remains a set-and-forget start, he is flanked by **Jonathan Aranda** (62.62) and **Kyle Karros** (61.31), both of whom leverage positive park factors and favorable platoon splits to provide stability at the corner spots.\n\nThe most difficult bench decision involved **Justin Crawford**, who posted a 51.51 score. While his elite sprint speed makes him an attractive target for our scarcity-driven strategy, he was ultimately nudged out by the higher floor provided by **Braden Montgomery** and **Lawrence Butler**, whose matchups against mid-rotation arms like Rhett Lowder and Drew Rasmussen yielded better projected total production. **Gleyber Torres** (60.78) serves as a vital middle-infield anchor, exploiting the platoon advantage against Foster Griffin. \n\nWe must remain vigilant regarding the \"Lineup Pending\" status for a significant portion of our roster. While the model assumes standard batting order positioning, any shift for **Yainer Diaz** (55.32) or **Cal Raleigh** (54.93) toward the bottom of their respective lineups could shave critical points off their efficiency scores. Furthermore, while **Lawrence Butler** is a strong play, his matchup against a high-skill arm like Drew Rasmussen (3.17 xERA) introduces the most volatility among our starters. Ensure all roster locks are monitored as official lineups break to confirm these projected order advantages hold firm.",
+    "total_efficiency_score": 791.43,
+    "narrative": "The headline for today\u2019s lineup is the elite utility of **Jos\u00e9 Ram\u00edrez**, who boasts the day\u2019s highest score at 80.06. While he faces a veteran in Framber Valdez, the combination of a favorable park shift and a \"slow delivery\" factor\u2014which historically spikes stolen base potential\u2014makes him our anchor. Joining him in the \"Strong\" tier are **Daulton Varsho** (64.94) and **Dylan Beavers** (64.33). Both benefit from high-efficiency matchups against Houser and Matthews, respectively; specifically, the slow-to-the-plate tendencies of those arms project a high probability of stolen bases, which remains our primary focus in this 5x5 format. **Bryce Harper** also finds a rhythm against Leahy (63.56), carrying a robust 0.390 xwOBA that suggests he is primed to exploit the 4.09 xERA of the opposing starter.\n\nThe most difficult decision for today\u2019s card was excluding **Justin Crawford** (51.51) from the starting outfield. While **Justin Crawford** possesses the elite sprint speed that defines our organizational strategy, he was nudged out by **Braden Montgomery** (53.57) and **Lawrence Butler** (56.21). The optimizer favored **Lawrence Butler**'s 10% park factor bump and **Braden Montgomery**\u2019s switch-hitting versatility, which maintains a more consistent floor against the current pitching slate. Additionally, we are closely monitoring the status of **Yainer Diaz**, **Cal Raleigh**, **Jonathan Aranda**, **Brendan Donovan**, **Gleyber Torres**, **Jos\u00e9 Ram\u00edrez**, **Daulton Varsho**, **Braden Montgomery**, and **Kyle Karros**; all are currently \"Lineup Pending.\" If these players slide down the order upon final confirmation, their efficiency scores\u2014particularly those of **Yainer Diaz** and **Brendan Donovan**\u2014could contract rapidly. **Kyle Karros** (61.31) remains a high-variance play against Merrill Kelly, but his favorable park factors and the +19% boost from the opposing pitcher's profile justify the inclusion over bench options like **JJ Bleday** or **Jung Hoo Lee**.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -47,7 +47,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Adrian Houser (R)",
+            "Opponent": "Houser (R)",
             "SP_xERA": "4.73",
             "Warning": "",
             "GameTime": "2026-08-12T19:45:00Z",
@@ -140,7 +140,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jack Perkins (R)",
+            "Opponent": "Perkins (R)",
             "SP_xERA": "3.67",
             "Warning": "",
             "GameTime": "2026-08-12T19:05:00Z",
@@ -396,7 +396,7 @@
             "Slot": "OF2",
             "Player": "Daulton Varsho",
             "POS": "OF",
-            "Score": 64.290155962131,
+            "Score": 64.93955147690001,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -429,11 +429,6 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Elite Catcher (1.86s)",
-                    "value": "-1.0%",
-                    "type": "negative"
-                },
-                {
                     "label": "Slow SP Delivery (87% SB)",
                     "value": "+2%",
                     "type": "positive"
@@ -444,7 +439,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Adrian Houser (R)",
+            "Opponent": "Houser (R)",
             "SP_xERA": "4.73",
             "Warning": "",
             "GameTime": "2026-08-12T19:45:00Z",
@@ -556,11 +551,6 @@
             "Score": 56.20763308870751,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "55.27",
                     "type": "info"
@@ -595,7 +585,7 @@
             "SP_xERA": "3.17",
             "Warning": "",
             "GameTime": "2026-08-12T19:05:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "07:05 PM"
         },
         {
@@ -901,17 +891,12 @@
             "Slot": "BN",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
-            "Order": "1*",
+            "Order": "1",
             "Start": "07:45 PM",
             "Opponent": "Bryan King (L)",
             "SP_xERA": "4.06",
             "Score": 49.000867498718335,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.39",
@@ -943,7 +928,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -955,17 +940,12 @@
             "Slot": "BN",
             "Player": "Zack Gelof",
             "POS": "2B/3B/OF",
-            "Order": "2*",
+            "Order": "3",
             "Start": "07:05 PM",
             "Opponent": "Drew Rasmussen (R)",
             "SP_xERA": "3.17",
-            "Score": 46.33597497085992,
+            "Score": 45.47790136028844,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.26",
@@ -992,12 +972,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
