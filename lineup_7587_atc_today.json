@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-13",
-    "last_updated": "2026-08-13T18:53:59.733385+00:00",
+    "last_updated": "2026-08-13T19:52:57.513187+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 274.34,
-    "narrative": "For today\u2019s slate, **Brice Turang** stands as the clear anchor of our lineup with a 65.44 efficiency score. While we are awaiting the official lineup card, his assumed promotion to the #2 spot, paired with a favorable matchup against the Roki Sasaki delivery profile, makes him a primary source of our target category, stolen bases. The model aggressively weights his speed against the SP\u2019s slower delivery, which provides a significant boost to his floor. Conversely, **Travis Bazzana** (56.66) represents a strong, high-upside play against Montero, benefiting from a +10% SP skill adjustment and a favorable platoon setup that allows him to outperform his base projection despite hitting toward the bottom of the order.\n\nNavigating the remainder of the roster requires balancing marginal projections against the scarcity of our speed categories. **Josh Naylor** (54.97) and **Seiya Suzuki** (52.65) are relegated to \"marginal\" starts due to challenging matchups against Fried and Cavalli, respectively. While **Seiya Suzuki** retains some value due to his prime batting position, the high xERA of these opposing arms suppresses his ceiling. **Jose Caballero** (44.60) is the weakest link in today\u2019s starting five; he is essentially a roster filler dictated by our need to avoid burning caps while maintaining stolen base exposure. Given that our high-upside assets like **Corbin Carroll** are sidelined due to the schedule and **James Wood** remains on the IL, we are effectively playing a \"defensive\" rotation to maximize efficiency over raw volume. \n\nThe most difficult bench decision was determining how to handle the lower-tier utility spots, specifically weighing the potential output of players like **Zach McKinstry** or **Tyler Soderstrom** against the established, albeit marginal, value of **Jose Caballero**. Ultimately, the proximity of the scores meant the optimizer favored the structural consistency of our current lineup, opting to keep **Austin Riley**, **Giancarlo Stanton**, **Vinnie Pasquantino**, **Max Muncy**, **Gabriel Moreno**, **Isaac Paredes**, **Dalton Rushing**, **Edwin Arroyo**, **Cole Young**, and **Henry Bolte** on the bench to preserve our limited game caps for more favorable pitching conditions later in the week. We continue to monitor the status of **Mickey Moniak** and **Trevor Story**, but with no game action for them today, our primary concern remains navigating the elite arms we are currently facing.",
+    "narrative": "The highlight of today\u2019s slate for Ghost Ride the WHIP is **Brice Turang**, who commands a Strong 65.44 efficiency score. Even with his lineup spot currently pending, he is an auto-start; our projection models favor his matchup against Roki Sasaki, specifically leveraging the pitcher's slow delivery to the plate, which significantly inflates **Brice Turang**'s stolen base potential\u2014the most critical asset for our roster construction. Joining him in the productive tier is **Travis Bazzana** (56.66), whose favorable platoon edge against the 4.43 xERA of Montero provides a solid floor for batting average and run production, effectively buffering against the tougher arms elsewhere in the lineup.\n\nOur strategy today forces some difficult benching decisions, primarily due to the team\u2019s current injury landscape. While **Josh Naylor** (54.98) and **Seiya Suzuki** (52.65) make the cut, both face high-tier arms in Fried and Cavalli, respectively, leading to tempered expectations despite their roles near the top of their respective orders. **Jose Caballero** remains our most marginal start at 44.61; while he lacks an elite projection against Gilbert, he remains active solely to chase his unique speed profile in a tight 5x5 race. We continue to monitor the status of **James Wood** and **Trevor Story**, whose absence from the active roster remains the primary constraint on our daily ceiling, forcing us to rely on utility depth like **Zach McKinstry**, **Max Muncy**, and **Isaac Paredes** to fill gaps as needed. With **Corbin Carroll** and **Mickey Moniak** sidelined by schedule gaps, we are currently prioritizing situational speed and platoon-favorable matchups over raw power, betting that the stolen base volume from **Brice Turang** and the order-placement boosts for **Seiya Suzuki** will carry the offense through these challenging individual matchups.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -492,6 +492,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Not Starting",
                     "value": "-100%",
                     "type": "status"
@@ -558,11 +563,51 @@
             "Player": "Cole Young",
             "POS": "2B/SS",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "05:35 PM",
+            "Opponent": "Fried (L)",
+            "SP_xERA": "3.80",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "44.90",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-5%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (54% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -570,7 +615,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-08-13T17:35:00Z"
         },
         {
             "Slot": "BN",
