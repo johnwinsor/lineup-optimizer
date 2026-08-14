@@ -1,15 +1,15 @@
 {
     "target_date": "2026-08-14",
-    "last_updated": "2026-08-14T15:43:50.255440+00:00",
+    "last_updated": "2026-08-14T16:41:38.098066+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 742.49,
-    "narrative": "For today\u2019s slate, **Tyler Soderstrom** leads the charge with an elite 71.98 score. His matchup against Kumar Rocker is a prime spot; a favorable park factor combined with a solid platoon advantage and a premium #2 spot in the order maximizes his efficiency. **Mickey Moniak** follows closely at 69.71, buoyed by a 14% dynamic platoon boost and wind blowing out at his venue, mitigating the risk posed by the catcher\u2019s arm. Meanwhile, **Corbin Carroll** remains an essential start at 69.44, providing our most reliable floor for steals even without a defined opposing starter, as his elite profile continues to anchor the outfield.\n\nThe most difficult decision for the lineup was keeping **Cole Young** on the bench. Despite his 47.95 score and a projectable #2 spot, he fell just short of the efficiency threshold when compared to the high-upside platoons of **Austin Riley** and **Jose Caballero**. While **Jose Caballero** faces a tough arm in Shane Bieber, the 19% SP skill adjustment makes him a high-reward play despite the negative platoon regression. We remain cautious with **Brice Turang**, whose 56.66 score is heavily reliant on wind support; his steal potential is somewhat capped by a difficult matchup against Yoshinobu Yamamoto. As we await official confirmation on lineups for **Gabriel Moreno**, **Isaac Paredes**, **Travis Bazzana**, **Max Muncy**, **Brice Turang**, **Austin Riley**, **Seiya Suzuki**, **Jose Caballero**, **Tyler Soderstrom**, **Mickey Moniak**, **Corbin Carroll**, and **Josh Naylor**, we are prepared to adjust if any late-scratch risks arise. We continue to monitor **James Wood** and **Giancarlo Stanton** on the IL, alongside rostered depth pieces **Trevor Story**, **Vinnie Pasquantino**, **Zach McKinstry**, **Dalton Rushing**, **Edwin Arroyo**, and **Henry Bolte** for potential spot starts.",
+    "total_efficiency_score": 712.38,
+    "narrative": "For today\u2019s slate, the optimizer identifies **Tyler Soderstrom** (71.98) and **Mickey Moniak** (69.71) as our primary drivers. **Tyler Soderstrom** benefits significantly from a favorable park factor and a matchup against Kumar Rocker, while **Mickey Moniak** is positioned to capitalize on a high-upside dynamic platoon advantage against Landen Roupp. Both players clear the 60-point \"Strong\" threshold with room to spare, making them the engines of our daily offensive output. Conversely, **Gabriel Moreno** faces the stiffest challenge of our starters, as the elite skill of Chris Sale forces his projection down to a marginal 43.69; while **Gabriel Moreno** is currently slated in the three-hole, the threat of Sale\u2019s sub-3.00 xERA necessitates a tempered expectation for our catcher today.\n\nThe most difficult roster decision occurred between **Brice Turang** and **Cole Young**. While **Cole Young** managed a respectable 47.95, he was ultimately benched in favor of **Brice Turang** (56.66). **Brice Turang** earns the start largely due to an aggressive boost from a favorable wind-out environment and his specific utility in the stolen base category, which remains our highest priority; his ability to exploit the delivery tendencies of Yoshinobu Yamamoto provided just enough leverage to clear the threshold. Meanwhile, we remain cautious regarding **Corbin Carroll** (52.07), who despite his elite speed, is battling a difficult platoon disadvantage and the dominant presence of Chris Sale on the mound, keeping his efficiency score firmly in the marginal range. \n\nWe are monitoring the \"Lineup Pending\" status for all starters, particularly **Isaac Paredes** and **Max Muncy**, as any unexpected shift in batting order could further compress their efficiency scores against formidable arms like George Kirby and Kumar Rocker. We also continue to manage the absence of **James Wood** and **Giancarlo Stanton** on the IL, which keeps our bench depth thinner than ideal. Should any late-breaking weather or lineup changes arise, we are prepared to shift to **Zach McKinstry** if a more favorable platoon situation presents itself, though for now, the current alignment maximizes our exposure to speed and park-adjusted scoring opportunities.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Gabriel Moreno",
             "POS": "C",
-            "Score": 56.4391856874003,
+            "Score": 43.69108501337689,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -32,13 +32,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Chris Sale (L)",
+            "SP_xERA": "2.88",
             "Warning": "",
             "GameTime": "2026-08-14T23:15:00Z",
             "Order": "3*",
@@ -336,7 +346,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Matthew Liberatore (L)",
+            "Opponent": "Liberatore (L)",
             "SP_xERA": "4.22",
             "Warning": "",
             "GameTime": "2026-08-14T18:20:00Z",
@@ -504,7 +514,7 @@
             "Slot": "OF5",
             "Player": "Corbin Carroll",
             "POS": "OF",
-            "Score": 69.43817300850682,
+            "Score": 52.07460668726029,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -527,13 +537,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Chris Sale (L)",
+            "SP_xERA": "2.88",
             "Warning": "",
             "GameTime": "2026-08-14T23:15:00Z",
             "Order": "2*",
