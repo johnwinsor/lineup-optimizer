@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-14",
-    "last_updated": "2026-08-14T05:41:28.424939+00:00",
+    "last_updated": "2026-08-14T12:43:44.970955+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 739.85,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 742.49,
+    "narrative": "Our highest ceiling today belongs to **Tyler Soderstrom**, who leads the lineup with a 71.98 score. He benefits from a favorable matchup against Rocker (4.21 xERA) and the significant boost of hitting second in the order. **Mickey Moniak** (69.71) and **Corbin Carroll** (69.44) follow closely behind; **Mickey Moniak** specifically leverages a strong platoon advantage (+14%) against Roupp, while **Corbin Carroll** remains an auto-start for his elite speed profile, which is prioritized given the scarcity of stolen bases in our league. **Seiya Suzuki** also warrants attention; despite a -5% penalty for wind blowing in, his underlying metrics against Liberatore are robust enough to secure him a 64.25 efficiency score.\n\nThe most difficult decision for the optimizer involved **Cole Young**, who landed at 47.95, missing the \"Strong\" start threshold. While his placement in the #2 hole provides an 8% boost, his base projections were not quite high enough to displace the higher-upside options currently slotted in the UTIL and MI spots. We are closely monitoring the lineup for **Brice Turang**, who faces an elite arm in Yamamoto (3.61 xERA). While his score is bolstered by a wind-out environment and high-frequency SB potential, his efficiency is currently hampered by the pitcher's skill. We remain cautious regarding all \"Lineup Pending\" designations for **Gabriel Moreno**, **Isaac Paredes**, **Travis Bazzana**, **Max Muncy**, **Brice Turang**, **Austin Riley**, **Seiya Suzuki**, **Jose Caballero**, **Tyler Soderstrom**, **Mickey Moniak**, **Corbin Carroll**, and **Josh Naylor**; should these order assumptions shift significantly, we will re-evaluate the utility of our bench depth, including **Zach McKinstry**, to maximize our game caps. With **James Wood** and **Giancarlo Stanton** remaining sidelined on the IL, our roster flexibility is limited, making every active start critical for our pursuit of the 5x5 categories.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -185,7 +185,7 @@
             "Slot": "MI",
             "Player": "Brice Turang",
             "POS": "2B",
-            "Score": 53.96566540118795,
+            "Score": 56.66394867124734,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -220,6 +220,11 @@
                 {
                     "label": "Order #2",
                     "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
@@ -288,7 +293,7 @@
             "Slot": "OF1",
             "Player": "Seiya Suzuki",
             "POS": "OF",
-            "Score": 67.63522480771302,
+            "Score": 64.25346356732736,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -324,6 +329,11 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Matthew Liberatore (L)",
@@ -335,18 +345,18 @@
         },
         {
             "Slot": "OF2",
-            "Player": "Mickey Moniak",
-            "POS": "OF",
-            "Score": 66.3898808054744,
+            "Player": "Jose Caballero",
+            "POS": "2B/SS/3B/OF",
+            "Score": 61.847605659527204,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
+                    "label": "Lineup Pending (Assumed #7)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "56.28",
+                    "value": "59.45",
                     "type": "info"
                 },
                 {
@@ -356,36 +366,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
+                    "value": "+3%",
+                    "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+4%",
+                    "value": "+19%",
                     "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Elite Catcher (1.86s)",
-                    "value": "-1.0%",
+                    "value": "-13%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Landen Roupp (R)",
-            "SP_xERA": "4.19",
+            "Opponent": "Shane Bieber (R)",
+            "SP_xERA": "5.25",
             "Warning": "",
-            "GameTime": "2026-08-15T02:15:00Z",
-            "Order": "5*",
-            "Start": "02:15 AM"
+            "GameTime": "2026-08-14T23:15:00Z",
+            "Order": "7*",
+            "Start": "11:15 PM"
         },
         {
             "Slot": "OF3",
@@ -438,6 +443,65 @@
         },
         {
             "Slot": "OF4",
+            "Player": "Mickey Moniak",
+            "POS": "OF",
+            "Score": 69.70937484574813,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "56.28",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Landen Roupp (R)",
+            "SP_xERA": "4.19",
+            "Warning": "",
+            "GameTime": "2026-08-15T02:15:00Z",
+            "Order": "5*",
+            "Start": "02:15 AM"
+        },
+        {
+            "Slot": "OF5",
             "Player": "Corbin Carroll",
             "POS": "OF",
             "Score": 69.43817300850682,
@@ -473,55 +537,6 @@
             "Warning": "",
             "GameTime": "2026-08-14T23:15:00Z",
             "Order": "2*",
-            "Start": "11:15 PM"
-        },
-        {
-            "Slot": "OF5",
-            "Player": "Jose Caballero",
-            "POS": "2B/SS/3B/OF",
-            "Score": 61.847605659527204,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "59.45",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-13%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Shane Bieber (R)",
-            "SP_xERA": "5.25",
-            "Warning": "",
-            "GameTime": "2026-08-14T23:15:00Z",
-            "Order": "7*",
             "Start": "11:15 PM"
         },
         {
