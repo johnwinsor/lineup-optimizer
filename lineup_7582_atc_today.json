@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-14",
-    "last_updated": "2026-08-14T16:41:16.063014+00:00",
+    "last_updated": "2026-08-14T17:45:42.895444+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 694.59,
-    "narrative": "The Zurich Zebras face a challenging slate today, headlined by **Yordan Alvarez**, who anchors the offense with a 68.01 score. Despite facing a formidable arm in George Kirby, **Yordan Alvarez** remains a locked-in start due to his elite 0.464 xwOBA and a favorable batting order position. Following closely is **Christian Yelich**, whose 58.98 score is bolstered by a +13% boost from his dynamic platoon advantage against Yoshinobu Yamamoto and favorable wind conditions at the stadium. **Pete Crow-Armstrong** (58.49) and **Christian Encarnacion-Strand** (57.45) also project as strong starts, with the latter capitalizing on a matchup against Steven Matz and a high 0.388 xwOBA, which helps mitigate park factor concerns.\n\nThe primary lineup construction strategy today emphasizes platoon optimization, even against high-tier starters like Gerrit Cole. **Caleb Durbin** (62.97) stands out as the most efficient middle-infield option, benefiting significantly from the opponent's slow delivery, which maximizes his elite sprint speed and stolen base potential\u2014a critical factor for our current league standings. Conversely, the benching of **Chase Meidroth** (41.82) was the most difficult decision of the cycle. While **Chase Meidroth** offers speed and a leadoff spot, his negative SP skill modifier against Jackson Jobe ultimately pushed his projected efficiency below the start threshold compared to the platoon-advantaged **Colt Keith** or **Josh Smith**.\n\nRisk management remains a priority given the \"Lineup Pending\" status for most of our starters. We are monitoring **Dillon Dingler** (56.65) closely; his high score is contingent on maintaining that #2 spot in the order against Sean Newcomb. Additionally, while we are comfortable starting **Christian Yelich** and **Gary Sanchez** (47.75) against Yamamoto, the presence of such an elite arm requires us to remain vigilant regarding potential late-game defensive substitutions or weather shifts. We are holding **Lars Nootbaar**, **Trea Turner**, and **Kyle Schwarber** in reserve, as they are either facing elite left-handed pitching like Chris Sale or are off the schedule entirely today.",
+    "total_efficiency_score": 712.61,
+    "narrative": "The Zurich Zebras enter today\u2019s slate leaning heavily on **Junior Caminero**, who projects as our strongest play with a 74.76 efficiency score. Facing Chris Bassitt, **Junior Caminero** benefits from a high-upside matchup against a pitcher with a 4.91 xERA, allowing the optimizer to leverage his elite xwOBA. **Yordan Alvarez** also serves as an anchor for the lineup, commanding a 68.01 score despite a tough draw against George Kirby; his massive 0.464 xwOBA provides the floor necessary to combat the skill of the opposing rotation. While **Caleb Durbin** falls slightly behind those power bats in raw projection, his 62.97 score is bolstered by his speed profile, which remains our primary weapon in the scarce SB category.\n\nThe most difficult roster decision involved **Chase Meidroth**, who sits on the bench with a 41.82 score. While his leadoff projection is attractive, he lost out to the superior platoon and park-adjusted scoring of players like **Christian Encarnacion-Strand** and **Pete Crow-Armstrong**. **Christian Encarnacion-Strand** is a particularly high-interest start today; his 57.45 score is artificially suppressed by a park penalty, but his 0.388 xwOBA and high-frequency SB opportunity against the slow delivery of Steven Matz make him a priority over the fringe bench depth. \n\nWe must remain cautious with the bottom of the order, specifically **Josh Smith** and **Kazuma Okamoto**, both of whom are shackled by a difficult matchup against Gerrit Cole (3.43 xERA). Furthermore, the \"Lineup Pending\" status for almost every position player creates latent volatility. Should any of these players move down in the order\u2014particularly **Dillon Dingler** or **Yordan Alvarez**\u2014their daily efficiency scores will require re-evaluation. With **Trea Turner** and **Kyle Schwarber** sidelined due to team off-days, our bench depth is intentionally thin, making the consistency of our starters vital for maintaining our 5x5 standing.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -357,13 +357,8 @@
             "Slot": "OF1",
             "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Score": 58.491663870334904,
+            "Score": 61.57017249508938,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "59.99",
@@ -393,18 +388,13 @@
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
                 }
             ],
             "Opponent": "Liberatore (L)",
             "SP_xERA": "4.22",
             "Warning": "",
             "GameTime": "2026-08-14T18:20:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "06:20 PM"
         },
         {
@@ -607,7 +597,7 @@
             "Slot": "UTIL",
             "Player": "Junior Caminero",
             "POS": "3B",
-            "Score": 59.81655993276852,
+            "Score": 74.75811074219249,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -630,6 +620,16 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
@@ -640,8 +640,8 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Chris Bassitt (R)",
+            "SP_xERA": "4.91",
             "Warning": "",
             "GameTime": "2026-08-14T23:10:00Z",
             "Order": "3*",
@@ -950,55 +950,20 @@
             "Slot": "BN",
             "Player": "Pedro Ramirez",
             "POS": "2B/3B",
-            "Order": "6*",
-            "Start": "06:20 PM",
-            "Opponent": "Liberatore (L)",
-            "SP_xERA": "4.22",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
             "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "0.00",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-08-14T18:20:00Z"
+            "GameTime": null
         }
     ]
 }
