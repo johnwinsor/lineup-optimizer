@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-16",
-    "last_updated": "2026-08-16T16:14:23.919839+00:00",
+    "last_updated": "2026-08-16T17:13:12.067036+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 601.8,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with **Pete Crow-Armstrong** standing as our unequivocal engine. Projecting at a massive 80.13, he benefits from a premier leadoff spot and a strong platoon advantage against Hunter Dobbins. Alongside him, **Yordan Alvarez** (62.19) and **Kyle Schwarber** (61.18) provide the core stability we require, despite **Yordan Alvarez** facing a tough matchup against Bryan Woo. While **Junior Caminero** (60.55) faces a stiff challenge against a difficult lefty in Triston Rogers, his elite xwOBA remains high enough to warrant a strong start in our 3-hole.\n\nThe volatility of today\u2019s matchups is highlighted by the benching of **Nelson Velazquez**, who fell just short of our 40.0 efficiency threshold with a 40.76 score. His exclusion came down to the optimizer favoring the higher-floor, order-advantaged presence of **Christian Encarnacion-Strand** (51.76) in the utility slot, as **Nelson Velazquez** is constrained by a neutral platoon against a solid pitcher. We are keeping a close watch on **Gary Sanchez** and **Christian Yelich**, both of whom carry sub-45 scores due to the daunting task of facing Tarik Skubal. While **Christian Yelich** sits at a marginal 39.81, we are proceeding with him, though any further negative news regarding his lineup position could force a late-inning pivot to preserve our game caps.",
+    "narrative": "The Zurich Zebras face a challenging slate today, but the optimizer has identified two primary engines for offensive production. **Pete Crow-Armstrong** (80.13) is our undisputed strongest play; his leadoff spot against a favorable matchup (4.06 xERA) combined with a massive 14% boost from a dynamic platoon advantage creates an elite scoring environment. He is followed closely by **Yordan Alvarez** (62.19), whose elite 0.465 xwOBA remains the backbone of our lineup, and **Kyle Schwarber** (61.18), who leverages a premium leadoff slot to mitigate the challenge of facing a decent arm in Kremer. **Junior Caminero** (60.55) also secures a top-tier spot, benefiting from a high-leverage 3-hole assignment that outweighs his minor park-factor penalty.\n\nConversely, we are treading carefully with **Christian Yelich** (39.81), whose score dips below our 40.0 floor due to a brutal matchup against the elite Skubal (2.77 xERA) and an unfavorable platoon split. **Gary Sanchez** (42.83) narrowly survives the cut, though his value is heavily suppressed by the same Skubal matchup. Our most difficult bench decision involved **Nelson Velazquez** (40.76). While he technically cleared the floor, the combination of a high-difficulty opponent in Bryan Woo and the uncertainty of a pending lineup position forced him to the bench in favor of the higher-upside profiles of **Carson Benge** and **Christian Encarnacion-Strand**. \n\nWe must remain vigilant regarding the lineup status for **Gary Sanchez**, **Christian Yelich**, and **Yordan Alvarez**; as of this report, their spots are assumed. While **Caleb Durbin** faces a solid arm, his value is bolstered by his elite sprint speed and a matchup against a slow-delivery pitcher that creates a high-probability opportunity for stolen bases\u2014our most precious category. We will monitor weather reports and confirmed batting orders for **Gary Sanchez** and **Christian Yelich** closely, as any move down in the order could push them below the rosterable threshold for the day.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -42,7 +42,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tarik Skubal (L)",
+            "Opponent": "Skubal (L)",
             "SP_xERA": "2.77",
             "Warning": "",
             "GameTime": "2026-08-16T20:10:00Z",
@@ -242,11 +242,6 @@
             "Score": 80.13143765322442,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "59.99",
                     "type": "info"
@@ -277,11 +272,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Hunter Dobbins (R)",
+            "Opponent": "Dobbins (R)",
             "SP_xERA": "4.06",
             "Warning": "",
             "GameTime": "2026-08-16T19:15:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "07:15 PM"
         },
         {
@@ -321,7 +316,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tarik Skubal (L)",
+            "Opponent": "Skubal (L)",
             "SP_xERA": "2.77",
             "Warning": "",
             "GameTime": "2026-08-16T20:10:00Z",
@@ -825,17 +820,12 @@
             "Slot": "BN",
             "Player": "Pedro Ramirez",
             "POS": "2B/3B",
-            "Order": "7*",
+            "Order": "6",
             "Start": "07:15 PM",
-            "Opponent": "Hunter Dobbins (R)",
+            "Opponent": "Dobbins (R)",
             "SP_xERA": "4.06",
             "Score": 0.0,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "0.00",
@@ -862,12 +852,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
