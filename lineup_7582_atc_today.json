@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-16",
-    "last_updated": "2026-08-16T20:11:42.829270+00:00",
+    "last_updated": "2026-08-16T21:12:02.452483+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 561.15,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with **Pete Crow-Armstrong** serving as the undisputed cornerstone of the lineup. His elite 80.13 score is anchored by a prime leadoff spot and a +14% dynamic platoon boost against Dobbins, making him our primary target for stolen base production\u2014a critical category as we press for the top of the standings. Alongside him, **Yordan Alvarez** (62.19) and **Kyle Schwarber** (61.18) provide high-floor stability; while **Yordan Alvarez** faces a tougher test against the efficient arm of Bryan Woo, his elite xwOBA of 0.465 allows us to overlook the unfavorable SP skill delta. **Junior Caminero** (60.55) also grades out strongly, benefiting from a favorable batting order position that offsets the park-factor headwinds in his matchup against Rogers.\n\nThe optimization process was most difficult at the MI/UTIL threshold, where **Dillon Dingler** (37.83) narrowly missed the cut. Despite the park factor favoring his matchup against Burke, the combination of a sharp -15% dynamic platoon penalty and our strict internal \"Zebras Floor\" of 40.0 forced him to the bench in favor of **Christian Encarnacion-Strand** (51.76). We are monitoring the SP_xERA closely across the board; **Gary Sanchez** is the most significant risk in today\u2019s lineup, as he must navigate a daunting 2.77 xERA from Skubal. While his platoon advantage provides a slight cushion, his score of 41.99 sits dangerously close to the bench threshold, and we will be watching his early at-bats closely to ensure the Zebras don't leak points against an elite pitcher.",
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Pete Crow-Armstrong** serving as our clear focal point. Boasting a dominant 80.13 score, he benefits from an optimal leadoff spot against Dobbins, with a significant 14% boost stemming from a favorable dynamic platoon split. While **Yordan Alvarez** (62.19) and **Kyle Schwarber** (61.18) provide high-floor production, **Pete Crow-Armstrong** remains our primary engine for the scarce stolen base category, which remains the cornerstone of our strategy as we approach the final stretch of the season. **Junior Caminero** (60.55) rounds out our \"Strong\" tier, leveraging his excellent 0.373 xwOBA and an aggressive third-spot placement to overcome a stiff matchup against Rogers.\n\nOur most difficult roster decision today involved **Dillon Dingler**, who missed the 40.0 efficiency threshold by less than three points. Despite the park factor favoring him against Burke, the negative drag from his dynamic platoon and the SP skill adjustment kept him firmly on the bench in favor of **Gary Sanchez**, who despite facing a tough Skubal, maintains enough baseline projection to clear our floor. We are exercising caution with **Gary Sanchez** and **Kazuma Okamoto** as they face formidable arms, but their projected volume secures their spots. We are closely monitoring weather reports, though no immediate risks have been flagged that would necessitate a late-scratch pivot for **Caleb Durbin** or **Colt Keith**. We continue to hold **Trea Turner** and **Christian Yelich** on the bench in anticipation of their return to active, high-leverage roles, as our current depth allows us to prioritize today\u2019s matchup-specific efficiencies over theoretical upside.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -621,11 +621,51 @@
             "Player": "Josh Smith",
             "POS": "1B/2B/SS/3B/OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "05:37 PM",
+            "Opponent": "Weathers (L)",
+            "SP_xERA": "3.45",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "46.32",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (20% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -633,7 +673,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-08-16T17:37:00Z"
         },
         {
             "Slot": "BN",
