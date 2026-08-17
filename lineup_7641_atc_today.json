@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-16",
-    "last_updated": "2026-08-17T00:53:53.575196+00:00",
+    "last_updated": "2026-08-17T02:18:42.325721+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 745.35,
-    "narrative": "For today\u2019s slate, our offensive engine is centered around **Zack Gelof** (66.86) and **Brendan Donovan** (64.97), who both present as our strongest plays against favorable pitching environments. **Zack Gelof** benefits from a massive 19% SP skill adjustment and a 10% park boost against the lefty, while **Brendan Donovan** takes advantage of a prime leadoff spot and a strong platoon edge against Brown. Similarly, **Lawrence Butler** (62.27) and **Jos\u00e9 Ram\u00edrez** (62.55) anchor the heart of the lineup. While **Lawrence Butler** is navigating a negative platoon split against a lefty, his raw power profile and favorable park factors maintain his elite utility. **Jos\u00e9 Ram\u00edrez** remains a plug-and-play staple; despite the risk of him being held on the basepaths against an elite SP pick-off threat, his high-floor production batting third is essential.\n\nThe closest bench decision of the day involved **Daulton Varsho** (52.85), who narrowly missed the cut behind the outfield trio of **Jung Hoo Lee**, **Bryce Harper**, and **Dylan Beavers**. While **Daulton Varsho** gained a 10% boost from a favorable platoon matchup against Woo, he ultimately lost out to the consistency and superior overall efficiency scores of the starters. We are also keeping a close eye on **Dylan Beavers** (57.07), who is currently our most high-upside play for stolen bases; his matchup against a pitcher with slow delivery timing makes him a prime candidate to capitalize on our league\u2019s premium on SB efficiency.\n\nWe must remain cautious of potential volatility in the bottom of our lineup, particularly with **Yainer Diaz** (42.12), whose score is suppressed by a difficult matchup against Woo. Furthermore, while **Cal Raleigh** (55.77) and **Justin Crawford** (53.38) occupy key slots, their output will rely heavily on overcoming the situational disadvantage of batting in the lower third of the order. We are proceeding without major weather warnings today, but ensure that **Luis Arraez** (54.07) maintains his contact-heavy approach against Kremer, as his efficiency relies on avoiding the \"empty at-bat\" trap in a game where we need to maximize every plate appearance to protect our standing in the AVG category.",
+    "total_efficiency_score": 748.11,
+    "narrative": "Our strongest offensive outlooks for today are led by **Zack Gelof** (66.86) and **Brendan Donovan** (64.97). **Zack Gelof** finds himself in an ideal spot against Bradford; the combination of a favorable park and a significant skill advantage against the starter boosts his efficiency to the top of our board. Similarly, **Brendan Donovan** benefits from a premium leadoff spot and a strong platoon advantage against Brown, making him a high-floor anchor for our scoring categories. While **Jos\u00e9 Ram\u00edrez** (62.55) and **Bryce Harper** (62.13) remain consistent cornerstones, the high-velocity upside provided by **Lawrence Butler** (62.28)\u2014who also faces the favorable Bradford matchup\u2014makes him a sneaky pivot despite the minor platoon drag from facing a lefty.\n\nThe decision to bench **Gavin Sheets** (52.95) was the most difficult, as he fell just short of the efficiency threshold needed to supplant our current depth. While he held a decent platoon edge against Bibee, the collective projections for our starters\u2014particularly the stolen base potential in **Justin Crawford** and **Dylan Beavers**\u2014outweighed his raw power profile. We are closely monitoring the environment for **Cal Raleigh** and **Yainer Diaz**; while **Cal Raleigh** sits at a 55.77, his spot in the bottom third of the order against Brown necessitates caution, and **Yainer Diaz** carries a lower 43.39 projection, making him our most volatile start of the day.\n\nRisks remain, specifically regarding the \"elite arm\" threshold. While we are avoiding the true aces, the 3.57 xERA of Woo poses a legitimate challenge for **Yainer Diaz** and **Daulton Varsho**. Furthermore, because stolen bases are our highest priority in this 5x5 build, we have deliberately prioritized **Dylan Beavers**, who benefits from a +4% boost due to the slow delivery of Peralta, and **Justin Crawford**, whose speed-first profile is essential for maintaining our lead in the category. Ensure all lineup configurations are locked before first pitch, as any further negative shifts in the official orders for **Masyn Winn** or **Jung Hoo Lee** could compress their already modest margins.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -53,7 +53,7 @@
             "Slot": "C2",
             "Player": "Yainer Diaz",
             "POS": "C",
-            "Score": 42.127400863088624,
+            "Score": 43.39122288898129,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -79,6 +79,11 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "-2%",
                     "type": "negative"
+                },
+                {
+                    "label": "BvP Good (47 PA)",
+                    "value": "+3%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #8",
@@ -408,13 +413,13 @@
         },
         {
             "Slot": "OF3",
-            "Player": "Gavin Sheets",
-            "POS": "1B/OF",
-            "Score": 52.94647574015295,
+            "Player": "Daulton Varsho",
+            "POS": "OF",
+            "Score": 54.43679031484804,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "46.94",
+                    "value": "53.57",
                     "type": "info"
                 },
                 {
@@ -423,27 +428,37 @@
                     "type": "info"
                 },
                 {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
                     "label": "SP Skill",
-                    "value": "+8%",
-                    "type": "positive"
+                    "value": "-10%",
+                    "type": "negative"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+7%",
+                    "value": "+10%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "BvP Good (47 PA)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Bibee (R)",
-            "SP_xERA": "4.33",
+            "Opponent": "Woo (R)",
+            "SP_xERA": "3.57",
             "Warning": "",
-            "GameTime": "2026-08-16T17:40:00Z",
-            "Order": "7",
-            "Start": "05:40 PM"
+            "GameTime": "2026-08-16T23:20:00Z",
+            "Order": "5",
+            "Start": "11:20 PM"
         },
         {
             "Slot": "OF4",
@@ -602,55 +617,6 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Daulton Varsho",
-            "POS": "OF",
-            "Order": "5",
-            "Start": "11:20 PM",
-            "Opponent": "Woo (R)",
-            "SP_xERA": "3.57",
-            "Score": 52.85125273286217,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "53.57",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-10%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Benched - Lower projected efficiency than other options.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-08-16T23:20:00Z"
         },
         {
             "Slot": "BN",
@@ -905,6 +871,50 @@
             ],
             "Warning": "",
             "GameTime": "2026-08-16T16:15:00Z"
+        },
+        {
+            "Slot": "BN",
+            "Player": "Gavin Sheets",
+            "POS": "1B/OF",
+            "Order": "7",
+            "Start": "05:40 PM",
+            "Opponent": "Bibee (R)",
+            "SP_xERA": "4.33",
+            "Score": 52.94647574015295,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "46.94",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-08-16T17:40:00Z"
         },
         {
             "Slot": "BN",
