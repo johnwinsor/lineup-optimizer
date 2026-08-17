@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-17",
-    "last_updated": "2026-08-17T19:22:37.820425+00:00",
+    "last_updated": "2026-08-17T20:18:53.182546+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 628.3,
-    "narrative": "LawDog enters today\u2019s slate with a clear focal point: exploiting the matchup against Janson Junk. The standout play is **Bryce Harper**, whose efficiency score of 74.59 makes him our highest-projected bat. With a favorable SP_xERA of 4.51 and a prime #3 spot in the order, **Bryce Harper** is positioned to anchor our production. He is closely followed by **Lawrence Butler** (68.22), who benefits from a robust +13% dynamic platoon edge against Michael Wacha, and **Jonathan Aranda** (66.40), whose projected output is bolstered by an advantageous #2 lineup spot and a solid matchup against Brandon Young. While **Justin Crawford** maintains a strong 62.05 score, his value is slightly suppressed by a #9 order position; however, given our aggressive weighting toward elite sprint speed to bolster our stolen base standing, **Justin Crawford** remains an essential component of the daily configuration.\n\nThe most difficult decision for the rotation was determining the final UTIL spot, ultimately favoring **JJ Bleday** (48.32) over **Jeremiah Jackson** (42.18). Although **Jeremiah Jackson** showed potential, his -6% penalty for a projected #8 batting order ultimately kept him on the bench in favor of the higher-upside hitting environment for **JJ Bleday**. Risk management remains a secondary priority, as we are monitoring a 32% rain risk in games involving **Masyn Winn** and **JJ Bleday**. Additionally, several lineup slots are currently dependent on pending official postings\u2014most notably **Gleyber Torres**, **Zack Gelof**, **Braden Montgomery**, **Dylan Beavers**, **Lawrence Butler**, and **JJ Bleday**. We will continue to monitor these statuses; should **Gleyber Torres** or **Zack Gelof** shift down the order, we may need to re-evaluate their starting eligibility to protect our precious game caps.",
+    "total_efficiency_score": 622.16,
+    "narrative": "For today\u2019s slate, **Bryce Harper** (74.59) headlines the LawDog lineup as our primary offensive engine. Facing a favorable matchup against Junk, **Bryce Harper** benefits from an elite 12% boost in SP skill projection and a solid #3 spot in the order. He is joined in the top tier by **Lawrence Butler** (68.22), whose dynamic platoon advantage against right-handed pitching provides significant upside, and **Jonathan Aranda** (66.40), who should capitalize on a middle-of-the-road 4.50 xERA opponent. While **Justin Crawford** (62.05) sits at the bottom of the order, his contribution remains essential; in a league where stolen bases are at a premium, his elite sprint speed makes him a mandatory start despite the negative order penalty.\n\nThe most difficult decision for the lineup optimizer involved **Gavin Sheets**, who narrowly missed the cut with a 40.99 score. While **Gavin Sheets** offered a marginal platoon advantage against McLean, the optimizer opted for the higher-floor volume of **Gleyber Torres** (51.79). The lead-off position for **Gleyber Torres** provides a safer path to Runs, even with a volatile dynamic platoon score. We are keeping a close eye on the weather in **Masyn Winn**'s matchup, as a 32% rain risk creates a non-zero probability of an abbreviated outing, which could depress his 45.33 efficiency. Additionally, while we have projected **Zack Gelof**, **Jeremiah Jackson**, **Lawrence Butler**, and **Dylan Beavers** based on assumed batting orders, the lack of official lineups adds variance to their final output. Managers should remain alert as these lineups finalize to ensure the platoon and order-based bonuses hold true.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -86,7 +86,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Janson Junk (R)",
+            "Opponent": "Junk (R)",
             "SP_xERA": "4.51",
             "Warning": "",
             "GameTime": "2026-08-17T22:40:00Z",
@@ -95,6 +95,55 @@
         },
         {
             "Slot": "SS",
+            "Player": "Jeremiah Jackson",
+            "POS": "2B/SS/3B/OF",
+            "Score": 42.181010513231215,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #8)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "48.39",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "McClanahan (L)",
+            "SP_xERA": "4.14",
+            "Warning": "",
+            "GameTime": "2026-08-17T22:05:00Z",
+            "Order": "8*",
+            "Start": "10:05 PM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Masyn Winn",
             "POS": "SS",
             "Score": 45.333074020154946,
@@ -131,55 +180,6 @@
             "GameTime": "2026-08-17T17:40:00Z",
             "Order": "6",
             "Start": "05:40 PM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Gleyber Torres",
-            "POS": "2B",
-            "Score": 51.78754399559524,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "50.02",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-13%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Carmen Mlodzinski (R)",
-            "SP_xERA": "4.42",
-            "Warning": "",
-            "GameTime": "2026-08-17T23:05:00Z",
-            "Order": "1*",
-            "Start": "11:05 PM"
         },
         {
             "Slot": "3B",
@@ -223,7 +223,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Michael Wacha (R)",
+            "Opponent": "Wacha (R)",
             "SP_xERA": "4.38",
             "Warning": "",
             "GameTime": "2026-08-17T23:40:00Z",
@@ -232,18 +232,18 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Braden Montgomery",
+            "Player": "Lawrence Butler",
             "POS": "OF",
-            "Score": 44.50918797037444,
+            "Score": 68.21606330443736,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
+                    "label": "Lineup Pending (Assumed #6)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "43.54",
+                    "value": "54.42",
                     "type": "info"
                 },
                 {
@@ -253,31 +253,26 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
+                    "value": "+1%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
+                    "value": "+9%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+13%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Shota Imanaga (L)",
-            "SP_xERA": "3.74",
+            "Opponent": "Wacha (R)",
+            "SP_xERA": "4.38",
             "Warning": "",
-            "GameTime": "2026-08-18T00:05:00Z",
-            "Order": "5*",
-            "Start": "12:05 AM"
+            "GameTime": "2026-08-17T23:40:00Z",
+            "Order": "6*",
+            "Start": "11:40 PM"
         },
         {
             "Slot": "OF2",
@@ -316,7 +311,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Janson Junk (R)",
+            "Opponent": "Junk (R)",
             "SP_xERA": "4.51",
             "Warning": "",
             "GameTime": "2026-08-17T22:40:00Z",
@@ -325,6 +320,50 @@
         },
         {
             "Slot": "OF3",
+            "Player": "Braden Montgomery",
+            "POS": "OF",
+            "Score": 44.50918797037444,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "43.54",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Shota Imanaga (L)",
+            "SP_xERA": "3.74",
+            "Warning": "",
+            "GameTime": "2026-08-18T00:05:00Z",
+            "Order": "5",
+            "Start": "12:05 AM"
+        },
+        {
+            "Slot": "OF4",
             "Player": "Bryce Harper",
             "POS": "1B/OF",
             "Score": 74.59355478604176,
@@ -365,7 +404,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Janson Junk (R)",
+            "Opponent": "Junk (R)",
             "SP_xERA": "4.51",
             "Warning": "",
             "GameTime": "2026-08-17T22:40:00Z",
@@ -373,7 +412,7 @@
             "Start": "10:40 PM"
         },
         {
-            "Slot": "OF4",
+            "Slot": "OF5",
             "Player": "Dylan Beavers",
             "POS": "OF",
             "Score": 44.76770107533374,
@@ -422,63 +461,14 @@
             "Start": "10:05 PM"
         },
         {
-            "Slot": "OF5",
-            "Player": "Lawrence Butler",
-            "POS": "OF",
-            "Score": 68.21606330443736,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "54.42",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+9%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+13%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Michael Wacha (R)",
-            "SP_xERA": "4.38",
-            "Warning": "",
-            "GameTime": "2026-08-17T23:40:00Z",
-            "Order": "6*",
-            "Start": "11:40 PM"
-        },
-        {
             "Slot": "UTIL",
-            "Player": "JJ Bleday",
-            "POS": "OF",
-            "Score": 48.320848172415474,
+            "Player": "Gleyber Torres",
+            "POS": "2B",
+            "Score": 51.78754399559524,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "49.01",
+                    "value": "50.02",
                     "type": "info"
                 },
                 {
@@ -488,31 +478,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+5%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-14%",
+                    "value": "-2%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "SP Skill",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Andre Pallante (R)",
-            "SP_xERA": "4.22",
-            "Warning": "\u26a0\ufe0f Rain Risk (32%)",
-            "GameTime": "2026-08-17T22:40:00Z",
-            "Order": "3*",
-            "Start": "10:40 PM"
+            "Opponent": "Mlodzinski (R)",
+            "SP_xERA": "4.42",
+            "Warning": "",
+            "GameTime": "2026-08-17T23:05:00Z",
+            "Order": "1",
+            "Start": "11:05 PM"
         }
     ],
     "players_sat": [
@@ -685,6 +675,60 @@
         },
         {
             "Slot": "BN",
+            "Player": "JJ Bleday",
+            "POS": "OF",
+            "Order": "-",
+            "Start": "05:40 PM",
+            "Opponent": "Mathews (L)",
+            "SP_xERA": "6.15",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.01",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
+                {
+                    "label": "Benched - Below Zebras Floor (40.0).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "\u26a0\ufe0f Rain Risk (32%)",
+            "GameTime": "2026-08-17T17:40:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
             "Order": "-",
@@ -701,60 +745,6 @@
             ],
             "Warning": "",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Jeremiah Jackson",
-            "POS": "2B/SS/3B/OF",
-            "Order": "8*",
-            "Start": "10:05 PM",
-            "Opponent": "McClanahan (L)",
-            "SP_xERA": "4.14",
-            "Score": 42.181010513231215,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "48.39",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-08-17T22:05:00Z"
         },
         {
             "Slot": "BN",
