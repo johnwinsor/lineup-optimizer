@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-17",
-    "last_updated": "2026-08-17T18:26:42.679120+00:00",
+    "last_updated": "2026-08-17T19:22:37.820425+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 645.46,
-    "narrative": "For today\u2019s slate, **Bryce Harper** (74.59) and **Lawrence Butler** (68.21) represent our most potent offensive assets. **Bryce Harper** holds the highest efficiency score of the day, capitalizing on a favorable matchup against Janson Junk; his 0.389 xwOBA and elite slotting in the three-hole create a prime environment for both power and counting stats. Similarly, **Lawrence Butler** is projected to thrive against Michael Wacha, with his dynamic platoon advantage (+13%) elevating him into an elite tier. We are also leaning heavily on the high-contact profile of **Luis Arraez** (64.92) and the speed upside of **Justin Crawford** (64.09), both of whom benefit from the soft landing provided by Junk, whose 4.51 xERA makes him an ideal target to pad our run and RBI totals.\n\nThe decision-making process was particularly tight regarding the bottom of our order. **JJ Bleday** (48.32) narrowly edged out **Jeremiah Jackson** (42.18) for the final UTIL spot. While **Jeremiah Jackson** has shown flashes of potential, the optimizer favored **JJ Bleday**\u2019s superior spot in the batting order, despite the lingering 32% rain risk that necessitates monitoring. We are keeping **Gleyber Torres** (51.78) active despite a negative platoon swing, as his leadoff role remains too valuable to ignore in our current roster construction. Conversely, we are playing it safe with **Braden Montgomery** (44.51) and **Dylan Beavers** (44.76), as both face difficult left-handed arms in Shota Imanaga and Shane McClanahan, respectively, dragging their efficiency scores toward the marginal floor.\n\nManagement must remain vigilant regarding the volatile weather in games involving **Masyn Winn** and **JJ Bleday**. The rain risk at their venues introduces significant variance, though **Masyn Winn** remains a locked start given the soft 9.00 xERA of his opposing pitcher. We are also monitoring the status of **Will Smith** and **Cal Raleigh**; the lack of availability for these key contributors continues to force us to rely on internal depth such as **Jonathan Aranda** and **Zack Gelof** to anchor the infield. With **Jos\u00e9 Ram\u00edrez**, **Daulton Varsho**, **Tyler Freeman**, **Yainer Diaz**, **Matt Chapman**, **Brendan Donovan**, **Jung Hoo Lee**, **Kyle Karros**, and **Alex Freeland** currently managing their own situational constraints, today is about maximizing the efficiency of our core starters against favorable xERA matchups.",
+    "total_efficiency_score": 628.3,
+    "narrative": "LawDog enters today\u2019s slate with a clear focal point: exploiting the matchup against Janson Junk. The standout play is **Bryce Harper**, whose efficiency score of 74.59 makes him our highest-projected bat. With a favorable SP_xERA of 4.51 and a prime #3 spot in the order, **Bryce Harper** is positioned to anchor our production. He is closely followed by **Lawrence Butler** (68.22), who benefits from a robust +13% dynamic platoon edge against Michael Wacha, and **Jonathan Aranda** (66.40), whose projected output is bolstered by an advantageous #2 lineup spot and a solid matchup against Brandon Young. While **Justin Crawford** maintains a strong 62.05 score, his value is slightly suppressed by a #9 order position; however, given our aggressive weighting toward elite sprint speed to bolster our stolen base standing, **Justin Crawford** remains an essential component of the daily configuration.\n\nThe most difficult decision for the rotation was determining the final UTIL spot, ultimately favoring **JJ Bleday** (48.32) over **Jeremiah Jackson** (42.18). Although **Jeremiah Jackson** showed potential, his -6% penalty for a projected #8 batting order ultimately kept him on the bench in favor of the higher-upside hitting environment for **JJ Bleday**. Risk management remains a secondary priority, as we are monitoring a 32% rain risk in games involving **Masyn Winn** and **JJ Bleday**. Additionally, several lineup slots are currently dependent on pending official postings\u2014most notably **Gleyber Torres**, **Zack Gelof**, **Braden Montgomery**, **Dylan Beavers**, **Lawrence Butler**, and **JJ Bleday**. We will continue to monitor these statuses; should **Gleyber Torres** or **Zack Gelof** shift down the order, we may need to re-evaluate their starting eligibility to protect our precious game caps.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -11,11 +11,6 @@
             "POS": "1B",
             "Score": 66.40007334302084,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.20",
@@ -51,7 +46,7 @@
             "SP_xERA": "4.50",
             "Warning": "",
             "GameTime": "2026-08-17T22:05:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "10:05 PM"
         },
         {
@@ -60,11 +55,6 @@
             "POS": "1B/2B",
             "Score": 64.92331738041368,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.46",
@@ -100,14 +90,14 @@
             "SP_xERA": "4.51",
             "Warning": "",
             "GameTime": "2026-08-17T22:40:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "10:40 PM"
         },
         {
             "Slot": "SS",
             "Player": "Masyn Winn",
             "POS": "SS",
-            "Score": 60.44409869353992,
+            "Score": 45.333074020154946,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -126,8 +116,8 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+19%",
-                    "type": "positive"
+                    "value": "-9%",
+                    "type": "negative"
                 },
                 {
                     "label": "Dynamic Platoon (L)",
@@ -136,7 +126,7 @@
                 }
             ],
             "Opponent": "Emanuel (L)",
-            "SP_xERA": "9.00",
+            "SP_xERA": "3.60",
             "Warning": "\u26a0\ufe0f Rain Risk (32%)",
             "GameTime": "2026-08-17T17:40:00Z",
             "Order": "6",
@@ -293,13 +283,8 @@
             "Slot": "OF2",
             "Player": "Justin Crawford",
             "POS": "OF",
-            "Score": 64.09573686274025,
+            "Score": 62.0501282394613,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.37",
@@ -326,8 +311,8 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #9",
+                    "value": "-8%",
                     "type": "negative"
                 }
             ],
@@ -335,7 +320,7 @@
             "SP_xERA": "4.51",
             "Warning": "",
             "GameTime": "2026-08-17T22:40:00Z",
-            "Order": "8*",
+            "Order": "9",
             "Start": "10:40 PM"
         },
         {
@@ -344,11 +329,6 @@
             "POS": "1B/OF",
             "Score": 74.59355478604176,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "58.33",
@@ -389,7 +369,7 @@
             "SP_xERA": "4.51",
             "Warning": "",
             "GameTime": "2026-08-17T22:40:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "10:40 PM"
         },
         {
@@ -434,7 +414,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Shane McClanahan (L)",
+            "Opponent": "McClanahan (L)",
             "SP_xERA": "4.14",
             "Warning": "",
             "GameTime": "2026-08-17T22:05:00Z",
@@ -728,7 +708,7 @@
             "POS": "2B/SS/3B/OF",
             "Order": "8*",
             "Start": "10:05 PM",
-            "Opponent": "Shane McClanahan (L)",
+            "Opponent": "McClanahan (L)",
             "SP_xERA": "4.14",
             "Score": 42.181010513231215,
             "Breakdown": [
@@ -782,7 +762,7 @@
             "POS": "1B/OF",
             "Order": "7*",
             "Start": "11:10 PM",
-            "Opponent": "Nolan McLean (R)",
+            "Opponent": "McLean (R)",
             "SP_xERA": "3.49",
             "Score": 40.988822669293064,
             "Breakdown": [

@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-17",
-    "last_updated": "2026-08-17T18:25:58.611988+00:00",
+    "last_updated": "2026-08-17T19:22:15.330799+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 707.05,
-    "narrative": "The Austin Waves enter today\u2019s slate with **Kyle Tucker** (85.90) serving as our undisputed anchor. Facing a favorable matchup against the hittable Tomoyuki Sugano (4.93 xERA), **Kyle Tucker** benefits from a massive park factor boost (+14%) and strong SP skill synergy, making him an elite start. **Andy Pages** (74.42) and **Drake Baldwin** (71.20) are the only other players crossing the 70-point threshold; **Andy Pages** enjoys the same favorable venue as **Kyle Tucker**, while **Drake Baldwin** is poised to exploit a high-xERA matchup against Bailey Ober. These three serve as the core of today\u2019s offensive strategy, providing the highest probability of output across our 5x5 categories.\n\nIn terms of bench decisions, **Jackson Merrill** (53.97) remains the most critical pivot point. He narrowly outperformed several other fringe options, but ultimately earned the UTIL spot due to his dynamic platoon advantage (+13%) against Nolan McLean, which outweighed the negative SP skill impact. Conversely, **Gunnar Henderson** (52.61) and **Miguel Vargas** (51.34) occupy \"Marginal\" territory; while their raw talent is high, their platoon splits against Shota Imanaga act as a significant drag on their daily efficiency scores. We continue to monitor the status of **Vladimir Guerrero Jr.** and **Jordan Westburg**, who remain sidelined on the IL, while **Luis Garc\u00eda Jr.** and **Heliot Ramos** are omitted today due to scheduling gaps. \n\nManagers should be wary of the reliance on \"Lineup Pending\" status, particularly for **Liam Hicks** and **Coby Mayo**, whose final batting order placement could further impact their sub-60 scores. While **Luis Robert Jr.** (51.56) provides a high ceiling, his -15% platoon penalty against Walker Buehler necessitates close monitoring. Our depth players\u2014**Nasim Nunez**, **Josh Jung**, **Curtis Mead**, **Wade Meckler**, and **Luis Lara**\u2014remain ready to pinch-hit should late lineup scratches occur, though no immediate changes to the starting group are projected at this time.",
+    "total_efficiency_score": 711.66,
+    "narrative": "Our strongest offensive engine today is centered in the favorable hitting environment against Tomoyuki Sugano, making **Kyle Tucker** (85.90) and **Andy Pages** (74.42) the pillars of the lineup. **Kyle Tucker** benefits from an elite combination of a high base projection and a massive +14% park adjustment, while **Andy Pages** leverages the same park factor alongside a favorable matchup against the right-handed Sugano. Similarly, **Drake Baldwin** (71.82) is a mandatory start; despite the \"Lineup Pending\" status, his elite matchup against Ober (4.81 xERA) and the benefit of a +5% wind-out factor significantly boost his daily outlook, making him our highest-projected catcher. **Dominic Smith** (61.88) rounds out the strong tier, with the same weather-driven wind advantage helping him overcome a bottom-third batting order position.\n\nOur most difficult decision involved balancing high-floor bats against the scarcity of stolen bases. **Jackson Merrill** (53.97) ultimately edged out the rest of the bench to take the UTIL slot, as his favorable platoon split against McLean (R) narrowly outweighed the marginal projections of **Coby Mayo** (47.65) and **Sam Antonacci** (48.29). **Sam Antonacci** and **Gunnar Henderson** faced the heaviest resistance today due to the \"left-on-left\" penalty against Shota Imanaga and McClanahan, respectively, though both are kept in the lineup given the lack of superior active alternatives. We remain cautious regarding **Luis Robert Jr.** (52.59); while his physical tools are elite, the -15% dynamic platoon penalty against Buehler limits his ceiling, necessitating a close watch on his final lineup confirmation. With **Vladimir Guerrero Jr.**, **Jordan Westburg**, **Luis Garc\u00eda Jr.**, and **Heliot Ramos** unavailable due to injury or scheduling, the roster depth is stretched; we are prepared to pivot to high-upside bench options like **Nasim Nunez**, **Josh Jung**, **Curtis Mead**, **Wade Meckler**, or **Luis Lara** should any late-scratch announcements emerge from the pending lineups.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -11,11 +11,6 @@
             "POS": "C/1B",
             "Score": 51.97139084950001,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "42.78",
@@ -51,14 +46,14 @@
             "SP_xERA": "4.50",
             "Warning": "",
             "GameTime": "2026-08-17T22:05:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "10:05 PM"
         },
         {
             "Slot": "C2",
             "Player": "Drake Baldwin",
             "POS": "C",
-            "Score": 71.19633822217646,
+            "Score": 71.8284521611626,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -99,9 +94,14 @@
                     "label": "xwOBA Good",
                     "value": "0.373",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Bailey Ober (R)",
+            "Opponent": "Ober (R)",
             "SP_xERA": "4.81",
             "Warning": "",
             "GameTime": "2026-08-17T23:40:00Z",
@@ -150,7 +150,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Shane McClanahan (L)",
+            "Opponent": "McClanahan (L)",
             "SP_xERA": "4.14",
             "Warning": "",
             "GameTime": "2026-08-17T22:05:00Z",
@@ -297,7 +297,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Shane McClanahan (L)",
+            "Opponent": "McClanahan (L)",
             "SP_xERA": "4.14",
             "Warning": "",
             "GameTime": "2026-08-17T22:05:00Z",
@@ -367,7 +367,7 @@
             "Slot": "OF2",
             "Player": "Dominic Smith",
             "POS": "1B/OF",
-            "Score": 58.93374512060721,
+            "Score": 61.88043237663758,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -403,9 +403,14 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Bailey Ober (R)",
+            "Opponent": "Ober (R)",
             "SP_xERA": "4.81",
             "Warning": "",
             "GameTime": "2026-08-17T23:40:00Z",
@@ -460,13 +465,8 @@
             "Slot": "OF4",
             "Player": "Luis Robert Jr.",
             "POS": "OF",
-            "Score": 51.564863474483545,
+            "Score": 52.596160743973215,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "57.33",
@@ -491,13 +491,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "-15%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Walker Buehler (R)",
             "SP_xERA": "4.41",
             "Warning": "",
             "GameTime": "2026-08-17T23:10:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "11:10 PM"
         },
         {
@@ -591,7 +596,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Nolan McLean (R)",
+            "Opponent": "McLean (R)",
             "SP_xERA": "3.49",
             "Warning": "",
             "GameTime": "2026-08-17T23:10:00Z",
