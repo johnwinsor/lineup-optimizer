@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-17",
-    "last_updated": "2026-08-17T21:21:38.365995+00:00",
+    "last_updated": "2026-08-17T22:18:13.985968+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 746.46,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with **Pete Crow-Armstrong** serving as the cornerstone of the outfield, boasting our highest daily efficiency score of 80.24. Despite facing a formidable arm in Luis Castillo, the projected lineup placement atop the order combined with an elite platoon advantage makes him our primary catalyst for stolen bases\u2014a critical priority for this roster. **Trea Turner** (73.19) and **Kyle Schwarber** (72.52) follow closely behind, both capitalizing on a soft matchup against Junk. The high scores for **Trea Turner** and **Kyle Schwarber** are fueled by favorable park factors and the aggressive utilization of the #2 and #1 spots in the order, respectively, allowing them to maximize counting stat volume against a middling pitching profile. **Junior Caminero** (72.15) rounds out the top tier, leveraging a strong xwOBA profile to overcome a minor negative park adjustment.\n\nWe continue to lean into platoon edges to squeeze efficiency out of the middle of our lineup, most notably with **Caleb Durbin** (69.02). His high score is bolstered by a significant SP Skill advantage against Mitch Bratt, though his start is tempered by a 30% rain risk. **Colt Keith** (61.53) also earns a strong start, comfortably outperforming the marginal tier by maintaining a positive platoon edge against Mlodzinski. The most difficult personnel decision involved **Pedro Ramirez**, whose 50.32 score made him the final man left on the bench. While his switch-hitting profile provides some versatility, the optimizer ultimately preferred the higher projected run-scoring potential of **Hector Rodriguez** (56.40), despite the latter\u2019s own 32% weather risk.\n\nManagement must remain vigilant regarding the volatile weather in the **Caleb Durbin**, **Lars Nootbaar**, and **Hector Rodriguez** games, as cumulative rain delays could necessitate emergency pivots to our bench depth. Furthermore, while **Lars Nootbaar** and **Pete Crow-Armstrong** currently carry \"Lineup Pending\" designations, our strategy remains predicated on their assumed leadoff roles. Should these players shift down in their respective orders, we may see a significant contraction in their current scoring efficiency, potentially forcing a re-evaluation of the bench depth provided by **Pedro Ramirez**, **Josh Smith**, or **Casey Schmitt** to maintain our competitive edge in the 5x5 categories.",
+    "narrative": "The Zurich Zebras enter today\u2019s slate with a clear focal point in **Pete Crow-Armstrong** (80.24), who stands as our premier start. His matchup against Castillo represents an ideal synergy of speed-first utility and a favorable platoon advantage (+14%), making him the engine of our stolen base pursuit. Following close behind, **Trea Turner** (73.19), **Junior Caminero** (72.15), and **Kyle Schwarber** (72.52) are all locked into high-leverage spots against Junk; with the opposing pitcher's xERA resting at 4.51, these three provide the necessary power-speed mix to exploit the matchup. **Colt Keith** (61.53) also earns a nod as a strong play, benefiting from a clean platoon advantage that outweighs the minor park penalties he faces against Mlodzinski.\n\nDecisions in the middle of the lineup were dictated by high-upside matchup factors. **Caleb Durbin** (69.02) is a mandatory start despite a 30% rain risk, as his +19% SP skill adjustment against Bratt is too valuable to ignore. On the bench, **Pedro Ramirez** (48.81) was the final cut; while he offers solid versatility, his lower projected efficiency in the #7 hole makes him the odd man out behind our top-six producers. We remain cautious of the weather, specifically with **Lars Nootbaar** and **Hector Rodriguez**, who join **Caleb Durbin** in facing potential precipitation. Should the rain force a late-scratched lineup, we have depth ready to plug the gap to ensure we maximize our daily game caps without sacrificing our core stolen base threats.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -174,7 +174,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Shota Imanaga (L)",
+            "Opponent": "Imanaga (L)",
             "SP_xERA": "3.74",
             "Warning": "",
             "GameTime": "2026-08-18T00:05:00Z",
@@ -311,7 +311,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Walker Buehler (R)",
+            "Opponent": "Buehler (R)",
             "SP_xERA": "4.41",
             "Warning": "",
             "GameTime": "2026-08-17T23:10:00Z",
@@ -369,11 +369,6 @@
             "Score": 80.2423280301248,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "60.83",
                     "type": "info"
@@ -413,7 +408,7 @@
             "SP_xERA": "4.18",
             "Warning": "",
             "GameTime": "2026-08-18T00:05:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "12:05 AM"
         },
         {
@@ -697,17 +692,12 @@
             "Slot": "BN",
             "Player": "Pedro Ramirez",
             "POS": "2B/3B",
-            "Order": "6*",
+            "Order": "7",
             "Start": "12:05 AM",
             "Opponent": "Castillo, L (R)",
             "SP_xERA": "4.18",
-            "Score": 50.32083115743446,
+            "Score": 48.81120622271143,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.98",
@@ -734,7 +724,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
