@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-18",
-    "last_updated": "2026-08-18T20:14:04.981031+00:00",
+    "last_updated": "2026-08-18T21:15:17.181042+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 711.08,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a potent offensive outlook, anchored by the elite 87.42 efficiency score for **Yordan Alvarez**. Facing a favorable matchup against Klassen (xERA 6.12), **Yordan Alvarez** stands out as the cornerstone of our lineup, bolstered by an elite 0.461 xwOBA. We are also leaning heavily into the top-of-the-order potential provided by **Kyle Schwarber** (71.83) and **Trea Turner** (71.04). Both benefit significantly from leading off or hitting second against Gibson, whose 4.19 xERA presents a prime opportunity for high-volume scoring. While **Christian Encarnacion-Strand** (69.43) sits as our utility play, his massive 16% park factor adjustment against Rod\u00f3n makes him a high-upside gamble that the optimizer clearly prefers over the marginal reliability of middle-tier starters.\n\nThe most difficult decision on today\u2019s bench was keeping **Jacob Gonzalez** (50.58) out of the starting nine. While **Jacob Gonzalez** posted a respectable score driven by favorable platoon dynamics, he ultimately lacked the ceiling of **Hector Rodriguez** (51.71), whose park and platoon factors narrowly edged him out for the final outfield spot. We are also monitoring **Pete Crow-Armstrong** (59.31) closely; his aggressive base-running environment\u2014specifically the 87% SB potential against the opposing starter\u2014is a primary driver of his inclusion, even as he faces a slight risk from a -15% dynamic platoon adjustment.\n\nRisks today are concentrated in our lineup pending status for both **Yordan Alvarez** and **Christian Yelich** (53.26). While we have projected them in the #2 and #6 spots respectively, any downward shift in order could dampen their efficiency. **Christian Yelich** specifically remains a moderate concern; while his 53.26 score keeps him in the mix, his -13% SP skill penalty against Bryce Miller serves as a reminder that we are riding his platoon advantage rather than raw dominance. We are prepared to adjust if the confirmed lineups shift our expected order for **Pete Crow-Armstrong**, but for now, the Zebras are positioned to maximize R and RBI potential while hunting stolen base opportunities.",
+    "total_efficiency_score": 712.14,
+    "narrative": "The Zurich Zebras enter August 18th with a potent offensive profile, anchored by **Yordan Alvarez** (87.42), whose elite xwOBA of 0.461 against the vulnerable Klassen makes him our premier start. The matchup against a 6.12 xERA arm provides the ideal environment for a ceiling performance. We also see high-leverage utility from **Kyle Schwarber** (71.83) and **Trea Turner** (71.04), both benefiting from favorable lineup placement and manageable matchups against Gibson. The premium on speed remains a strategic priority; while **Pete Crow-Armstrong** (59.31) faces a stiff challenge against a left-handed arm, his 87% SB success rate and the slow delivery of Hudson justify the start, as his ability to disrupt on the basepaths is vital to our category requirements.\n\nThe most difficult roster decision today involved **Christian Encarnacion-Strand** (69.43), whose favorable park factors and xwOBA efficiency ultimately earned him the UTIL spot over **Carson Benge** (50.53). While **Carson Benge** displayed respectable underlying metrics against Ray, he couldn't overcome the negative platoon split and lower raw efficiency compared to the high-upside play of **Christian Encarnacion-Strand** in this specific park configuration. Elsewhere, **Caleb Durbin** (69.40) provides excellent value at 2B, leveraging a strong platoon edge and favorable xERA profile from Kelly to maintain a high floor. \n\nRisks remain focused on the lower end of the order, specifically **Josh Smith** (55.13) and **Hector Rodriguez** (51.71), whose scores are hampered by batting order suppression. We are monitoring **Pete Crow-Armstrong** closely, as his negative platoon adjustment is significant; however, the forecasted wind blowing out provides a safety net that keeps him ahead of bench options like **Colt Keith** (46.71) or **Jacob Gonzalez** (47.54). Ensure all roster locks are monitored for late lineup adjustments to avoid burning unnecessary game caps on substitutes.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -222,11 +222,6 @@
             "Score": 87.42244547832874,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "64.76",
                     "type": "info"
@@ -266,20 +261,15 @@
             "SP_xERA": "6.12",
             "Warning": "",
             "GameTime": "2026-08-19T00:10:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "12:10 AM"
         },
         {
             "Slot": "OF2",
             "Player": "Christian Yelich",
             "POS": "OF",
-            "Score": 53.26193258780921,
+            "Score": 54.327171239565395,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.06",
@@ -304,13 +294,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+13%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Bryce Miller (R)",
+            "Opponent": "Miller, B (R)",
             "SP_xERA": "3.45",
             "Warning": "",
             "GameTime": "2026-08-18T23:40:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "11:40 PM"
         },
         {
@@ -319,11 +314,6 @@
             "POS": "OF",
             "Score": 59.31458405672209,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "60.83",
@@ -369,7 +359,7 @@
             "SP_xERA": "3.67",
             "Warning": "",
             "GameTime": "2026-08-19T00:05:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "12:05 AM"
         },
         {
@@ -507,7 +497,7 @@
             "POS": "1B/2B/3B",
             "Order": "3",
             "Start": "10:40 PM",
-            "Opponent": "Braxton Ashcraft (R)",
+            "Opponent": "Ashcraft, B (R)",
             "SP_xERA": "3.26",
             "Score": 46.710038203047404,
             "Breakdown": [
@@ -575,7 +565,7 @@
             "POS": "2B/SS",
             "Order": "7",
             "Start": "12:05 AM",
-            "Opponent": "Kevin Gausman (R)",
+            "Opponent": "Gausman (R)",
             "SP_xERA": "3.82",
             "Score": 47.517672062271174,
             "Breakdown": [
@@ -627,50 +617,20 @@
             "Slot": "BN",
             "Player": "Gary Sanchez",
             "POS": "C/1B",
-            "Order": "6*",
-            "Start": "11:40 PM",
-            "Opponent": "Bryce Miller (R)",
-            "SP_xERA": "3.45",
-            "Score": 39.95358918217231,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "48.18",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-13%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-08-18T23:40:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
@@ -768,17 +728,12 @@
             "Slot": "BN",
             "Player": "Pedro Ramirez",
             "POS": "2B/3B",
-            "Order": "7*",
+            "Order": "6",
             "Start": "12:05 AM",
             "Opponent": "Hudson, B (L)",
             "SP_xERA": "3.67",
-            "Score": 45.06032477003224,
+            "Score": 46.4539430618889,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.98",
@@ -805,17 +760,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
                     "label": "Wind Out",
                     "value": "+5%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -851,17 +801,12 @@
             "Slot": "BN",
             "Player": "Jacob Gonzalez",
             "POS": "1B/2B/SS",
-            "Order": "6*",
+            "Order": "8",
             "Start": "10:40 PM",
             "Opponent": "Montero, K (R)",
             "SP_xERA": "4.53",
-            "Score": 50.57683687553454,
+            "Score": 47.54222666300246,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "42.63",
@@ -888,7 +833,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
