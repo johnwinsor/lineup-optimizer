@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-19",
-    "last_updated": "2026-08-19T04:39:50.163756+00:00",
+    "last_updated": "2026-08-19T12:25:54.928312+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 723.42,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 708.07,
+    "narrative": "The Zurich Zebras enter tonight\u2019s slate with **Yordan Alvarez** (78.05) and **Junior Caminero** (76.17) anchoring the lineup. **Yordan Alvarez** benefits from a high-efficiency matchup against Walbert Ure\u00f1a, buoyed by an elite 0.461 xwOBA and a favorable platoon split. Meanwhile, **Junior Caminero** faces Max Scherzer; despite the name recognition of the veteran arm, Scherzer\u2019s 5.08 xERA presents a prime opportunity for **Junior Caminero** to capitalize on the weak pitching profile, further aided by a top-of-the-order boost. **Trea Turner** (73.73) and **Kyle Schwarber** (70.51) also clear the 70-point threshold, with **Trea Turner** leveraging a strong BvP history against Sandy Alcantara and **Kyle Schwarber** benefiting significantly from the leadoff spot.\n\nThe most difficult roster decision involved **Colt Keith** (44.23), who narrowly missed the starting nine despite offering intriguing stolen base potential. Ultimately, the optimizer prioritized the higher floor of **Chase Meidroth** (44.84) and the strategic platoon advantage held by **Christian Yelich** (54.68) against Logan Gilbert. While **Colt Keith** carries an \"Elite Hold\" label for speed, the daunting 3.11 xERA of opposing starter Paul Skenes suppressed his overall efficiency score below the threshold required to displace our current starters. We are also monitoring **Kazuma Okamoto** (37.73), who is currently our most vulnerable start; his score reflects the difficulty of facing Drew Rasmussen, and he is a primary candidate for a mid-game substitution if the Zebras need to chase production.\n\nManagers should proceed with caution regarding the \"Lineup Pending\" designations for all players, particularly **Pete Crow-Armstrong** (53.28), whose score is susceptible to a significant downgrade if he is shifted out of the leadoff spot against Sean Newcomb. Furthermore, the 3.41 xERA posted by Logan Gilbert poses a direct threat to both **Gary Sanchez** and **Christian Yelich**. We are betting on the platoon edge for **Christian Yelich** to maintain value, but **Gary Sanchez** remains a marginal play; if he is confirmed in the bottom third of the order, his contribution ceiling will be severely restricted by the lack of opportunities to drive in runs.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -489,7 +489,7 @@
             "Slot": "OF5",
             "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Score": 68.62669152212412,
+            "Score": 53.282922688919484,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -512,13 +512,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Sean Newcomb (L)",
+            "SP_xERA": "3.65",
             "Warning": "",
             "GameTime": "2026-08-19T18:20:00Z",
             "Order": "1*",
@@ -925,7 +935,7 @@
                     "type": "info"
                 }
             ],
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (32%)",
             "GameTime": "2026-08-19T22:40:00Z"
         },
         {
@@ -958,8 +968,8 @@
             "POS": "2B/3B",
             "Order": "6*",
             "Start": "06:20 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Sean Newcomb (L)",
+            "SP_xERA": "3.65",
             "Score": 0.0,
             "Breakdown": [
                 {
@@ -980,6 +990,16 @@
                 {
                     "label": "Park",
                     "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
                     "type": "positive"
                 },
                 {
