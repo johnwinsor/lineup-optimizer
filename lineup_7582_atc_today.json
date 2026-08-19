@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-19",
-    "last_updated": "2026-08-19T16:28:15.788990+00:00",
+    "last_updated": "2026-08-19T17:19:24.514376+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 708.67,
-    "narrative": "The Zurich Zebras face a challenging slate today, highlighted by several high-leverage spots against top-tier pitching. **Junior Caminero** (76.17) leads the offensive charge, benefiting from a soft matchup against Max Scherzer; the projected 5.08 xERA provides a massive boost, and his role in the #2 spot adds the necessary volume to capitalize on the favorable matchup. **Yordan Alvarez** (78.05) remains our most potent threat despite the moderate SP_xERA of Walbert Ure\u00f1a. His elite xwOBA profile and prime #2 lineup positioning make him an auto-start, while **Trea Turner** (73.73) and **Kyle Schwarber** (70.51) maintain high floors against Sandy Alcantara, with **Trea Turner** specifically buoyed by strong historical BvP data and a favorable #2 order bump.\n\nWhile the core is set, we are monitoring several conditional variables. **Caleb Durbin** (63.15) provides sneaky value today; his score is elevated by an favorable matchup against Brandon Pfaadt and, critically, his stolen base upside is enhanced by the SP\u2019s slower delivery to the plate. Conversely, **Kazuma Okamoto** (37.73) and **Gary Sanchez** (40.13) reside at the bottom of our start threshold. **Kazuma Okamoto** is struggling against Drew Rasmussen\u2019s sharp metrics, and **Gary Sanchez** is hampered by a tough matchup against Logan Gilbert. The most difficult bench decision involved **Chase Meidroth** (44.84); he narrowly missed the starting cut despite a solid base projection, but his suboptimal #7 position and a neutral platoon matchup against the reliever pool ultimately made him less efficient than the starters currently deployed.\n\nRisks remain prevalent across the board, particularly for **Colt Keith** (45.44), who faces a brutal matchup against the elite arm of Skenes. While his #1 spot in the order keeps him viable, the sub-2.00s pop time of the opposing catcher significantly caps his stolen base potential, forcing us to temper expectations. We also continue to monitor the \"Lineup Pending\" status for key bats like **Christian Encarnacion-Strand** and **Christian Yelich**; while their current projections hold, any downward shift in the batting order could necessitate a re-evaluation of their daily efficiency scores before first pitch.",
+    "total_efficiency_score": 709.93,
+    "narrative": "The Zurich Zebras face a challenging slate today, headlined by **Junior Caminero** (76.17) and **Yordan Alvarez** (78.05), who offer our highest efficiency scores against favorable matchups. **Junior Caminero** benefits significantly from a soft matchup against Max Scherzer, with an SP skill advantage boosting his projection by 19%. Similarly, **Yordan Alvarez** remains a locked-in core play; despite the park factors, his elite 0.461 xwOBA and platoon advantage against Walbert Ure\u00f1a cement his status as the anchor of our lineup. Meanwhile, **Trea Turner** (73.73) and **Kyle Schwarber** (70.51) maintain high utility despite facing the formidable Sandy Alcantara, as their respective order placements and BvP history help maintain their value above the 70-point threshold.\n\nThe optimizer\u2019s most difficult decision centered on the utility spot and the fringes of our outfield. **Kazuma Okamoto** (37.73) fell below our floor, prompting a deeper look at the bench. **Chase Meidroth** (44.84) was the strongest bench candidate, nearly supplanting the bottom of the order, but was ultimately held out due to a unfavorable batting order slot (#7) and neutral platoon dynamics compared to the upside of **Christian Yelich** (54.68), whose dynamic platoon edge (+13%) against Logan Gilbert makes him a riskier but higher-reward play. We are also monitoring **Pete Crow-Armstrong** (53.28); while his speed is vital for our scarcity targets, his efficiency score is suppressed by a difficult platoon matchup against S. Newcomb. \n\nRisks remain elevated across the board as several lineups, including those of **Gary Sanchez**, **Christian Encarnacion-Strand**, and **Trea Turner**, are still pending. We must remain wary of the Skenes matchup facing **Colt Keith** (45.44), where elite pitch framing and hold rates significantly dampen his stolen base probability. Furthermore, the decision to bench **Dillon Dingler** (33.13) was straightforward, as he remains well below our minimum efficiency threshold for a start today. Managers should watch for late-breaking lineup changes, as any shift down the order for our middle-of-the-pack players could trigger a benching to preserve our game caps.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -92,13 +92,8 @@
             "Slot": "2B",
             "Player": "Caleb Durbin",
             "POS": "2B/3B",
-            "Score": 63.14528756817011,
+            "Score": 64.40819331953351,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.35",
@@ -128,13 +123,18 @@
                     "label": "Slow SP Delivery (86% SB)",
                     "value": "+2%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Brandon Pfaadt (R)",
             "SP_xERA": "4.41",
             "Warning": "",
             "GameTime": "2026-08-19T20:10:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "08:10 PM"
         },
         {
@@ -586,7 +586,7 @@
             "POS": "OF",
             "Order": "8*",
             "Start": "08:10 PM",
-            "Opponent": "Payton Tolle (L)",
+            "Opponent": "Tolle (L)",
             "SP_xERA": "3.41",
             "Score": 36.518547891767206,
             "Breakdown": [
