@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-19",
-    "last_updated": "2026-08-19T18:21:03.716459+00:00",
+    "last_updated": "2026-08-19T19:28:37.246213+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 694.45,
-    "narrative": "For today\u2019s slate, **Mickey Moniak** leads the way as our strongest start with an elite 75.75 efficiency score. He draws a highly favorable matchup against Roki Sasaki; the park factors and a massive 14% platoon edge are bolstered by Sasaki\u2019s slow delivery, creating an ideal environment for **Mickey Moniak** to exploit his speed and push our stolen base targets. **Isaac Paredes** (68.00) also stands out, benefiting from a soft matchup against Walbert Ure\u00f1a, where his positive splits and top-third batting order placement cement his status as a high-floor cornerstone for our daily production.\n\nThe most difficult decision at the margins was keeping **Austin Riley** on the bench. Despite a respectable 54.83 score and a favorable park, the optimizer faded him against Taj Bradley. While **Austin Riley** offers some intrigue against slower-to-the-plate arms, his lower position in the lineup and superior efficiency numbers from **Vinnie Pasquantino** (58.16) and **Seiya Suzuki** (57.65) ultimately squeezed him out of the starting nine. Meanwhile, we are monitoring \"Lineup Pending\" statuses for key contributors like **Josh Naylor**, **Jose Caballero**, and **Max Muncy**; should any of them be dropped significantly in their respective batting orders, their scores will degrade, potentially forcing us to look at bench depth. \n\nRisk mitigation remains the theme for **Corbin Carroll** (57.20) and **Gabriel Moreno** (49.26). Both face Tolle, whose 3.41 xERA acts as a significant drag on their output. While **Corbin Carroll** remains a must-start due to his profile in our scarcest category, the negative pressure from the SP skill adjustment confirms we need to tread carefully with this lineup. With **Zach McKinstry** falling well below our 40.0 floor against an elite arm in Paul Skenes, we are comfortable prioritizing game-cap preservation over chasing marginal production in tougher matchups.",
+    "total_efficiency_score": 704.46,
+    "narrative": "Our top-tier play for August 19th is **Mickey Moniak**, who boasts a commanding 75.75 score against Roki Sasaki. His outlook is significantly bolstered by a 14% park boost and a massive platoon advantage, but the real key is the environment: facing a pitcher with a slow delivery provides an 88% probability for stolen base opportunities, making **Mickey Moniak** a must-start in our pursuit of category scarcity. Similarly, **Isaac Paredes** (68.00) remains an essential anchor today, leveraging a favorable matchup against Walbert Ure\u00f1a to provide stable production. While **Corbin Carroll** is facing a tougher task against Tolle\u2014exacerbated by a 14% skill penalty\u2014his 57.20 score remains viable because his spot at the top of the order mitigates the SP_xERA risk, though he requires careful monitoring given the aggressive hold-rate of the opposing battery.\n\nThe most difficult decision on the ledger was the exclusion of **Austin Riley** (54.83). Despite his strong profile, he fell just short of the efficiency threshold when compared to the utility output of **Vinnie Pasquantino** (58.16). While **Austin Riley** benefited from a slight boost due to a sluggish opposing delivery, his projected 8th-hole placement created a drag on his overall score that the optimizer could not overcome. Conversely, **Jose Caballero** remains in the lineup with a 61.03 despite a difficult matchup against Chris Bassitt; the model is baking in a high park-factor adjustment and a 19% boost from Bassitt\u2019s projected pitching style, signaling that **Jose Caballero**'s floor is safer than it appears on paper. \n\nManagers should maintain a high-alert status regarding the \"Lineup Pending\" designations for **Josh Naylor**, **Max Muncy**, **Brice Turang**, **Henry Bolte**, and **Vinnie Pasquantino**. Relying on historical batting order assumptions introduces variance, particularly for **Brice Turang** and **Henry Bolte**, whose scores are heavily contingent on maintaining their leadoff spots to maximize plate appearances. **Gabriel Moreno** also sits in a volatile position; while his 49.26 score is technically \"marginal,\" he is a start-only candidate today due to the lack of a superior alternative. We are essentially betting on favorable plate discipline to offset the SP skill of Tolle. Keep a close watch on late-afternoon weather reports, as any shifts in wind could quickly pull the more marginal plays like **Max Muncy** (54.29) below the 40.0 \"Below Floor\" threshold.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -156,7 +156,7 @@
             "Slot": "SS",
             "Player": "Max Muncy",
             "POS": "2B/SS/3B",
-            "Score": 50.03983152255433,
+            "Score": 54.28887835175523,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -179,13 +179,28 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (55% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Seth Lugo (R)",
+            "SP_xERA": "4.57",
             "Warning": "",
             "GameTime": "2026-08-19T23:40:00Z",
             "Order": "7*",
@@ -345,11 +360,6 @@
             "Score": 50.175641619933785,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "45.54",
                     "type": "info"
@@ -394,7 +404,7 @@
             "SP_xERA": "3.89",
             "Warning": "",
             "GameTime": "2026-08-19T22:05:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "10:05 PM"
         },
         {
@@ -450,7 +460,7 @@
             "Slot": "OF4",
             "Player": "Henry Bolte",
             "POS": "OF",
-            "Score": 53.819719589162304,
+            "Score": 59.581356283422885,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -473,13 +483,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Seth Lugo (R)",
+            "SP_xERA": "4.57",
             "Warning": "",
             "GameTime": "2026-08-19T23:40:00Z",
             "Order": "1*",
@@ -875,17 +895,12 @@
             "Slot": "BN",
             "Player": "Travis Bazzana",
             "POS": "2B",
-            "Order": "7*",
+            "Order": "5",
             "Start": "10:40 PM",
             "Opponent": "Matt Wilkinson (L)",
             "SP_xERA": "4.00",
-            "Score": 37.21722166231052,
+            "Score": 39.135635150058484,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "42.63",
@@ -902,12 +917,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }

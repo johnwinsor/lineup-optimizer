@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-19",
-    "last_updated": "2026-08-19T18:21:42.044693+00:00",
+    "last_updated": "2026-08-19T19:29:46.605834+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 821.15,
-    "narrative": "For today\u2019s slate, **Bryce Harper** (78.76) and **Jos\u00e9 Ram\u00edrez** (70.93) represent our elite-tier offensive anchors. **Bryce Harper** draws a favorable matchup against Sandy Alcantara, where his elite xwOBA and a massive +8% BvP historical edge propel him to the top of our board. Similarly, **Jos\u00e9 Ram\u00edrez** holds a strong floor despite facing a southpaw, as his elite status and prime #2 spot in the order mitigate the platoon disadvantage. We are also capitalizing on high-ceiling environments with **Jonathan Aranda** (67.94), who benefits significantly from a favorable park factor and a +19% boost due to Max Scherzer\u2019s current expected ERA of 5.08, making him a high-efficiency play at 1B.\n\nThe optimization logic leaned heavily into park-adjusted matchups, resulting in a strong showing for **JJ Bleday** (66.10) and **Dylan Beavers** (65.65), both of whom capitalize on high-park-factor environments. Our most difficult bench decision involved **Zack Gelof** (54.82). While he carries a solid profile, the optimizer relegated him to the bench in favor of the higher-floor, platoon-advantaged **Jeremiah Jackson**, whose matchup in a hitter-friendly park proved superior to the generalized projection for **Zack Gelof**. \n\nA critical note on the roster: while we are aggressive with our speed-focused lineup, we must monitor the 32% rain risk hovering over **JJ Bleday**. Furthermore, as the status of **Yainer Diaz**, **Cal Raleigh**, **Brendan Donovan**, **Jeremiah Jackson**, **Jos\u00e9 Ram\u00edrez**, **Lawrence Butler**, **Daulton Varsho**, and **JJ Bleday** remains \"Lineup Pending,\" we are locked into these assignments based on historical spot projections. Should these players shift lower in the batting order once official lineups drop, their efficiency scores will adjust downward, potentially necessitating a pivot toward bench assets like **Masyn Winn** or **Jung Hoo Lee** if game caps permit.",
+    "total_efficiency_score": 831.9,
+    "narrative": "The offensive outlook for LawDog remains robust today, anchored by **Bryce Harper**, whose 78.76 score leads the team. Facing Sandy Alcantara, **Bryce Harper** benefits from an elite 60-PA BvP history and favorable hitting conditions, pushing his projection well into the \"Strong\" tier. **Jos\u00e9 Ram\u00edrez** (70.94) and **Lawrence Butler** (72.18) also represent high-floor anchors, with **Jos\u00e9 Ram\u00edrez** maintaining elite status despite the tricky matchup against Matt Wilkinson. **Lawrence Butler** thrives on the combination of a favorable park shift and a +14% boost from SP skill metrics against Seth Lugo, making him a primary driver for our run and HR production today.\n\nPlatoon advantages and park factors are heavily influencing the bottom-third of the lineup, particularly for **Dylan Beavers** (65.65) and **Jeremiah Jackson** (59.56), both of whom benefit from an exceptional +16% park adjustment. While **Yainer Diaz** (53.01) and **Cal Raleigh** (51.35) are currently carrying \"Lineup Pending\" tags, their scores remain serviceable as we await confirmation of their positions. The most difficult personnel decision centered on **Zack Gelof**, whose 59.48 score made him the \"first man out.\" While **Zack Gelof** offers significant upside, the optimizer favored the higher park-adjusted efficiency of **Jeremiah Jackson** and the lineup security of **Justin Crawford**, whose +7% platoon edge against Alcantara keeps him as our utility play despite the -6% penalty for hitting eighth.\n\nManagers should monitor the status of **Brendan Donovan** and **Daulton Varsho** closely; both are vital to our daily SB and batting average floors, but their scores are contingent on the projected lineup positions. Should any lineup shuffling move **Brendan Donovan** out of the leadoff spot, we may see a slight volatility spike in his 62.56 efficiency. We are comfortable holding **Masyn Winn** and **Jung Hoo Lee** on the bench today, as the SP skill metrics for their respective matchups against Corbin Burnes and Chase Messick create too high a risk for efficiency degradation compared to the high-ceiling profiles of our active OF group.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -110,11 +110,6 @@
             "Score": 67.94764465365397,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "51.07",
                     "type": "info"
@@ -149,7 +144,7 @@
             "SP_xERA": "5.08",
             "Warning": "",
             "GameTime": "2026-08-19T22:40:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "10:40 PM"
         },
         {
@@ -189,7 +184,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Sandy Alcantara (R)",
+            "Opponent": "Alcantara, S (R)",
             "SP_xERA": "4.33",
             "Warning": "",
             "GameTime": "2026-08-19T22:05:00Z",
@@ -296,11 +291,6 @@
             "Score": 70.93834231804585,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "64.61",
                     "type": "info"
@@ -330,7 +320,7 @@
             "SP_xERA": "4.00",
             "Warning": "",
             "GameTime": "2026-08-19T22:40:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "10:40 PM"
         },
         {
@@ -380,7 +370,7 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Sandy Alcantara (R)",
+            "Opponent": "Alcantara, S (R)",
             "SP_xERA": "4.33",
             "Warning": "",
             "GameTime": "2026-08-19T22:05:00Z",
@@ -391,7 +381,7 @@
             "Slot": "OF2",
             "Player": "Lawrence Butler",
             "POS": "OF",
-            "Score": 55.817876669453256,
+            "Score": 72.18235506041837,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -412,10 +402,20 @@
                     "label": "Park",
                     "value": "+1%",
                     "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+13%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Seth Lugo (R)",
+            "SP_xERA": "4.57",
             "Warning": "",
             "GameTime": "2026-08-19T23:40:00Z",
             "Order": "6*",
@@ -479,13 +479,8 @@
             "Slot": "OF4",
             "Player": "JJ Bleday",
             "POS": "OF",
-            "Score": 66.10692229234567,
+            "Score": 60.49407039959934,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.74",
@@ -512,16 +507,16 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Matthew Liberatore (L)",
+            "Opponent": "Liberatore (L)",
             "SP_xERA": "4.17",
-            "Warning": "\u26a0\ufe0f Rain Risk (32%)",
+            "Warning": "",
             "GameTime": "2026-08-19T22:40:00Z",
-            "Order": "3*",
+            "Order": "7",
             "Start": "10:40 PM"
         },
         {
@@ -605,7 +600,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Sandy Alcantara (R)",
+            "Opponent": "Alcantara, S (R)",
             "SP_xERA": "4.33",
             "Warning": "",
             "GameTime": "2026-08-19T22:05:00Z",
@@ -690,17 +685,12 @@
             "Slot": "BN",
             "Player": "Masyn Winn",
             "POS": "SS",
-            "Order": "7*",
+            "Order": "6",
             "Start": "10:40 PM",
-            "Opponent": "Chase Burns (R)",
+            "Opponent": "Burns, Ch (R)",
             "SP_xERA": "3.50",
-            "Score": 45.29429077231787,
+            "Score": 46.6951451261009,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.22",
@@ -727,17 +717,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
             ],
-            "Warning": "\u26a0\ufe0f Rain Risk (32%)",
+            "Warning": "",
             "GameTime": "2026-08-19T22:40:00Z"
         },
         {
@@ -746,7 +731,7 @@
             "POS": "OF",
             "Order": "4*",
             "Start": "10:40 PM",
-            "Opponent": "Parker Messick (L)",
+            "Opponent": "Messick (L)",
             "SP_xERA": "3.62",
             "Score": 42.62434464170938,
             "Breakdown": [
@@ -795,9 +780,9 @@
             "POS": "2B/3B/OF",
             "Order": "2*",
             "Start": "11:40 PM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 54.8258373015095,
+            "Opponent": "Seth Lugo (R)",
+            "SP_xERA": "4.57",
+            "Score": 59.48127963726682,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -818,6 +803,21 @@
                     "label": "Park",
                     "value": "+1%",
                     "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (55% SB)",
+                    "value": "-2%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #2",
