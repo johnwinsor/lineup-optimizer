@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-21",
-    "last_updated": "2026-08-21T18:24:44.142102+00:00",
+    "last_updated": "2026-08-21T19:26:24.796772+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 740.88,
-    "narrative": "The Austin Waves enter today\u2019s slate with **Gunnar Henderson** headlining the roster as our definitive offensive engine. With a score of 83.29, **Gunnar Henderson** benefits from a massive 16% park factor boost and a favorable matchup against Freddy Peralta; his utility as an elite stolen-base threat is further magnified by the pitcher\u2019s slow delivery, which the model projects as an 87% probability for a stolen base. **Kyle Tucker** (74.88) and **Andy Pages** (74.11) also provide strong returns, both buoyed by a lucrative matchup against Bubba Chandler (xERA 4.85). **Andy Pages** specifically draws a 2% boost for his matchup against Chandler\u2019s slow pace, making him a high-upside play in the two-hole, while **Kyle Tucker** stabilizes the outfield despite a lower-than-ideal lineup placement at #7.\n\nThe most challenging decision today involves our infield depth, specifically the exclusion of **Luis Garc\u00eda Jr.** from the active lineup. While **Luis Garc\u00eda Jr.** produced a respectable 45.16, he ultimately fell short of the threshold required to displace players like **Coby Mayo** (59.94), whose park factor advantage in the same matchup against Peralta makes him the superior utility play. We remain cautious regarding the weather, as **Miguel Vargas** and **Luis Robert Jr.** are both facing a 37% rain risk; while **Miguel Vargas** maintains a solid 49.18 score, any delay or cancellation could significantly impact our production at 3B. Additionally, managers should note that while **Liam Hicks**, **Tommy White**, **Nasim Nunez**, **Jacob Wilson**, **Heliot Ramos**, **Luis Robert Jr.**, **Jackson Merrill**, and **Coby Mayo** are all currently listed with \"Lineup Pending\" status, the optimizer has been configured based on historical projections to ensure we maintain our competitive edge in the 5x5 categories.",
+    "total_efficiency_score": 737.94,
+    "narrative": "The Austin Waves are primed for a high-ceiling outing, anchored by **Gunnar Henderson**, who earns our day\u2019s highest efficiency score of 83.29. Facing a favorable park environment against a pitcher in Freddy Peralta, **Gunnar Henderson** benefits from a dynamic platoon advantage and a slow delivery profile that significantly bolsters his stolen base potential. Similarly, **Kyle Tucker** (74.88) and **Andy Pages** (74.11) represent elite starts in their matchups against Bubba Chandler; both hitters capitalize on a favorable SP skill profile, with **Andy Pages** specifically providing added value through a projected high-order placement and opportunistic base-stealing conditions.\n\nWhile we remain confident in the core, the lineup optimization was tightest regarding our middle infield and utility slots. **Luis Garc\u00eda Jr.** was the most difficult exclusion from today's active roster, scoring 45.16. While he carries a strong base projection, the combination of a difficult matchup against the lefty Mason Fluharty and a heavy platoon penalty tipped the optimizer to prioritize the higher-upside profiles of **Jacob Wilson** (59.96) and **Nasim Nunez** (51.84). We are also monitoring the status of **Luis Robert Jr.** and **Miguel Vargas**, who are currently active despite a 37% rain risk; while both provide necessary statistical contributions, their scores are depressed by poor platoon splits or tough SP matchups, keeping them near the lower end of our starting threshold. We will adjust based on confirmed weather reports and the finalized batting orders for the remainder of our roster, including **Liam Hicks**, **Drake Baldwin**, **Tommy White**, and **Coby Mayo**, to ensure we maintain our competitive edge in the scarcity-driven SB category.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -47,7 +47,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Trevor Rogers (L)",
+            "Opponent": "Rogers, Tr (L)",
             "SP_xERA": "4.20",
             "Warning": "",
             "GameTime": "2026-08-21T23:15:00Z",
@@ -194,7 +194,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Ryan Gusto (R)",
+            "Opponent": "Gusto (R)",
             "SP_xERA": "4.00",
             "Warning": "",
             "GameTime": "2026-08-21T23:10:00Z",
@@ -257,11 +257,6 @@
             "Score": 83.29399761556267,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "61.70",
                     "type": "info"
@@ -301,23 +296,18 @@
             "SP_xERA": "4.35",
             "Warning": "",
             "GameTime": "2026-08-21T23:15:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:15 PM"
         },
         {
             "Slot": "3B",
-            "Player": "Miguel Vargas",
+            "Player": "Coby Mayo",
             "POS": "1B/3B",
-            "Score": 49.178783700333426,
+            "Score": 57.00248000681238,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "49.13",
+                    "value": "49.42",
                     "type": "info"
                 },
                 {
@@ -327,41 +317,36 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
+                    "value": "+16%",
+                    "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-5%",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-8%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
+                    "label": "Slow SP Delivery (87% SB)",
                     "value": "+2%",
                     "type": "positive"
                 },
                 {
-                    "label": "Elite Hold SP (60% SB)",
-                    "value": "-2%",
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.382",
-                    "type": "info"
                 }
             ],
-            "Opponent": "Sean Manaea (L)",
-            "SP_xERA": "3.79",
-            "Warning": "\u26a0\ufe0f Rain Risk (37%)",
-            "GameTime": "2026-08-21T23:40:00Z",
-            "Order": "3*",
-            "Start": "11:40 PM"
+            "Opponent": "Freddy Peralta (R)",
+            "SP_xERA": "4.35",
+            "Warning": "",
+            "GameTime": "2026-08-21T23:15:00Z",
+            "Order": "7",
+            "Start": "11:15 PM"
         },
         {
             "Slot": "OF1",
@@ -610,18 +595,18 @@
         },
         {
             "Slot": "UTIL",
-            "Player": "Coby Mayo",
+            "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Score": 59.94075217211198,
+            "Score": 49.178783700333426,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
+                    "label": "Lineup Pending (Assumed #3)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "49.42",
+                    "value": "49.13",
                     "type": "info"
                 },
                 {
@@ -631,36 +616,41 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+16%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-8%",
+                    "value": "-1%",
                     "type": "negative"
                 },
                 {
-                    "label": "Slow SP Delivery (87% SB)",
+                    "label": "SP Skill",
+                    "value": "-5%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
                     "value": "+2%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.382",
+                    "type": "info"
                 }
             ],
-            "Opponent": "Freddy Peralta (R)",
-            "SP_xERA": "4.35",
-            "Warning": "",
-            "GameTime": "2026-08-21T23:15:00Z",
-            "Order": "5*",
-            "Start": "11:15 PM"
+            "Opponent": "Sean Manaea (L)",
+            "SP_xERA": "3.79",
+            "Warning": "\u26a0\ufe0f Rain Risk (37%)",
+            "GameTime": "2026-08-21T23:40:00Z",
+            "Order": "3*",
+            "Start": "11:40 PM"
         }
     ],
     "players_sat": [
