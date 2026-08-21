@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-21",
-    "last_updated": "2026-08-21T20:16:32.033120+00:00",
+    "last_updated": "2026-08-21T21:17:22.693440+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 710.35,
-    "narrative": "Today\u2019s slate for Ghost Ride the WHIP centers around the high-upside profile of **Corbin Carroll**, who stands as our clear anchor with a 77.67 efficiency score. Despite facing a mediocre arm in Nick Lodolo, **Corbin Carroll** benefits from a strong lineup position and park factors that elevate his base projection significantly. Similarly, **Gabriel Moreno** (65.17) and **Vinnie Pasquantino** (64.58) provide elite, balanced production; **Vinnie Pasquantino** in particular draws a favorable matchup against Troy Melton, with the platoon dynamic shifting his score into premium territory. While we are tracking the status of several \"Lineup Pending\" designations, the projected top-of-the-order slots for **Travis Bazzana** and **Mickey Moniak** grant them park-adjusted surges that make them vital components of our scoring floor today.\n\nThe most difficult decision on today\u2019s bench was managing the high-speed utility profile of **Brice Turang**. With a score of 45.73, **Brice Turang** narrowly missed the cut behind **Cole Young**, whose matchup against Matthew Boyd offers slightly more path-to-success despite a difficult park environment. The optimizer leaned toward the raw efficiency of the current starters, leaving **Brice Turang** on the pine as a pinch-run contingency should our stolen base total stagnate. Meanwhile, we remain sidelined on **James Wood**, who continues to occupy an IL slot. We are keeping a close eye on the wind and potential mid-game volatility for **Jose Caballero** and **Zach McKinstry**; while both occupy lower lineup slots, their ability to exploit specific platoon advantages against left-handed pitching remains a strategic hedge, provided they avoid the \"below floor\" category during the early innings.",
+    "total_efficiency_score": 685.5,
+    "narrative": "For the August 21st slate, our offensive engine is anchored by **Corbin Carroll**, who stands as our clear top play with a 77.67 efficiency score. His matchup against Nick Lodolo is ideal; while Lodolo possesses a 4.68 xERA, **Corbin Carroll** thrives in high-leverage spots despite the mild platoon disadvantage, and his batting order placement at #2 provides the volume necessary to hunt stolen bases\u2014our most critical scarcity category. **Gabriel Moreno** (65.17) and **Vinnie Pasquantino** (64.58) follow closely as high-floor anchors. **Vinnie Pasquantino** benefits significantly from a 14% dynamic platoon boost against a right-handed starter, while **Isaac Paredes** (62.39) also climbs into the \"Strong\" category thanks to an favorable matchup against Ginn and a productive slot in the heart of the order.\n\nOur most difficult bench decision involved **Brice Turang**, who fell just shy of the threshold at 45.73. While **Brice Turang** usually profiles as a core starter for his speed, the combination of facing an elite arm in Chris Sale and a significant penalty for SP skill (-19%) forced us to prioritize the efficiency of **Mickey Moniak** and **Jose Caballero**, who offer better situational alignment against their respective matchups. We remain wary of the volatility surrounding **Cole Young**, **Seiya Suzuki**, and **Josh Naylor**, all of whom are currently in \"Lineup Pending\" status; should their actual batting orders shift downward, their efficiency scores will crater, necessitating late-afternoon adjustments to protect our game caps. With **Trevor Story** and **James Wood** confirmed to remain on the IL, we are leaning heavily on the current depth chart to capitalize on the park factors boosting players like **Travis Bazzana**, whose 14% park-related score increase keeps him in the lineup despite the lower spot in the order.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -61,11 +61,6 @@
             "Score": 64.57682267571033,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "54.02",
                     "type": "info"
@@ -91,15 +86,103 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Troy Melton (R)",
+            "Opponent": "Melton (R)",
             "SP_xERA": "4.04",
             "Warning": "",
             "GameTime": "2026-08-22T00:10:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "12:10 AM"
         },
         {
             "Slot": "2B",
+            "Player": "Travis Bazzana",
+            "POS": "2B",
+            "Score": 53.27270472204104,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "45.52",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Gordon, T (R)",
+            "SP_xERA": "3.92",
+            "Warning": "",
+            "GameTime": "2026-08-22T00:40:00Z",
+            "Order": "7",
+            "Start": "12:40 AM"
+        },
+        {
+            "Slot": "SS",
+            "Player": "Max Muncy",
+            "POS": "2B/SS/3B",
+            "Score": 50.49327520399047,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "52.79",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
+                }
+            ],
+            "Opponent": "Wesneski (R)",
+            "SP_xERA": "4.42",
+            "Warning": "",
+            "GameTime": "2026-08-22T00:10:00Z",
+            "Order": "9",
+            "Start": "12:10 AM"
+        },
+        {
+            "Slot": "MI",
             "Player": "Cole Young",
             "POS": "2B/SS",
             "Score": 45.74948167752037,
@@ -153,114 +236,11 @@
             "Start": "02:10 AM"
         },
         {
-            "Slot": "SS",
-            "Player": "Max Muncy",
-            "POS": "2B/SS/3B",
-            "Score": 56.59685792095636,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "52.79",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Hayden Wesneski (R)",
-            "SP_xERA": "4.42",
-            "Warning": "",
-            "GameTime": "2026-08-22T00:10:00Z",
-            "Order": "5*",
-            "Start": "12:10 AM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Travis Bazzana",
-            "POS": "2B",
-            "Score": 59.3139392781488,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "45.52",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Tanner Gordon (R)",
-            "SP_xERA": "3.92",
-            "Warning": "",
-            "GameTime": "2026-08-22T00:40:00Z",
-            "Order": "2*",
-            "Start": "12:40 AM"
-        },
-        {
             "Slot": "3B",
             "Player": "Isaac Paredes",
             "POS": "1B/3B",
             "Score": 62.38747219843575,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.53",
@@ -292,27 +272,22 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "J.T. Ginn (R)",
+            "Opponent": "Ginn (R)",
             "SP_xERA": "4.35",
             "Warning": "",
             "GameTime": "2026-08-22T00:10:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "12:10 AM"
         },
         {
             "Slot": "OF1",
-            "Player": "Mickey Moniak",
-            "POS": "OF",
-            "Score": 60.090713294013824,
+            "Player": "Jose Caballero",
+            "POS": "2B/SS/3B/OF",
+            "Score": 57.36901509312591,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "56.28",
+                    "value": "59.45",
                     "type": "info"
                 },
                 {
@@ -322,31 +297,36 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+14%",
+                    "value": "+4%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-15%",
+                    "value": "-11%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+13%",
                     "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (20% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Joey Cantillo (L)",
-            "SP_xERA": "4.05",
+            "Opponent": "Fluharty (L)",
+            "SP_xERA": "3.56",
             "Warning": "",
-            "GameTime": "2026-08-22T00:40:00Z",
-            "Order": "2*",
-            "Start": "12:40 AM"
+            "GameTime": "2026-08-21T23:05:00Z",
+            "Order": "8",
+            "Start": "11:05 PM"
         },
         {
             "Slot": "OF2",
@@ -394,18 +374,13 @@
         },
         {
             "Slot": "OF3",
-            "Player": "Zach McKinstry",
-            "POS": "2B/SS/3B/OF",
-            "Score": 52.58573592255349,
+            "Player": "Griffin Conine",
+            "POS": "1B/OF",
+            "Score": 44.71754564818181,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "48.73",
+                    "value": "45.12",
                     "type": "info"
                 },
                 {
@@ -415,31 +390,41 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+2%",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
+                    "label": "Elite Hold SP (37% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
                 },
                 {
-                    "label": "Elite Hold SP (44% SB)",
-                    "value": "-2%",
-                    "type": "negative"
+                    "label": "xwOBA Good",
+                    "value": "0.396",
+                    "type": "info"
                 }
             ],
-            "Opponent": "Noah Cameron (L)",
-            "SP_xERA": "4.09",
+            "Opponent": "Lord (R)",
+            "SP_xERA": "3.68",
             "Warning": "",
-            "GameTime": "2026-08-22T00:10:00Z",
-            "Order": "6*",
-            "Start": "12:10 AM"
+            "GameTime": "2026-08-21T23:10:00Z",
+            "Order": "3",
+            "Start": "11:10 PM"
         },
         {
             "Slot": "OF4",
@@ -492,18 +477,13 @@
         },
         {
             "Slot": "OF5",
-            "Player": "Jose Caballero",
-            "POS": "2B/SS/3B/OF",
-            "Score": 55.538089079515515,
+            "Player": "Mickey Moniak",
+            "POS": "OF",
+            "Score": 53.43065923726062,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "59.45",
+                    "value": "56.28",
                     "type": "info"
                 },
                 {
@@ -513,36 +493,36 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+4%",
+                    "value": "+14%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-11%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+13%",
+                    "value": "+1%",
                     "type": "positive"
                 },
                 {
-                    "label": "Elite Hold SP (20% SB)",
-                    "value": "-2%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #9",
-                    "value": "-8%",
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "Fluharty (L)",
-            "SP_xERA": "3.56",
+            "Opponent": "Cantillo (L)",
+            "SP_xERA": "4.05",
             "Warning": "",
-            "GameTime": "2026-08-21T23:05:00Z",
-            "Order": "9*",
-            "Start": "11:05 PM"
+            "GameTime": "2026-08-22T00:40:00Z",
+            "Order": "7",
+            "Start": "12:40 AM"
         },
         {
             "Slot": "UTIL",
@@ -791,6 +771,25 @@
         },
         {
             "Slot": "BN",
+            "Player": "Zach McKinstry",
+            "POS": "2B/SS/3B/OF",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
             "Player": "Dalton Rushing",
             "POS": "C",
             "Order": "-",
@@ -812,65 +811,6 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Griffin Conine",
-            "POS": "1B/OF",
-            "Order": "3",
-            "Start": "11:10 PM",
-            "Opponent": "Brad Lord (R)",
-            "SP_xERA": "3.68",
-            "Score": 44.71754564818181,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "45.12",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-8%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Elite Hold SP (37% SB)",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.396",
-                    "type": "info"
-                },
-                {
-                    "label": "Benched - Lower projected efficiency than other options.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-08-21T23:10:00Z"
         },
         {
             "Slot": "BN",
@@ -900,17 +840,12 @@
             "Slot": "BN",
             "Player": "Henry Bolte",
             "POS": "OF",
-            "Order": "1*",
+            "Order": "1",
             "Start": "12:10 AM",
-            "Opponent": "Hayden Wesneski (R)",
+            "Opponent": "Wesneski (R)",
             "SP_xERA": "4.42",
             "Score": 0.0,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "0.00",
@@ -942,7 +877,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
