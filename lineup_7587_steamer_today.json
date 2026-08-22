@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-22",
-    "last_updated": "2026-08-22T19:16:42.399469+00:00",
+    "last_updated": "2026-08-22T20:12:54.856162+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 748.11,
-    "narrative": "Our premier play for today\u2019s slate is **Corbin Carroll**, who anchors the lineup with an elite 87.14 score against Rhett Lowder. The combination of favorable wind conditions and Lowder\u2019s slower-than-average delivery creates a prime environment for **Corbin Carroll** to exploit his elite speed, making him our primary candidate for stolen base production. Joining him in the \"Strong\" tier is **Mickey Moniak** (75.75), who benefits significantly from a 14% park factor boost and a favorable platoon matchup against Tanner Bibee, while **Gabriel Moreno** (70.02) remains a high-floor start at catcher due to his strong recency metrics and a 17% boost from his matchup against a high-xERA opponent.\n\nThe most difficult decision for the optimizer involved **Jose Caballero** and **Max Muncy** on the bench. **Jose Caballero** offered significant intrigue due to his high-efficiency stolen base profile, but ultimately his 39.32 score fell just beneath our 40-point floor; he was squeezed out by a combination of a tough matchup against Dylan Cease and a suboptimal #9 spot in the batting order. **Max Muncy** also hovered near the threshold, but his late-order placement and limited platoon utility against Hunter Brown kept him sidelined. We remain cognizant of the risk inherent in today's lineup, as **Gabriel Moreno**, **Zach McKinstry**, **Travis Bazzana**, **Isaac Paredes**, **Henry Bolte**, **Corbin Carroll**, **Seiya Suzuki**, and **Josh Naylor** are all currently listed as \"Lineup Pending.\" Should these projected orders fluctuate, particularly for **Isaac Paredes** or **Henry Bolte**, we may see further volatility in their effective daily scores.",
+    "total_efficiency_score": 749.1,
+    "narrative": "For the August 22 slate, **Corbin Carroll** stands as our premier play with an elite score of 87.14. He benefits from a favorable matchup against Rhett Lowder (4.72 xERA) and, crucially, receives a boost from the pitcher\u2019s slow delivery, which provides a high-probability environment for his elite speed to impact our scarcest category, SB. Similarly, **Mickey Moniak** (75.75) is a high-upside start against Tanner Bibee; he maximizes his efficiency through a combination of a hitter-friendly park factor (+14%) and a strong platoon advantage, further aided by wind conditions projected to carry the ball out. **Gabriel Moreno** rounds out the top tier, as his spot in the #3 hole and favorable metrics against Lowder project him for a stable, high-floor output of 70.02.\n\nOur most difficult bench decision involved **Max Muncy**, who finished just outside the starting rotation with a score of 48.80. While his underlying skill set remains viable, his projected slot in the #9 hole\u2014coupled with the uncertainty of a pending lineup\u2014tipped the optimizer toward the higher-projected efficiency of **Griffin Conine** and **Josh Naylor**. We are monitoring **Travis Bazzana** and **Henry Bolte** closely, as both rely on \"Lineup Pending\" assumptions. Should **Travis Bazzana** drop from the #7 spot or **Henry Bolte** move from the leadoff position, we risk a significant efficiency bleed. While **Jose Caballero** remains on our bench, his score of 39.32 fell below our hard threshold of 40.0, necessitating his exclusion to preserve our game caps against a tough assignment facing Cease.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -11,11 +11,6 @@
             "POS": "C",
             "Score": 70.01837599679945,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.67",
@@ -56,7 +51,7 @@
             "SP_xERA": "4.72",
             "Warning": "",
             "GameTime": "2026-08-23T00:10:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "12:10 AM"
         },
         {
@@ -96,7 +91,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Drew Anderson (R)",
+            "Opponent": "Anderson, D (R)",
             "SP_xERA": "3.37",
             "Warning": "",
             "GameTime": "2026-08-22T23:15:00Z",
@@ -151,13 +146,8 @@
             "Slot": "SS",
             "Player": "Zach McKinstry",
             "POS": "2B/SS/3B/OF",
-            "Score": 49.408872021022304,
+            "Score": 50.39704946144275,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "47.92",
@@ -182,13 +172,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "-6%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Wacha (R)",
             "SP_xERA": "4.38",
             "Warning": "",
             "GameTime": "2026-08-22T23:15:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "11:15 PM"
         },
         {
@@ -252,11 +247,6 @@
             "Score": 60.43870355222056,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "53.43",
                     "type": "info"
@@ -291,7 +281,7 @@
             "SP_xERA": "4.92",
             "Warning": "",
             "GameTime": "2026-08-22T23:10:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:10 PM"
         },
         {
@@ -385,7 +375,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Hunter Brown (R)",
+            "Opponent": "Brown, H (R)",
             "SP_xERA": "4.42",
             "Warning": "",
             "GameTime": "2026-08-22T23:10:00Z",
@@ -398,11 +388,6 @@
             "POS": "OF",
             "Score": 87.13689459999796,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "64.55",
@@ -443,7 +428,7 @@
             "SP_xERA": "4.72",
             "Warning": "",
             "GameTime": "2026-08-23T00:10:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "12:10 AM"
         },
         {
@@ -452,11 +437,6 @@
             "POS": "OF",
             "Score": 57.64951669672779,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.74",
@@ -483,11 +463,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kade Anderson (L)",
+            "Opponent": "Anderson (L)",
             "SP_xERA": "4.00",
             "Warning": "",
             "GameTime": "2026-08-22T23:15:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "11:15 PM"
         },
         {
@@ -546,11 +526,6 @@
             "Score": 58.12860173011039,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "58.12",
                     "type": "info"
@@ -581,11 +556,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "David Peterson (L)",
+            "Opponent": "Peterson, D (L)",
             "SP_xERA": "4.36",
             "Warning": "",
             "GameTime": "2026-08-22T23:15:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "11:15 PM"
         }
     ],
@@ -795,7 +770,7 @@
             "POS": "2B/SS/3B",
             "Order": "9*",
             "Start": "11:10 PM",
-            "Opponent": "Hunter Brown (R)",
+            "Opponent": "Brown, H (R)",
             "SP_xERA": "4.42",
             "Score": 48.7962173950185,
             "Breakdown": [
@@ -871,17 +846,12 @@
             "Slot": "BN",
             "Player": "Cole Young",
             "POS": "2B/SS",
-            "Order": "8*",
+            "Order": "8",
             "Start": "11:15 PM",
-            "Opponent": "David Peterson (L)",
+            "Opponent": "Peterson, D (L)",
             "SP_xERA": "4.36",
             "Score": 46.04156493098795,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.85",
@@ -918,7 +888,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
