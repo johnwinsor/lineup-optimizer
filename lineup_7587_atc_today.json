@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-22",
-    "last_updated": "2026-08-22T14:16:18.069595+00:00",
+    "last_updated": "2026-08-22T15:16:08.609513+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 741.05,
-    "narrative": "The clear headliner for today\u2019s slate is **Corbin Carroll**, who boasts a massive 85.94 score, driven by a favorable matchup against Rhett Lowder. While **Corbin Carroll** possesses a high base projection, his utility is amplified today by a slow opposing pitcher delivery that significantly elevates his stolen base upside\u2014the primary currency for our squad. Similarly, **Mickey Moniak** (75.98) is a priority play; the combination of a favorable hitter's park and a significant wind-out boost pushes him well into the \"Strong\" start tier, masking the downside of his lower batting order position. **Gabriel Moreno** rounds out our elite tier, as his projected #3 spot in a plus-matchup against Rhett Lowder provides a high floor for run production.\n\nTactically, we are leaning into platoon edges to navigate a crowded lineup. **Travis Bazzana** (61.43) benefits from a potent cocktail of park factors and wind assistance, making him a high-upside play despite his #7 spot. Conversely, our toughest personnel decision involved **Cole Young** on the bench; he generated a 44.13 score, hovering near our marginal threshold, but was ultimately squeezed out by the optimizer due to a sub-optimal #8 lineup projection and superior categorical coverage from our starters. We are also closely monitoring **Seiya Suzuki** and **Isaac Paredes**; while both are cleared to start, their platoon-dependent scores against Kade Anderson and Jacob Lopez respectively represent the lower limit of our recommended utility. \n\nRisks for the day are primarily centered on the \"Lineup Pending\" status for almost every roster spot. We have modeled these scores based on historical trends, but any deviation in the actual batting order could necessitate a quick pivot, particularly for **Max Muncy**, who remains a marginal start (50.43) and is highly sensitive to his slot in the order. Furthermore, **Vinnie Pasquantino** and **Josh Naylor** are facing pitchers like Drew Anderson and David Peterson who, while not elite, require sustained contact quality to justify their presence in the lineup. We will keep **Jose Caballero** and **Austin Riley** on high alert; while they were bypassed today due to negative SP skill adjustments, their ability to impact categories keeps them as our primary contingency options should the status of any active player change pre-first pitch.",
+    "narrative": "For August 22, the lineup is anchored by **Corbin Carroll** (85.94) and **Mickey Moniak** (75.98). **Corbin Carroll** is our premier play, benefiting from an elite matchup against Rhett Lowder (xERA 4.72) and a significant speed-opportunity boost derived from the starter\u2019s slow delivery, which projects as a high-probability green light for stolen bases. **Mickey Moniak** serves as a high-upside secondary, leveraging a 14% platoon edge and favorable wind conditions to overcome a lower spot in the order. **Gabriel Moreno** (70.08) also earns a strong start, as his high xwOBA and favorable lineup positioning against a struggling Rhett Lowder make him an efficient anchor at the C1 position.\n\nPlatoon edges and park factors are heavily influencing the bottom half of the lineup, with **Travis Bazzana** (61.43) seeing a massive 14% boost from his environment, buoyed by stadium dimensions and helpful winds. Conversely, **Vinnie Pasquantino** (53.98) and **Isaac Paredes** (57.15) face more challenging conditions; **Vinnie Pasquantino** is held back by the tough efficiency of Drew Anderson, while **Isaac Paredes** faces a significant 9% downgrade due to the platoon disadvantage against Jacob Lopez. The benching of **Cole Young** (44.13) was our most difficult decision; he hovered right on the edge of viability, but the optimizer prioritized the higher ceiling of our active outfielders, ultimately sidelining **Cole Young** due to his projected lower-order slotting and the lack of a distinct platoon advantage.\n\nWe remain vigilant regarding \"Lineup Pending\" statuses across the board, which introduces non-zero risk to our projected order-based scoring adjustments. **Max Muncy** (50.43) is the most precarious start today; his score is dragged down by a projected 9th-spot placement against Hunter Brown, creating a low-floor scenario. Furthermore, while **Jose Caballero** (41.62) and **Austin Riley** (41.44) both provide depth, they are firmly benched due to poor matchups against tough arms in Dylan Cease and Logan Henderson. With **James Wood** still sidelined on the IL, our roster relies on the high-floor efficiency of our active starters to maintain our standing in the category races.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -614,17 +614,12 @@
             "Slot": "BN",
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
-            "Order": "8*",
+            "Order": "9",
             "Start": "05:35 PM",
             "Opponent": "Dylan Cease (R)",
             "SP_xERA": "2.94",
             "Score": 41.616650550608405,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "59.45",
@@ -656,12 +651,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #9",
+                    "value": "-8%",
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
