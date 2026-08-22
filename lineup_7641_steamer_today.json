@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-22",
-    "last_updated": "2026-08-22T20:13:34.249764+00:00",
+    "last_updated": "2026-08-22T21:15:35.477430+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 810.87,
-    "narrative": "For today's slate, **Jos\u00e9 Ram\u00edrez** (86.64) stands as the clear anchor of the LawDog offense. Benefiting from a favorable matchup against Hughes, he earns a massive boost from a hitter-friendly park and wind blowing out, making him the only player approaching elite territory. **Bryce Harper** (76.31) provides high-floor production against the southpaw Mathews; despite the dynamic platoon disadvantage, his superior xwOBA and favorable lineup spot in the three-hole lock him in as a primary contributor. **Lawrence Butler** (69.13) and **Jonathan Aranda** (68.94) also draw strong starts, with **Jonathan Aranda** specifically benefiting from a substantial +16% park factor and the organizational priority placed on his recent hitting surge against right-handed pitching.\n\nThe most difficult decision on the bench involved **Gavin Sheets** (46.97). While he was on the bubble, the optimizer ultimately pivoted to our active starters because of the thin margin between his efficiency and the higher output expected from our primary utility slots. We are monitoring **Lawrence Butler**, **Zack Gelof**, and **Jos\u00e9 Ram\u00edrez** closely, as their scores are currently based on pending lineups; should their confirmed order drop, their efficiency scores could fluctuate. **Gleyber Torres** (47.73) and **Brendan Donovan** (48.93) remain on the lower end of our starting threshold, hampered by poor BvP and platoon disadvantages, respectively. While **Brendan Donovan** benefits from the leadoff spot, he carries the most volatility tonight against Peterson, a left-handed arm that neutralizes his typical efficiency. We remain cautious of the bottom half of the lineup, but the high-ceiling production from our core three should carry the load.",
+    "total_efficiency_score": 810.25,
+    "narrative": "The focal point of today\u2019s lineup is **Jos\u00e9 Ram\u00edrez**, who commands the highest efficiency rating (86.64) due to a favorable matchup against Hughes and strong park factors, bolstered by wind assistance. Following closely is **Bryce Harper**, whose 76.31 score is driven by a stellar .391 xwOBA and a prime #3 lineup spot against Mathews. **Lawrence Butler** also offers significant upside (69.13), as he benefits from a high-efficiency platoon advantage against Brown. While these starters provide the engine, **Jonathan Aranda** remains a high-floor play at 68.94; however, his value is tethered to a 41% rain risk, which threatens to derail his productive #2 spot against Young.\n\nStrategic depth remains thin as we monitor the lower end of the efficiency spectrum. **Gleyber Torres** (47.73) and **Brendan Donovan** (48.93) are starts out of necessity, though both are operating near the bottom of our preferred threshold. The most difficult bench decision involved **Gavin Sheets**, whose 46.97 score was narrowly edged out by the superior park and situational dynamics offered by **Lawrence Butler** and **Jung Hoo Lee**. **Gavin Sheets** was effectively penalized by the \"Lineup Pending\" status and a less-than-ideal matchup against Dean Kremer. Meanwhile, **Kyle Karros** (61.71) gets the nod despite a 45% rain risk, as the combination of park factors and favorable wind outweighs the potential for a weather-shortened outing. \n\nBeyond the rain-affected slots, we are keeping a close eye on **Cal Raleigh** and **Yainer Diaz**, both of whom hover in the low 60s. While their scores are respectable, they are tasked with navigating matchups against Peterson and Lopez, respectively; though neither pitcher is an elite arm, the lack of dominant raw ceiling means these roster spots remain high-volatility targets. We continue to hold **Will Smith** on the IL, and with **Braden Montgomery** and **JJ Bleday** failing to crack the optimization threshold due to poor platoon splits or inferior situational data, we are relying on our core to stabilize the 5x5 categories.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -86,7 +86,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Jacob Lopez (L)",
+            "Opponent": "Lopez, J (L)",
             "SP_xERA": "4.92",
             "Warning": "",
             "GameTime": "2026-08-22T23:10:00Z",
@@ -132,7 +132,7 @@
             ],
             "Opponent": "Young (R)",
             "SP_xERA": "4.52",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (41%)",
             "GameTime": "2026-08-22T23:05:00Z",
             "Order": "2",
             "Start": "11:05 PM"
@@ -278,7 +278,7 @@
             "Slot": "3B",
             "Player": "Kyle Karros",
             "POS": "3B",
-            "Score": 62.33746381067921,
+            "Score": 61.71408917257241,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -306,6 +306,11 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
@@ -316,9 +321,9 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tanner Bibee (R)",
+            "Opponent": "Bibee (R)",
             "SP_xERA": "4.41",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (45%)",
             "GameTime": "2026-08-23T00:10:00Z",
             "Order": "5",
             "Start": "12:10 AM"
@@ -369,11 +374,6 @@
             "Score": 69.12942196209842,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "55.27",
                     "type": "info"
@@ -408,7 +408,7 @@
             "SP_xERA": "4.42",
             "Warning": "",
             "GameTime": "2026-08-22T23:10:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "11:10 PM"
         },
         {
@@ -492,7 +492,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Jacob Lopez (L)",
+            "Opponent": "Lopez, J (L)",
             "SP_xERA": "4.92",
             "Warning": "",
             "GameTime": "2026-08-22T23:10:00Z",
@@ -505,11 +505,6 @@
             "POS": "2B/3B/OF",
             "Score": 55.932990953815725,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.26",
@@ -545,7 +540,7 @@
             "SP_xERA": "4.42",
             "Warning": "",
             "GameTime": "2026-08-22T23:10:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:10 PM"
         },
         {
@@ -554,11 +549,6 @@
             "POS": "3B",
             "Score": 86.63502179662267,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "64.61",
@@ -597,9 +587,9 @@
             ],
             "Opponent": "Hughes (R)",
             "SP_xERA": "4.31",
-            "Warning": "",
+            "Warning": "\u26a0\ufe0f Rain Risk (45%)",
             "GameTime": "2026-08-23T00:10:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "12:10 AM"
         }
     ],
@@ -890,7 +880,7 @@
             "POS": "OF",
             "Order": "5",
             "Start": "11:10 PM",
-            "Opponent": "Christian Scott (R)",
+            "Opponent": "Scott (R)",
             "SP_xERA": "3.61",
             "Score": 42.607526603151584,
             "Breakdown": [
