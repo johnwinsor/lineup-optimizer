@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-22",
-    "last_updated": "2026-08-23T00:56:28.950761+00:00",
+    "last_updated": "2026-08-23T02:23:56.746381+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 757.34,
-    "narrative": "The offensive core for LawDog today centers on **Jos\u00e9 Ram\u00edrez**, who commands the highest daily efficiency score of 82.51. His matchup against Hughes, coupled with a favorable park factor (+14%), positions him as the clear catalyst for today\u2019s production. **Bryce Harper** (76.31) and **Lawrence Butler** (69.13) follow closely, both benefitting from favorable platoon advantages against right-handed starters. While **Jonathan Aranda** is a surprising riser at 68.94, his combination of a strong park factor and a top-of-the-order spot in the lineup makes him a high-floor play despite his lower raw base projection.\n\nThe most difficult decision on the bench involved **Gavin Sheets**, who narrowly missed the cut at 46.97. While he holds a positive platoon edge against Kremer, his projection was suppressed by a lower SP skill rating for the opposing arm and a #7 batting order slot that limits his run-scoring ceiling compared to the primary lineup. Consequently, **Gleyber Torres** (47.73) clings to his starting spot despite a poor BvP history and a negative platoon adjustment; the optimizer prioritizes his #2 lineup positioning over the marginal gain of rotating in a bench bat. \n\nRisk management remains a primary focus, particularly regarding the scarcity of stolen bases. **Kyle Karros** (59.95) receives a minor boost due to the slow delivery of the opposing pitcher, which may create a window for a rare theft, but he remains a high-variance play against a capable arm like Bibee. Managers should monitor **Jung Hoo Lee** and **Daulton Varsho** closely; both carry sub-55 scores and face left-handed opposition, creating a narrow margin for error. If the \"Lineup Pending\" status shifts, **Justin Crawford** remains sidelined, and no adjustments are recommended until official defensive sets are confirmed.",
+    "total_efficiency_score": 770.51,
+    "narrative": "For today's slate, **Jos\u00e9 Ram\u00edrez** (82.51) and **Bryce Harper** (76.31) stand as our elite offensive pillars. **Jos\u00e9 Ram\u00edrez** benefits from a favorable matchup against Hughes and an ideal #3 spot in the order, while **Bryce Harper** continues to leverage high xwOBA metrics to produce despite the platoon disadvantage against Mathews. We are also tracking **Lawrence Butler** (71.20) as a high-upside play; his matchup against Brown, H is bolstered by positive BvP history and a strong platoon split, making him one of our most efficient starts relative to his base projection. Conversely, **Gleyber Torres** (47.73) remains a marginal play; despite hitting in the #2 hole, his poor BvP against Wacha and negative platoon splits keep his score barely above our benching threshold.\n\nThe most difficult decision on the bench involved **Gavin Sheets**, who narrowly missed the cut with a 46.97 score. While **Gavin Sheets** offers a positive platoon edge against Kremer, his lower base projection compared to our starters and the stiffer matchup against a 3.82 xERA arm ultimately led the optimizer to prioritize the higher-ceiling efficiency of **Daulton Varsho** and **Zack Gelof**. We are also monitoring the status of **Justin Crawford**, who currently sits at a 0.00 score due to his absence from the active lineup; should he be inserted late, his metrics against Mathews suggest he could provide a significant late-inning boost. No major weather concerns are currently flagged, though the platoon-heavy nature of today's matchups against starters like Peterson, D and Mathews necessitates strict attention to any last-minute lineup shuffles that could impact the dynamic platoon bonuses calculated for **Cal Raleigh**, **Yainer Diaz**, and **Luis Arraez**.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -48,7 +48,7 @@
             "Slot": "C2",
             "Player": "Yainer Diaz",
             "POS": "C",
-            "Score": 63.16871752106981,
+            "Score": 68.2222149227554,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -73,6 +73,11 @@
                 {
                     "label": "Dynamic Platoon (L)",
                     "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "BvP Elite (26 PA)",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -322,7 +327,7 @@
             "Slot": "OF2",
             "Player": "Lawrence Butler",
             "POS": "OF",
-            "Score": 69.12942196209842,
+            "Score": 71.20330462096138,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -347,6 +352,11 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "BvP Good (28 PA)",
+                    "value": "+3%",
                     "type": "positive"
                 },
                 {
@@ -415,7 +425,7 @@
             "Slot": "OF4",
             "Player": "Daulton Varsho",
             "POS": "OF",
-            "Score": 54.54525765191605,
+            "Score": 58.908878264069344,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -441,6 +451,11 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "-10%",
                     "type": "negative"
+                },
+                {
+                    "label": "BvP Elite (26 PA)",
+                    "value": "+8%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Lopez, J (L)",
@@ -454,7 +469,7 @@
             "Slot": "OF5",
             "Player": "Zack Gelof",
             "POS": "2B/3B/OF",
-            "Score": 55.932990953815725,
+            "Score": 57.61098068243018,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -480,6 +495,11 @@
                     "label": "Platoon (R/R)",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "BvP Good (28 PA)",
+                    "value": "+3%",
+                    "type": "positive"
                 },
                 {
                     "label": "Order #3",
@@ -671,11 +691,46 @@
             "Player": "Dylan Beavers",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:05 PM",
+            "Opponent": "McClanahan (L)",
+            "SP_xERA": "4.11",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "51.49",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+16%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -683,7 +738,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-08-22T23:05:00Z"
         },
         {
             "Slot": "BN",
