@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-22",
-    "last_updated": "2026-08-22T23:12:14.324620+00:00",
+    "last_updated": "2026-08-23T00:55:33.305012+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 749.1,
-    "narrative": "Today\u2019s outlook for Ghost Ride the WHIP centers on the massive situational ceiling of **Corbin Carroll** (87.14) and **Mickey Moniak** (75.75). **Corbin Carroll** is our primary anchor, benefiting from a soft matchup against Lowder and, crucially, a slow opposing pitcher delivery that boosts his already elite stolen base upside. Similarly, **Mickey Moniak** sits in a prime spot; he leverages a 14% park factor boost and favorable weather conditions, making him a high-efficiency start despite the slight 45% rain risk. **Gabriel Moreno** also earns a strong recommendation (70.02), as his high-frequency contact profile aligns perfectly with Lowder\u2019s susceptibility to damage, and he provides essential stability in our 5x5 build.\n\nOur bench strategy remains disciplined, with **Max Muncy** (48.80) falling just short of the starting rotation. While **Max Muncy** carries respectable power, the optimizer penalized his projected efficiency due to a low-leverage spot in the batting order, ultimately favoring the higher-upside profiles of **Griffin Conine** and **Seiya Suzuki**. We have also exercised caution with **Travis Bazzana** and **Mickey Moniak**, who are both tethered to a 45% rain delay risk; however, given the potential for significant stolen base output and favorable hitting environments, we are keeping them in the active lineup for now. Elsewhere, the difficult matchup against Cease kept **Jose Caballero** below our floor threshold of 40.0, confirming his placement on the bench to preserve our game caps for more opportunistic windows against softer arms like those facing **Isaac Paredes** and **Brice Turang**.",
+    "total_efficiency_score": 758.46,
+    "narrative": "For the August 22nd slate, **Corbin Carroll** leads the charge with an elite 87.14 score, serving as our cornerstone play against Lowder. The combination of an favorable 4.72 xERA matchup and a 100% stolen base opportunity rate against a slow-delivering pitcher makes **Corbin Carroll** our primary weapon for closing the gap in our scarcest category. Not far behind is **Mickey Moniak** (75.75), who benefits from a massive 14% park factor boost and an ideal spot in the two-hole against Bibee. Meanwhile, **Gabriel Moreno** (70.02) provides exceptional stability at catcher; his 17% boost from the SP skill profile against Lowder reinforces his status as a high-floor, high-upside play for today\u2019s lineup.\n\nOur most difficult roster decision involved keeping **Max Muncy** on the bench with a 48.80 score. While **Max Muncy** hovered near the 50-point threshold, he was ultimately squeezed out by the collective efficiency of our utility and middle infield options. His bottom-of-the-order assignment (-8% adjustment) proved to be the decisive factor in his exclusion, as we prioritize the plate appearances of players like **Josh Naylor** (59.27), who remains locked in at the cleanup spot despite a tougher draw against Peterson. We are also monitoring the matchup for **Vinnie Pasquantino** (56.41), whose score is suppressed by a -15% SP skill penalty against Anderson; however, his +14% platoon edge keeps him firmly ahead of the rest of the bench. Managers should remain alert to the weather, though no specific warnings currently jeopardize the high-efficiency ratings assigned to **Brice Turang** (64.87) and **Seiya Suzuki** (68.60).",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -190,7 +190,7 @@
             "Slot": "MI",
             "Player": "Travis Bazzana",
             "POS": "2B",
-            "Score": 57.524264545147695,
+            "Score": 54.785013852521615,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -221,16 +221,11 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Hughes (R)",
             "SP_xERA": "4.31",
-            "Warning": "\u26a0\ufe0f Rain Risk (45%)",
+            "Warning": "",
             "GameTime": "2026-08-23T00:10:00Z",
             "Order": "7",
             "Start": "12:10 AM"
@@ -316,19 +311,19 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Slow SP Delivery (85% SB)",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
-                    "label": "Wind Out",
-                    "value": "+5%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 }
             ],
             "Opponent": "Bibee (R)",
             "SP_xERA": "4.41",
-            "Warning": "\u26a0\ufe0f Rain Risk (45%)",
+            "Warning": "",
             "GameTime": "2026-08-23T00:10:00Z",
             "Order": "2",
             "Start": "12:10 AM"
@@ -430,7 +425,7 @@
             "Slot": "OF4",
             "Player": "Seiya Suzuki",
             "POS": "OF",
-            "Score": 57.64951669672779,
+            "Score": 68.60292486910606,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -448,6 +443,11 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+18%",
+                    "type": "positive"
+                },
+                {
                     "label": "Dynamic Platoon (L)",
                     "value": "+2%",
                     "type": "positive"
@@ -459,7 +459,7 @@
                 }
             ],
             "Opponent": "Anderson (L)",
-            "SP_xERA": "4.00",
+            "SP_xERA": "4.76",
             "Warning": "",
             "GameTime": "2026-08-22T23:15:00Z",
             "Order": "2",
@@ -518,7 +518,7 @@
             "Slot": "UTIL",
             "Player": "Josh Naylor",
             "POS": "1B",
-            "Score": 58.12860173011039,
+            "Score": 59.26837823462236,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -546,8 +546,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 }
             ],
@@ -555,7 +555,7 @@
             "SP_xERA": "4.36",
             "Warning": "",
             "GameTime": "2026-08-22T23:15:00Z",
-            "Order": "5",
+            "Order": "4",
             "Start": "11:15 PM"
         }
     ],
@@ -836,11 +836,11 @@
             "Slot": "BN",
             "Player": "Cole Young",
             "POS": "2B/SS",
-            "Order": "8",
+            "Order": "7",
             "Start": "11:15 PM",
             "Opponent": "Peterson, D (L)",
             "SP_xERA": "4.36",
-            "Score": 46.04156493098795,
+            "Score": 47.51097657772161,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -873,8 +873,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #8",
-                    "value": "-6%",
+                    "label": "Order #7",
+                    "value": "-3%",
                     "type": "negative"
                 },
                 {
