@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-23",
-    "last_updated": "2026-08-23T14:15:12.082532+00:00",
+    "last_updated": "2026-08-23T15:14:25.322120+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 691.6,
-    "narrative": "The Ghost Ride the WHIP lineup is anchored today by **Corbin Carroll**, whose elite speed and favorable matchup against Andrew Abbott generate our highest daily efficiency score of 79.66. **Corbin Carroll** is our primary engine for SB potential, and despite the slight dynamic platoon tax against the southpaw, his projected impact remains unmatched. **Gabriel Moreno** follows as our secondary pillar (66.83) in the same contest; with Abbott struggling to a 5.01 xERA, **Gabriel Moreno** is in a prime position to capitalize on the weak pitching staff to boost our offensive output. **Brice Turang** (63.57) and **Travis Bazzana** (61.46) round out our top-tier starts, with **Travis Bazzana** benefiting significantly from a 14% park factor boost that helps mitigate the risk of his bottom-order placement.\n\nThe most difficult decision for the optimizer today was bypassing **Austin Riley** (48.23) for our UTIL slot. While **Austin Riley** possesses high-upside power, his projected output against Shane Drohan was cannibalized by a poor batting order assignment (#8) and a negative SP skill adjustment, ultimately losing out to the more stable baseline provided by **Vinnie Pasquantino** (55.65). Meanwhile, we are closely monitoring the 34% rain risk surrounding **Jose Caballero**. While he is currently slotted in, his efficiency score of 48.96 is fragile due to an aggressive platoon penalty and his deep-order position. If weather conditions worsen in his matchup against Jos\u00e9 Soriano, we may look to shuffle the deck. Additionally, owners should be aware that **James Wood** remains unavailable due to his ongoing IL stint, and we continue to hold **Trevor Story**, **Giancarlo Stanton**, **Tyler Soderstrom**, **Dalton Rushing**, **Edwin Arroyo**, **Cole Young**, and **Henry Bolte** in reserve while prioritizing our current active starters to maximize our limited game caps.",
+    "total_efficiency_score": 708.88,
+    "narrative": "For today\u2019s slate on 2026-08-23, our strongest play is undeniably **Corbin Carroll** (79.66), whose speed-first profile benefits significantly from facing Andrew Abbott. While the platoon disadvantage against the lefty is noted, the 5.01 xERA of the opponent and the favorable batting order slot push his efficiency into the elite tier. Similarly, **Vinnie Pasquantino** (72.92) is a mandatory start; he draws a stellar matchup against Jacob Waguespack, with a +15% boost from the opposing pitcher\u2019s skill profile and a massive +14% dynamic platoon advantage that makes him a cornerstone of our offensive output. **Gabriel Moreno** (66.83) rounds out our top-tier trio, taking advantage of an inviting matchup against Abbott, where his strong xwOBA and middle-of-the-order protection maximize his scoring potential.\n\nOur most difficult roster decision involved the benching of **Austin Riley**, who narrowly missed the starting cut with a 48.23 score. While he remains a potent asset, he fell just short of the efficiency threshold when compared to the platoon-adjusted values of **Brice Turang** and **Travis Bazzana**. **Brice Turang** (63.57) continues to be essential for our strategy given his elite sprint speed and a high-leverage #2 spot in the lineup, while **Travis Bazzana** (61.46) benefits from a juicy +14% park factor and a soft matchup against Tomoyuki Sugano. Risks remain high across the board as every single lineup spot is currently \"Pending\"; we are monitoring the status of **Mickey Moniak** (57.91) closely, as his value is buoyed by a +14% park factor, though he faces a slight risk due to the -15% platoon hit against Foster Griffin. We continue to hold **James Wood** on the IL, hoping for his return to bolster our stolen base totals.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -189,7 +189,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Daniel Lynch IV (L)",
+            "Opponent": "Lynch IV (L)",
             "SP_xERA": "4.02",
             "Warning": "",
             "GameTime": "2026-08-23T18:10:00Z",
@@ -292,7 +292,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Cristian Javier (R)",
+            "Opponent": "Javier (R)",
             "SP_xERA": "5.16",
             "Warning": "",
             "GameTime": "2026-08-23T18:10:00Z",
@@ -355,11 +355,6 @@
             "Score": 48.96269199838369,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "59.45",
                     "type": "info"
@@ -395,11 +390,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Jos\u00e9 Soriano (R)",
+            "Opponent": "Soriano, J (R)",
             "SP_xERA": "4.09",
-            "Warning": "\u26a0\ufe0f Rain Risk (34%)",
+            "Warning": "",
             "GameTime": "2026-08-23T17:35:00Z",
-            "Order": "9*",
+            "Order": "9",
             "Start": "05:35 PM"
         },
         {
@@ -563,13 +558,8 @@
             "Slot": "UTIL",
             "Player": "Vinnie Pasquantino",
             "POS": "1B",
-            "Score": 55.64790013763142,
+            "Score": 72.92240845059446,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.02",
@@ -586,16 +576,26 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+15%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Jacob Waguespack (R)",
+            "SP_xERA": "4.61",
             "Warning": "",
             "GameTime": "2026-08-23T18:10:00Z",
-            "Order": "5*",
+            "Order": "5",
             "Start": "06:10 PM"
         }
     ],
@@ -749,17 +749,12 @@
             "Slot": "BN",
             "Player": "Isaac Paredes",
             "POS": "1B/3B",
-            "Order": "3*",
+            "Order": "3",
             "Start": "06:10 PM",
             "Opponent": "Brady Basso (L)",
             "SP_xERA": "3.64",
             "Score": 43.28965309164271,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.53",
@@ -791,7 +786,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -912,7 +907,7 @@
             "POS": "OF",
             "Order": "1*",
             "Start": "06:10 PM",
-            "Opponent": "Cristian Javier (R)",
+            "Opponent": "Javier (R)",
             "SP_xERA": "5.16",
             "Score": 0.0,
             "Breakdown": [
