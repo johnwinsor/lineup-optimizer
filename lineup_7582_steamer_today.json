@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-23",
-    "last_updated": "2026-08-23T21:13:07.387517+00:00",
+    "last_updated": "2026-08-23T22:12:25.488980+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 687.05,
-    "narrative": "The Zurich Zebras enter August 23rd with a calculated offensive configuration, headlined by **Junior Caminero**, who commands our highest efficiency score of 84.24. **Junior Caminero** benefits from a premium combination of a favorable hitter\u2019s park (+16%) and a strong top-of-the-order assignment (+6%), positioning him as our primary engine today against Baz. We are also leaning into **Caleb Durbin** (70.40) and **Christian Encarnacion-Strand** (67.05), both of whom are poised to feast on suboptimal opposing arms. **Caleb Durbin** benefits from a massive 19% SP skill adjustment against the shaky Wilkinson, while **Christian Encarnacion-Strand** leverages high park factors to maintain a high floor despite a lower spot in the lineup. **Pete Crow-Armstrong** remains a high-upside play (64.85) due to his leadoff role and dynamic platoon advantage (+14%), providing the necessary sprint speed and stolen base potential we prioritize in our roster construction.\n\nStrategic adjustments were necessary to stay above our efficiency floor, with **Carson Benge** (44.02) serving as the most difficult omission. While **Carson Benge** showed promise against a moderate SP_xERA, he was ultimately benched because his platoon disadvantage against Newcomb outweighed the efficiency gains seen in the rest of our lineup. We are exercising caution with **Yordan Alvarez** (56.07) and **Hector Rodriguez** (50.58); both face L/L platoon headwinds that suppress their raw projections. While **Yordan Alvarez** maintains an elite xwOBA that justifies the start, **Hector Rodriguez** sits near our threshold and is only deployed due to the lack of a superior high-floor alternative in the current active pool. **Colt Keith** remains sidelined and unavailable, while bench depth players like **Pedro Ramirez** failed to meet our 40.0 minimum daily threshold, reinforcing our commitment to maximizing every game cap for the Zebras.",
+    "total_efficiency_score": 689.64,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with **Junior Caminero** headlining the roster, sporting our highest efficiency score of 84.24. The combination of a favorable matchup against Baz and a significant +16% park adjustment makes **Junior Caminero** an automatic start in the 3-hole. We are also leaning heavily into stolen base upside today; **Pete Crow-Armstrong** (67.45) is a priority play because he faces a pitcher with a slow delivery, and his lead-off spot against Miller, B allows him to maximize his elite speed profile. Furthermore, **Caleb Durbin** (70.40) benefits from the day's softest opposing arm, Wilkinson (xERA 8.21), providing a significant 19% boost to his efficiency that makes him a core component of today's lineup.\n\nWe remain cautious with **Yordan Alvarez** (56.07), who faces a suboptimal L/L platoon matchup against Basso; while his elite xwOBA keeps him viable, he is effectively skating on thin ice compared to **Christian Encarnacion-Strand** (67.05), who is thriving with excellent park and skill adjustments despite a lower batting order slot. Our most difficult bench decision involved **Carson Benge** (44.02), who missed the cut strictly due to limited availability in the lineup and a harsh L/L platoon penalty against Newcomb, S. While **Carson Benge** hovered near the marginal threshold, he could not displace **Chase Meidroth** (42.69) or the other higher-upside bats, as our roster depth dictates prioritizing efficiency over raw talent. Monitor the late-inning weather, but the core objective remains the same: leverage the speed of **Trea Turner** and **Pete Crow-Armstrong** to secure the SB category while **Kyle Schwarber** anchors the power output from the top of the order.",
     "recommended_lineup": [
         {
             "Slot": "1B",
@@ -322,7 +322,7 @@
             "Slot": "OF3",
             "Player": "Pete Crow-Armstrong",
             "POS": "OF",
-            "Score": 64.85238705681083,
+            "Score": 67.44648253908326,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -347,6 +347,11 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (85% SB)",
+                    "value": "+4%",
                     "type": "positive"
                 },
                 {
@@ -782,11 +787,41 @@
             "Player": "Jacob Gonzalez",
             "POS": "1B/2B/SS",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Snell (L)",
+            "SP_xERA": "3.11",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "42.63",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -794,7 +829,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-08-23T20:10:00Z"
         }
     ]
 }
