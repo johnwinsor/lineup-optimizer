@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-26",
-    "last_updated": "2026-08-26T04:42:38.476499+00:00",
+    "last_updated": "2026-08-26T12:34:04.585602+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 803.16,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 806.9,
+    "narrative": "The Austin Waves are positioned for high offensive output today, anchored by **Gunnar Henderson** (79.39) and **Kyle Tucker** (78.13). **Gunnar Henderson** benefits from a massive 11% bump due to the SP skill profile of Michael McGreevy, and his spot in the #3 hole ensures maximum run production opportunities. Meanwhile, **Kyle Tucker** faces the most favorable matchup of the day against AJ Smith-Shawver, whose 5.23 xERA is the softest landing spot on the slate, allowing **Kyle Tucker** to maximize his ceiling despite a lower-than-usual spot in the lineup. **Jackson Merrill** (75.27) and **Vladimir Guerrero Jr.** (72.97) round out our top-tier plays, both buoyed by high SP-skill multipliers that push them well into the \"Strong\" category.\n\nPlatoon edges and situational variables have significantly shifted the lineup hierarchy. **Luis Garc\u00eda Jr.** (72.53) is a priority start, gaining a 14% boost from a favorable platoon matchup against Peter Lambert. Conversely, the bench decision regarding **Luis Robert Jr.** (46.95) was the most difficult; while he is a high-upside asset, his projected score fell just short of our threshold. The optimizer flagged a 15% penalty against his platoon matchup today and a negative adjustment for Dustin May\u2019s tendency to hold runners, making **Luis Robert Jr.** the odd man out in favor of the higher-efficiency profiles of **Dominic Smith** and **Heliot Ramos**. \n\nManagers should monitor the lineup cards closely, as every player today is currently flagged as \"Lineup Pending.\" While we have projected positions for starters like **Liam Hicks**, **Drake Baldwin**, and **Sam Antonacci**, any late-inning defensive shifts or lineup shuffles could impact the order-based multipliers we are relying on for production. Additionally, while **Miguel Vargas** receives a 5% \"Wind Out\" boost, he faces a tough assignment against MacKenzie Gore (3.73 xERA), necessitating a disciplined approach to our daily cap management as we navigate these matchups.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -313,7 +313,7 @@
             "Slot": "3B",
             "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Score": 50.73622653888399,
+            "Score": 53.273037865828194,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -359,6 +359,11 @@
                     "label": "xwOBA Good",
                     "value": "0.389",
                     "type": "info"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "MacKenzie Gore (L)",
@@ -419,18 +424,18 @@
         },
         {
             "Slot": "OF2",
-            "Player": "Luis Robert Jr.",
-            "POS": "OF",
-            "Score": 46.94531782271491,
+            "Player": "Sam Antonacci",
+            "POS": "2B/3B/OF",
+            "Score": 48.146451962909765,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
+                    "label": "Lineup Pending (Assumed #1)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "57.33",
+                    "value": "50.13",
                     "type": "info"
                 },
                 {
@@ -440,31 +445,36 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-4%",
+                    "value": "-1%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-15%",
+                    "label": "SP Skill",
+                    "value": "-6%",
                     "type": "negative"
                 },
                 {
-                    "label": "Elite Hold SP (60% SB)",
-                    "value": "-4%",
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Dustin May (R)",
-            "SP_xERA": "4.02",
+            "Opponent": "MacKenzie Gore (L)",
+            "SP_xERA": "3.73",
             "Warning": "",
-            "GameTime": "2026-08-26T23:10:00Z",
-            "Order": "4*",
-            "Start": "11:10 PM"
+            "GameTime": "2026-08-26T23:40:00Z",
+            "Order": "1*",
+            "Start": "11:40 PM"
         },
         {
             "Slot": "OF3",
@@ -661,6 +671,60 @@
     "players_sat": [
         {
             "Slot": "BN",
+            "Player": "Luis Robert Jr.",
+            "POS": "OF",
+            "Order": "4*",
+            "Start": "11:10 PM",
+            "Opponent": "Dustin May (R)",
+            "SP_xERA": "4.02",
+            "Score": 46.94531782271491,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #4)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "57.33",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #4",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-08-26T23:10:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Andy Pages",
             "POS": "OF",
             "Order": "-",
@@ -730,60 +794,6 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Sam Antonacci",
-            "POS": "2B/3B/OF",
-            "Order": "1*",
-            "Start": "11:40 PM",
-            "Opponent": "MacKenzie Gore (L)",
-            "SP_xERA": "3.73",
-            "Score": 45.85376377419977,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "50.13",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (L/L)",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-08-26T23:40:00Z"
         },
         {
             "Slot": "BN",
