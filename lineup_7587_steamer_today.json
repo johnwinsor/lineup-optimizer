@@ -1,15 +1,15 @@
 {
     "target_date": "2026-08-27",
-    "last_updated": "2026-08-27T15:03:55.940769+00:00",
+    "last_updated": "2026-08-27T21:37:03.722252+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 414.7,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 372.37,
+    "narrative": "Our primary offensive engine tonight is **Corbin Carroll**, who leads the board with a score of 80.08. Facing Landen Roupp, **Corbin Carroll** benefits from a strong order slot and favorable wind conditions that push his ceiling higher despite a minor downgrade for the opposing catcher\u2019s pop time. We are also leaning heavily on **Vinnie Pasquantino** (76.21) against Arrighetti; the 17% boost from the SP\u2019s xERA indicates this is the premier matchup for counting stats in our lineup. **Gabriel Moreno** (63.58) rounds out the strong plays, assuming he slots into the #3 hole, as the combination of wind out and SP weakness creates a high-efficiency floor for our catcher position.\n\nThe toughest decision of the day involved **Isaac Paredes**, who just cleared the 50-point threshold (54.43) to secure a UTIL start despite a daunting assignment against Gerrit Cole. While the SP skill penalty is heavy (-15%), his platoon advantage and batting order stability kept him ahead of our bench options. We remain cautious with **Austin Riley** (45.64), whose status is tenuous; he is battling a 36% rain risk and a difficult matchup against Yamamoto, making him a marginal play that we are monitoring closely. \n\nOur bench remains largely comprised of inactive talent today, with **Josh Naylor** off the slate and both **James Wood** and **Tyler Soderstrom** sidelined by injury. **Mickey Moniak** failed to crack the starting nine, as the model prioritized the platoon advantages of our active starters over his limited upside in today\u2019s specific environment. We are keeping a close eye on the final lineups for **Gabriel Moreno** and **Corbin Carroll**; any downward shift in their batting order would necessitate a recalibration of our 5x5 expectations.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Gabriel Moreno",
             "POS": "C",
-            "Score": 60.553990237803134,
+            "Score": 63.58168974969329,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -45,6 +45,11 @@
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Landen Roupp (R)",
@@ -60,11 +65,6 @@
             "POS": "1B",
             "Score": 76.20839229370331,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.45",
@@ -91,29 +91,24 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Spencer Arrighetti (R)",
+            "Opponent": "Arrighetti (R)",
             "SP_xERA": "4.72",
             "Warning": "",
             "GameTime": "2026-08-27T23:07:00Z",
-            "Order": "5*",
+            "Order": "4",
             "Start": "11:07 PM"
         },
         {
-            "Slot": "SS",
+            "Slot": "2B",
             "Player": "Jose Caballero",
             "POS": "2B/SS/3B/OF",
             "Score": 52.42590857793542,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.17",
@@ -145,66 +140,12 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Hayden Wesneski (R)",
+            "Opponent": "Wesneski (R)",
             "SP_xERA": "4.55",
             "Warning": "",
             "GameTime": "2026-08-27T23:05:00Z",
-            "Order": "9*",
+            "Order": "9",
             "Start": "11:05 PM"
-        },
-        {
-            "Slot": "MI",
-            "Player": "Brice Turang",
-            "POS": "2B",
-            "Score": 49.17501494515983,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "54.37",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Elite Hold SP (60% SB)",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Sean Manaea (L)",
-            "SP_xERA": "3.85",
-            "Warning": "",
-            "GameTime": "2026-08-27T23:10:00Z",
-            "Order": "3*",
-            "Start": "11:10 PM"
         },
         {
             "Slot": "3B",
@@ -212,11 +153,6 @@
             "POS": "3B",
             "Score": 45.648492053046034,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.27",
@@ -253,18 +189,18 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Yoshinobu Yamamoto (R)",
+            "Opponent": "Yamamoto (R)",
             "SP_xERA": "3.48",
-            "Warning": "\u26a0\ufe0f Rain Risk (35%)",
+            "Warning": "\u26a0\ufe0f Rain Risk (36%)",
             "GameTime": "2026-08-27T23:15:00Z",
-            "Order": "8*",
+            "Order": "8",
             "Start": "11:15 PM"
         },
         {
             "Slot": "OF1",
             "Player": "Corbin Carroll",
             "POS": "OF",
-            "Score": 76.2654117639121,
+            "Score": 80.07868235210772,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #2)",
@@ -305,6 +241,11 @@
                     "label": "Order #2",
                     "value": "+8%",
                     "type": "positive"
+                },
+                {
+                    "label": "Wind Out",
+                    "value": "+5%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Landen Roupp (R)",
@@ -320,11 +261,6 @@
             "POS": "1B/3B",
             "Score": 54.426468430812626,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.43",
@@ -356,11 +292,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Gerrit Cole (R)",
+            "Opponent": "Cole (R)",
             "SP_xERA": "3.38",
             "Warning": "",
             "GameTime": "2026-08-27T23:05:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "11:05 PM"
         }
     ],
@@ -516,6 +452,25 @@
                 }
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Brice Turang",
+            "POS": "2B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
             "GameTime": null
         },
         {
