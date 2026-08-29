@@ -1,9 +1,9 @@
 {
     "target_date": "2026-08-28",
-    "last_updated": "2026-08-28T21:39:40.432304+00:00",
+    "last_updated": "2026-08-29T03:27:51.175969+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 691.72,
-    "narrative": "Today\u2019s optimal lineup for LawDog centers on the heavy offensive environment surrounding our matchup against Brandon Young. **Lawrence Butler** (73.47) and **Jos\u00e9 Ram\u00edrez** (71.71) headline our starters, with **Lawrence Butler** benefiting immensely from a +10% park factor and a +13% platoon edge against the right-handed Young. Similarly, **Zack Gelof** (62.55) projects as a strong play in that same contest; while his raw base projection is modest, the combination of favorable park dynamics and Young\u2019s hittable profile provides the upside we need. **JJ Bleday** (62.12) also secures a spot, as the optimizer prioritizes his significant +14% dynamic platoon advantage against the southpaw Peterson, effectively balancing our exposure to elite arms like Skubal, who creates a tough environment for **Gleyber Torres** (52.25).\n\nThe most difficult decision on the bench was excluding **Braden Montgomery** (45.35), who carried the highest \"near-miss\" score but ultimately lost out due to a lack of elite categorical upside compared to our starters. While **Braden Montgomery** offers a solid floor, the optimizer opted for **Dylan Beavers** (59.48), whose high projected score is anchored by an 18% skill-advantage against the left-handed Lopez. We are monitoring **Bryce Harper** (50.97) and **Jung Hoo Lee** (56.59) closely, as both are subject to pending lineup confirmations. **Jung Hoo Lee** in particular is a high-variance play; while he benefits from a +5% wind-out factor, he faces the toughest individual matchup of the day against Kohl Drake. \n\nRisk management remains a priority given the scarcity of stolen bases. **Daulton Varsho** (52.83) retains his spot primarily for his defensive and situational utility, though his efficiency is hampered by a negative platoon dynamic. We are avoiding **Luis Arraez** (40.33) and **Justin Crawford** (38.06) today, as their projected outputs against Detmers fall well below our threshold; **Justin Crawford** in particular is sidelined by a projected #9 spot in the lineup. With **Will Smith** still confirmed on the IL, we will rely on the tandem of **Cal Raleigh** (46.25) and **Yainer Diaz** (43.90) to manage the catcher slot, despite **Cal Raleigh** battling a stiff test against Cease\u2019s 3.01 xERA.",
+    "total_efficiency_score": 683.42,
+    "narrative": "For today\u2019s slate, **Jos\u00e9 Ram\u00edrez** (71.71) and **Lawrence Butler** (73.47) anchor the lineup as our most potent assets. **Lawrence Butler** benefits immensely from the matchup against Young, whose 4.56 xERA and the favorable park conditions allow for a massive surge in his production efficiency (+13% from dynamic platoon adjustments). Similarly, **Jos\u00e9 Ram\u00edrez** remains our most reliable high-ceiling play; despite a standard dynamic platoon adjustment, his baseline talent level and the favorable conditions against Wacha keep him safely above our 70-point threshold. We are also monitoring **JJ Bleday** (62.12) closely, as his ability to leverage a +14% platoon edge against Peterson provides high value despite the moderate pitcher profile.\n\nRegarding our tactical decisions, the most difficult choice was keeping **Braden Montgomery** (45.35) on the bench. He hovered near the marginal threshold, but the efficiency edge provided by **JJ Bleday**\u2019s lineup positioning and the superior park factors for **Zack Gelof** (62.55) pushed the optimizer to favor the latter. Conversely, we are proceeding with caution regarding **Gleyber Torres** (52.25); facing the elite arm of Skubal (2.74 xERA) is a significant drag on his output. While **Gleyber Torres** maintains a high score due to leadoff usage and platoon favorability, his path to a high-scoring day is obstructed by the opponent's quality. \n\nFinally, a note on our roster depth: **Will Smith** remains sidelined on the IL, and we continue to evaluate the utility of **Luis Arraez** (40.33) in platoon-disadvantaged spots. We are avoiding the temptation to plug in **Justin Crawford**, as he is not confirmed in his team's starting lineup today. Monitor the weather in games involving **Cal Raleigh** and **Yainer Diaz**, as their scores (46.25 and 43.89, respectively) are brittle and rely on favorable park variances to maintain value against tough-to-hit arms like Cease and Scott.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -169,7 +169,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Elite Hold SP (55% SB)",
+                    "label": "Elite Hold SP (60% SB)",
                     "value": "-2%",
                     "type": "negative"
                 },
@@ -179,7 +179,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Brandon Young (R)",
+            "Opponent": "Young (R)",
             "SP_xERA": "4.56",
             "Warning": "",
             "GameTime": "2026-08-29T01:40:00Z",
@@ -306,7 +306,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Brandon Young (R)",
+            "Opponent": "Young (R)",
             "SP_xERA": "4.56",
             "Warning": "",
             "GameTime": "2026-08-29T01:40:00Z",
@@ -319,11 +319,6 @@
             "POS": "1B/OF",
             "Score": 50.96687365061975,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "58.33",
@@ -364,20 +359,15 @@
             "SP_xERA": "3.36",
             "Warning": "",
             "GameTime": "2026-08-29T01:38:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "01:38 AM"
         },
         {
             "Slot": "OF3",
             "Player": "Dylan Beavers",
             "POS": "OF",
-            "Score": 59.48277571935222,
+            "Score": 55.91380917619108,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.65",
@@ -402,13 +392,18 @@
                     "label": "Platoon (L/L)",
                     "value": "-9%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Lopez, J (L)",
             "SP_xERA": "4.74",
             "Warning": "",
             "GameTime": "2026-08-29T01:40:00Z",
-            "Order": "6*",
+            "Order": "8",
             "Start": "01:40 AM"
         },
         {
@@ -503,13 +498,8 @@
             "Slot": "UTIL",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
-            "Score": 56.58531671803168,
+            "Score": 51.85716356908563,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.63",
@@ -536,21 +526,16 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kohl Drake (L)",
+            "Opponent": "Drake (L)",
             "SP_xERA": "5.38",
             "Warning": "",
             "GameTime": "2026-08-29T02:15:00Z",
-            "Order": "3*",
+            "Order": "5",
             "Start": "02:15 AM"
         }
     ],
@@ -583,14 +568,14 @@
             "Slot": "BN",
             "Player": "Justin Crawford",
             "POS": "OF",
-            "Order": "9*",
+            "Order": "-",
             "Start": "01:38 AM",
             "Opponent": "Detmers (L)",
             "SP_xERA": "3.36",
-            "Score": 38.05740496225182,
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #9)",
+                    "label": "Bench Assumption (Assumed #5)",
                     "value": null,
                     "type": "info"
                 },
@@ -620,12 +605,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
@@ -685,17 +670,12 @@
             "Slot": "BN",
             "Player": "Luis Arraez",
             "POS": "1B/2B",
-            "Order": "4*",
+            "Order": "4",
             "Start": "01:38 AM",
             "Opponent": "Detmers (L)",
             "SP_xERA": "3.36",
             "Score": 40.32920995532732,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.46",
@@ -727,7 +707,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
