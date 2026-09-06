@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-06",
-    "last_updated": "2026-09-06T21:53:06.447395+00:00",
+    "last_updated": "2026-09-06T23:22:58.794939+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 696.97,
-    "narrative": "The Austin Waves roster presents a balanced attack today, though **Vladimir Guerrero Jr.** (72.18) and **Luis Garc\u00eda Jr.** (72.01) lead the charge as our most viable cornerstones. Both benefit from favorable matchups against mid-rotation arms; **Vladimir Guerrero Jr.** leverages an elite 15% SP skill advantage against Dobnak, while **Luis Garc\u00eda Jr.** capitalizes on a strong 14% dynamic platoon edge against King. **Sam Antonacci** and **Miguel Vargas** also offer high-floor value (63.14 and 62.46, respectively) by attacking Ober. With Ober\u2019s 4.79 xERA and a generous 92% steal-success probability threshold, **Miguel Vargas** is an opportunistic start, as his speed metrics are specifically optimized for this matchup.\n\nStrategic discipline remains key given our focus on the scarcest category: Stolen Bases. While **Kyle Tucker** (66.85) remains a must-start, we are monitoring the lineup for **Nasim Nunez**; should he slot into the #9 hole as projected, his 85% steal-success rate against the slow delivery of Wrobleski keeps him in the starting XI despite the order penalty. The most difficult bench decision involved **Coby Mayo** (56.06); while his platoon edge against Tolle is significant, the 50% \"Elite Hold\" rate of the opposing pitcher makes it a high-risk environment for aggressive base-running. Consequently, we are sacrificing his power potential to prioritize the more consistent production profiles of our top OFs.\n\nCaution is warranted for **Gunnar Henderson** and **Jackson Merrill**, both of whom face high-caliber pitching in Tolle and Cole. While **Gunnar Henderson** benefits from park factors, the 13% SP skill drag significantly dampens his ceiling. Meanwhile, **Wade Meckler** (40.30) sits right on our efficiency floor; despite the platoon advantage, the matchup against Skenes\u2014who represents the ultimate threat to our daily production targets\u2014makes this a volatile start. We continue to hold **Luis Robert Jr.**, **Andy Pages**, **Jordan Westburg**, and **Jacob Wilson** on the IL, alongside depth pieces like **Heliot Ramos**, **Josh Jung**, **Tommy White**, **Curtis Mead**, **Franklin Arias**, **Dominic Smith**, **Liam Hicks**, and **Luis Lara**, waiting for clearer runway in the final stretch of the season.",
+    "total_efficiency_score": 690.9,
+    "narrative": "The Austin Waves enter today\u2019s slate with **Vladimir Guerrero Jr.** (72.18) and **Luis Garc\u00eda Jr.** (72.01) headlining our offensive attack. **Vladimir Guerrero Jr.** draws a favorable matchup against Dobnak (xERA 4.62), and while the platoon splits are slightly suboptimal, his base power projection and the bump from the #3 hole keep his floor remarkably high. **Luis Garc\u00eda Jr.** benefits from a massive 14% boost due to dynamic platoon advantages against King, making him an essential start. **Sam Antonacci** (63.14) and **Miguel Vargas** (62.46) also emerge as core plays; both capitalize on a high-upside matchup against Ober, where their ability to exploit his slow delivery\u2014combined with high-leverage spots in the top two spots of the order\u2014provides a significant boost to our category targets.\n\nOur most difficult lineup decision involved balancing the scarcity of stolen bases against high-difficulty matchups. **Jackson Merrill** (55.37) edged out **Henry Bolte** (40.25) for the final outfield slot, as **Jackson Merrill**\u2019s 13% platoon boost against Cole outweighs the marginal volume benefit of **Henry Bolte**\u2019s leadoff spot. **Henry Bolte** is currently hampered by a poor BvP history and a difficult matchup against Woo, keeping him near the bottom of our \"marginal\" tier. Meanwhile, we remain thin at the middle-infield spot, where **Nasim Nunez** (53.34) is locked in; while his projected #9 spot is a drag on his run production, his elite sprint speed and the opponent's slow delivery offer a high-reward profile for our SB-starved category goals.\n\nInvestors should proceed with caution regarding our top-tier talent facing elite arms. **Wade Meckler** (40.30) faces Skenes, an elite pitcher who drastically depresses his raw projection. Similarly, **Gunnar Henderson** (52.80) faces a challenging lefty in Tolle, with his score further mitigated by a 50% SB-prevention factor from the opposing pitcher. We continue to monitor the IL situation closely, as the absence of **Luis Robert Jr.**, **Andy Pages**, **Jordan Westburg**, and **Jacob Wilson** limits our ability to rotate for better platoon matches. If **Nasim Nunez**\u2019s batting order is confirmed lower than the 9th spot, we may see his efficiency score dip further, though his defensive utility remains necessary for the rotation.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -228,7 +228,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Justin Wrobleski (L)",
+            "Opponent": "Wrobleski (L)",
             "SP_xERA": "4.12",
             "Warning": "",
             "GameTime": "2026-09-07T02:10:00Z",
@@ -291,15 +291,54 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Kyle Tucker",
+            "Player": "Wade Meckler",
             "POS": "OF",
-            "Score": 66.84954130604484,
+            "Score": 40.30110814649196,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
+                    "label": "Base",
+                    "value": "44.42",
                     "type": "info"
                 },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-18%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Skenes (R)",
+            "SP_xERA": "3.26",
+            "Warning": "",
+            "GameTime": "2026-09-06T17:35:00Z",
+            "Order": "3",
+            "Start": "05:35 PM"
+        },
+        {
+            "Slot": "OF2",
+            "Player": "Kyle Tucker",
+            "POS": "OF",
+            "Score": 64.2784051019662,
+            "Breakdown": [
                 {
                     "label": "Base",
                     "value": "63.50",
@@ -319,63 +358,14 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "-1%",
                     "type": "negative"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Andrew Alvarez (L)",
             "SP_xERA": "4.10",
             "Warning": "",
             "GameTime": "2026-09-07T02:10:00Z",
-            "Order": "4*",
+            "Order": "6",
             "Start": "02:10 AM"
-        },
-        {
-            "Slot": "OF2",
-            "Player": "Henry Bolte",
-            "POS": "OF",
-            "Score": 43.74700143671101,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "48.44",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-5%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-10%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Woo (R)",
-            "SP_xERA": "3.56",
-            "Warning": "",
-            "GameTime": "2026-09-06T20:10:00Z",
-            "Order": "1",
-            "Start": "08:10 PM"
         },
         {
             "Slot": "OF3",
@@ -428,13 +418,13 @@
         },
         {
             "Slot": "OF4",
-            "Player": "Wade Meckler",
+            "Player": "Henry Bolte",
             "POS": "OF",
-            "Score": 40.30110814649196,
+            "Score": 40.24724132177413,
             "Breakdown": [
                 {
                     "label": "Base",
-                    "value": "44.42",
+                    "value": "48.44",
                     "type": "info"
                 },
                 {
@@ -444,31 +434,36 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-2%",
+                    "value": "-5%",
                     "type": "negative"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-18%",
+                    "value": "-10%",
                     "type": "negative"
                 },
                 {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "BvP Poor (34 PA)",
+                    "value": "-7%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Skenes (R)",
-            "SP_xERA": "3.26",
+            "Opponent": "Woo (R)",
+            "SP_xERA": "3.56",
             "Warning": "",
-            "GameTime": "2026-09-06T17:35:00Z",
-            "Order": "3",
-            "Start": "05:35 PM"
+            "GameTime": "2026-09-06T20:10:00Z",
+            "Order": "1",
+            "Start": "08:10 PM"
         },
         {
             "Slot": "OF5",
