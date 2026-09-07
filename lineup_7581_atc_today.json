@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-07",
-    "last_updated": "2026-09-07T20:18:11.204624+00:00",
+    "last_updated": "2026-09-07T23:11:49.285165+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 436.58,
-    "narrative": "The Austin Waves enter today\u2019s slate with **Vladimir Guerrero Jr.** commanding the top spot in our lineup projections with an elite 81.21 efficiency score. Facing Jacob Lopez, **Vladimir Guerrero Jr.** benefits from a favorable 4.67 xERA matchup and a projected #3 spot in the order that maximizes his run-production potential. Following him, **Jackson Merrill** (69.12) is our most efficient speed-inclusive play; his matchup against a mid-tier arm in Irvin yields a strong platoon advantage that elevates his floor significantly. While **Gunnar Henderson** (65.79) and **Coby Mayo** (65.57) are both tagged as strong starts, they face a tougher assignment against Cantillo. However, both benefit from significant park factors that effectively mitigate the impact of the opposing starter, keeping their offensive upside well within the reliable range.\n\n**Wade Meckler** (51.27) and **Drake Baldwin** (48.10) hover in the marginal territory, representing the \"efficiency floor\" for the squad today. **Wade Meckler** earned the nod over other depth options largely due to a favorable batting order placement (#3), which compounds the value of his platoon edge against Bello. **Kyle Tucker** (55.52) remains a start despite facing the highest-skill arm of the day in Chase Burns; his elite base projection keeps him in the lineup, though his output is subject to the highest volatility due to the SP's low xERA. We continue to monitor the status of **Luis Robert Jr.**, **Andy Pages**, and **Jordan Westburg**, all of whom remain on the IL, while **Luis Garc\u00eda Jr.** is inactive today due to a team off-day. \n\nThe optimizer\u2019s toughest decision centered on balancing the limited availability of our healthy bench against the rigid game-cap constraints. Ultimately, the projection models favored the consistency of **Wade Meckler** over potential high-upside gambles from speculative call-ups like **Jacob Wilson** or **Heliot Ramos**, as the latter group lacked the clear order-positioning benefits required to break the 50-point threshold. We remain cautious regarding **Drake Baldwin** and **Kyle Tucker**, as their respective lineups are currently pending; should either be dropped from their assumed spots in the order, their efficiency scores will be subject to an immediate downward revision.",
+    "total_efficiency_score": 437.96,
+    "narrative": "The Austin Waves look toward a pivotal Sunday slate with **Vladimir Guerrero Jr.** leading the charge at a commanding 81.21 efficiency score. Facing J. Lopez, **Vladimir Guerrero Jr.** benefits from a favorable 4.67 xERA matchup and positive park factors, making him the anchor of today\u2019s offense. Joining him in the tier of \"Strong\" starts, **Jackson Merrill** (70.50) is a critical component given his speed profile. We have specifically weighted **Jackson Merrill** higher due to the opposing starter's slow delivery, which provides a tangible boost to his stolen base upside\u2014a priority for the Waves given our league-wide scarcity strategy. Both **Gunnar Henderson** and **Coby Mayo** (65.79 and 65.57, respectively) remain locked into the lineup against the vulnerable arm of Cantillo, with park conditions providing a significant 16% lift to their base projections.\n\nThe most difficult decision on the card involved **Kyle Tucker** (55.52), who narrowly landed in the \"Marginal\" category. While **Kyle Tucker** possesses an elite pedigree, the matchup against Ch. Burns (3.44 xERA) tempers his expected output, limiting his ceiling relative to our other outfield options. Our bench remains heavily compromised by the injury bug, with **Luis Robert Jr.**, **Andy Pages**, and **Jordan Westburg** all confirmed on the IL, while **Luis Garc\u00eda Jr.** is unavailable due to a team off-day. Consequently, **Drake Baldwin** (48.10) and **Wade Meckler** (51.27) round out the daily starting unit by default; while these scores reflect a lack of elite alternatives, we are monitoring the \"Lineup Pending\" status for **Vladimir Guerrero Jr.** closely. Should any last-minute defensive substitutions occur, we will be forced to rotate in reserves like **Jacob Wilson** or **Heliot Ramos**, though current projections suggest sticking to the stated lineup to protect our remaining game caps.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -91,7 +91,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jacob Lopez (L)",
+            "Opponent": "Lopez, J (L)",
             "SP_xERA": "4.67",
             "Warning": "",
             "GameTime": "2026-09-08T02:05:00Z",
@@ -193,11 +193,6 @@
             "Score": 55.51680882985522,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "63.63",
                     "type": "info"
@@ -218,18 +213,18 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Chase Burns (R)",
+            "Opponent": "Burns, Ch (R)",
             "SP_xERA": "3.44",
             "Warning": "",
             "GameTime": "2026-09-08T01:10:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "01:10 AM"
         },
         {
             "Slot": "OF4",
             "Player": "Jackson Merrill",
             "POS": "OF",
-            "Score": 69.11703487971705,
+            "Score": 70.4993755773114,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -254,6 +249,11 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (86% SB)",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
@@ -664,17 +664,12 @@
             "Slot": "BN",
             "Player": "Henry Bolte",
             "POS": "OF",
-            "Order": "1*",
+            "Order": "1",
             "Start": "02:05 AM",
             "Opponent": "Dylan Cease (R)",
             "SP_xERA": "2.99",
             "Score": 0.0,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "0.00",
@@ -706,7 +701,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -718,55 +713,20 @@
             "Slot": "BN",
             "Player": "Tommy White",
             "POS": "1B/3B",
-            "Order": "5*",
-            "Start": "02:05 AM",
-            "Opponent": "Dylan Cease (R)",
-            "SP_xERA": "2.99",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
             "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "0.00",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-09-08T02:05:00Z"
+            "GameTime": null
         }
     ]
 }
