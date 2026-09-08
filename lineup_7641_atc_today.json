@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-08",
-    "last_updated": "2026-09-08T15:43:14.577282+00:00",
+    "last_updated": "2026-09-08T19:12:06.884244+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 843.35,
-    "narrative": "The primary anchor for the LawDog lineup today is **Jos\u00e9 Ram\u00edrez**, who boasts an elite 85.92 rating. His projection is bolstered by a massive 16% park factor and a favorable matchup against Brandon Young, whose 4.53 xERA offers an ideal runway for production. Close behind, **Lawrence Butler** (73.17) and **Bryce Harper** (71.72) are poised for high-ceiling games; **Lawrence Butler** benefits from a 13% platoon boost against the right-handed Jos\u00e9 Soriano, while **Bryce Harper** carries a stellar 0.392 xwOBA into his encounter with Hayden Wesneski. Notably, **Dylan Beavers** offers surprising utility as a budget-friendly start; his 66.73 rating is significantly elevated by an 11% SP skill advantage and a \"Slow SP Delivery\" tag, which signals high potential for the stolen bases that are so critical to our internal scoring philosophy.\n\nOn the bench, the decision to sit Braden Montgomery (53.27) was a narrow call. While he draws a favorable 4.83 xERA matchup, he was edged out by the superior efficiency and lineup positioning of **Alex Freeland** and the utility floor of **Yainer Diaz**. We are currently navigating a \"Lineup Pending\" status across the board, which introduces non-trivial risk; should confirmed lineups shift, particularly for **Cal Raleigh** or **Will Smith**, their projected efficiency scores\u2014currently 58.04 and 66.15 respectively\u2014could fluctuate. Investors should also note that while **Justin Crawford** (59.66) is in the starting rotation, he remains at the lower threshold of our recommended starts; he is being kept active largely to monitor his speed upside in a game against the exploitable Hayden Wesneski.",
+    "total_efficiency_score": 844.99,
+    "narrative": "The core of today\u2019s offensive attack is anchored by **Jos\u00e9 Ram\u00edrez**, who boasts the day\u2019s high-water mark of 85.92. He profiles as an elite play against Young, benefiting from a massive +16% park factor and favorable SP skill metrics. Joining him in the top tier is **Lawrence Butler** (73.17), whose matchup against Jos\u00e9 Soriano offers an excellent combination of park advantage and a +13% platoon boost, making him a prime candidate for production. **Bryce Harper** (71.72) and **Jonathan Aranda** (70.47) also project as strong starts, with **Jonathan Aranda** capitalizing on an elite +19% SP skill rating against the vulnerable AJ Smith-Shawver. We are also monitoring **Dylan Beavers** (68.38), whose matchup is bolstered by a favorable park and, crucially, a slow opposing pitcher delivery that should facilitate his stolen base potential\u2014a vital component given our focus on speed.\n\nOur most difficult roster decision involved the benching of Braden Montgomery, who posted a respectable 53.28 score. Ultimately, the optimizer favored **Dylan Beavers** and **Justin Crawford** due to their higher raw utility and more favorable platoon positioning. While **Gleyber Torres** (51.57) was considered, his heavy negative platoon adjustment against Kremer forced him to the bench in favor of the higher-ceiling options currently slotted in our MI and UTIL spots. \n\nWe are proceeding with caution regarding the \u201cLineup Pending\u201d status for several key contributors, most notably **Cal Raleigh** and **Zack Gelof**. **Cal Raleigh** remains a marginal play at 58.04, and any drop in his batting order could further compress his daily efficiency. While we are confident in the setup for **Will Smith** against Nick Lodolo, we are tracking the weather and late-inning bullpen usage carefully, as any shift in the leverage environment could impact the SB opportunities we are banking on from players like **Dylan Beavers** and **Justin Crawford**.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -149,11 +149,6 @@
             "Score": 62.4280076813325,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "49.46",
                     "type": "info"
@@ -188,7 +183,7 @@
             "SP_xERA": "4.33",
             "Warning": "",
             "GameTime": "2026-09-08T22:40:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "10:40 PM"
         },
         {
@@ -336,7 +331,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Brandon Young (R)",
+            "Opponent": "Young (R)",
             "SP_xERA": "4.53",
             "Warning": "",
             "GameTime": "2026-09-08T22:35:00Z",
@@ -439,7 +434,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Andrew Painter (R)",
+            "Opponent": "Painter (R)",
             "SP_xERA": "4.36",
             "Warning": "",
             "GameTime": "2026-09-08T22:40:00Z",
@@ -452,11 +447,6 @@
             "POS": "1B/OF",
             "Score": 71.72657219401071,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "58.33",
@@ -497,20 +487,15 @@
             "SP_xERA": "4.33",
             "Warning": "",
             "GameTime": "2026-09-08T22:40:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "10:40 PM"
         },
         {
             "Slot": "OF4",
             "Player": "Dylan Beavers",
             "POS": "OF",
-            "Score": 66.73439210638423,
+            "Score": 68.38229610455717,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.65",
@@ -540,18 +525,13 @@
                     "label": "Slow SP Delivery (85% SB)",
                     "value": "+4%",
                     "type": "positive"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
                 }
             ],
             "Opponent": "Tanner Bibee (R)",
             "SP_xERA": "4.45",
             "Warning": "",
             "GameTime": "2026-09-08T22:35:00Z",
-            "Order": "9*",
+            "Order": "6",
             "Start": "10:35 PM"
         },
         {
@@ -560,11 +540,6 @@
             "POS": "OF",
             "Score": 59.66524876822421,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.37",
@@ -600,7 +575,7 @@
             "SP_xERA": "4.33",
             "Warning": "",
             "GameTime": "2026-09-08T22:40:00Z",
-            "Order": "9*",
+            "Order": "9",
             "Start": "10:40 PM"
         },
         {
@@ -645,7 +620,7 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Andrew Painter (R)",
+            "Opponent": "Painter (R)",
             "SP_xERA": "4.36",
             "Warning": "",
             "GameTime": "2026-09-08T22:40:00Z",
@@ -706,17 +681,12 @@
             "Slot": "BN",
             "Player": "Gleyber Torres",
             "POS": "2B",
-            "Order": "3*",
+            "Order": "2",
             "Start": "10:40 PM",
-            "Opponent": "Dean Kremer (R)",
+            "Opponent": "Kremer (R)",
             "SP_xERA": "4.06",
-            "Score": 50.615437035733095,
+            "Score": 51.570445281690326,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.02",
@@ -748,12 +718,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
