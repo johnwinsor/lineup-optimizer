@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-11",
-    "last_updated": "2026-09-11T15:34:39.892119+00:00",
+    "last_updated": "2026-09-11T18:54:33.175958+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 774.49,
-    "narrative": "Today\u2019s lineup is anchored by **Cal Raleigh** (79.31) and **Lawrence Butler** (73.46), who draw the most favorable matchups on the board. **Cal Raleigh** benefits significantly from a soft matchup against the left-handed Jeffrey Springs (4.84 xERA) and a park factor boost, while **Lawrence Butler** is positioned to feast on George Kirby\u2019s recent struggles, with his dynamic platoon advantage providing a +13% lift. **Dylan Beavers** also emerges as a high-upside play at 68.38; his aggressive placement in the leadoff spot and a +19% boost from facing the veteran Max Scherzer\u2014who carries an inflated 5.10 xERA\u2014makes him a critical asset for stolen base accumulation today. We are also leaning on **Jos\u00e9 Ram\u00edrez** (66.08) to provide veteran stability; his score remains high despite a middling matchup because his profile is immune to the usual platoon regressions, and his ability to capitalize on the slower delivery of Taj Bradley keeps his stolen base potential firmly in play.\n\nThe most difficult decision on the bench was leaving **Daulton Varsho** (45.93) out of the starting nine. While his power-speed profile is enticing, his matchup against Drew Rasmussen (3.27 xERA) suppresses his ceiling enough that he falls just below the threshold of our utility slots, particularly with **Kyle Karros** (58.73) providing a cleaner path to production against the lefty Framber Valdez. We are monitoring **Bryce Harper** (48.50) closely; although he holds a solid xwOBA, he faces an elite arm in Chris Sale (2.81 xERA), which heavily dampens his projection. Every player today remains in \"Lineup Pending\" status, introducing a non-zero risk of late scratches; we have prioritized rostered hitters with favorable order placement, but if **Will Smith** or **Jonathan Aranda** shift downward in their respective orders, their value will see a swift correction before the first pitch.",
+    "total_efficiency_score": 775.67,
+    "narrative": "The strongest play for LawDog today is **Cal Raleigh**, whose score of 79.31 is bolstered significantly by a favorable matchup against Jeffrey Springs (xERA 4.84) and a 10% park factor bump. While **Lawrence Butler** (73.47) and **Dylan Beavers** (68.38) are also high-end starts, **Dylan Beavers** is particularly intriguing; his 68.38 score is driven by a elite-level matchup against the fading Max Scherzer and a critical 4% boost for facing a pitcher with a slow delivery, which historically translates to stolen base opportunities\u2014a vital factor given our focus on SB scarcity. **Jos\u00e9 Ram\u00edrez** remains a staple in the three-hole, with his 66.08 score reflecting a stable floor despite a middling matchup against Taj Bradley.\n\nStrategic benching was a difficult exercise today, with **Daulton Varsho** (45.93) narrowly missing the cut. While **Daulton Varsho** carries a strong platoon advantage against Drew Rasmussen, the optimizer ultimately favored the efficiency of **Kyle Karros** (59.90) and **Jeremiah Jackson** (61.34), both of whom benefit from positive park factors and favorable matchups against starting pitchers prone to longer delivery times. **Bryce Harper** (48.50) is the most notable \"name\" starter operating near his floor, hindered primarily by an elite matchup against Chris Sale; however, his xwOBA of .389 provides enough underlying confidence to maintain his spot in the lineup. \n\nCaution is advised regarding the \"Lineup Pending\" status across the board, specifically for **Will Smith** and **Jonathan Aranda**, who could see their efficiency scores shift if they are dropped in the batting order. We are also monitoring the risk associated with **Jonathan Aranda**, who faces the toughest pitcher on the slate in Miguel Ullola (xERA 2.27). Should any lineups come back with unexpected defensive substitutions or late-scratch rest days, we are prepared to pivot to the bench, where **Gleyber Torres** and **JJ Bleday** remain ready to fill gaps if the starting unit fails to materialize as projected.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -218,11 +218,6 @@
             "Score": 49.37082265770611,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "49.46",
                     "type": "info"
@@ -257,7 +252,7 @@
             "SP_xERA": "4.48",
             "Warning": "",
             "GameTime": "2026-09-12T00:15:00Z",
-            "Order": "8*",
+            "Order": "8",
             "Start": "12:15 AM"
         },
         {
@@ -627,13 +622,8 @@
             "Slot": "UTIL",
             "Player": "Kyle Karros",
             "POS": "3B",
-            "Score": 58.72720646335182,
+            "Score": 59.90175059261885,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.81",
@@ -663,13 +653,18 @@
                     "label": "Slow SP Delivery (100% SB)",
                     "value": "+2%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Framber Valdez (L)",
+            "Opponent": "Valdez, F (L)",
             "SP_xERA": "4.38",
             "Warning": "",
             "GameTime": "2026-09-11T22:40:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "10:40 PM"
         }
     ],
@@ -888,17 +883,12 @@
             "Slot": "BN",
             "Player": "Gleyber Torres",
             "POS": "2B",
-            "Order": "2*",
+            "Order": "2",
             "Start": "10:40 PM",
-            "Opponent": "Mason Adams (R)",
+            "Opponent": "Adams, M (R)",
             "SP_xERA": "3.65",
             "Score": 45.00478953033437,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.02",
@@ -930,7 +920,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -1095,7 +1085,7 @@
             "POS": "OF",
             "Order": "6*",
             "Start": "12:15 AM",
-            "Opponent": "Matthew Liberatore (L)",
+            "Opponent": "Liberatore (L)",
             "SP_xERA": "3.98",
             "Score": 42.84249480899354,
             "Breakdown": [
