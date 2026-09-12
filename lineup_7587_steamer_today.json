@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-12",
-    "last_updated": "2026-09-12T17:33:07.555619+00:00",
+    "last_updated": "2026-09-12T19:54:20.006555+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 611.24,
-    "narrative": "Ghost Ride the WHIP enters today\u2019s slate with **Corbin Carroll** leading the charge, boasting an elite 77.46 score. His matchup against Kumar Rocker is optimal; between his plus-platoon advantage and a favorable spot in the order, **Corbin Carroll** is our primary engine for SB production, which remains our highest priority category. **James Wood** also demands attention at 72.41, bolstered by a strong 0.415 xwOBA and a prime leadoff opportunity against Ure\u00f1a. Meanwhile, **Trevor Story** continues to look like a high-upside play at 68.70, as he benefits from a generous 4.58 xERA matchup that allows him to exploit the park factors effectively.\n\nThe most difficult decision for the optimizer today was bypassing **Max Muncy** on the bench. With a score of 49.03, he remained a legitimate contender for the UTIL slot, but he ultimately lost out to the superior platoon splits and park-adjusted outlook of **Josh Naylor** (62.46). While **Max Muncy** offers power, his negative SP skill adjustment against Bryan Woo neutralized his base projection. Elsewhere, the lower end of the lineup is tighter; **Griffin Conine** barely cleared our 40.0 threshold at 40.08, narrowly escaping the bench despite facing an elite arm in Tyler Glasnow. His inclusion is purely situational, predicated on the desperate need for his specific power profile to keep our pace in HR and RBI.\n\nRisk management remains critical as we navigate several \"Lineup Pending\" tags for players like **Gabriel Moreno**, **Cole Young**, **Brice Turang**, **Austin Riley**, **Corbin Carroll**, and **Josh Naylor**. Any defensive replacements or late-scratches could shift these scores significantly. Furthermore, we are keeping a close eye on **Griffin Conine**; should he be shifted down the lineup or if weather delays materialize, we are prepared to pivot, though we have little confidence in the current bench depth\u2014including **Isaac Paredes** and **Travis Bazzana**\u2014to provide a higher floor given their respective matchups against Seymour and Prielipp. For today, we lean into our speed-first strategy with **Corbin Carroll** and **Brice Turang** anchoring the top of the card.",
+    "total_efficiency_score": 606.12,
+    "narrative": "For today\u2019s slate, our lineup is anchored by the dual-threat speed of **Corbin Carroll** and **James Wood**, both of whom present as elite daily plays with scores of 77.46 and 72.41, respectively. **Corbin Carroll** benefits from a favorable matchup against Kumar Rocker, where his dynamic platoon advantage and projected #5 slot drive his ceiling. Meanwhile, **James Wood** is set to lead off against Ure\u00f1a; his elite 0.415 xwOBA, combined with the favorable park factor and a weak opposing arm, positions him as our most reliable catalyst for runs and stolen bases. **Trevor Story** and **Brice Turang** also maintain strong efficiency scores near 68, with **Trevor Story** specifically exploiting the 4.58 xERA of Dobnak to mitigate his usual volatility.\n\nThe most difficult decision on the bench involved **Austin Riley**, who narrowly missed our starting threshold with a score of 42.69. While his base projection is solid, the matchup against Tim Mayza forced a significant 18% downward adjustment for the opposing pitcher's skill, compounded by the detrimental impact of a #7 lineup spot. **Max Muncy** remains the lowest-ranked starter at 49.03; his inclusion is purely a function of roster depth, as he struggles against Bryan Woo\u2019s 3.53 xERA. We remain cautious regarding **Griffin Conine**, whose score of 40.08 barely clears our floor; starting him against Glasnow is a high-risk move, though his platoon edge provides just enough justification to keep him active to chase HR volume.\n\nWe are actively monitoring the \"Lineup Pending\" status for **Gabriel Moreno**, **Cole Young**, **Brice Turang**, **Max Muncy**, **Corbin Carroll**, and **Josh Naylor**. Any shift in their assigned batting order could trigger a re-optimization, particularly for **Cole Young**, whose current score is sensitive to his placement at the bottom of the order. While the data suggests a productive day for our core, the presence of Glasnow on the opposing mound for **Griffin Conine** serves as the primary danger to our overall efficiency, and we will watch the pre-game weather reports for any signs of restricted offensive production.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -233,7 +233,7 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Brady Singer (R)",
+            "Opponent": "Singer (R)",
             "SP_xERA": "4.50",
             "Warning": "",
             "GameTime": "2026-09-12T23:10:00Z",
@@ -242,18 +242,18 @@
         },
         {
             "Slot": "3B",
-            "Player": "Austin Riley",
-            "POS": "3B",
-            "Score": 54.143411591641645,
+            "Player": "Max Muncy",
+            "POS": "2B/SS/3B",
+            "Score": 49.02859129755632,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
+                    "label": "Lineup Pending (Assumed #5)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "55.27",
+                    "value": "51.08",
                     "type": "info"
                 },
                 {
@@ -263,21 +263,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+1%",
+                    "value": "+10%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
+                    "label": "SP Skill",
+                    "value": "-11%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (R/R)",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Bryan Woo (R)",
+            "SP_xERA": "3.53",
             "Warning": "",
-            "GameTime": "2026-09-12T23:15:00Z",
-            "Order": "7*",
-            "Start": "11:15 PM"
+            "GameTime": "2026-09-13T01:40:00Z",
+            "Order": "5*",
+            "Start": "01:40 AM"
         },
         {
             "Slot": "OF2",
@@ -531,6 +541,65 @@
         },
         {
             "Slot": "BN",
+            "Player": "Austin Riley",
+            "POS": "3B",
+            "Order": "7*",
+            "Start": "11:15 PM",
+            "Opponent": "Tim Mayza (L)",
+            "SP_xERA": "3.25",
+            "Score": 42.68673658504168,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #7)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "55.27",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-18%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-09-12T23:15:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Giancarlo Stanton",
             "POS": "OF",
             "Order": "-",
@@ -576,17 +645,12 @@
             "Slot": "BN",
             "Player": "Isaac Paredes",
             "POS": "1B/3B",
-            "Order": "3*",
+            "Order": "2",
             "Start": "10:10 PM",
-            "Opponent": "Ian Seymour (L)",
+            "Opponent": "Seymour, I (L)",
             "SP_xERA": "3.18",
-            "Score": 38.23673081875179,
+            "Score": 38.95817857004899,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "53.43",
@@ -613,72 +677,18 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
             "GameTime": "2026-09-12T22:10:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Max Muncy",
-            "POS": "2B/SS/3B",
-            "Order": "5*",
-            "Start": "01:40 AM",
-            "Opponent": "Bryan Woo (R)",
-            "SP_xERA": "3.53",
-            "Score": 49.02859129755632,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "51.08",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-11%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-09-13T01:40:00Z"
         },
         {
             "Slot": "BN",
