@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-12",
-    "last_updated": "2026-09-12T23:38:37.221389+00:00",
+    "last_updated": "2026-09-13T02:34:39.388812+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 749.73,
-    "narrative": "Our strongest plays today center on **Cal Raleigh** (73.69) and **Jos\u00e9 Ram\u00edrez** (69.42), both of whom are projected for high-efficiency outings due to favorable park factors and high-leverage lineup slots. **Cal Raleigh** remains a premier start against Jump, as his +10% park factor and the dynamic platoon advantage provide a massive ceiling for power production. Similarly, **Jos\u00e9 Ram\u00edrez** occupies the #2 hole, and despite a moderate SP skill rating from Prielipp, his consistent recency and lineup protection make him the anchor of our infield production. **Bryce Harper** (64.39) rounds out the elite tier; despite facing a capable arm in Mahle, his projected xwOBA of 0.389 and the boost from batting third signal a high-floor game for our slugger.\n\nRegarding the bench, the decision to sit **Dylan Beavers** (49.13) was the most difficult. While his elite speed would typically provide a boost in our scarcity-driven strategy, his projected efficiency fell just short of the starters, largely due to a difficult matchup against Miles. Conversely, **Kyle Karros** (63.11) earned the UTIL spot over other bench candidates because of a significant +19% boost from the SP skill matchup against Sears, effectively overriding the raw base projections of other depth pieces. We are proceeding with caution regarding **Yainer Diaz** (41.37) and **Zack Gelof** (46.61); both sit near the lower bounds of our start threshold due to significant negative adjustments for SP skill and park factors, respectively. We will monitor for any late-breaking lineup changes that might impact these margins, but as it stands, our roster is optimized to prioritize the high-efficiency platoon advantages identified in the ATC data.",
+    "total_efficiency_score": 756.55,
+    "narrative": "Today\u2019s lineup for LawDog hinges on capitalizing on favorable pitching matchups against middle-of-the-road starters. **Cal Raleigh** (73.69) stands out as our premier start today; he benefits from a massive park factor boost (+10%) and an advantageous platoon edge against Jump, making him the highest-scoring option in our lineup. **Bryce Harper** (69.54) and **Jos\u00e9 Ram\u00edrez** (69.42) are our next most reliable anchors. **Bryce Harper** continues to show elite production, buoyed by a strong 0.389 xwOBA and an optimal spot in the order, while **Jos\u00e9 Ram\u00edrez** remains a set-and-forget play despite facing a tougher opponent in Prielipp. Additionally, **Kyle Karros** (63.11) provides unexpected utility value, as he leverages a favorable 4.96 xERA matchup against Sears to offer significant efficiency.\n\nWe are hunting stolen bases and specific platoon advantages today, most notably with **Justin Crawford** (57.84) and **Lawrence Butler** (58.34). **Lawrence Butler** is particularly well-positioned with a +13% platoon boost, despite some negative BvP noise. Our toughest bench decision centered on **Dylan Beavers** (49.13), who sits just outside our core lineup. While **Dylan Beavers** offers elite sprint speed and a high-leverage leadoff spot, the optimizer leaned into the higher raw scoring potential of our other outfielders, ultimately leaving **Dylan Beavers** on the bench to maintain our game cap discipline. We are proceeding with caution regarding **Yainer Diaz** (41.37), as his score has been compressed by a difficult matchup against Seymour and a negative park factor; he remains in the lineup, but he is teetering on the edge of our efficiency floor and needs to avoid an 0-for-4 showing to justify his inclusion today.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -141,7 +141,7 @@
             "Slot": "2B",
             "Player": "Luis Arraez",
             "POS": "1B/2B",
-            "Score": 56.04320810036145,
+            "Score": 60.52666474839035,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -161,6 +161,11 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "BvP Elite (51 PA)",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
@@ -307,7 +312,7 @@
             "Slot": "OF1",
             "Player": "JJ Bleday",
             "POS": "OF",
-            "Score": 53.533637845347165,
+            "Score": 49.25094681771939,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -333,6 +338,11 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "+14%",
                     "type": "positive"
+                },
+                {
+                    "label": "BvP Poor (29 PA)",
+                    "value": "-7%",
+                    "type": "negative"
                 }
             ],
             "Opponent": "Drohan (L)",
@@ -346,7 +356,7 @@
             "Slot": "OF2",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
-            "Score": 59.211311118234605,
+            "Score": 56.391724874509144,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -377,11 +387,6 @@
                     "label": "Elite Hold SP (42% SB)",
                     "value": "-2%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "King, M (R)",
@@ -395,7 +400,7 @@
             "Slot": "OF3",
             "Player": "Justin Crawford",
             "POS": "OF",
-            "Score": 53.5630092529336,
+            "Score": 57.848049993168296,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -418,6 +423,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "BvP Elite (51 PA)",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
@@ -434,7 +444,7 @@
             "Slot": "OF4",
             "Player": "Bryce Harper",
             "POS": "1B/OF",
-            "Score": 64.39076563701639,
+            "Score": 69.5420268879777,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -454,6 +464,11 @@
                 {
                     "label": "Dynamic Platoon (R)",
                     "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "BvP Elite (51 PA)",
+                    "value": "+8%",
                     "type": "positive"
                 },
                 {
