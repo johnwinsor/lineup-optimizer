@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-13",
-    "last_updated": "2026-09-13T18:28:02.668732+00:00",
+    "last_updated": "2026-09-13T21:15:37.656319+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 791.16,
-    "narrative": "For tonight\u2019s action, **Cal Raleigh** (78.02) and **Bryce Harper** (76.79) headline our lineup as the premier starts. **Cal Raleigh** benefits from a high-leverage matchup against J. Lopez, where his power profile aligns perfectly with the favorable park factors and the pitcher\u2019s inflated 4.77 xERA. Similarly, **Bryce Harper** finds himself in an enviable position against G. Holmes; his elite xwOBA metrics combined with a solid #3 order placement make him a near-lock for production. **Lawrence Butler** (67.93) also deserves attention; despite the tough matchup against B. Miller, his massive 13% boost from dynamic platoon modeling and favorable park factors make him a high-upside play for our outfield.\n\nThe most difficult decision on the bench involved **Dylan Beavers** (49.94), who narrowly missed the cut. While he possesses an ideal #1 order spot, his efficiency score was severely hampered by the matchup against Cease, whose 3.02 xERA significantly suppresses our offensive expectations. We opted to lean into the higher-scoring profiles of **Justin Crawford** (62.22) and **Jonathan Aranda** (62.41), both of whom are facing pitchers with significantly higher xERA profiles than Cease. We continue to monitor **Jung Hoo Lee** (47.39) on the bench; while he carries favorable wind conditions, the \"Lineup Pending\" status and the presence of a tough arm like Nick Pivetta kept him out of the active roster to preserve our game caps.\n\nWe are navigating the board with a focus on maximizing SB opportunities, which keeps **Justin Crawford** and **Luis Arraez** in the mix despite some variance in their daily projections. We remain concerned about the lower-end of our infield rotation, specifically **Masyn Winn** and **Alex Freeland**, who both carry scores below 50 due to their #9 order slots. We will be closely watching the weather and any late-breaking lineup changes for **Jung Hoo Lee**, but for now, the path forward is clear: ride the power of **Cal Raleigh** and **Bryce Harper** and look for efficiency from the bottom-third of the order against weaker arms.",
+    "narrative": "**Cal Raleigh** stands as our premier play today, boasting a 78.02 score fueled by a highly favorable matchup against J. Lopez and a significant park factor boost. The combination of his middle-of-the-order protection and strong platoon advantage makes him our highest-floor play. Similarly, **Bryce Harper** (76.78) is a must-start; he faces G. Holmes, whose 4.69 xERA provides an ideal environment for **Bryce Harper** to capitalize on his elite xwOBA. We are also leaning heavily into **Lawrence Butler** (67.93) and **Luis Arraez** (68.31), both of whom benefit significantly from the soft matchup against Holmes, with **Lawrence Butler** enjoying a massive 13% boost from his dynamic platoon split.\n\nThe most difficult decision on today\u2019s board involved **Jung Hoo Lee** (51.18) and **JJ Bleday** (59.54). While **Jung Hoo Lee** saw a 10% lift from favorable wind conditions, the optimizer ultimately favored **JJ Bleday** due to his superior raw platoon edge against Gasser. We continue to monitor the bottom of our order, where **Masyn Winn** (48.76), **Alex Freeland** (44.16), and **Yainer Diaz** (53.67) are hovering near the marginal threshold. These players are currently starts by necessity, but we are keeping a close eye on **Dylan Beavers** (49.94) on the bench; he nearly cracked the starting nine, but his matchup against a high-tier arm in Cease ultimately depressed his efficiency relative to our active OF/MI corps.\n\nWe must remain vigilant regarding situational risks. **Matt Chapman** remains sidelined on the IL, and we are managing our game caps carefully given that several of our bench depth pieces, including **Tyler Freeman**, **Jeremiah Jackson**, **Brendan Donovan**, **Gleyber Torres**, **Gavin Sheets**, **Kyle Karros**, and **Braden Montgomery**, are not currently in the mix for today\u2019s high-leverage spots. **Justin Crawford** (62.22) remains a high-upside play for his speed potential, despite the penalty for batting ninth, as we prioritize his stolen base upside in this 5x5 format. Monitor the lineups for any late-scratch adjustments that might force a shift in our middle-infield assignments.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -705,11 +705,46 @@
             "Player": "Jeremiah Jackson",
             "POS": "2B/SS/3B/OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "05:37 PM",
+            "Opponent": "Cease (R)",
+            "SP_xERA": "3.02",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "50.70",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -717,7 +752,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-09-13T17:37:00Z"
         },
         {
             "Slot": "BN",
@@ -747,17 +782,12 @@
             "Slot": "BN",
             "Player": "Jung Hoo Lee",
             "POS": "OF",
-            "Order": "6*",
+            "Order": "2",
             "Start": "11:20 PM",
-            "Opponent": "Nick Pivetta (R)",
+            "Opponent": "Pivetta (R)",
             "SP_xERA": "3.17",
-            "Score": 47.38629137646103,
+            "Score": 51.17719468657793,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.39",
@@ -784,12 +814,17 @@
                     "type": "positive"
                 },
                 {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
                     "label": "Wind Out",
                     "value": "+10%",
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -864,11 +899,46 @@
             "Player": "Braden Montgomery",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "06:15 PM",
+            "Opponent": "McGreevy (R)",
+            "SP_xERA": "4.56",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "43.27",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -876,7 +946,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-09-13T18:15:00Z"
         }
     ]
 }
