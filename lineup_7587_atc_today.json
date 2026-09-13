@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-13",
-    "last_updated": "2026-09-13T21:14:20.430241+00:00",
+    "last_updated": "2026-09-13T23:49:00.272551+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 767.73,
-    "narrative": "For today\u2019s slate, our lineup is anchored by **Corbin Carroll** (78.67) and **James Wood** (74.47), who represent our highest-ceiling plays due to their elite stolen base potential and favorable matchups. **Corbin Carroll** benefits from a massive 100% stolen base opportunity rate against Quantrill, while **James Wood** is set to maximize his 0.415 xwOBA at the leadoff spot against Rodriguez. **Mickey Moniak** (74.24) also earns a strong start, with his score significantly buoyed by a +14% dynamic platoon edge, making him a high-efficiency play against Jobe. Meanwhile, **Josh Naylor** (71.58) and **Seiya Suzuki** (70.86) remain locked in; **Josh Naylor** capitalizes on a weak 4.77 xERA matchup, and **Seiya Suzuki** is boosted by his prime position in the #2 hole and a favorable skill projection against Chandler.\n\nThe tightest decision on the bench involved **Jose Caballero**, who finished at 45.33. While his wheels are a valuable asset, the optimizer prioritized the higher floor of **Zach McKinstry** (51.37) and **Isaac Paredes** (58.08). **Jose Caballero** suffered from a punishing -13% platoon penalty and a bottom-tier batting order position, which ultimately pushed him out of the starting nine in favor of higher-leverage volume. We continue to monitor the status of **Giancarlo Stanton**, whose absence due to injury remains a significant drag on our power ceiling, though we remain optimistic about the developmental progress of **Edwin Arroyo**, **Cole Young**, **Vinnie Pasquantino**, **Tyler Soderstrom**, and **Dalton Rushing** as we manage our game caps.\n\nRisks for today are relatively contained, though **Brice Turang** (51.74) faces the stiffest test of our starters against Burns, whose 3.42 xERA forces a -14% reduction in expected output. Additionally, while **Austin Riley** (58.63) is in the lineup, his score is slightly suppressed by an elite opposing catcher's pop time, which limits his stolen base aggressiveness. We are keeping a close watch on weather reports, though no specific stadium alerts have necessitated a defensive shuffle. Provided the lineups hold, this roster is well-positioned to aggressively chase steals and counting stats against a series of mid-to-high xERA opposing starters.",
+    "total_efficiency_score": 772.17,
+    "narrative": "For today\u2019s slate, our lineup leans heavily on high-ceiling profiles in advantageous matchups. **Corbin Carroll** (78.67) and **James Wood** (74.47) lead the charge as our top-tier plays; **Corbin Carroll** benefits immensely from a favorable matchup against Quantrill, where his elite speed combined with a slow pitcher delivery window creates a high probability for stolen bases. Similarly, **James Wood** anchors the top of the order with an elite xwOBA profile and a positive matchup against Rodriguez. **Mickey Moniak** (74.24) also warrants specific attention today; his 14% boost from a dynamic platoon advantage against Jobe makes him a surprise engine for our offense, showcasing the value of our roster depth in maximizing daily efficiency.\n\nThe most difficult decision on our bench involved **Jose Caballero**, whose scoring (45.33) fell just shy of the active rotation. While **Jose Caballero** remains an elite speed asset, a negative platoon adjustment and a weak lineup position (9th) suppressed his final efficiency score relative to the steady production expected from **Trevor Story** or **Max Muncy**. Elsewhere, the lineup benefits from key situational boosts, such as **Max Muncy** capitalizing on a solid BvP history against Miller and **Seiya Suzuki** (70.86) leveraging a top-of-the-order boost and favorable park factors against Chandler.\n\nManagers should monitor **Isaac Paredes** (58.08) closely; while he projects well against Peralta, his score is currently inhibited by park factors. We are operating without the power potential of **Giancarlo Stanton**, who remains on the IL, and we continue to monitor the utility roles of **Vinnie Pasquantino**, **Tyler Soderstrom**, **Dalton Rushing**, **Travis Bazzana**, **Griffin Conine**, **Edwin Arroyo**, and **Cole Young** to ensure our game caps are managed effectively. There are no immediate weather threats, but the success of our bottom-third hitters like **Zach McKinstry** will depend on limiting the impact of the opposing starter's defensive control.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -92,7 +92,7 @@
             "Slot": "2B",
             "Player": "Max Muncy",
             "POS": "2B/SS/3B",
-            "Score": 55.56506305876247,
+            "Score": 60.01026810346347,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -118,6 +118,11 @@
                     "label": "Platoon (R/R)",
                     "value": "-3%",
                     "type": "negative"
+                },
+                {
+                    "label": "BvP Elite (36 PA)",
+                    "value": "+8%",
+                    "type": "positive"
                 },
                 {
                     "label": "Slow SP Delivery (88% SB)",
@@ -643,11 +648,46 @@
             "Player": "Vinnie Pasquantino",
             "POS": "1B",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "07:05 PM",
+            "Opponent": "Tolle (L)",
+            "SP_xERA": "3.30",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "54.02",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-17%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -655,7 +695,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-09-13T19:05:00Z"
         },
         {
             "Slot": "BN",
@@ -832,11 +872,46 @@
             "Player": "Cole Young",
             "POS": "2B/SS",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:05 PM",
+            "Opponent": "Lopez, J (L)",
+            "SP_xERA": "4.77",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "44.90",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -844,7 +919,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-09-13T20:05:00Z"
         }
     ]
 }
