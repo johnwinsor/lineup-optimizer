@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-15",
-    "last_updated": "2026-09-16T00:56:38.012880+00:00",
+    "last_updated": "2026-09-16T02:48:40.744649+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 774.3,
-    "narrative": "For today\u2019s slate, **Bryce Harper** (74.91) and **Jos\u00e9 Ram\u00edrez** (72.76) stand as our foundational pillars. **Bryce Harper** draws a favorable matchup against J. Kent (5.54 xERA), and his elite xwOBA metrics combined with a top-of-the-order bump make him the highest-ceiling play in our lineup. Similarly, **Jos\u00e9 Ram\u00edrez** thrives in his role against C. Murphy, benefiting from a +8% efficiency boost due to his premium #2 batting order position. **Cal Raleigh** rounds out the elite tier at 69.36; his score is significantly inflated by an outstanding matchup against R. Johnson, whose 5.18 xERA provides the perfect environment for **Cal Raleigh** to capitalize on his power profile.\n\nOur most critical lineup consideration today involves the speed-centric versatility of **Daulton Varsho** (62.13) and **Jung Hoo Lee** (58.40). **Daulton Varsho** earns his start through a strong platoon edge against Wacha, while **Jung Hoo Lee** is locked in not just for his expected contact, but because the slow delivery of Pallante offers a rare secondary advantage for stolen base opportunities. On the bubble, **Gleyber Torres** (50.50) was the toughest exclusion from the starting nine. While his batting order position is ideal, his projection was hampered by an unfavorable platoon split today, ultimately pushing him below the efficiency floor maintained by **Alex Freeland** and **Masyn Winn**, who both see their totals buoyed by facing arms with xERAs near the 4.80 threshold.\n\nAs we manage the roster, note that **Jeremiah Jackson** remains a high-risk play (44.56) against a formidable arm in Manaea; he stays in the lineup strictly to preserve depth, but his performance will be closely monitored. We are also tracking **Jonathan Aranda** (57.96) and **Kyle Karros** (57.92), who both benefit from dynamic platoon advantages that keep them comfortably above our 40-point bench threshold. With no major weather concerns forecasted, the primary risk remains the volatility of the pitching matchups, but the offensive alignment is optimized to maximize both raw output and the scarce stolen base category.",
+    "total_efficiency_score": 773.14,
+    "narrative": "For September 15, LawDog\u2019s offensive strategy hinges on high-leverage matchups against vulnerable pitching. **Bryce Harper** (74.91) and **Jos\u00e9 Ram\u00edrez** (72.76) anchor the lineup as our elite plays, both benefiting from prime lineup placement and matchups against pitchers with suboptimal xERAs. **Cal Raleigh** (69.36) also stands out as a strong start; despite a dynamic platoon penalty, his matchup against the weak Johnson, R (5.18 xERA) provides significant upside. We are also tracking **Daulton Varsho** (62.13), whose +10% platoon advantage against Wacha makes him a high-efficiency play despite the neutral park factors.\n\nThe bench decision process was particularly rigorous today, with **Gleyber Torres** (50.50) emerging as the most difficult omission. While his position in the #2 hole provides a solid floor, the optimizer prioritized the higher-ceiling platoon advantages of players like **Jonathan Aranda** (+12% platoon edge) and **Lawrence Butler** (+13% platoon edge). **JJ Bleday** was excluded entirely, falling below our 40.0 floor due to a tough matchup against a sharp Yamamoto. We remain cautious regarding **Jeremiah Jackson** (44.56), who occupies a precarious position on the roster; his limited offensive upside against Manaea suggests he is on a short leash to preserve our league-wide game caps. As always, keep an eye on the pending lineup for **Alex Freeland**, whose #9 spot significantly suppresses his daily efficiency score despite a favorable matchup against Lowder.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -273,7 +273,7 @@
             "Slot": "3B",
             "Player": "Kyle Karros",
             "POS": "3B",
-            "Score": 57.91600470231971,
+            "Score": 56.75768460827332,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -298,6 +298,11 @@
                 {
                     "label": "Platoon (R/R)",
                     "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (63% SB)",
+                    "value": "-2%",
                     "type": "negative"
                 },
                 {
@@ -660,11 +665,41 @@
             "Player": "Dylan Beavers",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "11:10 PM",
+            "Opponent": "Manaea (L)",
+            "SP_xERA": "3.98",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "50.65",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -672,7 +707,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-09-15T23:10:00Z"
         },
         {
             "Slot": "BN",
