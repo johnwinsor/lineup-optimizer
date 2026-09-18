@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-18",
-    "last_updated": "2026-09-18T15:28:50.466743+00:00",
+    "last_updated": "2026-09-18T18:46:21.606093+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 784.52,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a lineup anchored by **Yordan Alvarez** (73.41), whose elite .443 xwOBA and platoon advantage against Tyler Mahle make him our highest-projected performer. He is joined by the high-upside speed threat **Pete Crow-Armstrong** (68.04), who benefits significantly from a 14% dynamic platoon boost and a leadoff role, helping offset the challenge posed by Chase Burns. **Trea Turner** (66.44) and **Chase Meidroth** (66.08) also provide strong value today; both players exploit the favorable matchup against left-handed starters, with **Chase Meidroth** benefiting from a substantial 17% SP skill adjustment. The lineup as a whole is bolstered by the venue, as **Gary Sanchez** and **Christian Yelich** gain a massive 16% park adjustment, keeping them safely in the \"Strong\" start tier despite the lack of confirmed opponent data.\n\nThe most difficult roster decision involved **Carson Benge** (55.47), who narrowly missed the cut for the final utility slot. While **Carson Benge** posted a respectable score bolstered by a 10% SP skill adjustment against Andrew Painter, he was ultimately edged out by the superior floor and platoon-adjusted efficiency of **Christian Encarnacion-Strand** (58.86). Despite **Christian Encarnacion-Strand** facing a slight efficiency drag due to the elite hold threat, his raw power profile in a hitter-friendly environment remains a safer play for daily production. We continue to monitor the \"Lineup Pending\" status for all starters, particularly **Dillon Dingler** and **Junior Caminero**, as their projected scores remain volatile should their spots in the batting order shift significantly downward. Managers should note that while **Lars Nootbaar** (56.83) is starting, he faces a stiff test against Gerrit Cole; however, his dynamic platoon advantage remains high enough to warrant the start over the bench options.",
+    "total_efficiency_score": 792.57,
+    "narrative": "The Zurich Zebras enter today\u2019s slate with a lineup anchored by the elite offensive profile of **Yordan Alvarez**, who leads the squad with a 73.41 efficiency score. Facing Tyler Mahle (4.00 xERA), **Yordan Alvarez** benefits from a strong lineup position and high-end xwOBA, making him our primary engine for counting stats. Joining him at the top of the hierarchy are **Pete Crow-Armstrong** (68.04) and **Trea Turner** (66.44). **Pete Crow-Armstrong** is a high-priority play due to his elite sprint speed and a +14% boost from a favorable platoon matchup against Chayce McDermott, while **Trea Turner** leverages a prime #2 spot and a soft matchup against Zac Thornton. **Gary Sanchez** and **Christian Yelich** also project as strong starts (65.04 and 66.21, respectively), both capitalizing on a significant park factor boost and favorable matchups against Cade Povich.\n\nThe most difficult roster decision today involved the marginal range, where **Junior Caminero** (57.19) just edged out **Hector Rodriguez** (54.46) for the final UTIL spot. While **Hector Rodriguez** draws a neutral matchup against Clay Holmes, the optimizer preferred the upside of **Junior Caminero** despite his slightly tougher draw against Ranger Suarez. We are closely monitoring the lineup status of **Dillon Dingler**, whose 42.20 score is heavily dependent on his projected #3 spot; if he shifts down the order, his utility diminishes rapidly. Risks remain significant regarding **Lars Nootbaar**, who draws a daunting matchup against Gerrit Cole; he maintains a marginal score based on his leadoff status and dynamic platoon edge, but he remains a high-variance play today. **Caleb Durbin** and **Pedro Ramirez** were considered but ultimately benched due to poor SP skill matchups and lower-order projections, which failed to meet our daily threshold.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -53,7 +53,7 @@
             "Slot": "C2",
             "Player": "Gary Sanchez",
             "POS": "C/1B",
-            "Score": 57.49764737795175,
+            "Score": 65.04258753161963,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -76,13 +76,23 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+18%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Cade Povich (L)",
+            "SP_xERA": "4.74",
             "Warning": "",
             "GameTime": "2026-09-18T23:05:00Z",
             "Order": "5*",
@@ -276,18 +286,18 @@
         },
         {
             "Slot": "3B",
-            "Player": "Junior Caminero",
-            "POS": "3B",
-            "Score": 57.18999675607107,
+            "Player": "Christian Encarnacion-Strand",
+            "POS": "1B/3B",
+            "Score": 58.86191509078993,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
+                    "label": "Lineup Pending (Assumed #5)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "62.40",
+                    "value": "51.78",
                     "type": "info"
                 },
                 {
@@ -297,86 +307,37 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-6%",
-                    "type": "negative"
+                    "value": "+16%",
+                    "type": "positive"
                 },
                 {
-                    "label": "SP Skill",
+                    "label": "Platoon (R/R)",
                     "value": "-3%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Ranger Suarez (L)",
-            "SP_xERA": "3.88",
-            "Warning": "",
-            "GameTime": "2026-09-18T23:10:00Z",
-            "Order": "3*",
-            "Start": "11:10 PM"
-        },
-        {
-            "Slot": "OF1",
-            "Player": "Yordan Alvarez",
-            "POS": "OF",
-            "Score": 73.40688309969424,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "64.76",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
+                    "label": "Elite Hold SP (63% SB)",
                     "value": "-2%",
                     "type": "negative"
                 },
                 {
-                    "label": "Platoon",
-                    "value": "+7%",
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Elite",
-                    "value": "0.443",
-                    "type": "info"
                 }
             ],
-            "Opponent": "Tyler Mahle (R)",
-            "SP_xERA": "4.00",
+            "Opponent": "Dustin May (R)",
+            "SP_xERA": "4.01",
             "Warning": "",
-            "GameTime": "2026-09-19T00:10:00Z",
-            "Order": "2*",
-            "Start": "12:10 AM"
+            "GameTime": "2026-09-18T23:05:00Z",
+            "Order": "5*",
+            "Start": "11:05 PM"
         },
         {
-            "Slot": "OF2",
+            "Slot": "OF1",
             "Player": "Christian Yelich",
             "POS": "OF",
-            "Score": 65.70494729550198,
+            "Score": 66.21400897315027,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -399,20 +360,128 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+18%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-13%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Elite Hold SP (57% SB)",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Cade Povich (L)",
+            "SP_xERA": "4.74",
             "Warning": "",
             "GameTime": "2026-09-18T23:05:00Z",
             "Order": "5*",
             "Start": "11:05 PM"
         },
         {
+            "Slot": "OF2",
+            "Player": "Pete Crow-Armstrong",
+            "POS": "OF",
+            "Score": 68.04204525009798,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #1)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "60.83",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-14%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.378",
+                    "type": "info"
+                }
+            ],
+            "Opponent": "Burns, Ch (R)",
+            "SP_xERA": "3.43",
+            "Warning": "",
+            "GameTime": "2026-09-18T22:40:00Z",
+            "Order": "1*",
+            "Start": "10:40 PM"
+        },
+        {
             "Slot": "OF3",
+            "Player": "Josh Smith",
+            "POS": "1B/2B/SS/3B/OF",
+            "Score": 59.02789488585338,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "47.89",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Kumar Rocker (R)",
+            "SP_xERA": "4.29",
+            "Warning": "",
+            "GameTime": "2026-09-19T00:05:00Z",
+            "Order": "6*",
+            "Start": "12:05 AM"
+        },
+        {
+            "Slot": "OF4",
             "Player": "Lars Nootbaar",
             "POS": "OF",
             "Score": 56.83245239143368,
@@ -461,58 +530,19 @@
             "Start": "01:40 AM"
         },
         {
-            "Slot": "OF4",
-            "Player": "Josh Smith",
-            "POS": "1B/2B/SS/3B/OF",
-            "Score": 59.02789488585338,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "47.89",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Kumar Rocker (R)",
-            "SP_xERA": "4.29",
-            "Warning": "",
-            "GameTime": "2026-09-19T00:05:00Z",
-            "Order": "6*",
-            "Start": "12:05 AM"
-        },
-        {
             "Slot": "OF5",
-            "Player": "Pete Crow-Armstrong",
+            "Player": "Yordan Alvarez",
             "POS": "OF",
-            "Score": 68.04204525009798,
+            "Score": 73.40688309969424,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
+                    "label": "Lineup Pending (Assumed #2)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "60.83",
+                    "value": "64.76",
                     "type": "info"
                 },
                 {
@@ -522,85 +552,80 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-14%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+14%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #1",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "xwOBA Good",
-                    "value": "0.378",
-                    "type": "info"
-                }
-            ],
-            "Opponent": "Chase Burns (R)",
-            "SP_xERA": "3.43",
-            "Warning": "",
-            "GameTime": "2026-09-18T22:40:00Z",
-            "Order": "1*",
-            "Start": "10:40 PM"
-        },
-        {
-            "Slot": "UTIL",
-            "Player": "Christian Encarnacion-Strand",
-            "POS": "1B/3B",
-            "Score": 58.86191509078993,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "51.78",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+16%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Elite Hold SP (63% SB)",
                     "value": "-2%",
                     "type": "negative"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "xwOBA Elite",
+                    "value": "0.443",
+                    "type": "info"
+                }
+            ],
+            "Opponent": "Tyler Mahle (R)",
+            "SP_xERA": "4.00",
+            "Warning": "",
+            "GameTime": "2026-09-19T00:10:00Z",
+            "Order": "2*",
+            "Start": "12:10 AM"
+        },
+        {
+            "Slot": "UTIL",
+            "Player": "Junior Caminero",
+            "POS": "3B",
+            "Score": 57.18999675607107,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "62.40",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Dustin May (R)",
-            "SP_xERA": "4.01",
+            "Opponent": "Ranger Suarez (L)",
+            "SP_xERA": "3.88",
             "Warning": "",
-            "GameTime": "2026-09-18T23:05:00Z",
-            "Order": "5*",
-            "Start": "11:05 PM"
+            "GameTime": "2026-09-18T23:10:00Z",
+            "Order": "3*",
+            "Start": "11:10 PM"
         }
     ],
     "players_sat": [
@@ -667,17 +692,12 @@
             "Slot": "BN",
             "Player": "Hector Rodriguez",
             "POS": "OF",
-            "Order": "7*",
+            "Order": "7",
             "Start": "10:40 PM",
             "Opponent": "Clay Holmes (R)",
             "SP_xERA": "4.08",
             "Score": 54.46487729554354,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.97",
@@ -709,7 +729,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -723,9 +743,9 @@
             "POS": "OF",
             "Order": "4*",
             "Start": "11:15 PM",
-            "Opponent": "Andrew Painter (R)",
-            "SP_xERA": "4.43",
-            "Score": 55.46797120303658,
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 46.78919477521401,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #4)",
@@ -746,16 +766,6 @@
                     "label": "Park",
                     "value": "-4%",
                     "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+10%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
                 },
                 {
                     "label": "Order #4",
@@ -801,7 +811,7 @@
             "POS": "2B/3B",
             "Order": "8*",
             "Start": "10:40 PM",
-            "Opponent": "Chase Burns (R)",
+            "Opponent": "Burns, Ch (R)",
             "SP_xERA": "3.43",
             "Score": 38.50531953487926,
             "Breakdown": [
@@ -877,55 +887,20 @@
             "Slot": "BN",
             "Player": "Jacob Gonzalez",
             "POS": "1B/2B/SS/3B",
-            "Order": "8*",
-            "Start": "10:40 PM",
-            "Opponent": "Randy Dobnak (R)",
-            "SP_xERA": "4.51",
-            "Score": 47.34626836017144,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "42.63",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+12%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-09-18T22:40:00Z"
+            "GameTime": null
         }
     ]
 }
