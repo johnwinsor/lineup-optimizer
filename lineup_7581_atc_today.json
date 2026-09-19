@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-19",
-    "last_updated": "2026-09-19T15:05:34.194787+00:00",
+    "last_updated": "2026-09-19T18:20:21.499676+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 776.11,
-    "narrative": "The Austin Waves enter today\u2019s slate with **Luis Garc\u00eda Jr.** headlining our offensive attack. His score of 73.66 is the clear high-water mark, bolstered by a 14% platoon advantage against Brandon Pfaadt and favorable park factors. We are also leaning heavily into our middle infield and corner spots, specifically **Gunnar Henderson** (67.24) and **Coby Mayo** (65.57). Both benefit from a 16% park boost against Robert Gasser, and we have specifically adjusted their outlooks to account for Gasser\u2019s slow delivery, which provides a statistically significant \"green light\" environment for their respective stolen base profiles. **Jackson Merrill** (64.10) also remains a core staple today; his ability to leverage a 13% platoon edge against Eury P\u00e9rez helps him retain a high floor despite a slightly unfavorable park adjustment.\n\nOur most difficult roster decision today was excluding **Miguel Vargas**, who finished just outside the starting nine with a score of 52.55. While **Miguel Vargas** benefits from a strong xwOBA of .378 and an assumed lead-off spot that grants him a +10% order bonus, the optimizer preferred the superior matchup context of **Nasim Nunez** (52.13), whose SP skill metrics and switch-hitting versatility narrowly edged out the volume argument for **Miguel Vargas**. Meanwhile, we continue to monitor the status of **Luis Robert Jr.**, who remains sidelined on the IL, while **Liam Hicks** (41.38) hangs on as a marginal start; he sits just above our bench threshold, but we are keeping a close eye on the official lineups to ensure he retains that #4 spot.\n\nRisk mitigation remains paramount as we navigate a day where almost every confirmed lineup is still pending. **Drake Baldwin** (63.45) carries a high score, but that assumes he occupies the #1 spot; should the lineup shift him down, his value will degrade rapidly. We are also wary of **Gunnar Henderson** and **Coby Mayo** facing a lefty in Gasser\u2014while the park and delivery variables mitigate the platoon risk, any late-game defensive substitutions or pinch-hit scenarios could cap their counting stats. Outside of the active roster, we are holding firm on the bench status of **Brayan Rocchio** and **Wade Meckler**, as their profiles do not offer the ceiling required to displace our current starters. We will proceed with the current configuration, banking on the speed and platoon efficiency of our primary core to maintain our standing in a tight 5x5 race.",
+    "total_efficiency_score": 798.45,
+    "narrative": "The Austin Waves enter today\u2019s slate with a high-floor offensive profile, anchored by **Kyle Tucker** (77.36), who stands as our premier start. Facing Yunior Marte, **Kyle Tucker** benefits significantly from a favorable 5.16 xERA matchup, yielding a massive 19% SP skill boost that elevates his projected ceiling. Close behind, **Luis Garc\u00eda Jr.** (73.66) projects as a force against Brandon Pfaadt. His score is bolstered by a 14% platoon edge and a strong park factor, making him an elite play as we hunt for counting stats. **Gunnar Henderson** (64.70) and **Coby Mayo** (65.57) are both high-leverage options against Gasser; while both face a handedness challenge, the 16% park boost and the high likelihood of stolen base opportunities against Gasser\u2019s slow delivery make them vital components of our lineup.\n\nThe most difficult bench decision involved **Brayan Rocchio**, who narrowly missed the cut with a 51.90 score. While **Brayan Rocchio** benefits from a high-efficiency 19% SP skill boost against Jacob Lopez, his efficiency was capped by an unfavorable #9 spot in the projected order. He ultimately lost his spot to **Nasim Nunez** (52.13), who maintained a slightly higher floor due to overall base projection consistency. We are also monitoring the status of **Luis Robert Jr.**, who remains unavailable due to his IL designation, further thinning our depth options. Managers should note that with so many starters listed as \"Lineup Pending,\" there is inherent variance in these projections; specifically, **Drake Baldwin** and **Vladimir Guerrero Jr.** carry high upside if they occupy the top third of the order, but we are effectively betting on the accuracy of these projected batting positions to maintain our scoring edge.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -58,13 +58,8 @@
             "Slot": "C2",
             "Player": "Liam Hicks",
             "POS": "C/1B",
-            "Score": 41.381516527065855,
+            "Score": 47.20987118858941,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "42.78",
@@ -81,16 +76,26 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+11%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #4",
                     "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Bello (R)",
+            "SP_xERA": "4.09",
             "Warning": "",
             "GameTime": "2026-09-19T20:10:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "08:10 PM"
         },
         {
@@ -239,13 +244,8 @@
             "Slot": "MI",
             "Player": "Gunnar Henderson",
             "POS": "SS",
-            "Score": 67.23536223020967,
+            "Score": 64.69817874982441,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "60.65",
@@ -277,16 +277,16 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Robert Gasser (L)",
+            "Opponent": "Gasser (L)",
             "SP_xERA": "4.12",
             "Warning": "",
             "GameTime": "2026-09-19T20:05:00Z",
-            "Order": "3*",
+            "Order": "5",
             "Start": "08:05 PM"
         },
         {
@@ -295,11 +295,6 @@
             "POS": "1B/3B",
             "Score": 65.56885273141862,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.57",
@@ -331,29 +326,24 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Robert Gasser (L)",
+            "Opponent": "Gasser (L)",
             "SP_xERA": "4.12",
             "Warning": "",
             "GameTime": "2026-09-19T20:05:00Z",
-            "Order": "4*",
+            "Order": "3",
             "Start": "08:05 PM"
         },
         {
             "Slot": "OF1",
             "Player": "Sam Antonacci",
             "POS": "2B/3B/OF",
-            "Score": 53.23874294796734,
+            "Score": 58.56261724276408,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.13",
@@ -373,20 +363,25 @@
                     "label": "Platoon",
                     "value": "+7%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #1",
+                    "value": "+10%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Jackson Jobe (R)",
+            "Opponent": "Jobe (R)",
             "SP_xERA": "4.01",
             "Warning": "",
             "GameTime": "2026-09-19T18:10:00Z",
-            "Order": "6*",
+            "Order": "1",
             "Start": "06:10 PM"
         },
         {
             "Slot": "OF2",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 63.63004013058198,
+            "Score": 77.35953266054985,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -402,10 +397,20 @@
                     "label": "Recency",
                     "value": "100%",
                     "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+1%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Yunior Marte (R)",
+            "SP_xERA": "5.16",
             "Warning": "",
             "GameTime": "2026-09-20T01:10:00Z",
             "Order": "6*",
@@ -704,17 +709,12 @@
             "Slot": "BN",
             "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Order": "1*",
+            "Order": "3",
             "Start": "06:10 PM",
-            "Opponent": "Jackson Jobe (R)",
+            "Opponent": "Jobe (R)",
             "SP_xERA": "4.01",
-            "Score": 52.54815356712742,
+            "Score": 50.63731161923189,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.46",
@@ -736,8 +736,8 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
@@ -746,7 +746,7 @@
                     "type": "info"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Lower projected efficiency than other options.",
                     "value": null,
                     "type": "info"
                 }
@@ -885,17 +885,12 @@
             "Slot": "BN",
             "Player": "Luis Lara",
             "POS": "OF",
-            "Order": "8*",
+            "Order": "8",
             "Start": "08:05 PM",
-            "Opponent": "Trevor Rogers (L)",
+            "Opponent": "Rogers, Tr (L)",
             "SP_xERA": "3.96",
             "Score": 0.0,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "0.00",
@@ -922,7 +917,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
