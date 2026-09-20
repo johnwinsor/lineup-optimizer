@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-20",
-    "last_updated": "2026-09-20T21:10:13.307133+00:00",
+    "last_updated": "2026-09-20T23:44:56.775006+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 641.89,
-    "narrative": "The Austin Waves enter today\u2019s slate with a clear directive: exploit the vulnerabilities in the matchups against Burnes and Alcantara, S. Our strongest play is **Luis Garc\u00eda Jr.** (73.66), who benefits from a high-ceiling matchup against Burnes. The combination of favorable park factors (+3%) and a substantial platoon edge (+14%) elevates his output, making him a cornerstone for today\u2019s production. Similarly, **Jackson Merrill** (71.66) is positioned for a high-efficiency day; his fifth-order slot provides consistent opportunities, and his matchup against Alcantara, S (xERA 4.54) allows him to capitalize on the favorable SP skill rating (+13%) and platoon advantage (+13%). Despite facing a tough arm in Misiorowski, **Gunnar Henderson** remains a must-start (69.20) due to a massive +16% park adjustment that helps offset the pitcher\u2019s elite skill profile.\n\nThe most difficult roster decision today was excluding **Josh Jung** (41.97), who sat on the fringe of our threshold. While **Jung** provided a respectable baseline, the optimizer favored the higher efficiency scores found in the lower-order volatility of **Nasim Nunez** and the situational utility of **Wade Meckler**. We are opting to bench **Jung** to preserve our game caps, as his current projection against Miles simply does not command the necessary leverage over our active starters. Meanwhile, we remain without the services of **Kyle Tucker**, **Luis Robert Jr.**, and **Andy Pages** due to injury or absence, leaving us to rely on depth pieces like **Sam Antonacci** (62.92) to provide the stolen base floor we desperately need.\n\nRisk management is paramount today, particularly with **Vladimir Guerrero Jr.** (48.20) drawing the short straw against deGrom. His score is suppressed significantly by the elite SP skill (-19%), and he represents our most volatile asset. Furthermore, while **Drake Baldwin**, **Miguel Vargas**, and **Coby Mayo** are active, their scores hover near our marginal-to-strong transition zone; their performance will dictate whether we maintain our competitive pace in 5x5 categories. We will continue to monitor the status of **Jordan Westburg**, **Jacob Wilson**, **Dominic Smith**, **Brayan Rocchio**, **Curtis Mead**, **Liam Hicks**, **Luis Lara**, **Franklin Arias**, **Tommy White**, and **Henry Bolte** for potential bench-to-lineup pivots should late-day scratch reports surface.",
+    "total_efficiency_score": 641.55,
+    "narrative": "The Austin Waves enter today\u2019s slate with a clear objective: exploit the favorable pitching matchups for our middle infield and outfield anchors. **Luis Garc\u00eda Jr.** (73.66) and **Jackson Merrill** (70.23) headline our production today, buoyed by plus-matchups against Burnes and Alcantara respectively. **Luis Garc\u00eda Jr.** receives a massive 19% boost from the opposing SP skill, paired with a favorable platoon split. Meanwhile, **Jackson Merrill** remains our primary engine for stolen base production; despite a modest park factor, his 13% SP skill bump and consistent usage in the five-hole make him a high-floor start. **Gunnar Henderson** (69.20) presents a fascinating case\u2014despite a daunting 2.32 xERA from Misiorowski, **Gunnar Henderson** maintains a robust score due to a significant 16% park factor advantage and his elite-tier pedigree, demonstrating that we aren't afraid to start stars even in sub-optimal pitching environments.\n\nEfficiency is our priority as we approach the final stretch of the season. The most difficult decision today was leaving **Josh Jung** (41.97) on the bench. He was the most viable alternative, but he failed to clear the threshold against Miles due to the lack of a platoon edge and a projected efficiency deficit compared to **Coby Mayo** and **Nasim Nunez**. We are also navigating a challenging matchup for **Vladimir Guerrero Jr.** (48.20), whose score has been suppressed by the presence of deGrom on the mound; however, his high base projection keeps him in the utility slot. We remain cautious of the volatility surrounding **Drake Baldwin** (55.95) and **Sam Antonacci** (62.92) at the top of the order; while their leadoff status is a net positive for runs, their output relies heavily on getting on base early against Brown and Melton. Finally, we continue to monitor the status of **Kyle Tucker**, **Luis Robert Jr.**, and **Andy Pages**, whose absence from the starting lineup\u2014due to rest or injury\u2014remains a persistent drag on our overall offensive ceiling.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -53,7 +53,7 @@
             "Slot": "1B",
             "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Score": 53.32088469301693,
+            "Score": 54.40906601328258,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -77,11 +77,6 @@
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Elite Hold SP (60% SB)",
                     "value": "-2%",
                     "type": "negative"
                 },
@@ -415,7 +410,7 @@
             "Slot": "OF4",
             "Player": "Jackson Merrill",
             "POS": "OF",
-            "Score": 71.6599417320792,
+            "Score": 70.22674289743762,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -441,6 +436,11 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+13%",
                     "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (62% SB)",
+                    "value": "-2%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #5",
@@ -501,11 +501,41 @@
             "Player": "Kyle Tucker",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "08:10 PM",
+            "Opponent": "Wilkinson (L)",
+            "SP_xERA": "5.22",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "63.63",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -513,7 +543,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-09-20T20:10:00Z"
         },
         {
             "Slot": "BN",

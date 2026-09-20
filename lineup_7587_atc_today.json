@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-20",
-    "last_updated": "2026-09-20T21:09:31.473139+00:00",
+    "last_updated": "2026-09-20T23:44:21.175082+00:00",
     "projection_system": "ATC",
     "total_efficiency_score": 801.35,
-    "narrative": "For the September 20th slate, **Josh Naylor** (77.77) and **Brice Turang** (75.06) headline our roster as the premier plays. **Josh Naylor** benefits significantly from a soft matchup against Sugano; the combination of a favorable hitter's park and a strong SP skill gap (+19%) makes him our anchor. Similarly, **Brice Turang** leverages his high-contact profile and an advantageous order position (#2) to exploit the struggling Young, providing excellent stability for both AVG and our pursuit of scarce SB. We are also leaning heavily on **Seiya Suzuki** (73.68), whose BvP metrics and the favorable delivery timing of Lowder create a prime environment for him to jumpstart our counting stats.\n\nThe most difficult personnel decision today involves the UTIL slot, where **Travis Bazzana** (47.75) barely edges out the competition. While **Travis Bazzana** remains in the lineup due to his platoon advantage, **Vinnie Pasquantino** was the odd man out; despite a high potential floor, his status as a non-starter today necessitated an immediate benching to preserve our limited game caps. We are proceeding with caution regarding **Jose Caballero** (58.02); while his raw speed is elite, the matchup against a high-tier arm like Burnes suppresses his efficiency score considerably, forcing him to the bottom of the utility-style rankings despite the aggressive optimism of his park factors.\n\nRisk management is paramount today, particularly with **Griffin Conine** (53.97) and **Trevor Story** (49.47). Both are hovering near the marginal threshold, largely due to difficult SP matchups against Buehler and Jax, respectively. **Griffin Conine** is rostered primarily for his speed potential, but we must monitor the game flow closely\u2014if he hits a cold spell early, we are prepared to pull the plug to protect our efficiency metrics. We are closely tracking updates on **Tyler Soderstrom**, **Max Muncy**, **Dalton Rushing**, and **Edwin Arroyo**, as the bench remains thin with **Giancarlo Stanton** sidelined and **Mickey Moniak** and **Austin Riley** unavailable, leaving little room for error if our starters falter in these high-stakes matchups.",
+    "narrative": "With 2026-09-20 signaling a critical stretch in the standings, the Ghost Ride the WHIP optimizer highlights **Josh Naylor** (77.77) and **Brice Turang** (75.06) as our premier starts. **Josh Naylor** benefits from a massive park-factor boost and a favorable matchup against Sugano, whose 4.91 xERA suggests a prime environment for RBI production. **Brice Turang** earns his elite status today primarily through volume efficiency; despite a slight negative adjustment due to the opposing pitcher\u2019s ability to hold runners, his spot in the #2 hole combined with strong underlying park factors makes him our highest-floor play for multi-category production. **Seiya Suzuki** also warrants attention at 73.68, as a rare confluence of a high-ceiling matchup against Lowder and a slow-delivering pitcher creates a unique, high-probability environment for him to swipe a bag or drive in runs.\n\nOur most difficult roster decision involved the marginal tier, specifically the exclusion of the remaining bench assets. While **Mickey Moniak** and **Vinnie Pasquantino** posted solid base projections, they ultimately fell to the bench due to either non-starter status or unfavorable platoon splits that neutralized their raw potential. The most interesting near-miss was **Gabriel Moreno** (58.82), who clings to a spot in the lineup over bench alternatives because his placement in the #3 spot provides just enough situational leverage to outpace the lower-order volatility of **Travis Bazzana** (47.75). Managers should be wary, however, of **Jose Caballero** (58.02); while his raw score is respectable, his position at the #9 hole against the high-velocity threat of Burnes carries significant risk, and he represents our most likely candidate for a mid-game swap if the game environment shifts.\n\nLooking ahead at the schedule, we are officially navigating without **Giancarlo Stanton**, who remains on the IL, and **Austin Riley**, who has been relegated to the bench today alongside **Tyler Soderstrom**, **Max Muncy**, **Dalton Rushing**, and **Edwin Arroyo**. We are keeping a close watch on the weather and the impact of the Elite Hold SP designations\u2014specifically for **Brice Turang** and **Griffin Conine**\u2014as these factors remain the primary \"drag\" on our stolen base efficiency. With **James Wood** (64.66) providing high-upside stability from the leadoff spot and **Corbin Carroll** (70.35) rounding out the top-tier options, the focus for today\u2019s roster is maximizing contact quality while insulating against the league-leading arms we are set to face.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -250,6 +250,11 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+3%",
                     "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (61% SB)",
+                    "value": "-4%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #2",
@@ -589,11 +594,46 @@
             "Player": "Mickey Moniak",
             "POS": "OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "07:10 PM",
+            "Opponent": "Anderson (L)",
+            "SP_xERA": "4.39",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "56.28",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+9%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -601,7 +641,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-09-20T19:10:00Z"
         },
         {
             "Slot": "BN",
