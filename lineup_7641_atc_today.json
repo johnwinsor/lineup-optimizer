@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-22",
-    "last_updated": "2026-09-22T09:13:15.165501+00:00",
+    "last_updated": "2026-09-22T16:07:10.735317+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 788.56,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 783.6,
+    "narrative": "The lineup today is anchored by **Dylan Beavers** (68.38) and **Will Smith** (67.82), both of whom benefit significantly from favorable matchups against Max Scherzer and Michael King, respectively. **Dylan Beavers** is our premier play; he capitalizes on a high-ceiling environment against Scherzer, where a 16% park factor boost and an opportunistic stolen base environment against a slower delivery net him the highest daily efficiency score. **Will Smith** remains a locked-in core play, as his xwOBA profile and high-order positioning against King solidify his standing despite the \"Lineup Pending\" designation. **Zack Gelof** (66.51) also earns a premium spot, leveraging a 10% park factor and 10% SP skill advantage to overcome the minor drag of a sharp opposing catcher\u2019s pop time.\n\nThe most difficult decision for the optimizer involved **Daulton Varsho** (48.96), who was the first player left on the bench. While his platoon advantage against Logan Gilbert is appealing, the 3.42 xERA of the opposing starter created enough drag to suppress his raw output compared to the high-efficiency matchup for **JJ Bleday**. We are also keeping a close watch on the wind conditions, which have introduced a -5% penalty for **Jonathan Aranda**, **Luis Arraez**, **Jos\u00e9 Ram\u00edrez**, **Bryce Harper**, and **Justin Crawford**. This environmental headwind specifically cools the outlook for **Jos\u00e9 Ram\u00edrez**, who is otherwise a stable engine; despite an elite base projection, the combination of a tough matchup against Payton Tolle and the weather risk forces us to monitor his production closely. \n\nFinally, managers should note that nearly every start today remains reliant on \"Lineup Pending\" assumptions. Should confirmed lineups shift **Gleyber Torres** or **Dylan Beavers** out of their top-order spots, their efficiency scores will decay rapidly due to reduced RBI and R opportunities. We are also wary of the base-stealing potential for **Jeremiah Jackson** and **Dylan Beavers**; the current projections assume they capitalize on their respective pitchers' slow deliveries, but any shift in game script toward an early deficit could nullify those stolen base opportunities.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -105,18 +105,13 @@
         },
         {
             "Slot": "1B",
-            "Player": "Bryce Harper",
-            "POS": "1B/OF",
-            "Score": 62.71297931075413,
+            "Player": "Jonathan Aranda",
+            "POS": "1B",
+            "Score": 51.24383402220775,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "58.33",
+                    "value": "52.20",
                     "type": "info"
                 },
                 {
@@ -130,19 +125,19 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+2%",
+                    "label": "SP Skill",
+                    "value": "+5%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-12%",
+                    "type": "negative"
                 },
                 {
-                    "label": "xwOBA Good",
-                    "value": "0.381",
-                    "type": "info"
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
                 },
                 {
                     "label": "Wind In",
@@ -150,12 +145,12 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Dustin May (R)",
-            "SP_xERA": "3.99",
+            "Opponent": "Rod\u00f3n (L)",
+            "SP_xERA": "4.20",
             "Warning": "",
-            "GameTime": "2026-09-22T22:40:00Z",
-            "Order": "3*",
-            "Start": "10:40 PM"
+            "GameTime": "2026-09-22T17:05:00Z",
+            "Order": "2",
+            "Start": "05:05 PM"
         },
         {
             "Slot": "2B",
@@ -259,7 +254,7 @@
             "Slot": "MI",
             "Player": "Gleyber Torres",
             "POS": "2B",
-            "Score": 67.52156409866255,
+            "Score": 60.268711505806,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #1)",
@@ -287,9 +282,9 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+13%",
-                    "type": "positive"
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-13%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #1",
@@ -297,8 +292,8 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jackson Kent (L)",
-            "SP_xERA": "5.50",
+            "Opponent": "Riley Cornelio (R)",
+            "SP_xERA": "4.99",
             "Warning": "",
             "GameTime": "2026-09-22T22:40:00Z",
             "Order": "1*",
@@ -419,18 +414,18 @@
         },
         {
             "Slot": "OF2",
-            "Player": "Daulton Varsho",
-            "POS": "OF",
-            "Score": 48.960018172078996,
+            "Player": "Bryce Harper",
+            "POS": "1B/OF",
+            "Score": 62.71297931075413,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
+                    "label": "Lineup Pending (Assumed #3)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "53.57",
+                    "value": "58.33",
                     "type": "info"
                 },
                 {
@@ -440,31 +435,36 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-5%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-14%",
-                    "type": "negative"
+                    "value": "+4%",
+                    "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+10%",
+                    "value": "+2%",
                     "type": "positive"
                 },
                 {
-                    "label": "Slow SP Delivery (88% SB)",
-                    "value": "+2%",
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
+                },
+                {
+                    "label": "xwOBA Good",
+                    "value": "0.381",
+                    "type": "info"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Logan Gilbert (R)",
-            "SP_xERA": "3.42",
+            "Opponent": "Dustin May (R)",
+            "SP_xERA": "3.99",
             "Warning": "",
-            "GameTime": "2026-09-23T01:40:00Z",
-            "Order": "6*",
-            "Start": "01:40 AM"
+            "GameTime": "2026-09-22T22:40:00Z",
+            "Order": "3*",
+            "Start": "10:40 PM"
         },
         {
             "Slot": "OF3",
@@ -671,6 +671,60 @@
     "players_sat": [
         {
             "Slot": "BN",
+            "Player": "Daulton Varsho",
+            "POS": "OF",
+            "Order": "6*",
+            "Start": "01:40 AM",
+            "Opponent": "Logan Gilbert (R)",
+            "SP_xERA": "3.42",
+            "Score": 48.960018172078996,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "53.57",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-5%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-14%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+10%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (88% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-09-23T01:40:00Z"
+        },
+        {
+            "Slot": "BN",
             "Player": "Tyler Freeman",
             "POS": "2B/OF",
             "Order": "-",
@@ -746,65 +800,6 @@
             ],
             "Warning": "",
             "GameTime": "2026-09-23T01:40:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Jonathan Aranda",
-            "POS": "1B",
-            "Order": "2*",
-            "Start": "11:05 PM",
-            "Opponent": "Max Fried (L)",
-            "SP_xERA": "3.73",
-            "Score": 45.505461298970346,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "52.20",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-12%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-09-22T23:05:00Z"
         },
         {
             "Slot": "BN",
