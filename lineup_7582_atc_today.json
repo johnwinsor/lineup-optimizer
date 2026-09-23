@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-23",
-    "last_updated": "2026-09-23T09:11:31.671540+00:00",
+    "last_updated": "2026-09-23T15:52:42.325715+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 770.2,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 800.4,
+    "narrative": "Today's slate for the Zurich Zebras features several strong offensive options, with **Pete Crow-Armstrong** leading the way with an elite score of 78.96. His strong performance is bolstered by a favorable matchup against Ryan Gusto, whose 4.39 SP_xERA and a dynamic platoon advantage for **Pete Crow-Armstrong** (R vs. R) are significant drivers. The park factor at +4% and his projected leadoff spot (+10%) further elevate his profile. Following closely is **Kazuma Okamoto** (69.87), who benefits greatly from a +16% park factor and a +17% boost from facing Bassitt, who has a 4.70 SP_xERA. His #3 lineup spot also adds a +6% bump. **Yordan Alvarez** (69.38) also presents a strong option, despite a neutral park factor, thanks to a solid matchup against George Kirby (4.11 SP_xERA) and a +7% platoon advantage. **Christian Encarnacion-Strand** (68.40) is another player to highlight, with a +16% park factor and a +19% boost against Scherzer (5.23 SP_xERA), indicating a favorable pitching matchup despite Scherzer's pedigree.\n\nSeveral players are experiencing significant boosts from situational factors. **Dillon Dingler** (63.90) sees his score elevated by a +19% increase from facing Lovelady (4.85 SP_xERA) and a +14% dynamic platoon advantage. **Josh Smith** (62.54) is in a similar boat, with a +16% park factor and a +17% boost against Bassitt, further amplified by a dynamic platoon advantage and his projected #2 lineup spot. **Christian Yelich** (61.65) also benefits from a +13% dynamic platoon advantage against Aaron Nola. It is important to note the \"Lineup Pending\" status for several players like **Gary Sanchez**, **Caleb Durbin**, **Trea Turner**, **Junior Caminero**, **Carson Benge**, and **Christian Yelich**. While their projected order and matchup are accounted for, confirmation will be key. **Trea Turner**'s score of 48.28 is significantly impacted by the elite opposing pitcher Logan Henderson (2.97 SP_xERA), dropping him below our strong start threshold despite a projected #2 lineup spot and other positive factors. We also see a few wind-in warnings across the board, which could suppress offensive outcomes.\n\nThe most compelling bench decision involves **Chase Meidroth**, who posted a score of 51.88, narrowly missing a starting spot. His score was driven by a +14% boost against Seth Lugo (4.57 SP_xERA). The optimizer ultimately favored the projected lineup due to the combination of projected lineup order and slightly higher overall scores for the starting nine. **Colt Keith** and **Casey Schmitt** remain unavailable due to being on the Injured List.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -11,11 +11,6 @@
             "POS": "C",
             "Score": 63.89870436184149,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "47.33",
@@ -40,13 +35,18 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "+14%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Richard Lovelady (L)",
+            "Opponent": "Lovelady (L)",
             "SP_xERA": "4.85",
             "Warning": "",
             "GameTime": "2026-09-23T17:10:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "05:10 PM"
         },
         {
@@ -97,13 +97,8 @@
             "Slot": "1B",
             "Player": "Kazuma Okamoto",
             "POS": "1B/3B",
-            "Score": 60.55807052550533,
+            "Score": 69.87469676019846,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.76",
@@ -118,14 +113,29 @@
                     "label": "Park",
                     "value": "+16%",
                     "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+17%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Bassitt (R)",
+            "SP_xERA": "4.70",
             "Warning": "",
-            "GameTime": "2026-09-23T22:35:00Z",
-            "Order": "6*",
-            "Start": "10:35 PM"
+            "GameTime": "2026-09-23T17:35:00Z",
+            "Order": "3",
+            "Start": "05:35 PM"
         },
         {
             "Slot": "2B",
@@ -178,18 +188,13 @@
         },
         {
             "Slot": "SS",
-            "Player": "Chase Meidroth",
-            "POS": "2B/SS",
-            "Score": 51.88319453332794,
+            "Player": "Josh Smith",
+            "POS": "1B/2B/SS/3B/OF",
+            "Score": 62.537536230126015,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
-                    "value": "46.26",
+                    "value": "46.32",
                     "type": "info"
                 },
                 {
@@ -199,31 +204,31 @@
                 },
                 {
                     "label": "Park",
-                    "value": "+1%",
+                    "value": "+16%",
                     "type": "positive"
                 },
                 {
                     "label": "SP Skill",
-                    "value": "+14%",
+                    "value": "+17%",
                     "type": "positive"
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "-4%",
-                    "type": "negative"
+                    "value": "+14%",
+                    "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #2",
+                    "value": "+8%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Seth Lugo (R)",
-            "SP_xERA": "4.57",
+            "Opponent": "Bassitt (R)",
+            "SP_xERA": "4.70",
             "Warning": "",
-            "GameTime": "2026-09-23T23:40:00Z",
-            "Order": "5*",
-            "Start": "11:40 PM"
+            "GameTime": "2026-09-23T17:35:00Z",
+            "Order": "2",
+            "Start": "05:35 PM"
         },
         {
             "Slot": "MI",
@@ -340,18 +345,18 @@
         },
         {
             "Slot": "OF1",
-            "Player": "Josh Smith",
-            "POS": "1B/2B/SS/3B/OF",
-            "Score": 52.57322212412593,
+            "Player": "Carson Benge",
+            "POS": "OF",
+            "Score": 54.86719735249652,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
+                    "label": "Lineup Pending (Assumed #5)",
                     "value": null,
                     "type": "info"
                 },
                 {
                     "label": "Base",
-                    "value": "46.32",
+                    "value": "49.81",
                     "type": "info"
                 },
                 {
@@ -360,22 +365,27 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "+16%",
+                    "label": "SP Skill",
+                    "value": "+19%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
                     "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Cody Bradford (L)",
+            "SP_xERA": "5.34",
             "Warning": "",
-            "GameTime": "2026-09-23T22:35:00Z",
-            "Order": "7*",
-            "Start": "10:35 PM"
+            "GameTime": "2026-09-24T00:05:00Z",
+            "Order": "5*",
+            "Start": "12:05 AM"
         },
         {
             "Slot": "OF2",
@@ -597,13 +607,8 @@
             "Slot": "UTIL",
             "Player": "Christian Encarnacion-Strand",
             "POS": "1B/3B",
-            "Score": 60.46799088134619,
+            "Score": 68.40270461690746,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.67",
@@ -620,17 +625,32 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Slow SP Delivery (87% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Scherzer (R)",
+            "SP_xERA": "5.23",
             "Warning": "",
-            "GameTime": "2026-09-23T22:35:00Z",
-            "Order": "5*",
-            "Start": "10:35 PM"
+            "GameTime": "2026-09-23T17:35:00Z",
+            "Order": "5",
+            "Start": "05:35 PM"
         }
     ],
     "players_sat": [
@@ -660,45 +680,6 @@
         },
         {
             "Slot": "BN",
-            "Player": "Carson Benge",
-            "POS": "OF",
-            "Order": "5*",
-            "Start": "12:05 AM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 50.802960511570845,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.81",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-09-24T00:05:00Z"
-        },
-        {
-            "Slot": "BN",
             "Player": "Casey Schmitt",
             "POS": "1B/2B/3B/OF",
             "Order": "-",
@@ -720,6 +701,60 @@
             ],
             "Warning": "\ud83d\udea8 INJURED (IL)",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Chase Meidroth",
+            "POS": "2B/SS",
+            "Order": "5*",
+            "Start": "11:40 PM",
+            "Opponent": "Seth Lugo (R)",
+            "SP_xERA": "4.57",
+            "Score": 51.88319453332794,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "46.26",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-09-23T23:40:00Z"
         },
         {
             "Slot": "BN",
@@ -764,6 +799,11 @@
                 {
                     "label": "Order #9",
                     "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
                     "type": "negative"
                 },
                 {

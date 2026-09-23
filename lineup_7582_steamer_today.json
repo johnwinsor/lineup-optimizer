@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-23",
-    "last_updated": "2026-09-23T09:11:30.872443+00:00",
+    "last_updated": "2026-09-23T15:50:30.202240+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 784.58,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 812.37,
+    "narrative": "Today, the Zurich Zebras have several strong starting options, with **Pete Crow-Armstrong** leading the charge with an elite score of 80.07. His high mark is a testament to a favorable matchup against a weaker starter in Ryan Gusto (SP_xERA 4.39), a great park factor (+4%), and a significant dynamic platoon advantage (+14%). The optimizer also factored in his assumed leadoff spot (+10%) and a good xwOBA (0.377). **Yordan Alvarez** also presents a compelling case with a 73.10 score, benefiting from a positive platoon advantage (+7%) and his usual strong offensive profile (xwOBA Elite: 0.442), despite a slight park drawback (-5%) and an above-average opposing starter in George Kirby (SP_xERA 4.11). **Kazuma Okamoto** (70.30) and **Lars Nootbaar** (67.76) also posted strong scores, bolstered by excellent park factors (+16% and +14% respectively) and favorable matchups against Bassitt (SP_xERA 4.70) and Adams (SP_xERA 4.57), respectively. **Christian Encarnacion-Strand** (69.90) is another player to highlight, with his score being significantly boosted by a strong park factor (+16%) and a favorable matchup against Scherzer (SP_xERA 5.23), which overrides a slight platoon disadvantage.\n\nSeveral players see their scores elevated due to specific situational factors. **Dillon Dingler** (63.75) benefits from a dynamic platoon advantage against a left-handed pitcher and a strong overall matchup against Lovelady (SP_xERA 4.85). **Josh Smith** (64.65) and **Christian Yelich** (60.41) also enjoy significant boosts from dynamic platoon advantages and park factors, facing Bassitt (SP_xERA 4.70) and Nola (SP_xERA 3.97) respectively. It's worth noting the impact of \"Lineup Pending\" statuses on several players; while their scores are calculated based on assumed positions, official lineup confirmation is crucial for final evaluations, particularly for **Gary Sanchez** (45.77) and **Caleb Durbin** (53.63), who are currently projected in roles that could fluctuate.\n\nThe most interesting bench decision involves **Carson Benge**, whose score of 51.62 was strong enough to warrant consideration. However, the optimizer ultimately leaned towards other options, likely due to a less favorable platoon matchup against Cody Bradford (SP_xERA 5.34) and the \"Lineup Pending\" status that introduced uncertainty. Despite a positive SP skill matchup, the L/L platoon penalty (-9%) and his projected batting order position played a role in him not making the starting lineup. For the starting roster, several players have \"Lineup Pending\" warnings, including **Gary Sanchez**, **Caleb Durbin**, **Chase Meidroth**, **Trea Turner**, **Lars Nootbaar**, **Christian Yelich**, **Pete Crow-Armstrong**, and **Yordan Alvarez**. Additionally, the \"Wind In\" factor is negatively impacting several players' scores, suggesting potential challenges for fly ball hitters.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -56,11 +56,6 @@
             "Score": 63.75483042542716,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "47.23",
                     "type": "info"
@@ -84,26 +79,26 @@
                     "label": "Dynamic Platoon (L)",
                     "value": "+14%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "Richard Lovelady (L)",
+            "Opponent": "Lovelady (L)",
             "SP_xERA": "4.85",
             "Warning": "",
             "GameTime": "2026-09-23T17:10:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "05:10 PM"
         },
         {
             "Slot": "1B",
             "Player": "Christian Encarnacion-Strand",
             "POS": "1B/3B",
-            "Score": 61.79404791130755,
+            "Score": 69.90276913043841,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "51.78",
@@ -120,17 +115,32 @@
                     "type": "positive"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Slow SP Delivery (87% SB)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Scherzer (R)",
+            "SP_xERA": "5.23",
             "Warning": "",
-            "GameTime": "2026-09-23T22:35:00Z",
-            "Order": "5*",
-            "Start": "10:35 PM"
+            "GameTime": "2026-09-23T17:35:00Z",
+            "Order": "5",
+            "Start": "05:35 PM"
         },
         {
             "Slot": "2B",
@@ -293,13 +303,8 @@
             "Slot": "3B",
             "Player": "Kazuma Okamoto",
             "POS": "1B/3B",
-            "Score": 60.92764251248883,
+            "Score": 70.30112597594866,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "52.07",
@@ -314,26 +319,36 @@
                     "label": "Park",
                     "value": "+16%",
                     "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+17%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Bassitt (R)",
+            "SP_xERA": "4.70",
             "Warning": "",
-            "GameTime": "2026-09-23T22:35:00Z",
-            "Order": "6*",
-            "Start": "10:35 PM"
+            "GameTime": "2026-09-23T17:35:00Z",
+            "Order": "3",
+            "Start": "05:35 PM"
         },
         {
             "Slot": "OF1",
             "Player": "Josh Smith",
             "POS": "1B/2B/SS/3B/OF",
-            "Score": 54.35501820552908,
+            "Score": 64.65703989555404,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "47.89",
@@ -350,17 +365,27 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
+                    "label": "SP Skill",
+                    "value": "+17%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+14%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #2",
+                    "value": "+8%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Bassitt (R)",
+            "SP_xERA": "4.70",
             "Warning": "",
-            "GameTime": "2026-09-23T22:35:00Z",
-            "Order": "7*",
-            "Start": "10:35 PM"
+            "GameTime": "2026-09-23T17:35:00Z",
+            "Order": "2",
+            "Start": "05:35 PM"
         },
         {
             "Slot": "OF2",
@@ -723,9 +748,9 @@
             "POS": "OF",
             "Order": "5*",
             "Start": "12:05 AM",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 47.80146100833162,
+            "Opponent": "Cody Bradford (L)",
+            "SP_xERA": "5.34",
+            "Score": 51.62557788899816,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -741,6 +766,16 @@
                     "label": "Recency",
                     "value": "100%",
                     "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #5",
@@ -871,7 +906,7 @@
             "Start": "10:40 PM",
             "Opponent": "Matthew Liberatore (L)",
             "SP_xERA": "4.14",
-            "Score": 35.41822115186376,
+            "Score": 33.64731009427057,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -906,6 +941,11 @@
                 {
                     "label": "Order #9",
                     "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Wind In",
+                    "value": "-5%",
                     "type": "negative"
                 },
                 {
