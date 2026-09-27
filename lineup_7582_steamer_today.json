@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-27",
-    "last_updated": "2026-09-27T19:57:05.744461+00:00",
+    "last_updated": "2026-09-27T22:44:08.960241+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 767.07,
-    "narrative": "For the Zurich Zebras on September 27th, the lineup is anchored by **Pete Crow-Armstrong** (82.13) and **Yordan Alvarez** (81.62), who offer our highest ceilings against Houck and Johnson, respectively. **Pete Crow-Armstrong** benefits immensely from a soft matchup against Houck, where his elite speed profile is further enhanced by a slow delivery that projects for a high stolen base probability\u2014our scarcest category. Meanwhile, **Yordan Alvarez** remains a locked-in core play, leveraging his 0.443 xwOBA and favorable park factors to provide the requisite power production we need to climb the 5x5 Roto standings. **Trea Turner** (72.06) and **Kazuma Okamoto** (70.30) also provide strong production; **Kazuma Okamoto** specifically thrives in a plum spot against Williamson, where a massive +19% SP skill adjustment and top-third batting order placement cement his status as a must-start.\n\nThe most difficult bench decision involved **Carson Benge** (54.74), who fell just shy of displacing **Junior Caminero** (54.45) in the UTIL slot. While **Carson Benge** projected well, the optimizer favored **Junior Caminero**\u2019s order stability and pedigree, despite **Junior Caminero** drawing a formidable matchup against the elite arm of Wheeler. We are also closely monitoring **Christian Encarnacion-Strand** (60.74); while his matchup against the weak Elmer Rodr\u00edguez is favorable, the reported wind-in condition creates a non-trivial risk to his HR upside. As we push for every stolen base, the combination of **Christian Yelich** (67.45) and **Lars Nootbaar** (67.77) provides excellent secondary value, both receiving significant boosts from favorable platoon dynamics and aggressive base-running opportunities. Proceed with caution regarding **Junior Caminero**, as facing a sub-3.50 xERA pitcher represents the highest volatility point in today\u2019s otherwise favorable offensive slate.",
+    "total_efficiency_score": 770.26,
+    "narrative": "The Zurich Zebras are locked and loaded for today\u2019s slate, headlined by **Pete Crow-Armstrong** (82.13) and **Yordan Alvarez** (81.62), who command the highest efficiency scores of the day. **Pete Crow-Armstrong** is a priority start, leveraging a prime leadoff spot and a soft matchup against Houck; his projected 85% stolen base success rate against a slow delivery makes him the foundational piece of our roster strategy today. Similarly, **Yordan Alvarez** benefits from an elite 0.443 xwOBA and a favorable platoon advantage against Johnson, setting him up for high-impact production in the two-hole. **Trea Turner** (72.06) and **Kazuma Okamoto** (70.30) also provide significant upside, though **Trea Turner** carries slight risk due to wind-in conditions that may suppress power ceilings, despite his elite leadoff projection.\n\nOur bench optimization was razor-thin today, with **Carson Benge** (54.74) falling just short of forcing a lineup change. While **Carson Benge** offered a solid profile against Herz, the collective efficiency of our starting outfield and the high-ceiling platoon edges for players like **Christian Yelich** (67.45)\u2014who gains a massive 13% boost from his dynamic platoon matchup against Pallante\u2014kept **Carson Benge** on the pine. We are proceeding with caution regarding **Junior Caminero** (54.45), whose score is suppressed by a tough matchup against the perennial ace Wheeler; however, his lineup placement and base skills keep him as a marginal start over alternatives like **Jacob Gonzalez** (43.19). With **Colt Keith** still sidelined on the IL, we are managing our remaining depth carefully to maximize our 5x5 category output as we approach the season's final days.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -53,8 +53,13 @@
             "Slot": "1B",
             "Player": "Christian Encarnacion-Strand",
             "POS": "1B/3B",
-            "Score": 60.73942949362123,
+            "Score": 63.93624157223287,
             "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
                 {
                     "label": "Base",
                     "value": "51.78",
@@ -84,18 +89,13 @@
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind In",
-                    "value": "-5%",
-                    "type": "negative"
                 }
             ],
             "Opponent": "Elmer Rodr\u00edguez (R)",
             "SP_xERA": "5.31",
             "Warning": "",
             "GameTime": "2026-09-27T17:05:00Z",
-            "Order": "5",
+            "Order": "5*",
             "Start": "05:05 PM"
         },
         {
@@ -492,6 +492,11 @@
                     "type": "positive"
                 },
                 {
+                    "label": "BvP Good (27 PA)",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #1",
                     "value": "+10%",
                     "type": "positive"
@@ -603,11 +608,46 @@
             "Player": "Josh Smith",
             "POS": "1B/2B/SS/3B/OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "07:07 PM",
+            "Opponent": "Williamson (L)",
+            "SP_xERA": "5.52",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "47.89",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+19%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-15%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -615,7 +655,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-09-27T19:07:00Z"
         },
         {
             "Slot": "BN",
