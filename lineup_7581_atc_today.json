@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-26",
-    "last_updated": "2026-09-26T21:45:24.240934+00:00",
+    "last_updated": "2026-09-27T00:05:56.656704+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 644.27,
-    "narrative": "Our offensive outlook today is anchored by **Kyle Tucker** (75.56) and **Vladimir Guerrero Jr.** (73.10), our two primary drivers for production. **Kyle Tucker** benefits from a potent combination of a 4.63 xERA matchup against Wilkinson and favorable wind conditions that boost his score, while **Vladimir Guerrero Jr.** capitalizes on the struggling Lowder (4.84 xERA) to maintain his elite status. We are also leaning heavily on **Miguel Vargas** (66.37) in the leadoff spot; facing the vulnerable Quintana (5.90 xERA), **Miguel Vargas** provides a rare high-floor, high-ceiling opportunity, with his +19% SP skill adjustment and leadoff positioning making him a core start despite the park factor.\n\nThe margin between our utility slots and the bench remains razor-thin, as evidenced by the case of **Wade Meckler**. **Wade Meckler** (36.89) was the primary consideration for a spot, but the combination of a stagnant \"Lineup Pending\" status and a difficult L/L platoon disadvantage against Kade Anderson ultimately relegated him to the pine. Conversely, while **Jackson Merrill** (65.66) and **Andy Pages** (64.31) both clear the 60-point \"Strong\" threshold, **Andy Pages** is particularly intriguing today; his score is buoyed not just by the wind, but by his aggressive sprint metrics, which we are tracking closely as we hunt for stolen bases to close the gap in the 5x5 standings.\n\nWe must remain vigilant regarding the bottom of the lineup, where **Brayan Rocchio** (44.91) and **Dominic Smith** (44.06) hover dangerously close to the 40-point floor. While **Nasim Nunez** (55.05) earns a start thanks to his switch-hitting versatility and elite speed profile, we will be monitoring the game flow closely. With **Luis Robert Jr.** and **Jordan Westburg** still sidelined on the IL, our depth is being tested, and we cannot afford to burn plate appearances on sub-40 performances if these contests turn into blowouts. Managers should note that while **Liam Hicks** and **Drake Baldwin** are showing acceptable efficiency (51.33 and 51.94, respectively), their production remains sensitive to early-game exchanges against Nola and Ralston.",
+    "total_efficiency_score": 638.01,
+    "narrative": "With the 2026 season nearing its conclusion, the Austin Waves offense centers around the elite upside of **Vladimir Guerrero Jr.** (73.10) and **Kyle Tucker** (71.96). **Vladimir Guerrero Jr.** benefits from a favorable matchup against Lowder, carrying a high base projection bolstered by a significant SP skill advantage, while **Kyle Tucker** remains our most reliable anchor against Wilkinson. However, the most compelling play of the day is **Miguel Vargas** (66.77). Batting leadoff against Quintana, **Miguel Vargas** offers a unique combination of extreme SP favorability (5.90 xERA) and an aggressive running environment, making him a primary target for stolen base accumulation, a category where we remain hyper-focused. **Jackson Merrill** (65.66) also warrants mention as a strong start; his dynamic platoon edge against Clarke provides a high ceiling that justifies his placement in the heart of our order.\n\nThe tightest decision on today\u2019s card involved **Wade Meckler** (33.76), who fell short of the 40.0 baseline due to a brutal platoon disadvantage facing Anderson and unfavorable park factors. While **Wade Meckler** possesses the speed profile we covet, the projection model correctly benched him in favor of higher-efficiency options like **Andy Pages** (61.24), who draws a favorable matchup against Wilkinson and carries the added benefit of a slow opposing delivery that may facilitate stolen bases. We are currently navigating the absences of **Luis Robert Jr.** and **Jordan Westburg** on the IL, as well as an off-day for **Luis Garc\u00eda Jr.**, which constrains our depth. With no major weather concerns currently flagged, our focus remains on maximizing volume from **Nasim Nunez** and **Brayan Rocchio** at the bottom of the order, despite their lower efficiency scores, to maintain our pursuit of league-leading SB totals.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -102,7 +102,7 @@
             "Slot": "1B",
             "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Score": 66.37017157939924,
+            "Score": 66.76959271292661,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -126,6 +126,11 @@
                 },
                 {
                     "label": "Dynamic Platoon (L)",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Slow SP Delivery (100% SB)",
                     "value": "+2%",
                     "type": "positive"
                 },
@@ -327,7 +332,7 @@
             "Slot": "OF2",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 75.55851652687612,
+            "Score": 71.9604919303582,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -358,11 +363,6 @@
                     "label": "Order #5",
                     "value": "+2%",
                     "type": "positive"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Wilkinson (L)",
@@ -376,7 +376,7 @@
             "Slot": "OF3",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 64.30576130714918,
+            "Score": 61.24358219728494,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -412,11 +412,6 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 }
             ],
             "Opponent": "Wilkinson (L)",
@@ -716,17 +711,12 @@
             "Slot": "BN",
             "Player": "Wade Meckler",
             "POS": "OF",
-            "Order": "3*",
+            "Order": "7",
             "Start": "01:40 AM",
-            "Opponent": "Kade Anderson (L)",
+            "Opponent": "Anderson (L)",
             "SP_xERA": "4.00",
-            "Score": 36.8920675337085,
+            "Score": 33.75972217707287,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "40.69",
@@ -748,12 +738,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -833,17 +823,12 @@
             "Slot": "BN",
             "Player": "Henry Bolte",
             "POS": "OF",
-            "Order": "1*",
+            "Order": "1",
             "Start": "01:40 AM",
-            "Opponent": "Hayden Wesneski (R)",
+            "Opponent": "Wesneski (R)",
             "SP_xERA": "4.59",
             "Score": 0.0,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "0.00",
@@ -875,7 +860,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
