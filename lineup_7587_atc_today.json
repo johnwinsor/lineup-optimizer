@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-29",
-    "last_updated": "2026-09-29T10:30:56.757784+00:00",
+    "last_updated": "2026-09-29T17:19:54.593941+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 157.92,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 206.14,
+    "narrative": "With the season winding down on 2026-09-29, our primary offensive objective remains the aggressive pursuit of stolen bases, though today\u2019s slate forces us to prioritize reliability. **Seiya Suzuki** is our clear standout, posting a 61.55 score that earns him a \"Strong\" designation. Despite facing a mid-tier arm in Michael King, **Seiya Suzuki** benefits significantly from his anticipated #2 spot in the order, providing him the best opportunity to contribute across all five categories. While **Giancarlo Stanton** (48.22) and **Jose Caballero** (52.12) are relegated to the bottom of our starting options, they maintain marginal value. **Jose Caballero** remains a high-variance play; his dynamic platoon advantage against Payton Tolle provides some upside, though his projected #9 spot and the skill of the opposing pitcher suppress his ceiling.\n\nThe bench decision for **Isaac Paredes** was the most consequential movement in our rotation today. While his 38.10 score sat just below our 40.00 floor, he was the closest consideration for the utility slot. Ultimately, the combination of a tough matchup against H. Smith and a negative platoon split tipped the scales, leading us to bench **Isaac Paredes** to protect our remaining game caps. We are also monitoring the absences of key contributors like **Corbin Carroll**, **James Wood**, and **Josh Naylor**, who are all idle today. We are left relying on **Trevor Story** (44.26) to fill our SS slot against Cam Schlittler; while his matchup against a sub-3.00 xERA arm is daunting, he offers the most stable floor among our active options.\n\nOperational risk remains high as all four of our starters are currently \"Lineup Pending.\" If any of these players are scratched or shifted down in their respective batting orders, their scores will likely collapse below the 40.00 efficiency threshold. We continue to hold high-upside speed assets like **Brice Turang**, **Mickey Moniak**, and **Travis Bazzana** in reserve, waiting for more favorable platoon alignments to maximize our stolen base output. For now, we will lean on the patience of **Seiya Suzuki** and hope for a disruptive performance from **Jose Caballero** on the basepaths to keep our Roto standing afloat as we approach the final stretch.",
     "recommended_lineup": [
         {
             "Slot": "2B",
@@ -161,6 +161,55 @@
             "GameTime": "2026-09-30T02:00:00Z",
             "Order": "2*",
             "Start": "02:00 AM"
+        },
+        {
+            "Slot": "UTIL",
+            "Player": "Giancarlo Stanton",
+            "POS": "Util",
+            "Score": 48.220576656654465,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "54.17",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-16%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Payton Tolle (L)",
+            "SP_xERA": "3.34",
+            "Warning": "",
+            "GameTime": "2026-09-30T00:00:00Z",
+            "Order": "5*",
+            "Start": "12:00 AM"
         }
     ],
     "players_sat": [
@@ -261,30 +310,6 @@
         },
         {
             "Slot": "BN",
-            "Player": "Giancarlo Stanton",
-            "POS": "Util",
-            "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 0.0,
-            "Breakdown": [
-                {
-                    "label": "IL (Injured)",
-                    "value": null,
-                    "type": "status"
-                },
-                {
-                    "label": "Injured (IL) - Not available.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "\ud83d\udea8 INJURED (IL)",
-            "GameTime": null
-        },
-        {
-            "Slot": "BN",
             "Player": "Vinnie Pasquantino",
             "POS": "1B",
             "Order": "-",
@@ -373,17 +398,12 @@
             "Slot": "BN",
             "Player": "Isaac Paredes",
             "POS": "1B/3B",
-            "Order": "3*",
+            "Order": "3",
             "Start": "09:00 PM",
-            "Opponent": "Hagen Smith (L)",
+            "Opponent": "Smith, H (L)",
             "SP_xERA": "3.07",
             "Score": 38.10271975838476,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.53",
@@ -415,7 +435,7 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -510,17 +530,12 @@
             "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "In the Minors (Louisville Bats)",
-                    "value": null,
-                    "type": "status"
-                },
-                {
-                    "label": "In the Minors (Not on Active Roster).",
+                    "label": "Team Off-day or No Game Scheduled.",
                     "value": null,
                     "type": "info"
                 }
             ],
-            "Warning": "\ud83d\udea8 MINORS",
+            "Warning": "",
             "GameTime": null
         },
         {
