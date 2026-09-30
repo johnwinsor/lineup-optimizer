@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-30",
-    "last_updated": "2026-09-30T10:22:03.241431+00:00",
+    "last_updated": "2026-09-30T17:17:46.178847+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 314.02,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 257.95,
+    "narrative": "As we enter the final stretch of the season, **Bryce Harper** headlines our lineup today with an elite score of 64.42. Batting third against Mahle, **Harper** benefits from optimal lineup positioning and a favorable xwOBA profile, making him our primary engine for counting stats. Joining him in the outfield, **Justin Crawford** earns a start with a 55.36 efficiency rating; while his spot in the eight-hole drags his score down, his platoon advantage against Mahle makes him a high-upside play, particularly given his elite speed in a category where we remain hyper-aggressive.\n\nThe remainder of the lineup relies on situational edges to overcome modest matchups. **Gavin Sheets** and **Yainer Diaz** are currently tracking for top-of-the-order slots, with **Sheets** specifically benefiting from a +7% platoon boost despite the difficult matchup against Gausman. **Braden Montgomery** enters the lineup with a 42.63, narrowly clearing the marginal threshold; his switch-hitting versatility is the primary factor keeping him in the mix over potential bench options. We are closely monitoring the lineup postings for **Diaz**, **Montgomery**, and **Sheets**, as any downward shift in their batting order could necessitate a pivot to our bench reserves to protect our daily games-played cap. \n\nOur bench decisions today are largely dictated by team-wide off-days, leaving stalwarts like **Jos\u00e9 Ram\u00edrez**, **Cal Raleigh**, **Will Smith**, and **Lawrence Butler** unavailable. Because our core hitters like **Daulton Varsho**, **Tyler Freeman**, **Jonathan Aranda**, **Matt Chapman**, **Dylan Beavers**, **Gleyber Torres**, **Zack Gelof**, **Luis Arraez**, **Masyn Winn**, **Brendan Donovan**, **JJ Bleday**, **Jung Hoo Lee**, **Jeremiah Jackson**, **Kyle Karros**, and **Alex Freeland** are not scheduled, the optimizer\u2019s work is simplified, forcing us to lean heavily on today's active starters. We are proceeding with caution regarding the high-end SP skill of Gausman and the pending lineup configurations, but we remain confident that **Harper** and **Crawford** provide the necessary volatility to capture points in both the power and stolen base categories.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -55,60 +55,11 @@
             "Start": "09:00 PM"
         },
         {
-            "Slot": "2B",
-            "Player": "Luis Arraez",
-            "POS": "2B",
-            "Score": 56.07230842514794,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.46",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "+1%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+7%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Tyler Mahle (R)",
-            "SP_xERA": "4.01",
-            "Warning": "",
-            "GameTime": "2026-09-30T18:00:00Z",
-            "Order": "4*",
-            "Start": "06:00 PM"
-        },
-        {
             "Slot": "OF1",
             "Player": "Justin Crawford",
             "POS": "OF",
             "Score": 55.357552126394346,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #8)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "54.37",
@@ -135,11 +86,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Tyler Mahle (R)",
+            "Opponent": "Mahle (R)",
             "SP_xERA": "4.01",
             "Warning": "",
             "GameTime": "2026-09-30T18:00:00Z",
-            "Order": "8*",
+            "Order": "8",
             "Start": "06:00 PM"
         },
         {
@@ -242,11 +193,6 @@
             "Score": 64.42420041451757,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "58.33",
                     "type": "info"
@@ -277,11 +223,11 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Tyler Mahle (R)",
+            "Opponent": "Mahle (R)",
             "SP_xERA": "4.01",
             "Warning": "",
             "GameTime": "2026-09-30T18:00:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "06:00 PM"
         }
     ],
@@ -503,6 +449,25 @@
             "Breakdown": [
                 {
                     "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Luis Arraez",
+            "POS": "2B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
