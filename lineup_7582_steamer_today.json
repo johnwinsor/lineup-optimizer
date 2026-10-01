@@ -1,9 +1,9 @@
 {
     "target_date": "2026-09-30",
-    "last_updated": "2026-09-30T21:41:36.209996+00:00",
+    "last_updated": "2026-10-01T00:56:04.572765+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 292.26,
-    "narrative": "The Zurich Zebras enter this September 30th slate with **Yordan Alvarez** providing our highest offensive floor at 69.45. Despite a moderate challenge from the opposing starter\u2019s 3.79 xERA, **Yordan Alvarez** benefits from an elite .442 xwOBA and a prime #2 hole placement, making him the anchor of our lineup. **Trea Turner** follows closely at 66.31; while he draws a mid-tier matchup against Mahle, his aggressive position in the #1 spot and a strong historical BvP edge over 26 plate appearances provide the catalyst we need to chase stolen bases\u2014our most critical scarcity category today.\n\nOur most intriguing roster construction decision involved **Pete Crow-Armstrong**, who secured a UTIL spot with a 60.33 score despite facing a tough 3.17 xERA arm in Pivetta. The optimizer favored him due to a significant dynamic platoon advantage and a projected lead-off role, which outweighs the lower-tier output of **Pedro Ramirez**. While **Pedro Ramirez** remained on the bench with a 35.23 score, he was held out primarily due to his assumed #7 placement and the lack of a locked-in lineup spot, which introduces too much volatility for a day where we must maximize daily efficiency. Elsewhere, **Caleb Durbin** holds steady at 52.84; he remains a marginal-to-strong play, with park factors slightly offsetting the difficulty of facing a 3.78 xERA southpaw. We continue to monitor the status of **Junior Caminero**, **Christian Yelich**, **Kazuma Okamoto**, **Christian Encarnacion-Strand**, **Colt Keith**, **Lars Nootbaar**, **Hector Rodriguez**, **Gary Sanchez**, **Josh Smith**, **Dillon Dingler**, **Carson Benge**, **Casey Schmitt**, **Luis Pena**, and **Jacob Gonzalez**, though current off-days or bench status keep them sidelined for this specific rotation. We must remain vigilant regarding the pending lineup status for **Pete Crow-Armstrong**, as any shift downward in the batting order would necessitate a recalibration of our efficiency expectations.",
+    "narrative": "The Zurich Zebras enter the final day of September with a lean lineup, anchored by the high-ceiling utility of **Yordan Alvarez** (69.45) and the elite sprint speed provided by **Trea Turner** (66.31). **Yordan Alvarez** remains our most reliable asset today against Burke, S; his elite xwOBA of .442 and a significant order-slot advantage (+8%) make him the primary engine of our offense. **Trea Turner** rounds out our top-tier tier, buoyed by a favorable BvP history against Mahle and a leadoff spot that maximizes his potential for SB, our most critical category. While **Pete Crow-Armstrong** (60.33) faces a tough matchup against Pivetta, his dynamic platoon advantage (+14%) and leadoff security confirm him as a strong start over our inactive bench assets.\n\nTactically, we are monitoring **Caleb Durbin** (52.84), who sits firmly in the marginal range today due to a stiff challenge from Fried. While **Caleb Durbin** benefits from park factors, the SP skill penalty (-5%) against a southpaw keeps his ceiling capped. **Chase Meidroth** (43.31) represents our most volatile start; he sits near the bottom of our efficiency threshold, penalized by a #7 hole in the order and a neutral matchup against Brown, H. With **Junior Caminero**, **Christian Yelich**, **Kazuma Okamoto**, and **Christian Encarnacion-Strand** all facing team off-days, we lack the depth to rotate better production into the infield, forcing us to lean on the current lineup despite the risk of efficiency leakage from **Chase Meidroth**. \n\nManagement remains cautious regarding our peripheral depth\u2014**Colt Keith**, **Lars Nootbaar**, **Hector Rodriguez**, **Gary Sanchez**, **Josh Smith**, **Dillon Dingler**, **Carson Benge**, **Casey Schmitt**, **Pedro Ramirez**, **Luis Pena**, and **Jacob Gonzalez** are all unavailable for high-leverage utility today. We are essentially running a \"best available\" configuration; the primary risk today remains the SP skill of Pivetta dampening the impact of **Pete Crow-Armstrong**, though his speed profile necessitates the start to keep our SB volume competitive for the final standings push.",
     "recommended_lineup": [
         {
             "Slot": "2B",
@@ -50,7 +50,7 @@
             "Start": "09:00 PM"
         },
         {
-            "Slot": "MI",
+            "Slot": "SS",
             "Player": "Trea Turner",
             "POS": "SS",
             "Score": 66.31631397631466,
@@ -188,11 +188,6 @@
             "Score": 60.33321476846228,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "60.83",
                     "type": "info"
@@ -232,7 +227,7 @@
             "SP_xERA": "3.17",
             "Warning": "",
             "GameTime": "2026-10-01T02:00:00Z",
-            "Order": "1*",
+            "Order": "1",
             "Start": "02:00 AM"
         }
     ],
@@ -479,55 +474,20 @@
             "Slot": "BN",
             "Player": "Pedro Ramirez",
             "POS": "2B/3B",
-            "Order": "7*",
-            "Start": "02:00 AM",
-            "Opponent": "Pivetta (R)",
-            "SP_xERA": "3.17",
-            "Score": 35.2325210150368,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "44.98",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-10-01T02:00:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
