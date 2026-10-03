@@ -1,9 +1,9 @@
 {
     "target_date": "2026-10-03",
-    "last_updated": "2026-10-03T18:55:57.276696+00:00",
+    "last_updated": "2026-10-03T21:57:48.683810+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 391.32,
-    "narrative": "Today\u2019s slate for the Austin Waves presents a challenging environment, as our core hitters face a gauntlet of high-end arms. The most intriguing play is **Luis Lara**, who boasts our highest efficiency score at 54.02. Despite being projected for the bottom third of the order against Robbie Ray, **Luis Lara** benefits from a massive 19% SP skill boost due to the favorable matchup, allowing him to edge out more established veterans. We are also looking for a productive day from **Jackson Merrill** (51.88) and **Kyle Tucker** (51.86). While **Jackson Merrill** faces the toughest matchup of the day against Jacob Misiorowski (2.35 xERA), his 13% platoon advantage and prime spot in the heart of the order keep his floor high enough to warrant a start in the UTIL slot. \n\nThe optimization process was tight at the bottom of the lineup, specifically regarding **Brayan Rocchio**. He finished with a 36.43 score, narrowly missing our 40.0 floor. While **Brayan Rocchio** offers speed, his projected #9 spot in the lineup proved to be the deciding factor; the optimizer penalized him 8% for the lack of RBI opportunities, ultimately forcing us to keep him on the bench to preserve our game caps. Meanwhile, **Drake Baldwin** (47.67) and **Miguel Vargas** (46.92) represent our middle-tier value. **Miguel Vargas** remains a steady play given his strong 0.378 xwOBA, which helps mitigate the risk posed by the matchup against Messick.\n\nWe must remain vigilant regarding our \"Lineup Pending\" designations for **Luis Lara** and **Jackson Merrill**, as any shifts out of their projected #6 and #4 spots, respectively, could trigger a reassessment of their utility. Furthermore, while **Kyle Tucker** (51.86) is a must-start, we are tracking the risk of Dodd\u2019s deceptive effectiveness; the 17% SP skill penalty applied to both **Kyle Tucker** and **Andy Pages** suggests we are banking on raw talent over situational ease today. With **Luis Robert Jr.** sidelined on the IL and **Vladimir Guerrero Jr.** and **Gunnar Henderson** enjoying an off-day, we are relying on our depth players\u2014including **Jordan Westburg**, **Jacob Wilson**, **Nasim Nunez**, **Heliot Ramos**, **Josh Jung**, **Coby Mayo**, **Henry Bolte**, **Curtis Mead**, **Sam Antonacci**, **Franklin Arias**, **Dominic Smith**, and **Wade Meckler**\u2014to remain ready should any late-inning substitutions or weather delays force a pivot.",
+    "total_efficiency_score": 388.7,
+    "narrative": "As we navigate the final stretch of the season, our optimization model leans heavily into matchups against vulnerable arms to secure counting stats, despite several high-end starters dotting today\u2019s slate. **Luis Lara** emerges as our strongest play at 52.40, capitalizing on a favorable matchup against Ray (xERA 4.98). While hitting 7th, his switch-hitting versatility and the significant SP Skill advantage elevate him above the pack. **Kyle Tucker** (51.86) and **Luis Garc\u00eda Jr.** (51.65) follow closely; **Luis Garc\u00eda Jr.** specifically benefits from a dynamic platoon edge against Rasmussen, mitigating the challenge of his 3.30 xERA. Meanwhile, **Jackson Merrill** holds a stable 50.88 despite facing the formidable Misiorowski, as his projected output remains insulated by his premium spot in the order and a favorable platoon profile.\n\nThe most difficult decision on the bench was **Brayan Rocchio**, who narrowly missed the starting lineup with a 36.43 score. Ultimately, the model pulled him back because he failed to clear our 40.0 \"Zebras Floor\" for active starts, largely due to a suppressed batting position (9th) and a challenging matchup against Smith. We are choosing to preserve game caps rather than force an underperforming asset. Conversely, we must monitor the status of **Drake Baldwin**, who sits at a 47.67 score despite a high-stakes duel with Skubal (2.85 xERA); the model favors his leadoff profile here, but he remains the most volatile asset in today's lineup given the quality of the opposing arm. We remain without **Luis Robert Jr.** due to his ongoing IL status, and with **Vladimir Guerrero Jr.** and **Gunnar Henderson** scheduled for an off-day, our depth\u2014including **Jordan Westburg**, **Jacob Wilson**, and **Nasim Nunez**\u2014must remain prepared to rotate in as we prioritize defensive efficiency and sprint speed across the diamond.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -180,13 +180,8 @@
             "Slot": "OF1",
             "Player": "Luis Lara",
             "POS": "OF",
-            "Score": 54.02212016255999,
+            "Score": 52.4014565576832,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.15",
@@ -211,13 +206,18 @@
                     "label": "Switch",
                     "value": "+3%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #7",
+                    "value": "-3%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Robbie Ray (L)",
+            "Opponent": "Ray (L)",
             "SP_xERA": "4.98",
             "Warning": "",
             "GameTime": "2026-10-04T00:30:00Z",
-            "Order": "6*",
+            "Order": "7",
             "Start": "12:30 AM"
         },
         {
@@ -297,13 +297,8 @@
             "Slot": "UTIL",
             "Player": "Jackson Merrill",
             "POS": "OF",
-            "Score": 51.87806960064508,
+            "Score": 50.88041441601729,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.63",
@@ -330,16 +325,16 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
+                    "label": "Order #5",
+                    "value": "+2%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jacob Misiorowski (R)",
+            "Opponent": "Misiorowski (R)",
             "SP_xERA": "2.35",
             "Warning": "",
             "GameTime": "2026-10-04T00:30:00Z",
-            "Order": "4*",
+            "Order": "5",
             "Start": "12:30 AM"
         }
     ],
@@ -622,11 +617,41 @@
             "Player": "Sam Antonacci",
             "POS": "2B/OF",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "05:00 PM",
+            "Opponent": "Messick (L)",
+            "SP_xERA": "3.51",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "46.77",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-12%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (L/L)",
+                    "value": "-9%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -634,7 +659,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-10-03T17:00:00Z"
         },
         {
             "Slot": "BN",
