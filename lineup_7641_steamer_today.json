@@ -1,9 +1,9 @@
 {
     "target_date": "2026-10-03",
-    "last_updated": "2026-10-03T09:47:31.105317+00:00",
+    "last_updated": "2026-10-03T15:27:37.440368+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 207.68,
-    "narrative": "AI Narrative generation skipped.",
+    "narrative": "The schedule for LawDog\u2019s roster today is light, forcing us to rely on a core group of four starters as we navigate a high-difficulty slate. **Jos\u00e9 Ram\u00edrez** remains our strongest play with a score of 57.32. Despite a difficult matchup against H. Smith (3.07 xERA), **Jos\u00e9 Ram\u00edrez** benefits from the structural boost of batting second, which stabilizes his floor even against elite arms. **Will Smith** follows closely at 56.73; while his lineup spot is currently pending, his projected #3 positioning against a neutral matchup keeps him safely within the \"marginal-to-strong\" bucket. Conversely, **Jonathan Aranda** faces a tough test against Gerrit Cole (3.54 xERA). While his 51.05 score is bolstered by a +12% dynamic platoon edge against the right-handed Cole, he remains a high-variance play for today\u2019s card.\n\nThe bench decision process was straightforward but cautionary, highlighted by the exclusion of **Braden Montgomery**. With a score of 36.75, **Braden Montgomery** fell well below our internal 40.0 floor, largely due to the combination of a difficult matchup against Messick and being buried in the #8 spot of the order. The optimizer prioritized the lineup security of **Gavin Sheets** (42.58) over **Braden Montgomery** despite **Gavin Sheets** facing an elite arm in Misiorowski (2.35 xERA). With **Bryce Harper**, **Cal Raleigh**, and **Lawrence Butler** all inactive due to off-days, we lack the depth to pivot if late-breaking lineup changes force a scratch. \n\nWe are monitoring the status of **Will Smith**, **Jonathan Aranda**, and **Gavin Sheets** closely, as all three have \"Lineup Pending\" designations. Any drop in the batting order for these three would trigger an automatic re-evaluation of their utility against our remaining bench options. Given the scarcity of stolen bases in this league, the absence of speed-threats like **Masyn Winn**, **Justin Crawford**, or **Tyler Freeman** on today's active roster makes our categories reliant on the power-contact profiles of **Jos\u00e9 Ram\u00edrez** and **Will Smith** to generate efficient offensive output. Proceed with caution; if lineups shift significantly, preserve game caps by pulling anyone falling below the 40.0 floor.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -100,11 +100,6 @@
             "Score": 57.32391298427949,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #2)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
                     "label": "Base",
                     "value": "64.61",
                     "type": "info"
@@ -130,11 +125,11 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Hagen Smith (L)",
+            "Opponent": "Smith, H (L)",
             "SP_xERA": "3.07",
             "Warning": "",
             "GameTime": "2026-10-03T17:00:00Z",
-            "Order": "2*",
+            "Order": "2",
             "Start": "05:00 PM"
         },
         {
@@ -573,17 +568,12 @@
             "Slot": "BN",
             "Player": "Braden Montgomery",
             "POS": "OF",
-            "Order": "6*",
+            "Order": "8",
             "Start": "05:00 PM",
-            "Opponent": "Parker Messick (L)",
+            "Opponent": "Messick (L)",
             "SP_xERA": "3.51",
-            "Score": 39.09780198858101,
+            "Score": 36.751933869266146,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "43.27",
@@ -605,7 +595,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
