@@ -1,15 +1,15 @@
 {
     "target_date": "2026-10-04",
-    "last_updated": "2026-10-04T16:13:58.928193+00:00",
+    "last_updated": "2026-10-04T19:53:42.251337+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 142.81,
-    "narrative": "For today\u2019s slate, **Will Smith** stands as our highest-rated play at 56.73. While his status is officially \"Lineup Pending,\" his projected presence in the #3 hole provides the most consistent path to run production, and his 0.389 xwOBA remains the anchor of our daily output. Conversely, **Gavin Sheets** faces a challenging matchup against Logan Henderson (xERA 3.14). While **Gavin Sheets** benefits from a 7% boost due to his platoon advantage against a right-handed arm, the high quality of the opposing starter drags his overall efficiency score down to a marginal 42.58. **Alex Freeland** rounds out the active roster at 43.50; his floor is heavily suppressed by a projected #9 spot in the order, which limits his counting stat opportunities despite his recent form.\n\nThe bench remains largely stagnant today due to team off-days for the core of our roster, including **Jos\u00e9 Ram\u00edrez**, **Bryce Harper**, **Cal Raleigh**, and **Lawrence Butler**. The most significant bench decision was the exclusion of utility options who simply lacked the volume or the platoon favorability to crack the lineup alongside **Will Smith** and **Gavin Sheets**. Because we are operating with a skeleton crew, risk management is the primary focus; we are avoiding any unnecessary exposure to high-xERA pitchers. We are monitoring lineup confirmations closely for **Will Smith**, **Gavin Sheets**, and **Alex Freeland**; any shift further down in the order for these three will necessitate a re-evaluation of their utility, as our strategy heavily prioritizes OBP and RBI efficiency in the top third of the lineup.",
+    "total_efficiency_score": 138.38,
+    "narrative": "For today\u2019s slate on 2026-10-04, **Will Smith** remains our anchor, boasting a 53.22 score that narrowly secures his place as our primary threat despite the \"Lineup Pending\" status against Ray Kerr. While his platoon matchup against the lefty carries a slight -4% penalty, his projected #3 spot in the order and a robust 0.389 xwOBA keep him well above our \"Marginal\" threshold. **Alex Freeland** also edges into the starting lineup with a 44.22, though he is heavily hampered by his projected #9 position. While his switch-hitting ability provides a +3% bump against Kerr, his efficiency is capped by the lack of lineup protection, making him a high-variance play today.\n\nThe most difficult decision of the day involved **Gavin Sheets**, who squeaks into the 1B slot with a 40.94 score. His matchup against Henderson is suboptimal given the 3.14 xERA\u2014the stiffest pitching opposition on our board\u2014but the +7% platoon advantage against the right-hander proved just enough to keep him over our bench floor. With elite assets like **Jos\u00e9 Ram\u00edrez**, **Bryce Harper**, **Cal Raleigh**, and **Lawrence Butler** all idle today due to team off-days, our offensive depth is severely condensed. We are effectively running a skeleton crew, and if official lineups shift **Will Smith** or **Alex Freeland** out of their anticipated spots, we will be forced to reconsider their status to protect our remaining daily game caps. No weather risks are currently flagged, but the combination of a high-skill opposing starter for **Gavin Sheets** and the \"Lineup Pending\" tag on the middle infielders necessitates close monitoring leading up to first pitch.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Will Smith",
             "POS": "C",
-            "Score": 56.72806096178153,
+            "Score": 53.21726748035879,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -27,6 +27,16 @@
                     "type": "info"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
@@ -37,8 +47,8 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Ray Kerr (L)",
+            "SP_xERA": "3.95",
             "Warning": "",
             "GameTime": "2026-10-05T00:00:00Z",
             "Order": "3*",
@@ -48,13 +58,8 @@
             "Slot": "1B",
             "Player": "Gavin Sheets",
             "POS": "1B/OF",
-            "Score": 42.58096565086913,
+            "Score": 40.94323620275878,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.14",
@@ -79,25 +84,20 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+7%",
                     "type": "positive"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Logan Henderson (R)",
+            "Opponent": "Henderson (R)",
             "SP_xERA": "3.14",
             "Warning": "",
             "GameTime": "2026-10-04T20:00:00Z",
-            "Order": "4*",
+            "Order": "6",
             "Start": "08:00 PM"
         },
         {
             "Slot": "2B",
             "Player": "Alex Freeland",
             "POS": "2B/3B",
-            "Score": 43.50476799452628,
+            "Score": 44.22402636171952,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -115,13 +115,23 @@
                     "type": "info"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Ray Kerr (L)",
+            "SP_xERA": "3.95",
             "Warning": "",
             "GameTime": "2026-10-05T00:00:00Z",
             "Order": "9*",

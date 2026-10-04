@@ -1,70 +1,16 @@
 {
     "target_date": "2026-10-04",
-    "last_updated": "2026-10-04T16:11:51.431891+00:00",
+    "last_updated": "2026-10-04T19:52:19.198636+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 120.33,
-    "narrative": "The Zurich Zebras enter this October 4th slate with a condensed lineup, as the primary offensive engine\u2014including **Yordan Alvarez**, **Junior Caminero**, **Trea Turner**, and **Pete Crow-Armstrong**\u2014is sidelined due to scheduled off-days. Consequently, the focus shifts to our two active starters. **Christian Yelich** headlines the day with a strong 67.64 score. While facing the difficult arm of Michael King (xERA 4.39), **Christian Yelich** benefits significantly from a dynamic platoon edge that boosts his projected output by 13%. Although his stolen base upside is tempered slightly by the matchup, his ability to mitigate the skill of the opposing starter makes him the clear anchor for the Zebras today.\n\n**Gary Sanchez** rounds out the active roster with a marginal 52.69 score. His projection is held in check by the right-on-right matchup against Michael King, though he retains moderate utility potential. We are monitoring the official lineup for **Gary Sanchez**, as a move up from the assumed #5 spot could provide a late boost to his run production prospects. With the remainder of the bench\u2014including **Caleb Durbin**, **Kazuma Okamoto**, **Colt Keith**, **Christian Encarnacion-Strand**, **Carson Benge**, **Lars Nootbaar**, **Casey Schmitt**, **Dillon Dingler**, **Josh Smith**, **Chase Meidroth**, **Jacob Gonzalez**, **Hector Rodriguez**, **Luis Pena**, and **Pedro Ramirez**\u2014also inactive today, the Zebras must rely on this duo to maintain efficiency. We are treating this as a preservation day, avoiding any unnecessary exposure to high-xERA starters to protect our overall seasonal efficiency and game cap limitations.",
+    "total_efficiency_score": 67.64,
+    "narrative": "As we look at the slate for 2026-10-04, the Zurich Zebras are operating with a condensed roster due to team off-days for key contributors like **Yordan Alvarez**, **Junior Caminero**, **Trea Turner**, and **Pete Crow-Armstrong**. In this environment, **Christian Yelich** headlines our offensive output with a strong efficiency score of 67.64. His matchup against King, M presents a distinct advantage; while the park factor provides a minor 1% drag, the 4.39 xERA of the opposing starter, paired with a significant +13% boost from his favorable dynamic platoon split against right-handed pitching, makes him our anchor. He remains a high-floor play, though we are monitoring a slight -2% adjustment due to King's efficiency at suppressing base-stealing attempts, which dampens the stolen base upside we typically prioritize.\n\nWith the bench depleted by scheduling, the internal optimization focused on balancing our remaining depth against volatile matchups. **Caleb Durbin**, **Kazuma Okamoto**, and **Colt Keith** are tasked with providing the necessary volume today, as the remaining bench candidates\u2014including **Christian Encarnacion-Strand**, **Carson Benge**, and **Gary Sanchez**\u2014are sidelined by the team's off-day rotation. We have evaluated the potential utility of **Lars Nootbaar**, **Casey Schmitt**, and **Dillon Dingler** for pinch-hitting situations, but their lower projected efficiency scores mean they will not see starting spots. We are also keeping a close watch on **Josh Smith**, **Chase Meidroth**, **Jacob Gonzalez**, **Hector Rodriguez**, **Luis Pena**, and **Pedro Ramirez** to ensure they remain ready should late-inning defensive switches be required to preserve our narrow lead in stolen bases. Given the lack of premium matchups, our primary objective is to maximize plate appearances from the **Christian Yelich** slot while avoiding unnecessary risk from bench players who do not offer a clear statistical edge in our 5x5 categories.",
     "recommended_lineup": [
-        {
-            "Slot": "C1",
-            "Player": "Gary Sanchez",
-            "POS": "C/1B",
-            "Score": 52.69285306461096,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "49.05",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "+9%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Michael King (R)",
-            "SP_xERA": "4.39",
-            "Warning": "",
-            "GameTime": "2026-10-04T20:00:00Z",
-            "Order": "5*",
-            "Start": "08:00 PM"
-        },
         {
             "Slot": "UTIL",
             "Player": "Christian Yelich",
             "POS": "Util",
             "Score": 67.64137238884152,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.18",
@@ -96,11 +42,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Michael King (R)",
+            "Opponent": "King, M (R)",
             "SP_xERA": "4.39",
             "Warning": "",
             "GameTime": "2026-10-04T20:00:00Z",
-            "Order": "6*",
+            "Order": "6",
             "Start": "08:00 PM"
         }
     ],
@@ -274,6 +220,25 @@
             "Breakdown": [
                 {
                     "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Gary Sanchez",
+            "POS": "C/1B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
