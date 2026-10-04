@@ -1,9 +1,9 @@
 {
     "target_date": "2026-10-04",
-    "last_updated": "2026-10-04T19:53:45.606094+00:00",
+    "last_updated": "2026-10-04T22:38:49.492628+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 98.13,
-    "narrative": "The LawDog lineup faces a truncated slate today, headlined by **Will Smith**, who stands as our strongest play with a score of 55.20. Despite a \"Lineup Pending\" status against Ray Kerr, **Will Smith** benefits significantly from a projected #3 slot in the order, which provides the necessary volume to offset the minor platoon disadvantage against the lefty. While the matchup against Kerr\u2019s 3.95 xERA is neutral, the base projection for **Will Smith** remains insulated by his elite 0.389 xwOBA, making him a locked-in start for production across standard counting categories. Conversely, **Alex Freeland** rounds out the active squad with a marginal 42.92 score; he remains a start purely due to positional utility, though his spot at the bottom of the order (-8% adjustment) acts as a drag on his overall efficiency.\n\nThe most difficult bench decision involved **Gavin Sheets**, who finished just outside the starting threshold with a score of 39.92. While the platoon advantage against Henderson (R) provided a +7% boost, it could not overcome the -19% penalty attributed to the pitcher\u2019s skill level and a slight negative park factor. With the team relying heavily on the stolen base profile of speedsters like **Justin Crawford** or **Masyn Winn** to maintain our competitive edge in the 5x5 standings, **Gavin Sheets** lacked the category-specific upside to justify breaking the 40-point floor for a bench-to-start promotion. \n\nLooking across the rest of the roster, the absence of stalwarts like **Jos\u00e9 Ram\u00edrez**, **Bryce Harper**, and **Lawrence Butler** due to scheduled off-days leaves the offense thin for today\u2019s action. We must monitor the official lineup cards for **Will Smith** and **Alex Freeland** closely; should either be dropped from the primary order, their efficiency scores will crater, necessitating a shift in strategy. With no weather-related risks flagged for this limited window, our primary objective remains avoiding negative game-cap attrition while chasing the high-floor production provided by **Will Smith** and the potential for a defensive shift or pinch-hit contribution from our deeper bench assets.",
+    "total_efficiency_score": 55.2,
+    "narrative": "As we approach the October 4th slate, our primary objective remains maximizing efficiency to protect our remaining game caps while targeting high-leverage scoring opportunities. **Will Smith** serves as our focal point, currently yielding a score of 55.20. While a matchup against Kerr presents a sub-4.00 xERA challenge, **Will Smith** retains value due to his prime #3 lineup placement and an xwOBA of .389. While he sits in the \"Marginal\" bucket, the lack of depth elsewhere in the catcher pool necessitates his inclusion to maintain stability across our power categories.\n\nThe most difficult personnel decision today involved **Gavin Sheets**, who narrowly missed the starting cut with an efficiency score of 39.92. Despite a favorable platoon advantage against a right-handed Henderson, the model heavily penalized the matchup against an opponent sporting a 3.14 xERA. The decision to bench **Gavin Sheets** is purely systematic; by falling just below our 40.0 \"Zebras\" floor, we prioritize preserving game caps for higher-upside scenarios later in the week. Given that high-value assets like **Jos\u00e9 Ram\u00edrez**, **Cal Raleigh**, and **Lawrence Butler** are inactive due to scheduled off-days, our bench depth is significantly thinned, making the defensive integrity of the starting lineup paramount.\n\nLooking forward, the absence of **Bryce Harper**, **Justin Crawford**, and **Daulton Varsho** from the immediate daily projection necessitates a conservative approach. We are closely monitoring the status of **Tyler Freeman**, **Yainer Diaz**, and **Jonathan Aranda**, as fluctuations in their confirmed batting order could significantly shift their sub-40 scores. With **Matt Chapman**, **Dylan Beavers**, and **Gleyber Torres** also unavailable for today's specific configuration, we are effectively pivoting into a containment strategy. We will continue to track **Zack Gelof**, **Luis Arraez**, **Masyn Winn**, **Brendan Donovan**, **JJ Bleday**, **Jung Hoo Lee**, **Jeremiah Jackson**, **Kyle Karros**, **Alex Freeland**, and **Braden Montgomery** for any late-breaking lineup changes that might move them into the optimal start threshold.",
     "recommended_lineup": [
         {
             "Slot": "C1",
@@ -11,11 +11,6 @@
             "POS": "C",
             "Score": 55.2040889684037,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.52",
@@ -47,55 +42,11 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Ray Kerr (L)",
+            "Opponent": "Kerr (L)",
             "SP_xERA": "3.95",
             "Warning": "",
             "GameTime": "2026-10-05T00:00:00Z",
-            "Order": "3*",
-            "Start": "12:00 AM"
-        },
-        {
-            "Slot": "2B",
-            "Player": "Alex Freeland",
-            "POS": "2B/3B",
-            "Score": 42.92218021529383,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "46.40",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #9",
-                    "value": "-8%",
-                    "type": "negative"
-                }
-            ],
-            "Opponent": "Ray Kerr (L)",
-            "SP_xERA": "3.95",
-            "Warning": "",
-            "GameTime": "2026-10-05T00:00:00Z",
-            "Order": "9*",
+            "Order": "3",
             "Start": "12:00 AM"
         }
     ],
@@ -532,6 +483,25 @@
             "Breakdown": [
                 {
                     "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Alex Freeland",
+            "POS": "2B/3B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
