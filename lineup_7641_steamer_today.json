@@ -1,19 +1,24 @@
 {
-    "target_date": "2026-10-05",
-    "last_updated": "2026-10-06T01:09:27.077319+00:00",
+    "target_date": "2026-10-06",
+    "last_updated": "2026-10-06T04:18:35.056140+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 127.02,
-    "narrative": "The focal point of today\u2019s lineup is **Jos\u00e9 Ram\u00edrez**, who commands a commanding 80.86 efficiency score. Facing Kay, a southpaw with a pedestrian 4.51 xERA, **Jos\u00e9 Ram\u00edrez** is uniquely positioned to exploit the platoon advantage. His high score is buoyed not just by his consistent recency metrics, but by the plus-matchup against a vulnerable arm and his prime #2 spot in the order, which maximizes his high-leverage plate appearances. Conversely, **Jonathan Aranda** faces a much stiffer test against Schlittler (2.94 xERA). While **Jonathan Aranda**\u2019s score of 46.15 sits just above our marginal threshold, he remains a start primarily due to his protected #2 spot in the lineup and a dynamic platoon split against the right-handed Schlittler that prevents his value from cratering against elite pitching.\n\nThe most difficult personnel decision centered on **Braden Montgomery**, who narrowly missed the starting cut with a 34.58 score. Despite his talent, the optimizer penalized **Braden Montgomery** heavily for a difficult matchup against Williams\u2014who is sporting a 2.95 xERA\u2014and his placement in the lower third of the batting order. We opted to prioritize the high-floor production of **Jonathan Aranda** over the risk inherent in **Braden Montgomery**'s matchup, choosing to bench the latter to preserve our remaining game caps. With **Bryce Harper**, **Lawrence Butler**, and **Yainer Diaz** all idle due to team off-days, our bench depth is significantly thinned, making the maintenance of our remaining daily allotment critical as we approach the season's end. We will continue to monitor the status of **Cal Raleigh**, **Justin Crawford**, **Tyler Freeman**, **Will Smith**, **Matt Chapman**, **Daulton Varsho**, **Luis Arraez**, **Dylan Beavers**, **Masyn Winn**, **JJ Bleday**, **Jeremiah Jackson**, **Brendan Donovan**, **Jung Hoo Lee**, **Zack Gelof**, **Gleyber Torres**, **Gavin Sheets**, **Alex Freeland**, and **Kyle Karros** to ensure we rotate our remaining volume effectively.",
+    "total_efficiency_score": 96.16,
+    "narrative": "For LawDog, today\u2019s slate centers on navigating a high-difficulty matchup against Chris Sale. **Will Smith** draws the toughest assignment of the active lineup, earning a 43.56 score. Despite the SP_xERA of 2.79, **Will Smith** remains a necessary start given his projected #3 spot in the order, which provides a +6% volume bump that keeps his efficiency above our floor. Conversely, **Gavin Sheets** presents the strongest play of the day at 52.59. He benefits from a favorable platoon advantage against Dustin May, adding +7% to his baseline projection. With the rest of our core\u2014including **Jos\u00e9 Ram\u00edrez**, **Cal Raleigh**, and **Lawrence Butler**\u2014locked into an off-day, we are relying on these two to sustain our Roto categories in a thin daily environment.\n\nThe most difficult roster decision involved **Alex Freeland**, who was the final cut at a 36.20 score. While **Alex Freeland** offers switch-hitting versatility, his projected #9 spot in the batting order acted as the primary anchor, stripping -8% from his efficiency rating. When coupled with the negative SP_xERA impact of facing an elite arm like Sale, the optimizer ultimately flagged him as a risk that failed to cross the threshold for a start. We are proceeding with caution, as the \"Lineup Pending\" status for both **Will Smith** and **Gavin Sheets** creates a late-breaking volatility risk; should either shift down the order, we will need to re-evaluate our pinch-hit strategy to protect our categorical ratios.",
     "recommended_lineup": [
         {
-            "Slot": "1B",
-            "Player": "Jonathan Aranda",
-            "POS": "1B",
-            "Score": 46.15311712323666,
+            "Slot": "C1",
+            "Player": "Will Smith",
+            "POS": "C",
+            "Score": 43.56921482996235,
             "Breakdown": [
                 {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Base",
-                    "value": "51.07",
+                    "value": "53.52",
                     "type": "info"
                 },
                 {
@@ -23,8 +28,8 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-6%",
-                    "type": "negative"
+                    "value": "+1%",
+                    "type": "positive"
                 },
                 {
                     "label": "SP Skill",
@@ -32,32 +37,42 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+12%",
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
-                    "label": "Order #2",
-                    "value": "+8%",
-                    "type": "positive"
+                    "label": "xwOBA Good",
+                    "value": "0.389",
+                    "type": "info"
                 }
             ],
-            "Opponent": "Schlittler (R)",
-            "SP_xERA": "2.94",
+            "Opponent": "Chris Sale (L)",
+            "SP_xERA": "2.79",
             "Warning": "",
-            "GameTime": "2026-10-06T00:00:00Z",
-            "Order": "2",
-            "Start": "12:00 AM"
+            "GameTime": "2026-10-06T22:00:00Z",
+            "Order": "3*",
+            "Start": "10:00 PM"
         },
         {
-            "Slot": "3B",
-            "Player": "Jos\u00e9 Ram\u00edrez",
-            "POS": "3B",
-            "Score": 80.86278083651288,
+            "Slot": "1B",
+            "Player": "Gavin Sheets",
+            "POS": "1B/OF",
+            "Score": 52.592996161171286,
             "Breakdown": [
                 {
+                    "label": "Lineup Pending (Assumed #4)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Base",
-                    "value": "64.61",
+                    "value": "48.14",
                     "type": "info"
                 },
                 {
@@ -66,30 +81,49 @@
                     "type": "info"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "+12%",
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #2",
-                    "value": "+8%",
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Kay (L)",
-            "SP_xERA": "4.51",
+            "Opponent": "Dustin May (R)",
+            "SP_xERA": "3.99",
             "Warning": "",
-            "GameTime": "2026-10-05T21:00:00Z",
-            "Order": "2",
-            "Start": "09:00 PM"
+            "GameTime": "2026-10-07T01:30:00Z",
+            "Order": "4*",
+            "Start": "01:30 AM"
         }
     ],
     "players_sat": [
+        {
+            "Slot": "BN",
+            "Player": "Jos\u00e9 Ram\u00edrez",
+            "POS": "3B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
         {
             "Slot": "BN",
             "Player": "Bryce Harper",
@@ -211,25 +245,6 @@
         },
         {
             "Slot": "BN",
-            "Player": "Will Smith",
-            "POS": "C",
-            "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 0.0,
-            "Breakdown": [
-                {
-                    "label": "Team Off-day or No Game Scheduled.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": null
-        },
-        {
-            "Slot": "BN",
             "Player": "Matt Chapman",
             "POS": "3B",
             "Order": "-",
@@ -313,6 +328,25 @@
             "Slot": "BN",
             "Player": "Masyn Winn",
             "POS": "SS",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Jonathan Aranda",
+            "POS": "1B",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
@@ -449,41 +483,57 @@
         },
         {
             "Slot": "BN",
-            "Player": "Gavin Sheets",
-            "POS": "1B/OF",
-            "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 0.0,
-            "Breakdown": [
-                {
-                    "label": "Team Off-day or No Game Scheduled.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": null
-        },
-        {
-            "Slot": "BN",
             "Player": "Alex Freeland",
             "POS": "2B/3B",
-            "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 0.0,
+            "Order": "9*",
+            "Start": "10:00 PM",
+            "Opponent": "Chris Sale (L)",
+            "SP_xERA": "2.79",
+            "Score": 36.20640811576455,
             "Breakdown": [
                 {
-                    "label": "Team Off-day or No Game Scheduled.",
+                    "label": "Lineup Pending (Assumed #9)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "47.81",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+1%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #9",
+                    "value": "-8%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-10-06T22:00:00Z"
         },
         {
             "Slot": "BN",
@@ -508,45 +558,20 @@
             "Slot": "BN",
             "Player": "Braden Montgomery",
             "POS": "OF",
-            "Order": "7",
-            "Start": "09:00 PM",
-            "Opponent": "Williams, G (R)",
-            "SP_xERA": "2.95",
-            "Score": 34.583957173500444,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Base",
-                    "value": "43.27",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #7",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Benched - Below Zebras Floor (40.0).",
+                    "label": "Team Off-day or No Game Scheduled.",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-10-05T21:00:00Z"
+            "GameTime": null
         }
     ]
 }

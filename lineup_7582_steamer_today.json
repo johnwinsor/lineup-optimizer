@@ -1,19 +1,24 @@
 {
-    "target_date": "2026-10-05",
-    "last_updated": "2026-10-06T01:05:29.904732+00:00",
+    "target_date": "2026-10-06",
+    "last_updated": "2026-10-06T04:16:03.847693+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 51.25,
-    "narrative": "The Zurich Zebras enter this October 5th matchup navigating a heavy slate of off-days, leaving our offense anchored by **Junior Caminero**. While **Junior Caminero** occupies the 3B slot with a 51.25 efficiency score, he faces a difficult assignment against Schlittler; despite the SP\u2019s 2.94 xERA acting as a significant anchor on his ceiling, the move to the #3 spot in the lineup provides enough stabilization to keep him in the green. We are currently deprived of our elite speed assets like **Pete Crow-Armstrong**, **Trea Turner**, and **Caleb Durbin**, as well as the middle-of-the-order thump provided by **Yordan Alvarez**, all of whom are sidelined today. This puts immense pressure on our remaining active roster\u2014including **Christian Yelich**, **Kazuma Okamoto**, and **Christian Encarnacion-Strand**\u2014to maintain our 5x5 standing without the luxury of our primary stolen base threats.\n\nThe optimizer\u2019s toughest call today was the exclusion of **Chase Meidroth**, who finished at 35.32, falling just short of the Zebras' 40.0 floor requirement. Although **Chase Meidroth** offered moderate utility, the combination of a tough matchup against Williams (2.94 xERA) and an unfavorable #8 spot in the order diluted his efficiency profile to a sub-replacement level. With no other viable pivots among **Colt Keith**, **Lars Nootbaar**, **Hector Rodriguez**, **Gary Sanchez**, **Josh Smith**, **Dillon Dingler**, **Carson Benge**, **Casey Schmitt**, **Pedro Ramirez**, **Luis Pena**, or **Jacob Gonzalez** providing a superior path to points today, we are playing a defensive lineup strategy. We are strictly monitoring weather indicators across the board, as the lack of secondary speed options makes us hypersensitive to any rain-delayed volatility that could force a premature exit for **Junior Caminero**.",
+    "total_efficiency_score": 48.84,
+    "narrative": "Today\u2019s slate for the Zurich Zebras presents a narrow path to efficiency, as the schedule is light, leaving high-impact bats like **Yordan Alvarez**, **Junior Caminero**, and **Pete Crow-Armstrong** on the bench due to team off-days. With limited roster flexibility, the optimizer leaned heavily into **Christian Yelich**, who holds our highest active score at 48.84. While the matchup against Nick Pivetta (3.17 xERA) is daunting, **Yelich** retains utility due to a strong +13% dynamic platoon adjustment against the right-hander, which helps offset the SP\u2019s high strikeout profile. He remains a marginal start, but in a 5x5 Roto environment, his projected contribution to AVG and runs keeps him in the slot over riskier, lower-floor alternatives.\n\nThe most difficult decision on the board was the exclusion of **Gary Sanchez**, who posted a 37.37 score against Nick Pivetta. While **Gary Sanchez** offers raw power, his score failed to eclipse the 40-point floor for active starts. The primary deterrent was the lack of lineup confirmation, which, when coupled with the unfavorable R/R matchup and the opposing pitcher's elite arm, signaled a \"Below floor\" designation. We are prioritizing the preservation of our game caps today, favoring the slightly higher efficiency of **Christian Yelich** over the volatile profile of **Gary Sanchez**. All other rostered assets, including **Trea Turner**, **Caleb Durbin**, **Kazuma Okamoto**, **Christian Encarnacion-Strand**, **Colt Keith**, **Lars Nootbaar**, **Hector Rodriguez**, **Chase Meidroth**, **Josh Smith**, **Dillon Dingler**, **Carson Benge**, **Casey Schmitt**, **Pedro Ramirez**, **Luis Pena**, and **Jacob Gonzalez**, are effectively sidelined by the league schedule, necessitating a conservative approach to this specific 24-hour cycle.",
     "recommended_lineup": [
         {
-            "Slot": "3B",
-            "Player": "Junior Caminero",
-            "POS": "3B",
-            "Score": 51.253956268144044,
+            "Slot": "UTIL",
+            "Player": "Christian Yelich",
+            "POS": "Util",
+            "Score": 48.844195338086735,
             "Breakdown": [
                 {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Base",
-                    "value": "62.40",
+                    "value": "55.06",
                     "type": "info"
                 },
                 {
@@ -23,7 +28,7 @@
                 },
                 {
                     "label": "Park",
-                    "value": "-6%",
+                    "value": "-2%",
                     "type": "negative"
                 },
                 {
@@ -33,21 +38,16 @@
                 },
                 {
                     "label": "Dynamic Platoon (R)",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
+                    "value": "+13%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Schlittler (R)",
-            "SP_xERA": "2.94",
+            "Opponent": "Nick Pivetta (R)",
+            "SP_xERA": "3.17",
             "Warning": "",
-            "GameTime": "2026-10-06T00:00:00Z",
-            "Order": "3",
-            "Start": "12:00 AM"
+            "GameTime": "2026-10-07T01:30:00Z",
+            "Order": "6*",
+            "Start": "01:30 AM"
         }
     ],
     "players_sat": [
@@ -55,6 +55,25 @@
             "Slot": "BN",
             "Player": "Yordan Alvarez",
             "POS": "OF",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Junior Caminero",
+            "POS": "3B",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
@@ -93,25 +112,6 @@
             "Slot": "BN",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 0.0,
-            "Breakdown": [
-                {
-                    "label": "Team Off-day or No Game Scheduled.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Christian Yelich",
-            "POS": "Util",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
@@ -250,50 +250,6 @@
             "Slot": "BN",
             "Player": "Chase Meidroth",
             "POS": "2B/SS",
-            "Order": "8",
-            "Start": "09:00 PM",
-            "Opponent": "Williams, G (R)",
-            "SP_xERA": "2.95",
-            "Score": 35.322285013695,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "49.25",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "-4%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #8",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Benched - Below Zebras Floor (40.0).",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": "2026-10-05T21:00:00Z"
-        },
-        {
-            "Slot": "BN",
-            "Player": "Gary Sanchez",
-            "POS": "C/1B",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
@@ -308,6 +264,60 @@
             ],
             "Warning": "",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Gary Sanchez",
+            "POS": "C/1B",
+            "Order": "5*",
+            "Start": "01:30 AM",
+            "Opponent": "Nick Pivetta (R)",
+            "SP_xERA": "3.17",
+            "Score": 37.372487929901496,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "48.18",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-10-07T01:30:00Z"
         },
         {
             "Slot": "BN",
