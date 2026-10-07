@@ -1,21 +1,16 @@
 {
     "target_date": "2026-10-06",
-    "last_updated": "2026-10-06T22:02:24.127326+00:00",
+    "last_updated": "2026-10-07T01:54:54.401769+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 48.84,
-    "narrative": "As we navigate this late-season slate, the Zurich Zebras are operating under a conservative rotation policy to protect our remaining game caps. Our primary focal point is **Christian Yelich**, who enters today with a marginal score of 48.84 against Pivetta. While Pivetta\u2019s 3.17 xERA represents a stiff challenge, **Christian Yelich** benefits from a dynamic platoon advantage against the right-hander, which marginally bolsters his outlook despite a projected #6 spot in the order. Given the scarcity of high-impact opportunities today, we are prioritizing efficiency over volume, keeping the rest of our roster\u2014including high-ceiling assets like **Yordan Alvarez**, **Junior Caminero**, and **Pete Crow-Armstrong**\u2014safely on the bench as they are inactive today.\n\nThe most difficult decision for the optimizer today involved **Gary Sanchez**, who fell just short of the active roster with a score of 37.37. While **Gary Sanchez** benefits from a favorable #5 projected lineup spot, the combination of Pivetta\u2019s elite expected ERA and a negative platoon split (R/R) forced a lower ceiling than our current benchmarks require. We are closely monitoring the lineup card for **Christian Yelich**; should he be shifted lower than the projected #6 spot, his efficiency score will likely dip below our 40-point floor, at which point we will move to lock the utility slot to preserve our cap. We remain disciplined, avoiding the urge to overextend on **Trea Turner**, **Caleb Durbin**, **Kazuma Okamoto**, **Christian Encarnacion-Strand**, **Colt Keith**, **Lars Nootbaar**, **Hector Rodriguez**, **Chase Meidroth**, **Josh Smith**, **Dillon Dingler**, **Carson Benge**, **Casey Schmitt**, **Pedro Ramirez**, **Luis Pena**, and **Jacob Gonzalez** until the matchups provide a more clear path to surplus value.",
+    "total_efficiency_score": 49.82,
+    "narrative": "The Zurich Zebras enter this October 6th slate with a condensed active roster due to a high volume of team off-days. With elite assets like **Yordan Alvarez**, **Junior Caminero**, **Pete Crow-Armstrong**, and **Trea Turner** all sidelined by scheduling, the offensive burden rests solely on the shoulders of **Christian Yelich**. Currently holding a score of 49.82, **Christian Yelich** occupies the UTIL slot against Pivetta. While the matchup against a 3.17 xERA arm suppresses his raw ceiling, the dynamic platoon advantage against the right-handed Pivetta and his favorable #5 spot in the order keep him in the \"Marginal\" start category. Given the scarcity of high-speed threats currently available, we are relying on **Christian Yelich** to manufacture runs and maintain AVG efficiency, as the absence of **Caleb Durbin**, **Kazuma Okamoto**, and **Christian Encarnacion-Strand** deprives us of our high-upside SB catalysts today.\n\nThe bench composition is largely dictated by circumstance rather than performance, as **Colt Keith**, **Lars Nootbaar**, and **Hector Rodriguez** are all held in reserve due to the lack of viable lineup slots. The most difficult personnel decision involved weighing the depth of our middle infield\u2014specifically **Chase Meidroth**, **Josh Smith**, and **Dillon Dingler**\u2014against the potential for late-game defensive substitutions that often plague our bench depth in tight Roto races. Furthermore, developing prospects like **Carson Benge**, **Casey Schmitt**, **Pedro Ramirez**, **Luis Pena**, and **Jacob Gonzalez** remain on the bench as we prioritize the proven, albeit limited, output of **Christian Yelich**. We will monitor the weather in Pivetta\u2019s stadium closely; any delay could force a late-inning pivot, though with **Gary Sanchez** also unavailable, our flexibility to swap into a high-scoring pinch hitter is severely restricted for this specific match window.",
     "recommended_lineup": [
         {
             "Slot": "UTIL",
             "Player": "Christian Yelich",
             "POS": "Util",
-            "Score": 48.844195338086735,
+            "Score": 49.82107924484847,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.06",
@@ -40,13 +35,18 @@
                     "label": "Dynamic Platoon (R)",
                     "value": "+13%",
                     "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
                 }
             ],
             "Opponent": "Pivetta (R)",
             "SP_xERA": "3.17",
             "Warning": "",
             "GameTime": "2026-10-07T01:30:00Z",
-            "Order": "6*",
+            "Order": "5",
             "Start": "01:30 AM"
         }
     ],
@@ -269,55 +269,20 @@
             "Slot": "BN",
             "Player": "Gary Sanchez",
             "POS": "C/1B",
-            "Order": "5*",
-            "Start": "01:30 AM",
-            "Opponent": "Pivetta (R)",
-            "SP_xERA": "3.17",
-            "Score": 37.372487929901496,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "48.18",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Platoon (R/R)",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-10-07T01:30:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
