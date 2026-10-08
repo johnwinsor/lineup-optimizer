@@ -1,9 +1,9 @@
 {
     "target_date": "2026-10-07",
-    "last_updated": "2026-10-07T23:24:55.339857+00:00",
+    "last_updated": "2026-10-08T03:57:04.955446+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 113.6,
-    "narrative": "Heading into today\u2019s slate, **Brice Turang** stands as our premier offensive anchor with a score of 60.15, buoyed by an ideal middle-of-the-order slotting and a favorable matchup against Buehler. While Buehler has name recognition, his current metrics and the park environment create a green-light scenario for **Brice Turang**, whose elite speed profile remains our primary engine in a 5x5 format where steals are at a premium. Conversely, **Jose Caballero** checks in as a marginal play at 53.44. While the matchup against Martinez (xERA 4.63) is exploitable, **Jose Caballero** is hindered by the standard decline associated with the #9 spot in the order and a slight negative dynamic platoon impact, keeping him firmly in the \"start if necessary\" tier rather than the high-conviction category.\n\nOur most difficult bench decision involved **Travis Bazzana**, who finished with a 36.98 score. Despite a favorable wind forecast that provided a slight boost, the combination of a platoon disadvantage against the southpaw Newcomb and an unfavorable #7 batting position pushed him below our 40.0 floor for active starts. We are opting to keep the bench quiet to preserve our limited game caps for more high-leverage opportunities later in the week. With **Corbin Carroll**, **Josh Naylor**, **James Wood**, **Tyler Soderstrom**, **Vinnie Pasquantino**, **Mickey Moniak**, **Giancarlo Stanton**, **Seiya Suzuki**, **Trevor Story**, **Isaac Paredes**, **Gabriel Moreno**, **Max Muncy**, **Moises Ballesteros**, **Dalton Rushing**, **Cole Young**, **Griffin Conine**, and **Edwin Arroyo** all effectively sidelined by schedule constraints or rotation rest, the burden of production rests entirely on the shoulders of **Brice Turang** to secure our counting stats today.",
+    "narrative": "For today's slate, **Brice Turang** stands as our premier offensive anchor with a score of 60.15, marking him as our only \"Strong\" play. While he faces Buehler, the matchup metrics favor **Brice Turang** due to the favorable 4.36 xERA of the opposing starter and the elevated impact of his situational usage in the four-hole. We are banking on his ability to leverage the middle of the order for RBI opportunities despite the slight regression from the Elite Hold SP penalty, which accounts for the opponent\u2019s proficiency in limiting the run game. Conversely, **Jose Caballero** slots in at 53.44, sitting in \"Marginal\" territory; while the 4.63 xERA against Martinez offers a path to efficiency, the combination of a bottom-of-the-order assignment and a disadvantageous right-on-right platoon split tempers his overall value for today.\n\nThe most difficult decision on the bench involved **Travis Bazzana**, who fell just shy of our 40.0 scoring floor with a 35.22 rating. The optimizer penalized **Travis Bazzana** heavily for the L/L platoon disadvantage against Newcomb, which neutralized the potential upside of his sprint speed and base-running profile. Given that our scoring model prioritizes daily efficiency to preserve game caps, we opted to bench **Travis Bazzana** rather than force him into a low-probability matchup. With **Corbin Carroll**, **Josh Naylor**, and **James Wood** all unavailable due to scheduled off-days, our roster depth is essentially locked, leaving us to rely exclusively on the **Brice Turang** and **Jose Caballero** tandem to navigate the volatility of today\u2019s matchups. We remain vigilant on weather risks, though no immediate alerts are impacting the venue at this hour.",
     "recommended_lineup": [
         {
             "Slot": "SS",
@@ -224,11 +224,46 @@
             "Player": "Giancarlo Stanton",
             "POS": "Util",
             "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Start": "12:00 AM",
+            "Opponent": "Martinez, N (R)",
+            "SP_xERA": "4.63",
             "Score": 0.0,
             "Breakdown": [
+                {
+                    "label": "Bench Assumption (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "55.05",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "+4%",
+                    "type": "positive"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "+15%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Neutral Platoon (R)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Not Starting",
+                    "value": "-100%",
+                    "type": "status"
+                },
                 {
                     "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
@@ -236,7 +271,7 @@
                 }
             ],
             "Warning": "",
-            "GameTime": null
+            "GameTime": "2026-10-08T00:00:00Z"
         },
         {
             "Slot": "BN",
@@ -441,7 +476,7 @@
             "Start": "08:00 PM",
             "Opponent": "Newcomb, S (L)",
             "SP_xERA": "3.82",
-            "Score": 36.98093947458648,
+            "Score": 35.21994235674902,
             "Breakdown": [
                 {
                     "label": "Base",
@@ -472,11 +507,6 @@
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
-                },
-                {
-                    "label": "Wind Out",
-                    "value": "+5%",
-                    "type": "positive"
                 },
                 {
                     "label": "Benched - Below Zebras Floor (40.0).",
