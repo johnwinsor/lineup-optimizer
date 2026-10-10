@@ -1,21 +1,16 @@
 {
     "target_date": "2026-10-10",
-    "last_updated": "2026-10-10T16:38:16.212898+00:00",
+    "last_updated": "2026-10-10T20:24:21.837586+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 123.54,
-    "narrative": "The Austin Waves roster faces a challenging slate today, largely dictated by facing Gavin Williams, whose 2.95 xERA suppresses the ceiling for our primary middle-infield cohort. **Miguel Vargas** leads our output at 42.07, clinging to a starting spot primarily due to his assumed leadoff status. While his base projection is solid, the matchup against Williams demands caution; he remains a marginal play, though his 0.378 xwOBA suggests he is the most capable of navigating this tough SP pairing. **Sam Antonacci** follows closely at 40.83, benefiting from a +7% platoon edge that keeps his score above our 40-point threshold. Despite the pitching hurdle, **Sam Antonacci** maintains value in a favorable batting order position, though we are essentially chasing volume over efficiency in this matchup.\n\n**Brayan Rocchio** rounds out our active starters at 40.63, narrowly crossing the floor threshold despite hitting at the bottom of the order. The risk here is significant; hitting #9 against a functional arm like Sean Burke (3.79 xERA) limits his R/RBI potential. Among our core, **Luis Robert Jr.** remains sidelined on the IL, while elite assets like **Kyle Tucker**, **Vladimir Guerrero Jr.**, and **Gunnar Henderson** provide zero utility today due to team off-days. With **Andy Pages**, **Jackson Merrill**, and **Jordan Westburg** currently outside the active rotation, the decision to run with **Brayan Rocchio** over lower-tier reserves was purely based on his consistent role in the lineup, though the proximity of his score to the bench threshold is a concern. We are monitoring the official lineups closely for **Miguel Vargas**, **Brayan Rocchio**, and **Sam Antonacci**; any downward shift in their expected batting order would likely trigger a benching to preserve our game caps, as the current environment offers little upside against the scheduled pitching.",
+    "total_efficiency_score": 124.81,
+    "narrative": "For the October 10th slate, the Austin Waves face a challenging environment against elite pitching, resulting in a condensed lineup where efficiency is paramount. **Sam Antonacci** stands out as our strongest play today with a 44.04 score. Despite facing a formidable arm in G. Williams (2.95 xERA), **Sam Antonacci** benefits from a crucial +10% boost for hitting at the top of the order and a +7% platoon advantage, which helps mitigate the suppression caused by the opponent's skill. **Brayan Rocchio** (40.63) and **Miguel Vargas** (40.14) both narrowly clear the 40-point threshold for mandatory starts. **Brayan Rocchio** faces a more manageable matchup against S. Burke (3.79 xERA), though his floor is compressed by his #9 spot in the lineup. Conversely, **Miguel Vargas** must contend with the same Williams matchup as **Sam Antonacci**, with his score suffering a significant -19% penalty due to the pitcher's elite profile, further hampered by a catcher with a quick 1.86s pop time that suppresses stolen base potential.\n\nThe optimization process faced difficult constraints today due to the absence of our heavy hitters. With **Kyle Tucker**, **Vladimir Guerrero Jr.**, and **Gunnar Henderson** all sidelined by team off-days, and **Luis Robert Jr.** remaining on the IL, our depth is being tested. **Andy Pages**, **Jackson Merrill**, **Jordan Westburg**, and **Luis Garc\u00eda Jr.** remain high-upside options, but they are unavailable for rotation tonight. We are closely monitoring the status of **Jacob Wilson**, **Drake Baldwin**, and **Nasim Nunez**, whose utility remains limited without favorable situational alignments. The decision to prioritize **Sam Antonacci** over other fringe roster options like **Heliot Ramos** or **Josh Jung** came down to the projected lead-off volume, which provides the best path to Runs and the necessary stolen base opportunities that remain our primary focus. We are operating with a cautious approach; if these starters underperform early, we will pivot to protect our game caps, especially given the lack of wind-aided offensive boosts in today\u2019s park factors.",
     "recommended_lineup": [
         {
             "Slot": "1B",
             "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Score": 42.072437226405896,
+            "Score": 40.137105113991225,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.13",
@@ -37,8 +32,13 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
@@ -47,11 +47,11 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Gavin Williams (R)",
+            "Opponent": "Williams, G (R)",
             "SP_xERA": "2.95",
             "Warning": "",
             "GameTime": "2026-10-11T00:00:00Z",
-            "Order": "1*",
+            "Order": "3",
             "Start": "12:00 AM"
         },
         {
@@ -60,11 +60,6 @@
             "POS": "2B/SS",
             "Score": 40.63279198840516,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.60",
@@ -91,24 +86,19 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Sean Burke (R)",
+            "Opponent": "Burke, S (R)",
             "SP_xERA": "3.79",
             "Warning": "",
             "GameTime": "2026-10-11T00:00:00Z",
-            "Order": "9*",
+            "Order": "9",
             "Start": "12:00 AM"
         },
         {
             "Slot": "MI",
             "Player": "Sam Antonacci",
             "POS": "2B/OF",
-            "Score": 40.833089853848186,
+            "Score": 44.035685136502956,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.77",
@@ -130,16 +120,16 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Gavin Williams (R)",
+            "Opponent": "Williams, G (R)",
             "SP_xERA": "2.95",
             "Warning": "",
             "GameTime": "2026-10-11T00:00:00Z",
-            "Order": "5*",
+            "Order": "1",
             "Start": "12:00 AM"
         }
     ],

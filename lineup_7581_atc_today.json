@@ -1,21 +1,16 @@
 {
     "target_date": "2026-10-10",
-    "last_updated": "2026-10-10T16:38:18.761778+00:00",
+    "last_updated": "2026-10-10T20:24:28.038625+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 86.12,
-    "narrative": "The Austin Waves face a condensed slate today, with our primary offensive exposure limited to the matchup against Gavin Williams. Between our active starters, **Sam Antonacci** secures the higher efficiency score at 43.76, narrowly edging out **Miguel Vargas** (42.35). While both players are suppressed by the 2.95 xERA of the opposing starter\u2014an elite arm that forces us to temper our expectations\u2014**Sam Antonacci** gains a notable 7% boost from his platoon advantage. **Miguel Vargas**, meanwhile, carries the weight of a 19% skill penalty against Williams, though his projected leadoff spot provides a +10% order cushion that keeps him safely above our 40-point threshold for a marginal start.\n\nThe most difficult personnel decision centered on **Brayan Rocchio**, who landed just outside the starting lineup with a 38.59 score. While **Brayan Rocchio** has shown solid recency, the optimizer penalized his projected ninth-place spot in the order (-8%) and the lack of a strong platoon advantage against Sean Burke. Ultimately, he remains on the bench to preserve our game caps, as his current profile lacks the elite ceiling required to displace our primary starters on a day where the opposing pitching environment is so restrictive.\n\nBeyond the immediate lineup, the roster remains heavily impacted by external circumstances. We continue to manage the absences of **Kyle Tucker** and **Vladimir Guerrero Jr.** due to today\u2019s team off-day, while **Luis Robert Jr.** remains sidelined on the IL. As we look ahead, we continue to monitor the development paths of prospects like **Henry Bolte**, **Franklin Arias**, and **Luis Lara**, keeping them in reserve while **Gunnar Henderson**, **Jackson Merrill**, **Andy Pages**, **Jordan Westburg**, **Luis Garc\u00eda Jr.**, **Drake Baldwin**, **Jacob Wilson**, **Heliot Ramos**, **Nasim Nunez**, **Josh Jung**, **Coby Mayo**, **Dominic Smith**, **Curtis Mead**, **Liam Hicks**, and **Wade Meckler** await more favorable park factors and pitching matchups to bolster our pursuit of stolen bases and overall category efficiency.",
+    "total_efficiency_score": 87.61,
+    "narrative": "The Austin Waves face a stiff challenge today against Williams, G, whose 2.95 xERA forces us to exercise extreme caution with our offensive output. Given the high-caliber pitching, only **Sam Antonacci** manages to clear our efficiency threshold with a score of 47.20. While the SP skill penalty is heavy at -19%, **Sam Antonacci** benefits significantly from his leadoff spot and a positive platoon adjustment, keeping him as our most viable play. **Miguel Vargas** remains in the mix at 40.40, surviving the benching threshold by the narrowest of margins; while his base projection is solid, the matchup against Williams, G and a negative adjustment for the opposing catcher\u2019s pop time suppress his ceiling, making him a marginal start that we are relying on to avoid a total collapse.\n\nThe most difficult decision on the card was keeping **Brayan Rocchio** on the bench with a score of 38.59. While he demonstrated strong recent form, his placement at the bottom of the order and the opposing pitcher's respectable 3.79 xERA created a mathematical drag that pushed him just below our 40-point \"Zebras Floor.\" We are playing for efficiency today, and in a 5x5 Roto environment where we need to maximize every plate appearance, we cannot afford to gamble on low-order hitters against capable arms. Elsewhere, our core\u2014including **Kyle Tucker**, **Vladimir Guerrero Jr.**, and **Luis Robert Jr.**\u2014remains unavailable due to team off-days or injury status, leaving us light on high-end production. We will continue to monitor the status of **Gunnar Henderson**, **Jackson Merrill**, **Andy Pages**, **Jordan Westburg**, **Luis Garc\u00eda Jr.**, **Drake Baldwin**, **Jacob Wilson**, **Heliot Ramos**, **Nasim Nunez**, **Josh Jung**, **Coby Mayo**, **Dominic Smith**, **Curtis Mead**, **Liam Hicks**, **Wade Meckler**, **Luis Lara**, **Henry Bolte**, and **Franklin Arias** for future deployment, but today, patience remains our primary strategy.",
     "recommended_lineup": [
         {
             "Slot": "1B",
             "Player": "Miguel Vargas",
             "POS": "1B/3B",
-            "Score": 42.354047079344554,
+            "Score": 40.40576091369471,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #1)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "49.46",
@@ -37,8 +32,13 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #1",
-                    "value": "+10%",
+                    "label": "Elite Catcher (1.86s)",
+                    "value": "-1.0%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
                     "type": "positive"
                 },
                 {
@@ -47,24 +47,19 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "Gavin Williams (R)",
+            "Opponent": "Williams, G (R)",
             "SP_xERA": "2.95",
             "Warning": "",
             "GameTime": "2026-10-11T00:00:00Z",
-            "Order": "1*",
+            "Order": "3",
             "Start": "12:00 AM"
         },
         {
             "Slot": "OF1",
             "Player": "Sam Antonacci",
             "POS": "2B/OF",
-            "Score": 43.7688785169303,
+            "Score": 47.20173173394445,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "50.13",
@@ -86,16 +81,16 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #1",
+                    "value": "+10%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Gavin Williams (R)",
+            "Opponent": "Williams, G (R)",
             "SP_xERA": "2.95",
             "Warning": "",
             "GameTime": "2026-10-11T00:00:00Z",
-            "Order": "5*",
+            "Order": "1",
             "Start": "12:00 AM"
         }
     ],
@@ -409,17 +404,12 @@
             "Slot": "BN",
             "Player": "Brayan Rocchio",
             "POS": "2B/SS",
-            "Order": "9*",
+            "Order": "9",
             "Start": "12:00 AM",
-            "Opponent": "Sean Burke (R)",
+            "Opponent": "Burke, S (R)",
             "SP_xERA": "3.79",
             "Score": 38.590419607079504,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.15",
@@ -446,7 +436,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
