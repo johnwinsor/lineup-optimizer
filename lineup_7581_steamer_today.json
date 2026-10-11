@@ -1,21 +1,16 @@
 {
     "target_date": "2026-10-11",
-    "last_updated": "2026-10-11T17:03:45.933714+00:00",
+    "last_updated": "2026-10-11T21:17:18.587228+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 96.06,
-    "narrative": "The Austin Waves face a daunting task today against Jacob Misiorowski, an elite arm sporting a 2.35 xERA that suppresses our entire offensive output. Consequently, **Kyle Tucker** is our strongest play, though his score of 52.99 remains firmly in the \"marginal\" tier due to the severe SP skill discount. While **Kyle Tucker** sits in the cleanup spot\u2014earning a +4% adjustment\u2014the difficulty of the matchup keeps his ceiling capped. **Andy Pages** follows him in the utility slot with a 43.07 score; while he benefits from a neutral platoon against the right-handed Misiorowski, his lower spot in the order (-3%) makes him a high-risk start necessitated by our limited daily availability.\n\nThe decision to bench **Luis Lara** at 36.01 was a tight margin, largely driven by the extreme challenge posed by Tarik Skubal. Even with a +3% switch-hitter adjustment, the optimizer correctly flagged the matchup against a 2.85 xERA arm as too volatile compared to the safer, albeit capped, profiles of our active starters. Elsewhere, we continue to manage our bench depth as **Vladimir Guerrero Jr.**, **Jackson Merrill**, and **Luis Robert Jr.** remain unavailable due to off-days or injury designations. We are operating with a defensive posture today; with Misiorowski on the mound, we are prioritizing floor preservation over aggressive upside, keeping **Luis Lara** on the pine to avoid burning game caps against a pitcher who ranks among the league's most difficult to square up.",
+    "total_efficiency_score": 90.96,
+    "narrative": "For the Austin Waves on October 11, our offensive production is severely stifled by a difficult matchup against Misiorowski, whose 2.35 xERA renders our primary bats marginal at best. **Kyle Tucker** (47.89) remains our most viable starter in the outfield, though his score is significantly suppressed by the combination of an elite arm and an unfavorable #8 spot in the order. Similarly, **Andy Pages** (43.07) anchors the UTIL slot; while his matchup against the right-handed Misiorowski is neutral, he lacks the ceiling to elevate beyond the \"marginal\" tier today. Given that Stolen Bases are our most scarce category, the lack of elite speed options on the active slate makes this a day to focus on minimizing damage to our cumulative stats rather than chasing high-upside production.\n\nThe decision to bench **Luis Lara** (33.85) was the most nuanced call of the morning. While **Luis Lara** possesses the switch-hitting versatility that usually provides a floor-raising platoon advantage, his projection was crushed by a brutal matchup against Skubal (2.85 xERA). With a sub-40 score failing to meet our organizational efficiency threshold, we opted to protect our game caps rather than force an inferior asset against an elite southpaw. We continue to monitor the status of **Luis Robert Jr.**, who remains on the IL, while the absences of **Vladimir Guerrero Jr.** and **Jackson Merrill**\u2014both currently serving team off-days\u2014leave our middle-order depth looking dangerously thin for this 5x5 Roto stretch. With no weather-related risks flagged, our strategy remains defensive, waiting for a more favorable pitching environment for **Gunnar Henderson**, **Jordan Westburg**, and the rest of our core.",
     "recommended_lineup": [
         {
             "Slot": "OF4",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 52.989375454497164,
+            "Score": 47.89424319925705,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "63.50",
@@ -42,16 +37,16 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Jacob Misiorowski (R)",
+            "Opponent": "Misiorowski (R)",
             "SP_xERA": "2.35",
             "Warning": "",
             "GameTime": "2026-10-12T00:00:00Z",
-            "Order": "4*",
+            "Order": "8",
             "Start": "12:00 AM"
         },
         {
@@ -60,11 +55,6 @@
             "POS": "OF",
             "Score": 43.070256648375384,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "56.03",
@@ -96,11 +86,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Jacob Misiorowski (R)",
+            "Opponent": "Misiorowski (R)",
             "SP_xERA": "2.35",
             "Warning": "",
             "GameTime": "2026-10-12T00:00:00Z",
-            "Order": "7*",
+            "Order": "7",
             "Start": "12:00 AM"
         }
     ],
@@ -533,17 +523,12 @@
             "Slot": "BN",
             "Player": "Luis Lara",
             "POS": "OF",
-            "Order": "6*",
+            "Order": "8",
             "Start": "12:00 AM",
-            "Opponent": "Tarik Skubal (L)",
+            "Opponent": "Skubal (L)",
             "SP_xERA": "2.85",
-            "Score": 36.014746775039995,
+            "Score": 33.85386196853759,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.15",
@@ -570,7 +555,12 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
