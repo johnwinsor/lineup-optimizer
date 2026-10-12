@@ -1,21 +1,16 @@
 {
     "target_date": "2026-10-12",
-    "last_updated": "2026-10-12T11:45:50.652720+00:00",
+    "last_updated": "2026-10-12T20:38:19.264207+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 94.63,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 89.53,
+    "narrative": "With the Austin Waves pushing through this mid-October slate, our efficiency modeling highlights a challenging day at the plate against Henderson. **Kyle Tucker** (47.99) and **Andy Pages** (41.53) represent our primary offensive exposure, though both face significant headwinds. **Kyle Tucker** remains our most viable option despite a suppressed score; his base projection is dampened by the elite 3.13 xERA of the opposing starter and a frustrating drop to the #8 spot in the order. Similarly, **Andy Pages** is tethered to a low-efficiency start due to his #7 lineup position and the pitcher\u2019s ability to suppress high-leverage outcomes. While we lean on these two to provide baseline production, the heavy SP profile today forces us to look past the top of the order for any potential offensive volatility.\n\nThe most difficult decision on the bench involved **Brayan Rocchio**, who narrowly missed the starting cut with a score of 32.31. While **Brayan Rocchio** carries the necessary high-floor utility, the compounding negative factors\u2014specifically the #9 spot in the order and a park factor drag of 6% against Rasmussen\u2014pushed his efficiency well below our 40.0 \"Zebras\" floor. We are opting to keep him on the pine rather than risk a sub-par outing that consumes game caps. Meanwhile, we continue to manage the health of our core; **Luis Robert Jr.** remains sidelined, and with **Gunnar Henderson** and **Jackson Merrill** currently off the schedule, our bench depth is significantly thinned. We are effectively playing a defensive game today, prioritizing our limited cap usage and waiting for more favorable platoon matchups for players like **Heliot Ramos**, **Josh Jung**, or **Coby Mayo** to materialize in the next series.",
     "recommended_lineup": [
         {
             "Slot": "OF4",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 53.09958321820143,
+            "Score": 47.99385406260514,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "63.63",
@@ -42,16 +37,16 @@
                     "type": "positive"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Logan Henderson (R)",
+            "Opponent": "Henderson (R)",
             "SP_xERA": "3.13",
             "Warning": "",
             "GameTime": "2026-10-12T21:00:00Z",
-            "Order": "4*",
+            "Order": "8",
             "Start": "09:00 PM"
         },
         {
@@ -60,11 +55,6 @@
             "POS": "OF",
             "Score": 41.53325533604546,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #7)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.13",
@@ -101,11 +91,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Logan Henderson (R)",
+            "Opponent": "Henderson (R)",
             "SP_xERA": "3.13",
             "Warning": "",
             "GameTime": "2026-10-12T21:00:00Z",
-            "Order": "7*",
+            "Order": "7",
             "Start": "09:00 PM"
         }
     ],
@@ -419,17 +409,12 @@
             "Slot": "BN",
             "Player": "Brayan Rocchio",
             "POS": "2B/SS",
-            "Order": "9*",
+            "Order": "9",
             "Start": "12:00 AM",
-            "Opponent": "Drew Rasmussen (R)",
+            "Opponent": "Rasmussen (R)",
             "SP_xERA": "3.30",
             "Score": 32.30780364432008,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "46.15",
@@ -461,7 +446,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -492,55 +477,20 @@
             "Slot": "BN",
             "Player": "Liam Hicks",
             "POS": "C/1B",
-            "Order": "4*",
-            "Start": "12:00 AM",
-            "Opponent": "Foster Griffin (L)",
-            "SP_xERA": "3.88",
-            "Score": 35.51153483564342,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "42.78",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-3%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-11%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-10-13T00:00:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
@@ -565,50 +515,20 @@
             "Slot": "BN",
             "Player": "Luis Lara",
             "POS": "OF",
-            "Order": "6*",
-            "Start": "09:00 PM",
-            "Opponent": "Yoshinobu Yamamoto (R)",
-            "SP_xERA": "3.40",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
             "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "0.00",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-15%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-10-12T21:00:00Z"
+            "GameTime": null
         },
         {
             "Slot": "BN",
