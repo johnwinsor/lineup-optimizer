@@ -1,15 +1,15 @@
 {
-    "target_date": "2026-10-11",
-    "last_updated": "2026-10-11T17:02:54.056257+00:00",
+    "target_date": "2026-10-12",
+    "last_updated": "2026-10-12T11:45:23.692468+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 80.27,
-    "narrative": "The Zurich Zebras face a difficult slate today as our offensive ceiling is heavily constrained by an elite matchup against Tarik Skubal. Our highest-rated play is **Gary Sanchez**, who earns a marginal 41.65 efficiency score. While Skubal\u2019s 2.85 xERA presents a significant hurdle, **Gary Sanchez** benefits from a positive platoon split and an assumed #5 spot in the order, which mitigates some of the SP skill penalty. Conversely, **Christian Yelich** sits at a 38.62, falling just below our threshold for a confident start. While **Christian Yelich** gains a nominal boost due to Skubal\u2019s slow delivery\u2014offering a slim window for a stolen base\u2014the severe L/L platoon disadvantage makes him a difficult sell despite his profile.\n\nThe benching of our primary assets, including **Yordan Alvarez**, **Junior Caminero**, and **Trea Turner**, is necessitated by today's league-wide off-day, which limits our active pool to only these two representatives. Because we are prioritizing game cap preservation, we are not forcing starts for players like **Pete Crow-Armstrong**, **Caleb Durbin**, or **Kazuma Okamoto** in their absence. We are keeping a close watch on **Christian Encarnacion-Strand**, **Colt Keith**, and **Lars Nootbaar** for future deployment, alongside depth pieces like **Hector Rodriguez**, **Chase Meidroth**, **Josh Smith**, **Dillon Dingler**, **Carson Benge**, **Casey Schmitt**, **Pedro Ramirez**, **Luis Pena**, and **Jacob Gonzalez**. With Skubal on the hill, the primary risk remains a sub-par performance from **Gary Sanchez** and **Christian Yelich**; if the official lineups shift them lower in the order, we may see their efficiency scores dip further toward the floor.",
+    "total_efficiency_score": 148.64,
+    "narrative": "AI Narrative generation skipped.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Gary Sanchez",
             "POS": "C/1B",
-            "Score": 41.64598828544567,
+            "Score": 40.09495215409069,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #5)",
@@ -33,13 +33,13 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-19%",
+                    "value": "-15%",
                     "type": "negative"
                 },
                 {
-                    "label": "Platoon",
-                    "value": "+7%",
-                    "type": "positive"
+                    "label": "Platoon (R/R)",
+                    "value": "-3%",
+                    "type": "negative"
                 },
                 {
                     "label": "Order #5",
@@ -47,18 +47,67 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Tarik Skubal (L)",
-            "SP_xERA": "2.85",
+            "Opponent": "Yoshinobu Yamamoto (R)",
+            "SP_xERA": "3.40",
             "Warning": "",
-            "GameTime": "2026-10-12T00:00:00Z",
+            "GameTime": "2026-10-12T21:00:00Z",
             "Order": "5*",
+            "Start": "09:00 PM"
+        },
+        {
+            "Slot": "3B",
+            "Player": "Junior Caminero",
+            "POS": "3B",
+            "Score": 57.190984094635745,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "62.40",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-3%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Foster Griffin (L)",
+            "SP_xERA": "3.88",
+            "Warning": "",
+            "GameTime": "2026-10-13T00:00:00Z",
+            "Order": "3*",
             "Start": "12:00 AM"
         },
         {
             "Slot": "UTIL",
             "Player": "Christian Yelich",
             "POS": "Util",
-            "Score": 38.624932580189835,
+            "Score": 51.35428942230962,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #6)",
@@ -82,26 +131,26 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-19%",
+                    "value": "-15%",
                     "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (L)",
-                    "value": "-13%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Slow SP Delivery (88% SB)",
-                    "value": "+2%",
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+13%",
                     "type": "positive"
+                },
+                {
+                    "label": "Elite Hold SP (60% SB)",
+                    "value": "-2%",
+                    "type": "negative"
                 }
             ],
-            "Opponent": "Tarik Skubal (L)",
-            "SP_xERA": "2.85",
+            "Opponent": "Yoshinobu Yamamoto (R)",
+            "SP_xERA": "3.40",
             "Warning": "",
-            "GameTime": "2026-10-12T00:00:00Z",
+            "GameTime": "2026-10-12T21:00:00Z",
             "Order": "6*",
-            "Start": "12:00 AM"
+            "Start": "09:00 PM"
         }
     ],
     "players_sat": [
@@ -109,25 +158,6 @@
             "Slot": "BN",
             "Player": "Yordan Alvarez",
             "POS": "OF",
-            "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 0.0,
-            "Breakdown": [
-                {
-                    "label": "Team Off-day or No Game Scheduled.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Junior Caminero",
-            "POS": "3B",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
