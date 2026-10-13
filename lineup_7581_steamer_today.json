@@ -1,9 +1,9 @@
 {
     "target_date": "2026-10-13",
-    "last_updated": "2026-10-13T18:42:46.167506+00:00",
+    "last_updated": "2026-10-13T23:11:17.601498+00:00",
     "projection_system": "STEAMER",
     "total_efficiency_score": 43.06,
-    "narrative": "The Austin Waves are operating with a thin slate today as we navigate the final stretch of the 2026 season. With **Vladimir Guerrero Jr.** and **Kyle Tucker** both sidelined by schedule gaps, the offensive burden shifts to our remaining depth. **Brayan Rocchio** occupies the only active starting slot, holding a marginal 43.06 score against Freddy Peralta. While his base projection is solid, the combination of a pending lineup status\u2014likely forcing him into the bottom of the order\u2014and Peralta\u2019s respectable 4.32 xERA suppresses his upside. We are prioritizing his floor here, but given his sprint speed profile and ability to navigate high-leverage situations, he remains our sole focus for securing a potential stolen base contribution.\n\nThe most challenging decision for today\u2019s lineup was keeping **Liam Hicks** on the bench with a 33.31 score. Despite a favorable potential #4 spot in the order, the optimizer penalized **Liam Hicks** due to the tough matchup against Parker Messick. Facing a left-handed arm with a 3.51 xERA significantly degraded **Liam Hicks**\u2019 platoon efficiency, effectively capping his potential in this specific park environment. While **Luis Robert Jr.** remains held out on the IL, we continue to monitor the status of **Gunnar Henderson**, **Jackson Merrill**, and **Heliot Ramos** for future rotations. With the current absence of **Jordan Westburg**, **Luis Garc\u00eda Jr.**, and **Jacob Wilson**, we are playing conservatively, preserving our remaining daily games by benching fringe options like **Drake Baldwin**, **Nasim Nunez**, and **Coby Mayo** until we face more favorable pitching conditions.",
+    "narrative": "As we navigate the final stretch of the 2026 campaign, the Austin Waves remain laser-focused on optimizing our 5x5 production, particularly in the stolen base category where our roster's high-sprint-speed profiles remain our primary engine. Today, our starting lineup is anchored by **Brayan Rocchio**, who carries a score of 43.06 against Peralta. While **Brayan Rocchio** sits at the bottom of the order\u2014a significant drag on his run-production potential\u2014his matchup against a mediocre 4.32 xERA arm and his recent form provide a marginal baseline that justifies his inclusion to preserve our efficiency caps. We are balancing these daily starts carefully, as the remainder of our high-impact core, including **Kyle Tucker** and **Vladimir Guerrero Jr.**, are inactive today due to the schedule, and **Luis Robert Jr.** continues his recovery on the IL.\n\nThe most difficult decision on today\u2019s board was bypassing **Liam Hicks**, who finished with a score of 31.07. While **Liam Hicks** offered some utility, he failed to cross our 40-point \"Zebras Floor.\" His matchup against Messick (3.51 xERA) presented a clear disadvantage, with the L-vs-L platoon penalty and the restrictive nature of an #8 batting order assignment effectively capping his ceiling. By benching **Liam Hicks** and maintaining our strict threshold, we prioritize potential over raw volume, ensuring we don't bleed points in AVG or waste a game cap on a low-probability output. With the rest of our depth\u2014including **Gunnar Henderson**, **Andy Pages**, **Jackson Merrill**, **Jordan Westburg**, **Luis Garc\u00eda Jr.**, **Jacob Wilson**, **Drake Baldwin**, **Nasim Nunez**, **Heliot Ramos**, **Josh Jung**, **Coby Mayo**, **Miguel Vargas**, **Henry Bolte**, **Curtis Mead**, **Sam Antonacci**, **Franklin Arias**, **Dominic Smith**, **Wade Meckler**, and **Luis Lara**\u2014managing their respective rests, we remain positioned to maximize our efficiency metrics through the final buzzer.",
     "recommended_lineup": [
         {
             "Slot": "2B",
@@ -11,11 +11,6 @@
             "POS": "2B/SS",
             "Score": 43.06179868851177,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.60",
@@ -47,11 +42,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Freddy Peralta (R)",
+            "Opponent": "Peralta, F (R)",
             "SP_xERA": "4.32",
             "Warning": "",
             "GameTime": "2026-10-14T00:00:00Z",
-            "Order": "9*",
+            "Order": "9",
             "Start": "12:00 AM"
         }
     ],
@@ -484,17 +479,12 @@
             "Slot": "BN",
             "Player": "Liam Hicks",
             "POS": "C/1B",
-            "Order": "4*",
+            "Order": "8",
             "Start": "12:00 AM",
-            "Opponent": "Parker Messick (L)",
+            "Opponent": "Messick (L)",
             "SP_xERA": "3.51",
-            "Score": 33.31614438496764,
+            "Score": 31.0732918874225,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.39",
@@ -521,12 +511,12 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
+                    "label": "Order #8",
+                    "value": "-6%",
+                    "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
