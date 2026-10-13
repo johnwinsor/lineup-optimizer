@@ -1,16 +1,21 @@
 {
-    "target_date": "2026-10-12",
-    "last_updated": "2026-10-13T02:19:51.477085+00:00",
+    "target_date": "2026-10-13",
+    "last_updated": "2026-10-13T04:55:52.151508+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 109.57,
-    "narrative": "The Zurich Zebras enter today\u2019s slate with a narrowed focus, as limited availability forces us to rely on a lean offensive core. **Junior Caminero** remains our primary anchor at 57.19. While he faces Griffin, who boasts a respectable 3.88 xERA, **Junior Caminero** is elevated by his prime spot in the three-hole and current hot-hand metrics, which offset the slight drag created by the lefty-on-lefty matchup. **Christian Yelich** follows with a 52.38 score; while Yamamoto poses an elite challenge, the platoon advantage for **Christian Yelich** in the five-hole provides enough floor for a marginal start. Given our rigid adherence to game caps, we are playing it safe with this pair, ensuring we don't bleed efficiency against high-tier pitching.\n\nThe bench remains heavy with high-ceiling talent currently sidelined by scheduling gaps. We are particularly eager to get **Trea Turner**, **Pete Crow-Armstrong**, and **Caleb Durbin** back into the fold, as their combined speed profiles represent the backbone of our SB strategy\u2014the scarcest category in our 5x5 build. **Yordan Alvarez** was the most notable \"near miss\" for today, though his absence is purely situational due to a team off-day. With **Kazuma Okamoto**, **Christian Encarnacion-Strand**, **Colt Keith**, and **Lars Nootbaar** also resting, our depth is fully intact for the final stretch. We are monitoring **Hector Rodriguez**, **Chase Meidroth**, **Gary Sanchez**, **Josh Smith**, **Dillon Dingler**, **Carson Benge**, **Casey Schmitt**, **Pedro Ramirez**, **Luis Pena**, and **Jacob Gonzalez** closely, as the rotation of these secondary pieces will be critical if the matchup volatility increases for **Junior Caminero** or **Christian Yelich** as the games progress.",
+    "total_efficiency_score": 51.71,
+    "narrative": "As we navigate the final stretch of the 2026 campaign, the Zurich Zebras lineup remains anchored by **Junior Caminero**, who sits at a 51.71 efficiency rating against Parker Messick. While the SP_xERA of 3.51 presents a moderate challenge, the projection remains bolstered by **Junior Caminero**\u2019s anticipated #3 spot in the order, which provides the volume needed to hunt counting stats. We are currently navigating a light schedule with **Yordan Alvarez**, **Pete Crow-Armstrong**, **Trea Turner**, and **Christian Yelich** all on an off-day, placing the weight of our production squarely on the shoulders of **Colt Keith**, **Lars Nootbaar**, and the speed-focused profile of **Caleb Durbin**. With Stolen Bases remaining our scarcest commodity, the defensive positioning against **Caleb Durbin**\u2019s baserunning profile will be the primary variable to monitor in his efficiency output.\n\nThe decision-making process for today\u2019s utility spots was heavily influenced by the lack of depth on the active roster. **Kazuma Okamoto** and **Christian Encarnacion-Strand** were considered for high-leverage power upside, but the optimizer prioritized the positional versatility of **Josh Smith** and **Casey Schmitt** to hedge against the pending status of several lineups. **Hector Rodriguez** remains on the periphery of our daily rotation; his BvP metrics were the strongest on the bench today, narrowly missing the cut behind the established volume of **Dillon Dingler** and **Carson Benge**. We are proceeding with caution regarding **Pedro Ramirez**, **Luis Pena**, and **Jacob Gonzalez** due to their volatile hitting environments; should the weather reports from the late-night venues shift, expect an immediate pivot toward the high-OBP skill set of **Gary Sanchez** to stabilize the AVG category.",
     "recommended_lineup": [
         {
             "Slot": "3B",
             "Player": "Junior Caminero",
             "POS": "3B",
-            "Score": 57.190984094635745,
+            "Score": 51.71466930117753,
             "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
                 {
                     "label": "Base",
                     "value": "62.40",
@@ -28,7 +33,7 @@
                 },
                 {
                     "label": "SP Skill",
-                    "value": "-3%",
+                    "value": "-12%",
                     "type": "negative"
                 },
                 {
@@ -42,61 +47,12 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Griffin (L)",
-            "SP_xERA": "3.88",
+            "Opponent": "Parker Messick (L)",
+            "SP_xERA": "3.51",
             "Warning": "",
-            "GameTime": "2026-10-13T00:00:00Z",
-            "Order": "3",
+            "GameTime": "2026-10-14T00:00:00Z",
+            "Order": "3*",
             "Start": "12:00 AM"
-        },
-        {
-            "Slot": "UTIL",
-            "Player": "Christian Yelich",
-            "POS": "Util",
-            "Score": 52.38137521075581,
-            "Breakdown": [
-                {
-                    "label": "Base",
-                    "value": "55.06",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-1%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-15%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+13%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Elite Hold SP (60% SB)",
-                    "value": "-2%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Yamamoto (R)",
-            "SP_xERA": "3.40",
-            "Warning": "",
-            "GameTime": "2026-10-12T21:00:00Z",
-            "Order": "5",
-            "Start": "09:00 PM"
         }
     ],
     "players_sat": [
@@ -142,6 +98,25 @@
             "Slot": "BN",
             "Player": "Trea Turner",
             "POS": "SS",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Christian Yelich",
+            "POS": "Util",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
@@ -306,7 +281,7 @@
             "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
+                    "label": "Team Off-day or No Game Scheduled.",
                     "value": null,
                     "type": "info"
                 }
