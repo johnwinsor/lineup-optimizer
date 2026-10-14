@@ -1,19 +1,24 @@
 {
-    "target_date": "2026-10-13",
-    "last_updated": "2026-10-14T03:04:31.720246+00:00",
+    "target_date": "2026-10-14",
+    "last_updated": "2026-10-14T09:22:58.207388+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 51.71,
-    "narrative": "Today's slate presents some intriguing options for the Zurich Zebras, with **Junior Caminero** leading the charge. His score of 51.7 is categorized as marginal, but the context is crucial. While the opposing starter, Messick (L), has a 3.51 xERA, **Junior Caminero** benefits from hitting third in the lineup, a strong positional boost. However, the significant negative adjustment comes from the park (-6%) and SP Skill (-12%), pulling his score down from a base projection of 62.40. This situation highlights the importance of considering the entire picture rather than just the raw score.\n\nOur bench shows some notable names with season-ending off-days or no games scheduled, including **Yordan Alvarez**, **Pete Crow-Armstrong**, **Trea Turner**, and **Christian Yelich**. The most interesting bench decision was likely **Yordan Alvarez**, as he is always a threat to go deep and drive in runs. The optimizer's decision to keep him on the bench today is purely due to his team's off-day, which is a situational factor that overrides his individual projection and matchup data. There are no significant weather warnings or elite opposing pitchers to flag for today's starters that would warrant further concern beyond the individual matchup assessments.",
+    "total_efficiency_score": 84.19,
+    "narrative": "AI Narrative generation skipped.",
     "recommended_lineup": [
         {
-            "Slot": "3B",
-            "Player": "Junior Caminero",
-            "POS": "3B",
-            "Score": 51.71466930117753,
+            "Slot": "C1",
+            "Player": "Gary Sanchez",
+            "POS": "C/1B",
+            "Score": 45.64888153426135,
             "Breakdown": [
                 {
+                    "label": "Lineup Pending (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Base",
-                    "value": "62.40",
+                    "value": "48.18",
                     "type": "info"
                 },
                 {
@@ -22,31 +27,70 @@
                     "type": "info"
                 },
                 {
-                    "label": "Park",
-                    "value": "-6%",
+                    "label": "SP Skill",
+                    "value": "-19%",
                     "type": "negative"
                 },
                 {
+                    "label": "Platoon",
+                    "value": "+7%",
+                    "type": "positive"
+                },
+                {
+                    "label": "BvP Elite (31 PA)",
+                    "value": "+8%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "Blake Snell (L)",
+            "SP_xERA": "3.22",
+            "Warning": "",
+            "GameTime": "2026-10-15T00:00:00Z",
+            "Order": "5*",
+            "Start": "12:00 AM"
+        },
+        {
+            "Slot": "UTIL",
+            "Player": "Christian Yelich",
+            "POS": "Util",
+            "Score": 38.53985512556677,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "55.06",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
                     "label": "SP Skill",
-                    "value": "-12%",
+                    "value": "-19%",
                     "type": "negative"
                 },
                 {
                     "label": "Dynamic Platoon (L)",
-                    "value": "-4%",
+                    "value": "-13%",
                     "type": "negative"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Messick (L)",
-            "SP_xERA": "3.51",
+            "Opponent": "Blake Snell (L)",
+            "SP_xERA": "3.22",
             "Warning": "",
-            "GameTime": "2026-10-14T00:00:00Z",
-            "Order": "3",
+            "GameTime": "2026-10-15T00:00:00Z",
+            "Order": "6*",
             "Start": "12:00 AM"
         }
     ],
@@ -55,6 +99,25 @@
             "Slot": "BN",
             "Player": "Yordan Alvarez",
             "POS": "OF",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Junior Caminero",
+            "POS": "3B",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
@@ -93,25 +156,6 @@
             "Slot": "BN",
             "Player": "Trea Turner",
             "POS": "SS",
-            "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 0.0,
-            "Breakdown": [
-                {
-                    "label": "Team Off-day or No Game Scheduled.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Christian Yelich",
-            "POS": "Util",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
@@ -250,25 +294,6 @@
             "Slot": "BN",
             "Player": "Chase Meidroth",
             "POS": "2B/SS",
-            "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 0.0,
-            "Breakdown": [
-                {
-                    "label": "Team Off-day or No Game Scheduled.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Gary Sanchez",
-            "POS": "C/1B",
             "Order": "-",
             "Start": "-",
             "Opponent": "N/A",
