@@ -1,15 +1,15 @@
 {
     "target_date": "2026-10-15",
-    "last_updated": "2026-10-15T16:01:16.670277+00:00",
+    "last_updated": "2026-10-15T19:44:39.691692+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 120.38,
-    "narrative": "With the season winding down and every plate appearance counting toward our game caps, the optimizer prioritizes high-floor reliability to maintain our standing. Today\u2019s lead play is **Kyle Tucker**, boasting a 66.04 efficiency score. Despite the lineup being pending, **Kyle Tucker** remains locked into the four-hole where his volume of RBI opportunities remains elite. We are also deploying **Andy Pages** in the UTIL slot with a 54.34 score; while the seventh-order penalty is non-trivial, his raw power profile against a generic opponent environment provides the necessary stability to clear our starting threshold.\n\nThe most difficult decision on today\u2019s board involved **Liam Hicks**, who finished just shy of the 40.0 floor with a 39.61 score. The primary drag on **Liam Hicks** was the matchup against Williams, whose 2.95 xERA suppresses expectations despite a favorable platoon dynamic. Ultimately, the risk of a sub-optimal day from **Liam Hicks** outweighed the potential gain, pushing him to the bench in favor of preserving our cap usage. Similarly, **Brayan Rocchio** (38.88) and **Luis Lara** (36.37) were dismissed due to inferior SP matchups, with **Luis Lara** specifically suffering from a lack of confirmed lineup placement.\n\nWe are actively monitoring the status of **Luis Robert Jr.**, who remains sidelined on the IL; his absence necessitates the current configuration. Because we are waiting on finalized lineups for **Kyle Tucker** and **Andy Pages**, these scores are subject to slight volatility should they move down the order. No external weather flags are currently impacting play, but the high quality of opposing arms today mandates a disciplined approach to our remaining games. We continue to hold **Gunnar Henderson**, **Vladimir Guerrero Jr.**, **Jackson Merrill**, and the rest of our core depth, ready to pivot if tomorrow's matchups present a more favorable environment for speed-focused contributors like **Nasim Nunez** or **Wade Meckler**.",
+    "total_efficiency_score": 116.75,
+    "narrative": "The Austin Waves look to maintain offensive momentum today against Shane Drohan, with **Kyle Tucker** anchoring the lineup as our most viable starter. **Kyle Tucker** carries a score of 63.68, buoyed by his premium slot in the batting order. While the left-on-left matchup against Drohan (3.91 xERA) poses a slight hurdle, **Kyle Tucker**\u2019s elite base projection and recency provide enough buffer to retain his status as a \"Strong\" play. **Andy Pages** also finds his way into the starting utility spot with a 53.07 score; although his position as the assumed #7 hitter limits his RBI ceiling, he remains a viable pivot given the current state of our bench and the need for daily cap management.\n\nThe most difficult decision for today's optimizer centered on **Liam Hicks**, who finished just shy of the 40-point floor at 39.61. **Liam Hicks** benefited from a positive platoon split against right-handed pitcher Williams, but the matchup against an elite 2.95 xERA arm suppressed his overall output enough to keep him on the bench. Similarly, **Brayan Rocchio** was relegated to the pine with a 38.88 score; despite his potential for stolen bases\u2014a critical asset for our strategy\u2014the combination of an unfavorable 3.62 xERA pitcher and a projected #9 spot in the order rendered him too risky to start under our current efficiency protocols. We continue to monitor the status of **Luis Robert Jr.**, who remains unavailable due to his IL designation, further tightening our starting options.",
     "recommended_lineup": [
         {
             "Slot": "OF4",
             "Player": "Kyle Tucker",
             "POS": "OF",
-            "Score": 66.03789554658334,
+            "Score": 63.67907263323243,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #4)",
@@ -27,13 +27,23 @@
                     "type": "info"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-1%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #4",
                     "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Shane Drohan (L)",
+            "SP_xERA": "3.91",
             "Warning": "",
             "GameTime": "2026-10-16T00:00:00Z",
             "Order": "4*",
@@ -43,7 +53,7 @@
             "Slot": "UTIL",
             "Player": "Andy Pages",
             "POS": "OF",
-            "Score": 54.34650692571443,
+            "Score": 53.06885616910095,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #7)",
@@ -61,13 +71,23 @@
                     "type": "info"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Neutral Platoon (L)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
                     "label": "Order #7",
                     "value": "-3%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Shane Drohan (L)",
+            "SP_xERA": "3.91",
             "Warning": "",
             "GameTime": "2026-10-16T00:00:00Z",
             "Order": "7*",

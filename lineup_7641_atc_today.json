@@ -1,15 +1,15 @@
 {
     "target_date": "2026-10-15",
-    "last_updated": "2026-10-15T16:01:51.875704+00:00",
+    "last_updated": "2026-10-15T19:44:59.696919+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 212.86,
-    "narrative": "As we navigate the tail end of the season, **Jos\u00e9 Ram\u00edrez** stands out as the clear anchor for LawDog today. With a 61.07 score, he is our only \"Strong\" play despite facing a reasonably competent arm in Jax. His position in the #2 hole remains the engine of our offensive production, mitigating the slight negative efficiency dip caused by the right-on-right matchup. Conversely, **Jonathan Aranda** faces a tougher path against Williams, G; while his 50.72 score keeps him in the starting lineup at 1B, he is fighting an uphill battle against a sub-3.00 xERA, making him a marginal play reliant on his dynamic platoon advantage to hold value.\n\nOur remaining lineup decisions reflect a cautious approach to game caps. **Will Smith** checks in at a 58.85, teetering on the edge of \"Strong\" status. While his xwOBA of 0.389 suggests he is locked in, the \"Lineup Pending\" tag at the #3 spot introduces variance; should he drop down the order, his efficiency score will likely dip further. **Alex Freeland** is the weakest link in the starting nine at a 42.22; he is essentially a placeholder today, as he lacks the elite sprint speed we prioritize for SB-heavy strategies. While **Cal Raleigh**, **Bryce Harper**, **Lawrence Butler**, and **Justin Crawford** are all bench-bound due to scheduling, **Justin Crawford** was the internal topic of discussion; his elite speed profile would have easily superseded **Alex Freeland** had he been active, but given the current scheduling gap, we are forced to play the lower-ceiling option to maximize counting stat accumulation. \n\nMonitor the lineup cards closely for **Will Smith** and **Alex Freeland**. If either drops significantly in the batting order, the risk of a \"Below floor\" performance increases, and we may look to pull the ripcord on their innings to protect our seasonal averages. We are operating with a lean roster today, and with **Daulton Varsho**, **Tyler Freeman**, **Yainer Diaz**, **Matt Chapman**, **Dylan Beavers**, **Gleyber Torres**, **Zack Gelof**, **Luis Arraez**, **Masyn Winn**, **Brendan Donovan**, **JJ Bleday**, **Jung Hoo Lee**, **Jeremiah Jackson**, **Gavin Sheets**, **Kyle Karros**, and **Braden Montgomery** either resting or off-day restricted, the heavy lifting falls squarely on **Jos\u00e9 Ram\u00edrez** to carry our offensive efficiency metrics.",
+    "total_efficiency_score": 208.94,
+    "narrative": "Our offensive outlook for today centers heavily on **Jos\u00e9 Ram\u00edrez**, who stands as our clear anchor with a 61.07 score. Despite facing an arm in Jax with a respectable 3.62 xERA, **Jos\u00e9 Ram\u00edrez** occupies the critical number two spot, which provides the volume of plate appearances necessary to drive our R and RBI totals. While **Jonathan Aranda** faces a tougher test against the 2.95 xERA of Williams, G, his dynamic platoon edge against the right-hander provides a significant 12% boost, keeping him in the lineup as a solid 50.72 play. **Will Smith** remains a borderline start at 54.66; while he is currently listed as \"Lineup Pending,\" he assumes the cleanup role, and his 0.389 xwOBA suggests he is well-equipped to handle the southpaw Shane Drohan despite the slight platoon disadvantage.\n\nThe bench remains largely stagnant today due to the absence of several key contributors like **Cal Raleigh**, **Bryce Harper**, **Lawrence Butler**, and **Justin Crawford**, who are all observing an off-day. **Alex Freeland** is our lowest-ranked starter at 42.50, barely clinging to his spot primarily due to the scarcity of middle infield options available today. The optimizer heavily penalized **Alex Freeland** for the projected number nine slot, which essentially negates his switch-hitting utility. We are closely monitoring the lineup cards to ensure **Will Smith** and **Alex Freeland** secure their expected spots; should either be dropped down the order or benched, our offensive efficiency will shift significantly, though with limited depth on the wire, they represent the best current bridge for our daily caps.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Will Smith",
             "POS": "C",
-            "Score": 58.84595494300834,
+            "Score": 54.65576335783729,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #3)",
@@ -27,6 +27,16 @@
                     "type": "info"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (L)",
+                    "value": "-4%",
+                    "type": "negative"
+                },
+                {
                     "label": "Order #3",
                     "value": "+6%",
                     "type": "positive"
@@ -37,8 +47,8 @@
                     "type": "info"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Shane Drohan (L)",
+            "SP_xERA": "3.91",
             "Warning": "",
             "GameTime": "2026-10-16T00:00:00Z",
             "Order": "3*",
@@ -87,7 +97,7 @@
             "Slot": "2B",
             "Player": "Alex Freeland",
             "POS": "2B/3B",
-            "Score": 42.22409503857303,
+            "Score": 42.495847110025785,
             "Breakdown": [
                 {
                     "label": "Lineup Pending (Assumed #9)",
@@ -105,13 +115,23 @@
                     "type": "info"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-2%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Switch",
+                    "value": "+3%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #9",
                     "value": "-8%",
                     "type": "negative"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Shane Drohan (L)",
+            "SP_xERA": "3.91",
             "Warning": "",
             "GameTime": "2026-10-16T00:00:00Z",
             "Order": "9*",
