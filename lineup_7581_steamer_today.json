@@ -1,54 +1,10 @@
 {
     "target_date": "2026-10-15",
-    "last_updated": "2026-10-15T09:00:54.722681+00:00",
+    "last_updated": "2026-10-15T16:01:16.670277+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 161.57,
-    "narrative": "AI Narrative generation skipped.",
+    "total_efficiency_score": 120.38,
+    "narrative": "With the season winding down and every plate appearance counting toward our game caps, the optimizer prioritizes high-floor reliability to maintain our standing. Today\u2019s lead play is **Kyle Tucker**, boasting a 66.04 efficiency score. Despite the lineup being pending, **Kyle Tucker** remains locked into the four-hole where his volume of RBI opportunities remains elite. We are also deploying **Andy Pages** in the UTIL slot with a 54.34 score; while the seventh-order penalty is non-trivial, his raw power profile against a generic opponent environment provides the necessary stability to clear our starting threshold.\n\nThe most difficult decision on today\u2019s board involved **Liam Hicks**, who finished just shy of the 40.0 floor with a 39.61 score. The primary drag on **Liam Hicks** was the matchup against Williams, whose 2.95 xERA suppresses expectations despite a favorable platoon dynamic. Ultimately, the risk of a sub-optimal day from **Liam Hicks** outweighed the potential gain, pushing him to the bench in favor of preserving our cap usage. Similarly, **Brayan Rocchio** (38.88) and **Luis Lara** (36.37) were dismissed due to inferior SP matchups, with **Luis Lara** specifically suffering from a lack of confirmed lineup placement.\n\nWe are actively monitoring the status of **Luis Robert Jr.**, who remains sidelined on the IL; his absence necessitates the current configuration. Because we are waiting on finalized lineups for **Kyle Tucker** and **Andy Pages**, these scores are subject to slight volatility should they move down the order. No external weather flags are currently impacting play, but the high quality of opposing arms today mandates a disciplined approach to our remaining games. We continue to hold **Gunnar Henderson**, **Vladimir Guerrero Jr.**, **Jackson Merrill**, and the rest of our core depth, ready to pivot if tomorrow's matchups present a more favorable environment for speed-focused contributors like **Nasim Nunez** or **Wade Meckler**.",
     "recommended_lineup": [
-        {
-            "Slot": "C1",
-            "Player": "Liam Hicks",
-            "POS": "C/1B",
-            "Score": 41.189881746417974,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "44.39",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-19%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+11%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #4",
-                    "value": "+4%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "Gavin Williams (R)",
-            "SP_xERA": "2.95",
-            "Warning": "",
-            "GameTime": "2026-10-15T17:00:00Z",
-            "Order": "4*",
-            "Start": "05:00 PM"
-        },
         {
             "Slot": "OF4",
             "Player": "Kyle Tucker",
@@ -390,17 +346,12 @@
             "Slot": "BN",
             "Player": "Brayan Rocchio",
             "POS": "2B/SS",
-            "Order": "9*",
+            "Order": "9",
             "Start": "05:00 PM",
-            "Opponent": "Griffin Jax (R)",
+            "Opponent": "Jax (R)",
             "SP_xERA": "3.62",
             "Score": 38.881463355765796,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #9)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "48.60",
@@ -427,7 +378,7 @@
                     "type": "negative"
                 },
                 {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Benched - Below Zebras Floor (40.0).",
                     "value": null,
                     "type": "info"
                 }
@@ -553,6 +504,45 @@
             ],
             "Warning": "",
             "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Liam Hicks",
+            "POS": "C/1B",
+            "Order": "6",
+            "Start": "05:00 PM",
+            "Opponent": "Williams, G (R)",
+            "SP_xERA": "2.95",
+            "Score": 39.60565552540189,
+            "Breakdown": [
+                {
+                    "label": "Base",
+                    "value": "44.39",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+11%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Benched - Below Zebras Floor (40.0).",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": "2026-10-15T17:00:00Z"
         },
         {
             "Slot": "BN",
