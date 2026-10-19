@@ -1,16 +1,21 @@
 {
-    "target_date": "2026-10-17",
-    "last_updated": "2026-10-18T02:31:49.739146+00:00",
+    "target_date": "2026-10-19",
+    "last_updated": "2026-10-19T09:43:40.723467+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 104.56,
-    "narrative": "The Austin Waves enter today\u2019s slate with a compressed active roster, as our core heavy hitters like **Kyle Tucker**, **Vladimir Guerrero Jr.**, and **Gunnar Henderson** are sidelined by team off-days. Consequently, **Liam Hicks** anchors the daily efficiency board with a 54.85 rating. His matchup against Armstrong (xERA 4.35) presents the most favorable path to production today; the combination of a mid-tier opposing arm and a solidified spot in the #5 hole provides the highest floor on a day where categorical volatility is high. While **Brayan Rocchio** sits at a marginal 49.70, his ability to capitalize on a favorable 4.63 xERA against Martinez, N keeps him in the lineup despite the structural disadvantage of batting ninth.\n\nThe bench decision-making process was relatively straightforward given the lack of depth, but **Drake Baldwin** and **Nasim Nunez** were the primary considerations for inclusion should we look to prioritize defensive replacement or potential pinch-hit stolen base upside. Ultimately, both remained benched as the optimizer prioritized the consistent plate appearance volume of **Liam Hicks** and **Brayan Rocchio**. We are closely monitoring the status of **Luis Robert Jr.**, who remains shelved on the IL; his absence continues to weigh on our stolen base efficiency, forcing us to lean on the contact profiles of players like **Jacob Wilson** and **Sam Antonacci** in deeper configurations. \n\nRisk management remains paramount, as our limited active depth means we cannot afford to burn game caps on players facing elite pitching. No weather flags are currently impacting these specific matchups, but managers should remain vigilant regarding late-breaking lineup changes for **Brayan Rocchio**, whose value is hyper-sensitive to his position in the order. With stars like **Jackson Merrill**, **Jordan Westburg**, and **Heliot Ramos** currently unavailable, the Waves must rely on the high-floor profile of **Liam Hicks** to sustain our category standing through this off-day lull.",
+    "total_efficiency_score": 86.0,
+    "narrative": "AI Narrative generation skipped.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Liam Hicks",
             "POS": "C/1B",
-            "Score": 54.85413140491743,
+            "Score": 42.93441130502149,
             "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #4)",
+                    "value": null,
+                    "type": "info"
+                },
                 {
                     "label": "Base",
                     "value": "44.39",
@@ -22,34 +27,34 @@
                     "type": "info"
                 },
                 {
-                    "label": "SP Skill",
-                    "value": "+8%",
-                    "type": "positive"
+                    "label": "Park",
+                    "value": "-6%",
+                    "type": "negative"
                 },
                 {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+11%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
+                    "label": "Order #4",
+                    "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "Armstrong (R)",
-            "SP_xERA": "4.35",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
             "Warning": "",
-            "GameTime": "2026-10-18T00:08:00Z",
-            "Order": "5",
+            "GameTime": "2026-10-20T00:08:00Z",
+            "Order": "4*",
             "Start": "12:08 AM"
         },
         {
             "Slot": "2B",
             "Player": "Brayan Rocchio",
             "POS": "2B/SS",
-            "Score": 49.70273528743672,
+            "Score": 43.06179868851177,
             "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #9)",
+                    "value": null,
+                    "type": "info"
+                },
                 {
                     "label": "Base",
                     "value": "48.60",
@@ -61,8 +66,13 @@
                     "type": "info"
                 },
                 {
+                    "label": "Park",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
                     "label": "SP Skill",
-                    "value": "+15%",
+                    "value": "+7%",
                     "type": "positive"
                 },
                 {
@@ -76,11 +86,11 @@
                     "type": "negative"
                 }
             ],
-            "Opponent": "Martinez, N (R)",
-            "SP_xERA": "4.63",
+            "Opponent": "Freddy Peralta (R)",
+            "SP_xERA": "4.32",
             "Warning": "",
-            "GameTime": "2026-10-18T00:08:00Z",
-            "Order": "9",
+            "GameTime": "2026-10-20T00:08:00Z",
+            "Order": "9*",
             "Start": "12:08 AM"
         }
     ],
