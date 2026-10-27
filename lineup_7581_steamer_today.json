@@ -1,21 +1,16 @@
 {
     "target_date": "2026-10-27",
-    "last_updated": "2026-10-27T17:05:54.887493+00:00",
+    "last_updated": "2026-10-27T21:39:01.691993+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 42.93,
-    "narrative": "With the late-season grind in full effect, the Austin Waves offense faces a thin slate today. **Liam Hicks** stands as our primary focal point, projected at a 42.93 efficiency score. While his placement is contingent on a pending lineup, the assumption of the cleanup spot provides a necessary floor for our production in Runs and RBI. Despite a neutral park factor and the inherent volatility of a lineup that hasn't officially locked, **Liam Hicks** remains the most viable source of counting stats on a day where heavy hitters like **Kyle Tucker**, **Vladimir Guerrero Jr.**, and **Luis Robert Jr.** are unavailable due to team off-days.\n\nThe most difficult roster decision today involved **Luis Lara**, who finished with a 38.32 score\u2014just narrowly missing the threshold for activation. While **Luis Lara** benefits from switch-hitting flexibility and solid recent form, the matchup against Griffin Jax (3.62 xERA) presented enough resistance to keep him on the bench. The optimizer prioritized preserving game caps over chasing a marginal return against a pitcher of Jax's caliber. We are effectively playing a \"wait-and-see\" approach, as the lack of other active rostered talent\u2014including **Gunnar Henderson**, **Andy Pages**, **Jackson Merrill**, **Jordan Westburg**, **Luis Garc\u00eda Jr.**, **Jacob Wilson**, **Drake Baldwin**, **Nasim Nunez**, **Heliot Ramos**, **Josh Jung**, **Coby Mayo**, **Miguel Vargas**, **Brayan Rocchio**, **Henry Bolte**, **Curtis Mead**, **Sam Antonacci**, **Franklin Arias**, **Dominic Smith**, and **Wade Meckler**\u2014leaves us thin, but disciplined in our management of the remaining games in this Ottoneu cycle.",
+    "total_efficiency_score": 47.79,
+    "narrative": "For today\u2019s slate, **Liam Hicks** stands as our primary focal point in the lineup. With a score of 47.79, he captures a marginal-to-strong value grade, bolstered significantly by a 11% dynamic platoon boost against May. While the SP_xERA of 3.99 suggests a moderate challenge, the optimization engine favors **Liam Hicks** for his clean-up positioning, which provides a vital +4% lift to his run-production potential. Given the scarcity of high-speed contributors in the current environment, we continue to prioritize volume in the heart of the order, even in matchups where the opposing pitcher is neither a clear gas-can nor an absolute shutdown ace.\n\nThe bench remains heavy with stars today, as **Kyle Tucker**, **Vladimir Guerrero Jr.**, **Gunnar Henderson**, and **Luis Robert Jr.** are all unavailable due to the team off-day. Consequently, the fringe roster decisions revolve around maintaining our aggressive stance on speed. We are closely monitoring the status of **Nasim Nunez** and **Brayan Rocchio**; should the official lineups emerge with these players batting in the top half of the order, their efficiency scores would likely jump past the baseline projection due to their elite stolen base profiles. Conversely, we are exercising caution with **Jacob Wilson** and **Luis Garc\u00eda Jr.**, as their current park factors are slightly suppressing their raw output scores. We are effectively holding our breath on weather reports for the afternoon slate, but as of now, the primary risk remains the stagnant lineup status of **Heliot Ramos** and **Jackson Merrill**, both of whom are essential for our 5x5 floor. We will pivot to **Andy Pages** or **Jordan Westburg** should any of our primary speed-first options be scratched, ensuring we do not burn a game cap on a sub-optimal replacement.",
     "recommended_lineup": [
         {
             "Slot": "C1",
             "Player": "Liam Hicks",
             "POS": "C/1B",
-            "Score": 42.93441130502149,
+            "Score": 47.78637518639453,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #4)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "44.39",
@@ -32,16 +27,21 @@
                     "type": "negative"
                 },
                 {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+11%",
+                    "type": "positive"
+                },
+                {
                     "label": "Order #4",
                     "value": "+4%",
                     "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "May (R)",
+            "SP_xERA": "3.99",
             "Warning": "",
             "GameTime": "2026-10-28T00:00:00Z",
-            "Order": "4*",
+            "Order": "4",
             "Start": "12:00 AM"
         }
     ],
@@ -483,50 +483,20 @@
             "Slot": "BN",
             "Player": "Luis Lara",
             "POS": "OF",
-            "Order": "6*",
-            "Start": "12:00 AM",
-            "Opponent": "Griffin Jax (R)",
-            "SP_xERA": "3.62",
-            "Score": 38.32329241348465,
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
             "Breakdown": [
                 {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "44.15",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Switch",
-                    "value": "+3%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Lineup Pending (Not picked by Optimizer).",
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
             ],
             "Warning": "",
-            "GameTime": "2026-10-28T00:00:00Z"
+            "GameTime": null
         }
     ]
 }
