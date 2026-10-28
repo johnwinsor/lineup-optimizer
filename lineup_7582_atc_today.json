@@ -1,16 +1,60 @@
 {
-    "target_date": "2026-10-27",
-    "last_updated": "2026-10-28T03:28:32.691842+00:00",
+    "target_date": "2026-10-28",
+    "last_updated": "2026-10-28T10:25:53.749426+00:00",
     "projection_system": "ATC",
-    "total_efficiency_score": 118.96,
-    "narrative": "With only two active contests on the schedule, the Zurich Zebras are operating in a truncated capacity, placing the offensive burden squarely on **Junior Caminero** and **Christian Yelich**. **Junior Caminero** remains the premier play today with a 62.17 efficiency score; batting third against May provides a stable floor, and his dynamic platoon advantage against right-handed pitching provides a +4% bump that pushes him into the \"Strong\" start tier. While **Christian Yelich** sits in the \"Marginal\" category at 56.79, he is locked into the lineup for his high-leverage spot in the order. Despite a mediocre matchup against Jax, **Christian Yelich** benefits from a positive platoon split, though his score is slightly suppressed by the pitcher\u2019s respectable 3.62 xERA.\n\nGiven the limited slate, the bench is largely stagnant, as the core speed threats we rely on for category stabilization\u2014specifically **Trea Turner**, **Pete Crow-Armstrong**, and **Caleb Durbin**\u2014are sidelined by a team off-day. Consequently, there is no active competition for the UTIL slot today, meaning depth pieces like **Kazuma Okamoto**, **Colt Keith**, **Christian Encarnacion-Strand**, and **Carson Benge** remain in reserve. While **Gary Sanchez**, **Lars Nootbaar**, and **Casey Schmitt** are typically viable, they too lack an active game to move the needle. We are essentially running a skeleton crew of **Dillon Dingler**, **Josh Smith**, **Chase Meidroth**, **Jacob Gonzalez**, **Hector Rodriguez**, **Luis Pena**, and **Pedro Ramirez** in the holding pen, waiting for a full-roster return to action. With **Yordan Alvarez** also inactive, today is strictly about maximizing plate appearances from our two active starters and minimizing the risk of chasing production that isn't on the field.",
+    "total_efficiency_score": 148.62,
+    "narrative": "AI Narrative generation skipped.",
     "recommended_lineup": [
+        {
+            "Slot": "C1",
+            "Player": "Gary Sanchez",
+            "POS": "C/1B",
+            "Score": 46.53183536520615,
+            "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #5)",
+                    "value": null,
+                    "type": "info"
+                },
+                {
+                    "label": "Base",
+                    "value": "49.05",
+                    "type": "info"
+                },
+                {
+                    "label": "Recency",
+                    "value": "100%",
+                    "type": "info"
+                },
+                {
+                    "label": "Park",
+                    "value": "-6%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Order #5",
+                    "value": "+2%",
+                    "type": "positive"
+                }
+            ],
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Warning": "",
+            "GameTime": "2026-10-29T00:00:00Z",
+            "Order": "5*",
+            "Start": "12:00 AM"
+        },
         {
             "Slot": "3B",
             "Player": "Junior Caminero",
             "POS": "3B",
-            "Score": 62.172402988598066,
+            "Score": 49.83874049479499,
             "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #3)",
+                    "value": null,
+                    "type": "info"
+                },
                 {
                     "label": "Base",
                     "value": "60.68",
@@ -27,6 +71,11 @@
                     "type": "negative"
                 },
                 {
+                    "label": "SP Skill",
+                    "value": "-19%",
+                    "type": "negative"
+                },
+                {
                     "label": "Dynamic Platoon (R)",
                     "value": "+4%",
                     "type": "positive"
@@ -37,19 +86,24 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "May (R)",
-            "SP_xERA": "3.99",
+            "Opponent": "Jacob Misiorowski (R)",
+            "SP_xERA": "2.35",
             "Warning": "",
-            "GameTime": "2026-10-28T00:00:00Z",
-            "Order": "3",
+            "GameTime": "2026-10-29T00:00:00Z",
+            "Order": "3*",
             "Start": "12:00 AM"
         },
         {
             "Slot": "UTIL",
             "Player": "Christian Yelich",
             "POS": "Util",
-            "Score": 56.79198957365822,
+            "Score": 52.24824157784273,
             "Breakdown": [
+                {
+                    "label": "Lineup Pending (Assumed #6)",
+                    "value": null,
+                    "type": "info"
+                },
                 {
                     "label": "Base",
                     "value": "56.18",
@@ -64,28 +118,13 @@
                     "label": "Park",
                     "value": "-6%",
                     "type": "negative"
-                },
-                {
-                    "label": "SP Skill",
-                    "value": "-9%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Dynamic Platoon (R)",
-                    "value": "+13%",
-                    "type": "positive"
-                },
-                {
-                    "label": "Order #3",
-                    "value": "+6%",
-                    "type": "positive"
                 }
             ],
-            "Opponent": "Jax (R)",
-            "SP_xERA": "3.62",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
             "Warning": "",
-            "GameTime": "2026-10-28T00:00:00Z",
-            "Order": "3",
+            "GameTime": "2026-10-29T00:00:00Z",
+            "Order": "6*",
             "Start": "12:00 AM"
         }
     ],
@@ -235,25 +274,6 @@
             "Breakdown": [
                 {
                     "label": "Team Off-day or No Game Scheduled.",
-                    "value": null,
-                    "type": "info"
-                }
-            ],
-            "Warning": "",
-            "GameTime": null
-        },
-        {
-            "Slot": "BN",
-            "Player": "Gary Sanchez",
-            "POS": "C/1B",
-            "Order": "-",
-            "Start": "-",
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Score": 0.0,
-            "Breakdown": [
-                {
-                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
