@@ -1,60 +1,16 @@
 {
     "target_date": "2026-10-28",
-    "last_updated": "2026-10-28T17:42:35.934817+00:00",
+    "last_updated": "2026-10-28T22:01:20.739999+00:00",
     "projection_system": "STEAMER",
-    "total_efficiency_score": 148.16,
-    "narrative": "Today's slate presents a few decisions for the Zurich Zebras. The strongest play is **Junior Caminero**, who earns a **51.3** efficiency score. Despite facing an elite opposing arm in Jacob Misiorowski (2.35 SP_xERA), **Junior Caminero**'s projected batting order of #3, combined with positive platoon adjustments against right-handed pitching and a strong recency boost, pushes him into the recommended start category. **Gary Sanchez** is also a recommended start with a **45.7** score, though the lineup remains pending. His base projection is solid, and his recent performance is excellent, but the park factor is a slight negative. **Christian Yelich** rounds out our starting options with a **51.2** score, also with a pending lineup. His recency is strong, but the park is a negative factor.\n\nThe optimizer's tough call today involves **Yordan Alvarez**. He was the closest benched player to making the lineup, scoring a theoretical 0.0 due to the team having an off-day or no game scheduled. Had there been a game, his scoring potential would likely have been much higher, potentially making him a strong start. All three of our starting options today carry the \"Lineup Pending\" warning, meaning we're relying on historical batting order assumptions. This introduces some uncertainty, especially for **Gary Sanchez** and **Christian Yelich**, whose projected spots are #5 and #6 respectively. While **Junior Caminero** benefits from a dynamic platoon advantage, the unknown lineup poses a risk for all active starters.",
+    "total_efficiency_score": 101.91,
+    "narrative": "The Zurich Zebras face a challenging slate today, with our two active starters operating in the marginal-to-strong transition zone. **Junior Caminero** earns the highest designation of the day at 51.25, buoyed by a prime #3 hole placement and a favorable platoon look against Misiorowski. While Misiorowski\u2019s sub-3.00 xERA remains a significant hurdle that drags down his raw expectation, **Junior Caminero**\u2019s recent form and situational utility keep him in the lineup despite the elite arm. Similarly, **Christian Yelich** sits just behind him at 50.66; while Rasmussen is a respectable arm, the platoon advantage is the primary driver here, as **Christian Yelich** continues to be a stabilizer for our core production metrics. \n\nGiven that the rest of our roster\u2014including **Yordan Alvarez**, **Pete Crow-Armstrong**, **Trea Turner**, **Caleb Durbin**, **Kazuma Okamoto**, **Christian Encarnacion-Strand**, **Colt Keith**, **Lars Nootbaar**, **Hector Rodriguez**, **Chase Meidroth**, **Gary Sanchez**, **Josh Smith**, **Dillon Dingler**, **Carson Benge**, **Casey Schmitt**, **Pedro Ramirez**, **Luis Pena**, and **Jacob Gonzalez**\u2014is sidelined due to scheduled off-days, our bench management is effectively moot today. There are no difficult start/sit dilemmas, as the schedule has stripped us of our speed threats like **Pete Crow-Armstrong** and **Caleb Durbin**, as well as the power-heavy bat of **Yordan Alvarez**. We are essentially forced into a \"survival mode\" lineup, relying on the discipline of **Junior Caminero** and the veteran eye of **Christian Yelich** to navigate tough matchups while keeping our game caps protected for later in the week.",
     "recommended_lineup": [
-        {
-            "Slot": "C1",
-            "Player": "Gary Sanchez",
-            "POS": "C/1B",
-            "Score": 45.703258172218064,
-            "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #5)",
-                    "value": null,
-                    "type": "info"
-                },
-                {
-                    "label": "Base",
-                    "value": "48.18",
-                    "type": "info"
-                },
-                {
-                    "label": "Recency",
-                    "value": "100%",
-                    "type": "info"
-                },
-                {
-                    "label": "Park",
-                    "value": "-6%",
-                    "type": "negative"
-                },
-                {
-                    "label": "Order #5",
-                    "value": "+2%",
-                    "type": "positive"
-                }
-            ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
-            "Warning": "",
-            "GameTime": "2026-10-29T00:00:00Z",
-            "Order": "5*",
-            "Start": "12:00 AM"
-        },
         {
             "Slot": "3B",
             "Player": "Junior Caminero",
             "POS": "3B",
             "Score": 51.253956268144044,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #3)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "62.40",
@@ -86,24 +42,19 @@
                     "type": "positive"
                 }
             ],
-            "Opponent": "Jacob Misiorowski (R)",
+            "Opponent": "Misiorowski (R)",
             "SP_xERA": "2.35",
             "Warning": "",
             "GameTime": "2026-10-29T00:00:00Z",
-            "Order": "3*",
+            "Order": "3",
             "Start": "12:00 AM"
         },
         {
             "Slot": "UTIL",
             "Player": "Christian Yelich",
             "POS": "Util",
-            "Score": 51.20295038111014,
+            "Score": 50.65786730869328,
             "Breakdown": [
-                {
-                    "label": "Lineup Pending (Assumed #6)",
-                    "value": null,
-                    "type": "info"
-                },
                 {
                     "label": "Base",
                     "value": "55.06",
@@ -118,13 +69,28 @@
                     "label": "Park",
                     "value": "-6%",
                     "type": "negative"
+                },
+                {
+                    "label": "SP Skill",
+                    "value": "-17%",
+                    "type": "negative"
+                },
+                {
+                    "label": "Dynamic Platoon (R)",
+                    "value": "+13%",
+                    "type": "positive"
+                },
+                {
+                    "label": "Order #3",
+                    "value": "+6%",
+                    "type": "positive"
                 }
             ],
-            "Opponent": "N/A",
-            "SP_xERA": "-",
+            "Opponent": "Rasmussen (R)",
+            "SP_xERA": "3.30",
             "Warning": "",
             "GameTime": "2026-10-29T00:00:00Z",
-            "Order": "6*",
+            "Order": "3",
             "Start": "12:00 AM"
         }
     ],
@@ -312,6 +278,25 @@
             "Breakdown": [
                 {
                     "label": "Team Off-day or No Game Scheduled.",
+                    "value": null,
+                    "type": "info"
+                }
+            ],
+            "Warning": "",
+            "GameTime": null
+        },
+        {
+            "Slot": "BN",
+            "Player": "Gary Sanchez",
+            "POS": "C/1B",
+            "Order": "-",
+            "Start": "-",
+            "Opponent": "N/A",
+            "SP_xERA": "-",
+            "Score": 0.0,
+            "Breakdown": [
+                {
+                    "label": "Not in MLB Starting Lineup (Benched/IL/Rest).",
                     "value": null,
                     "type": "info"
                 }
